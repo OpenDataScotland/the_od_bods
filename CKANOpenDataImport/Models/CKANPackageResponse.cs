@@ -16,6 +16,7 @@ namespace CKANOpenDataImport.Models
     public class CKANPackageResponseResult
     {
         public string Title { get; set; }
+        public string Type { get; set; }
         [JsonProperty("metadata_created")]
         public DateTime? DateModified { get; set; }
         [JsonProperty("metadata_modified")]
@@ -24,5 +25,9 @@ namespace CKANOpenDataImport.Models
         public string Description { get; set; }
         [JsonProperty("license_title")]
         public string License { get; set; }
+        [JsonProperty("tags")]
+        public IEnumerable<CKANTag> Tags { get; set; }
+        [JsonProperty("Resources")]
+        public IEnumerable<CKANResource> Resources { get; set; }
     }
 }

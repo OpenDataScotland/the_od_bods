@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-using System.Net.WebSockets;
 using System.Text;
 using CKANOpenDataImport.Models;
 using CKANOpenDataImport.Models.Output;
@@ -12,7 +11,6 @@ using CsvHelper.Configuration;
 using Figgle;
 using Newtonsoft.Json;
 using RestSharp;
-using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace CKANOpenDataImport
 {
@@ -73,7 +71,7 @@ namespace CKANOpenDataImport
 
                 if (packages == null)
                 {
-                    Console.WriteLine($"ERROR: No packages retrieved");
+                    Console.WriteLine("ERROR: No packages retrieved");
                     Console.WriteLine("Skipping...");
 
                     continue;
@@ -102,7 +100,7 @@ namespace CKANOpenDataImport
 
                     if (parsedPackageResponse == null)
                     {
-                        Console.WriteLine($"ERROR: Could not parse package");
+                        Console.WriteLine("ERROR: Could not parse package");
                         Console.WriteLine("Skipping...");
 
                         continue;
@@ -110,24 +108,37 @@ namespace CKANOpenDataImport
 
                     var packageMetadata = parsedPackageResponse.Result;
 
-                    var newEntry = new DatasetEntry
+                    if (!packageMetadata.Type.Equals("dataset"))
                     {
-                        Title = packageMetadata.Title,
-                        Owner = ckanRootUrl.SourceName,
-                        PageURL = $"{ckanRootUrl.Url}dataset/{package}",
-                        AssetURL = null,
-                        DateCreated = packageMetadata.DateCreated,
-                        DateUpdated = packageMetadata.DateModified,
-                        FileSize = null,
-                        FileType = null,
-                        NumRecords = null,
-                        OriginalTags = null,
-                        ManualTags = null,
-                        License = packageMetadata.License,
-                        Description = packageMetadata.Description
-                    };
+                        Console.WriteLine($"ERROR: Package type {packageMetadata.Type} is not a recognized dataset");
+                        Console.WriteLine("Skipping...");
+                        continue;
+                    }
 
-                    DatasetEntries.Add(newEntry);
+                    Console.WriteLine($"Package has {packageMetadata.Resources.Count()} assets");
+
+                    foreach (var resource in packageMetadata.Resources)
+                    {
+                        var newEntry = new DatasetEntry
+                        {
+                            Title = packageMetadata.Title,
+                            Owner = ckanRootUrl.SourceName,
+                            PageURL = $"{ckanRootUrl.Url}dataset/{package}",
+                            AssetURL = resource.URL,
+                            DateCreated = packageMetadata.DateCreated,
+                            DateUpdated = packageMetadata.DateModified,
+                            FileSize = resource.Archiver.Size.ToString(),
+                            FileType = resource.Format,
+                            NumRecords = null,
+                            OriginalTags = string.Join(';',packageMetadata.Tags.Select(x => x.Name)),
+                            ManualTags = null,
+                            License = packageMetadata.License,
+                            Description = packageMetadata.Description
+                        };
+
+                        DatasetEntries.Add(newEntry);
+                    }
+
 
                     //Console.WriteLine($"\t {package}");
                     //DatasetEntries.Add(new DatasetEntry(){Title = package});
@@ -145,11 +156,12 @@ namespace CKANOpenDataImport
 
             using StreamWriter sw = new StreamWriter(csvPath, false, new UTF8Encoding(true));
             using CsvWriter cw = new CsvWriter(sw, new CsvConfiguration(CultureInfo.CurrentCulture));
+
             cw.WriteHeader<DatasetEntry>();
             cw.NextRecord();
             foreach (var entry in DatasetEntries)
             {
-                cw.WriteRecord<DatasetEntry>(entry);
+                cw.WriteRecord(entry);
                 cw.NextRecord();
             }
         }
