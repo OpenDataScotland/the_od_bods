@@ -37,7 +37,10 @@ namespace CKANOpenDataImport
 
             Console.WriteLine($"Got {ckanRootUrls.Count} URLs from file");
 
-            Console.WriteLine("Processing URLs:\n");
+            Console.WriteLine("Press any key to start processing URLs");
+            Console.ReadLine();
+
+            Console.WriteLine("Processing URLs:");
             foreach (var ckanRootUrl in ckanRootUrls)
             {
                 Console.WriteLine();
@@ -69,6 +72,13 @@ namespace CKANOpenDataImport
                 }
 
                 Console.WriteLine($"{packages.Result.Count()} packages retrieved");
+
+                foreach (var package in packages.Result)
+                {
+                    Console.WriteLine($"\t {package}");
+                }
+
+                Console.ReadLine();
             }
         }
     }
