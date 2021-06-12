@@ -1,0 +1,10 @@
+﻿http://data.aberdeencity.gov.uk/
+http://opendata.angus.gov.uk/
+http://gis.clacksweb.org.uk/
+https://usmart.io/#/org/dumgal/discovery?limit=20&offset=0
+https://data.dundeecity.gov.uk/dataset
+https://edinburghopendata.info/
+http://data.glasgow.gov.uk/
+https://maps-north-ayrshire.opendata.arcgis.com/
+https://data.pkc.gov.uk/dataset
+https://data.stirling.gov.uk/dataset
