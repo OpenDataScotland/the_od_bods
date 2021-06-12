@@ -113,7 +113,7 @@ namespace CKANOpenDataImport
                     {
                         Title = packageMetadata.Title,
                         Owner = ckanRootUrl.SourceName,
-                        PageURL = $"{ckanRootUrl.Url}/dataset/{package}",
+                        PageURL = $"{ckanRootUrl.Url}dataset/{package}",
                         AssetURL = null,
                         DateCreated = packageMetadata.DateCreated,
                         DateUpdated = packageMetadata.DateModified,
