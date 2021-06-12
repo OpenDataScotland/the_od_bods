@@ -1,5 +1,5 @@
 # the_od_bods
-The aim of this project at CTC23 is to collate access to Open Data in Scotland, beginning with cities. 
+The aim of this project at [CTC23](https://github.com/CodeTheCity/CTC23) is to collate access to Open Data in Scotland, beginning with cities. 
 
 ##Methodology
 
