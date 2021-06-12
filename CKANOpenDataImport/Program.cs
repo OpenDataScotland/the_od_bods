@@ -147,8 +147,10 @@ namespace CKANOpenDataImport
                 //Console.ReadLine();
             }
 
+            var datasetCount = DatasetEntries.GroupBy(x => new {x.Title, x.Owner}).Count();
+
             Console.WriteLine();
-            Console.WriteLine($"Package total: {DatasetEntries.Count} packages from {ckanRootUrls.Count} CKAN instances");
+            Console.WriteLine($"Total: {DatasetEntries.Count} assets from {datasetCount} datasets stored across {ckanRootUrls.Count} CKAN instances");
 
             Console.WriteLine();
             var csvPath = Path.Combine(Directory.GetCurrentDirectory(), "ckan_output.csv");
