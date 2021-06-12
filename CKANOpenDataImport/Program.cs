@@ -1,9 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Net.WebSockets;
+using System.Text;
 using CKANOpenDataImport.Models;
 using CKANOpenDataImport.Models.Output;
+using CsvHelper;
+using CsvHelper.Configuration;
 using Figgle;
 using Newtonsoft.Json;
 using RestSharp;
@@ -116,7 +121,8 @@ namespace CKANOpenDataImport
                         FileType = null,
                         NumRecords = null,
                         Tags = null,
-                        License = packageMetadata.License
+                        License = packageMetadata.License,
+                        Description = packageMetadata.Description
                     };
 
                     DatasetEntries.Add(newEntry);
@@ -127,9 +133,23 @@ namespace CKANOpenDataImport
                 //Console.WriteLine();
                 //Console.ReadLine();
             }
-            
+
             Console.WriteLine();
             Console.WriteLine($"Package total: {DatasetEntries.Count} packages from {ckanRootUrls.Count} CKAN instances");
+
+            Console.WriteLine();
+            var csvPath = Path.Combine(Directory.GetCurrentDirectory(), "ckan_output.csv");
+            Console.WriteLine($"Writing CSV to {csvPath}");
+
+            using StreamWriter sw = new StreamWriter(csvPath, false, new UTF8Encoding(true));
+            using CsvWriter cw = new CsvWriter(sw, new CsvConfiguration(CultureInfo.CurrentCulture));
+            cw.WriteHeader<DatasetEntry>();
+            cw.NextRecord();
+            foreach (var entry in DatasetEntries)
+            {
+                cw.WriteRecord<DatasetEntry>(entry);
+                cw.NextRecord();
+            }
         }
     }
 }

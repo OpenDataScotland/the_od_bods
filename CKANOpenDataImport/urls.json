@@ -3,24 +3,24 @@
     "SourceName": "Aberdeen",
     "Url": "https://data.aberdeencity.gov.uk/"
   },
-  {
-    "SourceName": "Dundee",
-    "Url": "https://data.dundeecity.gov.uk/"
-  },
-  {
-    "SourceName": "Edinburgh",
-    "Url": "https://data.edinburghcouncilmaps.info/"
-  },
-  {
-    "SourceName": "Glasgow",
-    "Url": "https://data.glasgow.gov.uk"
-  },
-  {
-    "SourceName": "Perth",
-    "Url": "https://data.pkc.gov.uk/"
-  },
-  {
-    "SourceName": "Stirling",
-    "Url": "https://data.stirling.gov.uk/"
-  }
+  //{
+  //  "SourceName": "Dundee",
+  //  "Url": "https://data.dundeecity.gov.uk/"
+  //},
+  //{
+  //  "SourceName": "Edinburgh",
+  //  "Url": "https://data.edinburghcouncilmaps.info/"
+  //},
+  //{
+  //  "SourceName": "Glasgow",
+  //  "Url": "https://data.glasgow.gov.uk"
+  //},
+  //{
+  //  "SourceName": "Perth",
+  //  "Url": "https://data.pkc.gov.uk/"
+  //},
+  //{
+  //  "SourceName": "Stirling",
+  //  "Url": "https://data.stirling.gov.uk/"
+  //}
 ]
