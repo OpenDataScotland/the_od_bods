@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using CKANOpenDataImport.Models;
+using CKANOpenDataImport.Models.Output;
 using Figgle;
 using Newtonsoft.Json;
 using RestSharp;
@@ -13,13 +14,15 @@ namespace CKANOpenDataImport
     internal class Program
     {
         private const string PACKAGE_LIST_PATH = "api/3/action/package_list";
+        private const string PACKAGE_SHOW_PATH = "api/3/action/package_show";
+        public static List<DatasetEntry> DatasetEntries { get; set; } = new List<DatasetEntry>();
 
         // ReSharper disable once UnusedParameter.Local
         private static void Main(string[] args)
         {
             Console.WriteLine(FiggleFonts.Standard.Render("CKAN OD Import v0.1"));
 
-            var urlPath = Path.Combine(Directory.GetCurrentDirectory(),"urls.json");
+            var urlPath = Path.Combine(Directory.GetCurrentDirectory(), "urls.json");
 
             Console.WriteLine($"Reading CKAN URLs from {urlPath}");
 
@@ -61,7 +64,7 @@ namespace CKANOpenDataImport
                     continue;
                 }
 
-                var packages =  JsonConvert.DeserializeObject<CKANPackagesListResponse>(packagesResponse.Content);
+                var packages = JsonConvert.DeserializeObject<CKANPackagesListResponse>(packagesResponse.Content);
 
                 if (packages == null)
                 {
@@ -72,14 +75,61 @@ namespace CKANOpenDataImport
                 }
 
                 Console.WriteLine($"{packages.Result.Count()} packages retrieved");
+                Console.WriteLine("Processing packages...");
 
                 foreach (var package in packages.Result)
                 {
-                    Console.WriteLine($"\t {package}");
-                }
+                    var showPackageRequest = new RestRequest(PACKAGE_SHOW_PATH);
+                    showPackageRequest.AddParameter("id", package);
+                    var showPackageResponse = client.Execute(showPackageRequest);
 
-                Console.ReadLine();
+                    if (!showPackageResponse.IsSuccessful)
+                    {
+                        Console.WriteLine($"ERROR: Could not get package metadata for {package}. Got response {showPackageResponse.StatusCode}");
+                        Console.WriteLine("Skipping...");
+
+                        continue;
+                    }
+
+                    var parsedPackageResponse =
+                        JsonConvert.DeserializeObject<CKANPackageResponse>(showPackageResponse.Content);
+
+                    if (parsedPackageResponse == null)
+                    {
+                        Console.WriteLine($"ERROR: Could not parse package");
+                        Console.WriteLine("Skipping...");
+
+                        continue;
+                    }
+
+                    var packageMetadata = parsedPackageResponse.Result;
+
+                    var newEntry = new DatasetEntry
+                    {
+                        Title = packageMetadata.Title,
+                        Owner = ckanRootUrl.SourceName,
+                        PageURL = $"{ckanRootUrl.Url}/dataset/{package}",
+                        AssetURL = null,
+                        DateCreated = packageMetadata.DateCreated,
+                        DateUpdated = packageMetadata.DateModified,
+                        FileSize = null,
+                        FileType = null,
+                        NumRecords = null,
+                        Tags = null,
+                        License = packageMetadata.License
+                    };
+
+                    DatasetEntries.Add(newEntry);
+
+                    //Console.WriteLine($"\t {package}");
+                    //DatasetEntries.Add(new DatasetEntry(){Title = package});
+                }
+                //Console.WriteLine();
+                //Console.ReadLine();
             }
+            
+            Console.WriteLine();
+            Console.WriteLine($"Package total: {DatasetEntries.Count} packages from {ckanRootUrls.Count} CKAN instances");
         }
     }
 }
