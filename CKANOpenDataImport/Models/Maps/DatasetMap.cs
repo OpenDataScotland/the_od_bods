@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using CKANOpenDataImport.Models.Output;
 using CsvHelper.Configuration;
 
-namespace CKANOpenDataImport.Models
+namespace CKANOpenDataImport.Models.Maps
 {
     public sealed class DatasetMap : ClassMap<DatasetEntry>
     {
@@ -21,7 +21,8 @@ namespace CKANOpenDataImport.Models
             Map(x => x.FileSize).Name("FileSize");
             Map(x => x.FileType).Name("FileType");
             Map(x => x.NumRecords).Name("NumRecords");
-            Map(x => x.Tags).Name("Tags");
+            Map(x => x.OriginalTags).Name("OriginalTags");
+            Map(x => x.ManualTags).Name("ManualTags");
             Map(x => x.License).Name("License");
             Map(x => x.Description).Name("Description");
         }

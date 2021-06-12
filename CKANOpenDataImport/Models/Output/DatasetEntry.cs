@@ -17,7 +17,8 @@ namespace CKANOpenDataImport.Models.Output
         public string FileSize { get; set; }
         public string FileType { get; set; }
         public int? NumRecords { get; set; }
-        public string Tags { get; set; }
+        public string OriginalTags { get; set; }
+        public string ManualTags { get; set; }
         public string License { get; set; }
         public string Description { get; set; }
     }

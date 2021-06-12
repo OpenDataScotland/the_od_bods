@@ -84,6 +84,7 @@ namespace CKANOpenDataImport
 
                 foreach (var package in packages.Result)
                 {
+                    Console.WriteLine($"Processing {package}...");
                     var showPackageRequest = new RestRequest(PACKAGE_SHOW_PATH);
                     showPackageRequest.AddParameter("id", package);
                     var showPackageResponse = client.Execute(showPackageRequest);
@@ -120,7 +121,8 @@ namespace CKANOpenDataImport
                         FileSize = null,
                         FileType = null,
                         NumRecords = null,
-                        Tags = null,
+                        OriginalTags = null,
+                        ManualTags = null,
                         License = packageMetadata.License,
                         Description = packageMetadata.Description
                     };
