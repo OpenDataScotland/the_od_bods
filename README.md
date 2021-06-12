@@ -1,2 +1,10 @@
 # the_od_bods
-collating open data from Scotland
+The aim of this project at CTC23 is to collate access to Open Data in Scotland, beginning with cities. 
+
+##Methodology
+
+We started by looking at Scottish Cities' open data portals (where these could be found). 
+
+
+## What we are building
+
