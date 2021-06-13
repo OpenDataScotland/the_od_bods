@@ -12,6 +12,7 @@ def get_json(url):
 renfrew_start_url = 'https://opendata.arcgis.com/api/v3/search?catalog[groupIds]=any(79dc9ae7552e4782bf66dadbdf049a0d,bcaad01ef27a4457b9c9406818eaca5d)'
 argyll_start_url = 'https://opendata.arcgis.com/api/v3/search?catalog[groupIds]=any(2391aa86db9148d1857671888aefdc5f)'
 south_ayrshire_start_url = 'https://opendata.arcgis.com/api/v3/search?catalog[groupIds]=any(436655c931664e279f675390213d828e)'
+moray_start_url = 'https://opendata.arcgis.com/api/v3/search?catalog[groupIds]=any(b42b8e7bce20408684689845a268e8e6)'
 
 def get_datasets(start_url, fname):
     url = start_url
@@ -65,4 +66,5 @@ def get_datasets(start_url, fname):
                                                                        
                                                                        
 # get_datasets(argyll_start_url, "argyll_and_bute.csv")
-get_datasets(south_ayrshire_start_url, "south_ayrshire.csv")
+# get_datasets(south_ayrshire_start_url, "south_ayrshire.csv")
+get_datasets(moray_start_url, "moray.csv")
