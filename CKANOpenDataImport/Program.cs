@@ -18,7 +18,7 @@ namespace CKANOpenDataImport
     {
         private const string PACKAGE_LIST_PATH = "api/3/action/package_list";
         private const string PACKAGE_SHOW_PATH = "api/3/action/package_show";
-        public static List<DatasetEntry> DatasetEntries { get; set; } = new List<DatasetEntry>();
+        public static List<DatasetEntry> DatasetEntries { get; set; } = new();
 
         // ReSharper disable once UnusedParameter.Local
         private static void Main(string[] args)
@@ -125,12 +125,12 @@ namespace CKANOpenDataImport
                             Owner = ckanRootUrl.SourceName,
                             PageURL = $"{ckanRootUrl.Url}dataset/{package}",
                             AssetURL = resource.URL,
-                            DateCreated = packageMetadata.DateCreated,
-                            DateUpdated = packageMetadata.DateModified,
+                            DateCreated = packageMetadata.DateCreated.HasValue ? packageMetadata.DateCreated.Value.ToString("yyyy-MM-dd") : "",
+                            DateUpdated = packageMetadata.DateModified.HasValue ? packageMetadata.DateModified.Value.ToString("yyyy-MM-dd") : "",
                             FileSize = resource.Archiver.Size.ToString(),
                             FileType = resource.Format,
                             NumRecords = null,
-                            OriginalTags = string.Join(';',packageMetadata.Tags.Select(x => x.Name)),
+                            OriginalTags = string.Join(';', packageMetadata.Tags.Select(x => x.Name)),
                             ManualTags = null,
                             License = packageMetadata.License,
                             Description = packageMetadata.Description
@@ -138,16 +138,10 @@ namespace CKANOpenDataImport
 
                         DatasetEntries.Add(newEntry);
                     }
-
-
-                    //Console.WriteLine($"\t {package}");
-                    //DatasetEntries.Add(new DatasetEntry(){Title = package});
                 }
-                //Console.WriteLine();
-                //Console.ReadLine();
             }
 
-            var datasetCount = DatasetEntries.GroupBy(x => new {x.Title, x.Owner}).Count();
+            var datasetCount = DatasetEntries.GroupBy(x => new { x.Title, x.Owner }).Count();
 
             Console.WriteLine();
             Console.WriteLine($"Total: {DatasetEntries.Count} assets from {datasetCount} datasets stored across {ckanRootUrls.Count} CKAN instances");
@@ -156,8 +150,8 @@ namespace CKANOpenDataImport
             var csvPath = Path.Combine(Directory.GetCurrentDirectory(), "ckan_output.csv");
             Console.WriteLine($"Writing CSV to {csvPath}");
 
-            using StreamWriter sw = new StreamWriter(csvPath, false, new UTF8Encoding(true));
-            using CsvWriter cw = new CsvWriter(sw, new CsvConfiguration(CultureInfo.CurrentCulture));
+            using StreamWriter sw = new(csvPath, false, new UTF8Encoding(true));
+            using CsvWriter cw = new(sw, new CsvConfiguration(CultureInfo.CurrentCulture));
 
             cw.WriteHeader<DatasetEntry>();
             cw.NextRecord();

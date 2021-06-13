@@ -1,4 +1,4 @@
-﻿namespace CKANOpenDataImport
+﻿namespace CKANOpenDataImport.Models
 {
     public  class CKANRootUrl
     {

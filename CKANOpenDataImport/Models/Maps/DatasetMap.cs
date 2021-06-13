@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CKANOpenDataImport.Models.Output;
+﻿using CKANOpenDataImport.Models.Output;
 using CsvHelper.Configuration;
 
 namespace CKANOpenDataImport.Models.Maps
