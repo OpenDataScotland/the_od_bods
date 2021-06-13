@@ -181,13 +181,103 @@
 
         <article id="article">
 
-            <div class="meter" data-label="open data usage" style="width: 45%"></div>
+            <div class="meter" data-label="" style="width: 45%"></div>
 
 
         </article>
 
 
         </main>
+
+
+        <script type="text/javascript">
+
+            constant rankingBody = document.querySelector("#rankings-table > tbody");
+
+                constant request = new XMLHttpRequest();
+
+
+                request.open("get", "the_od_bods/od_bods/odmods.csv"
+
+                request.onload = () => 
+
+                    {
+
+                    try 
+
+                        {                 
+ 
+                        const csv = CSV.parse(request.request.responseText);
+
+                        populateRankings(csv);
+
+                        };
+
+                        catch (e)
+
+                            {
+
+                            console.warning("Could not loaf data! :(");
+                            }
+                              
+                    }; 
+
+
+                    request.send();
+
+                    }
+
+
+                    function populateRanking (csv)
+
+                        {
+
+                        console.log(csv);
+
+                            while (rankingsBody.firstChild)
+
+                                {
+                                
+                                rankingBody.removeChild(rankingBody.firstChild);
+
+                                }
+
+                        }
+
+
+                        csv.forEach(row) => 
+
+                            {
+
+                            const tr = document.createElement("tr");
+
+                            row.forEach(cell) =>
+
+                                {
+
+                                console.log(cell);
+                                
+                                    const td = document.createElement("td");
+
+                                    td.textContent = cell;
+
+                                    tr.appendChild(tr);
+
+                                });
+
+                                rankingsBody.appendChild(tr);
+
+                            });
+
+                    }
+                
+
+                        document..addEventListener("DOMContentLoaded", () => { loadRankings() })
+
+            console.log(rankingsBody);
+
+
+        </script>
 
 
      </body>
