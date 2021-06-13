@@ -1,0 +1,90 @@
+
+<!doctype html>
+
+<html>
+
+    <head>
+
+        <title>od_mods</title>
+        
+        <link rel="stylesheet" href="css/styles.css" />
+
+        <script href="js/od_bods.js"></script>
+
+
+    </head>
+
+
+    <body>
+
+        <main id="main">
+
+
+        <!-- table -->
+
+        <article id="article">
+
+            <table>
+
+                <thead>
+  
+                    <tr>
+		      {% for h in headers %}
+                      <td>{{ h }}</td>
+		      {% endfor %}
+                    </tr>
+
+
+                </thead>
+
+                    
+                <tbody>
+		  {% for row in data %}
+                    <tr>
+		      {% for field in row %}
+		      <td>{{ field }}</td>
+		      {% endfor %}
+                    </tr>
+		  {% endfor %}
+                </tbody>
+
+
+                <tfoot>
+  
+                    <tr>
+                        <td>
+  
+                            <p></p>
+  
+                            <p></p>
+
+                        </td>
+  
+                    </tr>
+
+
+                </tfoot>
+
+
+            </table>
+
+
+        </article>
+
+
+        <!-- progress bar -->
+
+        <article id="article">
+
+            <div class="meter" data-label="" style="width: 45%"></div>
+
+
+        </article>
+
+
+        </main>
+
+     </body>
+
+
+</html>
