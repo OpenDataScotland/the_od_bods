@@ -220,13 +220,13 @@ a, a:link, a:visited
 #main
     {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 2rem;
     }
 
-#section
+#article
     {
     flex: 0 0 auto;
     padding: 0 0.6250em;
