@@ -128,6 +128,7 @@ namespace CKANOpenDataImport
                             DateCreated = packageMetadata.DateCreated.HasValue ? packageMetadata.DateCreated.Value.ToString("yyyy-MM-dd") : "",
                             DateUpdated = packageMetadata.DateModified.HasValue ? packageMetadata.DateModified.Value.ToString("yyyy-MM-dd") : "",
                             FileSize = resource.Archiver.Size.ToString(),
+                            FileSizeUnit = "B",
                             FileType = resource.Format,
                             NumRecords = null,
                             OriginalTags = string.Join(';', packageMetadata.Tags.Select(x => x.Name)),

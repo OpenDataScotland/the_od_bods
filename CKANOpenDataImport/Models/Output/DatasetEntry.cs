@@ -9,6 +9,7 @@
         public string DateCreated { get; set; }
         public string DateUpdated { get; set; }
         public string FileSize { get; set; }
+        public string FileSizeUnit { get; set; }
         public string FileType { get; set; }
         public int? NumRecords { get; set; }
         public string OriginalTags { get; set; }
