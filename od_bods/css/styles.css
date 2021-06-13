@@ -189,7 +189,7 @@ html body
     line-height: 1.15;
 
     display: block;
-    flex-direction:column;
+    flex-direction: column;
 
     -webkit-box-direction: vertical;
     -webkit-box-orient: normal;
@@ -217,7 +217,7 @@ a, a:link, a:visited
     }
 
 
-main
+#main
     {
     display: flex;
     flex-direction: row;
@@ -226,7 +226,7 @@ main
     padding: 0 2rem;
     }
 
-article
+#article
     {
     flex: 0 0 auto;
     padding: 0 0.6250em;
@@ -238,7 +238,7 @@ figure
     {
     flex: 0 0 auto;
     float: right;
-    width: 20%
+    width: 20%;
     padding: 0 0.6250em;
     }
 
@@ -253,6 +253,7 @@ table
     width: 100%;
     border-spacing: 0;
     margin-bottom: 1rem;
+    line-height: 1.15;
     }
 
     table th
@@ -292,7 +293,6 @@ table tfoot
         margin: 0;
         }
 
-
 .meter
     {
     position: relative;
@@ -319,4 +319,4 @@ table tfoot
         border-radius: 1em;
         padding: 1em;
         }
-    
+          
