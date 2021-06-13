@@ -11,6 +11,9 @@ def get_json(url):
 start_url = 'https://opendata.arcgis.com/api/v3/search?catalog[groupIds]=any(79dc9ae7552e4782bf66dadbdf049a0d,bcaad01ef27a4457b9c9406818eaca5d)'
 url = start_url
 
+header = ["Title","Owner","PageURL","AssetURL","DateCreated","DateUpdated","FileSize",
+          "FileSizeUnit","FileType","NumRecords","OriginalTags","ManualTags","License",
+          "Description"]
 datasets = []
 
 while True:
@@ -38,6 +41,7 @@ for e in datasets:
                             '%Y-%m-%d'),
                     # ^^ Should really do something better than defaulting to start of epoch
                     e['attributes'].get('size', ""),
+                    "bytes",
                     e['attributes'].get('type', ""),
                     e['attributes'].get('recordCount', ""),
                     ";".join(e['attributes'].get('tags', [])),
@@ -50,6 +54,7 @@ for e in datasets:
                     
 with open('renfrew.csv', 'w') as csvf:
     w = csv.writer(csvf, quoting=csv.QUOTE_MINIMAL)
+    w.writerow(header)
     for r in prepped:
         if r[-1]:
             r[-1] = r[-1].replace('\n', ' ')
