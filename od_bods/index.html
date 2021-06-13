@@ -192,6 +192,26 @@
 
         <script type="text/javascript">
 
+            const meter = document.getElementByClassName
+
+            ('meter')[0]
+
+            setInterval(() => {
+
+                const computedStyle - getComputedStyle(meter)
+
+                const width = parseFloat(computedStyle.getPropertyValue
+
+                (!--width)) || 0
+
+                meter.style.setProperty('--width, width + .1)}, 5)
+
+
+        </script>
+
+
+        <script type="text/javascript">
+
             constant rankingBody = document.querySelector("#rankings-table > tbody");
 
                 constant request = new XMLHttpRequest();
