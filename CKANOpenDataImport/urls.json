@@ -1,26 +1,26 @@
 [
   {
-    "SourceName": "Aberdeen",
+    "SourceName": "Aberdeen City Council",
     "Url": "https://data.aberdeencity.gov.uk/"
   },
   {
-    "SourceName": "Dundee",
+    "SourceName": "Dundee City Council",
     "Url": "https://data.dundeecity.gov.uk/"
   },
   {
-    "SourceName": "Edinburgh",
+    "SourceName": "City of Edinburgh Council",
     "Url": "https://data.edinburghcouncilmaps.info/"
   },
   {
-    "SourceName": "Glasgow",
+    "SourceName": "Glasgow City Council",
     "Url": "https://data.glasgow.gov.uk"
   },
   {
-    "SourceName": "Perth",
+    "SourceName": "Perth and Kinross Council",
     "Url": "https://data.pkc.gov.uk/"
   },
   {
-    "SourceName": "Stirling",
+    "SourceName": "Stirling Council",
     "Url": "https://data.stirling.gov.uk/"
   }
 ]
