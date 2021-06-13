@@ -30,7 +30,15 @@ We started by looking at Scottish Cities' open data portals (where these could b
 ## What we are building
 
 - A list of data sources and what they contain
- - script to pull data from existing platforms
+- Script to pull data from existing platforms
+   - CKAN
+   - ArcGIS
+- A front-end to present an aggregation of datasets from all the platforms
 
 
 ## Lessons Learned
+
+- There is a lack of good quality open datasets published by local authorities
+- There is no common taxonomy for categorising datasets
+- There is no facility to aggregate a common dataset accross all 32 local authorities (e.g. cycle paths)
+- There is no centralised, national portal for accessing open data in Scotland
