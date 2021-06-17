@@ -22,5 +22,9 @@
   {
     "SourceName": "Stirling Council",
     "Url": "https://data.stirling.gov.uk/"
+  },
+  {
+    "SourceName": "Angus Council",
+    "Url": "http://opendata.angus.gov.uk/"
   }
 ]
