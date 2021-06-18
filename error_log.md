@@ -12,4 +12,5 @@ The following pointers on Data.gov.uk no longer work
 
 - Aberdeen City Council https://ckan.publishing.service.gov.uk/publisher/aberdeen-city-council (5 data sets, 29 assets)
 - East Renfrewshire Council https://ckan.publishing.service.gov.uk/publisher/east-renfrewshire-council (5 data sets, 6 assets)
+
 Both have been reported to data.gov.uk
