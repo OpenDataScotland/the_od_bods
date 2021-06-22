@@ -26,7 +26,7 @@ class Dataset:
     num_records: int
     files: List[DataFile]
 
-fulld = pd.read_csv("../data/merged_output.csv")
+fulld = pd.read_csv("data/merged_output.csv")
 def ind(name):
     f = ['Unnamed: 0', 'Title', 'Owner', 'PageURL', 'AssetURL', 'DateCreated',
        'DateUpdated', 'FileSize', 'FileSizeUnit', 'FileType', 'NumRecords',
@@ -81,5 +81,5 @@ page = template.render(data=sorted(data.values(),
     key=lambda d: str(d.date_updated) if str(d.date_updated)!="nan" else str(d.date_created),
     reverse=True))
 
-with open("rendered_table.html", "w") as f:
+with open("docs/index.html", "w") as f:
     f.write(page)
