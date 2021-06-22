@@ -21,9 +21,9 @@
 	  <h2>OD Bods</h2>
 	  <div id="progress">
 	    <div class="meter">
-	      <span style="width: {{ data|length / 4800 }}%"></span>
+	      <span style="width: {{ data|length / 48 }}%"></span>
 	    </div>
-	    <p>We've found {{ data|length }} datasets (so far). With a
+	    <p>We've catalogued {{ data|length }} datasets so far. With a
 	    (conservative) estimate that each council would have 150
 	    datasets there should be around 4800 for the 32 Scottish
 	    councils, so {{ 4800 - data|length }} are still MIA...</p>
@@ -47,7 +47,8 @@
 	    </p>
 	    <p class="fileLinks">
 	      {% for f in d.files %}
-	      <a href="{{ f.url }}">{{ f.file_type }}.</a>({{ f.file_size }} {{ f.size_unit }})
+	      <a href="{{ f.url }}">{{ f.file_type }}.</a>
+	      {% if f.file_size %}({{ f.file_size }} {{ f.size_unit }}){% endif %}
 	      {% endfor %}
 	    </p>
 	    <p>From: {{ d.owner }}</p>
