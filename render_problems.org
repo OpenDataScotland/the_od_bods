@@ -1,0 +1,14 @@
+* Grouping sometimes groups too much
+Grouping based on PageURL sometimes groups multiple datasets together e.g. http://www.moray.gov.uk/moray_standard/page_110140.html actually has 8 datasets but they all collapse down to 1 with my code (and just get "Car Parks" metadata. Maybe use (hash of) more fields as key to the dict?
+
+Have now added title to the key and that looks to have improved things. 
+* NaN
+So many NaNs in the data...
+
+Should swap them out for something else either in the numpy array or when building Dataset objects from it. 
+** NaN for date
+Ends up sorted to top of the list
+* Created/updated flipped
+I think created and updated dates are the wrong way round for entries from CKAN - regularly have updated before created, or an updated date but no created.
+* Not all of the descriptions are markdown
+I'm rendering all the descriptions as if they are markdown but that's not the case for all of them. Might be mangling some. Or there might be a more appropriate rendering.
