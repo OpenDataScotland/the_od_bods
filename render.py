@@ -1,0 +1,85 @@
+from jinja2 import Environment, FileSystemLoader, Markup
+import pandas as pd
+from dataclasses import dataclass
+from typing import List
+from math import isnan
+import markdown
+
+@dataclass
+class DataFile:
+    url: str
+    size: float
+    size_unit: str
+    file_type: str
+
+@dataclass
+class Dataset:
+    title: str
+    owner: str
+    page_url: str
+    date_created: str
+    date_updated: str
+    original_tags: List[str]
+    manual_tags: List[str]
+    license: str
+    description: str
+    num_records: int
+    files: List[DataFile]
+
+fulld = pd.read_csv("data/merged_output.csv")
+def ind(name):
+    f = ['Unnamed: 0', 'Title', 'Owner', 'PageURL', 'AssetURL', 'DateCreated',
+       'DateUpdated', 'FileSize', 'FileSizeUnit', 'FileType', 'NumRecords',
+       'OriginalTags', 'ManualTags', 'License', 'Description', 'Source']
+    return f.index(name)
+
+def splittags(tags):
+    if type(tags) == str:
+        return tags.split(';')
+    else:
+        return []
+def makeint(val):
+    try:
+        return int(val)
+    except:
+        return None
+    
+data = {}
+for r in fulld.values:
+    id = str(r[ind('PageURL')]) + r[ind('Title')]
+    if id not in data:
+        ds = Dataset(
+            title = r[ind('Title')],
+            owner = r[ind('Owner')],
+            page_url = r[ind('PageURL')],
+            date_created = r[ind('DateCreated')],
+            date_updated = r[ind('DateUpdated')],
+            original_tags = splittags(r[ind('OriginalTags')]),
+            manual_tags = splittags(r[ind('ManualTags')]),
+            license = r[ind('License')],
+            description = str(r[ind('Description')]),
+            num_records = makeint(r[ind('NumRecords')]),
+            files = []
+        )
+        data[id] = ds
+    data[id].files.append(
+        DataFile(
+            url = r[ind('AssetURL')],
+            size = r[ind('FileSize')],
+            size_unit = r[ind('FileSizeUnit')],
+            file_type = r[ind('FileType')]
+        ))
+# print(data)
+print(len(data), ' records')
+
+md = markdown.Markdown()
+
+env = Environment(loader=FileSystemLoader("."))
+env.filters['markdown'] = lambda text: Markup(md.convert(text))
+template = env.get_template('table.html')
+page = template.render(data=sorted(data.values(),
+    key=lambda d: str(d.date_updated) if str(d.date_updated)!="nan" else str(d.date_created),
+    reverse=True))
+
+with open("docs/index.html", "w") as f:
+    f.write(page)

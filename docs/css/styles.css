@@ -296,14 +296,14 @@ table tfoot
 .meter
     {
     position: relative;
-    width: 500px;
+    width: 100%;
     height: 3em;
     background: #000;
     border-radius: 1.5em;
     color: white;
     }
 
-    .meter::before
+.meter > span
         {
         content: attr(data-label);
         display: flex;
@@ -312,9 +312,7 @@ table tfoot
         left: .5em;
         top: .5em;
         bottom: .5em;
-        width: calc(var(--width, 0) * 1%);
         min-width: 2rem;
-        max-width: calc(100% - 1em);
         background-color: #069;
         border-radius: 1em;
         padding: 1em;
