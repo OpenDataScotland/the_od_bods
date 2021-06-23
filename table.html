@@ -21,7 +21,7 @@
 	  <h2>OD Bods</h2>
 	  <div id="progress">
 	    <div class="meter">
-	      <span style="width: {{ data|length / 48 }}%"></span>
+	      <span style="width: {{ data|length / 48 }}%">{{ "%.2f"|format(data|length / 48) }}%</span>
 	    </div>
 	    <p>We've catalogued {{ data|length }} datasets so far. With a
 	    (conservative) estimate that each council would have 150
