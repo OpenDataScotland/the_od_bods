@@ -72,14 +72,21 @@ for r in fulld.values:
 # print(data)
 print(len(data), ' records')
 
+def sort_key(d):
+    if str(d.date_updated) != "nan":
+        return str(d.date_updated)
+    if str(d.date_created) != "nan":
+        return str(d.date_created)
+    return "0"
+
 md = markdown.Markdown()
 
 env = Environment(loader=FileSystemLoader("."))
 env.filters['markdown'] = lambda text: Markup(md.convert(text))
 template = env.get_template('table.html')
 page = template.render(data=sorted(data.values(),
-    key=lambda d: str(d.date_updated) if str(d.date_updated)!="nan" else str(d.date_created),
-    reverse=True))
+                                   key=sort_key,
+                                   reverse=True))
 
 with open("docs/index.html", "w") as f:
     f.write(page)
