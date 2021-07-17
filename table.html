@@ -28,7 +28,8 @@
 	      datasets there should be around 4800 for the 32 Scottish
 	      councils, so {{ 4800 - data|length }} are still MIA...</p>
 
-            <p><a href="analytics.html">Some analysis of the datasets from the different sources</a></p>
+              <p> See the analysis of <a href="analytics.html">what we've catalogued so far.</a> <!-- ' -->
+	      </p> 
 
 	  </div>
 	  
@@ -50,8 +51,11 @@
 	    </p>
 	    <p class="fileLinks">
 	      {% for f in d.files %}
-	      <a href="{{ f.url }}">{{ f.file_type }}.</a>
-	      {% if f.file_size %}({{ f.file_size }} {{ f.size_unit }}){% endif %}
+	        {% if f.url and f.file_type %}
+                  <a href="{{ f.url }}">{{ f.file_type }} </a>
+                {% endif %}
+                {% if f.file_type %}{{ f.file_type }}{% endif %}
+	        {% if f.file_size %}({{ f.file_size }} {{ f.size_unit }}){% endif %}
 	      {% endfor %}
 	    </p>
 	    <p>From: {{ d.owner }}</p>
@@ -60,21 +64,6 @@
 	  {% endfor %}
 
         </article>
-
-
-        <!-- progress bar -->
-
-        <article id="article">
-
-            <div class="meter" data-label="" style="width: 45%"></div>
-
-
-        </article>
-
-
         </main>
-
      </body>
-
-
 </html>
