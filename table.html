@@ -51,10 +51,13 @@
 	    </p>
 	    <p class="fileLinks">
 	      {% for f in d.files %}
-	        {% if f.url and f.file_type %}
-                  <a href="{{ f.url }}">{{ f.file_type }} </a>
-                {% endif %}
-                {% if f.file_type %}{{ f.file_type }}{% endif %}
+                {% if f.file_type %}
+                  {% if f.url %}
+                    <a href="{{ f.url }}">{{ f.file_type }} </a>
+                  {% else %}
+                    {{ f.file_type }}
+                  {% endif %}
+                {% endif %} 
 	        {% if f.file_size %}({{ f.file_size }} {{ f.size_unit }}){% endif %}
 	      {% endfor %}
 	    </p>
