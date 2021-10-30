@@ -83,10 +83,11 @@ md = markdown.Markdown()
 
 env = Environment(loader=FileSystemLoader("."))
 env.filters['markdown'] = lambda text: Markup(md.convert(text))
-template = env.get_template('table.html')
-page = template.render(data=sorted(data.values(),
-                                   key=sort_key,
-                                   reverse=True))
+template = env.get_template('dataset.md')
 
-with open("docs/index.html", "w") as f:
-    f.write(page)
+for k, ds in data.items():
+    page = template.render(d=ds)
+    fn = ds.title.replace(" ", "-").replace("/", "\\")
+    # ^^ need something better for filnames...
+    with open(f"_datasets/{fn}.md", "w") as f:
+        f.write(page)
