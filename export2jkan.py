@@ -4,6 +4,8 @@ from dataclasses import dataclass
 from typing import List
 from math import isnan
 import markdown
+import re
+import yaml
 
 @dataclass
 class DataFile:
@@ -35,6 +37,8 @@ def ind(name):
 
 def splittags(tags):
     if type(tags) == str:
+        if tags == "":
+            return []
         return tags.split(';')
     else:
         return []
@@ -83,10 +87,25 @@ md = markdown.Markdown()
 
 env = Environment(loader=FileSystemLoader("."))
 env.filters['markdown'] = lambda text: Markup(md.convert(text))
-template = env.get_template('table.html')
-page = template.render(data=sorted(data.values(),
-                                   key=sort_key,
-                                   reverse=True))
+template = env.get_template('dataset.md')
 
-with open("docs/index.html", "w") as f:
-    f.write(page)
+for k, ds in data.items():
+    y = {'schema': 'default', 'maintainer_email': 'someone@example.com'}
+    y['title'] = ds.title
+    y['organization'] = ds.owner
+    y['notes'] = markdown.markdown(ds.description)
+    y['resources'] = [{'name': 'Description',
+                       'url': ds.page_url,
+                       'format': 'html'}] + [{'name': d.file_type,
+                                              'url': d.url,
+                                              'format': d.file_type} for d in ds.files]
+    y['license'] = ds.license
+    y['category'] = ds.original_tags + ds.manual_tags
+    y['maintainer'] = ds.owner
+    fn = ds.owner + " - " + ds.title
+    fn = re.sub(r'[^\w\s-]', '', fn).strip()
+    # ^^ need something better for filnames...
+    with open(f"_datasets/{fn}.md", "w") as f:
+        f.write("---\n")
+        f.write(yaml.dump(y))
+        f.write("---\n")
