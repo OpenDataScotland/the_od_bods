@@ -2,21 +2,23 @@
 schema: default
 title: {{ d.title }}
 organization: {{ d.owner }}
-notes: {{ d.description }}
+notes: >-
+    {{ d.description|indent(4) }}
 resources:
-{% for df in d.files %}
+{%- for df in d.files %}
   - name: {{ d.title }} {{ df.file_type }}
-  - url: {{ df.url }}
+  - url: >-
+      {{ df.url }}
   - format: {{ df.file_type }}
-{% endfor %}
+{% endfor -%}
 license: {{ d.license }}
 category:
-{% for t in d.original_tags %}
+{% if d.original_tags %}{% for t in d.original_tags %}
   - {{ t }}
-{% endfor %}
-{% for t in d.manual_tags %}
+{%- endfor %}{% endif %}
+{% if d. manual_tags %}{% for t in d.manual_tags %}
   - {{ t }}
-{% endfor %}
-maintainer: Tim Wisniewski
-maintainer_email: tim@timwis.com
+{%- endfor %}{% endif -%}
+maintainer: {{ d.owner }}
+maintainer_email: someone@example.com
 ---

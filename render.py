@@ -4,6 +4,7 @@ from dataclasses import dataclass
 from typing import List
 from math import isnan
 import markdown
+import re
 
 @dataclass
 class DataFile:
@@ -35,6 +36,8 @@ def ind(name):
 
 def splittags(tags):
     if type(tags) == str:
+        if tags == "":
+            return []
         return tags.split(';')
     else:
         return []
@@ -87,7 +90,8 @@ template = env.get_template('dataset.md')
 
 for k, ds in data.items():
     page = template.render(d=ds)
-    fn = ds.title.replace(" ", "-").replace("/", "\\")
+    fn = ds.owner + " - " + ds.title
+    fn = re.sub(r'[^\w\s-]', '', fn).strip()
     # ^^ need something better for filnames...
     with open(f"_datasets/{fn}.md", "w") as f:
         f.write(page)
