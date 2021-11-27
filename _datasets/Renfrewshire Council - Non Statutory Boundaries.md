@@ -1,23 +1,20 @@
 ---
-schema: default
-title: Non Statutory Boundaries
-organization: Renfrewshire Council
-notes: >-
-    
-resources:
-  - name: Non Statutory Boundaries FEATURE SERVICE
-  - url: >-
-      
-  - format: FEATURE SERVICE
-license: 
 category:
-
-  - Boundaries
-  - Live Data
-  - Local Area Committee
-  - Wards
-  - Renfrewshire
-  - Open Data
+- Boundaries
+- Live Data
+- Local Area Committee
+- Wards
+- Renfrewshire
+- Open Data
+license: ''
 maintainer: Renfrewshire Council
 maintainer_email: someone@example.com
+notes: ''
+organization: Renfrewshire Council
+resources:
+- format: FEATURE SERVICE
+  name: Non Statutory Boundaries FEATURE SERVICE
+  url: ''
+schema: default
+title: Non Statutory Boundaries
 ---

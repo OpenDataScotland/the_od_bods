@@ -5,6 +5,7 @@ from typing import List
 from math import isnan
 import markdown
 import re
+import yaml
 
 @dataclass
 class DataFile:
@@ -89,9 +90,20 @@ env.filters['markdown'] = lambda text: Markup(md.convert(text))
 template = env.get_template('dataset.md')
 
 for k, ds in data.items():
-    page = template.render(d=ds)
+    y = {'schema': 'default', 'maintainer_email': 'someone@example.com'}
+    y['title'] = ds.title
+    y['organization'] = ds.owner
+    y['notes'] = ds.description
+    y['resources'] = [{'name': ds.title + " " + d.file_type,
+                       'url': d.url,
+                       'format': d.file_type} for d in ds.files]
+    y['license'] = ds.license
+    y['category'] = ds.original_tags + ds.manual_tags
+    y['maintainer'] = ds.owner
     fn = ds.owner + " - " + ds.title
     fn = re.sub(r'[^\w\s-]', '', fn).strip()
     # ^^ need something better for filnames...
     with open(f"_datasets/{fn}.md", "w") as f:
-        f.write(page)
+        f.write("---\n")
+        f.write(yaml.dump(y))
+        f.write("---\n")

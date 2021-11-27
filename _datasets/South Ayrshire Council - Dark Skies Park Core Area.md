@@ -1,20 +1,17 @@
 ---
-schema: default
-title: Dark Skies Park Core Area
-organization: South Ayrshire Council
-notes: >-
-    Central core area of the Gallway Dark Skies Park
-resources:
-  - name: Dark Skies Park Core Area FEATURE LAYER
-  - url: >-
-      
-  - format: FEATURE LAYER
-license: 
 category:
-
-  - boundaries
-  - tourism
-  - planning
+- boundaries
+- tourism
+- planning
+license: ''
 maintainer: South Ayrshire Council
 maintainer_email: someone@example.com
+notes: Central core area of the Gallway Dark Skies Park
+organization: South Ayrshire Council
+resources:
+- format: FEATURE LAYER
+  name: Dark Skies Park Core Area FEATURE LAYER
+  url: ''
+schema: default
+title: Dark Skies Park Core Area
 ---

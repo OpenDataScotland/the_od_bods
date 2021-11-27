@@ -1,24 +1,21 @@
 ---
-schema: default
-title: Adult and Community Learning Centres
-organization: Renfrewshire Council
-notes: >-
-    Education
-resources:
-  - name: Adult and Community Learning Centres FEATURE LAYER
-  - url: >-
-      
-  - format: FEATURE LAYER
-license: 
 category:
-
-  - Education
-  - Open Data
-  - School
-  - Nursery
-  - ASN
-  - Learning
-  - Catchment Areas
+- Education
+- Open Data
+- School
+- Nursery
+- ASN
+- Learning
+- Catchment Areas
+license: ''
 maintainer: Renfrewshire Council
 maintainer_email: someone@example.com
+notes: Education
+organization: Renfrewshire Council
+resources:
+- format: FEATURE LAYER
+  name: Adult and Community Learning Centres FEATURE LAYER
+  url: ''
+schema: default
+title: Adult and Community Learning Centres
 ---

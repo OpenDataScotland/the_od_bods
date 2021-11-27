@@ -1,24 +1,21 @@
 ---
-schema: default
-title: Additional Support Need Schools
-organization: Renfrewshire Council
-notes: >-
-    Education
-resources:
-  - name: Additional Support Need Schools FEATURE LAYER
-  - url: >-
-      
-  - format: FEATURE LAYER
-license: 
 category:
-
-  - Education
-  - Open Data
-  - School
-  - Nursery
-  - ASN
-  - Learning
-  - Catchment Areas
+- Education
+- Open Data
+- School
+- Nursery
+- ASN
+- Learning
+- Catchment Areas
+license: ''
 maintainer: Renfrewshire Council
 maintainer_email: someone@example.com
+notes: Education
+organization: Renfrewshire Council
+resources:
+- format: FEATURE LAYER
+  name: Additional Support Need Schools FEATURE LAYER
+  url: ''
+schema: default
+title: Additional Support Need Schools
 ---

@@ -1,20 +1,17 @@
 ---
-schema: default
-title: Table thumbnail
-organization: Renfrewshire Council
-notes: >-
-    
-resources:
-  - name: Table thumbnail IMAGE
-  - url: >-
-      
-  - format: IMAGE
-license: 
 category:
-
-  - Table
-  - Open Data
-  - Renfrewshire
+- Table
+- Open Data
+- Renfrewshire
+license: ''
 maintainer: Renfrewshire Council
 maintainer_email: someone@example.com
+notes: ''
+organization: Renfrewshire Council
+resources:
+- format: IMAGE
+  name: Table thumbnail IMAGE
+  url: ''
+schema: default
+title: Table thumbnail
 ---

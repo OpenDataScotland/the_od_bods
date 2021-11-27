@@ -1,19 +1,16 @@
 ---
-schema: default
-title: Country Parks
-organization: South Ayrshire Council
-notes: >-
-    Extent of Country Parks in area
-resources:
-  - name: Country Parks FEATURE LAYER
-  - url: >-
-      
-  - format: FEATURE LAYER
-license: 
 category:
-
-  - environment
-  - tourism
+- environment
+- tourism
+license: ''
 maintainer: South Ayrshire Council
 maintainer_email: someone@example.com
+notes: Extent of Country Parks in area
+organization: South Ayrshire Council
+resources:
+- format: FEATURE LAYER
+  name: Country Parks FEATURE LAYER
+  url: ''
+schema: default
+title: Country Parks
 ---

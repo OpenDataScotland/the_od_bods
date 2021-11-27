@@ -1,19 +1,16 @@
 ---
-schema: default
-title: Renfrewshire Open Data Platform Guide
-organization: Renfrewshire Council
-notes: >-
-    
-resources:
-  - name: Renfrewshire Open Data Platform Guide WEB MAPPING APPLICATION
-  - url: >-
-      
-  - format: WEB MAPPING APPLICATION
-license: 
 category:
-
-  - Renfrewshire
-  - Open Data
+- Renfrewshire
+- Open Data
+license: ''
 maintainer: Renfrewshire Council
 maintainer_email: someone@example.com
+notes: ''
+organization: Renfrewshire Council
+resources:
+- format: WEB MAPPING APPLICATION
+  name: Renfrewshire Open Data Platform Guide WEB MAPPING APPLICATION
+  url: ''
+schema: default
+title: Renfrewshire Open Data Platform Guide
 ---

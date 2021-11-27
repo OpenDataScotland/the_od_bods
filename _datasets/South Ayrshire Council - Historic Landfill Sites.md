@@ -1,20 +1,17 @@
 ---
-schema: default
-title: Historic Landfill Sites
-organization: South Ayrshire Council
-notes: >-
-    Areas used historically for landfill
-resources:
-  - name: Historic Landfill Sites FEATURE LAYER
-  - url: >-
-      
-  - format: FEATURE LAYER
-license: 
 category:
-
-  - environment
-  - waste
-  - historic
+- environment
+- waste
+- historic
+license: ''
 maintainer: South Ayrshire Council
 maintainer_email: someone@example.com
+notes: Areas used historically for landfill
+organization: South Ayrshire Council
+resources:
+- format: FEATURE LAYER
+  name: Historic Landfill Sites FEATURE LAYER
+  url: ''
+schema: default
+title: Historic Landfill Sites
 ---

@@ -1,19 +1,16 @@
 ---
-schema: default
-title: WeaversCottageKilbarchan
-organization: Renfrewshire Council
-notes: >-
-    
-resources:
-  - name: WeaversCottageKilbarchan IMAGE
-  - url: >-
-      
-  - format: IMAGE
-license: 
 category:
-
-  - Open Data
-  - Renfrewshire
+- Open Data
+- Renfrewshire
+license: ''
 maintainer: Renfrewshire Council
 maintainer_email: someone@example.com
+notes: ''
+organization: Renfrewshire Council
+resources:
+- format: IMAGE
+  name: WeaversCottageKilbarchan IMAGE
+  url: ''
+schema: default
+title: WeaversCottageKilbarchan
 ---

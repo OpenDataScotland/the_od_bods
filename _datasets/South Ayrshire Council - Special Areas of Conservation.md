@@ -1,21 +1,18 @@
 ---
-schema: default
-title: Special Areas of Conservation
-organization: South Ayrshire Council
-notes: >-
-    Special areas of conservation in Ayrshire
-resources:
-  - name: Special Areas of Conservation FEATURE LAYER
-  - url: >-
-      
-  - format: FEATURE LAYER
-license: 
 category:
-
-  - boundaries
-  - environment
-  - conservation
-  - planning
+- boundaries
+- environment
+- conservation
+- planning
+license: ''
 maintainer: South Ayrshire Council
 maintainer_email: someone@example.com
+notes: Special areas of conservation in Ayrshire
+organization: South Ayrshire Council
+resources:
+- format: FEATURE LAYER
+  name: Special Areas of Conservation FEATURE LAYER
+  url: ''
+schema: default
+title: Special Areas of Conservation
 ---

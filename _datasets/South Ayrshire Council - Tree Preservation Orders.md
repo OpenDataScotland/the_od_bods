@@ -1,21 +1,18 @@
 ---
-schema: default
-title: Tree Preservation Orders
-organization: South Ayrshire Council
-notes: >-
-    Tree presevation orders in force across the area
-resources:
-  - name: Tree Preservation Orders FEATURE LAYER
-  - url: >-
-      
-  - format: FEATURE LAYER
-license: 
 category:
-
-  - planning
-  - conservation
-  - environment
-  - woodland
+- planning
+- conservation
+- environment
+- woodland
+license: ''
 maintainer: South Ayrshire Council
 maintainer_email: someone@example.com
+notes: Tree presevation orders in force across the area
+organization: South Ayrshire Council
+resources:
+- format: FEATURE LAYER
+  name: Tree Preservation Orders FEATURE LAYER
+  url: ''
+schema: default
+title: Tree Preservation Orders
 ---

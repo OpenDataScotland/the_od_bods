@@ -1,18 +1,15 @@
 ---
-schema: default
-title: paisley is
-organization: Renfrewshire Council
-notes: >-
-    
-resources:
-  - name: paisley is IMAGE
-  - url: >-
-      
-  - format: IMAGE
-license: 
 category:
-
-  - paisley is
+- paisley is
+license: ''
 maintainer: Renfrewshire Council
 maintainer_email: someone@example.com
+notes: ''
+organization: Renfrewshire Council
+resources:
+- format: IMAGE
+  name: paisley is IMAGE
+  url: ''
+schema: default
+title: paisley is
 ---

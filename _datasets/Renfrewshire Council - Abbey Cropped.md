@@ -1,18 +1,15 @@
 ---
-schema: default
-title: Abbey Cropped 
-organization: Renfrewshire Council
-notes: >-
-    
-resources:
-  - name: Abbey Cropped  IMAGE
-  - url: >-
-      
-  - format: IMAGE
-license: 
 category:
-
-  - Open Data
+- Open Data
+license: ''
 maintainer: Renfrewshire Council
 maintainer_email: someone@example.com
+notes: ''
+organization: Renfrewshire Council
+resources:
+- format: IMAGE
+  name: Abbey Cropped  IMAGE
+  url: ''
+schema: default
+title: 'Abbey Cropped '
 ---

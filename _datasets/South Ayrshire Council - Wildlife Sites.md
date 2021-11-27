@@ -1,20 +1,17 @@
 ---
-schema: default
-title: Wildlife Sites
-organization: South Ayrshire Council
-notes: >-
-    Areas depicting wildlife sites South Ayrshire
-resources:
-  - name: Wildlife Sites FEATURE LAYER
-  - url: >-
-      
-  - format: FEATURE LAYER
-license: 
 category:
-
-  - environment
-  - conservation
-  - wildlife
+- environment
+- conservation
+- wildlife
+license: ''
 maintainer: South Ayrshire Council
 maintainer_email: someone@example.com
+notes: Areas depicting wildlife sites South Ayrshire
+organization: South Ayrshire Council
+resources:
+- format: FEATURE LAYER
+  name: Wildlife Sites FEATURE LAYER
+  url: ''
+schema: default
+title: Wildlife Sites
 ---

@@ -1,18 +1,15 @@
 ---
-schema: default
-title: Partnership Logo
-organization: Renfrewshire Council
-notes: >-
-    
-resources:
-  - name: Partnership Logo IMAGE
-  - url: >-
-      
-  - format: IMAGE
-license: 
 category:
-
-  - Open Data Platform
+- Open Data Platform
+license: ''
 maintainer: Renfrewshire Council
 maintainer_email: someone@example.com
+notes: ''
+organization: Renfrewshire Council
+resources:
+- format: IMAGE
+  name: Partnership Logo IMAGE
+  url: ''
+schema: default
+title: Partnership Logo
 ---

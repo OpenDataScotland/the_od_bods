@@ -1,19 +1,16 @@
 ---
+category:
+- Schools
+- ' education'
+license: Open Government Licence 3.0 (United Kingdom)
+maintainer: Aberdeenshire Council
+maintainer_email: someone@example.com
+notes: ''
+organization: Aberdeenshire Council
+resources:
+- format: KMZ
+  name: Secondary school locations within Aberdeenshire KMZ
+  url: https://online.aberdeenshire.gov.uk/apps/OpenData/kml/aberdeenshire_secondary_school_locations.kmz
 schema: default
 title: Secondary school locations within Aberdeenshire
-organization: Aberdeenshire Council
-notes: >-
-    
-resources:
-  - name: Secondary school locations within Aberdeenshire KMZ
-  - url: >-
-      https://online.aberdeenshire.gov.uk/apps/OpenData/kml/aberdeenshire_secondary_school_locations.kmz
-  - format: KMZ
-license: Open Government Licence 3.0 (United Kingdom)
-category:
-
-
-  - Schools
-  -  educationmaintainer: Aberdeenshire Council
-maintainer_email: someone@example.com
 ---

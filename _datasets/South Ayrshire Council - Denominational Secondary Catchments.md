@@ -1,20 +1,17 @@
 ---
-schema: default
-title: Denominational Secondary Catchments
-organization: South Ayrshire Council
-notes: >-
-    Areas depicting catchment zones for denominational secondary schools
-resources:
-  - name: Denominational Secondary Catchments FEATURE LAYER
-  - url: >-
-      
-  - format: FEATURE LAYER
-license: 
 category:
-
-  - boundaries
-  - schools
-  - education
+- boundaries
+- schools
+- education
+license: ''
 maintainer: South Ayrshire Council
 maintainer_email: someone@example.com
+notes: Areas depicting catchment zones for denominational secondary schools
+organization: South Ayrshire Council
+resources:
+- format: FEATURE LAYER
+  name: Denominational Secondary Catchments FEATURE LAYER
+  url: ''
+schema: default
+title: Denominational Secondary Catchments
 ---

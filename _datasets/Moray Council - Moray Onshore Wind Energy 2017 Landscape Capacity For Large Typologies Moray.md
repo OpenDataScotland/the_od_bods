@@ -1,19 +1,17 @@
 ---
-schema: default
-title: Moray Onshore Wind Energy 2017 Landscape Capacity For Large Typologies (Moray)
-organization: Moray Council
-notes: >-
-    Moray Onshore Wind Energy 2017 Landscape Capacity For Large Typologies (Moray)
-resources:
-  - name: Moray Onshore Wind Energy 2017 Landscape Capacity For Large Typologies (Moray) FEATURE LAYER
-  - url: >-
-      
-  - format: FEATURE LAYER
-license: 
 category:
-
-  - Planning
-  - INSPIRE
+- Planning
+- INSPIRE
+license: ''
 maintainer: Moray Council
 maintainer_email: someone@example.com
+notes: Moray Onshore Wind Energy 2017 Landscape Capacity For Large Typologies (Moray)
+organization: Moray Council
+resources:
+- format: FEATURE LAYER
+  name: Moray Onshore Wind Energy 2017 Landscape Capacity For Large Typologies (Moray)
+    FEATURE LAYER
+  url: ''
+schema: default
+title: Moray Onshore Wind Energy 2017 Landscape Capacity For Large Typologies (Moray)
 ---

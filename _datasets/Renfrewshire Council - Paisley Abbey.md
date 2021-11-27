@@ -1,19 +1,16 @@
 ---
-schema: default
-title: Paisley Abbey
-organization: Renfrewshire Council
-notes: >-
-    
-resources:
-  - name: Paisley Abbey IMAGE
-  - url: >-
-      
-  - format: IMAGE
-license: 
 category:
-
-  - Open Data
-  - Renfrewshire
+- Open Data
+- Renfrewshire
+license: ''
 maintainer: Renfrewshire Council
 maintainer_email: someone@example.com
+notes: ''
+organization: Renfrewshire Council
+resources:
+- format: IMAGE
+  name: Paisley Abbey IMAGE
+  url: ''
+schema: default
+title: Paisley Abbey
 ---

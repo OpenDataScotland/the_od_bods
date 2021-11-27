@@ -1,19 +1,16 @@
 ---
-schema: default
-title: Renfrewshire
-organization: Renfrewshire Council
-notes: >-
-    
-resources:
-  - name: Renfrewshire IMAGE
-  - url: >-
-      
-  - format: IMAGE
-license: 
 category:
-
-  - Open Data
-  - Renfrewshire
+- Open Data
+- Renfrewshire
+license: ''
 maintainer: Renfrewshire Council
 maintainer_email: someone@example.com
+notes: ''
+organization: Renfrewshire Council
+resources:
+- format: IMAGE
+  name: Renfrewshire IMAGE
+  url: ''
+schema: default
+title: Renfrewshire
 ---
