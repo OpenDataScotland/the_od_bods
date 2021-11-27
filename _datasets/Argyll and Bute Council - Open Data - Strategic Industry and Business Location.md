@@ -7,11 +7,14 @@ category:
 license: ''
 maintainer: Argyll and Bute Council
 maintainer_email: someone@example.com
-notes: Strategic Industry and Business Location in the 2015 Local Development Plan
+notes: <p>Strategic Industry and Business Location in the 2015 Local Development Plan</p>
 organization: Argyll and Bute Council
 resources:
+- format: html
+  name: Description
+  url: https://www.arcgis.com/home/item.html?id=15d53172ebd44cf4a82edf108d8a9b3c
 - format: FEATURE LAYER
-  name: Open Data - Strategic Industry and Business Location FEATURE LAYER
+  name: FEATURE LAYER
   url: ''
 schema: default
 title: Open Data - Strategic Industry and Business Location

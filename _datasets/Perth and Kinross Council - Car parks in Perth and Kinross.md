@@ -4,26 +4,29 @@ category:
 license: Open Government Licence 3.0 (United Kingdom)
 maintainer: Perth and Kinross Council
 maintainer_email: someone@example.com
-notes: Location of various car parks in Perth and Kinross.
+notes: <p>Location of various car parks in Perth and Kinross.</p>
 organization: Perth and Kinross Council
 resources:
+- format: html
+  name: Description
+  url: https://data.pkc.gov.uk/dataset/car-parks-in-pkc
 - format: HTML
-  name: Car parks in Perth and Kinross HTML
+  name: HTML
   url: http://opendata-pkc.opendata.arcgis.com/datasets/5bf68327e1eb4001a45191b37e248b9b_0
 - format: ESRI REST
-  name: Car parks in Perth and Kinross ESRI REST
+  name: ESRI REST
   url: https://services.arcgis.com/pfFDYSlYcp7mabvZ/arcgis/rest/services/Car_parking_points/FeatureServer/0
 - format: GEOJSON
-  name: Car parks in Perth and Kinross GEOJSON
+  name: GEOJSON
   url: http://opendata-pkc.opendata.arcgis.com/datasets/5bf68327e1eb4001a45191b37e248b9b_0.geojson
 - format: CSV
-  name: Car parks in Perth and Kinross CSV
+  name: CSV
   url: http://opendata-pkc.opendata.arcgis.com/datasets/5bf68327e1eb4001a45191b37e248b9b_0.csv
 - format: KML
-  name: Car parks in Perth and Kinross KML
+  name: KML
   url: http://opendata-pkc.opendata.arcgis.com/datasets/5bf68327e1eb4001a45191b37e248b9b_0.kml
 - format: ZIP
-  name: Car parks in Perth and Kinross ZIP
+  name: ZIP
   url: http://opendata-pkc.opendata.arcgis.com/datasets/5bf68327e1eb4001a45191b37e248b9b_0.zip
 schema: default
 title: Car parks in Perth and Kinross

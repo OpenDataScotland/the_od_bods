@@ -4,28 +4,30 @@ category:
 license: Open Government Licence 3.0 (United Kingdom)
 maintainer: Perth and Kinross Council
 maintainer_email: someone@example.com
-notes: 'Boundaries for secondary school catchment areas excluding Roman Catholic Schools.
-
-  '
+notes: <p>Boundaries for secondary school catchment areas excluding Roman Catholic
+  Schools.</p>
 organization: Perth and Kinross Council
 resources:
+- format: html
+  name: Description
+  url: https://data.pkc.gov.uk/dataset/secondary-school-catchments
 - format: HTML
-  name: Secondary School Catchments HTML
+  name: HTML
   url: http://opendata-pkc.opendata.arcgis.com/datasets/95f83f651901440292a82ae2f737828d_0
 - format: ESRI REST
-  name: Secondary School Catchments ESRI REST
+  name: ESRI REST
   url: https://services.arcgis.com/pfFDYSlYcp7mabvZ/arcgis/rest/services/Secondary_School_Catchments/FeatureServer/0
 - format: GEOJSON
-  name: Secondary School Catchments GEOJSON
+  name: GEOJSON
   url: http://opendata-pkc.opendata.arcgis.com/datasets/95f83f651901440292a82ae2f737828d_0.geojson
 - format: CSV
-  name: Secondary School Catchments CSV
+  name: CSV
   url: http://opendata-pkc.opendata.arcgis.com/datasets/95f83f651901440292a82ae2f737828d_0.csv
 - format: KML
-  name: Secondary School Catchments KML
+  name: KML
   url: http://opendata-pkc.opendata.arcgis.com/datasets/95f83f651901440292a82ae2f737828d_0.kml
 - format: ZIP
-  name: Secondary School Catchments ZIP
+  name: ZIP
   url: http://opendata-pkc.opendata.arcgis.com/datasets/95f83f651901440292a82ae2f737828d_0.zip
 schema: default
 title: Secondary School Catchments

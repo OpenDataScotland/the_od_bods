@@ -6,7 +6,7 @@ category:
 license: ''
 maintainer: Argyll and Bute Council
 maintainer_email: someone@example.com
-notes: "Areas for Action designated in the Argyll and Bute adopted Local Development\
+notes: "<p>Areas for Action designated in the Argyll and Bute adopted Local Development\
   \ Plan 2015.\_ Subject to resource availability during the plan-period, these areas\
   \ will be the focus for partnership or community action. Area remits for these AFAs\
   \ are being worked up in the Supplementary Information and Guidance report; these\
@@ -14,11 +14,14 @@ notes: "Areas for Action designated in the Argyll and Bute adopted Local Develop
   \ management programmes, development and redevelopment proposals, infrastructure\
   \ provision and environmental enhancement proposals. Depending on circumstances,\
   \ AFAs may coincide with other categories of sites such as potential development\
-  \ areas."
+  \ areas.</p>"
 organization: Argyll and Bute Council
 resources:
+- format: html
+  name: Description
+  url: https://www.arcgis.com/home/item.html?id=07e827d3a3ea414a997a1eef6ab29f24
 - format: FEATURE LAYER
-  name: Open Data - Area for Action FEATURE LAYER
+  name: FEATURE LAYER
   url: ''
 schema: default
 title: Open Data - Area for Action

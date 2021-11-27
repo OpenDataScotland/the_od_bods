@@ -7,8 +7,11 @@ maintainer_email: someone@example.com
 notes: ''
 organization: East Ayrshire
 resources:
+- format: html
+  name: Description
+  url: https://www.east-ayrshire.gov.uk/CouncilAndGovernment/About-the-Council/Information-and-statistics/Open-Data.aspx
 - format: CSV
-  name: Secondary School Contact Details CSV
+  name: CSV
   url: https://www.east-ayrshire.gov.uk/Resources/CSV/Open-Data-002-Secondary-School-Contacts.csv
 schema: default
 title: Secondary School Contact Details

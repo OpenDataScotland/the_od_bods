@@ -4,7 +4,7 @@ category:
 license: Open Government Licence 3.0 (United Kingdom)
 maintainer: Dundee City Council
 maintainer_email: someone@example.com
-notes: "Allotments are plots of land that are rented by individuals or organisations\
+notes: "<p>Allotments are plots of land that are rented by individuals or organisations\
   \ for the purpose of growing fruit, vegetables and/or flowers. There are several\
   \ allotment sites in Dundee but not all of them are run by the council itself. Dundee\
   \ City Council has four sites: Arklay Terrace, Ancrum Road, Magdalen Green and Macaulay\
@@ -14,23 +14,26 @@ notes: "Allotments are plots of land that are rented by individuals or organisat
   \ Allotment charges are currently set at \xA35.10 (\xA34.10 concession) per annum\
   \ per pole (a unit of area of about 25 m2). Allotment sizes vary slightly so the\
   \ total cost is different for each plot but a full size plot averages 10 poles and\
-  \ would therefore cost about \xA351 per year."
+  \ would therefore cost about \xA351 per year.</p>"
 organization: Dundee City Council
 resources:
+- format: html
+  name: Description
+  url: https://data.dundeecity.gov.uk/dataset/allotments
 - format: CSV
-  name: Allotments CSV
+  name: CSV
   url: http://inspire.dundeecity.gov.uk/geoserver/opendata/wfs?version=2.0.0&service=wfs&request=GetFeature&typeName=opendata:ALLOTMENTS&outputFormat=csv
 - format: ZIP
-  name: Allotments ZIP
+  name: ZIP
   url: http://inspire.dundeecity.gov.uk/geoserver/opendata/wfs?version=2.0.0&service=wfs&request=GetFeature&typeName=opendata:ALLOTMENTS&outputFormat=SHAPE-ZIP
 - format: GEOJSON
-  name: Allotments GEOJSON
+  name: GEOJSON
   url: http://inspire.dundeecity.gov.uk/geoserver/opendata/wfs?version=2.0.0&service=wfs&request=GetFeature&typeName=opendata:ALLOTMENTS&outputFormat=json
 - format: WMS
-  name: Allotments WMS
+  name: WMS
   url: http://inspire.dundeecity.gov.uk/geoserver/opendata/wms?service=WMS&version=1.3.0&request=getCapabilities
 - format: WFS
-  name: Allotments WFS
+  name: WFS
   url: http://inspire.dundeecity.gov.uk/geoserver/opendata/wfs?service=WFS&version=1.1.0&request=getCapabilities
 schema: default
 title: Allotments

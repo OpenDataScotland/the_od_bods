@@ -6,8 +6,8 @@ category:
 license: ''
 maintainer: Moray Council
 maintainer_email: someone@example.com
-notes: "The Local Development Plan 2015 was superseded by the Local Development Plan\
-  \ 2020 on 27 July 2020.Local Development Plan Rural Grouping Boundaries depicts\
+notes: "<p>The Local Development Plan 2015 was superseded by the Local Development\
+  \ Plan 2020 on 27 July 2020.Local Development Plan Rural Grouping Boundaries depicts\
   \ the small villages/groupings/clusters of houses that will be covered by Policy\
   \ H5 (LDP2015). Proposals associated with any other location will be dealt with\
   \ under H7 (LDP2015), and assessed against criteria such as visual prominence; character;\
@@ -20,11 +20,14 @@ notes: "The Local Development Plan 2015 was superseded by the Local Development 
   \ area, with the presence of one or more community facilities (school/hall/shop).\
   \ In subsequent Plans, the requirement for community facilities has been reduced,\
   \ and further groupings have been designated based on their status as a cohesive,\
-  \ physical grouping. Consolidation of these remains the preference."
+  \ physical grouping. Consolidation of these remains the preference.</p>"
 organization: Moray Council
 resources:
+- format: html
+  name: Description
+  url: https://www.arcgis.com/home/item.html?id=4a37fbbf212d46ed90f5e87eaabdda02
 - format: FEATURE LAYER
-  name: Local Development Plan Rural Groupings (Moray) FEATURE LAYER
+  name: FEATURE LAYER
   url: ''
 schema: default
 title: Local Development Plan Rural Groupings (Moray)

@@ -8,13 +8,16 @@ category:
 license: ''
 maintainer: Renfrewshire Council
 maintainer_email: someone@example.com
-notes: 'Community Councils within Renfrewshire. Community Councils play an active
+notes: <p>Community Councils within Renfrewshire. Community Councils play an active
   role in expressing the views and concerns of local people within their area on a
-  wide range of issues of public interest.The layer includes population figures. '
+  wide range of issues of public interest.The layer includes population figures. </p>
 organization: Renfrewshire Council
 resources:
+- format: html
+  name: Description
+  url: https://www.arcgis.com/home/item.html?id=08b01bbb82314f15a0c921213aaf241a
 - format: FEATURE LAYER
-  name: Community Councils 2017 FEATURE LAYER
+  name: FEATURE LAYER
   url: ''
 schema: default
 title: Community Councils 2017

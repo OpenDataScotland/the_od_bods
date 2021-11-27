@@ -7,7 +7,7 @@ category:
 license: UK Open Government Licence (OGL)
 maintainer: Angus Council
 maintainer_email: someone@example.com
-notes: "School Roll Forecasts\nView our 2017 based school roll forecasts for Angus\u2019\
+notes: "<p>School Roll Forecasts\nView our 2017 based school roll forecasts for Angus\u2019\
   s primary and secondary schools until 2023.\nThe forecasts take as their starting\
   \ point the current school population. They then attempt to identify how that population\
   \ may change over time. In doing so they take into account demographic factors such\
@@ -29,14 +29,17 @@ notes: "School Roll Forecasts\nView our 2017 based school roll forecasts for Ang
   \ can be disproportionately affected, either positively or negatively, by the movement\
   \ of one or two families. School forecasts, therefore, can, and often do, change\
   \ from year to year. They remain the best estimate that can be arrived at, using\
-  \ data currently available. \n"
+  \ data currently available. </p>"
 organization: Angus Council
 resources:
+- format: html
+  name: Description
+  url: http://opendata.angus.gov.uk/dataset/school-roll-forecasts-2019-2023
 - format: CSV
-  name: School Roll Forecasts 2019-2023 CSV
+  name: CSV
   url: http://opendata.angus.gov.uk/dataset/1dd909a2-8045-41be-aae8-630a3841fd22/resource/898e5eed-6a12-4f8f-a61b-da6c87071d0c/download/school-roll-forecasts-2019-2023.csv
 - format: TXT
-  name: School Roll Forecasts 2019-2023 TXT
+  name: TXT
   url: http://opendata.angus.gov.uk/dataset/1dd909a2-8045-41be-aae8-630a3841fd22/resource/80dd3883-3784-4de3-858e-01ca3f2167c8/download/notes-for-roll-forecasts.txt
 schema: default
 title: School Roll Forecasts 2019-2023

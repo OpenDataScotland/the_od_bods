@@ -6,9 +6,9 @@ category:
 license: ''
 maintainer: Renfrewshire Council
 maintainer_email: someone@example.com
-notes: "Mid-year population estimates: Scotland and Renfrewshire by single year of\
-  \ age and sex 1981 to 2018.Annual publication of mid-year population estimates by\
-  \ age and sex as at 30 June every year, where population for higher geographies\
+notes: "<p>Mid-year population estimates: Scotland and Renfrewshire by single year\
+  \ of age and sex 1981 to 2018.Annual publication of mid-year population estimates\
+  \ by age and sex as at 30 June every year, where population for higher geographies\
   \ is aggregated from the population estimates for 2011 Data Zones.Data zones are\
   \ the small area geography used by the Scottish Government to allow statistics to\
   \ be available across a number of policy areas. Data zones were initially set up\
@@ -25,11 +25,14 @@ notes: "Mid-year population estimates: Scotland and Renfrewshire by single year 
   \ in Scotland. More information on intermediate geography can be found on the\_\
   Scottish Government\_website.For more information on population statistics, please\
   \ see the NRS website here:\_https://www.nrscotland.gov.uk/statistics-and-data/statistics/statistics-by-theme/population/population-estimates/mid-year-population-estimatesSingle\
-  \ year of age population estimates are available on the NRS website here:\_https://www.nrscotland.gov.uk/statistics-and-data/statistics/statistics-by-theme/population/population-estimates/2011-based-special-area-population-estimates/small-area-population-estimates"
+  \ year of age population estimates are available on the NRS website here:\_https://www.nrscotland.gov.uk/statistics-and-data/statistics/statistics-by-theme/population/population-estimates/2011-based-special-area-population-estimates/small-area-population-estimates</p>"
 organization: Renfrewshire Council
 resources:
+- format: html
+  name: Description
+  url: https://www.arcgis.com/home/item.html?id=15c9fe9deaaf405ca361cd632cc7cfba
 - format: TABLE
-  name: Mid year 2018 population estimate TABLE
+  name: TABLE
   url: ''
 schema: default
 title: Mid year 2018 population estimate

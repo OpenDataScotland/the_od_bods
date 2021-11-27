@@ -12,8 +12,11 @@ maintainer_email: someone@example.com
 notes: ''
 organization: Renfrewshire Council
 resources:
+- format: html
+  name: Description
+  url: https://www.arcgis.com/home/item.html?id=c86021e027d141969ead4a69f3c569ff
 - format: FEATURE SERVICE
-  name: Non Statutory Boundaries FEATURE SERVICE
+  name: FEATURE SERVICE
   url: ''
 schema: default
 title: Non Statutory Boundaries

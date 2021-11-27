@@ -8,8 +8,11 @@ maintainer_email: someone@example.com
 notes: ''
 organization: Aberdeenshire Council
 resources:
+- format: html
+  name: Description
+  url: https://www.aberdeenshire.gov.uk/online/open-data/
 - format: CSV
-  name: Contracts register CSV
+  name: CSV
   url: http://online.aberdeenshire.gov.uk/apps/opendata/csv/contractsregister.csv
 schema: default
 title: Contracts register

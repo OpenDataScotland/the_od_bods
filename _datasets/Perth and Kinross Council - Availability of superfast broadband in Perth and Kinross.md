@@ -19,23 +19,26 @@ notes: "<table><tbody><tr><td></td></tr><tr><td></td><td>Availability of Superfa
   \ More information from - https://www.ofcom.org.uk/research-and-data/multi-sector-research/infrastructure-research/connected-nations-update-spring-2018</td></tr></tbody></table>"
 organization: Perth and Kinross Council
 resources:
+- format: html
+  name: Description
+  url: https://data.pkc.gov.uk/dataset/availability-of-superfast-broadband-in-pkc
 - format: HTML
-  name: Availability of superfast broadband in Perth and Kinross HTML
+  name: HTML
   url: http://opendata-pkc.opendata.arcgis.com/datasets/e6e7993e5ed446738eb95d0531785025_0
 - format: ESRI REST
-  name: Availability of superfast broadband in Perth and Kinross ESRI REST
+  name: ESRI REST
   url: https://services.arcgis.com/pfFDYSlYcp7mabvZ/arcgis/rest/services/SuperfastBroadband/FeatureServer/0
 - format: GEOJSON
-  name: Availability of superfast broadband in Perth and Kinross GEOJSON
+  name: GEOJSON
   url: http://opendata-pkc.opendata.arcgis.com/datasets/e6e7993e5ed446738eb95d0531785025_0.geojson
 - format: CSV
-  name: Availability of superfast broadband in Perth and Kinross CSV
+  name: CSV
   url: http://opendata-pkc.opendata.arcgis.com/datasets/e6e7993e5ed446738eb95d0531785025_0.csv
 - format: KML
-  name: Availability of superfast broadband in Perth and Kinross KML
+  name: KML
   url: http://opendata-pkc.opendata.arcgis.com/datasets/e6e7993e5ed446738eb95d0531785025_0.kml
 - format: ZIP
-  name: Availability of superfast broadband in Perth and Kinross ZIP
+  name: ZIP
   url: http://opendata-pkc.opendata.arcgis.com/datasets/e6e7993e5ed446738eb95d0531785025_0.zip
 schema: default
 title: Availability of superfast broadband in Perth and Kinross

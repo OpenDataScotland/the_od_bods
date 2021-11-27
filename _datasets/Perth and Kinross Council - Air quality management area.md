@@ -4,30 +4,31 @@ category:
 license: Open Government Licence 3.0 (United Kingdom)
 maintainer: Perth and Kinross Council
 maintainer_email: someone@example.com
-notes: 'A designated area where certain pollutants exceed certain levels and therefore
+notes: <p>A designated area where certain pollutants exceed certain levels and therefore
   need a Detailed Assessment. In PKC nitrogen dioxide and particulate matter have
-  been identified.
-
-  '
+  been identified.</p>
 organization: Perth and Kinross Council
 resources:
+- format: html
+  name: Description
+  url: https://data.pkc.gov.uk/dataset/air-quality-management-area
 - format: HTML
-  name: Air quality management area HTML
+  name: HTML
   url: http://opendata-pkc.opendata.arcgis.com/datasets/8e7fed0202174329be528a1f9706dcd3_0
 - format: ESRI REST
-  name: Air quality management area ESRI REST
+  name: ESRI REST
   url: https://services.arcgis.com/pfFDYSlYcp7mabvZ/arcgis/rest/services/Air_quality_management_area/FeatureServer/0
 - format: GEOJSON
-  name: Air quality management area GEOJSON
+  name: GEOJSON
   url: http://opendata-pkc.opendata.arcgis.com/datasets/8e7fed0202174329be528a1f9706dcd3_0.geojson
 - format: CSV
-  name: Air quality management area CSV
+  name: CSV
   url: http://opendata-pkc.opendata.arcgis.com/datasets/8e7fed0202174329be528a1f9706dcd3_0.csv
 - format: KML
-  name: Air quality management area KML
+  name: KML
   url: http://opendata-pkc.opendata.arcgis.com/datasets/8e7fed0202174329be528a1f9706dcd3_0.kml
 - format: ZIP
-  name: Air quality management area ZIP
+  name: ZIP
   url: http://opendata-pkc.opendata.arcgis.com/datasets/8e7fed0202174329be528a1f9706dcd3_0.zip
 schema: default
 title: Air quality management area

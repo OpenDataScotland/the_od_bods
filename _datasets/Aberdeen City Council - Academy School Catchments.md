@@ -18,23 +18,26 @@ notes: <div style='text-align:Left;'><div><div><p style='margin:0 0 14 0;'><span
   /></p></div></div></div>
 organization: Aberdeen City Council
 resources:
+- format: html
+  name: Description
+  url: https://data.aberdeencity.gov.uk/dataset/academy-school-catchments1
 - format: HTML
-  name: Academy School Catchments HTML
+  name: HTML
   url: http://spatialdata-accabdn.opendata.arcgis.com/datasets/c8e7887f4519434b8564a608754002cb_0
 - format: ESRI REST
-  name: Academy School Catchments ESRI REST
+  name: ESRI REST
   url: https://services5.arcgis.com/0sktPVp3t1LvXc9z/arcgis/rest/services/Academy_School_Catchments/FeatureServer/0
 - format: GEOJSON
-  name: Academy School Catchments GEOJSON
+  name: GEOJSON
   url: http://spatialdata-accabdn.opendata.arcgis.com/datasets/c8e7887f4519434b8564a608754002cb_0.geojson?outSR={"latestWkid":27700,"wkid":27700}
 - format: CSV
-  name: Academy School Catchments CSV
+  name: CSV
   url: http://spatialdata-accabdn.opendata.arcgis.com/datasets/c8e7887f4519434b8564a608754002cb_0.csv?outSR={"latestWkid":27700,"wkid":27700}
 - format: KML
-  name: Academy School Catchments KML
+  name: KML
   url: http://spatialdata-accabdn.opendata.arcgis.com/datasets/c8e7887f4519434b8564a608754002cb_0.kml?outSR={"latestWkid":27700,"wkid":27700}
 - format: ZIP
-  name: Academy School Catchments ZIP
+  name: ZIP
   url: http://spatialdata-accabdn.opendata.arcgis.com/datasets/c8e7887f4519434b8564a608754002cb_0.zip?outSR={"latestWkid":27700,"wkid":27700}
 schema: default
 title: Academy School Catchments

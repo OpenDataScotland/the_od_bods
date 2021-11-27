@@ -93,10 +93,12 @@ for k, ds in data.items():
     y = {'schema': 'default', 'maintainer_email': 'someone@example.com'}
     y['title'] = ds.title
     y['organization'] = ds.owner
-    y['notes'] = ds.description
-    y['resources'] = [{'name': ds.title + " " + d.file_type,
-                       'url': d.url,
-                       'format': d.file_type} for d in ds.files]
+    y['notes'] = markdown.markdown(ds.description)
+    y['resources'] = [{'name': 'Description',
+                       'url': ds.page_url,
+                       'format': 'html'}] + [{'name': d.file_type,
+                                              'url': d.url,
+                                              'format': d.file_type} for d in ds.files]
     y['license'] = ds.license
     y['category'] = ds.original_tags + ds.manual_tags
     y['maintainer'] = ds.owner

@@ -4,30 +4,35 @@ category:
 license: uk-ogl
 maintainer: Dundee City Council
 maintainer_email: someone@example.com
-notes: 'The NaPTAN database contains all public transport access nodes in Dundee,
-  this includes;
+notes: '<p>The NaPTAN database contains all public transport access nodes in Dundee,
+  this includes;</p>
 
+  <ul>
 
-  * Bus Stops
+  <li>Bus Stops</li>
 
-  * Train Stations
+  <li>Train Stations</li>
 
-  * Airports
+  <li>Airports</li>
 
+  </ul>
 
-  These links will take you to the latest download of the Dundee City Council data
+  <p>These links will take you to the latest download of the Dundee City Council data
   from the UK dataset.  If you are interested in a national copy of the data this
-  is available from [data.gov.uk](https://data.gov.uk/dataset/naptan).'
+  is available from <a href="https://data.gov.uk/dataset/naptan">data.gov.uk</a>.</p>'
 organization: Dundee City Council
 resources:
+- format: html
+  name: Description
+  url: https://data.dundeecity.gov.uk/dataset/naptan
 - format: CSV
-  name: Bus Stops (NaPTAN) CSV
+  name: CSV
   url: http://naptan.app.dft.gov.uk/DataRequest/Naptan.ashx?format=csv&LA=640
 - format: CSV
-  name: Bus Stops (NaPTAN) CSV
+  name: CSV
   url: https://data.dundeecity.gov.uk/dataset/6eeb5461-3493-4b89-b8f5-1216ead72fe2/resource/cdfbe9ea-1de0-462a-a1ae-8b65f58f5982/download/dundee-bus-shelters.csv
 - format: XML
-  name: Bus Stops (NaPTAN) XML
+  name: XML
   url: http://naptan.app.dft.gov.uk/DataRequest/Naptan.ashx?format=xml&LA=640
 schema: default
 title: Bus Stops (NaPTAN)
