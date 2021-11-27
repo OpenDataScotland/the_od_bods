@@ -1,30 +1,14 @@
-# the_od_bods
+# The OD_BODS Project
+OD_BODS is a volunteer-run open source project to collate open data sources published in Scotland.
 
-We've now published [a blog post](https://codethecity.org/2021/06/13/3689/) about this project. 
+There are 2 objectives for the OD_BODS project
+1. Find: Help public users find a data source they can use. [see listing](http://opendatascotland.github.io/the_od_bods/)
+2. Learn: Understand how Open Data is in Scotland. [see analytics](http://opendatascotland.github.io/the_od_bods/analytics)
 
-The aim of this project at [CTC23](https://github.com/CodeTheCity/CTC23) is to start collate access to Open Data in Scotland, beginning with cities. 
+# More info
+Read about the [12-month plan for the project, its history, and the technology we are using](https://github.com/OpenDataScotland/the_od_bods/wiki/CTC23:-The-origins-of-the-OD_BODS-project)
 
-## Methodology
+# Contact Us
+on Twitter [@opendata_sco](https://twitter.com/opendata_sco) 
 
-We started by looking at Scottish Cities' open data portals (where these could be found). One source was the work that [Ian](https://github.com/watty62) did in his last [audit of Scottish Open Data](https://github.com/watty62/SOD/blob/master/Local_authorities.md) . 
-
-
-
-
-## What we are building
-
-- A list of data sources and what they contain
-- Script to pull data from existing platforms
-   - CKAN
-   - ArcGIS
-- A front-end to present an aggregation of datasets from all the platforms
-
-
-## Lessons Learned
-
-- There is a lack of good quality open datasets published by local authorities
-- There is no common taxonomy for categorising datasets
-- There is no facility to aggregate a common dataset accross all 32 local authorities (e.g. cycle paths)
-- There is no centralised, national portal for accessing open data in Scotland
-
-See the [a blog post](https://codethecity.org/2021/06/13/3689/) for more! 
+We are looking for contributors!

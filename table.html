@@ -24,9 +24,13 @@
 	      <span style="width: {{ data|length / 48 }}%">{{ "%.2f"|format(data|length / 48) }}%</span>
 	    </div>
 	    <p>We've catalogued {{ data|length }} datasets so far. With a
-	    (conservative) estimate that each council would have 150
-	    datasets there should be around 4800 for the 32 Scottish
-	    councils, so {{ 4800 - data|length }} are still MIA...</p>
+	      (conservative) estimate that each council would have 150
+	      datasets there should be around 4800 for the 32 Scottish
+	      councils, so {{ 4800 - data|length }} are still MIA...</p>
+
+              <p> See the analysis of <a href="analytics.html">what we've catalogued so far.</a> <!-- ' -->
+	      </p> 
+
 	  </div>
 	  
         <!-- table -->
@@ -47,8 +51,14 @@
 	    </p>
 	    <p class="fileLinks">
 	      {% for f in d.files %}
-	      <a href="{{ f.url }}">{{ f.file_type }}.</a>
-	      {% if f.file_size %}({{ f.file_size }} {{ f.size_unit }}){% endif %}
+                {% if f.file_type %}
+                  {% if f.url %}
+                    <a href="{{ f.url }}">{{ f.file_type }} </a>
+                  {% else %}
+                    {{ f.file_type }}
+                  {% endif %}
+                {% endif %} 
+	        {% if f.file_size %}({{ f.file_size }} {{ f.size_unit }}){% endif %}
 	      {% endfor %}
 	    </p>
 	    <p>From: {{ d.owner }}</p>
@@ -57,21 +67,6 @@
 	  {% endfor %}
 
         </article>
-
-
-        <!-- progress bar -->
-
-        <article id="article">
-
-            <div class="meter" data-label="" style="width: 45%"></div>
-
-
-        </article>
-
-
         </main>
-
      </body>
-
-
 </html>

@@ -26,7 +26,7 @@ class Dataset:
     num_records: int
     files: List[DataFile]
 
-fulld = pd.read_csv("data/merged_output.csv")
+fulld = pd.read_csv("data/merged_output.csv", dtype=str, na_filter=False)
 def ind(name):
     f = ['Unnamed: 0', 'Title', 'Owner', 'PageURL', 'AssetURL', 'DateCreated',
        'DateUpdated', 'FileSize', 'FileSizeUnit', 'FileType', 'NumRecords',
@@ -53,7 +53,7 @@ for r in fulld.values:
             owner = r[ind('Owner')],
             page_url = r[ind('PageURL')],
             date_created = r[ind('DateCreated')],
-            date_updated = r[ind('DateUpdated')],
+            date_updated = r[ind('DateUpdated')].removesuffix(' 00:00:00.000'),
             original_tags = splittags(r[ind('OriginalTags')]),
             manual_tags = splittags(r[ind('ManualTags')]),
             license = r[ind('License')],
@@ -73,10 +73,10 @@ for r in fulld.values:
 print(len(data), ' records')
 
 def sort_key(d):
-    if str(d.date_updated) != "nan":
-        return str(d.date_updated)
-    if str(d.date_created) != "nan":
-        return str(d.date_created)
+    if d.date_updated:
+        return d.date_updated
+    if d.date_created:
+        return d.date_created
     return "0"
 
 md = markdown.Markdown()
