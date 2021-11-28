@@ -10,7 +10,7 @@ maintainer: South Ayrshire Council
 notes: <p>Local landscape designations - areas depicting scenic area boundaries for
   South Ayrshire</p>
 organization: South Ayrshire Council
-records: null
+records: 2
 resources:
 - format: html
   name: Description

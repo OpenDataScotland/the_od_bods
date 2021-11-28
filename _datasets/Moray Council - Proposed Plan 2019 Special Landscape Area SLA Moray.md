@@ -8,7 +8,7 @@ license: ''
 maintainer: Moray Council
 notes: <p>Proposed Plan 2019 Special Landscape Area (SLA) (Moray)</p>
 organization: Moray Council
-records: null
+records: 13
 resources:
 - format: html
   name: Description

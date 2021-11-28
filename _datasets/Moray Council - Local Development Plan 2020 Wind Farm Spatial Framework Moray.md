@@ -8,7 +8,7 @@ license: ''
 maintainer: Moray Council
 notes: <p>Local Development Plan 2020 Wind Farm Spatial Framework (Moray)</p>
 organization: Moray Council
-records: null
+records: 1
 resources:
 - format: html
   name: Description

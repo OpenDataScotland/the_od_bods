@@ -9,7 +9,7 @@ license: ''
 maintainer: Moray Council
 notes: <p>Wildlife Sites (Moray)</p>
 organization: Moray Council
-records: null
+records: 7
 resources:
 - format: html
   name: Description

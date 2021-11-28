@@ -9,7 +9,7 @@ license: ''
 maintainer: South Ayrshire
 notes: <p>Boundary for the Southern Ayrshire and Galloway Biosphere</p>
 organization: South Ayrshire
-records: null
+records: 2
 resources:
 - format: html
   name: Description

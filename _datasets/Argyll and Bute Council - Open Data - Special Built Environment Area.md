@@ -13,7 +13,7 @@ notes: "<p>Areas which do not have the presence, continuity or quality of \u2018
   \ should be safeguarded and promoted when considering development potential and\
   \ proposals.</p>"
 organization: Argyll and Bute Council
-records: null
+records: 20
 resources:
 - format: html
   name: Description

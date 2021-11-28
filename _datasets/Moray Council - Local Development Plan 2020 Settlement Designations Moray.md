@@ -13,7 +13,7 @@ notes: <p>Local Development Plan 2020Settlement Designations set out the current
   will also have to satisfy the key governing policies that are set out in the Policy
   section of the Local Development Plan.</p>
 organization: Moray Council
-records: null
+records: 764
 resources:
 - format: html
   name: Description

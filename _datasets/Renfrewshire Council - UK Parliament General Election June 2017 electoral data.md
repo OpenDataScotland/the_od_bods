@@ -9,7 +9,7 @@ license: ''
 maintainer: Renfrewshire Council
 notes: <p>UK Parliament General Election 8 June 2017 electoral data.</p>
 organization: Renfrewshire Council
-records: null
+records: 3
 resources:
 - format: html
   name: Description

@@ -9,7 +9,7 @@ license: ''
 maintainer: Renfrewshire Council
 notes: <p>Dataset listing Big Lottery funded projects in Renfrewshire in 2017.</p>
 organization: Renfrewshire Council
-records: null
+records: 26
 resources:
 - format: html
   name: Description

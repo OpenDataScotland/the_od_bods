@@ -8,7 +8,7 @@ license: ''
 maintainer: Moray Council
 notes: <p>Wards 2017 (Moray) (OS Boundary Line Open Data)</p>
 organization: Moray Council
-records: null
+records: 8
 resources:
 - format: html
   name: Description

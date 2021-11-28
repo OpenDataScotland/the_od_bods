@@ -9,7 +9,7 @@ license: ''
 maintainer: Renfrewshire Council
 notes: <p>Local Authority owned housing stock, by normal use of dwelling</p>
 organization: Renfrewshire Council
-records: null
+records: 21
 resources:
 - format: html
   name: Description

@@ -7,7 +7,7 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: East Ayrshire
 notes: ''
 organization: East Ayrshire
-records: null
+records: 35
 resources:
 - format: html
   name: Description

@@ -12,7 +12,7 @@ license: ''
 maintainer: Renfrewshire Council
 notes: <p>A layer presenting Care Homes in Renfrewshire Council area</p>
 organization: Renfrewshire Council
-records: null
+records: 33
 resources:
 - format: html
   name: Description

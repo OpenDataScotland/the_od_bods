@@ -10,7 +10,7 @@ maintainer: Renfrewshire Council
 notes: "<p>A layer showing the location of polling\_stations in Renfrewshire in June\
   \ 2017.</p>"
 organization: Renfrewshire Council
-records: null
+records: 174
 resources:
 - format: html
   name: Description

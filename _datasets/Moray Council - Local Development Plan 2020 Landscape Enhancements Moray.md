@@ -8,7 +8,7 @@ license: ''
 maintainer: Moray Council
 notes: <p>Local Development Plan 2020 Landscape Enhancements (Moray)</p>
 organization: Moray Council
-records: null
+records: 417
 resources:
 - format: html
   name: Description

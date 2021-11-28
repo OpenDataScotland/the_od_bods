@@ -15,7 +15,7 @@ notes: "<p>Council Register of Assets (Moray).\_ Section 94 of the Community Emp
   \ of the Act and does not necessarily imply that the Council is actively seeking\
   \ to transfer that asset to the community.</p>"
 organization: Moray Council
-records: null
+records: 1137
 resources:
 - format: html
   name: Description

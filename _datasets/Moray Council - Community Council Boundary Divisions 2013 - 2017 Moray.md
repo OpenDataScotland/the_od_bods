@@ -15,7 +15,7 @@ notes: <p>Community Councils Divisions 2013 - 2017 (Moray). The purpose of commu
   on a wide range of issues which affect their area, such as planning, environment
   and health. All Community Council meetings are open to the public.</p>
 organization: Moray Council
-records: null
+records: 35
 resources:
 - format: html
   name: Description

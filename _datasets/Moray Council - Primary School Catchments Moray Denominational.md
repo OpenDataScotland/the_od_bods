@@ -11,7 +11,7 @@ notes: "<p>Primary School Catchments (Moray) (Denominational).\_ The zones  (cat
   \ areas) are shown as delineated areas on maps.\_ Information on  these catchment\
   \ areas is available at the Moray Council website.</p>"
 organization: Moray Council
-records: null
+records: 4
 resources:
 - format: html
   name: Description

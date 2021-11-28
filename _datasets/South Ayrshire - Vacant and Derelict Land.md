@@ -9,7 +9,7 @@ license: ''
 maintainer: South Ayrshire
 notes: <p>Areas of vacant and derelict land</p>
 organization: South Ayrshire
-records: null
+records: 83
 resources:
 - format: html
   name: Description

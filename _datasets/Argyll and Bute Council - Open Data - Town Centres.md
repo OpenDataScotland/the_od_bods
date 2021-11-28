@@ -14,7 +14,7 @@ notes: "<p>For the purposes of the 2015 Local Development\_Plan this corresponds
   \ towns of Argyll and Bute defined as key settlements; these being town centres\
   \ defined mainly for retail policy purposes.</p>"
 organization: Argyll and Bute Council
-records: null
+records: 22
 resources:
 - format: html
   name: Description

@@ -9,7 +9,7 @@ license: ''
 maintainer: South Ayrshire Council
 notes: <p>Areas depicting catchment zones for non-denominational secondary schools</p>
 organization: South Ayrshire Council
-records: null
+records: 22
 resources:
 - format: html
   name: Description

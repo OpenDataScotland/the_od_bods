@@ -13,7 +13,7 @@ notes: "<p>Conservation Areas are areas of special architectural of historic int
   \ area. The aim of this policy is to preserve and enhance Moray\u2019s Conservation\
   \ Areas.</p>"
 organization: Moray Council
-records: null
+records: 18
 resources:
 - format: html
   name: Description

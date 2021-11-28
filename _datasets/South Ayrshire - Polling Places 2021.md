@@ -8,7 +8,7 @@ license: ''
 maintainer: South Ayrshire
 notes: <p>Points depicting polling places in South Ayrshire</p>
 organization: South Ayrshire
-records: null
+records: 47
 resources:
 - format: html
   name: Description

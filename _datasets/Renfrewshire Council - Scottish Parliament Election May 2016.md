@@ -10,7 +10,7 @@ maintainer: Renfrewshire Council
 notes: <p>Renfrewshire South and Renfrewshire North Scottish Parliamnet Election results
   5 May 2016.</p>
 organization: Renfrewshire Council
-records: null
+records: 2
 resources:
 - format: html
   name: Description

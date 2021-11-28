@@ -11,7 +11,7 @@ notes: <p>Depicts opportunities for improved management of existing native woodl
   TEXT AND OTHER SPATIAL DATA PRODUCTS ACCOMPANYING THE AYRSHIRE AND ARRAN FORESTRY
   AND WOODLAND STRATEGY</p>
 organization: South Ayrshire Council
-records: null
+records: 1
 resources:
 - format: html
   name: Description

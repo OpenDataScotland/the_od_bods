@@ -45,7 +45,12 @@ def makeint(val):
     try:
         return int(val)
     except:
-        return None
+        pass
+    try:
+        return int(float(val))
+    except:
+        pass
+    return None
     
 data = {}
 for r in fulld.values:

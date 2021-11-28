@@ -18,7 +18,7 @@ notes: <p>Scottish Annual Business Survey 2017 (June 2019 release)- filtered for
   and number of business units. GVA per head, gross wages &amp; salaries per head
   and labour costs per head are also available.</p>
 organization: Renfrewshire Council
-records: null
+records: 12
 resources:
 - format: html
   name: Description

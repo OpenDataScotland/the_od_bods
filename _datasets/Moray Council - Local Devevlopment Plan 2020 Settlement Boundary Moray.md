@@ -11,7 +11,7 @@ notes: <p>Local Development Plan 2020 Settlement Boundaries are used for the dis
   within the Moray Local Development Plan 2020. Settlement boundaries contain the
   primary, secondary and third tier settlements.</p>
 organization: Moray Council
-records: null
+records: 33
 resources:
 - format: html
   name: Description

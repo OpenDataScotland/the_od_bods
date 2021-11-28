@@ -8,7 +8,7 @@ license: ''
 maintainer: South Ayrshire Council
 notes: <p>Marketable sites and locations for businesses allocated in development plans</p>
 organization: South Ayrshire Council
-records: null
+records: 53
 resources:
 - format: html
   name: Description

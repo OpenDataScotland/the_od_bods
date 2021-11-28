@@ -8,7 +8,7 @@ license: ''
 maintainer: Moray Council
 notes: <p>Proposed Plan 2019 Settlement Designations (Moray)</p>
 organization: Moray Council
-records: null
+records: 766
 resources:
 - format: html
   name: Description

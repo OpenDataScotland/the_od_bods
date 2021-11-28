@@ -9,7 +9,7 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Moray Council
 notes: <p>Secondary School Catchments 2016 - 2017 (Moray) (non denominational)</p>
 organization: Moray Council
-records: null
+records: 8
 resources:
 - format: html
   name: Description

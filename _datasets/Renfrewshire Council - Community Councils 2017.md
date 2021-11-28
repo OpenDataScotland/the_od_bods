@@ -13,7 +13,7 @@ notes: <p>Community Councils within Renfrewshire. Community Councils play an act
   role in expressing the views and concerns of local people within their area on a
   wide range of issues of public interest.The layer includes population figures. </p>
 organization: Renfrewshire Council
-records: null
+records: 25
 resources:
 - format: html
   name: Description

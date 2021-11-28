@@ -19,7 +19,7 @@ notes: <p>Detailed statistics on what mode of transport people usually use to ge
   in Scotland annually. The SHS has an annual sample size of around 10,000 individuals
   and, since 2012, has operated with a fully unclustered sample design.</p>
 organization: Renfrewshire Council
-records: null
+records: 2
 resources:
 - format: html
   name: Description

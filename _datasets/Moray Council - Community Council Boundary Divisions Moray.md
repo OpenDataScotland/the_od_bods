@@ -15,7 +15,7 @@ notes: <p>The purpose of community councils is to ascertain, co-ordinate and exp
   as planning, environment and health. All Community Council meetings are open to
   the public.</p>
 organization: Moray Council
-records: null
+records: 35
 resources:
 - format: html
   name: Description

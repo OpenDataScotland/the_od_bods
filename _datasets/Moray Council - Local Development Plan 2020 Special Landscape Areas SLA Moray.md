@@ -8,7 +8,7 @@ license: ''
 maintainer: Moray Council
 notes: <p>Local Development Plan 2020 Special Landscape Areas (SLA) (Moray)</p>
 organization: Moray Council
-records: null
+records: 13
 resources:
 - format: html
   name: Description

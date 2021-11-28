@@ -11,7 +11,7 @@ notes: "<p>Moray Council Polling District Boundaries.  Polygon data showing the 
   \ district boundaries for the Moray Council area used\_for the purposes of designating\
   \ an area of electors which attend a particular polling place.</p>"
 organization: Moray Council
-records: null
+records: 60
 resources:
 - format: html
   name: Description

@@ -12,7 +12,7 @@ notes: <p>Community councils are required to be established by local authorities
   the gap between local authorities and communities and help to make public bodies
   aware of the opinions and needs of the communities they represent.</p>
 organization: Argyll and Bute Council
-records: null
+records: 56
 resources:
 - format: html
   name: Description

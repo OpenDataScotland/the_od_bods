@@ -11,7 +11,7 @@ notes: "<p>Moray Council Polling Places.  Point data showing the polling\_places
   \ go to cast their vote(s) during elections. A polling station is located within\
   \ a polling place. There may be more than one polling station in a polling place.</p>"
 organization: Moray Council
-records: null
+records: 60
 resources:
 - format: html
   name: Description

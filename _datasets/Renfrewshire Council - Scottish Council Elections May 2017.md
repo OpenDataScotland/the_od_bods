@@ -9,7 +9,7 @@ license: ''
 maintainer: Renfrewshire Council
 notes: <p>Scottish Council Elections 4 May 2017 results and turnout</p>
 organization: Renfrewshire Council
-records: null
+records: 13
 resources:
 - format: html
   name: Description

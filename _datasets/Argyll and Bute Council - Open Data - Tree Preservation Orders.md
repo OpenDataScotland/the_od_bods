@@ -15,7 +15,7 @@ notes: <p>Tree Preservation Orders (TPO) are served by the council to protect in
   or where the tree itself is considered to be of interest either as an example of
   its species or of local / historic interest.</p>
 organization: Argyll and Bute Council
-records: null
+records: 176
 resources:
 - format: html
   name: Description

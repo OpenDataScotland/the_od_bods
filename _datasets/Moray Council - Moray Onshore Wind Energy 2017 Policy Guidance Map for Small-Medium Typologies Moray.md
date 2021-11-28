@@ -17,7 +17,7 @@ notes: "<p>Moray Onshore Wind Energy 2017 Policy Guidance Map for Small-Medium T
   \ typology are the areas with the fewest constraints and therefore the greatest\
   \ potential for wind farm developments. </p>"
 organization: Moray Council
-records: null
+records: 1
 resources:
 - format: html
   name: Description

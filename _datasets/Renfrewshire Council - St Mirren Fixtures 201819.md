@@ -10,7 +10,7 @@ maintainer: Renfrewshire Council
 notes: "<p>A dataset showing the fixtures and results of football\_games played by\
   \ St Mirren football\_teams. For further information please visit\_https://www.stmirren.com/news/matchday/first-team-fixtures</p>"
 organization: Renfrewshire Council
-records: null
+records: 38
 resources:
 - format: html
   name: Description

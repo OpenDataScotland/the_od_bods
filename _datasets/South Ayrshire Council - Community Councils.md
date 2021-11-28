@@ -10,7 +10,7 @@ license: ''
 maintainer: South Ayrshire Council
 notes: <p>Areas depicting community council boundaries for South Ayrshire</p>
 organization: South Ayrshire Council
-records: null
+records: 30
 resources:
 - format: html
   name: Description

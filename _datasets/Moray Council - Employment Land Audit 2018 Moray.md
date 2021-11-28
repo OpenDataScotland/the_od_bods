@@ -12,7 +12,7 @@ notes: <p>Employment Land Audit 2018 sites provides am overview of the supply an
   details of Moray's employment land supply as at January 2018. Further information
   can be found at Development Monitoring.</p>
 organization: Moray Council
-records: null
+records: 33
 resources:
 - format: html
   name: Description

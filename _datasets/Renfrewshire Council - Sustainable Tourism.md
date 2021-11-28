@@ -10,7 +10,7 @@ maintainer: Renfrewshire Council
 notes: <p>Scottish Annual Business Survey 2017, Sustainable Tourism (June 2019 release)-
   filtered for Renfrewshire</p>
 organization: Renfrewshire Council
-records: null
+records: 12
 resources:
 - format: html
   name: Description

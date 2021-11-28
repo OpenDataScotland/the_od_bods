@@ -9,7 +9,7 @@ license: ''
 maintainer: South Ayrshire Council
 notes: <p>Areas used historically for landfill</p>
 organization: South Ayrshire Council
-records: null
+records: 26
 resources:
 - format: html
   name: Description

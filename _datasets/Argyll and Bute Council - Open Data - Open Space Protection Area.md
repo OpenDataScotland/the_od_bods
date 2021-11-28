@@ -14,7 +14,7 @@ maintainer: Argyll and Bute Council
 notes: <p>Areas of valued open space, sports pitches and playing fields as identified
   in the Proposal Maps of the Local Development Plan.</p>
 organization: Argyll and Bute Council
-records: null
+records: 278
 resources:
 - format: html
   name: Description

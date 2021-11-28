@@ -8,7 +8,7 @@ license: ''
 maintainer: Moray Council
 notes: <p>Local Development Plan 2020 Rural Group Boundary (Moray)</p>
 organization: Moray Council
-records: null
+records: 89
 resources:
 - format: html
   name: Description

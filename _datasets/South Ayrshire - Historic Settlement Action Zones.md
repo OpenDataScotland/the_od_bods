@@ -9,7 +9,7 @@ license: ''
 maintainer: South Ayrshire
 notes: <p>Action zones in force in areas of historic settlement</p>
 organization: South Ayrshire
-records: null
+records: 13
 resources:
 - format: html
   name: Description

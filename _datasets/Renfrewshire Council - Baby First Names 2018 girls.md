@@ -16,7 +16,7 @@ notes: "<p>Babies' first forenames by Council area, 2018 based on the records fo
   \ to mothers who lived in the specified council area plus any births to mothers\
   \ from outwith Scotland which occurred in the specified council area.</p>"
 organization: Renfrewshire Council
-records: null
+records: 71
 resources:
 - format: html
   name: Description

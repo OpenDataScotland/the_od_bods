@@ -9,7 +9,7 @@ maintainer: Moray Council
 notes: <p>Moray Onshore Wind Energy 2017 Landscape Capacity For Medium Typologies
   (Moray)</p>
 organization: Moray Council
-records: null
+records: 6
 resources:
 - format: html
   name: Description

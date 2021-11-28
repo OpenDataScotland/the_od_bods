@@ -16,7 +16,7 @@ notes: <p>The Local Development Plan 2015 was superseded by the Local Developmen
   designations do not imply any right of access or use of private land, nor do they
   commit the Council to any form of maintenance or upkeep of the site.</p>
 organization: Moray Council
-records: null
+records: 183
 resources:
 - format: html
   name: Description

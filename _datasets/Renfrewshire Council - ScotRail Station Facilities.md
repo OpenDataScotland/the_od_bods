@@ -11,7 +11,7 @@ notes: "<p>Extract of data taken from the\_Disabled Person Protection Policy. Da
   \ details the access for wheelchairs or disabled people when using rails stations.\_\
   </p>"
 organization: Renfrewshire Council
-records: null
+records: 10
 resources:
 - format: html
   name: Description

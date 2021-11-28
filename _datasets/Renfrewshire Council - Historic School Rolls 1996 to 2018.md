@@ -12,7 +12,7 @@ notes: <p>Data presented here is an extract of data published by the Scottish Go
   provides historical school rolls from the year 1996 through to 2018 for schools
   in the Renfrewshire local authority area only.</p>
 organization: Renfrewshire Council
-records: null
+records: 83
 resources:
 - format: html
   name: Description

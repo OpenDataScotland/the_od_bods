@@ -9,7 +9,7 @@ maintainer: Moray Council
 notes: <p>Moray Onshore Wind Energy 2017 Potential Development Areas for Extension
   and Repowering (Moray)</p>
 organization: Moray Council
-records: null
+records: 5
 resources:
 - format: html
   name: Description

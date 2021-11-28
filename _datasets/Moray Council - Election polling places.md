@@ -9,7 +9,7 @@ notes: <p>Moray Council Polling Places. Point data showing the polling places fo
   the Moray Council area. A polling place is a the particular building where people
   go to cast their vote(s) during elections.</p>
 organization: Moray Council
-records: null
+records: 60
 resources:
 - format: html
   name: Description

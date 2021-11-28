@@ -9,7 +9,7 @@ license: ''
 maintainer: South Ayrshire Council
 notes: <p>Areas depicting wildlife sites South Ayrshire</p>
 organization: South Ayrshire Council
-records: null
+records: 107
 resources:
 - format: html
   name: Description

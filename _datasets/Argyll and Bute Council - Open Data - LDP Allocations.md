@@ -14,7 +14,7 @@ notes: "<p>A site proposed in the Argyll and Bute adopted Local Development Plan
   \ within the plan-period without having to overcome significant obstacles to the\
   \ development</p>"
 organization: Argyll and Bute Council
-records: null
+records: 151
 resources:
 - format: html
   name: Description

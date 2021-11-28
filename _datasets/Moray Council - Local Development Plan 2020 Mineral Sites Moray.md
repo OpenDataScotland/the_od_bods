@@ -8,7 +8,7 @@ license: ''
 maintainer: Moray Council
 notes: <p>Local Development Plan 2020 Mineral Sites (Moray)</p>
 organization: Moray Council
-records: null
+records: 20
 resources:
 - format: html
   name: Description

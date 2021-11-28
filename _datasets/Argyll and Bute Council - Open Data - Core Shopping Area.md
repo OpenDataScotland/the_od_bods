@@ -14,7 +14,7 @@ notes: <p>A policy area within the main town centres where non-retail developmen
   centres and their central shopping functions.A policy area within the main town
   centres where non-  </p>
 organization: Argyll and Bute Council
-records: null
+records: 6
 resources:
 - format: html
   name: Description

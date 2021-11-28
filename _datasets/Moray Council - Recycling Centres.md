@@ -8,7 +8,7 @@ maintainer: Moray Council
 notes: <p>Details of name, location, opening times and contact telephone number (where
   applicable)</p>
 organization: Moray Council
-records: null
+records: 9
 resources:
 - format: html
   name: Description

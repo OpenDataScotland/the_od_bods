@@ -14,7 +14,7 @@ notes: <p>Local Development Plan Rural Group Sites have been set out within many
   any right of access or use of private land, nor do they commit the Council to any
   form of maintenance or upkeep of the site.</p>
 organization: Moray Council
-records: null
+records: 200
 resources:
 - format: html
   name: Description

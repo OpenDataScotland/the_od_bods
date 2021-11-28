@@ -9,7 +9,7 @@ maintainer: Moray Council
 notes: <p>Education School Locations (Moray), including Secondary and Primary for
   non denominational and denominational.</p>
 organization: Moray Council
-records: null
+records: 54
 resources:
 - format: html
   name: Description

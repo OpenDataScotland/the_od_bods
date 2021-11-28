@@ -28,7 +28,7 @@ notes: "<p>Mid-year population estimates: Scotland and Renfrewshire by single ye
   \ see the NRS website here:\_https://www.nrscotland.gov.uk/statistics-and-data/statistics/statistics-by-theme/population/population-estimates/mid-year-population-estimatesSingle\
   \ year of age population estimates are available on the NRS website here:\_https://www.nrscotland.gov.uk/statistics-and-data/statistics/statistics-by-theme/population/population-estimates/2011-based-special-area-population-estimates/small-area-population-estimates</p>"
 organization: Renfrewshire Council
-records: null
+records: 4
 resources:
 - format: html
   name: Description

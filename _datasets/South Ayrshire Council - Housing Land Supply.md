@@ -7,7 +7,7 @@ license: ''
 maintainer: South Ayrshire Council
 notes: <p>Sites designated as part of the areas housing land supply</p>
 organization: South Ayrshire Council
-records: null
+records: 137
 resources:
 - format: html
   name: Description

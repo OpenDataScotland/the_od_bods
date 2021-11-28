@@ -8,7 +8,7 @@ maintainer: Moray Council
 notes: <p>Details of location, number of spaces, whether paid or free and times of
   opening (where applicable)</p>
 organization: Moray Council
-records: null
+records: 42
 resources:
 - format: html
   name: Description

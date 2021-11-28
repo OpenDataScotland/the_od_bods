@@ -16,7 +16,7 @@ notes: "<p>The Local Development Plan 2015 was superseded by the Local Developme
   \ from the types of acceptable development to maintain and preserve the distinction\
   \ with the built up area.</p>"
 organization: Moray Council
-records: null
+records: 5
 resources:
 - format: html
   name: Description

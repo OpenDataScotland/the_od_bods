@@ -9,7 +9,7 @@ maintainer: Argyll and Bute Council
 notes: "<p>Electoral Wards in Argyll and Bute Council - the divisions of the area\
   \ used to elect local\_councillors. Each ward has three or four councillors.</p>"
 organization: Argyll and Bute Council
-records: null
+records: 11
 resources:
 - format: html
   name: Description

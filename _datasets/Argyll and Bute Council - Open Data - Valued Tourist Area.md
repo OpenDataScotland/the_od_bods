@@ -11,7 +11,7 @@ maintainer: Argyll and Bute Council
 notes: <p>Valued Tourist Area Vulnerable to Change of Use in the 2015 Local Development
   Plan</p>
 organization: Argyll and Bute Council
-records: null
+records: 14
 resources:
 - format: html
   name: Description

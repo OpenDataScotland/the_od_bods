@@ -10,7 +10,7 @@ license: ''
 maintainer: South Ayrshire Council
 notes: <p>Public safety zones surrounding Prestwick Airport</p>
 organization: South Ayrshire Council
-records: null
+records: 4
 resources:
 - format: html
   name: Description

@@ -14,7 +14,7 @@ notes: '<p>Argyll and Bute : Woodland and Forestry Strategy 2011 showing indicat
   suitability for woodland and forestry. It identifies the existing resource, the
   main issues and strategic priorities within Argyll and Bute</p>'
 organization: Argyll and Bute Council
-records: null
+records: 20783
 resources:
 - format: html
   name: Description

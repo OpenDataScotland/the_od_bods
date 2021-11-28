@@ -8,7 +8,7 @@ license: ''
 maintainer: South Ayrshire Council
 notes: <p>Defined landscape character areas for Ayrshire</p>
 organization: South Ayrshire Council
-records: null
+records: 84
 resources:
 - format: html
   name: Description

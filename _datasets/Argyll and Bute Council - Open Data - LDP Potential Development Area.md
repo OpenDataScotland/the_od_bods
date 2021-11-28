@@ -18,7 +18,7 @@ notes: "<p>Potential Development Areas designated in the Argyll and Bute adopted
   \ within the PDA area can be realised and be supported by this plan. A PDA may include\
   \ a number of identifiable development sites</p>"
 organization: Argyll and Bute Council
-records: null
+records: 182
 resources:
 - format: html
   name: Description

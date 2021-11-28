@@ -9,7 +9,7 @@ license: ''
 maintainer: Renfrewshire Council
 notes: "<p>Estimated population by single year of age and electoral ward,\_ mid-2017</p>"
 organization: Renfrewshire Council
-records: null
+records: 12
 resources:
 - format: html
   name: Description

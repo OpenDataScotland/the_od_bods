@@ -9,7 +9,7 @@ license: INSPIRE Regulations 2009
 maintainer: Moray Council
 notes: ''
 organization: Moray Council
-records: null
+records: 200
 resources:
 - format: html
   name: Description

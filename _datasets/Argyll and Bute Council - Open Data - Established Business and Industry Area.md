@@ -10,7 +10,7 @@ license: ''
 maintainer: Argyll and Bute Council
 notes: <p>Established Business and Industry Area in the 2015 Local Development Plan</p>
 organization: Argyll and Bute Council
-records: null
+records: 53
 resources:
 - format: html
   name: Description

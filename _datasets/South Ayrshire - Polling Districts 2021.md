@@ -8,7 +8,7 @@ license: ''
 maintainer: South Ayrshire
 notes: <p>Areas depicting polling districts in South Ayrshire</p>
 organization: South Ayrshire
-records: null
+records: 71
 resources:
 - format: html
   name: Description

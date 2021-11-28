@@ -19,7 +19,7 @@ notes: "<p>Secondary School Catchments 24/10/2016 - 13/08/2017 (Moray) (non deno
   \ school which is not the  designated catchment area school for their postal address,\
   \ they must  make an out-of-zone \u2018placing request\u2019.\_ </p>"
 organization: Moray Council
-records: null
+records: 8
 resources:
 - format: html
   name: Description

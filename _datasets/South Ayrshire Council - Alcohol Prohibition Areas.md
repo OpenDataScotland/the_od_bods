@@ -11,7 +11,7 @@ notes: "<p>South Ayrshire Council has passed byelaws to prohibit the drinking of
   \ Areas dataset depicts the boundaries around settlements within South Ayrshire\
   \ where these byelaws apply.</p>"
 organization: South Ayrshire Council
-records: null
+records: 33
 resources:
 - format: html
   name: Description

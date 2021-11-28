@@ -13,7 +13,7 @@ license: ''
 maintainer: Renfrewshire Council
 notes: <p>Education</p>
 organization: Renfrewshire Council
-records: null
+records: 34
 resources:
 - format: html
   name: Description

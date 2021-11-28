@@ -8,7 +8,7 @@ license: ''
 maintainer: Moray Council
 notes: <p>Proposed Plan 2019 Rural Group Designations (Moray)</p>
 organization: Moray Council
-records: null
+records: 209
 resources:
 - format: html
   name: Description

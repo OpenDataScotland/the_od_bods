@@ -9,7 +9,7 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Moray Council
 notes: <p>Primary School Catchments (Moray) (non denominational)</p>
 organization: Moray Council
-records: null
+records: 43
 resources:
 - format: html
   name: Description

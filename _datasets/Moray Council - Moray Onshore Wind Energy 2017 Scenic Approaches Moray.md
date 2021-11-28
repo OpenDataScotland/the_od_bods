@@ -8,7 +8,7 @@ license: ''
 maintainer: Moray Council
 notes: <p>Moray Onshore Wind Energy 2017 Scenic Approaches (Moray)</p>
 organization: Moray Council
-records: null
+records: 3
 resources:
 - format: html
   name: Description

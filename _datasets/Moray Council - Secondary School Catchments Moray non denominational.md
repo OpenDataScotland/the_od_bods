@@ -18,7 +18,7 @@ notes: "<p>In Moray, the education authority discharges its duty to secure adequ
   \ at a school which is not the designated catchment area school for their postal\
   \ address, they must make an out-of-zone \u2018placing request\u2019.\_   </p>"
 organization: Moray Council
-records: null
+records: 8
 resources:
 - format: html
   name: Description

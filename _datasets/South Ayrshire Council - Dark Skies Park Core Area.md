@@ -9,7 +9,7 @@ license: ''
 maintainer: South Ayrshire Council
 notes: <p>Central core area of the Gallway Dark Skies Park</p>
 organization: South Ayrshire Council
-records: null
+records: 1
 resources:
 - format: html
   name: Description

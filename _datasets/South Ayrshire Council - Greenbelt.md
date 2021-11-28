@@ -10,7 +10,7 @@ license: ''
 maintainer: South Ayrshire Council
 notes: <p>Areas depicting greenbelt in South Ayrshire</p>
 organization: South Ayrshire Council
-records: null
+records: 3
 resources:
 - format: html
   name: Description

@@ -18,7 +18,7 @@ notes: "<p>The Local Development Plan 2015 was superseded by the Local Developme
   \ of the new track, but also from the drainage and erosion effects on the local\
   \ area.</p>"
 organization: Moray Council
-records: null
+records: 8
 resources:
 - format: html
   name: Description

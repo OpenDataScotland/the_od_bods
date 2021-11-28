@@ -8,7 +8,7 @@ license: ''
 maintainer: Moray Council
 notes: <p>Scottish Parliament Constituency 2010 (OS Boundary Line Open Data)</p>
 organization: Moray Council
-records: null
+records: 73
 resources:
 - format: html
   name: Description

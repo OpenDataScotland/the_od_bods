@@ -11,7 +11,7 @@ notes: "<p>Administrative Areas used by Argyll and Bute Council for administerin
   \ CowalHelensburgh\_and LomondMid Argyll,\_Kintyre and the IslandsOban, Lorn and\
   \ the Isles</p>"
 organization: Argyll and Bute Council
-records: null
+records: 4
 resources:
 - format: html
   name: Description

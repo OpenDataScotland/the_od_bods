@@ -15,7 +15,7 @@ notes: <p>LNRs are established in a variety of locations with very varied habita
   for the enjoyment and education of local people whose involvement in site management
   is encouraged.</p>
 organization: Argyll and Bute Council
-records: null
+records: 2
 resources:
 - format: html
   name: Description

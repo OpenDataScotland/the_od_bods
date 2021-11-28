@@ -12,7 +12,7 @@ license: ''
 maintainer: Renfrewshire Council
 notes: ''
 organization: Renfrewshire Council
-records: null
+records: 25
 resources:
 - format: html
   name: Description

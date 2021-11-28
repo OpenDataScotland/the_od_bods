@@ -11,7 +11,7 @@ maintainer: Renfrewshire Council
 notes: "<p>A layer showing the location of large scale indoor venues in Paisley.\_\
   </p>"
 organization: Renfrewshire Council
-records: null
+records: 13
 resources:
 - format: html
   name: Description

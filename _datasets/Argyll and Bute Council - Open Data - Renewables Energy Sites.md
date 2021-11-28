@@ -11,7 +11,7 @@ notes: "<p>All\_renewable energy developments in Argyll and Bute, by type (e.g. 
   \ hydro-electric, tidal, biomass, solar, etc.), scale, status\_and for a specific\
   \ location.</p>"
 organization: Argyll and Bute Council
-records: null
+records: 724
 resources:
 - format: html
   name: Description

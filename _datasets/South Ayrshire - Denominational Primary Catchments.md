@@ -9,7 +9,7 @@ license: ''
 maintainer: South Ayrshire
 notes: <p>Areas depicting catchment zones for denominational primary schools</p>
 organization: South Ayrshire
-records: null
+records: 12
 resources:
 - format: html
   name: Description

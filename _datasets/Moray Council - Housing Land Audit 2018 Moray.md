@@ -14,7 +14,7 @@ notes: <p>Housing Land Audit 2018 sites for housing with a capacity for 4 or mor
   The audit meets the requirements of Scottish Planning Policy 2014. Further information
   can be found at Development Monitoring.</p>
 organization: Moray Council
-records: null
+records: 132
 resources:
 - format: html
   name: Description

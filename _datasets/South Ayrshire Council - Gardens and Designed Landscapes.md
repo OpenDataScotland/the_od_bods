@@ -9,7 +9,7 @@ license: ''
 maintainer: South Ayrshire Council
 notes: <p>Extent of gardens and designed landscapes across Ayrshire</p>
 organization: South Ayrshire Council
-records: null
+records: 141
 resources:
 - format: html
   name: Description

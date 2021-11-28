@@ -10,7 +10,7 @@ notes: "<p>A \u2018polling place\u2019 is defined as the building or area in whi
   \ a polling station will be located. A \u2018polling station\u2019 is the room or\
   \ area within the polling place where voting takes place. </p>"
 organization: Argyll and Bute Council
-records: null
+records: 97
 resources:
 - format: html
   name: Description

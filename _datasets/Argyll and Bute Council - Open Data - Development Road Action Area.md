@@ -13,7 +13,7 @@ notes: <p>Action proposed by the 2015 Local Development Plan in support of its s
   plans and proposals involving safeguarding measures, feasibility studies into options
   and the undertaking of development road schemes.</p>
 organization: Argyll and Bute Council
-records: null
+records: 5
 resources:
 - format: html
   name: Description

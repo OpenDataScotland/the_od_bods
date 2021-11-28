@@ -19,7 +19,7 @@ notes: '<p>These are shown on the proposals maps, and are locally important site
   Nature ReservesRegionally Important Geological/ Geomorphological SitesThe former
   sites of important for nature conservation (SINC)Other local wildlife sites</p>'
 organization: Argyll and Bute Council
-records: null
+records: 158
 resources:
 - format: html
   name: Description

@@ -13,7 +13,7 @@ notes: <p>Vacant and Derelict Land Audit 2016 (Moray) The Scottish Vacant and De
   is sourced from local authorities and the Loch Lomond and Trossachs National Park
   Authority.</p>
 organization: Moray Council
-records: null
+records: 20
 resources:
 - format: html
   name: Description

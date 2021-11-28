@@ -10,7 +10,7 @@ license: ''
 maintainer: South Ayrshire Council
 notes: <p>Core paths for the area as defined by the Core Paths Plan</p>
 organization: South Ayrshire Council
-records: null
+records: 366
 resources:
 - format: html
   name: Description

@@ -10,7 +10,7 @@ license: ''
 maintainer: South Ayrshire
 notes: <p>Polygons depicting South Ayrshire Council Electoral Wards</p>
 organization: South Ayrshire
-records: null
+records: 8
 resources:
 - format: html
   name: Description

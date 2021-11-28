@@ -23,7 +23,7 @@ notes: "<p>The Local Development Plan 2015 was superseded by the Local Developme
   \ and further groupings have been designated based on their status as a cohesive,\
   \ physical grouping. Consolidation of these remains the preference.</p>"
 organization: Moray Council
-records: null
+records: 81
 resources:
 - format: html
   name: Description

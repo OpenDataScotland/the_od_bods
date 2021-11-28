@@ -15,7 +15,7 @@ notes: "<p>This dataset provide the numbers and rates of fires in Renfrewshire d
   \ taken on different dates such as the statistics published on the\_Scottish Fire\
   \ and Rescue Service website.</p>"
 organization: Renfrewshire Council
-records: null
+records: 38
 resources:
 - format: html
   name: Description

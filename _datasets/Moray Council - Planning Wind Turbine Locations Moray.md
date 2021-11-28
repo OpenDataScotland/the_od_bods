@@ -18,7 +18,7 @@ notes: <p>Wind turbine locations generated from planning applications received b
   at construction stage. The data is provided based on the best information available
   to the council at the time of writing.</p>
 organization: Moray Council
-records: null
+records: 812
 resources:
 - format: html
   name: Description

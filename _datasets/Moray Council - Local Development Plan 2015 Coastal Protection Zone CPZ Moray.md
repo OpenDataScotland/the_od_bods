@@ -13,7 +13,7 @@ notes: <p>The Local Development Plan 2015 was superseded by the Local Developmen
   The undeveloped coastline is protected through identification of a Coastal Protection
   Zone (CPZ) within which only certain types of development will be acceptable.</p>
 organization: Moray Council
-records: null
+records: 1
 resources:
 - format: html
   name: Description

@@ -19,7 +19,7 @@ notes: "<p>Primary School Catchments 24/04/1996 - 31/12/2015 (Moray) (non denomi
   \ school which is not the  designated catchment area school for their postal address,\
   \ they must  make an out-of-zone \u2018placing request\u2019.\_ </p>"
 organization: Moray Council
-records: null
+records: 42
 resources:
 - format: html
   name: Description

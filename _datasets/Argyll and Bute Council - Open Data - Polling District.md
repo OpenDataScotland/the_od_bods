@@ -20,7 +20,7 @@ notes: "<p>A \u2018polling district\u2019 is a geographical subdivision of an el
   \ or to the availability of premises that can be reasonably designated as polling\
   \ places</p>"
 organization: Argyll and Bute Council
-records: null
+records: 116
 resources:
 - format: html
   name: Description

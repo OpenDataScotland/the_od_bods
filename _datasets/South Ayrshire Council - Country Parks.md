@@ -8,7 +8,7 @@ license: ''
 maintainer: South Ayrshire Council
 notes: <p>Extent of Country Parks in area</p>
 organization: South Ayrshire Council
-records: null
+records: 43
 resources:
 - format: html
   name: Description

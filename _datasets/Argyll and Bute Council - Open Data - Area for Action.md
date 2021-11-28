@@ -17,7 +17,7 @@ notes: "<p>Areas for Action designated in the Argyll and Bute adopted Local Deve
   \ AFAs may coincide with other categories of sites such as potential development\
   \ areas.</p>"
 organization: Argyll and Bute Council
-records: null
+records: 46
 resources:
 - format: html
   name: Description

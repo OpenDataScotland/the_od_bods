@@ -10,7 +10,7 @@ license: ''
 maintainer: South Ayrshire Council
 notes: <p>Extent of the Galloway Forest Park</p>
 organization: South Ayrshire Council
-records: null
+records: 1
 resources:
 - format: html
   name: Description

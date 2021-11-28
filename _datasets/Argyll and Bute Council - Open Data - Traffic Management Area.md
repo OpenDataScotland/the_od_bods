@@ -12,7 +12,7 @@ notes: <p>Action proposed by the Local Development Plan in support of its settle
   plans and development proposals involving the management of traffic and access in
   relation to land use.</p>
 organization: Argyll and Bute Council
-records: null
+records: 3
 resources:
 - format: html
   name: Description

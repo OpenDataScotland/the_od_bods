@@ -11,7 +11,7 @@ notes: "<p>The location of local authority schools across Argyll and Bute - prim
   \ secondary and special needs;\_non-denominational and denominational (Roman Catholic).\
   \ Each school within a joint campus is shown separately.</p>"
 organization: Argyll and Bute Council
-records: null
+records: 94
 resources:
 - format: html
   name: Description

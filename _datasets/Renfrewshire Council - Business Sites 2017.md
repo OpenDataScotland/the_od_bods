@@ -13,7 +13,7 @@ notes: <p>Estimates about the number of VAT/PAYE registered stocks and sites ope
   local unit (business site) is an enterprise or part thereof (e.g. a workshop, factory,
   warehouse, office, mine or depot) situated in a geographically identified place.</p>
 organization: Renfrewshire Council
-records: null
+records: 38
 resources:
 - format: html
   name: Description

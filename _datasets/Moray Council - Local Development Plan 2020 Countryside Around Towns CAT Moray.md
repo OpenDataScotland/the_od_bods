@@ -8,7 +8,7 @@ license: ''
 maintainer: Moray Council
 notes: <p>Local Development Plan 2020 Countryside Around Towns (CAT) (Moray)</p>
 organization: Moray Council
-records: null
+records: 5
 resources:
 - format: html
   name: Description

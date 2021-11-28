@@ -10,7 +10,7 @@ license: ''
 maintainer: South Ayrshire
 notes: <p>Footpaths for the area - not indicative of a public right of way</p>
 organization: South Ayrshire
-records: null
+records: 110
 resources:
 - format: html
   name: Description

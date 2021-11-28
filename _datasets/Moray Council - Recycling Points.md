@@ -7,7 +7,7 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Moray Council
 notes: <p>Details of name and location</p>
 organization: Moray Council
-records: null
+records: 23
 resources:
 - format: html
   name: Description

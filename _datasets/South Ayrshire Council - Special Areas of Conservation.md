@@ -10,7 +10,7 @@ license: ''
 maintainer: South Ayrshire Council
 notes: <p>Special areas of conservation in Ayrshire</p>
 organization: South Ayrshire Council
-records: null
+records: 2034
 resources:
 - format: html
   name: Description

@@ -10,7 +10,7 @@ license: ''
 maintainer: South Ayrshire Council
 notes: <p>Areas of special protection in Ayrshire</p>
 organization: South Ayrshire Council
-records: null
+records: 4564
 resources:
 - format: html
   name: Description

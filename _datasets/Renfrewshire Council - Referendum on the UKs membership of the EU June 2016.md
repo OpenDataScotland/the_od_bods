@@ -9,7 +9,7 @@ license: ''
 maintainer: Renfrewshire Council
 notes: "<p>Results of the\_Referendum on the UK's membership of the EU, 23 June 2016.</p>"
 organization: Renfrewshire Council
-records: null
+records: 1
 resources:
 - format: html
   name: Description

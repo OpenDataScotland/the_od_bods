@@ -17,7 +17,7 @@ notes: <p>Conservation Areas "are areas of special architectural or historic int
   them for the enjoyment and benefit of future generations any new development should
   preserve or enhance their varied character.</p>
 organization: Argyll and Bute Council
-records: null
+records: 33
 resources:
 - format: html
   name: Description
