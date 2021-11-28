@@ -89,6 +89,13 @@ def license_link(l):
            "UK Open Government Licence (OGL)", "OGL3"]
     if l in ogl:
         return "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    if l == "Creative Commons Attribution Share-Alike 4.0":
+        return "https://creativecommons.org/licenses/by-sa/4.0/"
+    if l == "Creative Commons Attribution 4.0":
+        return "https://creativecommons.org/licenses/by/4.0/"
+    if l == "Open Data Commons Open Database License 1.0":
+        return "https://opendatacommons.org/licenses/odbl/"
+    
     if not l in unknown_lics:
         unknown_lics.append(l)
         print("Unknown license: ", l)

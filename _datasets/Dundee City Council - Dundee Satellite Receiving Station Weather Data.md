@@ -3,7 +3,7 @@ category:
 - Weather,Environment
 date_created: '2019-03-19'
 date_updated: '2018-03-13'
-license: Creative Commons Attribution Share-Alike 4.0
+license: https://creativecommons.org/licenses/by-sa/4.0/
 maintainer: Dundee City Council
 notes: '<p>Weather data, primarily wind, temperature, pressure, humidity, recorded
   from a weather station situated on the top of the University''s tower building.

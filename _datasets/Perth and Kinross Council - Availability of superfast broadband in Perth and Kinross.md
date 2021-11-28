@@ -3,7 +3,7 @@ category:
 - Superfast Broadband,broadband,economy
 date_created: '2019-11-05'
 date_updated: '2018-10-31'
-license: Creative Commons Attribution 4.0
+license: https://creativecommons.org/licenses/by/4.0/
 maintainer: Perth and Kinross Council
 notes: "<table><tbody><tr><td></td></tr><tr><td></td><td>Availability of Superfast\
   \ (% of Premises) \u2013 Percentage of premises that have at least Superfast Broadband\
