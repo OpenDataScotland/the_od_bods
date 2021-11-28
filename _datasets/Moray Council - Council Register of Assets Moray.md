@@ -2,9 +2,10 @@
 category:
 - INSPIRE
 - Business
+date_created: '2017-08-21'
+date_updated: '2021-05-14'
 license: ''
 maintainer: Moray Council
-maintainer_email: someone@example.com
 notes: "<p>Council Register of Assets (Moray).\_ Section 94 of the Community Empowerment\
   \ (Scotland) Act 2015 (the Act) requires public authorities to make available to\
   \ members of the public a register of land that it owns or leases \u201Cto the best\
@@ -14,6 +15,7 @@ notes: "<p>Council Register of Assets (Moray).\_ Section 94 of the Community Emp
   \ of the Act and does not necessarily imply that the Council is actively seeking\
   \ to transfer that asset to the community.</p>"
 organization: Moray Council
+records: null
 resources:
 - format: html
   name: Description

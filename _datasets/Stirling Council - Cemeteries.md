@@ -1,9 +1,10 @@
 ---
 category:
 - LGCS Cemeteries & Crematoria
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2021-06-01'
+date_updated: '2019-02-04'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Stirling Council
-maintainer_email: someone@example.com
 notes: "<p><strong>Extract of electronic burial records for cemeteries managed and\
   \ maintained by Stirling Council.</strong></p>\n<p><strong>Although this is not\
   \ a full record of interments, the </strong><a href=\"https://www.stirling.gov.uk/libraries-archives/archives/\"\
@@ -18,6 +19,7 @@ notes: "<p><strong>Extract of electronic burial records for cemeteries managed a
   \ <strong>provide useful information for those wishing to research their family\
   \ tree.</strong></p>\n<p><strong>Next update available from Tuesday, 6th July, 2021.</strong></p>"
 organization: Stirling Council
+records: null
 resources:
 - format: html
   name: Description

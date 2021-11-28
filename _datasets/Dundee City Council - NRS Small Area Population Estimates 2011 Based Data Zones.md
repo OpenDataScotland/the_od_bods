@@ -4,9 +4,10 @@ category:
 - Estimated Population
 - I&RTeam
 - National Records of Scotland
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2021-03-05'
+date_updated: '2019-01-29'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dundee City Council
-maintainer_email: someone@example.com
 notes: "<p>This data set contains data zone level mid-year population estimates for\
   \ Dundee City, sourced from the National Records of Scotland Small Area Population\
   \ Estimates Scotland Publications.\nAt Data Zone level Scotland can be split into\
@@ -20,6 +21,7 @@ notes: "<p>This data set contains data zone level mid-year population estimates 
   \ Website and can be accessed by clicking on the link below:\nhttps://www.nrscotland.gov.uk/statistics-and-data/statistics/statistics-by-theme/population/population-estimates/2011-based-special-area-population-estimates/small-area-population-estimates/time-series\n\
   \xA9 Crown Copyright 2020</p>"
 organization: Dundee City Council
+records: null
 resources:
 - format: html
   name: Description

@@ -1,11 +1,13 @@
 ---
 category:
 - Website analytics
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2019-03-19'
+date_updated: '2018-05-11'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dundee City Council
-maintainer_email: someone@example.com
 notes: <p>Performance data for the Dundee City Open Data Portal (data.dundeecity.gov.uk).</p>
 organization: Dundee City Council
+records: null
 resources:
 - format: html
   name: Description

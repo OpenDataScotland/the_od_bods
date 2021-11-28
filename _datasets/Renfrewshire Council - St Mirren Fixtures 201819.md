@@ -3,12 +3,14 @@ category:
 - Open Data
 - Renfrewshire
 - Community
+date_created: '2018-08-17'
+date_updated: '2019-04-17'
 license: ''
 maintainer: Renfrewshire Council
-maintainer_email: someone@example.com
 notes: "<p>A dataset showing the fixtures and results of football\_games played by\
   \ St Mirren football\_teams. For further information please visit\_https://www.stmirren.com/news/matchday/first-team-fixtures</p>"
 organization: Renfrewshire Council
+records: null
 resources:
 - format: html
   name: Description

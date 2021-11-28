@@ -1,13 +1,15 @@
 ---
 category:
 - Complaints
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2020-04-08'
+date_updated: '2018-01-31'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dundee City Council
-maintainer_email: someone@example.com
 notes: <p>The percentage of complaints recorded by the Council in each six month period
   in each of the categories included in the model Complaint Handling Procedure in
   Local Authorities.</p>
 organization: Dundee City Council
+records: null
 resources:
 - format: html
   name: Description

@@ -3,9 +3,10 @@ category:
 - Planning
 - Environment
 - Open Data
+date_created: '2017-12-13'
+date_updated: '2020-11-30'
 license: ''
 maintainer: Moray Council
-maintainer_email: someone@example.com
 notes: "<p>The Local Development Plan 2015 was superseded by the Local Development\
   \ Plan 2020 on 27 July 2020.The aim of this designation is to protect areas of strategically\
   \ important landscapes from inappropriate development. The designation also aims\
@@ -17,6 +18,7 @@ notes: "<p>The Local Development Plan 2015 was superseded by the Local Developme
   \ of the new track, but also from the drainage and erosion effects on the local\
   \ area.</p>"
 organization: Moray Council
+records: null
 resources:
 - format: html
   name: Description

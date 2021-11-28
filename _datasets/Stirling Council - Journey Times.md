@@ -1,9 +1,10 @@
 ---
 category:
 - LGCS Transport Infrastructure
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2021-06-02'
+date_updated: '2019-09-04'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Stirling Council
-maintainer_email: someone@example.com
 notes: "<p><strong>This dataset grouping details the output from transport monitoring\
   \ within Stirling.</strong>     </p>\n<p><strong>Outputs from the monitors feed\
   \ into the Local Transport Strategy (LTS) which can be accessed via Stirling Council\u2019\
@@ -27,6 +28,7 @@ notes: "<p><strong>This dataset grouping details the output from transport monit
   https://www.roadworksscotland.org/\">Scottish Roadworks Commissioner</a> can give\
   \ further details on any planned roadworks throughout the country.</strong></p>"
 organization: Stirling Council
+records: null
 resources:
 - format: html
   name: Description

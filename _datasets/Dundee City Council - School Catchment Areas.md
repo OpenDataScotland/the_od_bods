@@ -1,9 +1,10 @@
 ---
 category:
 - Education
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2017-10-24'
+date_updated: '2017-10-14'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dundee City Council
-maintainer_email: someone@example.com
 notes: '<p>Catchment areas of all mainstream schools within the Dundee City Council
   administrative boundary. Catchments are available for Primary and Secondary, Denominational
   and Nondenominational schools. Catchment areas are used to help place children resident
@@ -13,6 +14,7 @@ notes: '<p>Catchment areas of all mainstream schools within the Dundee City Coun
   not resident in that catchment area are required to make a placing request for entry
   into that school.</p>'
 organization: Dundee City Council
+records: null
 resources:
 - format: html
   name: Description

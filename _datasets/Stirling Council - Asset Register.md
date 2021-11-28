@@ -1,9 +1,10 @@
 ---
 category:
 - LGCS Council Property
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2021-04-19'
+date_updated: '2019-02-06'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Stirling Council
-maintainer_email: someone@example.com
 notes: '<p><strong>Stirling Council''s activities cover the area bordered by Clackmannanshire
   (to the east), North Lanarkshire (to the south), Falkirk (to the south-east), Perth
   &amp; Kinross (to the north and north-east), Argyll &amp; Bute (to the north and
@@ -20,6 +21,7 @@ notes: '<p><strong>Stirling Council''s activities cover the area bordered by Cla
   <p><strong>All data believed to be correct at the date of the last update, 12th
   February, 2019.</strong></p>'
 organization: Stirling Council
+records: null
 resources:
 - format: html
   name: Description

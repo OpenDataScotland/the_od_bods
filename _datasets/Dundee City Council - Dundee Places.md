@@ -1,9 +1,10 @@
 ---
 category:
 - venues,culture,creativity,dundee,community
+date_created: '2019-03-19'
+date_updated: '2017-10-30'
 license: Creative Commons Attribution 4.0
 maintainer: Dundee City Council
-maintainer_email: someone@example.com
 notes: "<p>As part of an exciting collaboration with Dundee Place Partnership, <a\
   \ href=\"https://creativedundee.com/\">Creative Dundee</a> has been doing some research\
   \ and consultation to find out more about the cultural and creative happenings across\
@@ -14,6 +15,7 @@ notes: "<p>As part of an exciting collaboration with Dundee Place Partnership, <
   \ places are shared in this dataset. Read more about the research and see other\
   \ results on Creative Dundee's website. </p>"
 organization: Dundee City Council
+records: null
 resources:
 - format: html
   name: Description

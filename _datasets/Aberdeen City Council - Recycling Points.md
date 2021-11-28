@@ -5,13 +5,15 @@ category:
 - Rubbish
 - Tip
 - Waste Disposal
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2020-09-22'
+date_updated: '2020-07-20'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Aberdeen City Council
-maintainer_email: someone@example.com
 notes: <div style='text-align:Left;'><div><div><p><span>Point dataset with the locations
   of Recycling </span><span>Point</span><span>s in Aberdeen City Council local authority
   area. Attribute information includes site name, road name, locality and postcode.</span></p></div></div></div>
 organization: Aberdeen City Council
+records: null
 resources:
 - format: html
   name: Description

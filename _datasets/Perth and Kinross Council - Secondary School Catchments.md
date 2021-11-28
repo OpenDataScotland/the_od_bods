@@ -1,12 +1,14 @@
 ---
 category:
 - boundaries,catchments,education,schools,secondary
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2019-06-25'
+date_updated: '2018-06-07'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Perth and Kinross Council
-maintainer_email: someone@example.com
 notes: <p>Boundaries for secondary school catchment areas excluding Roman Catholic
   Schools.</p>
 organization: Perth and Kinross Council
+records: null
 resources:
 - format: html
   name: Description

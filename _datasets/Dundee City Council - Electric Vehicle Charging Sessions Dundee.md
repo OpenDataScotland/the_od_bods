@@ -1,9 +1,10 @@
 ---
 category:
 - EV,Electric Vehicle,Charging
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2019-03-19'
+date_updated: '2017-12-04'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dundee City Council
-maintainer_email: someone@example.com
 notes: '<p>Every electric vehicle charging session at Dundee City Council owned charge
   points. Data includes: Start and finish date/time, Kwh (amount of electricity) used,
   Charge point ID, Location, Type of Charger.</p>
@@ -11,6 +12,7 @@ notes: '<p>Every electric vehicle charging session at Dundee City Council owned 
   <p>More information about electric vehicles in Dundee can be found on the Drive
   Dundee Electric <a href="https://drivedundeeelectric.co.uk/">website</a>.</p>'
 organization: Dundee City Council
+records: null
 resources:
 - format: html
   name: Description

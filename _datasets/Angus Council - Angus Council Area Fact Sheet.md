@@ -11,14 +11,16 @@ category:
 - population
 - projections
 - statistics
-license: UK Open Government Licence (OGL)
+date_created: '2017-01-12'
+date_updated: '2017-01-04'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Angus Council
-maintainer_email: someone@example.com
 notes: '<p>Sourced from National Records of Scotland website the fact sheet brings
   together up-to-date statistics of the Angus area.
 
   https://www.nrscotland.gov.uk/statistics-and-data/statistics/stats-at-a-glance/council-area-profiles</p>'
 organization: Angus Council
+records: null
 resources:
 - format: html
   name: Description

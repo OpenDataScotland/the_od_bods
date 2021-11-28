@@ -3,9 +3,10 @@ category:
 - Planning
 - Environment
 - Open Data
+date_created: '2017-12-13'
+date_updated: '2020-11-30'
 license: ''
 maintainer: Moray Council
-maintainer_email: someone@example.com
 notes: "<p>The Local Development Plan 2015 was superseded by the Local Development\
   \ Plan 2020 on 27 July 2020.The five main towns of Elgin, Forres, Buckie, Keith\
   \ and Lossiemouth are subject to the highest development pressures and Countryside\
@@ -15,6 +16,7 @@ notes: "<p>The Local Development Plan 2015 was superseded by the Local Developme
   \ from the types of acceptable development to maintain and preserve the distinction\
   \ with the built up area.</p>"
 organization: Moray Council
+records: null
 resources:
 - format: html
   name: Description

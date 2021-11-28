@@ -3,9 +3,10 @@ category:
 - Aberdeen
 - Democracy
 - Goverment
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2020-08-04'
+date_updated: '2020-02-27'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Aberdeen City Council
-maintainer_email: someone@example.com
 notes: '<p>The current UK Parliament constituencies were set in 2005.  The majority
   of the Aberdeen City area falls within 2 constituencies:</p>
 
@@ -52,6 +53,7 @@ notes: '<p>The current UK Parliament constituencies were set in 2005.  The major
 
   </ul>'
 organization: Aberdeen City Council
+records: null
 resources:
 - format: html
   name: Description

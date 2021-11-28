@@ -2,12 +2,14 @@
 category:
 - Boundary
 - Electoral
+date_created: '2017-07-07'
+date_updated: '2017-07-18'
 license: ''
 maintainer: Argyll and Bute Council
-maintainer_email: someone@example.com
 notes: "<p>Electoral Wards in Argyll and Bute Council - the divisions of the area\
   \ used to elect local\_councillors. Each ward has three or four councillors.</p>"
 organization: Argyll and Bute Council
+records: null
 resources:
 - format: html
   name: Description

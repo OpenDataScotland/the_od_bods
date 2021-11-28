@@ -1,9 +1,10 @@
 ---
 category:
 - Active Travel
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2019-03-19'
+date_updated: '2018-01-24'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dundee City Council
-maintainer_email: someone@example.com
 notes: "<p>The <a href=\"https://www.sustrans.org.uk/scotland/hands-up-scotland-survey\"\
   >Hands Up Scotland Survey</a> looks at how pupils across Scotland travel to school.\
   \ The project is funded by Transport Scotland and is a joint survey between Sustrans\
@@ -11,6 +12,7 @@ notes: "<p>The <a href=\"https://www.sustrans.org.uk/scotland/hands-up-scotland-
   \ complete the survey in class by asking their pupils \u2018How do you normally\
   \ travel to school?\u2019.</p>"
 organization: Dundee City Council
+records: null
 resources:
 - format: html
   name: Description

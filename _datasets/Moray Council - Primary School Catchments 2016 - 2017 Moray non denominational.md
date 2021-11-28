@@ -3,9 +3,10 @@ category:
 - education
 - Open Data
 - boundaries
+date_created: '2017-10-27'
+date_updated: '2020-11-30'
 license: ''
 maintainer: Moray Council
-maintainer_email: someone@example.com
 notes: "<p>Primary School Catchments 01/01/2016 - 13/08/2017 (Moray) (non denominational)In\
   \  Moray, the education authority discharges its duty to secure adequate  and efficient\
   \ education for the local authority area by operating a  \u201Ccatchment area\u201D\
@@ -18,6 +19,7 @@ notes: "<p>Primary School Catchments 01/01/2016 - 13/08/2017 (Moray) (non denomi
   \ school which is not the  designated catchment area school for their postal address,\
   \ they must  make an out-of-zone \u2018placing request\u2019.\_ </p>"
 organization: Moray Council
+records: null
 resources:
 - format: html
   name: Description

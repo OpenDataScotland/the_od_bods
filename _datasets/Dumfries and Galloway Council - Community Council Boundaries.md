@@ -2,11 +2,13 @@
 category:
 - Geospatial
 - Business, Social, Community
-license: OGL3
+date_created: '2018-07-12T12:59:47.961Z'
+date_updated: '2018-10-02 09:02:04.110'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
-maintainer_email: someone@example.com
 notes: ''
 organization: Dumfries and Galloway Council
+records: null
 resources:
 - format: html
   name: Description

@@ -3,9 +3,10 @@ category:
 - Renfrewshire
 - Open Data
 - Population and Society
+date_created: '2019-07-19'
+date_updated: '2019-07-24'
 license: ''
 maintainer: Renfrewshire Council
-maintainer_email: someone@example.com
 notes: "<p>Mid-year population estimates: Scotland and Renfrewshire by single year\
   \ of age and sex 1981 to 2018.Annual publication of mid-year population estimates\
   \ by age and sex as at 30 June every year, where population for higher geographies\
@@ -27,6 +28,7 @@ notes: "<p>Mid-year population estimates: Scotland and Renfrewshire by single ye
   \ see the NRS website here:\_https://www.nrscotland.gov.uk/statistics-and-data/statistics/statistics-by-theme/population/population-estimates/mid-year-population-estimatesSingle\
   \ year of age population estimates are available on the NRS website here:\_https://www.nrscotland.gov.uk/statistics-and-data/statistics/statistics-by-theme/population/population-estimates/2011-based-special-area-population-estimates/small-area-population-estimates</p>"
 organization: Renfrewshire Council
+records: null
 resources:
 - format: html
   name: Description

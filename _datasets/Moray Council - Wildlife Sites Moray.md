@@ -3,11 +3,13 @@ category:
 - Planning
 - Environment
 - INSPIRE
+date_created: '2019-02-19'
+date_updated: '2020-11-30'
 license: ''
 maintainer: Moray Council
-maintainer_email: someone@example.com
 notes: <p>Wildlife Sites (Moray)</p>
 organization: Moray Council
+records: null
 resources:
 - format: html
   name: Description

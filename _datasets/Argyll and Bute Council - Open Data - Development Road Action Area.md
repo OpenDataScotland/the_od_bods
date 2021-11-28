@@ -5,13 +5,15 @@ category:
 - Road
 - Transport
 - Planning
+date_created: '2017-07-07'
+date_updated: '2017-07-18'
 license: ''
 maintainer: Argyll and Bute Council
-maintainer_email: someone@example.com
 notes: <p>Action proposed by the 2015 Local Development Plan in support of its settlement
   plans and proposals involving safeguarding measures, feasibility studies into options
   and the undertaking of development road schemes.</p>
 organization: Argyll and Bute Council
+records: null
 resources:
 - format: html
   name: Description

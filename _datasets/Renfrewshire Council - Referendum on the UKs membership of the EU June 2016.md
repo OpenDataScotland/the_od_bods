@@ -3,11 +3,13 @@ category:
 - Open Data
 - Renfrewshire
 - Democracy and Governance
+date_created: '2018-01-09'
+date_updated: '2018-07-27'
 license: ''
 maintainer: Renfrewshire Council
-maintainer_email: someone@example.com
 notes: "<p>Results of the\_Referendum on the UK's membership of the EU, 23 June 2016.</p>"
 organization: Renfrewshire Council
+records: null
 resources:
 - format: html
   name: Description

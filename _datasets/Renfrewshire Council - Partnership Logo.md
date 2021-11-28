@@ -1,11 +1,13 @@
 ---
 category:
 - Open Data Platform
+date_created: '2017-10-23'
+date_updated: '2019-07-23'
 license: ''
 maintainer: Renfrewshire Council
-maintainer_email: someone@example.com
 notes: ''
 organization: Renfrewshire Council
+records: null
 resources:
 - format: html
   name: Description

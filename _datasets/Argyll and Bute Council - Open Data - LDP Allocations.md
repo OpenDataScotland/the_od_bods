@@ -5,14 +5,16 @@ category:
 - Housing
 - Business
 - Planning
+date_created: '2017-07-07'
+date_updated: '2017-07-18'
 license: ''
 maintainer: Argyll and Bute Council
-maintainer_email: someone@example.com
 notes: "<p>A site proposed in the Argyll and Bute adopted Local Development Plan 2015\_\
   \ for specified development purposes which can be expected to be commenced or delivered\
   \ within the plan-period without having to overcome significant obstacles to the\
   \ development</p>"
 organization: Argyll and Bute Council
+records: null
 resources:
 - format: html
   name: Description

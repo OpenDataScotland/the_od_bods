@@ -3,9 +3,10 @@ category:
 - Aberdeen
 - Democracy
 - Goverment
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2020-08-04'
+date_updated: '2020-02-28'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Aberdeen City Council
-maintainer_email: someone@example.com
 notes: '<p>In Scottish parliamentary elections voters use the <strong>first past the
   post system</strong> to elect constituency Members of the Scottish Parliament (MSPs).  Aberdeen
   city has three constituencies: </p>
@@ -65,6 +66,7 @@ notes: '<p>In Scottish parliamentary elections voters use the <strong>first past
 
   </ul>'
 organization: Aberdeen City Council
+records: null
 resources:
 - format: html
   name: Description

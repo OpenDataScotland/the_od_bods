@@ -3,11 +3,13 @@ category:
 - Renfrewshire
 - Open Data
 - Community
+date_created: '2019-04-17'
+date_updated: '2019-04-17'
 license: ''
 maintainer: Renfrewshire Council
-maintainer_email: someone@example.com
 notes: <p>Dataset listing Big Lottery funded projects in Renfrewshire in 2018.</p>
 organization: Renfrewshire Council
+records: null
 resources:
 - format: html
   name: Description

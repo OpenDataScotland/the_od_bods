@@ -3,12 +3,14 @@ category:
 - Open Data
 - Renfrewshire
 - Population and Society
+date_created: '2017-12-04'
+date_updated: '2018-09-12'
 license: ''
 maintainer: Renfrewshire Council
-maintainer_email: someone@example.com
 notes: "<p>Scottish Index of Multiple Deprivation (SIMD) 2016 indicator data for Renfrewshire.\_\
   For more information, guidance, and SIMD16 Technical Notes please go to\_http://www.gov.scot/SIMD</p>"
 organization: Renfrewshire Council
+records: null
 resources:
 - format: html
   name: Description

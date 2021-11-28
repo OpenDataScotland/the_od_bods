@@ -2,11 +2,13 @@
 category:
 - NOMIS
 - employment
+date_created: '2019-08-02'
+date_updated: '2019-08-02'
 license: ''
 maintainer: Renfrewshire Council
-maintainer_email: someone@example.com
 notes: ''
 organization: Renfrewshire Council
+records: null
 resources:
 - format: html
   name: Description

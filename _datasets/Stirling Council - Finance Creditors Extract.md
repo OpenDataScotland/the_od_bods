@@ -1,9 +1,10 @@
 ---
 category:
 - LGCS Finance
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2021-06-01'
+date_updated: '2019-07-02'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Stirling Council
-maintainer_email: someone@example.com
 notes: "<p><strong>Breakdown of individual payments to and credits from suppliers\
   \ providing goods and/or services to Stirling Council.</strong></p>\n<p><strong>Based\
   \ on the content of the relevant quarterly datasets, an annual summary of suppliers\
@@ -12,6 +13,7 @@ notes: "<p><strong>Breakdown of individual payments to and credits from supplier
   https://www.stirling.gov.uk/council-democracy/information-performance-statistics/annual-accounts/\"\
   >Stirling\u2019s Annual Accounts</a> are available on the Council\u2019s website.</strong></p>"
 organization: Stirling Council
+records: null
 resources:
 - format: html
   name: Description

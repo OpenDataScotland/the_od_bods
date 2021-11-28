@@ -1,9 +1,10 @@
 ---
 category:
 - LGCS Waste Management
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2021-05-20'
+date_updated: '2021-04-09'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Stirling Council
-maintainer_email: someone@example.com
 notes: "<p><strong>Datasets within this group show the monthly breakdown of the tonnage\
   \ of waste received from Stirling Council\u2019s domestic waste collections. These\
   \ figures are validated by the Scottish Environmental Protection Agency (SEPA) on\
@@ -16,6 +17,7 @@ notes: "<p><strong>Datasets within this group show the monthly breakdown of the 
   ><strong>Waste Management (2018 to 2020, inclusive)</strong></a><strong> group on\
   \ this platform.</strong></p>"
 organization: Stirling Council
+records: null
 resources:
 - format: html
   name: Description

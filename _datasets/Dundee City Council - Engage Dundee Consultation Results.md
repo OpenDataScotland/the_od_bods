@@ -1,9 +1,10 @@
 ---
 category:
 - Community development
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2019-03-19'
+date_updated: '2018-01-31'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dundee City Council
-maintainer_email: someone@example.com
 notes: "<p>The Place Standard is used to evaluate the quality of a \u201Cplace\u201D\
   . It can evaluate places that are well-established, undergoing change, or still\
   \ being planned. The tool can also help users to identify their  priorities. This\
@@ -18,6 +19,7 @@ notes: "<p>The Place Standard is used to evaluate the quality of a \u201Cplace\u
   \ can read more about the results in the <a href=\"\" title=\"http://www.dundeepartnership.co.uk/sites/default/files/Engage%20Dundee%20PR%20summary.pdf\"\
   >Engage Dundee summary leaflet</a>.</p>"
 organization: Dundee City Council
+records: null
 resources:
 - format: html
   name: Description

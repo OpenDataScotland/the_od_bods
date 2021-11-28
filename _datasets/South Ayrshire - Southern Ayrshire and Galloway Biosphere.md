@@ -3,11 +3,13 @@ category:
 - environment
 - conservation
 - planning
+date_created: '2015-10-30'
+date_updated: '2020-11-25'
 license: ''
 maintainer: South Ayrshire
-maintainer_email: someone@example.com
 notes: <p>Boundary for the Southern Ayrshire and Galloway Biosphere</p>
 organization: South Ayrshire
+records: null
 resources:
 - format: html
   name: Description

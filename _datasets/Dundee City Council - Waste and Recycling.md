@@ -1,9 +1,10 @@
 ---
 category:
 - waste
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2018-05-10'
+date_updated: '2018-05-10'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dundee City Council
-maintainer_email: someone@example.com
 notes: "<p>Local authorities are required to report to the Scottish Environmental\
   \ Protection Agency (SEPA) about waste collected and managed by or on behalf of\
   \ them. This is done through an online reporting system called WasteDataFlow (WDF).\
@@ -21,6 +22,7 @@ notes: "<p>Local authorities are required to report to the Scottish Environmenta
   \ shows a break-down of waste types for 2011 \u2013 2015 and the trend for Scottish\
   \ waste landfilled since 2005.</p>\n<p>All data can be exported to Excel if required.</p>"
 organization: Dundee City Council
+records: null
 resources:
 - format: html
   name: Description

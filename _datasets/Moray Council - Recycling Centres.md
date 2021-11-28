@@ -1,12 +1,14 @@
 ---
 category:
 - Recycling
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: ''
+date_updated: ''
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Moray Council
-maintainer_email: someone@example.com
 notes: <p>Details of name, location, opening times and contact telephone number (where
   applicable)</p>
 organization: Moray Council
+records: null
 resources:
 - format: html
   name: Description

@@ -1,13 +1,15 @@
 ---
 category:
 - General economic, commercial and labour affairs
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2019-06-25'
+date_updated: '2017-09-19'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Perth and Kinross Council
-maintainer_email: someone@example.com
 notes: '<p>Test using NOMIS API
 
   Licenced under OGL v3.0</p>'
 organization: Perth and Kinross Council
+records: null
 resources:
 - format: html
   name: Description

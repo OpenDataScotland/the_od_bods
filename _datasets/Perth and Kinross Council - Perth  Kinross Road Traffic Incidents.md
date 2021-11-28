@@ -3,13 +3,15 @@ category:
 - Roads
 - Safety
 - Transport
-license: uk-ogl
+date_created: '2020-07-14'
+date_updated: '2017-08-21'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Perth and Kinross Council
-maintainer_email: someone@example.com
 notes: <p>Filtered from DfT data, derived from data.gov.uk and published under the
   <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open
   Government License v3.0</a></p>
 organization: Perth and Kinross Council
+records: null
 resources:
 - format: html
   name: Description

@@ -1,9 +1,10 @@
 ---
 category:
 - LGCS Transport Infrastructure
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2021-06-17'
+date_updated: '2021-04-26'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Stirling Council
-maintainer_email: someone@example.com
 notes: "<p><strong>This group details the output from transport monitoring of cyclist\
   \ and pedestrian activity within Stirling.</strong></p>\n<p><strong>Outputs from\
   \ the monitors feed into Stirling Council\u2019s </strong><a href=\"https://www.stirling.gov.uk/roads-transport-streets/environment-friendly-transport/local-transport-strategy-documents/\"\
@@ -28,6 +29,7 @@ notes: "<p><strong>This group details the output from transport monitoring of cy
   \ Roadworks Commissioner </strong></a><strong>can give further details on any planned\
   \ roadworks throughout the country.</strong></p>"
 organization: Stirling Council
+records: null
 resources:
 - format: html
   name: Description

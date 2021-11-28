@@ -3,12 +3,14 @@ category:
 - Boundary
 - Education
 - School
+date_created: '2017-07-07'
+date_updated: '2017-07-18'
 license: ''
 maintainer: Argyll and Bute Council
-maintainer_email: someone@example.com
 notes: <p>Boundaries of Primary School Catchment Areas in Argyll and Bute, including
   denominational (Roman Catholic) Primary Schools.</p>
 organization: Argyll and Bute Council
+records: null
 resources:
 - format: html
   name: Description

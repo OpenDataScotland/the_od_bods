@@ -1,9 +1,10 @@
 ---
 category:
 - food,safety hygiene,ratings
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2019-03-19'
+date_updated: '2017-11-29'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dundee City Council
-maintainer_email: someone@example.com
 notes: "<p>Food hygiene rating or inspection results given to a businesses and date\
   \ of inspection or visit by the Dundee City council. Businesses include restaurants,\
   \ pubs, caf\xE9s, takeaways, hotels and other places consumers eat, as well as in\
@@ -11,6 +12,7 @@ notes: "<p>Food hygiene rating or inspection results given to a businesses and d
   \ on behalf of all local authorities participating in the FSA's national food hygiene\
   \ rating schemes.</p>"
 organization: Dundee City Council
+records: null
 resources:
 - format: html
   name: Description

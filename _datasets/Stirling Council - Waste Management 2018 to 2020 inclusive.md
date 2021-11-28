@@ -1,9 +1,10 @@
 ---
 category:
 - LGCS Waste Management
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2021-04-19'
+date_updated: '2019-02-11'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Stirling Council
-maintainer_email: someone@example.com
 notes: '<p><strong>Domestic waste collection datasets are no longer published under
   this heading. From January 2021, these datasets will be available under the </strong><a
   href="https://data.stirling.gov.uk/dataset/waste-services-2021-onwards"><strong>Waste
@@ -21,6 +22,7 @@ notes: '<p><strong>Domestic waste collection datasets are no longer published un
   <p><strong>For information on  environmental protection, visit </strong><a href="https://www.sepa.org.uk/"><strong>SEPA''s
   website</strong></a><strong>.</strong></p>'
 organization: Stirling Council
+records: null
 resources:
 - format: html
   name: Description

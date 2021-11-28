@@ -3,15 +3,17 @@ category:
 - Planning
 - Environment
 - Open Data
+date_created: '2017-12-13'
+date_updated: '2020-11-30'
 license: ''
 maintainer: Moray Council
-maintainer_email: someone@example.com
 notes: <p>The Local Development Plan 2015 was superseded by the Local Development
   Plan 2020 on 27 July 2020.The objective of the designation is to protect and enhance
   the Moray coast for its landscape, nature conservation, recreation and tourism benefits.
   The undeveloped coastline is protected through identification of a Coastal Protection
   Zone (CPZ) within which only certain types of development will be acceptable.</p>
 organization: Moray Council
+records: null
 resources:
 - format: html
   name: Description

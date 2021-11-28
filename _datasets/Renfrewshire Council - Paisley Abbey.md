@@ -2,11 +2,13 @@
 category:
 - Open Data
 - Renfrewshire
+date_created: '2017-10-20'
+date_updated: '2019-07-23'
 license: ''
 maintainer: Renfrewshire Council
-maintainer_email: someone@example.com
 notes: ''
 organization: Renfrewshire Council
+records: null
 resources:
 - format: html
   name: Description

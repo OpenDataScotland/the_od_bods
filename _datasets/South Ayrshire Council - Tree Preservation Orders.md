@@ -4,11 +4,13 @@ category:
 - conservation
 - environment
 - woodland
+date_created: '2015-10-30'
+date_updated: '2019-09-13'
 license: ''
 maintainer: South Ayrshire Council
-maintainer_email: someone@example.com
 notes: <p>Tree presevation orders in force across the area</p>
 organization: South Ayrshire Council
+records: null
 resources:
 - format: html
   name: Description

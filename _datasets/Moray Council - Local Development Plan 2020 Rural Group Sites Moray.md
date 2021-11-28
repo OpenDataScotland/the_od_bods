@@ -3,11 +3,13 @@ category:
 - Planning
 - INSPIRE
 - Development Plans
+date_created: 23/07/20
+date_updated: '2020-11-30'
 license: INSPIRE Regulations 2009
 maintainer: Moray Council
-maintainer_email: someone@example.com
 notes: ''
 organization: Moray Council
+records: null
 resources:
 - format: html
   name: Description

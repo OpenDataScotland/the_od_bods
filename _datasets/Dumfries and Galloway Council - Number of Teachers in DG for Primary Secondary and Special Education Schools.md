@@ -2,11 +2,13 @@
 category:
 - Built environment
 - Children, Education, Schools
-license: OGL3
+date_created: '2017-11-15T09:59:28.542Z'
+date_updated: '2019-01-29 08:43:53.250'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
-maintainer_email: someone@example.com
 notes: ''
 organization: Dumfries and Galloway Council
+records: null
 resources:
 - format: html
   name: Description

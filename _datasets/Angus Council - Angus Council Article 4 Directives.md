@@ -6,13 +6,15 @@ category:
 - development
 - historic
 - planning
-license: UK Open Government Licence (OGL)
+date_created: '2016-12-09'
+date_updated: '2016-11-28'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Angus Council
-maintainer_email: someone@example.com
 notes: <p>Areas where Permitted Development rights under classes 1,7 &amp; 8 of Town
   Country Planning (General Permitted Development)(Scotland) Order 1992 have been
   revoked.</p>
 organization: Angus Council
+records: null
 resources:
 - format: html
   name: Description

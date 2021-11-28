@@ -1,9 +1,10 @@
 ---
 category:
 - broadband,economy,ultrafast broadband
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2020-04-24'
+date_updated: '2018-10-31'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Perth and Kinross Council
-maintainer_email: someone@example.com
 notes: <p>Percentage of premises that have Ultrafast Broadband coverage (300Mbit/s
   or greater) Sourced from Connected Nations Report by Ofcom.  Data collected and
   analysed from major fixed telecoms operators (BT, Virgin, Sky, Talk Talk, Vodafone
@@ -14,6 +15,7 @@ notes: <p>Percentage of premises that have Ultrafast Broadband coverage (300Mbit
   infrastructure. However, the information provided in this file may be useful in
   identifying variations in broadband availability. More information from - https://www.ofcom.org.uk/research-and-data/multi-sector-research/infrastructure-research/connected-nations-update-spring-2018</p>
 organization: Perth and Kinross Council
+records: null
 resources:
 - format: html
   name: Description

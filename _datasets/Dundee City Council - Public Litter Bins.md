@@ -1,15 +1,17 @@
 ---
 category:
 - Waste
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2019-03-19'
+date_updated: '2018-06-06'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dundee City Council
-maintainer_email: someone@example.com
 notes: <p>Locations of all public bins within Dundee City. The public bin network
   is still being developed and thus this data is subject to change. Visit the Dundee
   City Council website for more information about <a href="https://www.dundeecity.gov.uk/service-area/neighbourhood-services/environment/environmental-management">environmental
   management</a> carried out by Dundee City Council, or to report a <a href="https://www.dundeecity.gov.uk/service-area/neighbourhood-services/environment/street-cleansing">street
   cleansing</a> issue.</p>
 organization: Dundee City Council
+records: null
 resources:
 - format: html
   name: Description

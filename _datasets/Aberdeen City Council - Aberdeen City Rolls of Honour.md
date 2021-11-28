@@ -2,9 +2,10 @@
 category:
 - Aberdeen
 - Military
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2020-08-04'
+date_updated: '2020-02-11'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Aberdeen City Council
-maintainer_email: someone@example.com
 notes: "<p>The Roll of Honour for the <strong>Great War</strong> (later known as World\
   \ War I or WWI) was compiled by the City Assessor, Mr H. G. Pope.  In early 1925,\
   \ forms were sent to each householder in Aberdeen asking for full details of those\
@@ -35,6 +36,7 @@ notes: "<p>The Roll of Honour for the <strong>Great War</strong> (later known as
   >Aberdeen City and Aberdeenshire Archives</a> web pages are listed as resources\
   \ below.</p>"
 organization: Aberdeen City Council
+records: null
 resources:
 - format: html
   name: Description

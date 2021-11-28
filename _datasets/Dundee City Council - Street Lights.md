@@ -1,9 +1,10 @@
 ---
 category:
 - lighting,transport,street-assets
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2019-03-19'
+date_updated: '2018-02-12'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dundee City Council
-maintainer_email: someone@example.com
 notes: '<p>The street lighting in Dundee is delivered through the <a href="https://www.dundeecity.gov.uk/service-area/city-development/roads-and-transportation/street-lighting">Street
   Lighting Partnership</a>.  </p>
 
@@ -14,6 +15,7 @@ notes: '<p>The street lighting in Dundee is delivered through the <a href="https
   a fault</a> online - let us know in the comments if you would be interested in an
   API to report faults using the light data this dataset. </p>'
 organization: Dundee City Council
+records: null
 resources:
 - format: html
   name: Description

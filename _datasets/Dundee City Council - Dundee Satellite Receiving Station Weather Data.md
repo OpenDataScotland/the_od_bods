@@ -1,9 +1,10 @@
 ---
 category:
 - Weather,Environment
+date_created: '2019-03-19'
+date_updated: '2018-03-13'
 license: Creative Commons Attribution Share-Alike 4.0
 maintainer: Dundee City Council
-maintainer_email: someone@example.com
 notes: '<p>Weather data, primarily wind, temperature, pressure, humidity, recorded
   from a weather station situated on the top of the University''s tower building.
   Warning: the location is not ideal so the readings may be affected by turbulence,
@@ -23,6 +24,7 @@ notes: '<p>Weather data, primarily wind, temperature, pressure, humidity, record
 
   WARNING: the hour may show 12: after midnight when it should show 00:</p>'
 organization: Dundee City Council
+records: null
 resources:
 - format: html
   name: Description

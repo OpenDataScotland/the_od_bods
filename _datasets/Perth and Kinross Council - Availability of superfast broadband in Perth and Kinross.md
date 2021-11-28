@@ -1,9 +1,10 @@
 ---
 category:
 - Superfast Broadband,broadband,economy
+date_created: '2019-11-05'
+date_updated: '2018-10-31'
 license: Creative Commons Attribution 4.0
 maintainer: Perth and Kinross Council
-maintainer_email: someone@example.com
 notes: "<table><tbody><tr><td></td></tr><tr><td></td><td>Availability of Superfast\
   \ (% of Premises) \u2013 Percentage of premises that have at least Superfast Broadband\
   \ coverage (30Mbit/s or greater, includes premises with access to Ultrafast speeds)\
@@ -18,6 +19,7 @@ notes: "<table><tbody><tr><td></td></tr><tr><td></td><td>Availability of Superfa
   \ provided in this file may be useful in identifying variations in broadband availability.\
   \ More information from - https://www.ofcom.org.uk/research-and-data/multi-sector-research/infrastructure-research/connected-nations-update-spring-2018</td></tr></tbody></table>"
 organization: Perth and Kinross Council
+records: null
 resources:
 - format: html
   name: Description

@@ -1,9 +1,10 @@
 ---
 category:
 - environment,air quality monitoring,air quality
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2019-03-19'
+date_updated: '2018-02-12'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dundee City Council
-maintainer_email: someone@example.com
 notes: '<p>Of the seven pollutants contained in the Air Quality Standards, currently
   only two of these are routinely monitored in Dundee. These are:</p>
 
@@ -21,6 +22,7 @@ notes: '<p>Of the seven pollutants contained in the Air Quality Standards, curre
   <p>Visit the Air Quality section of the Dundee City Council <a href="https://www.dundeecity.gov.uk/service-area/neighbourhood-services/community-safety-and-protection/air-quality-dundee">website</a>
   for more information on air quality in Dundee. </p>'
 organization: Dundee City Council
+records: null
 resources:
 - format: html
   name: Description

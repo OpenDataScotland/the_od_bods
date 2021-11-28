@@ -4,9 +4,10 @@ category:
 - Built Environment
 - Boundary
 - Planning
+date_created: '2017-07-17'
+date_updated: '2017-07-18'
 license: ''
 maintainer: Argyll and Bute Council
-maintainer_email: someone@example.com
 notes: <p>Conservation Areas "are areas of special architectural or historic interest,
   the character or appearance of which it is desirable to preserve or enhance". S.61
   Planning (Listed Buildings and Conservation Areas) (Scotland) Act 1997Conservation
@@ -16,6 +17,7 @@ notes: <p>Conservation Areas "are areas of special architectural or historic int
   them for the enjoyment and benefit of future generations any new development should
   preserve or enhance their varied character.</p>
 organization: Argyll and Bute Council
+records: null
 resources:
 - format: html
   name: Description

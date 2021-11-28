@@ -5,11 +5,13 @@ category:
 - fish smoking
 - planning
 - protected area
-license: UK Open Government Licence (OGL)
+date_created: '2016-12-09'
+date_updated: '2016-11-30'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Angus Council
-maintainer_email: someone@example.com
 notes: <p>Fish Smoking Area in Arbroath for the production of the Arbroath Smokie</p>
 organization: Angus Council
+records: null
 resources:
 - format: html
   name: Description

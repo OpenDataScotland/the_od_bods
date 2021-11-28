@@ -1,14 +1,16 @@
 ---
 category:
 - Transparency
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2019-03-19'
+date_updated: '2018-04-20'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dundee City Council
-maintainer_email: someone@example.com
 notes: <p>Dundee City Council are dedicated to publishing council owned data under
   an Open Government License by default. The open data publication plan outlines data
   sets scheduled to be released in the near future. This is an iterative document
   and is subject to change.</p>
 organization: Dundee City Council
+records: null
 resources:
 - format: html
   name: Description

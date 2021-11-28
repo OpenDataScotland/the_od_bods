@@ -1,9 +1,10 @@
 ---
 category:
 - school
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2019-03-19'
+date_updated: '2018-05-16'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dundee City Council
-maintainer_email: someone@example.com
 notes: '<p>School term dates for schools within Dundee City for the following academic
   years:</p>
 
@@ -20,6 +21,7 @@ notes: '<p>School term dates for schools within Dundee City for the following ac
   <p>Dates include public and school holidays as well as staff in service days. iCalendar
   format allows you to add dates to most calendar applications. </p>'
 organization: Dundee City Council
+records: null
 resources:
 - format: html
   name: Description

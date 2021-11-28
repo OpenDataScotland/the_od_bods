@@ -3,12 +3,14 @@ category:
 - Renfrewshire
 - Open Data
 - Tourism
+date_created: '2019-07-19'
+date_updated: '2019-07-23'
 license: ''
 maintainer: Renfrewshire Council
-maintainer_email: someone@example.com
 notes: <p>Scottish Annual Business Survey 2017, Sustainable Tourism (June 2019 release)-
   filtered for Renfrewshire</p>
 organization: Renfrewshire Council
+records: null
 resources:
 - format: html
   name: Description

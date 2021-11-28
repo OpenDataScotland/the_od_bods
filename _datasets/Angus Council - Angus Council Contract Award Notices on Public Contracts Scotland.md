@@ -4,12 +4,14 @@ category:
 - angus council
 - contracts
 - local government
-license: UK Open Government Licence (OGL)
+date_created: '2016-11-23'
+date_updated: '2016-11-01'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Angus Council
-maintainer_email: someone@example.com
 notes: <p>Angus Council publishes all contract notices on the Public Contracts Scotland
   website.</p>
 organization: Angus Council
+records: null
 resources:
 - format: html
   name: Description

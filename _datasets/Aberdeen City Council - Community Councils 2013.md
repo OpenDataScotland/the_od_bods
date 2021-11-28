@@ -3,14 +3,16 @@ category:
 - Boundaries
 - Community Councils
 - Democracy
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2020-09-22'
+date_updated: '2020-08-03'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Aberdeen City Council
-maintainer_email: someone@example.com
 notes: <div style='text-align:Left;'><div><div><p><span>Community Councils are bodies
   that play a vital role in representing the views of the community to local authorities
   and other public bodies. Their term of office is 3 years. They have no executive
   powers but are statutory consultees on planning and licensing matters.</span></p></div></div></div>
 organization: Aberdeen City Council
+records: null
 resources:
 - format: html
   name: Description

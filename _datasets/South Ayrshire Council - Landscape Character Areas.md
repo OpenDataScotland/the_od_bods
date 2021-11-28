@@ -2,11 +2,13 @@
 category:
 - environment
 - planning
+date_created: '2015-10-30'
+date_updated: '2019-09-13'
 license: ''
 maintainer: South Ayrshire Council
-maintainer_email: someone@example.com
 notes: <p>Defined landscape character areas for Ayrshire</p>
 organization: South Ayrshire Council
+records: null
 resources:
 - format: html
   name: Description

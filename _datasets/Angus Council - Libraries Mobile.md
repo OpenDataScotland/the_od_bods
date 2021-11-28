@@ -1,10 +1,12 @@
 ---
 category: []
+date_created: '2016-08-08'
+date_updated: ''
 license: Other (Public Domain)
 maintainer: Angus Council
-maintainer_email: someone@example.com
 notes: <p>Text file of Angus Council's mobile library locations</p>
 organization: Angus Council
+records: null
 resources:
 - format: html
   name: Description

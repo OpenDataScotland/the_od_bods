@@ -2,11 +2,13 @@
 category:
 - http://publications.europa.eu/resource/authority/data-theme/HEAL, Social / Community
 - Schools
-license: OGL3
+date_created: '2017-11-29T14:02:26.204Z'
+date_updated: '2018-03-01 15:35:39.363'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
-maintainer_email: someone@example.com
 notes: ''
 organization: Dumfries and Galloway Council
+records: null
 resources:
 - format: html
   name: Description

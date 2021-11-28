@@ -3,9 +3,10 @@ category:
 - Renfrewshire
 - Open Data
 - Business and Economy
+date_created: '2019-07-19'
+date_updated: '2019-07-24'
 license: ''
 maintainer: Renfrewshire Council
-maintainer_email: someone@example.com
 notes: <p>Scottish Annual Business Survey 2017 (June 2019 release)- filtered for Renfrewshire.Scottish
   Annual Business Statistics (SABS), which is largely sourced to the Annual Business
   Survey, provides data mainly on the Production (including Manufacturing), Construction
@@ -17,6 +18,7 @@ notes: <p>Scottish Annual Business Survey 2017 (June 2019 release)- filtered for
   and number of business units. GVA per head, gross wages &amp; salaries per head
   and labour costs per head are also available.</p>
 organization: Renfrewshire Council
+records: null
 resources:
 - format: html
   name: Description

@@ -4,11 +4,13 @@ category:
 - walking
 - paths
 - outdoor access
+date_created: '2015-10-30'
+date_updated: '2020-09-30'
 license: ''
 maintainer: South Ayrshire Council
-maintainer_email: someone@example.com
 notes: <p>Core paths for the area as defined by the Core Paths Plan</p>
 organization: South Ayrshire Council
+records: null
 resources:
 - format: html
   name: Description

@@ -3,9 +3,10 @@ category:
 - LDP
 - Local Development Plan
 - Planning
+date_created: '2017-07-07'
+date_updated: '2017-07-18'
 license: ''
 maintainer: Argyll and Bute Council
-maintainer_email: someone@example.com
 notes: "<p>Areas for Action designated in the Argyll and Bute adopted Local Development\
   \ Plan 2015.\_ Subject to resource availability during the plan-period, these areas\
   \ will be the focus for partnership or community action. Area remits for these AFAs\
@@ -16,6 +17,7 @@ notes: "<p>Areas for Action designated in the Argyll and Bute adopted Local Deve
   \ AFAs may coincide with other categories of sites such as potential development\
   \ areas.</p>"
 organization: Argyll and Bute Council
+records: null
 resources:
 - format: html
   name: Description

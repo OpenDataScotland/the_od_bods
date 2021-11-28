@@ -1,9 +1,10 @@
 ---
 category:
 - LGCS Community Safety
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2021-06-17'
+date_updated: '2019-02-27'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Stirling Council
-maintainer_email: someone@example.com
 notes: '<p><strong><a href="https://www.legislation.gov.uk/ukpga/1991/40/contents">Decriminalised
   Parking Enforcement (DPE)</a> enables local authorities in Scotland to administer
   its own parking penalties, including the issuing of Penalty Charge Notices (PCNs)
@@ -12,6 +13,7 @@ notes: '<p><strong><a href="https://www.legislation.gov.uk/ukpga/1991/40/content
   <p><strong>This dataset lists all PCNs issued and the contravention (reason) for
   the issue since DPE began on 03/05/2017.</strong></p>'
 organization: Stirling Council
+records: null
 resources:
 - format: html
   name: Description

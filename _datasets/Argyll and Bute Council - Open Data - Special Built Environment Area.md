@@ -4,14 +4,16 @@ category:
 - Local Development Plan
 - Built Environment
 - Planning
+date_created: '2017-07-07'
+date_updated: '2017-07-18'
 license: ''
 maintainer: Argyll and Bute Council
-maintainer_email: someone@example.com
 notes: "<p>Areas which do not have the presence, continuity or quality of \u2018conservation\
   \ areas\u2019 but, which exhibit special built and land form characteristics which\
   \ should be safeguarded and promoted when considering development potential and\
   \ proposals.</p>"
 organization: Argyll and Bute Council
+records: null
 resources:
 - format: html
   name: Description

@@ -1,9 +1,10 @@
 ---
 category:
 - Communication,Community development,Transport
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2018-02-16'
+date_updated: '2017-09-25'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dundee City Council
-maintainer_email: someone@example.com
 notes: '<p>Dundee City Council''s posts public notices through the national <a href="https://www.tellmescotland.gov.uk">Tell
   Me Scotland</a> service operated by the Improvement Service.  </p>
 
@@ -21,6 +22,7 @@ notes: '<p>Dundee City Council''s posts public notices through the national <a h
 
   </ul>'
 organization: Dundee City Council
+records: null
 resources:
 - format: html
   name: Description

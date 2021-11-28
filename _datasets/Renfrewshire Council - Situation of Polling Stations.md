@@ -3,12 +3,14 @@ category:
 - Open Data
 - Renfrewshire
 - Democracy and Governance
+date_created: '2017-10-19'
+date_updated: '2017-10-19'
 license: ''
 maintainer: Renfrewshire Council
-maintainer_email: someone@example.com
 notes: "<p>A layer showing the location of polling\_stations in Renfrewshire in June\
   \ 2017.</p>"
 organization: Renfrewshire Council
+records: null
 resources:
 - format: html
   name: Description

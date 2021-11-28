@@ -3,12 +3,14 @@ category:
 - gazetteer
 - localities
 - towns
-license: UK Open Government Licence (OGL)
+date_created: '2016-11-30'
+date_updated: '2016-11-28'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Angus Council
-maintainer_email: someone@example.com
 notes: <p>Localities used in the Corporate Address Gazetteer for the generation of
   addresses.</p>
 organization: Angus Council
+records: null
 resources:
 - format: html
   name: Description

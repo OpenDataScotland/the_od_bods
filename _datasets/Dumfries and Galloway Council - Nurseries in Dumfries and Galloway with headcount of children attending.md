@@ -2,11 +2,13 @@
 category:
 - Social / Community
 - Children
-license: OGL3
+date_created: '2017-11-16T13:35:10.411Z'
+date_updated: '2017-11-16 16:06:12.039'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
-maintainer_email: someone@example.com
 notes: ''
 organization: Dumfries and Galloway Council
+records: null
 resources:
 - format: html
   name: Description

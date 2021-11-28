@@ -2,9 +2,10 @@
 category:
 - Planning
 - INSPIRE
+date_created: '2018-01-11'
+date_updated: '2021-02-02'
 license: ''
 maintainer: Moray Council
-maintainer_email: someone@example.com
 notes: <p>Wind turbine locations generated from planning applications received by
   Moray Council this includes applications Moray Council dealt with and Section 36
   applications which were dealt with by Scottish Government. It also includes refused
@@ -17,6 +18,7 @@ notes: <p>Wind turbine locations generated from planning applications received b
   at construction stage. The data is provided based on the best information available
   to the council at the time of writing.</p>
 organization: Moray Council
+records: null
 resources:
 - format: html
   name: Description

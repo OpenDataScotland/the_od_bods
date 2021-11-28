@@ -4,9 +4,10 @@ category:
 - pupil numbers
 - school
 - schools
-license: UK Open Government Licence (OGL)
+date_created: '2018-10-03'
+date_updated: '2018-10-01'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Angus Council
-maintainer_email: someone@example.com
 notes: "<p>School Roll Forecasts\nView our 2017 based school roll forecasts for Angus\u2019\
   s primary and secondary schools until 2023.\nThe forecasts take as their starting\
   \ point the current school population. They then attempt to identify how that population\
@@ -31,6 +32,7 @@ notes: "<p>School Roll Forecasts\nView our 2017 based school roll forecasts for 
   \ from year to year. They remain the best estimate that can be arrived at, using\
   \ data currently available. </p>"
 organization: Angus Council
+records: null
 resources:
 - format: html
   name: Description

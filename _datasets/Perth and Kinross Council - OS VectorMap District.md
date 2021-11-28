@@ -6,9 +6,10 @@ category:
 - hydrography
 - mapping
 - mid-scales
+date_created: '2020-04-29'
+date_updated: '2017-08-25'
 license: ''
 maintainer: Perth and Kinross Council
-maintainer_email: someone@example.com
 notes: "<p>OS VectorMap District is a simple vector dataset with a nominal scale of\
   \ 1:25000 covering the whole of Great Britain that has been designed for creating\
   \ graphical mapping. The product can be used as mapping in its own right or can\
@@ -18,6 +19,7 @@ notes: "<p>OS VectorMap District is a simple vector dataset with a nominal scale
   \ world features (e.g. roads, railways, buildings blocks, vegetation and boundaries)\
   \ as points, lines, polygons, and text.</p>"
 organization: Perth and Kinross Council
+records: null
 resources:
 - format: html
   name: Description

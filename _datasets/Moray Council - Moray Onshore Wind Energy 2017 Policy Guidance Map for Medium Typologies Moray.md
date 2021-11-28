@@ -2,9 +2,10 @@
 category:
 - Planning
 - Open Data
+date_created: '2018-03-29'
+date_updated: '2020-11-30'
 license: ''
 maintainer: Moray Council
-maintainer_email: someone@example.com
 notes: "<p>Moray Onshore Wind Energy 2017 Policy Guidance Map for Medium Typologies\
   \ (Moray) Areas of Greatest Potential. Scottish Planning Policy states that planning\
   \ authorities \u201Cshould identify where there is strategic capacity for wind farms,\
@@ -16,6 +17,7 @@ notes: "<p>Moray Onshore Wind Energy 2017 Policy Guidance Map for Medium Typolog
   \ typology are the areas with the fewest constraints and therefore the greatest\
   \ potential for wind farm developments.</p>"
 organization: Moray Council
+records: null
 resources:
 - format: html
   name: Description

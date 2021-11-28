@@ -8,13 +8,15 @@ category:
 - diffusion
 - passive monitoring
 - tubes
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2020-09-22'
+date_updated: '2020-08-03'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Aberdeen City Council
-maintainer_email: someone@example.com
 notes: <div style='text-align:Left;'><div><div><p><span><span>Tubes measure nitrogen
   dioxide levels at their location. Used to identify any pockets of air pollution
   and provide indication of exposure levels.</span></span></p></div></div></div>
 organization: Aberdeen City Council
+records: null
 resources:
 - format: html
   name: Description

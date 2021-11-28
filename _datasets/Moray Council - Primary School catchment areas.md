@@ -3,11 +3,13 @@ category:
 - education
 - Open Data
 - boundaries
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: 24/03/17
+date_updated: '2020-11-30'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Moray Council
-maintainer_email: someone@example.com
 notes: <p>Primary School Catchments (Moray) (non denominational)</p>
 organization: Moray Council
+records: null
 resources:
 - format: html
   name: Description

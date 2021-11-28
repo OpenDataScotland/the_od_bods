@@ -13,9 +13,10 @@ category:
 - Live Data
 - Live
 - Open Data
+date_created: '2018-06-08'
+date_updated: '2018-06-08'
 license: ''
 maintainer: Renfrewshire Council
-maintainer_email: someone@example.com
 notes: "<p>Statutory Administrative Boundaries for Scotland derived from Ordnance\
   \ Survey open data product Boundary Line.\_Data includes statutory administrative\
   \ boundaries\_ for Scotland as a whole and just showing the boundaries for Renfrewshire.Downloaded\
@@ -28,6 +29,7 @@ notes: "<p>Statutory Administrative Boundaries for Scotland derived from Ordnanc
   \ Council areas73 Holyrood Consituencies8 Holyrood Regions59 Westminster Constituencies354\
   \ WardsRenfrewshire3 Holyrood constituencies2 Westminster Constituencies12 wards</p>"
 organization: Renfrewshire Council
+records: null
 resources:
 - format: html
   name: Description

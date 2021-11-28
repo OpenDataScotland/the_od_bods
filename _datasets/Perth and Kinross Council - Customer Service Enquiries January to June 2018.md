@@ -1,12 +1,14 @@
 ---
 category:
 - Local government
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2020-07-13'
+date_updated: '2018-10-23'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Perth and Kinross Council
-maintainer_email: someone@example.com
 notes: <p>A summary of the number and type of inquiries received by Perth and Kinross
   Council from January to June 2018</p>
 organization: Perth and Kinross Council
+records: null
 resources:
 - format: html
   name: Description

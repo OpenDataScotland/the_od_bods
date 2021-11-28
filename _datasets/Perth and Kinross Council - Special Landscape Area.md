@@ -1,9 +1,10 @@
 ---
 category:
 - boundary,landscape,special,environment
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2019-06-25'
+date_updated: '2018-06-07'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Perth and Kinross Council
-maintainer_email: someone@example.com
 notes: <p>Designated landscapes within Perth and Kinross which merit special attention,
   either because they are of particular value and warrant protection or because they
   are degraded and require active management or positive restoration, or are under
@@ -11,6 +12,7 @@ notes: <p>Designated landscapes within Perth and Kinross which merit special att
   Guidance in which they are contained was approved by Scottish Ministers on 17th
   June 2015.</p>
 organization: Perth and Kinross Council
+records: null
 resources:
 - format: html
   name: Description

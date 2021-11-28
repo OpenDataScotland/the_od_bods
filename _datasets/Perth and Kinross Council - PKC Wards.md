@@ -1,14 +1,16 @@
 ---
 category:
 - ArcGIS,Service Definition,adminstrative,boundaries,sd,ward
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2019-06-25'
+date_updated: '2018-06-07'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Perth and Kinross Council
-maintainer_email: someone@example.com
 notes: '<p>Electoral ward boundaries for Perth and Kinross council. For more information
   on using the data see </p>
 
   <p><a href="https://www.ordnancesurvey.co.uk/business-and-government/products/boundary-line.html">https://www.ordnancesurvey.co.uk/business-and-government/products/boundary-line.html</a></p>'
 organization: Perth and Kinross Council
+records: null
 resources:
 - format: html
   name: Description

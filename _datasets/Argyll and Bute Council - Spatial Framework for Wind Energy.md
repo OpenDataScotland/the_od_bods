@@ -3,12 +3,14 @@ category:
 - renewable energy
 - Planning
 - LDP
+date_created: '2019-07-31'
+date_updated: '2019-07-31'
 license: ''
 maintainer: Argyll and Bute Council
-maintainer_email: someone@example.com
 notes: '<p>Spatial Framework for Wind Turbines over 50 metres: Supplementary Guidance
   to Local Development Plan 2015. Adopted December 2016</p>'
 organization: Argyll and Bute Council
+records: null
 resources:
 - format: html
   name: Description

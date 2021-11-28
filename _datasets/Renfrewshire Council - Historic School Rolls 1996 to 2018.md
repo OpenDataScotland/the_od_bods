@@ -3,14 +3,16 @@ category:
 - Renfrewshire
 - Open Data
 - Education
+date_created: '2019-07-19'
+date_updated: '2019-07-23'
 license: ''
 maintainer: Renfrewshire Council
-maintainer_email: someone@example.com
 notes: <p>Data presented here is an extract of data published by the Scottish Government
   regarding historical school rolls graduated to individual school level. The dataset
   provides historical school rolls from the year 1996 through to 2018 for schools
   in the Renfrewshire local authority area only.</p>
 organization: Renfrewshire Council
+records: null
 resources:
 - format: html
   name: Description

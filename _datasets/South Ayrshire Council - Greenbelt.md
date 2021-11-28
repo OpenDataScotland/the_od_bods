@@ -4,11 +4,13 @@ category:
 - environment
 - conservation
 - boundaries
+date_created: '2015-10-30'
+date_updated: '2018-04-20'
 license: ''
 maintainer: South Ayrshire Council
-maintainer_email: someone@example.com
 notes: <p>Areas depicting greenbelt in South Ayrshire</p>
 organization: South Ayrshire Council
+records: null
 resources:
 - format: html
   name: Description

@@ -1,9 +1,10 @@
 ---
 category:
 - Transport
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2019-06-25'
+date_updated: '2017-09-25'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Perth and Kinross Council
-maintainer_email: someone@example.com
 notes: '<p>National Public Transport Access Nodes (NaPTAN) is the national system
   for identifying access points for public transport. It is updated by local authorities
   and the data is collated and published by the Department for Transport (DfT).</p>
@@ -11,6 +12,7 @@ notes: '<p>National Public Transport Access Nodes (NaPTAN) is the national syste
   <p>The links provided lead to the up-to-date NaPTAN, filtered to only include points
   that fall within the Perth &amp; Kinross area.</p>'
 organization: Perth and Kinross Council
+records: null
 resources:
 - format: html
   name: Description

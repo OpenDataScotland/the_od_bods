@@ -3,9 +3,10 @@ category:
 - Aberdeen
 - Contracts
 - Finance
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2020-08-04'
+date_updated: '2020-03-23'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Aberdeen City Council
-maintainer_email: someone@example.com
 notes: '<p>Aberdeen City Council in accordance with <a href="http://www.legislation.gov.uk/asp/2014/12/section/35"><strong>Section
   35</strong> of the Procurement Reform (Scotland) Act 2014</a> have a legal obligation
   to publish a Contracts Register as a statement of current and future contracting
@@ -28,6 +29,7 @@ notes: '<p>Aberdeen City Council in accordance with <a href="http://www.legislat
   City Council''s website</a>, along with a list of additional providers of procurement
   opportunities and contact details for the Commercial and Procurement Service. </p>'
 organization: Aberdeen City Council
+records: null
 resources:
 - format: html
   name: Description

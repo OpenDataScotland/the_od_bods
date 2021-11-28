@@ -1,9 +1,10 @@
 ---
 category:
 - built-environmnet,protected-sites,Historic Centre,Building Planning
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2019-03-19'
+date_updated: '2018-02-15'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dundee City Council
-maintainer_email: someone@example.com
 notes: '<p>Buildings are listed by Historic Scotland for their special architectural
   or historic interest on behalf of the Scottish Government. The aim of listing such
   buildings is to protect or enhance their special character by affording them statutory
@@ -31,6 +32,7 @@ notes: '<p>Buildings are listed by Historic Scotland for their special architect
   can also visit <a href="https://www.historicenvironment.scot/advice-and-support/listing-scheduling-and-designations/listed-buildings/search-for-a-listed-building/">Historic
   Environment Scotland for national data</a> on listed buildings.</p>'
 organization: Dundee City Council
+records: null
 resources:
 - format: html
   name: Description

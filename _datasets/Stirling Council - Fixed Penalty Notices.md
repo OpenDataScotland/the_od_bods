@@ -1,9 +1,10 @@
 ---
 category:
 - LGCS Community Safety
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2021-05-10'
+date_updated: '2019-02-26'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Stirling Council
-maintainer_email: someone@example.com
 notes: "<p><strong>Fixed Penalty Notices (FPN) are issued by Stirling Council's Enforcement\
   \ Officers.</strong></p>\n<p><strong>FPNs for Littering and Fly Tipping are enforced\
   \ under the <a href=\"https://www.legislation.gov.uk/ukpga/1990/43/contents\">Environmental\
@@ -19,6 +20,7 @@ notes: "<p><strong>Fixed Penalty Notices (FPN) are issued by Stirling Council's 
   \ to remove and dispose appropriately any excrement after the dog has fouled in\
   \ all public places. The Fixed Penalty monetary value is \xA380.</strong></p>"
 organization: Stirling Council
+records: null
 resources:
 - format: html
   name: Description

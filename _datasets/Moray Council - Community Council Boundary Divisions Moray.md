@@ -3,9 +3,10 @@ category:
 - Democracy
 - boundaries
 - Open Data
+date_created: '2017-06-26'
+date_updated: '2020-11-30'
 license: ''
 maintainer: Moray Council
-maintainer_email: someone@example.com
 notes: <p>The purpose of community councils is to ascertain, co-ordinate and express
   the views of the community it represents to local authorities and other pubic bodies.
   This includes community councils appointing one person as their point of contact
@@ -14,6 +15,7 @@ notes: <p>The purpose of community councils is to ascertain, co-ordinate and exp
   as planning, environment and health. All Community Council meetings are open to
   the public.</p>
 organization: Moray Council
+records: null
 resources:
 - format: html
   name: Description

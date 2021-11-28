@@ -2,12 +2,14 @@
 category:
 - Open Data
 - education
+date_created: '2017-11-14'
+date_updated: '2020-12-01'
 license: ''
 maintainer: Moray Council
-maintainer_email: someone@example.com
 notes: <p>Education School Locations (Moray), including Secondary and Primary for
   non denominational and denominational.</p>
 organization: Moray Council
+records: null
 resources:
 - format: html
   name: Description

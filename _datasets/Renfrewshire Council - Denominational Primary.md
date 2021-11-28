@@ -7,11 +7,13 @@ category:
 - ASN
 - Learning
 - Catchment Areas
+date_created: '2016-09-13'
+date_updated: '2021-04-30'
 license: ''
 maintainer: Renfrewshire Council
-maintainer_email: someone@example.com
 notes: <p>Education</p>
 organization: Renfrewshire Council
+records: null
 resources:
 - format: html
   name: Description

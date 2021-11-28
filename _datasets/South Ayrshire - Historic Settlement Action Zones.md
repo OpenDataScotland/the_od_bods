@@ -3,11 +3,13 @@ category:
 - planning
 - conservation
 - historic
+date_created: '2015-10-30'
+date_updated: '2020-11-25'
 license: ''
 maintainer: South Ayrshire
-maintainer_email: someone@example.com
 notes: <p>Action zones in force in areas of historic settlement</p>
 organization: South Ayrshire
+records: null
 resources:
 - format: html
   name: Description

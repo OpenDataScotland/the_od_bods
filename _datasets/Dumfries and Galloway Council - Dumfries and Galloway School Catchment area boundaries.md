@@ -2,11 +2,13 @@
 category:
 - Social / Community, Geospatial
 - Education, Government, Schools, Young People
-license: OGL3
+date_created: '2017-11-16T15:14:09.245Z'
+date_updated: '2020-12-11 14:12:07.979'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
-maintainer_email: someone@example.com
 notes: ''
 organization: Dumfries and Galloway Council
+records: null
 resources:
 - format: html
   name: Description

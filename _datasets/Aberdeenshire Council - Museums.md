@@ -2,11 +2,13 @@
 category:
 - Museums
 - ' culture'
+date_created: ''
+date_updated: '2018-07-10'
 license: ''
 maintainer: Aberdeenshire Council
-maintainer_email: someone@example.com
 notes: ''
 organization: Aberdeenshire Council
+records: null
 resources:
 - format: html
   name: Description

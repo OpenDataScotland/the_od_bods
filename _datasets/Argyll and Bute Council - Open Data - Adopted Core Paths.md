@@ -4,9 +4,10 @@ category:
 - Access
 - Transport
 - Environment
+date_created: '2017-07-07'
+date_updated: '2017-07-18'
 license: ''
 maintainer: Argyll and Bute Council
-maintainer_email: someone@example.com
 notes: "<p>Argyll &amp; Bute Council has adopted a Core Paths Plan for the Council\
   \ area, to meet the requirements of the Land Reform (Scotland) Act 2003:\_ It should\
   \ be noted that there is a separate Core Paths Plan for those areas of Argyll that\
@@ -19,6 +20,7 @@ notes: "<p>Argyll &amp; Bute Council has adopted a Core Paths Plan for the Counc
   \ extends across the whole area with paths including trod paths across natural ground,\
   \ farm and forest tracks as well as minor roads and footways beside public roads.</p>"
 organization: Argyll and Bute Council
+records: null
 resources:
 - format: html
   name: Description

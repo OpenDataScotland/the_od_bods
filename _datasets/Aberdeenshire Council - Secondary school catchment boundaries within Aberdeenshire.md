@@ -2,11 +2,13 @@
 category:
 - Schools
 - ' education'
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: ''
+date_updated: '2021-06-01'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Aberdeenshire Council
-maintainer_email: someone@example.com
 notes: ''
 organization: Aberdeenshire Council
+records: null
 resources:
 - format: html
   name: Description

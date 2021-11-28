@@ -6,9 +6,10 @@ category:
 - Education
 - Secondary Catchments
 - Secondary Zones
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2020-09-22'
+date_updated: '2020-07-20'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Aberdeen City Council
-maintainer_email: someone@example.com
 notes: <div style='text-align:Left;'><div><div><p style='margin:0 0 14 0;'><span><span>Defined
   geographic boundaries to identify individual secondary school zones for Aberdeen
   City as approved from August 2017 where those living within the areas delineated
@@ -17,6 +18,7 @@ notes: <div style='text-align:Left;'><div><div><p style='margin:0 0 14 0;'><span
   an Aberdeenshire Academy these Aberdeenshire zones are also shown.</span></span></p><p><span
   /></p></div></div></div>
 organization: Aberdeen City Council
+records: null
 resources:
 - format: html
   name: Description

@@ -1,11 +1,13 @@
 ---
 category:
 - LGCS Housing
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2021-04-19'
+date_updated: '2018-05-28'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Stirling Council
-maintainer_email: someone@example.com
 notes: <p><strong>Profile of Stirling Council's housing properties and yearly allocations.</strong></p>
 organization: Stirling Council
+records: null
 resources:
 - format: html
   name: Description

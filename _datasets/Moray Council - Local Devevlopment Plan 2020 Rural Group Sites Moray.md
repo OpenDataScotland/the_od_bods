@@ -2,9 +2,10 @@
 category:
 - Planning
 - INSPIRE
+date_created: '2020-07-23'
+date_updated: '2020-11-30'
 license: ''
 maintainer: Moray Council
-maintainer_email: someone@example.com
 notes: <p>Local Development Plan Rural Group Sites have been set out within many of
   the Local Development Plan Rural Groupings. Sites with development potential have
   been identified. These are acceptable in principle subject to compliance with the
@@ -13,6 +14,7 @@ notes: <p>Local Development Plan Rural Group Sites have been set out within many
   any right of access or use of private land, nor do they commit the Council to any
   form of maintenance or upkeep of the site.</p>
 organization: Moray Council
+records: null
 resources:
 - format: html
   name: Description

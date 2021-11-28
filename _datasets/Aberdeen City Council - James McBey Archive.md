@@ -4,9 +4,10 @@ category:
 - Art Gallery
 - Museum
 - Photography
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2020-08-04'
+date_updated: '2020-02-04'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Aberdeen City Council
-maintainer_email: someone@example.com
 notes: "<p>James McBey (1883-1959) was a self-taught <strong>printmaker</strong>,\
   \ <strong>draughtsman</strong> and <strong>painter</strong> of international repute,\
   \ whose life revolved around art and adventure. Born in <strong>Foveran</strong>\
@@ -28,6 +29,7 @@ notes: "<p>James McBey (1883-1959) was a self-taught <strong>printmaker</strong>
   \ &amp; Museums Collections).  For further information or discussion, please email\
   \ <a href=\"mailto:curators@aberdeencity.gov.uk\">curators@aberdeencity.gov.uk</a>.</p>"
 organization: Aberdeen City Council
+records: null
 resources:
 - format: html
   name: Description

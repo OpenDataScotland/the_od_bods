@@ -3,9 +3,10 @@ category:
 - Aberdeen
 - Burial Grounds
 - Cemetery
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2020-08-04'
+date_updated: '2020-01-27'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Aberdeen City Council
-maintainer_email: someone@example.com
 notes: '<p>Locations of all Aberdeen City Council run cemeteries and burial grounds.</p>
 
   <p>Resource files include cemetery name and address, plus latitude and longitude.</p>
@@ -19,6 +20,7 @@ notes: '<p>Locations of all Aberdeen City Council run cemeteries and burial grou
   <p>For more local maps have a look at the <a href="https://accabdn.maps.arcgis.com/apps/MinimalGallery/index.html?appid=ef2d388404864ef9955640d5b7efb9b5">Aberdeen
   City Council Public Map Gallery</a></p>'
 organization: Aberdeen City Council
+records: null
 resources:
 - format: html
   name: Description

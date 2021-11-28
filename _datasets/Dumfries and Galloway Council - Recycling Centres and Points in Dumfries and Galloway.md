@@ -2,11 +2,13 @@
 category:
 - Infrastructure
 - enviroment, Recycling
-license: OGL3
+date_created: '2018-01-26T15:51:42.423Z'
+date_updated: '2018-03-01 15:36:41.884'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
-maintainer_email: someone@example.com
 notes: ''
 organization: Dumfries and Galloway Council
+records: null
 resources:
 - format: html
   name: Description

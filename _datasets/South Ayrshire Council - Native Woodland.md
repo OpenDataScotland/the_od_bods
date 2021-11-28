@@ -2,14 +2,16 @@
 category:
 - environment
 - woodland
+date_created: '2015-10-30'
+date_updated: '2019-09-13'
 license: ''
 maintainer: South Ayrshire Council
-maintainer_email: someone@example.com
 notes: <p>Depicts opportunities for improved management of existing native woodlands,
   and creation of new native woodland networks.MUST BE USED IN CONJUNCTION WITH THE
   TEXT AND OTHER SPATIAL DATA PRODUCTS ACCOMPANYING THE AYRSHIRE AND ARRAN FORESTRY
   AND WOODLAND STRATEGY</p>
 organization: South Ayrshire Council
+records: null
 resources:
 - format: html
   name: Description

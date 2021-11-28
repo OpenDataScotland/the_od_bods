@@ -6,13 +6,15 @@ category:
 - height
 - spot-heights
 - tidelines
-license: uk-ogl
+date_created: '2020-04-29'
+date_updated: '2017-08-25'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Perth and Kinross Council
-maintainer_email: someone@example.com
 notes: <p>Ordnance Surveys OS Terrain 50 Contour is a dataset representing the physical
   shape of the real world. The dataset includes contours (50metre interval), spot
   heights, and high and low water marks. The product is updated and maintained annually.</p>
 organization: Perth and Kinross Council
+records: null
 resources:
 - format: html
   name: Description

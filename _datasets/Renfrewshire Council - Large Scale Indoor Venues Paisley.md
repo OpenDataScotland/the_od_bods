@@ -4,12 +4,14 @@ category:
 - Renfrewshire
 - Paisley
 - Community
+date_created: '2017-11-28'
+date_updated: '2017-11-28'
 license: ''
 maintainer: Renfrewshire Council
-maintainer_email: someone@example.com
 notes: "<p>A layer showing the location of large scale indoor venues in Paisley.\_\
   </p>"
 organization: Renfrewshire Council
+records: null
 resources:
 - format: html
   name: Description

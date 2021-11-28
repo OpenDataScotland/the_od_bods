@@ -1,9 +1,10 @@
 ---
 category:
 - LGCS Consumer Affairs
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2021-04-19'
+date_updated: '2019-12-20'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Stirling Council
-maintainer_email: someone@example.com
 notes: '<p><strong>In addition to a breakdown of  the fee revenue received from taxi
   and private hire car licence applications for the last five completed financial
   years, this dataset provides the summary details on which the report is based.</strong></p>
@@ -11,6 +12,7 @@ notes: '<p><strong>In addition to a breakdown of  the fee revenue received from 
   <p><strong>Visit Stirling Council''s website for further information on <a href="https://www.stirling.gov.uk/licensing-legal/licenses-permits-permissions/">licences
   and permits</a>.</strong></p>'
 organization: Stirling Council
+records: null
 resources:
 - format: html
   name: Description

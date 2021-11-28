@@ -2,11 +2,13 @@
 category:
 - Social / Community
 - Local
-license: OGL3
+date_created: '2017-11-24T11:53:01.762Z'
+date_updated: '2019-11-26 08:26:00.542'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
-maintainer_email: someone@example.com
 notes: ''
 organization: Dumfries and Galloway Council
+records: null
 resources:
 - format: html
   name: Description

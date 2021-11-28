@@ -1,4 +1,3 @@
-from jinja2 import Environment, FileSystemLoader, Markup
 import pandas as pd
 from dataclasses import dataclass
 from typing import List
@@ -83,14 +82,22 @@ def sort_key(d):
         return d.date_created
     return "0"
 
+unknown_lics = []
+
+def license_link(l):
+    ogl = ["Open Government Licence 3.0 (United Kingdom)", "uk-ogl",
+           "UK Open Government Licence (OGL)", "OGL3"]
+    if l in ogl:
+        return "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    if not l in unknown_lics:
+        unknown_lics.append(l)
+        print("Unknown license: ", l)
+    return l
+
 md = markdown.Markdown()
 
-env = Environment(loader=FileSystemLoader("."))
-env.filters['markdown'] = lambda text: Markup(md.convert(text))
-template = env.get_template('dataset.md')
-
 for k, ds in data.items():
-    y = {'schema': 'default', 'maintainer_email': 'someone@example.com'}
+    y = {'schema': 'default'}
     y['title'] = ds.title
     y['organization'] = ds.owner
     y['notes'] = markdown.markdown(ds.description)
@@ -99,9 +106,12 @@ for k, ds in data.items():
                        'format': 'html'}] + [{'name': d.file_type,
                                               'url': d.url,
                                               'format': d.file_type} for d in ds.files]
-    y['license'] = ds.license
+    y['license'] = license_link(ds.license)
     y['category'] = ds.original_tags + ds.manual_tags
     y['maintainer'] = ds.owner
+    y['date_created'] = ds.date_created
+    y['date_updated'] = ds.date_updated
+    y['records'] = ds.num_records
     fn = ds.owner + " - " + ds.title
     fn = re.sub(r'[^\w\s-]', '', fn).strip()
     # ^^ need something better for filnames...

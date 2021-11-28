@@ -3,12 +3,14 @@ category:
 - land use
 - planning
 - property
-license: UK Open Government Licence (OGL)
+date_created: '2021-05-07'
+date_updated: '2016-11-25'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Angus Council
-maintainer_email: someone@example.com
 notes: <p>Properties that Angus Council owns or occupies or has owned or occupied
   or has some other interest in.</p>
 organization: Angus Council
+records: null
 resources:
 - format: html
   name: Description

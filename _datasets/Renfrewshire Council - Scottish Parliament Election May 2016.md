@@ -3,12 +3,14 @@ category:
 - Open Data
 - Renfrewshire
 - Democracy and Governance
+date_created: '2018-01-09'
+date_updated: '2018-05-09'
 license: ''
 maintainer: Renfrewshire Council
-maintainer_email: someone@example.com
 notes: <p>Renfrewshire South and Renfrewshire North Scottish Parliamnet Election results
   5 May 2016.</p>
 organization: Renfrewshire Council
+records: null
 resources:
 - format: html
   name: Description

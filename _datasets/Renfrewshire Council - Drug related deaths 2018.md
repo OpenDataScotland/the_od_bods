@@ -3,11 +3,13 @@ category:
 - Renfrewshire
 - Open Data
 - Health and Wellbeing
+date_created: '2019-07-19'
+date_updated: '2019-07-19'
 license: ''
 maintainer: Renfrewshire Council
-maintainer_email: someone@example.com
 notes: <p>Drug-related deaths 2018, filtered for Renfrewshire.</p>
 organization: Renfrewshire Council
+records: null
 resources:
 - format: html
   name: Description

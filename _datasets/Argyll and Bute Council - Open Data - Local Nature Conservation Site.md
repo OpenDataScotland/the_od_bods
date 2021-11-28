@@ -5,9 +5,10 @@ category:
 - Nature Conservation
 - Environment
 - Planning
+date_created: '2017-07-07'
+date_updated: '2017-07-18'
 license: ''
 maintainer: Argyll and Bute Council
-maintainer_email: someone@example.com
 notes: '<p>These are shown on the proposals maps, and are locally important sites
   for wildlife or nature interests. They have been judged to be important because:
   the site supports a natural or semi-natural plant community(ies), and/orthe site
@@ -18,6 +19,7 @@ notes: '<p>These are shown on the proposals maps, and are locally important site
   Nature ReservesRegionally Important Geological/ Geomorphological SitesThe former
   sites of important for nature conservation (SINC)Other local wildlife sites</p>'
 organization: Argyll and Bute Council
+records: null
 resources:
 - format: html
   name: Description

@@ -2,11 +2,13 @@
 category:
 - http://publications.europa.eu/resource/authority/data-theme/HEAL, Geospatial
 - Health, Environmental
-license: OGL3
+date_created: '2018-07-16T08:52:30.623Z'
+date_updated: '2018-10-02 09:04:58.767'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
-maintainer_email: someone@example.com
 notes: ''
 organization: Dumfries and Galloway Council
+records: null
 resources:
 - format: html
   name: Description

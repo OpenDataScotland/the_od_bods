@@ -3,13 +3,15 @@ category:
 - Open Data
 - Renfrewshire
 - Transportation
+date_created: '2018-05-11'
+date_updated: '2018-05-11'
 license: ''
 maintainer: Renfrewshire Council
-maintainer_email: someone@example.com
 notes: "<p>Extract of data taken from the\_Disabled Person Protection Policy. Data\
   \ details the access for wheelchairs or disabled people when using rails stations.\_\
   </p>"
 organization: Renfrewshire Council
+records: null
 resources:
 - format: html
   name: Description

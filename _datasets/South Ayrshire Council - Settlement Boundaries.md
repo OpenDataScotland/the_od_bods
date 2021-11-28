@@ -3,11 +3,13 @@ category:
 - administration
 - planning
 - boundaries
+date_created: '2015-10-15'
+date_updated: '2019-09-13'
 license: ''
 maintainer: South Ayrshire Council
-maintainer_email: someone@example.com
 notes: <p>Town and village settlement boundaries as defined in the 2007 LDP</p>
 organization: South Ayrshire Council
+records: null
 resources:
 - format: html
   name: Description

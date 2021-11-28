@@ -1,13 +1,15 @@
 ---
 category:
 - Animal
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2019-03-19'
+date_updated: '2018-05-02'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dundee City Council
-maintainer_email: someone@example.com
 notes: <p>Diet sheets for animals at Camperdown Wildlife Centre. Diets are subject
   to change. More information about the animals at Camperdown can be found on their
   <a href="http://www.camperdownwildlifecentre.com/">website</a></p>
 organization: Dundee City Council
+records: null
 resources:
 - format: html
   name: Description

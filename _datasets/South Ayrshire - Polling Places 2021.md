@@ -2,11 +2,13 @@
 category:
 - elections
 - democracy
+date_created: '2017-03-13'
+date_updated: '2021-03-24'
 license: ''
 maintainer: South Ayrshire
-maintainer_email: someone@example.com
 notes: <p>Points depicting polling places in South Ayrshire</p>
 organization: South Ayrshire
+records: null
 resources:
 - format: html
   name: Description

@@ -6,14 +6,16 @@ category:
 - local government
 - non-domestic rates
 - tax relief
-license: UK Open Government Licence (OGL)
+date_created: '2021-05-07'
+date_updated: '2021-05-07'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Angus Council
-maintainer_email: someone@example.com
 notes: <p>List of Non Domestic Rates Reliefs (excluding personal data) awarded in
   respect of the Financial Year 2020/21 as at 26 February 2021. From the Financial
   Year 2021/22 details will be published on a quarterly basis in June, September,
   December and March.</p>
 organization: Angus Council
+records: null
 resources:
 - format: html
   name: Description

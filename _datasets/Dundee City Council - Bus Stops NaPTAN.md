@@ -1,9 +1,10 @@
 ---
 category:
 - transport
-license: uk-ogl
+date_created: '2019-03-19'
+date_updated: '2017-09-15'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dundee City Council
-maintainer_email: someone@example.com
 notes: '<p>The NaPTAN database contains all public transport access nodes in Dundee,
   this includes;</p>
 
@@ -21,6 +22,7 @@ notes: '<p>The NaPTAN database contains all public transport access nodes in Dun
   from the UK dataset.  If you are interested in a national copy of the data this
   is available from <a href="https://data.gov.uk/dataset/naptan">data.gov.uk</a>.</p>'
 organization: Dundee City Council
+records: null
 resources:
 - format: html
   name: Description

@@ -1,9 +1,10 @@
 ---
 category:
 - Housing
+date_created: '2021-04-02'
+date_updated: '2017-08-16'
 license: Public Sector End User Licence (Scotland)
 maintainer: Dundee City Council
-maintainer_email: someone@example.com
 notes: '<h2>Properties available now from the Common Housing Register</h2>
 
   <p>Properties are <em>available now</em>  where;</p>
@@ -30,6 +31,7 @@ notes: '<h2>Properties available now from the Common Housing Register</h2>
   User licence</a> for the purpose of supporting applicants on the common housing
   register to apply for available housing.</p>'
 organization: Dundee City Council
+records: null
 resources:
 - format: html
   name: Description

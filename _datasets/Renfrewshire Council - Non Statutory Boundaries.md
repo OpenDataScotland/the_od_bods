@@ -6,11 +6,13 @@ category:
 - Wards
 - Renfrewshire
 - Open Data
+date_created: '2018-06-13'
+date_updated: '2019-06-27'
 license: ''
 maintainer: Renfrewshire Council
-maintainer_email: someone@example.com
 notes: ''
 organization: Renfrewshire Council
+records: null
 resources:
 - format: html
   name: Description

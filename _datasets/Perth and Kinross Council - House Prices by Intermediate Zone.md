@@ -2,9 +2,10 @@
 category:
 - housing
 - private housing
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2020-07-14'
+date_updated: '2017-11-15'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Perth and Kinross Council
-maintainer_email: someone@example.com
 notes: <p>An adaptation from Scotland's official statistics giving house prices in
   Perth and Kinross by intermediate Zones, a statistical geography created for use
   with the Scottish Neighborhood Statistics (SNS) programme and the wider public sector.
@@ -12,6 +13,7 @@ notes: <p>An adaptation from Scotland's official statistics giving house prices 
   stable geography that can be used to analyse change over time, with changes only
   occurring after a Census.</p>
 organization: Perth and Kinross Council
+records: null
 resources:
 - format: html
   name: Description

@@ -4,12 +4,14 @@ category:
 - Local Development Plan
 - Tourism
 - Planning
+date_created: '2017-07-07'
+date_updated: '2017-07-18'
 license: ''
 maintainer: Argyll and Bute Council
-maintainer_email: someone@example.com
 notes: <p>Valued Tourist Area Vulnerable to Change of Use in the 2015 Local Development
   Plan</p>
 organization: Argyll and Bute Council
+records: null
 resources:
 - format: html
   name: Description

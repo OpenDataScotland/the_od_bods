@@ -3,13 +3,15 @@ category:
 - education
 - Open Data
 - boundaries
+date_created: '2017-07-10'
+date_updated: '2020-11-30'
 license: ''
 maintainer: Moray Council
-maintainer_email: someone@example.com
 notes: "<p>Primary School Catchments (Moray) (Denominational).\_ The zones  (catchment\
   \ areas) are shown as delineated areas on maps.\_ Information on  these catchment\
   \ areas is available at the Moray Council website.</p>"
 organization: Moray Council
+records: null
 resources:
 - format: html
   name: Description

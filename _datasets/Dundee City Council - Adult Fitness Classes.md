@@ -1,9 +1,10 @@
 ---
 category:
 - Health and Fitness
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2019-03-19'
+date_updated: '2018-01-23'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dundee City Council
-maintainer_email: someone@example.com
 notes: "<p><a href=\"http://www.leisureandculturedundee.com/leisure/onlinebooking\"\
   >LACD Group Exercise</a> offers a variety of benefits you could miss out on if you\
   \ chose to work out on your own. Some of the benefits include; exposure to a fun\
@@ -29,6 +30,7 @@ notes: "<p><a href=\"http://www.leisureandculturedundee.com/leisure/onlinebookin
   \ Sport Centre and St Paul's Swim and Sport Centre. </p>\n<p>All this designed for\
   \ one purpose! Achieve your goal!</p>"
 organization: Dundee City Council
+records: null
 resources:
 - format: html
   name: Description

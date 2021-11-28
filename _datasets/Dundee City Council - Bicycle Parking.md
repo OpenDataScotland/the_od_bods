@@ -1,9 +1,10 @@
 ---
 category:
 - Transport
+date_created: '2017-10-25'
+date_updated: '2017-09-23'
 license: Open Data Commons Open Database License 1.0
 maintainer: Dundee City Council
-maintainer_email: someone@example.com
 notes: '<p>The Council''s Active Travel team conducted a survey of bicycle parking
   in 2015, with the results used to add or update cycle parking in <a href="https://www.openstreetmap.org">OpenStreetMap</a>.
   </p>
@@ -12,6 +13,7 @@ notes: '<p>The Council''s Active Travel team conducted a survey of bicycle parki
   you see a facility missing or would like to update any of the information you can
   do this on OpenStreetMap yourself. </p>'
 organization: Dundee City Council
+records: null
 resources:
 - format: html
   name: Description

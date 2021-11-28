@@ -4,11 +4,13 @@ category:
 - elections
 - Council
 - boundaries
+date_created: '2015-10-30'
+date_updated: '2020-11-11'
 license: ''
 maintainer: South Ayrshire
-maintainer_email: someone@example.com
 notes: <p>Polygons depicting South Ayrshire Council Electoral Wards</p>
 organization: South Ayrshire
+records: null
 resources:
 - format: html
   name: Description

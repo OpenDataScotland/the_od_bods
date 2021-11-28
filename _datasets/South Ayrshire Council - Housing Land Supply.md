@@ -1,11 +1,13 @@
 ---
 category:
 - planning
+date_created: '2016-12-02'
+date_updated: '2019-09-13'
 license: ''
 maintainer: South Ayrshire Council
-maintainer_email: someone@example.com
 notes: <p>Sites designated as part of the areas housing land supply</p>
 organization: South Ayrshire Council
+records: null
 resources:
 - format: html
   name: Description

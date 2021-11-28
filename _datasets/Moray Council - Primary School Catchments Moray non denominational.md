@@ -3,9 +3,10 @@ category:
 - education
 - Open Data
 - boundaries
+date_created: '2017-03-24'
+date_updated: '2020-11-30'
 license: ''
 maintainer: Moray Council
-maintainer_email: someone@example.com
 notes: "<p>In Moray, the education authority discharges its duty to secure adequate\
   \ and efficient education for the local authority area by operating a \u201Ccatchment\
   \ area\u201D system to enable parents/carers to comply with their duty to provide\
@@ -17,6 +18,7 @@ notes: "<p>In Moray, the education authority discharges its duty to secure adequ
   \ at a school which is not the designated catchment area school for their postal\
   \ address, they must make an out-of-zone \u2018placing request\u2019.\_ </p>"
 organization: Moray Council
+records: null
 resources:
 - format: html
   name: Description

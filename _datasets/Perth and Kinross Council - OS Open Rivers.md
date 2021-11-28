@@ -3,14 +3,16 @@ category:
 - hydrography
 - river-network
 - water-network
-license: uk-ogl
+date_created: '2020-04-29'
+date_updated: '2017-08-25'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Perth and Kinross Council
-maintainer_email: someone@example.com
 notes: <p>OS Open Rivers is a two-dimensional topologically connected link and node
   watercourse network of Great Britain. The geometry of the links approximates the
   central alignment of the watercourse. Attribution indicates the Flow Direction and
   Name of the watercourse.</p>
 organization: Perth and Kinross Council
+records: null
 resources:
 - format: html
   name: Description

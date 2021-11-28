@@ -1,9 +1,10 @@
 ---
 category:
 - Community development
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2017-10-24'
+date_updated: '2017-10-12'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dundee City Council
-maintainer_email: someone@example.com
 notes: '<p>Neighbourhood Representative Structures are supported and recognised by
   Dundee City Council in a similar way to Community Councils, and both have a right
   to consultation on matters relating to their neighbourhood. This dataset shows the
@@ -16,6 +17,7 @@ notes: '<p>Neighbourhood Representative Structures are supported and recognised 
   is available in the Neighbourhood Resource and Development Committee report number
   752-2002.</p>'
 organization: Dundee City Council
+records: null
 resources:
 - format: html
   name: Description

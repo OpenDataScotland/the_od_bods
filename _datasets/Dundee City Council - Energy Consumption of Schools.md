@@ -1,9 +1,10 @@
 ---
 category:
 - Energy
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2019-03-19'
+date_updated: '2018-03-13'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dundee City Council
-maintainer_email: someone@example.com
 notes: '<p>Energy usage recorded every half hour for primary and high schools in Dundee
   City. Data is given for gas and electricity usage and is the summation of readings
   taken from one or more meters within individual schools. To consider when looking
@@ -28,6 +29,7 @@ notes: '<p>Energy usage recorded every half hour for primary and high schools in
 
   </ul>'
 organization: Dundee City Council
+records: null
 resources:
 - format: html
   name: Description

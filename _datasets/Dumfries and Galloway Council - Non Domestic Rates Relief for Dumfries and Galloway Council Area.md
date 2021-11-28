@@ -2,11 +2,13 @@
 category:
 - Built environment
 - NDR
-license: OGL3
+date_created: '2019-09-17T20:04:49.144Z'
+date_updated: '2021-04-23 09:47:26.190'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
-maintainer_email: someone@example.com
 notes: ''
 organization: Dumfries and Galloway Council
+records: null
 resources:
 - format: html
   name: Description

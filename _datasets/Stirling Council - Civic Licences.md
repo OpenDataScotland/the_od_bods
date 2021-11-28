@@ -1,14 +1,16 @@
 ---
 category:
 - LGCS Consumer Affairs
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2021-06-08'
+date_updated: '2019-12-03'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Stirling Council
-maintainer_email: someone@example.com
 notes: '<p><strong>Current civic licences, excluding liquor, issued by Stirling Council.</strong></p>
 
   <p><strong>Visit Stirling Council''s website for further information on <a href="https://www.stirling.gov.uk/licensing-legal/licenses-permits-permissions/">licences
   and permits</a>.</strong></p>'
 organization: Stirling Council
+records: null
 resources:
 - format: html
   name: Description

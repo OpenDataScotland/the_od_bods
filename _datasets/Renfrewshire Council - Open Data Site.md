@@ -1,9 +1,10 @@
 ---
 category:
 - Hub Site
+date_created: '2017-05-10'
+date_updated: '2021-02-15'
 license: ''
 maintainer: Renfrewshire Council
-maintainer_email: someone@example.com
 notes: <p>Renfrewshire Open Data Platform This is the community's public platform
   for exploring and downloading open data, discovering and building apps, and engaging
   to solve important local issues. You can analyse and combine Open Datasets using
@@ -13,6 +14,7 @@ notes: <p>Renfrewshire Open Data Platform This is the community's public platfor
   Transportation Renfrewshire Open Data Platform Guide Scottish Index of Multiple
   Deprivation 2016 Renfrewshire Open Data Strategy Contact Information danny.mcallion@renfrewshire.gov.uk</p>
 organization: Renfrewshire Council
+records: null
 resources:
 - format: html
   name: Description

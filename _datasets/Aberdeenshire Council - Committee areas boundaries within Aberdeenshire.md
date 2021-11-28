@@ -3,11 +3,13 @@ category:
 - Admininstration
 - ' boundaries'
 - ' committees'
+date_created: ''
+date_updated: '2019-12-09'
 license: ''
 maintainer: Aberdeenshire Council
-maintainer_email: someone@example.com
 notes: ''
 organization: Aberdeenshire Council
+records: null
 resources:
 - format: html
   name: Description

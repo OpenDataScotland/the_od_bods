@@ -1,9 +1,10 @@
 ---
 category:
 - school
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2019-03-19'
+date_updated: '2018-04-23'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dundee City Council
-maintainer_email: someone@example.com
 notes: '<p>Data on class sizes in primary schools - giving the number of pupils in
   each class in September of the given year. From the annual pupil census in publicly
   funded schools in Scotland. Filtered from the <a href="http://www.gov.scot/Topics/Statistics/Browse/School-Education/dspupcensus">national
@@ -25,6 +26,7 @@ notes: '<p>Data on class sizes in primary schools - giving the number of pupils 
 
   </ul>'
 organization: Dundee City Council
+records: null
 resources:
 - format: html
   name: Description

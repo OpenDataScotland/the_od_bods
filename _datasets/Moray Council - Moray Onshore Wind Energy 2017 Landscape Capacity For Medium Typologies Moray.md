@@ -2,12 +2,14 @@
 category:
 - Planning
 - INSPIRE
+date_created: '2018-03-29'
+date_updated: '2020-12-01'
 license: ''
 maintainer: Moray Council
-maintainer_email: someone@example.com
 notes: <p>Moray Onshore Wind Energy 2017 Landscape Capacity For Medium Typologies
   (Moray)</p>
 organization: Moray Council
+records: null
 resources:
 - format: html
   name: Description

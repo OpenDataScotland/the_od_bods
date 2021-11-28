@@ -1,9 +1,10 @@
 ---
 category:
 - Social protection n.e.c.
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2019-03-19'
+date_updated: '2017-09-26'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dundee City Council
-maintainer_email: someone@example.com
 notes: '<p>The Claimant Count measures the number of people claiming benefit principally
   for the reason of being unemployed:</p>
 
@@ -32,6 +33,7 @@ notes: '<p>The Claimant Count measures the number of people claiming benefit pri
   <p>Further information on the Claimant Count is available in the latest <a href="https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/uklabourmarket/latest">Statistical
   Bulletin</a>.</p>'
 organization: Dundee City Council
+records: null
 resources:
 - format: html
   name: Description

@@ -4,13 +4,15 @@ category:
 - land
 - planning
 - property
-license: UK Open Government Licence (OGL)
+date_created: '2016-12-09'
+date_updated: '2016-11-22'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Angus Council
-maintainer_email: someone@example.com
 notes: <p>Angus Council and Dundee City Council have jointly prepared the Annual Audit
   of Housing Land detailing those sites with a capacity of five or more houses which
   contribute to the available supply of land for house building in Angus and Dundee.</p>
 organization: Angus Council
+records: null
 resources:
 - format: html
   name: Description

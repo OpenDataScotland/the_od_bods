@@ -3,13 +3,15 @@ category:
 - education
 - schools
 - survey responses
-license: UK Open Government Licence (OGL)
+date_created: '2018-02-13'
+date_updated: '2018-02-13'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Angus Council
-maintainer_email: someone@example.com
 notes: <p>All responses to on-line questionnaire seeking feedback on our current school
   estate and how we could improve in the future. Those questionnaires that were completed
   in paper format were also uploaded to the on-line questionnaire.</p>
 organization: Angus Council
+records: null
 resources:
 - format: html
   name: Description

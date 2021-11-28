@@ -10,15 +10,17 @@ category:
 - roads
 - transport-networks
 - woodland
-license: uk-ogl
+date_created: '2020-04-29'
+date_updated: '2017-08-25'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Perth and Kinross Council
-maintainer_email: someone@example.com
 notes: <p>The most detailed open data mapping product available, providing a backdrop
   for integrating and visualising analytical datasets.  The product provides an enhanced
   level of detail for buildings - including the specific identification of functional
   sites such as hospitals and schools, and an extensive set of cartographic names
   optimised for digital styling and presentation.</p>
 organization: Perth and Kinross Council
+records: null
 resources:
 - format: html
   name: Description

@@ -2,9 +2,10 @@
 category:
 - Open Data
 - Environment
+date_created: '2020-12-22'
+date_updated: '2021-06-11'
 license: ''
 maintainer: Moray Council
-maintainer_email: someone@example.com
 notes: <p>Private Water Supplies User (Moray)Reg 2 (previously Cat A) are supplies
   which are commercial (including private lets) or more than 50 persons Category B
   are non-commercial with less than 50 persons.NOTE:- The location data we hold for
@@ -20,6 +21,7 @@ notes: <p>Private Water Supplies User (Moray)Reg 2 (previously Cat A) are suppli
   does not include historic private water supplies. The data is provided based on
   the best information available to the council at the time of writing.</p>
 organization: Moray Council
+records: null
 resources:
 - format: html
   name: Description

@@ -3,12 +3,14 @@ category:
 - Renfrewshire
 - Open Data
 - Built Environment
+date_created: '2019-07-19'
+date_updated: '2019-07-19'
 license: ''
 maintainer: Renfrewshire Council
-maintainer_email: someone@example.com
 notes: "<p>Map showing location of heritage buildings and monuments in Renfrewshire\
   \ with links to detailed descriptions on\_https://paisley.is</p>"
 organization: Renfrewshire Council
+records: null
 resources:
 - format: html
   name: Description

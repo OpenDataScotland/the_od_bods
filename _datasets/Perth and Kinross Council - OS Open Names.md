@@ -4,9 +4,10 @@ category:
 - geographical-names
 - os-locator
 - post-code
-license: uk-ogl
+date_created: '2020-04-29'
+date_updated: '2017-08-25'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Perth and Kinross Council
-maintainer_email: someone@example.com
 notes: '<p>OS Open Names is a geographic directory that contains basic information
   about identifiable places (Named Place). The content of the Product is divided into
   themes based on their type and local type classification values. The primary use
@@ -24,6 +25,7 @@ notes: '<p>OS Open Names is a geographic directory that contains basic informati
   (INSPIRE) Geographical Names theme to ensure that it is compliant with European
   open data initiatives.</p>'
 organization: Perth and Kinross Council
+records: null
 resources:
 - format: html
   name: Description

@@ -1,9 +1,10 @@
 ---
 category:
 - Allotment
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2019-03-19'
+date_updated: '2018-04-16'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dundee City Council
-maintainer_email: someone@example.com
 notes: "<p>Allotments are plots of land that are rented by individuals or organisations\
   \ for the purpose of growing fruit, vegetables and/or flowers. There are several\
   \ allotment sites in Dundee but not all of them are run by the council itself. Dundee\
@@ -16,6 +17,7 @@ notes: "<p>Allotments are plots of land that are rented by individuals or organi
   \ total cost is different for each plot but a full size plot averages 10 poles and\
   \ would therefore cost about \xA351 per year.</p>"
 organization: Dundee City Council
+records: null
 resources:
 - format: html
   name: Description

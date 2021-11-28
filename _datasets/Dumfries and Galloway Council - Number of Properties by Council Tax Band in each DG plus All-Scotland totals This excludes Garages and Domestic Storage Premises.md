@@ -2,11 +2,13 @@
 category:
 - Built environment
 - Planning
-license: OGL3
+date_created: '2018-01-23T14:16:42.175Z'
+date_updated: '2018-02-21 14:40:54.379'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
-maintainer_email: someone@example.com
 notes: ''
 organization: Dumfries and Galloway Council
+records: null
 resources:
 - format: html
   name: Description

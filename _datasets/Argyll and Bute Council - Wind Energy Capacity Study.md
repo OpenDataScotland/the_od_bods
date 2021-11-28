@@ -2,9 +2,10 @@
 category:
 - renewable energy
 - Planning
+date_created: '2019-07-31'
+date_updated: '2019-07-31'
 license: ''
 maintainer: Argyll and Bute Council
-maintainer_email: someone@example.com
 notes: "<p>The council, together with Scottish Natural Heritage have commissioned\
   \ Consultant Landscape Architects to update the Argyll and Bute Landscape Wind Energy\
   \ Capacity Study 2012. The study provides technical information which will be used\
@@ -13,6 +14,7 @@ notes: "<p>The council, together with Scottish Natural Heritage have commissione
   \ Development Plan (LDP). The updated study was approved by the Councils Planning\
   \ Protective Services and Licensing Committee on 20th September 2017.</p>"
 organization: Argyll and Bute Council
+records: null
 resources:
 - format: html
   name: Description

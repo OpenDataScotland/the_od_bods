@@ -2,9 +2,10 @@
 category:
 - Boundary
 - Electoral
+date_created: '2017-07-07'
+date_updated: '2021-05-04'
 license: ''
 maintainer: Argyll and Bute Council
-maintainer_email: someone@example.com
 notes: "<p>A \u2018polling district\u2019 is a geographical subdivision of an electoral\
   \ area such as an electoral Ward within which a polling place is designated.The\
   \ Representation of the People Act 1983 places a duty on LA to divide the local\
@@ -19,6 +20,7 @@ notes: "<p>A \u2018polling district\u2019 is a geographical subdivision of an el
   \ or to the availability of premises that can be reasonably designated as polling\
   \ places</p>"
 organization: Argyll and Bute Council
+records: null
 resources:
 - format: html
   name: Description

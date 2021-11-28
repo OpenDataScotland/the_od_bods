@@ -2,12 +2,14 @@
 category:
 - fire
 - public safety
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2020-07-14'
+date_updated: '2017-11-02'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Perth and Kinross Council
-maintainer_email: someone@example.com
 notes: <p>By 2011 Intermediate Zones, sorted by accidental and non-accidental fires.
   Derived from statistics.gov.scot under the Open Government Licence v3.0</p>
 organization: Perth and Kinross Council
+records: null
 resources:
 - format: html
   name: Description

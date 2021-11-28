@@ -4,9 +4,10 @@ category:
 - positive cases
 - schools
 - self-isolation
-license: UK Open Government Licence (OGL)
+date_created: '2021-05-07'
+date_updated: '2021-02-19'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Angus Council
-maintainer_email: someone@example.com
 notes: '<p>This weekly data shows the cumulative number of positive Covid-19 cases
   and cumulative individuals self-isolating in Angus school clusters - combined total
   of teachers, support staff, children and young people (not including contractors).
@@ -50,6 +51,7 @@ notes: '<p>This weekly data shows the cumulative number of positive Covid-19 cas
 
   </ul>'
 organization: Angus Council
+records: null
 resources:
 - format: html
   name: Description

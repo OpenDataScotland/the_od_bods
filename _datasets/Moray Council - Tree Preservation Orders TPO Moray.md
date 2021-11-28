@@ -4,13 +4,15 @@ category:
 - Planning
 - Boundaries
 - Open Data
+date_created: '2018-02-16'
+date_updated: '2020-11-30'
 license: ''
 maintainer: Moray Council
-maintainer_email: someone@example.com
 notes: <p>Tree Preservation Orders (TPO's) are served on potentially vulnerable trees
   which are of significant amenity value to the community as a whole, or trees of
   significant biodiversity value.</p>
 organization: Moray Council
+records: null
 resources:
 - format: html
   name: Description

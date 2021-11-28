@@ -1,12 +1,14 @@
 ---
 category:
 - environment,waste,geospatial
+date_created: '2019-08-16'
+date_updated: '2018-08-07'
 license: Open Data Commons Open Database License 1.0
 maintainer: Dundee City Council
-maintainer_email: someone@example.com
 notes: <p>Waste generation and number of collections of individual units within Dundee
   City Council's network of solar powered compactor bins. </p>
 organization: Dundee City Council
+records: null
 resources:
 - format: html
   name: Description

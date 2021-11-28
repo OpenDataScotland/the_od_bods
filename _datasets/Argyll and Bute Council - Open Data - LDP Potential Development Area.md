@@ -4,9 +4,10 @@ category:
 - Local Development Plan
 - Development
 - Planning
+date_created: '2017-07-07'
+date_updated: '2017-07-18'
 license: ''
 maintainer: Argyll and Bute Council
-maintainer_email: someone@example.com
 notes: "<p>Potential Development Areas designated in the Argyll and Bute adopted Local\
   \ Development Plan 2015. These are broad areas identified by this plan in the Proposal\
   \ Maps. They are mainly, but not exclusively on the edge of settlements and constitute\
@@ -17,6 +18,7 @@ notes: "<p>Potential Development Areas designated in the Argyll and Bute adopted
   \ within the PDA area can be realised and be supported by this plan. A PDA may include\
   \ a number of identifiable development sites</p>"
 organization: Argyll and Bute Council
+records: null
 resources:
 - format: html
   name: Description

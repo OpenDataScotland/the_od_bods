@@ -5,9 +5,10 @@ category:
 - Design
 - Fashion
 - Museum
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2020-08-04'
+date_updated: '2020-02-03'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Aberdeen City Council
-maintainer_email: someone@example.com
 notes: "<p>Bill Gibb (1943-1988), born in <strong>New Pitsligo</strong>, Aberdeenshire,\
   \ was an <strong>international fashion designer</strong> with world famous clients.\
   \ In 1970, at the start of his career, one of his outfits was selected by Vogue\
@@ -32,6 +33,7 @@ notes: "<p>Bill Gibb (1943-1988), born in <strong>New Pitsligo</strong>, Aberdee
   \ any novel uses this data is used for.  For further information or discussion,\
   \ please email <a href=\"mailto:curators@aberdeencity.gov.uk\">curators@aberdeencity.gov.uk</a>.</p>"
 organization: Aberdeen City Council
+records: null
 resources:
 - format: html
   name: Description

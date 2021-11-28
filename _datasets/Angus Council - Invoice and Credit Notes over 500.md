@@ -4,9 +4,10 @@ category:
 - finance
 - invoices
 - suppliers
-license: UK Open Government Licence (OGL)
+date_created: '2021-04-22'
+date_updated: '2020-03-04'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Angus Council
-maintainer_email: someone@example.com
 notes: "<p>Every six months, we publish a list of all invoices and credit notes over\
   \ \xA3500 we receive, providing details on supplier name, amount paid, invoice reference,\
   \ gross amount and vat amount.</p>\n<ul>\n<li>Spend on premises, transport and supplies\
@@ -17,6 +18,7 @@ notes: "<p>Every six months, we publish a list of all invoices and credit notes 
   \ for adoption and fostering, care related payments</li>\n<li>Payments to staff</li>\n\
   </ul>\n<p>These entries have been omitted from the report.</p>"
 organization: Angus Council
+records: null
 resources:
 - format: html
   name: Description

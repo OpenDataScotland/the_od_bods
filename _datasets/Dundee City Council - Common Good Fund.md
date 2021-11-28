@@ -1,9 +1,10 @@
 ---
 category:
 - Grants
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2019-03-19'
+date_updated: '2018-03-01'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dundee City Council
-maintainer_email: someone@example.com
 notes: '<p>Awards and recipients of the Common Good Fund. The Common Good Fund is
   managed by Dundee City Council on behalf of Dundee communities to provide funding
   to a wide range of activities that are beneficial to the interests of the inhabitants
@@ -15,6 +16,7 @@ notes: '<p>Awards and recipients of the Common Good Fund. The Common Good Fund i
   here. Other organisations using the standard and their associated data can be found
   on the <a href="http://www.threesixtygiving.org/">360Giving</a> website.</p>'
 organization: Dundee City Council
+records: null
 resources:
 - format: html
   name: Description

@@ -3,11 +3,13 @@ category:
 - Renfrewshire
 - Open Data
 - Population and Society
+date_created: '2019-04-17'
+date_updated: '2019-04-18'
 license: ''
 maintainer: Renfrewshire Council
-maintainer_email: someone@example.com
 notes: "<p>Estimated population by single year of age and electoral ward,\_ mid-2017</p>"
 organization: Renfrewshire Council
+records: null
 resources:
 - format: html
   name: Description

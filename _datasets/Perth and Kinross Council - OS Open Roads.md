@@ -3,9 +3,10 @@ category:
 - road-network
 - roads
 - transport-networks
-license: uk-ogl
+date_created: '2020-04-29'
+date_updated: '2017-08-25'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Perth and Kinross Council
-maintainer_email: someone@example.com
 notes: "<p>OS Open Roads is a digital representation of Great Britain\u2019s Roads.\
   \ The links represent an approximate central alignment of the road carriageway and\
   \ include roads classified by the National or Local Highway authority (for example,\
@@ -17,6 +18,7 @@ notes: "<p>OS Open Roads is a digital representation of Great Britain\u2019s Roa
   \ for transport on a regional or county level and include all roads which make up\
   \ the SRN.</p>"
 organization: Perth and Kinross Council
+records: null
 resources:
 - format: html
   name: Description

@@ -1,9 +1,10 @@
 ---
 category:
 - Food
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2019-03-19'
+date_updated: '2018-02-19'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dundee City Council
-maintainer_email: someone@example.com
 notes: '<p>Dundee Farmers'' Market takes place on the third Saturday of the month
   starting 17th February 2018 until 15th December 2018. The Market is located in City
   Square and operates from 9.00am to 4.00pm. </p>
@@ -13,6 +14,7 @@ notes: '<p>Dundee Farmers'' Market takes place on the third Saturday of the mont
 
   <p>For more information: 01382 434548</p>'
 organization: Dundee City Council
+records: null
 resources:
 - format: html
   name: Description

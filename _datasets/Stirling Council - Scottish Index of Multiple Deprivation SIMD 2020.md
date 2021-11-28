@@ -1,9 +1,10 @@
 ---
 category:
 - SIMD
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2021-04-30'
+date_updated: '2021-04-30'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Stirling Council
-maintainer_email: someone@example.com
 notes: "<p><a href=\"https://www.gov.scot/collections/scottish-index-of-multiple-deprivation-2020/\"\
   ><strong>The Scottish Index of Multiple Deprivation 2020</strong></a><strong> is\
   \ the Scottish Government\u2019s official tool for identifying those places in Scotland\
@@ -11,6 +12,7 @@ notes: "<p><a href=\"https://www.gov.scot/collections/scottish-index-of-multiple
   \ (employment, income, health, education, skills and training, geographic access,\
   \ crime and housing), combining them into a single index.</strong></p>"
 organization: Stirling Council
+records: null
 resources:
 - format: html
   name: Description

@@ -1,9 +1,10 @@
 ---
 category:
 - Sites and Monuments
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2019-03-19'
+date_updated: '2018-02-23'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dundee City Council
-maintainer_email: someone@example.com
 notes: '<p>A list of monuments in Dundee. In this context, Dundee City Council defines
   a monument as: </p>
 
@@ -18,6 +19,7 @@ notes: '<p>A list of monuments in Dundee. In this context, Dundee City Council d
   the list? We invite people to add to the dataset by <a href="https://survey123.arcgis.com/share/4eff890a79fb4c2d842d5972a7f31815">completing
   our online survey</a>.</p>'
 organization: Dundee City Council
+records: null
 resources:
 - format: html
   name: Description

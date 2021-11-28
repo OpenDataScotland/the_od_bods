@@ -2,11 +2,13 @@
 category:
 - Built environment
 - Children
-license: OGL3
+date_created: '2018-02-21T11:08:06.136Z'
+date_updated: '2019-01-17 14:44:13.572'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
-maintainer_email: someone@example.com
 notes: ''
 organization: Dumfries and Galloway Council
+records: null
 resources:
 - format: html
   name: Description

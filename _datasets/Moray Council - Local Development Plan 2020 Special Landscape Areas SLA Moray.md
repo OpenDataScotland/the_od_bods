@@ -2,11 +2,13 @@
 category:
 - Planning
 - INSPIRE
+date_created: '2020-07-23'
+date_updated: '2021-06-12'
 license: ''
 maintainer: Moray Council
-maintainer_email: someone@example.com
 notes: <p>Local Development Plan 2020 Special Landscape Areas (SLA) (Moray)</p>
 organization: Moray Council
+records: null
 resources:
 - format: html
   name: Description

@@ -3,11 +3,13 @@ category:
 - Open Data
 - Renfrewshire
 - Democracy and Governance
+date_created: '2018-01-09'
+date_updated: '2018-09-12'
 license: ''
 maintainer: Renfrewshire Council
-maintainer_email: someone@example.com
 notes: <p>UK Parliament General Election 8 June 2017 electoral data.</p>
 organization: Renfrewshire Council
+records: null
 resources:
 - format: html
   name: Description

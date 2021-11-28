@@ -4,9 +4,10 @@ category:
 - Art Gallery
 - Museum
 - Photography
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2020-08-04'
+date_updated: '2020-02-10'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Aberdeen City Council
-maintainer_email: someone@example.com
 notes: "<p>George Washington Wilson (1823-1893), born in <strong>Alvah</strong>, Aberdeenshire,\
   \ was a pioneering Scottish photographer. By the early 1850s he was established\
   \ in <strong>Aberdeen</strong> as an <strong>artist and portrait photographer</strong>.\
@@ -26,6 +27,7 @@ notes: "<p>George Washington Wilson (1823-1893), born in <strong>Alvah</strong>,
   \ Gallery online catalogue (please note, all images are \xA9 Aberdeen Art Gallery\
   \ &amp; Museums Collections).</p>"
 organization: Aberdeen City Council
+records: null
 resources:
 - format: html
   name: Description

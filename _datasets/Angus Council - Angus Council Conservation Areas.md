@@ -6,13 +6,15 @@ category:
 - environment
 - historic
 - planning
-license: UK Open Government Licence (OGL)
+date_created: '2016-11-30'
+date_updated: '2016-11-28'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Angus Council
-maintainer_email: someone@example.com
 notes: <p>Conservation areas are areas of special architectural or historic interest.
   They are designated by Angus Council to ensure any new development preserves or
   enhances their varied character.</p>
 organization: Angus Council
+records: null
 resources:
 - format: html
   name: Description

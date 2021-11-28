@@ -1,11 +1,13 @@
 ---
 category:
 - Toilets
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: ''
+date_updated: '2018-11-10'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Aberdeenshire Council
-maintainer_email: someone@example.com
 notes: ''
 organization: Aberdeenshire Council
+records: null
 resources:
 - format: html
   name: Description

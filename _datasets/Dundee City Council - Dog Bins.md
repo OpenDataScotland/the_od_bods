@@ -1,9 +1,10 @@
 ---
 category:
 - waste
-license: Open Government Licence 3.0 (United Kingdom)
+date_created: '2019-03-19'
+date_updated: '2018-06-07'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dundee City Council
-maintainer_email: someone@example.com
 notes: '<p>Dundee City Council actively encourages dog owners to act responsibly and
   clear up after their dog. The Council currently issues around 4 million dog bags
   a year which are available from <a href="https://www.dundeecity.gov.uk/service-area/neighbourhood-services/environment/dog-bags">Council
@@ -16,6 +17,7 @@ notes: '<p>Dundee City Council actively encourages dog owners to act responsibly
   fouling</a> in the city, as well as other <a href="https://www.dundeecity.gov.uk/service-area/neighbourhood-services/environment/street-cleansing">street
   cleansing</a> information.</p>'
 organization: Dundee City Council
+records: null
 resources:
 - format: html
   name: Description

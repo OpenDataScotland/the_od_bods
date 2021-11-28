@@ -2,11 +2,13 @@
 category:
 - Water
 - Agriculture, enviroment
-license: OGL3
+date_created: '2017-11-22T14:12:02.428Z'
+date_updated: '2018-09-27 13:57:08.007'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
-maintainer_email: someone@example.com
 notes: ''
 organization: Dumfries and Galloway Council
+records: null
 resources:
 - format: html
   name: Description
