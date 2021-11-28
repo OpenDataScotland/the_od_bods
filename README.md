@@ -1,7 +1,7 @@
 # The OD_BODS Project
 OD_BODS is a volunteer-run open source project to collate open data sources published in Scotland. 
 
-See it in action: [opendata.scot](www.opendata.scot)
+See it in action: [opendata.scot](https://opendata.scot/)
 
 
 There are 2 objectives for the OD_BODS project
