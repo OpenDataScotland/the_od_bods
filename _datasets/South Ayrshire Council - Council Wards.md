@@ -7,9 +7,9 @@ category:
 date_created: '2015-10-30'
 date_updated: '2020-11-11'
 license: ''
-maintainer: South Ayrshire
+maintainer: South Ayrshire Council
 notes: <p>Polygons depicting South Ayrshire Council Electoral Wards</p>
-organization: South Ayrshire
+organization: South Ayrshire Council
 records: 8
 resources:
 - format: html

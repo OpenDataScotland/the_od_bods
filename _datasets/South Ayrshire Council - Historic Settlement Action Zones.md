@@ -6,9 +6,9 @@ category:
 date_created: '2015-10-30'
 date_updated: '2020-11-25'
 license: ''
-maintainer: South Ayrshire
+maintainer: South Ayrshire Council
 notes: <p>Action zones in force in areas of historic settlement</p>
-organization: South Ayrshire
+organization: South Ayrshire Council
 records: 13
 resources:
 - format: html

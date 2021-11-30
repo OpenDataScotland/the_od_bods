@@ -69,6 +69,8 @@ for r in fulld.values:
             num_records = makeint(r[ind('NumRecords')]),
             files = []
         )
+        if ds.owner in ["South Ayrshire", "East Ayrshire"]:
+            ds.owner += " Council"
         data[id] = ds
     data[id].files.append(
         DataFile(

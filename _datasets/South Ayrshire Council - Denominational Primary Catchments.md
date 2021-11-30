@@ -6,9 +6,9 @@ category:
 date_created: '2015-10-30'
 date_updated: '2020-11-25'
 license: ''
-maintainer: South Ayrshire
+maintainer: South Ayrshire Council
 notes: <p>Areas depicting catchment zones for denominational primary schools</p>
-organization: South Ayrshire
+organization: South Ayrshire Council
 records: 12
 resources:
 - format: html
