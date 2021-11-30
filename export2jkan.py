@@ -77,18 +77,26 @@ for r in fulld.values:
             size_unit = r[ind('FileSizeUnit')],
             file_type = r[ind('FileType')]
         ))
-# print(data)
-print(len(data), ' records')
 
-def sort_key(d):
-    if d.date_updated:
-        return d.date_updated
-    if d.date_created:
-        return d.date_created
-    return "0"
+scotgov_data = pd.read_csv("scotgov-datasets.csv", dtype=str, na_filter=False)
+for r in scotgov_data.values:
+    ds = Dataset(
+        title = r[0],
+        original_tags = [r[1]],
+        owner = r[2],
+        description = r[3],
+        date_created = r[4],
+        date_updated = r[5],
+        page_url = r[6],
+        manual_tags = [],
+        license = "OGL3",
+        num_records = None,
+        files = []
+    )
+    data[ds.page_url + ds.title] = ds
+
 
 unknown_lics = []
-
 def license_link(l):
     ogl = ["Open Government Licence 3.0 (United Kingdom)", "uk-ogl",
            "UK Open Government Licence (OGL)", "OGL3"]

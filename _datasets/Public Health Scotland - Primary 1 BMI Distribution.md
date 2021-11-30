@@ -1,0 +1,18 @@
+---
+category:
+- Health and Social Care
+date_created: '2014-07-29'
+date_updated: '2021-09-03'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+maintainer: Public Health Scotland
+notes: <p>Number of P1 BMI Reviews. Clinical and Epidemiological category measurements
+  are provided in separate datasets.</p>
+organization: Public Health Scotland
+records: null
+resources:
+- format: html
+  name: Description
+  url: http://statistics.gov.scot/data/p1-reviews
+schema: default
+title: Primary 1 BMI Distribution
+---
