@@ -93,6 +93,10 @@ for r in scotgov_data.values:
         num_records = None,
         files = []
     )
+    if ds.owner == "SEPA":
+        ds.owner = "Scottish Environment Protection Agency"
+    if ds.owner == "South Ayrshire":
+        ds.owner = "South Ayrshire Council" # TODO: check if any of these actually supposed to be in the HSCP
     data[ds.page_url + ds.title] = ds
 
 
