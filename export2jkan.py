@@ -80,7 +80,7 @@ for r in fulld.values:
             file_type = r[ind('FileType')]
         ))
 
-scotgov_data = pd.read_csv("scotgov-datasets.csv", dtype=str, na_filter=False)
+scotgov_data = pd.read_csv("data/scotgov-datasets.csv", dtype=str, na_filter=False)
 for r in scotgov_data.values:
     ds = Dataset(
         title = r[0],
