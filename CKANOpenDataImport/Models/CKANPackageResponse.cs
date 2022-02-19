@@ -14,9 +14,9 @@ namespace CKANOpenDataImport.Models
     {
         public string Title { get; set; }
         public string Type { get; set; }
-        [JsonProperty("metadata_created")]
-        public DateTime? DateModified { get; set; }
         [JsonProperty("metadata_modified")]
+        public DateTime? DateModified { get; set; }
+        [JsonProperty("metadata_created")]
         public DateTime? DateCreated { get; set; }
         [JsonProperty("Notes")]
         public string Description { get; set; }
