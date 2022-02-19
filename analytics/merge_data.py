@@ -60,13 +60,14 @@ def merge_data():
 
     ### Cleaning dataset categories
     def tidy_categories(categories_string):
-        """tidies up the categories: removes commas, strips whitespace, converts all to lower and strips any trailing ";"
+        """tidies the categories: removes commas, strips whitespace, converts all to lower and strips any trailing ";"
 
         Args:
             categories_string (string): the dataset categories as a string
         """
         tidied_string = str(categories_string).replace(',',';')
-        tidied_string=";".join(str(cat.lower().strip()) for cat in tidied_string.split(';') if cat!="")
+        tidied_list = [cat.lower().strip() for cat in tidied_string.split(';') if cat!=""]
+        tidied_string=";".join(str(cat) for cat in tidied_list if str(cat)!='nan')
         if (len(tidied_string)>0):
             if (tidied_string[-1]==";"):
                 tidied_string = tidied_string[:-1]
