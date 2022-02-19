@@ -14,11 +14,11 @@ using RestSharp;
 
 namespace CKANOpenDataImport
 {
-    internal class Program
+    internal static class Program
     {
         private const string PACKAGE_LIST_PATH = "api/3/action/package_list";
         private const string PACKAGE_SHOW_PATH = "api/3/action/package_show";
-        public static List<DatasetEntry> DatasetEntries { get; set; } = new();
+        private static List<DatasetEntry> DatasetEntries { get; } = new();
 
         // ReSharper disable once UnusedParameter.Local
         private static void Main(string[] args)
