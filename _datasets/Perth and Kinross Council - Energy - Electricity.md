@@ -1,8 +1,9 @@
 ---
 category:
-- Energy
-date_created: '2021-06-13'
-date_updated: '2019-09-10'
+- energy
+- nan
+date_created: '2019-09-10'
+date_updated: '2022-02-13'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Perth and Kinross Council
 notes: <p>Electricity usage data from Perth &amp; Kinross Council owned buildings

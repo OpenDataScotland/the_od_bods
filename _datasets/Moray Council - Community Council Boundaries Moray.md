@@ -1,8 +1,9 @@
 ---
 category:
-- Democracy
+- democracy
 - boundaries
-- Open Data
+- open data
+- nan
 date_created: '2017-06-26'
 date_updated: '2020-11-30'
 license: ''

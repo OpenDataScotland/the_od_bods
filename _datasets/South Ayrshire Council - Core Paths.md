@@ -4,8 +4,9 @@ category:
 - walking
 - paths
 - outdoor access
+- nan
 date_created: '2015-10-30'
-date_updated: '2020-09-30'
+date_updated: '2019-09-13'
 license: ''
 maintainer: South Ayrshire Council
 notes: <p>Core paths for the area as defined by the Core Paths Plan</p>

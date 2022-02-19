@@ -1,11 +1,12 @@
 ---
 category:
-- School Roll
+- school roll
 - pupil numbers
 - school
 - schools
-date_created: '2018-10-03'
-date_updated: '2018-10-01'
+- nan
+date_created: '2018-10-01'
+date_updated: '2018-10-03'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Angus Council
 notes: "<p>School Roll Forecasts\nView our 2017 based school roll forecasts for Angus\u2019\

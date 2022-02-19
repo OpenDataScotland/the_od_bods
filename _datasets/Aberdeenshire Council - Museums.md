@@ -1,7 +1,8 @@
 ---
 category:
-- Museums
-- ' culture'
+- nan
+- museums
+- culture
 date_created: ''
 date_updated: '2018-07-10'
 license: ''

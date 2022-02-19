@@ -1,10 +1,11 @@
 ---
 category:
-- INSPIRE
-- Democracy
+- inspire
+- democracy
 - boundaries
+- nan
 date_created: '2017-04-10'
-date_updated: '2021-02-02'
+date_updated: '2020-11-30'
 license: ''
 maintainer: Moray Council
 notes: "<p>Moray Council Polling District Boundaries.  Polygon data showing the polling\

@@ -1,9 +1,13 @@
 ---
 category:
-- boundary,landscape,special,environment
-date_created: '2019-06-25'
-date_updated: '2018-06-07'
-license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+- boundary
+- environment
+- landscape
+- special
+- nan
+date_created: '2021-09-30'
+date_updated: '2021-09-30'
+license: ''
 maintainer: Perth and Kinross Council
 notes: <p>Designated landscapes within Perth and Kinross which merit special attention,
   either because they are of particular value and warrant protection or because they
@@ -17,22 +21,22 @@ records: null
 resources:
 - format: HTML
   name: HTML
-  url: http://opendata-pkc.opendata.arcgis.com/datasets/2c975835288f422bb5890b32ea870acb_0
-- format: ESRI REST
-  name: ESRI REST
+  url: https://opendata-pkc.opendata.arcgis.com/datasets/2c975835288f422bb5890b32ea870acb_0
+- format: ARCGIS GEOSERVICES REST API
+  name: ARCGIS GEOSERVICES REST API
   url: https://services.arcgis.com/pfFDYSlYcp7mabvZ/arcgis/rest/services/Special_Landscape_Area/FeatureServer/0
 - format: GEOJSON
   name: GEOJSON
-  url: http://opendata-pkc.opendata.arcgis.com/datasets/2c975835288f422bb5890b32ea870acb_0.geojson
+  url: https://opendata-pkc.opendata.arcgis.com/datasets/2c975835288f422bb5890b32ea870acb_0.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D
 - format: CSV
   name: CSV
-  url: http://opendata-pkc.opendata.arcgis.com/datasets/2c975835288f422bb5890b32ea870acb_0.csv
+  url: https://opendata-pkc.opendata.arcgis.com/datasets/2c975835288f422bb5890b32ea870acb_0.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D
 - format: KML
   name: KML
-  url: http://opendata-pkc.opendata.arcgis.com/datasets/2c975835288f422bb5890b32ea870acb_0.kml
+  url: https://opendata-pkc.opendata.arcgis.com/datasets/2c975835288f422bb5890b32ea870acb_0.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D
 - format: ZIP
   name: ZIP
-  url: http://opendata-pkc.opendata.arcgis.com/datasets/2c975835288f422bb5890b32ea870acb_0.zip
+  url: https://opendata-pkc.opendata.arcgis.com/datasets/2c975835288f422bb5890b32ea870acb_0.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D
 schema: default
 title: Special Landscape Area
 ---

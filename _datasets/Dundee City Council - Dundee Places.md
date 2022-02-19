@@ -1,8 +1,13 @@
 ---
 category:
-- venues,culture,creativity,dundee,community
-date_created: '2019-03-19'
-date_updated: '2017-10-30'
+- venues
+- culture
+- creativity
+- dundee
+- community
+- nan
+date_created: '2017-10-30'
+date_updated: '2019-03-19'
 license: https://creativecommons.org/licenses/by/4.0/
 maintainer: Dundee City Council
 notes: "<p>As part of an exciting collaboration with Dundee Place Partnership, <a\

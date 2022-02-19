@@ -1,8 +1,9 @@
 ---
 category:
-- Energy
-date_created: '2019-03-19'
-date_updated: '2018-03-13'
+- energy
+- nan
+date_created: '2018-03-13'
+date_updated: '2019-03-19'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dundee City Council
 notes: '<p>Energy usage recorded every half hour for primary and high schools in Dundee

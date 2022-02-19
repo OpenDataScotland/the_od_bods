@@ -3,8 +3,9 @@ category:
 - equipment
 - fleet vehicles
 - plant
-date_created: '2020-07-14'
-date_updated: '2018-06-14'
+- nan
+date_created: '2018-06-14'
+date_updated: '2020-07-14'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Perth and Kinross Council
 notes: <p>A list of the fleet vehicles and mechanical equipment controlled by the

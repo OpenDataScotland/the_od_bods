@@ -138,7 +138,7 @@ for k, ds in data.items():
     y['date_updated'] = ds.date_updated
     y['records'] = ds.num_records
     fn = ds.owner + " - " + ds.title
-    fn = re.sub(r'[^\w\s-]', '', fn).strip()
+    fn = re.sub(r'[^\w\s-]', '', fn).strip()[:100]
     # ^^ need something better for filnames...
     with open(f"_datasets/{fn}.md", "w") as f:
         f.write("---\n")

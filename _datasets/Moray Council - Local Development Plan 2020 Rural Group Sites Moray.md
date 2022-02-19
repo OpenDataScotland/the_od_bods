@@ -1,8 +1,8 @@
 ---
 category:
-- Planning
-- INSPIRE
-- Development Plans
+- planning
+- inspire
+- development plans
 date_created: 23/07/20
 date_updated: '2020-11-30'
 license: INSPIRE Regulations 2009

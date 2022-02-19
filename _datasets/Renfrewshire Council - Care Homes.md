@@ -1,14 +1,15 @@
 ---
 category:
-- '  Renfrewshire'
-- Open Data Platform
-- Open Data
-- Renfrewshire
-- Care Homes
-- Health and Wellbeing
+- renfrewshire
+- open data platform
+- open data
+- renfrewshire
+- care homes
+- health and wellbeing
+- nan
 date_created: '2017-09-06'
 date_updated: '2017-09-06'
-license: ''
+license: http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Renfrewshire Council
 notes: <p>A layer presenting Care Homes in Renfrewshire Council area</p>
 organization: Renfrewshire Council

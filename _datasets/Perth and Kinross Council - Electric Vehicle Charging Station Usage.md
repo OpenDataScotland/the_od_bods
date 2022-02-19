@@ -1,12 +1,13 @@
 ---
 category:
 - energy
-date_created: '2020-10-12'
-date_updated: '2017-09-15'
+- nan
+date_created: '2017-09-15'
+date_updated: '2021-12-15'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Perth and Kinross Council
 notes: <p>Datasets for Perth &amp; Kinross Council's EV charging stations under the
-  ChargePoint Scotland scheme. Includes anonymous data from each individual charging
+  ChargePlace Scotland scheme. Includes anonymous data from each individual charging
   session.</p>
 organization: Perth and Kinross Council
 original_dataset_link: https://data.pkc.gov.uk/dataset/ev-charging-data

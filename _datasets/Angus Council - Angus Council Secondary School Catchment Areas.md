@@ -7,8 +7,9 @@ category:
 - local
 - school
 - secondary
-date_created: '2016-11-30'
-date_updated: '2016-11-28'
+- nan
+date_created: '2016-11-28'
+date_updated: '2016-11-30'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Angus Council
 notes: <p>Catchment areas (delineated) for secondary schools in Angus.</p>

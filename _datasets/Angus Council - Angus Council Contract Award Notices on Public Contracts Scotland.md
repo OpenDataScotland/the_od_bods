@@ -1,11 +1,12 @@
 ---
 category:
-- Procurement
+- procurement
 - angus council
 - contracts
 - local government
-date_created: '2016-11-23'
-date_updated: '2016-11-01'
+- nan
+date_created: '2016-11-01'
+date_updated: '2016-11-23'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Angus Council
 notes: <p>Angus Council publishes all contract notices on the Public Contracts Scotland

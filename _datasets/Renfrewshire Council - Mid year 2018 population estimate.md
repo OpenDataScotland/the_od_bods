@@ -1,11 +1,12 @@
 ---
 category:
-- Renfrewshire
-- Open Data
-- Population and Society
+- renfrewshire
+- open data
+- population and society
+- nan
 date_created: '2019-07-19'
 date_updated: '2019-07-24'
-license: ''
+license: http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Renfrewshire Council
 notes: "<p>Mid-year population estimates: Scotland and Renfrewshire by single year\
   \ of age and sex 1981 to 2018.Annual publication of mid-year population estimates\
