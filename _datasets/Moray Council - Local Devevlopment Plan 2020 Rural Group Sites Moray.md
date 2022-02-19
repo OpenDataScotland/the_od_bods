@@ -14,14 +14,9 @@ notes: <p>Local Development Plan Rural Group Sites have been set out within many
   any right of access or use of private land, nor do they commit the Council to any
   form of maintenance or upkeep of the site.</p>
 organization: Moray Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=673187f103714c21aedb89b723351944
 records: 200
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=673187f103714c21aedb89b723351944
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Local Devevlopment Plan 2020 Rural Group Sites (Moray)
 ---

@@ -9,11 +9,9 @@ notes: "<p>Car parking zones in Perth city centre. Parking in Perth City is divi
   \ into three zones.\_Different pricing and waiting periods apply depending on the\
   \ zone.</p>"
 organization: Perth and Kinross Council
+original_dataset_link: https://data.pkc.gov.uk/dataset/car-park-zones-perth-city-centre
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.pkc.gov.uk/dataset/car-park-zones-perth-city-centre
 - format: HTML
   name: HTML
   url: http://opendata-pkc.opendata.arcgis.com/datasets/1822fcfddad9452e89d3a6f0d8762d4f_0

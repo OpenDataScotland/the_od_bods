@@ -20,11 +20,9 @@ notes: <p>The most detailed open data mapping product available, providing a bac
   sites such as hospitals and schools, and an extensive set of cartographic names
   optimised for digital styling and presentation.</p>
 organization: Perth and Kinross Council
+original_dataset_link: https://data.pkc.gov.uk/dataset/os-open-map-local
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.pkc.gov.uk/dataset/os-open-map-local
 - format: HTML
   name: HTML
   url: http://os.uk/business-and-government/products/os-open-map-local.html

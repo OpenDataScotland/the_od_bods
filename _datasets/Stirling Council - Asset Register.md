@@ -21,11 +21,9 @@ notes: '<p><strong>Stirling Council''s activities cover the area bordered by Cla
   <p><strong>All data believed to be correct at the date of the last update, 12th
   February, 2019.</strong></p>'
 organization: Stirling Council
+original_dataset_link: https://data.stirling.gov.uk/dataset/asset-register
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.stirling.gov.uk/dataset/asset-register
 - format: CSV
   name: CSV
   url: https://data.stirling.gov.uk/dataset/5eb94d01-0635-4a89-8504-9ec04f600cb8/resource/81650170-e849-4d5c-94f8-d67b8adccd53/download/20190313-land-and-property-asset-register-12.02.2019.csv

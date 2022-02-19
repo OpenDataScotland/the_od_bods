@@ -10,11 +10,9 @@ maintainer: Angus Council
 notes: <p>Localities used in the Corporate Address Gazetteer for the generation of
   addresses.</p>
 organization: Angus Council
+original_dataset_link: http://opendata.angus.gov.uk/dataset/angus-council-localities
 records: null
 resources:
-- format: html
-  name: Description
-  url: http://opendata.angus.gov.uk/dataset/angus-council-localities
 - format: WMS
   name: WMS
   url: http://data.angus.gov.uk/geoserver/inspire/inspire:gaz_localities/wms?service=WMS&request=GetMap

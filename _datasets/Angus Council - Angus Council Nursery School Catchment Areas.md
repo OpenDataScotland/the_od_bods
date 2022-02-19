@@ -11,11 +11,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Angus Council
 notes: <p>Nursery school catchment areas (delineated) in Angus.</p>
 organization: Angus Council
+original_dataset_link: http://opendata.angus.gov.uk/dataset/angus-council-nursery-school-catchment-areas
 records: null
 resources:
-- format: html
-  name: Description
-  url: http://opendata.angus.gov.uk/dataset/angus-council-nursery-school-catchment-areas
 - format: WMS
   name: WMS
   url: http://data.angus.gov.uk/geoserver/inspire/inspire:edn_pre_schcatchment/wms?service=WMS&request=GetMap

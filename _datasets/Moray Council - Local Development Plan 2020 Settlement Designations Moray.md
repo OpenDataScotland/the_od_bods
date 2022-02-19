@@ -13,14 +13,9 @@ notes: <p>Local Development Plan 2020Settlement Designations set out the current
   will also have to satisfy the key governing policies that are set out in the Policy
   section of the Local Development Plan.</p>
 organization: Moray Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=202ebe4a49d0469b8e619cfb220359a9
 records: 764
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=202ebe4a49d0469b8e619cfb220359a9
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Local Development Plan 2020 Settlement Designations (Moray)
 ---

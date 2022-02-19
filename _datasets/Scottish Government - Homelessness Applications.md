@@ -9,11 +9,9 @@ notes: <p>Summary figures of 1) all homelessness applications to local authoriti
   each financial year in Scotland, 2) the total number of these assessed as homeless
   or threatened with homelessness.</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/homelessness-applications
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/homelessness-applications
+resources: []
 schema: default
 title: Homelessness Applications
 ---

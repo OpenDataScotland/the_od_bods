@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Scottish Natural Heritage
 notes: <p>Percent of natural features, on protected nature sites, in favourable condition</p>
 organization: Scottish Natural Heritage
+original_dataset_link: http://statistics.gov.scot/data/natural-features
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/natural-features
+resources: []
 schema: default
 title: Natural Features (National Indicator)
 ---

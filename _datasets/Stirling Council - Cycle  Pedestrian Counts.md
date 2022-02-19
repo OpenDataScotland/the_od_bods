@@ -29,11 +29,9 @@ notes: "<p><strong>This group details the output from transport monitoring of cy
   \ Roadworks Commissioner </strong></a><strong>can give further details on any planned\
   \ roadworks throughout the country.</strong></p>"
 organization: Stirling Council
+original_dataset_link: https://data.stirling.gov.uk/dataset/cycle-pedestrian-counts
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.stirling.gov.uk/dataset/cycle-pedestrian-counts
 - format: CSV
   name: CSV
   url: https://data.stirling.gov.uk/dataset/51e50021-ac94-4475-8390-4261bc540665/resource/c3ed863f-4e5e-4ba2-b062-204d843737c0/download/20210616-cycle-pedestrian-counts-jan-2020-to-dec-2020-v1.0.csv

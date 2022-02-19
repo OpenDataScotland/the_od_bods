@@ -33,11 +33,9 @@ notes: "<p>Bill Gibb (1943-1988), born in <strong>New Pitsligo</strong>, Aberdee
   \ any novel uses this data is used for.  For further information or discussion,\
   \ please email <a href=\"mailto:curators@aberdeencity.gov.uk\">curators@aberdeencity.gov.uk</a>.</p>"
 organization: Aberdeen City Council
+original_dataset_link: https://data.aberdeencity.gov.uk/dataset/bill-gibb-archive
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.aberdeencity.gov.uk/dataset/bill-gibb-archive
 - format: XLSX
   name: XLSX
   url: https://data.aberdeencity.gov.uk/dataset/29273a68-76b2-41fb-b577-c9724640660a/resource/21007d09-0b63-4a2a-94b3-f9ef5d2c0d54/download/bill-gibb-archive-spreadsheet.xlsx

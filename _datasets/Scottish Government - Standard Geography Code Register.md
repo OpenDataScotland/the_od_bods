@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>The geography Entities (levels such as Council Area - S12) and Instances
   (areas such as Glasgow City - S12000046)</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/standard-geography-code-register
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/standard-geography-code-register
+resources: []
 schema: default
 title: Standard Geography Code Register
 ---

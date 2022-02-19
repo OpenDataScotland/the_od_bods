@@ -19,14 +19,9 @@ notes: '<p>These are shown on the proposals maps, and are locally important site
   Nature ReservesRegionally Important Geological/ Geomorphological SitesThe former
   sites of important for nature conservation (SINC)Other local wildlife sites</p>'
 organization: Argyll and Bute Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=d05f7337b41e48b4af933404dc0592a2
 records: 158
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=d05f7337b41e48b4af933404dc0592a2
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Open Data - Local Nature Conservation Site
 ---

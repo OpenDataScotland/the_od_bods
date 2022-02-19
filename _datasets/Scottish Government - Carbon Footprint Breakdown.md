@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>Greenhouse gas emissions that are associated with the consumption by Scottish
   residents on goods and services and by private heating and motoring</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/carbon-footprint-breakdown
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/carbon-footprint-breakdown
+resources: []
 schema: default
 title: Carbon Footprint Breakdown
 ---

@@ -14,14 +14,9 @@ notes: <p>Renfrewshire Open Data Platform This is the community's public platfor
   Transportation Renfrewshire Open Data Platform Guide Scottish Index of Multiple
   Deprivation 2016 Renfrewshire Open Data Strategy Contact Information danny.mcallion@renfrewshire.gov.uk</p>
 organization: Renfrewshire Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=713c57b0af4a414783366ad9321e4f91
 records: null
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=713c57b0af4a414783366ad9321e4f91
-- format: HUB SITE APPLICATION
-  name: HUB SITE APPLICATION
-  url: ''
+resources: []
 schema: default
 title: Open Data Site
 ---

@@ -8,14 +8,9 @@ license: ''
 maintainer: Renfrewshire Council
 notes: ''
 organization: Renfrewshire Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=77bcf8ec519f4cebb1d5f3a1a79d66ae
 records: null
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=77bcf8ec519f4cebb1d5f3a1a79d66ae
-- format: IMAGE
-  name: IMAGE
-  url: ''
+resources: []
 schema: default
 title: WeaversCottageKilbarchan
 ---

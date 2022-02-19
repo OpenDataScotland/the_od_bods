@@ -9,14 +9,9 @@ license: ''
 maintainer: South Ayrshire Council
 notes: <p>Town and village settlement boundaries as defined in the 2007 LDP</p>
 organization: South Ayrshire Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=2fee7037164841e4b4325cccaef39f45
 records: 30
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=2fee7037164841e4b4325cccaef39f45
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Settlement Boundaries
 ---

@@ -9,11 +9,9 @@ notes: <p>The Scottish Accommodation Occupancy Survey (SAOS) gathers and analyse
   data on occupancy levels in hotels, guest houses, B&amp;Bs, self-catering, hostels
   and caravan &amp; camping parks.</p>
 organization: VisitScotland
+original_dataset_link: http://statistics.gov.scot/data/scottish-accommodation-occupancy
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/scottish-accommodation-occupancy
+resources: []
 schema: default
 title: Scottish Accommodation Occupancy
 ---

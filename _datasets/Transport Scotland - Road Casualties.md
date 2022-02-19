@@ -8,11 +8,9 @@ maintainer: Transport Scotland
 notes: <p>Number of people killed and seriously injured on Scotland's roads by age
   and gender.</p>
 organization: Transport Scotland
+original_dataset_link: http://statistics.gov.scot/data/road-safety
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/road-safety
+resources: []
 schema: default
 title: Road Casualties
 ---

@@ -18,11 +18,9 @@ notes: "<p>OS Open Roads is a digital representation of Great Britain\u2019s Roa
   \ for transport on a regional or county level and include all roads which make up\
   \ the SRN.</p>"
 organization: Perth and Kinross Council
+original_dataset_link: https://data.pkc.gov.uk/dataset/os-open-roads
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.pkc.gov.uk/dataset/os-open-roads
 - format: HTML
   name: HTML
   url: https://www.ordnancesurvey.co.uk/business-government/products/open-map-roads

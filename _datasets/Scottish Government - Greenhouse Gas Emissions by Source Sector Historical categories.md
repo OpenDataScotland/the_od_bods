@@ -10,11 +10,9 @@ notes: <p>This contains the results of the Scottish Greenhouse Gas Inventory, wh
   presentation uses the sectoral classifications used in the main publication prior
   to the June 2020 publication.</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/greenhouse-gas-emissions-by-source-sector
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/greenhouse-gas-emissions-by-source-sector
+resources: []
 schema: default
 title: Greenhouse Gas Emissions by Source Sector (Historical categories)
 ---

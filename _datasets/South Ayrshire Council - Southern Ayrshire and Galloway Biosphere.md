@@ -9,14 +9,9 @@ license: ''
 maintainer: South Ayrshire Council
 notes: <p>Boundary for the Southern Ayrshire and Galloway Biosphere</p>
 organization: South Ayrshire Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=1247dc0ed92647e0aa1f999a3409e0b6
 records: 2
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=1247dc0ed92647e0aa1f999a3409e0b6
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Southern Ayrshire and Galloway Biosphere
 ---

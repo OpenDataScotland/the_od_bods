@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: National Records of Scotland
 notes: <p>The average number of people per household in each council area and in Scotland</p>
 organization: National Records of Scotland
+original_dataset_link: http://statistics.gov.scot/data/average-household-size
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/average-household-size
+resources: []
 schema: default
 title: Average Household Size
 ---

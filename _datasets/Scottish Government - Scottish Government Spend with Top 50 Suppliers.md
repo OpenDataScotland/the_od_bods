@@ -9,11 +9,9 @@ notes: <p>This dataset details the Scottish Government's spend with it's top 50 
   calculated using spend by value, by financial year.  This comprises spend on goods,
   works and services.</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/scottish-government-spend-with-top-50-suppliers
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/scottish-government-spend-with-top-50-suppliers
+resources: []
 schema: default
 title: Scottish Government Spend with Top 50 Suppliers
 ---

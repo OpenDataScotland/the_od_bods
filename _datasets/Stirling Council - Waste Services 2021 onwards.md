@@ -17,11 +17,9 @@ notes: "<p><strong>Datasets within this group show the monthly breakdown of the 
   ><strong>Waste Management (2018 to 2020, inclusive)</strong></a><strong> group on\
   \ this platform.</strong></p>"
 organization: Stirling Council
+original_dataset_link: https://data.stirling.gov.uk/dataset/waste-services-2021-onwards
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.stirling.gov.uk/dataset/waste-services-2021-onwards
 - format: CSV
   name: CSV
   url: https://data.stirling.gov.uk/dataset/70614cbb-ff9e-4ef7-8e18-486017a368d6/resource/8807c713-46cb-4100-80c5-de8a457b0f8e/download/20210520-domestic-waste-collections-jan-2021-to-dec-2021.csv

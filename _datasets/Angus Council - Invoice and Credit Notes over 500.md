@@ -18,11 +18,9 @@ notes: "<p>Every six months, we publish a list of all invoices and credit notes 
   \ for adoption and fostering, care related payments</li>\n<li>Payments to staff</li>\n\
   </ul>\n<p>These entries have been omitted from the report.</p>"
 organization: Angus Council
+original_dataset_link: http://opendata.angus.gov.uk/dataset/invoice-and-credit-notes-over-f500
 records: null
 resources:
-- format: html
-  name: Description
-  url: http://opendata.angus.gov.uk/dataset/invoice-and-credit-notes-over-f500
 - format: XLS
   name: XLS
   url: http://opendata.angus.gov.uk/dataset/9974d9ac-8bc4-4f0b-badc-43faf9791976/resource/62fb0d14-7c8c-4f3a-8738-1c354f9a9a3a/download/cusersdunlopamdesktopopen-datacopy-of-supplier-payments-01-04-18-30-09-18.xls

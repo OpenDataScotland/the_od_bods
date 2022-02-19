@@ -11,14 +11,9 @@ notes: "<p>Extract of data taken from the\_Disabled Person Protection Policy. Da
   \ details the access for wheelchairs or disabled people when using rails stations.\_\
   </p>"
 organization: Renfrewshire Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=b0b58021aad34051a5f14ea4b68dfd34
 records: 10
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=b0b58021aad34051a5f14ea4b68dfd34
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: ScotRail Station Facilities
 ---

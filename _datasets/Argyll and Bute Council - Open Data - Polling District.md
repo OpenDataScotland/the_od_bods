@@ -20,14 +20,9 @@ notes: "<p>A \u2018polling district\u2019 is a geographical subdivision of an el
   \ or to the availability of premises that can be reasonably designated as polling\
   \ places</p>"
 organization: Argyll and Bute Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=acae4681cabe4ed58d150f3ec9697e25
 records: 116
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=acae4681cabe4ed58d150f3ec9697e25
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Open Data - Polling District
 ---

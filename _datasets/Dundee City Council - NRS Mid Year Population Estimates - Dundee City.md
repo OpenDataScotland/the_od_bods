@@ -16,11 +16,9 @@ notes: '<p>This data set contains Dundee City Mid Year Population Estimates, sou
 
   <p>https://www.nrscotland.gov.uk/statistics-and-data/statistics/statistics-by-theme/population/population-estimates/mid-year-population-estimates/mid-2019</p>'
 organization: Dundee City Council
+original_dataset_link: https://data.dundeecity.gov.uk/dataset/mid-year-population-estimates
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.dundeecity.gov.uk/dataset/mid-year-population-estimates
 - format: CSV
   name: CSV
   url: https://data.dundeecity.gov.uk/dataset/3917a463-0cfc-4514-bb8d-136a7fe087f8/resource/8f837c11-a6e8-4c14-b1af-b306f412484a/download/mid17_popest_single_year_age_sex.csv

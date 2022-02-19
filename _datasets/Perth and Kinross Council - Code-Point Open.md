@@ -15,11 +15,9 @@ notes: <p>Code-Point Open is a dataset that contains postcode units, each of whi
   2RS, contains an average of fifteen adjoining addresses. Northern Ireland postcodes
   are not available with Code-Point Open.</p>
 organization: Perth and Kinross Council
+original_dataset_link: https://data.pkc.gov.uk/dataset/code-point-open1
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.pkc.gov.uk/dataset/code-point-open1
 - format: HTML
   name: HTML
   url: https://www.ordnancesurvey.co.uk/business-government/products/code-point-open

@@ -9,11 +9,9 @@ notes: '<p>Management Information: environmental data on Non-domestic Energy Per
   Certificate (EPC) and Recommendations Report for each current record held on the
   Scottish EPC Register from Q1 2013 to Q2 2021.  Data extracted July 2021.</p>'
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/non-domestic-energy-performance-certificates
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/non-domestic-energy-performance-certificates
+resources: []
 schema: default
 title: Non-domestic Energy Performance Certificates - Dataset to Q2 2021
 ---

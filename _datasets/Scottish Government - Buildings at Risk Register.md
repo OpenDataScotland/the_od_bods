@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Scottish Government
 notes: <p>Percent of A-listed buildings on the Buildings at Risk Register (BARR)</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/buildings-at-risk-register
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/buildings-at-risk-register
+resources: []
 schema: default
 title: Buildings at Risk Register
 ---

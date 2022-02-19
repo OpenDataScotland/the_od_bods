@@ -10,14 +10,9 @@ maintainer: South Ayrshire Council
 notes: <p>Local landscape designations - areas depicting scenic area boundaries for
   South Ayrshire</p>
 organization: South Ayrshire Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=792bcf9e8f654c209de6b05be1319506
 records: 2
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=792bcf9e8f654c209de6b05be1319506
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Scenic Areas
 ---

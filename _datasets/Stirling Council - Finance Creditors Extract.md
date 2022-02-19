@@ -13,11 +13,9 @@ notes: "<p><strong>Breakdown of individual payments to and credits from supplier
   https://www.stirling.gov.uk/council-democracy/information-performance-statistics/annual-accounts/\"\
   >Stirling\u2019s Annual Accounts</a> are available on the Council\u2019s website.</strong></p>"
 organization: Stirling Council
+original_dataset_link: https://data.stirling.gov.uk/dataset/finance-creditors-extract
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.stirling.gov.uk/dataset/finance-creditors-extract
 - format: CSV
   name: CSV
   url: https://data.stirling.gov.uk/dataset/46f0a374-03f0-408b-a46d-27953b0551f6/resource/3c21b0c6-c031-4aaf-a22e-3569457b7192/download/20200622-efinancials-trade-creditors-30.09.2017-v1.0.csv

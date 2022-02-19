@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: '<p>Local authority vacant stock: as at 31 March each year, by current status
   and length of vacancy</p>'
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/local-authority-vacant-dwellings
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/local-authority-vacant-dwellings
+resources: []
 schema: default
 title: Local Authority Vacant Dwellings
 ---

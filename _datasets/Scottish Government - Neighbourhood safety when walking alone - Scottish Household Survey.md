@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>How safe adults in Scotland feel when walking alone in their neighbourhood
   after dark, from the Scottish Household Survey (SHS)</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/neighbourhood-safety-when-walking-alone---scottish-household-survey
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/neighbourhood-safety-when-walking-alone---scottish-household-survey
+resources: []
 schema: default
 title: Neighbourhood safety when walking alone - Scottish Household Survey
 ---

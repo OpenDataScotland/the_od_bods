@@ -11,11 +11,9 @@ notes: '<p>Data taken from cycle counter on the North Inch, alongside <a href="h
 
   <p>(Note: position is approximate)</p>'
 organization: Perth and Kinross Council
+original_dataset_link: https://data.pkc.gov.uk/dataset/perth-bike-counts
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.pkc.gov.uk/dataset/perth-bike-counts
 - format: CSV
   name: CSV
   url: https://data.pkc.gov.uk/dataset/cb6e3218-5fcc-4324-9450-632a15593396/resource/b5a25b82-4372-413f-9143-486e9fefceae/download/bike-counter-north-inch.csv

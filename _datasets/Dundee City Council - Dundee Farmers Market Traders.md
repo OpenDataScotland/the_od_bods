@@ -14,11 +14,9 @@ notes: '<p>Dundee Farmers'' Market takes place on the third Saturday of the mont
 
   <p>For more information: 01382 434548</p>'
 organization: Dundee City Council
+original_dataset_link: https://data.dundeecity.gov.uk/dataset/dundee-farmer-s-market-traders
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.dundeecity.gov.uk/dataset/dundee-farmer-s-market-traders
 - format: CSV
   name: CSV
   url: https://data.dundeecity.gov.uk/dataset/1e5bb249-f372-4903-aeb9-a7e1fbaae8aa/resource/7a8fed82-f4ea-4b19-9ae1-c593a39140a9/download/list-of-traders.csv

@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>The average total tariff score, and percentage of school leavers by Scottish
   Index of Multiple Deprivation (SIMD) Quintile                  </p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/attainment-by-deprivation-quintile
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/attainment-by-deprivation-quintile
+resources: []
 schema: default
 title: Schools - Attainment by Deprivation
 ---

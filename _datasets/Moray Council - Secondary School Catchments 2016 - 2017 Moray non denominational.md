@@ -19,14 +19,9 @@ notes: "<p>Secondary School Catchments 24/10/2016 - 13/08/2017 (Moray) (non deno
   \ school which is not the  designated catchment area school for their postal address,\
   \ they must  make an out-of-zone \u2018placing request\u2019.\_ </p>"
 organization: Moray Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=f527fa3a9475430cb08a496817fcecd7
 records: 8
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=f527fa3a9475430cb08a496817fcecd7
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Secondary School Catchments 2016 - 2017 (Moray) (non denominational)
 ---

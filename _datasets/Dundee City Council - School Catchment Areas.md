@@ -14,11 +14,9 @@ notes: '<p>Catchment areas of all mainstream schools within the Dundee City Coun
   not resident in that catchment area are required to make a placing request for entry
   into that school.</p>'
 organization: Dundee City Council
+original_dataset_link: https://data.dundeecity.gov.uk/dataset/school-catchment-areas
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.dundeecity.gov.uk/dataset/school-catchment-areas
 - format: ZIP
   name: ZIP
   url: http://inspire.dundeecity.gov.uk/geoserver/inspire/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=inspire:SCHOOL_CATCHMENTS_PRIMARY&maxFeatures=50&outputFormat=SHAPE-ZIP

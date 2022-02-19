@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>Mid-year population estimates for 2018 onwards. Higher geographies are aggregated
   from 2011 Data Zones.</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/population-estimates-young-and-old
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/population-estimates-young-and-old
+resources: []
 schema: default
 title: 'Population Estimates: Young and Old'
 ---

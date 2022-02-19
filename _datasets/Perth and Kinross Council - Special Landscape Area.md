@@ -12,11 +12,9 @@ notes: <p>Designated landscapes within Perth and Kinross which merit special att
   Guidance in which they are contained was approved by Scottish Ministers on 17th
   June 2015.</p>
 organization: Perth and Kinross Council
+original_dataset_link: https://data.pkc.gov.uk/dataset/special-landscape-area
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.pkc.gov.uk/dataset/special-landscape-area
 - format: HTML
   name: HTML
   url: http://opendata-pkc.opendata.arcgis.com/datasets/2c975835288f422bb5890b32ea870acb_0

@@ -9,14 +9,9 @@ maintainer: Moray Council
 notes: <p>Education School Locations (Moray), including Secondary and Primary for
   non denominational and denominational.</p>
 organization: Moray Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=b5ba23aa94ab484f97cb617eb20741cf
 records: 54
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=b5ba23aa94ab484f97cb617eb20741cf
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Education School Locations (Moray)
 ---

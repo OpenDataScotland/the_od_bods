@@ -8,11 +8,9 @@ maintainer: National Records of Scotland
 notes: <p>The population of children (aged 0 to 15) and older people (aged 65 and
   over) expressed as a percentage of people aged 16 to 64</p>
 organization: National Records of Scotland
+original_dataset_link: http://statistics.gov.scot/data/population-estimates-dependency
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/population-estimates-dependency
+resources: []
 schema: default
 title: Dependency Ratio
 ---

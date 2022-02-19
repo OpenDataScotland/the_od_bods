@@ -10,11 +10,9 @@ notes: <p>Confidence across six policing functions by tenure, household type, se
   together multiple household surveys to provide a large sample for subnational analysis.
   </p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/confidence-in-policing-sscq
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/confidence-in-policing-sscq
+resources: []
 schema: default
 title: Confidence in Policing - Scottish Survey Core Questions
 ---

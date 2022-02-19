@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>Geographical analysis of families claiming Child Benefit at small area levels.
   Number of families in a live Child Benefit award as at 31st August.</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/child-benefit---families
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/child-benefit---families
+resources: []
 schema: default
 title: Child Benefit - Families
 ---

@@ -8,11 +8,9 @@ maintainer: Department for Work and Pensions
 notes: <p>Number of people claiming incapacity benefits and/or severe disablement
   allowance</p>
 organization: Department for Work and Pensions
+original_dataset_link: http://statistics.gov.scot/data/incapacity-benefit-claimants
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/incapacity-benefit-claimants
+resources: []
 schema: default
 title: Incapacity Benefit and Severe Disablement Claimants
 ---

@@ -8,11 +8,9 @@ maintainer: Perth and Kinross Council
 notes: "<p>Parliamentary polling district boundaries are used\_to manage elections.\
   \ They are sub-divisions of the 2007 electoral ward boundaries.</p>"
 organization: Perth and Kinross Council
+original_dataset_link: https://data.pkc.gov.uk/dataset/polling-districts
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.pkc.gov.uk/dataset/polling-districts
 - format: HTML
   name: HTML
   url: http://opendata-pkc.opendata.arcgis.com/datasets/6dac129ea3cb492b961186e316e09690_0

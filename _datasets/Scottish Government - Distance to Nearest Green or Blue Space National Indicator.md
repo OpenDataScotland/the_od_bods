@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>Percentage of adults living within 5 minutes walking distance of their nearest
   green or blue space</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/green-and-blue-spaces
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/green-and-blue-spaces
+resources: []
 schema: default
 title: Distance to Nearest Green or Blue Space (National Indicator)
 ---

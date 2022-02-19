@@ -8,11 +8,9 @@ maintainer: Accountant in Bankruptcy
 notes: <p>Personal insolvencies in Scotland (awards of bankruptcy and Protected Trust
   Deeds).</p>
 organization: Accountant in Bankruptcy
+original_dataset_link: http://statistics.gov.scot/data/personal-insolvency
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/personal-insolvency
+resources: []
 schema: default
 title: Personal Insolvency
 ---

@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: National Records of Scotland
 notes: <p>Mid-year population estimates for built-up areas of Scotland.</p>
 organization: National Records of Scotland
+original_dataset_link: http://statistics.gov.scot/data/settlements-and-localities-population
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/settlements-and-localities-population
+resources: []
 schema: default
 title: Settlements and Localities Population
 ---

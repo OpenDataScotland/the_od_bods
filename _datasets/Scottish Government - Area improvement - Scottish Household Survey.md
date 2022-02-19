@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>If local neighbourhood has improved over the last three years, from the
   Scottish Household Survey (SHS)</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/area-improvement---shs
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/area-improvement---shs
+resources: []
 schema: default
 title: Area improvement - Scottish Household Survey
 ---

@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Transport Scotland
 notes: <p>Local and central government transport expenditure</p>
 organization: Transport Scotland
+original_dataset_link: http://statistics.gov.scot/data/road-transport-expenditure
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/road-transport-expenditure
+resources: []
 schema: default
 title: Road Transport Expenditure
 ---

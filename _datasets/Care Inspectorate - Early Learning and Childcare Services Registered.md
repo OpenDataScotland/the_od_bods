@@ -8,11 +8,9 @@ maintainer: Care Inspectorate
 notes: <p>Number and rate (per 10,000 people) of services registered to provide early
   learning and childcare</p>
 organization: Care Inspectorate
+original_dataset_link: http://statistics.gov.scot/data/early-learning-and-childcare-services-registered
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/early-learning-and-childcare-services-registered
+resources: []
 schema: default
 title: 'Early Learning and Childcare: Services Registered'
 ---

@@ -8,14 +8,9 @@ license: ''
 maintainer: Moray Council
 notes: <p>Scottish Parliament Constituency 2010 (OS Boundary Line Open Data)</p>
 organization: Moray Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=50ca14c63c434679b79be96b6c5ff5fe
 records: 73
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=50ca14c63c434679b79be96b6c5ff5fe
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Scottish Parliament Constituency 2010
 ---

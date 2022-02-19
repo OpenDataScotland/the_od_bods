@@ -8,14 +8,9 @@ license: ''
 maintainer: South Ayrshire Council
 notes: <p>Defined landscape character areas for Ayrshire</p>
 organization: South Ayrshire Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=8dbefa8a2d354c08917946574c808fe4
 records: 84
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=8dbefa8a2d354c08917946574c808fe4
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Landscape Character Areas
 ---

@@ -22,11 +22,9 @@ notes: "<p>Local authorities are required to report to the Scottish Environmenta
   \ shows a break-down of waste types for 2011 \u2013 2015 and the trend for Scottish\
   \ waste landfilled since 2005.</p>\n<p>All data can be exported to Excel if required.</p>"
 organization: Dundee City Council
+original_dataset_link: https://data.dundeecity.gov.uk/dataset/waste-and-recycling
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.dundeecity.gov.uk/dataset/waste-and-recycling
 - format: ''
   name: ''
   url: https://www.sepa.org.uk/environment/waste/waste-data/waste-data-reporting/waste-data-for-scotland/

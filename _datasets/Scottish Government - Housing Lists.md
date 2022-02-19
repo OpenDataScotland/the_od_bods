@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>Total number of applications on waiting lists and transfer lists for a local
   authority dwelling</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/housing-lists
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/housing-lists
+resources: []
 schema: default
 title: Housing Lists
 ---

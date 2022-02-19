@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>Percent of respondents who believe that crime has stayed the same or reduced
   in the past 2 years in their local area</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/local-crime-rate-national-indicator
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/local-crime-rate-national-indicator
+resources: []
 schema: default
 title: Local Crime Rate (National Indicator)
 ---

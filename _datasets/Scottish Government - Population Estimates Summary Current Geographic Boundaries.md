@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>Mid-year population estimates. Higher geographies are aggregated from 2011
   Data Zones.</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/population-estimates-2011-datazone-linked-dataset
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/population-estimates-2011-datazone-linked-dataset
+resources: []
 schema: default
 title: Population Estimates Summary (Current Geographic Boundaries)
 ---

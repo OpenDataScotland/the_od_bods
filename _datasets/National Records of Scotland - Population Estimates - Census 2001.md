@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: National Records of Scotland
 notes: <p>Population from Census Day, 29 April 2001 (number of people).</p>
 organization: National Records of Scotland
+original_dataset_link: http://statistics.gov.scot/data/census-population-2001
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/census-population-2001
+resources: []
 schema: default
 title: Population Estimates - Census 2001
 ---

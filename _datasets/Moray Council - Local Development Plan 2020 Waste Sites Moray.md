@@ -8,14 +8,9 @@ license: ''
 maintainer: Moray Council
 notes: <p>Local Development Plan 2020 Waste Sites (Moray)</p>
 organization: Moray Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=60a64be6443046ce8ce4c2fe628f2c37
 records: 4
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=60a64be6443046ce8ce4c2fe628f2c37
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Local Development Plan 2020 Waste Sites (Moray)
 ---

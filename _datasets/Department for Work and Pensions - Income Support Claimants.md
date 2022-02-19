@@ -8,11 +8,9 @@ maintainer: Department for Work and Pensions
 notes: <p>Number of income support claimants by age and gender (age split not available
   for gender).</p>
 organization: Department for Work and Pensions
+original_dataset_link: http://statistics.gov.scot/data/income-support-claimants
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/income-support-claimants
+resources: []
 schema: default
 title: Income Support Claimants
 ---

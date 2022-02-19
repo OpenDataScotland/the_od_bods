@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>Number of applications received by Local Authorities for Discretionary Housing
   Payments</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/discretionary-housing-payments-applications
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/discretionary-housing-payments-applications
+resources: []
 schema: default
 title: Discretionary Housing Payments Applications
 ---

@@ -18,11 +18,9 @@ notes: <div style='text-align:Left;'><div><div><p style='margin:0 0 14 0;'><span
   an Aberdeenshire Academy these Aberdeenshire zones are also shown.</span></span></p><p><span
   /></p></div></div></div>
 organization: Aberdeen City Council
+original_dataset_link: https://data.aberdeencity.gov.uk/dataset/academy-school-catchments1
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.aberdeencity.gov.uk/dataset/academy-school-catchments1
 - format: HTML
   name: HTML
   url: http://spatialdata-accabdn.opendata.arcgis.com/datasets/c8e7887f4519434b8564a608754002cb_0

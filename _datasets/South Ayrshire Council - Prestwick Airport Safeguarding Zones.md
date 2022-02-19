@@ -9,14 +9,9 @@ license: ''
 maintainer: South Ayrshire Council
 notes: <p>Safeguarding zones for developments around Prestwick Airport</p>
 organization: South Ayrshire Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=310950083fd945d5b618d2b18495d47a
 records: 126
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=310950083fd945d5b618d2b18495d47a
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Prestwick Airport Safeguarding Zones
 ---

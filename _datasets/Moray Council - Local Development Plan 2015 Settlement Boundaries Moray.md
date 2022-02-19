@@ -12,14 +12,9 @@ notes: <p>The Local Development Plan 2015 was superseded by the Local Developmen
   spatial strategy set out within the Moray Local Development Plan 2015. Settlement
   boundaries contain the primary, secondary and third tier settlements.</p>
 organization: Moray Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=5c51907e5088428ea44e8d4068cf8e51
 records: 33
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=5c51907e5088428ea44e8d4068cf8e51
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Local Development Plan 2015 Settlement Boundaries (Moray)
 ---

@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Scottish Government
 notes: <p>Number and rate per 1,000 population of home care clients by living arrangement</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/home-care-client-living-arrangements
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/home-care-client-living-arrangements
+resources: []
 schema: default
 title: Home Care Client Living Arrangements
 ---

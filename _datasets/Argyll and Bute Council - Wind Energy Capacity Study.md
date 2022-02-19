@@ -14,14 +14,9 @@ notes: "<p>The council, together with Scottish Natural Heritage have commissione
   \ Development Plan (LDP). The updated study was approved by the Councils Planning\
   \ Protective Services and Licensing Committee on 20th September 2017.</p>"
 organization: Argyll and Bute Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=551baee4d4784e5899d3d5cc4512d1fb
 records: 374
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=551baee4d4784e5899d3d5cc4512d1fb
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Wind Energy Capacity Study
 ---

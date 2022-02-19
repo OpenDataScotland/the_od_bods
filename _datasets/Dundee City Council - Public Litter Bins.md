@@ -11,11 +11,9 @@ notes: <p>Locations of all public bins within Dundee City. The public bin networ
   management</a> carried out by Dundee City Council, or to report a <a href="https://www.dundeecity.gov.uk/service-area/neighbourhood-services/environment/street-cleansing">street
   cleansing</a> issue.</p>
 organization: Dundee City Council
+original_dataset_link: https://data.dundeecity.gov.uk/dataset/public-bin-locations
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.dundeecity.gov.uk/dataset/public-bin-locations
 - format: CSV
   name: CSV
   url: https://data.dundeecity.gov.uk/dataset/12f17406-5c0b-458e-8734-e8c9dbe540be/resource/7033338f-370f-4a9d-b7ad-360b4289377d/download/public-litter-bin-locations-all-bins.csv

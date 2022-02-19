@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Scottish Government
 notes: ''
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/scottish-index-of-multiple-deprivation
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/scottish-index-of-multiple-deprivation
+resources: []
 schema: default
 title: Scottish Index of Multiple Deprivation 2020
 ---

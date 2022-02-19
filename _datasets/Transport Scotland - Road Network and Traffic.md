@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Transport Scotland
 notes: <p>Road network traffic, perceptions of congestion and road condition</p>
 organization: Transport Scotland
+original_dataset_link: http://statistics.gov.scot/data/road-network-traffic
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/road-network-traffic
+resources: []
 schema: default
 title: Road Network and Traffic
 ---

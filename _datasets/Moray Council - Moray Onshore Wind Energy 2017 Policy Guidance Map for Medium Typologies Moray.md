@@ -17,14 +17,9 @@ notes: "<p>Moray Onshore Wind Energy 2017 Policy Guidance Map for Medium Typolog
   \ typology are the areas with the fewest constraints and therefore the greatest\
   \ potential for wind farm developments.</p>"
 organization: Moray Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=1f923e623ab245019197e556c1a31daf
 records: 6
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=1f923e623ab245019197e556c1a31daf
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Moray Onshore Wind Energy 2017 Policy Guidance Map for Medium Typologies (Moray)
 ---

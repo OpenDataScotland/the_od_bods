@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Scottish Government
 notes: <p>Number of House in Multiple Occupation (HMO) Licences in force at 31 March.</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/hmo-licences
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/hmo-licences
+resources: []
 schema: default
 title: Number of HMO Licences in Force
 ---

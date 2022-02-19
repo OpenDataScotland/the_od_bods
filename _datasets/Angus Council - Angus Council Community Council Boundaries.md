@@ -13,11 +13,9 @@ notes: <p>Community Councils within Angus. A Community Council is a voluntary or
   set up by statute by the Local Authority and run by local residents to act on behalf
   of its area.</p>
 organization: Angus Council
+original_dataset_link: http://opendata.angus.gov.uk/dataset/angus-council-community-council-boundaries
 records: null
 resources:
-- format: html
-  name: Description
-  url: http://opendata.angus.gov.uk/dataset/angus-council-community-council-boundaries
 - format: WMS
   name: WMS
   url: http://data.angus.gov.uk/geoserver/inspire/inspire:chx_commcouncils/wms?service=WMS&request=GetMap

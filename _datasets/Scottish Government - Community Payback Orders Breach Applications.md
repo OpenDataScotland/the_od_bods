@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>Breach applications during the life of Community Payback Orders which were
   completed/terminated in each year from 2012-13, by gender. </p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/community-payback-orders-breach-applications
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/community-payback-orders-breach-applications
+resources: []
 schema: default
 title: 'Community Payback Orders: Breach Applications'
 ---

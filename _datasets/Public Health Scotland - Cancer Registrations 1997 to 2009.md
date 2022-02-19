@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Public Health Scotland
 notes: <p>Number of cancer registrations by type and gender.</p>
 organization: Public Health Scotland
+original_dataset_link: http://statistics.gov.scot/data/cancer-registrations
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/cancer-registrations
+resources: []
 schema: default
 title: Cancer Registrations (1997 to 2009)
 ---

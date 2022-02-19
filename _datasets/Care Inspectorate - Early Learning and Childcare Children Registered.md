@@ -8,11 +8,9 @@ maintainer: Care Inspectorate
 notes: <p>Number and rate (per 100 children) of children registered to attend early
   learning and childcare services</p>
 organization: Care Inspectorate
+original_dataset_link: http://statistics.gov.scot/data/early-learning-and-childcare-children-registered
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/early-learning-and-childcare-children-registered
+resources: []
 schema: default
 title: 'Early Learning and Childcare: Children Registered'
 ---

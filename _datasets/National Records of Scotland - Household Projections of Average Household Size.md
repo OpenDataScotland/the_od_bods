@@ -10,11 +10,9 @@ notes: <p>25 year projection of household size (people per household) for Counci
   same projection shown in Household Projections, which shows a more detailed breakdown
   of the projection</p>
 organization: National Records of Scotland
+original_dataset_link: http://statistics.gov.scot/data/household-projections-of-average-household-size
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/household-projections-of-average-household-size
+resources: []
 schema: default
 title: Household Projections of Average Household Size
 ---

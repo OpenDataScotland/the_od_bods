@@ -22,11 +22,9 @@ notes: '<p>Dundee City Council''s posts public notices through the national <a h
 
   </ul>'
 organization: Dundee City Council
+original_dataset_link: https://data.dundeecity.gov.uk/dataset/public-notices
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.dundeecity.gov.uk/dataset/public-notices
 - format: XML
   name: XML
   url: https://www.tellmescotland.gov.uk/notices/dundee-city/rss/

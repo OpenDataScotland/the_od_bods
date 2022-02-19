@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Scottish Government
 notes: <p>Feedback statistics covering suggestions received by Social Security Scotland.</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/social-security-scotland-feedback-suggestions
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/social-security-scotland-feedback-suggestions
+resources: []
 schema: default
 title: 'Social Security Scotland Feedback: Suggestions'
 ---

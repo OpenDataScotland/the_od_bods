@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>Number of pupils who attained gained awards in English and Maths at SCQF
   Level 3 or above.</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/pupil-attainment-em
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/pupil-attainment-em
+resources: []
 schema: default
 title: Pupil Attainment (English and Maths)
 ---

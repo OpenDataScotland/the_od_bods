@@ -15,11 +15,9 @@ notes: "<p>As part of an exciting collaboration with Dundee Place Partnership, <
   \ places are shared in this dataset. Read more about the research and see other\
   \ results on Creative Dundee's website. </p>"
 organization: Dundee City Council
+original_dataset_link: https://data.dundeecity.gov.uk/dataset/places-database
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.dundeecity.gov.uk/dataset/places-database
 - format: CSV
   name: CSV
   url: https://docs.google.com/spreadsheets/d/e/2PACX-1vRh_IIlWTpBVHvsln6J6ynyy8iTCnLVdJ3eDIgpJj66oJgMQOWmzhQedLZ0Hq9RsYwwPiICOfYsD9tg/pub?gid=1914242938&single=true&output=csv

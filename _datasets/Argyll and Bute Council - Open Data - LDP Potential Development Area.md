@@ -18,14 +18,9 @@ notes: "<p>Potential Development Areas designated in the Argyll and Bute adopted
   \ within the PDA area can be realised and be supported by this plan. A PDA may include\
   \ a number of identifiable development sites</p>"
 organization: Argyll and Bute Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=6d63d565373b45a394a5fb3fd0ea8694
 records: 182
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=6d63d565373b45a394a5fb3fd0ea8694
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Open Data - LDP Potential Development Area
 ---

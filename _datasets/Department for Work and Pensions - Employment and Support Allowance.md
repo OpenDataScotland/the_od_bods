@@ -8,11 +8,9 @@ maintainer: Department for Work and Pensions
 notes: <p>Number of Employment and Support Allowance claimants by age, gender, and
   ethnicity.</p>
 organization: Department for Work and Pensions
+original_dataset_link: http://statistics.gov.scot/data/employment-support-allowance
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/employment-support-allowance
+resources: []
 schema: default
 title: Employment and Support Allowance
 ---

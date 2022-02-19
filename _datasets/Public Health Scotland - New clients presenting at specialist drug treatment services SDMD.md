@@ -10,11 +10,9 @@ notes: <p>Individuals presenting for initial assessment (for new drug treatment 
   to Scottish Drug Misuse Database (SDMD). Selected breakdowns by age, gender, illicit
   drug, prescribed drug and whether or not client injects. </p>
 organization: Public Health Scotland
+original_dataset_link: http://statistics.gov.scot/data/new-clients-presenting-at-specialist-drug-treatment-services-sdmd
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/new-clients-presenting-at-specialist-drug-treatment-services-sdmd
+resources: []
 schema: default
 title: New clients presenting at specialist drug treatment services (SDMD)
 ---

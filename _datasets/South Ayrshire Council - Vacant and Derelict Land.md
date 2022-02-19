@@ -9,14 +9,9 @@ license: ''
 maintainer: South Ayrshire Council
 notes: <p>Areas of vacant and derelict land</p>
 organization: South Ayrshire Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=a7fef8a46e4c49d497c2718ef40f80bb
 records: 83
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=a7fef8a46e4c49d497c2718ef40f80bb
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Vacant and Derelict Land
 ---

@@ -8,11 +8,9 @@ maintainer: Public Health Scotland
 notes: <p>The alcohol-related inpatient and day case activity taking place within
   general acute hospitals and psychiatric hospitals in Scotland.</p>
 organization: Public Health Scotland
+original_dataset_link: http://statistics.gov.scot/data/alcohol-related-hospital-statistics
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/alcohol-related-hospital-statistics
+resources: []
 schema: default
 title: Alcohol Related Hospital Statistics
 ---

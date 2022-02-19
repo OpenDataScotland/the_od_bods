@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Scottish Government
 notes: <p>Area of Derelict and Urban Vacant Land (hectares)</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/vacant-derelict-land
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/vacant-derelict-land
+resources: []
 schema: default
 title: Derelict and Urban Vacant Land
 ---

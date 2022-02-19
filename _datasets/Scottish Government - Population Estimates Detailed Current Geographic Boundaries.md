@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Scottish Government
 notes: <p>Mid-year population estimates.</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/population-estimates-detailed-current-geographic-boundaries
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/population-estimates-detailed-current-geographic-boundaries
+resources: []
 schema: default
 title: Population Estimates Detailed (Current Geographic Boundaries)
 ---

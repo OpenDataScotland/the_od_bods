@@ -14,14 +14,9 @@ notes: "<p>A site proposed in the Argyll and Bute adopted Local Development Plan
   \ within the plan-period without having to overcome significant obstacles to the\
   \ development</p>"
 organization: Argyll and Bute Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=8364225b91c84cb9aed59dead8297185
 records: 151
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=8364225b91c84cb9aed59dead8297185
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Open Data - LDP Allocations
 ---

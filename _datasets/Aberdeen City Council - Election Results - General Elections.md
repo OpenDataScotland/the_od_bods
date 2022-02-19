@@ -53,11 +53,9 @@ notes: '<p>The current UK Parliament constituencies were set in 2005.  The major
 
   </ul>'
 organization: Aberdeen City Council
+original_dataset_link: https://data.aberdeencity.gov.uk/dataset/election-results-general-elections
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.aberdeencity.gov.uk/dataset/election-results-general-elections
 - format: CSV
   name: CSV
   url: https://data.aberdeencity.gov.uk/dataset/977607dd-8203-4147-8396-c11c0e346f60/resource/1e892e6a-4aae-49c8-9371-78f57f7bc78a/download/ge2019-abnorth-poll-summary.csv

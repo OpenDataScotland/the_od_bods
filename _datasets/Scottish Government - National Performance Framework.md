@@ -9,11 +9,9 @@ notes: <p>Data underlying the National Performance Framework Indicators. These g
   a measure of national wellbeing including a range of economic, social and environmental
   indicators. </p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/national-performance-framework
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/national-performance-framework
+resources: []
 schema: default
 title: National Performance Framework
 ---

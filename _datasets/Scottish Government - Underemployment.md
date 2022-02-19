@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>People who are in work but who would prefer to work more hours for the same
   rate of pay</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/underemployment
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/underemployment
+resources: []
 schema: default
 title: Underemployment
 ---

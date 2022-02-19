@@ -10,14 +10,9 @@ license: ''
 maintainer: South Ayrshire Council
 notes: <p>Tree presevation orders in force across the area</p>
 organization: South Ayrshire Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=2afbf49fd8514e8aa67fa6a6eceeaf86
 records: 93
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=2afbf49fd8514e8aa67fa6a6eceeaf86
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Tree Preservation Orders
 ---

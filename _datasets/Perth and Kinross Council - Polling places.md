@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Perth and Kinross Council
 notes: <p>Location of polling places to be used for elections in PKC from 2011 onwards.</p>
 organization: Perth and Kinross Council
+original_dataset_link: https://data.pkc.gov.uk/dataset/polling-places
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.pkc.gov.uk/dataset/polling-places
 - format: HTML
   name: HTML
   url: http://opendata-pkc.opendata.arcgis.com/datasets/909e45688aa646199cad8e8616ddef7a_0

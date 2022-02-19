@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Scottish Government
 notes: <p>Number and rate (percent) of VAT/PAYE business survival.</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/business-demography---survival
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/business-demography---survival
+resources: []
 schema: default
 title: Business Demography - Survival
 ---

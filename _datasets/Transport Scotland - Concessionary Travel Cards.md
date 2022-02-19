@@ -8,11 +8,9 @@ maintainer: Transport Scotland
 notes: <p>Number of concessionary cards issued to all adults, and adults aged over
   60</p>
 organization: Transport Scotland
+original_dataset_link: http://statistics.gov.scot/data/concessionary-cards
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/concessionary-cards
+resources: []
 schema: default
 title: Concessionary Travel Cards
 ---
