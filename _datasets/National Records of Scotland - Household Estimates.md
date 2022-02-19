@@ -10,11 +10,9 @@ notes: <p>Number and percentage of total dwellings that are occupied, vacant, un
   and exempt from paying council tax, and that are receiving Single Adult Council
   Tax discount.  An 'occupied dwelling' is roughly equivalent to a household.</p>
 organization: National Records of Scotland
+original_dataset_link: http://statistics.gov.scot/data/household-estimates
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/household-estimates
+resources: []
 schema: default
 title: Household Estimates
 ---

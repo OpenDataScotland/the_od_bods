@@ -11,14 +11,9 @@ notes: "<p>All\_renewable energy developments in Argyll and Bute, by type (e.g. 
   \ hydro-electric, tidal, biomass, solar, etc.), scale, status\_and for a specific\
   \ location.</p>"
 organization: Argyll and Bute Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=0c1c919409754d6db29f710fabd591c2
 records: 724
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=0c1c919409754d6db29f710fabd591c2
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Open Data - Renewables Energy Sites
 ---

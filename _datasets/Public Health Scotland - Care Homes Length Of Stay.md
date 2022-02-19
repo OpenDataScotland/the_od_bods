@@ -8,11 +8,9 @@ maintainer: Public Health Scotland
 notes: <p>The percentage of long stay care home residents by length of their stay,
   as well as mean and median lengths of stay</p>
 organization: Public Health Scotland
+original_dataset_link: http://statistics.gov.scot/data/care-homes-length-of-stay
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/care-homes-length-of-stay
+resources: []
 schema: default
 title: 'Care Homes: Length Of Stay'
 ---

@@ -9,14 +9,9 @@ license: ''
 maintainer: Argyll and Bute Council
 notes: <p>Boundaries of Secondary School Catchment Areas in Argyll and Bute</p>
 organization: Argyll and Bute Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=d344834454e54fc891966ce23c3cfa34
 records: 12
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=d344834454e54fc891966ce23c3cfa34
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Open Data - Secondary School Catchment Areas
 ---

@@ -8,11 +8,9 @@ maintainer: Public Health Scotland
 notes: <p>Data indicates patients registered with practices by Health Board and Local
   Authority as at 1 October for each year presented.</p>
 organization: Public Health Scotland
+original_dataset_link: http://statistics.gov.scot/data/general-practice-list-size
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/general-practice-list-size
+resources: []
 schema: default
 title: General Practice List Size
 ---

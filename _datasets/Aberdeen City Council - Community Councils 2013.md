@@ -12,11 +12,9 @@ notes: <div style='text-align:Left;'><div><div><p><span>Community Councils are b
   and other public bodies. Their term of office is 3 years. They have no executive
   powers but are statutory consultees on planning and licensing matters.</span></p></div></div></div>
 organization: Aberdeen City Council
+original_dataset_link: https://data.aberdeencity.gov.uk/dataset/community-councils-20131
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.aberdeencity.gov.uk/dataset/community-councils-20131
 - format: HTML
   name: HTML
   url: http://spatialdata-accabdn.opendata.arcgis.com/datasets/6e95f7ad530a47559a104d7563ac1f09_0

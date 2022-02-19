@@ -9,14 +9,9 @@ license: ''
 maintainer: Renfrewshire Council
 notes: <p>Drug-related deaths 2018, filtered for Renfrewshire.</p>
 organization: Renfrewshire Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=15e7aa41b25940ea93b29da0158b2411
 records: 23
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=15e7aa41b25940ea93b29da0158b2411
-- format: TABLE
-  name: TABLE
-  url: ''
+resources: []
 schema: default
 title: Drug related deaths 2018
 ---

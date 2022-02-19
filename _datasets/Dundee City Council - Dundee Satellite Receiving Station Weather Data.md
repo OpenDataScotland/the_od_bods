@@ -24,11 +24,9 @@ notes: '<p>Weather data, primarily wind, temperature, pressure, humidity, record
 
   WARNING: the hour may show 12: after midnight when it should show 00:</p>'
 organization: Dundee City Council
+original_dataset_link: https://data.dundeecity.gov.uk/dataset/dundee-satellite-receiving-station-weather-data
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.dundeecity.gov.uk/dataset/dundee-satellite-receiving-station-weather-data
 - format: CSV
   name: CSV
   url: https://data.dundeecity.gov.uk/dataset/a1bf17ec-8894-4989-96eb-aa6e7b31e0ea/resource/0f35ff53-d72f-434c-af99-c545ccbdb5f5/download/dsrs_weather_2017.csv

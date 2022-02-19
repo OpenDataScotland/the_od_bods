@@ -8,11 +8,9 @@ maintainer: Dundee City Council
 notes: <p>Waste generation and number of collections of individual units within Dundee
   City Council's network of solar powered compactor bins. </p>
 organization: Dundee City Council
+original_dataset_link: https://data.dundeecity.gov.uk/dataset/solar-powered-compactor-bins-waste-generation
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.dundeecity.gov.uk/dataset/solar-powered-compactor-bins-waste-generation
 - format: CSV
   name: CSV
   url: https://data.dundeecity.gov.uk/dataset/95203e8d-129d-4873-96aa-b99ad4240433/resource/3a62475b-0c6a-4434-89a0-baa86e60e5ba/download/compactor-bin-locations.csv

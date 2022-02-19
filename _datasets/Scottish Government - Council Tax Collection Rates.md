@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>Data on Council Tax amounts billed and collected, up to the end of the most
   recent complete billing year</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/council-tax-collection-rates
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/council-tax-collection-rates
+resources: []
 schema: default
 title: Council Tax Collection Rates
 ---

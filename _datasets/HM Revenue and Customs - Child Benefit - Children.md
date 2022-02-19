@@ -8,11 +8,9 @@ maintainer: HM Revenue and Customs
 notes: <p>Geographical analysis of Child Benefit at small area levels. Number of children
   in a live Child Benefit award as at 31st August.</p>
 organization: HM Revenue and Customs
+original_dataset_link: http://statistics.gov.scot/data/child-benefit
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/child-benefit
+resources: []
 schema: default
 title: Child Benefit - Children
 ---

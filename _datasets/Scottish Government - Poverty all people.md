@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>Official Statistics of the number and proportions of people in poverty.
   Various poverty measures and breakdowns are available.</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/poverty-all-people
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/poverty-all-people
+resources: []
 schema: default
 title: Poverty (all people)
 ---

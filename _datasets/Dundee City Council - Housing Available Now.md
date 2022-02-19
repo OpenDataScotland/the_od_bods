@@ -31,11 +31,9 @@ notes: '<h2>Properties available now from the Common Housing Register</h2>
   User licence</a> for the purpose of supporting applicants on the common housing
   register to apply for available housing.</p>'
 organization: Dundee City Council
+original_dataset_link: https://data.dundeecity.gov.uk/dataset/housing-available-now
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.dundeecity.gov.uk/dataset/housing-available-now
 - format: HTML
   name: HTML
   url: https://mapsonline.dundeecity.gov.uk/dcc_gis_root/dcc_gis_config/app_config/availhousing/index.html

@@ -12,14 +12,9 @@ license: ''
 maintainer: Renfrewshire Council
 notes: <p>A layer presenting Care Homes in Renfrewshire Council area</p>
 organization: Renfrewshire Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=0310460f85374ba3a850e76f1fd84b34
 records: 33
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=0310460f85374ba3a850e76f1fd84b34
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Care Homes
 ---

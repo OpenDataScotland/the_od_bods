@@ -9,14 +9,9 @@ license: ''
 maintainer: Renfrewshire Council
 notes: <p>Scottish Council Elections 4 May 2017 results and turnout</p>
 organization: Renfrewshire Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=bc963f15662f477091cb291c7b5186e1
 records: 13
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=bc963f15662f477091cb291c7b5186e1
-- format: TABLE
-  name: TABLE
-  url: ''
+resources: []
 schema: default
 title: Scottish Council Elections May 2017
 ---

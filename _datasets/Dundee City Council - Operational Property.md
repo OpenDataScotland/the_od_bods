@@ -8,11 +8,9 @@ maintainer: Dundee City Council
 notes: <p>Operational Property is that which is dedicated to direct service delivery
   e.g. offices.</p>
 organization: Dundee City Council
+original_dataset_link: https://data.dundeecity.gov.uk/dataset/operational-property
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.dundeecity.gov.uk/dataset/operational-property
 - format: CSV
   name: CSV
   url: http://inspire.dundeecity.gov.uk/geoserver/inspire/wfs?version=2.0.0&service=wfs&request=GetFeature&typeName=inspire:SV_OPERATIONAL_PROPERTY&outputFormat=csv

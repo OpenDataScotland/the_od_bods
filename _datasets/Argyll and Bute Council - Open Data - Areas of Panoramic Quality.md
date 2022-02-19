@@ -14,14 +14,9 @@ notes: "<p>Areas of Panoramic Quality designated in the Argyll and Bute adopted 
   \ landscape quality which were previously identified as \u2018Regional Scenic Areas\u2019\
   \ in the former Strathclyde Structure Plan</p>"
 organization: Argyll and Bute Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=1092d04288f3497bbe84eefb62dbb923
 records: 18
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=1092d04288f3497bbe84eefb62dbb923
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Open Data - Areas of Panoramic Quality
 ---

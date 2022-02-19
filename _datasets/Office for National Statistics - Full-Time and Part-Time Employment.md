@@ -8,11 +8,9 @@ maintainer: Office for National Statistics
 notes: <p>Number and percentage of people in full time and part time employment (aged
   16+)</p>
 organization: Office for National Statistics
+original_dataset_link: http://statistics.gov.scot/data/full-time-employment
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/full-time-employment
+resources: []
 schema: default
 title: Full-Time and Part-Time Employment
 ---

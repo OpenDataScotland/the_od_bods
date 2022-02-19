@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Scottish Government
 notes: <p>Number, and WTE, of social work staff by gender</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/social-work-staffing
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/social-work-staffing
+resources: []
 schema: default
 title: Social Work Staffing
 ---

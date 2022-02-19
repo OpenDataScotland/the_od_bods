@@ -12,11 +12,9 @@ notes: '<p>Number of bus passenger journeys and bus vehicle kilometres on all se
   Survey (SHS).  Note that the public convenience data is no longer updated as the
   question was withdrawn from the survey.</p>'
 organization: Transport Scotland
+original_dataset_link: http://statistics.gov.scot/data/public-transport
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/public-transport
+resources: []
 schema: default
 title: Public Transport
 ---

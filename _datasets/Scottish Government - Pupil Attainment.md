@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>Number of pupils who attained a given number of qualifications by level
   and stage.</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/pupil-attainment
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/pupil-attainment
+resources: []
 schema: default
 title: Pupil Attainment
 ---

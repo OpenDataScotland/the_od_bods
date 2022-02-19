@@ -8,11 +8,9 @@ maintainer: Office for National Statistics
 notes: <p>Number and rate (per 10,000 adults) of VAT/PAYE registrations, de-registrations
   and business survival rates</p>
 organization: Office for National Statistics
+original_dataset_link: http://statistics.gov.scot/data/business-births-deaths-and-survival-rates
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/business-births-deaths-and-survival-rates
+resources: []
 schema: default
 title: Business - Births, Deaths and Survival Rates
 ---

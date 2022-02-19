@@ -8,11 +8,9 @@ maintainer: Public Health Scotland
 notes: <p>Number, and percentage of, babies being breastfed or exclusively breastfed
   by review stage.</p>
 organization: Public Health Scotland
+original_dataset_link: http://statistics.gov.scot/data/breastfeeding
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/breastfeeding
+resources: []
 schema: default
 title: Breastfeeding
 ---

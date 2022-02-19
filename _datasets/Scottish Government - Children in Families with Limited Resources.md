@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>Percent of children in families that have both low income and cannot afford
   three or more out of a list of 22 basic necessities.</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/children-in-families-with-limited-resources
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/children-in-families-with-limited-resources
+resources: []
 schema: default
 title: Children in Families with Limited Resources
 ---

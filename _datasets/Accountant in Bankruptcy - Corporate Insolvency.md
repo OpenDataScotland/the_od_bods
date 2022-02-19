@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Accountant in Bankruptcy
 notes: <p>Scottish registered companies becoming insolvent or entering receivership.</p>
 organization: Accountant in Bankruptcy
+original_dataset_link: http://statistics.gov.scot/data/corporate-insolvency
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/corporate-insolvency
+resources: []
 schema: default
 title: Corporate Insolvency
 ---

@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: "<p>The score is based on school leavers\u2019 highest level of qualification,\
   \ averaged across all leavers within a data zone. </p>"
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/educational-attainment-of-school-leavers
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/educational-attainment-of-school-leavers
+resources: []
 schema: default
 title: Educational attainment of school leavers
 ---

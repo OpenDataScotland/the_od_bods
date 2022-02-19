@@ -9,11 +9,9 @@ notes: <p>The way in which the household occupies their accomodation. The Scotti
   Survey Core Questions is an innovative project drawing together multiple household
   surveys to provide a large sample for subnational analysis.</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/household-tenure-sscq
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/household-tenure-sscq
+resources: []
 schema: default
 title: Household Tenure - Scottish Survey Core Questions
 ---

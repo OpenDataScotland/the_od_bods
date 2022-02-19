@@ -15,14 +15,9 @@ notes: "<p>Council Register of Assets (Moray).\_ Section 94 of the Community Emp
   \ of the Act and does not necessarily imply that the Council is actively seeking\
   \ to transfer that asset to the community.</p>"
 organization: Moray Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=400332609a0641e389c990dccfb42430
 records: 1137
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=400332609a0641e389c990dccfb42430
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Council Register of Assets (Moray)
 ---

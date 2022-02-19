@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: National Records of Scotland
 notes: <p>Numbers of deaths registered by cause.</p>
 organization: National Records of Scotland
+original_dataset_link: http://statistics.gov.scot/data/deaths
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/deaths
+resources: []
 schema: default
 title: Deaths
 ---

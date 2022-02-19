@@ -10,11 +10,9 @@ notes: <p>The proportion of households with any (basic) disrepair, disrepair to 
   types,  household characteristics and council area. Derived from the Scottish House
   Condition Survey (SHCS). </p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/dwelling-disrepair-scottish-house-condition-survey
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/dwelling-disrepair-scottish-house-condition-survey
+resources: []
 schema: default
 title: Dwelling Disrepair (Scottish House Condition Survey)
 ---

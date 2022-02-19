@@ -9,11 +9,9 @@ notes: <p>Diet sheets for animals at Camperdown Wildlife Centre. Diets are subje
   to change. More information about the animals at Camperdown can be found on their
   <a href="http://www.camperdownwildlifecentre.com/">website</a></p>
 organization: Dundee City Council
+original_dataset_link: https://data.dundeecity.gov.uk/dataset/camperdown-wildlife-centre-diet-sheets
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.dundeecity.gov.uk/dataset/camperdown-wildlife-centre-diet-sheets
 - format: XLSX
   name: XLSX
   url: https://data.dundeecity.gov.uk/dataset/f081c69e-9a02-4f51-8eeb-2072f6ab41a3/resource/00ca93c9-163f-4e3b-bfa1-cb2073da51db/download/animal-diets-wolf-section.xlsx

@@ -11,14 +11,9 @@ notes: "<p>South Ayrshire Council has passed byelaws to prohibit the drinking of
   \ Areas dataset depicts the boundaries around settlements within South Ayrshire\
   \ where these byelaws apply.</p>"
 organization: South Ayrshire Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=31ae04f92a5f4d5793e03f64bfa0a925
 records: 33
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=31ae04f92a5f4d5793e03f64bfa0a925
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Alcohol Prohibition Areas
 ---

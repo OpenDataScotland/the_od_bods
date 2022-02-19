@@ -25,11 +25,9 @@ notes: '<p>OS Open Names is a geographic directory that contains basic informati
   (INSPIRE) Geographical Names theme to ensure that it is compliant with European
   open data initiatives.</p>'
 organization: Perth and Kinross Council
+original_dataset_link: https://data.pkc.gov.uk/dataset/os-open-names
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.pkc.gov.uk/dataset/os-open-names
 - format: HTML
   name: HTML
   url: https://www.ordnancesurvey.co.uk/opendatadownload/products.html#OPNAME

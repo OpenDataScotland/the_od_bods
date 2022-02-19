@@ -8,11 +8,9 @@ maintainer: Public Health Scotland
 notes: <p>Number, and percent, of low birthweight (less than 2500g) babies (single
   births).</p>
 organization: Public Health Scotland
+original_dataset_link: http://statistics.gov.scot/data/low-birthweight
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/low-birthweight
+resources: []
 schema: default
 title: Low Birthweight
 ---

@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>Official Statistics of the number and proportions of working-age adults
   in poverty. Various poverty measures and breakdowns are available.</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/poverty-working-age-adults
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/poverty-working-age-adults
+resources: []
 schema: default
 title: Poverty (working age adults)
 ---

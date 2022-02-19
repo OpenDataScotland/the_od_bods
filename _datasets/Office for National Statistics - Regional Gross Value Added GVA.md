@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Office for National Statistics
 notes: <p>Regional Gross Value Added (GVA)  by local authority area by year</p>
 organization: Office for National Statistics
+original_dataset_link: http://statistics.gov.scot/data/gross-value-added
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/gross-value-added
+resources: []
 schema: default
 title: Regional Gross Value Added (GVA)
 ---

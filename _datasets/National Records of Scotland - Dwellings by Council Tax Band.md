@@ -8,11 +8,9 @@ maintainer: National Records of Scotland
 notes: <p>Number of dwellings by Council Tax band, and percentage of dwellings in
   each Council Tax band.</p>
 organization: National Records of Scotland
+original_dataset_link: http://statistics.gov.scot/data/dwellings-council-tax
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/dwellings-council-tax
+resources: []
 schema: default
 title: Dwellings by Council Tax Band
 ---

@@ -15,11 +15,9 @@ notes: '<p>The street lighting in Dundee is delivered through the <a href="https
   a fault</a> online - let us know in the comments if you would be interested in an
   API to report faults using the light data this dataset. </p>'
 organization: Dundee City Council
+original_dataset_link: https://data.dundeecity.gov.uk/dataset/street-lights
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.dundeecity.gov.uk/dataset/street-lights
 - format: CSV
   name: CSV
   url: http://inspire.dundeecity.gov.uk/geoserver/opendata/wfs?version=2.0.0&service=wfs&request=GetFeature&typeName=opendata:v_street_lights&outputFormat=csv

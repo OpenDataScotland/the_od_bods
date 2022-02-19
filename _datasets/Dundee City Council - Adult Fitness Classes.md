@@ -30,11 +30,9 @@ notes: "<p><a href=\"http://www.leisureandculturedundee.com/leisure/onlinebookin
   \ Sport Centre and St Paul's Swim and Sport Centre. </p>\n<p>All this designed for\
   \ one purpose! Achieve your goal!</p>"
 organization: Dundee City Council
+original_dataset_link: https://data.dundeecity.gov.uk/dataset/adult-fitness-classes
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.dundeecity.gov.uk/dataset/adult-fitness-classes
 - format: CSV
   name: CSV
   url: https://data.dundeecity.gov.uk/dataset/26794466-d94a-4b8e-8097-6172b97d5977/resource/9b0b8f3e-d241-4df4-8c93-a78e2538b0be/download/afc-aprjun18.csv

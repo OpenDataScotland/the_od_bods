@@ -19,11 +19,9 @@ notes: "<p>OS VectorMap District is a simple vector dataset with a nominal scale
   \ world features (e.g. roads, railways, buildings blocks, vegetation and boundaries)\
   \ as points, lines, polygons, and text.</p>"
 organization: Perth and Kinross Council
+original_dataset_link: https://data.pkc.gov.uk/dataset/os-vectormap-district1
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.pkc.gov.uk/dataset/os-vectormap-district1
 - format: HTML
   name: HTML
   url: http://www.ordnancesurvey.co.uk/business-and-government/products/vectormap-district.html

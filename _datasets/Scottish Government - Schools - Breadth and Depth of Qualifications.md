@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>The range of qualifications taken by school pupils and the level at which
   they are achieved</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/breadth-and-depth
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/breadth-and-depth
+resources: []
 schema: default
 title: Schools - Breadth and Depth of Qualifications
 ---

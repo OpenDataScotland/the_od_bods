@@ -8,11 +8,9 @@ maintainer: National Records of Scotland
 notes: <p>Number of infant deaths (stillbirth, perinatal and those aged under 1 year
   old).</p>
 organization: National Records of Scotland
+original_dataset_link: http://statistics.gov.scot/data/infant-deaths
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/infant-deaths
+resources: []
 schema: default
 title: Infant Deaths
 ---

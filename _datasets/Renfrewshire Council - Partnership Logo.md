@@ -7,14 +7,9 @@ license: ''
 maintainer: Renfrewshire Council
 notes: ''
 organization: Renfrewshire Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=192cef37b4264092a95dc37688f7a23a
 records: null
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=192cef37b4264092a95dc37688f7a23a
-- format: IMAGE
-  name: IMAGE
-  url: ''
+resources: []
 schema: default
 title: Partnership Logo
 ---

@@ -18,14 +18,9 @@ notes: "<p>In Moray, the education authority discharges its duty to secure adequ
   \ at a school which is not the designated catchment area school for their postal\
   \ address, they must make an out-of-zone \u2018placing request\u2019.\_ </p>"
 organization: Moray Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=73871d46f492412c8f88fd6159553a20
 records: 43
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=73871d46f492412c8f88fd6159553a20
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Primary School Catchments (Moray) (non denominational)
 ---

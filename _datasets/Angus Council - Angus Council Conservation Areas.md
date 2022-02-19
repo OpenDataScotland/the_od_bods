@@ -14,11 +14,9 @@ notes: <p>Conservation areas are areas of special architectural or historic inte
   They are designated by Angus Council to ensure any new development preserves or
   enhances their varied character.</p>
 organization: Angus Council
+original_dataset_link: http://opendata.angus.gov.uk/dataset/angus-council-conservation-areas
 records: null
 resources:
-- format: html
-  name: Description
-  url: http://opendata.angus.gov.uk/dataset/angus-council-conservation-areas
 - format: WMS
   name: WMS
   url: http://data.angus.gov.uk/geoserver/inspire/inspire:pln_conservationareas/wms?service=WMS&request=GetMap

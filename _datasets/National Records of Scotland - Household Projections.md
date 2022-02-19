@@ -9,11 +9,9 @@ notes: <p>25 year projection of households for Council Areas, Health Board Areas
   and National Parks. The data is broken down by the household reference person age
   and the type of household</p>
 organization: National Records of Scotland
+original_dataset_link: http://statistics.gov.scot/data/household-projections
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/household-projections
+resources: []
 schema: default
 title: Household Projections
 ---

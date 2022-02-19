@@ -9,11 +9,9 @@ notes: <p>The most recent Scottish Index of Multiple Deprivation (SIMD) was publ
   in January 2020. This dataset contains the indicators that were used to calculate
   SIMD 2016 and SIMD 2020 crime domains.</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/scottish-index-of-multiple-deprivation---crime-indicators
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/scottish-index-of-multiple-deprivation---crime-indicators
+resources: []
 schema: default
 title: Scottish Index of Multiple Deprivation - Crime Indicators
 ---

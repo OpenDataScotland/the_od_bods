@@ -9,11 +9,9 @@ notes: <p>Self-assessed general health by tenure, household type, age, sex and d
   The Scottish Survey Core Questions is an innovative project drawing together multiple
   household surveys to provide a large sample for subnational analysis. </p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/general-health-sscq
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/general-health-sscq
+resources: []
 schema: default
 title: General Health - Scottish Surveys Core Questions
 ---

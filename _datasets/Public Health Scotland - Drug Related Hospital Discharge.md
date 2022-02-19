@@ -8,11 +8,9 @@ maintainer: Public Health Scotland
 notes: <p>Number and European Age-sex Standardised Rates (EASRs) of general acute
   inpatient and day case stays with a drug-related diagnosis.</p>
 organization: Public Health Scotland
+original_dataset_link: http://statistics.gov.scot/data/drug-related-discharge
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/drug-related-discharge
+resources: []
 schema: default
 title: Drug Related Hospital Discharge
 ---

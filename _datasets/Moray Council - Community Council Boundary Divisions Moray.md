@@ -15,14 +15,9 @@ notes: <p>The purpose of community councils is to ascertain, co-ordinate and exp
   as planning, environment and health. All Community Council meetings are open to
   the public.</p>
 organization: Moray Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=e5ea01c5c01546c2ba1f89ae3e792010
 records: 35
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=e5ea01c5c01546c2ba1f89ae3e792010
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Community Council Boundary Divisions (Moray)
 ---

@@ -10,11 +10,9 @@ notes: <p>Dundee City Council are dedicated to publishing council owned data und
   sets scheduled to be released in the near future. This is an iterative document
   and is subject to change.</p>
 organization: Dundee City Council
+original_dataset_link: https://data.dundeecity.gov.uk/dataset/open-data-publication-plan
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.dundeecity.gov.uk/dataset/open-data-publication-plan
 - format: CSV
   name: CSV
   url: https://data.dundeecity.gov.uk/dataset/cac2af78-8819-4422-ba69-65d858f7d6a1/resource/053cc295-3622-4ad2-92b0-2f2f872e83f9/download/publication-plan_progress-report-pub-plan.csv

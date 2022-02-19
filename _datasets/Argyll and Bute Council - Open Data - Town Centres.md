@@ -14,14 +14,9 @@ notes: "<p>For the purposes of the 2015 Local Development\_Plan this corresponds
   \ towns of Argyll and Bute defined as key settlements; these being town centres\
   \ defined mainly for retail policy purposes.</p>"
 organization: Argyll and Bute Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=6de225e222ac44ef8c5c4be38d168917
 records: 22
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=6de225e222ac44ef8c5c4be38d168917
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Open Data - Town Centres
 ---

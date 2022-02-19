@@ -10,11 +10,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Angus Council
 notes: <p>Angus Council Denominational Primary School Catchment Areas</p>
 organization: Angus Council
+original_dataset_link: http://opendata.angus.gov.uk/dataset/angus-council-denominational-primary-school-catchment-areas
 records: null
 resources:
-- format: html
-  name: Description
-  url: http://opendata.angus.gov.uk/dataset/angus-council-denominational-primary-school-catchment-areas
 - format: WMS
   name: WMS
   url: http://data.angus.gov.uk/geoserver/inspire/inspire:edn_denominationalprimaryschoolscatchmentareas/wms?service=WMS&request=GetMap

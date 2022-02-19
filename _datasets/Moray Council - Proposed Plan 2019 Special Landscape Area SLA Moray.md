@@ -8,14 +8,9 @@ license: ''
 maintainer: Moray Council
 notes: <p>Proposed Plan 2019 Special Landscape Area (SLA) (Moray)</p>
 organization: Moray Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=5b9b70606eac495dabf0bcf82455e9b0
 records: 13
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=5b9b70606eac495dabf0bcf82455e9b0
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Proposed Plan 2019 Special Landscape Area (SLA) (Moray)
 ---

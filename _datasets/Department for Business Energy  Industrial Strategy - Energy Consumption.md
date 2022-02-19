@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Department for Business, Energy & Industrial Strategy
 notes: <p>Consumption (GWh) by energy type and energy customer type</p>
 organization: Department for Business, Energy & Industrial Strategy
+original_dataset_link: http://statistics.gov.scot/data/energy-consumption
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/energy-consumption
+resources: []
 schema: default
 title: Energy Consumption
 ---

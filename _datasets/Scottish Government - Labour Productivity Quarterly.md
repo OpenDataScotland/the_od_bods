@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>The average amount of economic output produced per job and per hour worked
   in Scotland</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/labour-productivity-quarterly
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/labour-productivity-quarterly
+resources: []
 schema: default
 title: 'Labour Productivity: Quarterly'
 ---

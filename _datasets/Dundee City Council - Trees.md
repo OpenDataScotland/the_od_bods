@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Dundee City Council
 notes: <p>public trees.</p>
 organization: Dundee City Council
+original_dataset_link: https://data.dundeecity.gov.uk/dataset/trees
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.dundeecity.gov.uk/dataset/trees
 - format: CSV
   name: CSV
   url: https://data.dundeecity.gov.uk/dataset/d7de061a-2fc2-4cba-aa1b-4d0d15ef5c33/resource/e54ef90a-76e5-415e-a272-5e489d9f5c67/download/trees_public.csv

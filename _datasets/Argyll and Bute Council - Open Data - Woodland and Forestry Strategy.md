@@ -14,14 +14,9 @@ notes: '<p>Argyll and Bute : Woodland and Forestry Strategy 2011 showing indicat
   suitability for woodland and forestry. It identifies the existing resource, the
   main issues and strategic priorities within Argyll and Bute</p>'
 organization: Argyll and Bute Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=ae1505477b404eeea47854531a9a7887
 records: 20783
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=ae1505477b404eeea47854531a9a7887
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Open Data - Woodland and Forestry Strategy
 ---

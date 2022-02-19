@@ -18,14 +18,9 @@ notes: <p>Wind turbine locations generated from planning applications received b
   at construction stage. The data is provided based on the best information available
   to the council at the time of writing.</p>
 organization: Moray Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=3af52ce7fed049c79ba57f80c66fc1bc
 records: 812
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=3af52ce7fed049c79ba57f80c66fc1bc
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Planning Wind Turbine Locations (Moray)
 ---

@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Perth and Kinross Council
 notes: <p>St Ninians Episcopal School Catchment Boundary (Whole of PKC)</p>
 organization: Perth and Kinross Council
+original_dataset_link: https://data.pkc.gov.uk/dataset/st-ninians-episcopal-school-catchment
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.pkc.gov.uk/dataset/st-ninians-episcopal-school-catchment
 - format: HTML
   name: HTML
   url: http://opendata-pkc.opendata.arcgis.com/datasets/23a0859e00624870a1574d5555fbbc1a_0

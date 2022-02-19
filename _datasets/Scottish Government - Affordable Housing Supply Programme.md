@@ -9,11 +9,9 @@ notes: <p>Quarterly Scotland figures for the Affordable Housing Supply Programme
   starts and completions, split by category, form of housing supply, and type of housing
   supply from 2000-01 to the latest quarter.</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/affordable-housing-supply-programme
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/affordable-housing-supply-programme
+resources: []
 schema: default
 title: Affordable Housing Supply Programme
 ---

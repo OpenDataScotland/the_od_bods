@@ -9,14 +9,9 @@ license: ''
 maintainer: Renfrewshire Council
 notes: <p>Dataset listing Big Lottery funded projects in Renfrewshire in 2017.</p>
 organization: Renfrewshire Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=ff235ddc77b64f1a8ccea9781b97f572
 records: 26
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=ff235ddc77b64f1a8ccea9781b97f572
-- format: TABLE
-  name: TABLE
-  url: ''
+resources: []
 schema: default
 title: Big Lottery Funded Projects 2017
 ---

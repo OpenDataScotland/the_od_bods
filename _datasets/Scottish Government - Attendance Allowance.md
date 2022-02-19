@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>Number of people claiming Attendance Allowance by age, gender and rate of
   award</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/attendance-allowance
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/attendance-allowance
+resources: []
 schema: default
 title: Attendance Allowance
 ---

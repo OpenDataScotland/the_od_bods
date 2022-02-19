@@ -8,14 +8,9 @@ license: ''
 maintainer: Renfrewshire Council
 notes: ''
 organization: Renfrewshire Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=0160a10b8604479a89a364f2a135e5fd
 records: null
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=0160a10b8604479a89a364f2a135e5fd
-- format: DOCUMENT LINK
-  name: DOCUMENT LINK
-  url: ''
+resources: []
 schema: default
 title: NM 17 5.data
 ---

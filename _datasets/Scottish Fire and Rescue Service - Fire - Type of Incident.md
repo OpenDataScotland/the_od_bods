@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Scottish Fire and Rescue Service
 notes: <p>Number of fires, by type of fire and whether accidental or not</p>
 organization: Scottish Fire and Rescue Service
+original_dataset_link: http://statistics.gov.scot/data/fire---type-of-incident
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/fire---type-of-incident
+resources: []
 schema: default
 title: Fire - Type of Incident
 ---

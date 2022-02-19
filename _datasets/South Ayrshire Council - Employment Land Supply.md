@@ -8,14 +8,9 @@ license: ''
 maintainer: South Ayrshire Council
 notes: <p>Marketable sites and locations for businesses allocated in development plans</p>
 organization: South Ayrshire Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=89e3224bf8b24ed084cdabcf55f83539
 records: 53
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=89e3224bf8b24ed084cdabcf55f83539
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Employment Land Supply
 ---

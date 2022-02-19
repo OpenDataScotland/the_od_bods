@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Scottish Government
 notes: <p>Economic activity level and rate by gender</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/economic-activity
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/economic-activity
+resources: []
 schema: default
 title: Economic Activity
 ---

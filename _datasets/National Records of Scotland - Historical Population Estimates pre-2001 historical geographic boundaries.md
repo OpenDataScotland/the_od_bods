@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: National Records of Scotland
 notes: <p>Historical estimates by gender and age (pre-2001)</p>
 organization: National Records of Scotland
+original_dataset_link: http://statistics.gov.scot/data/historical-population-estimates
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/historical-population-estimates
+resources: []
 schema: default
 title: Historical Population Estimates (pre-2001, historical geographic boundaries)
 ---

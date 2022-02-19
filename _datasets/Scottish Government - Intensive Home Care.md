@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>Percent of people aged 65+ with high levels of care needs who are cared
   for at home</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/intensive-home-care
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/intensive-home-care
+resources: []
 schema: default
 title: Intensive Home Care
 ---

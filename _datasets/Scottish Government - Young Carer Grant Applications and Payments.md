@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>Applications received and authorised, and total value of payments for Young
   Carer Grant.</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/young-carer-grant-applications
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/young-carer-grant-applications
+resources: []
 schema: default
 title: Young Carer Grant Applications and Payments
 ---

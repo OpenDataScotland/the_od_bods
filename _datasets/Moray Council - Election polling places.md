@@ -9,11 +9,9 @@ notes: <p>Moray Council Polling Places. Point data showing the polling places fo
   the Moray Council area. A polling place is a the particular building where people
   go to cast their vote(s) during elections.</p>
 organization: Moray Council
+original_dataset_link: http://www.moray.gov.uk/moray_standard/page_110140.html
 records: 60
 resources:
-- format: html
-  name: Description
-  url: http://www.moray.gov.uk/moray_standard/page_110140.html
 - format: CSV
   name: CSV
   url: https://data-moray.opendata.arcgis.com/datasets/moray::polling-places-moray/about

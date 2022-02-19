@@ -8,11 +8,9 @@ maintainer: Public Health Scotland
 notes: <p>Number and percentage of mothers reporting their smoking status at ante-natal
   booking visit in the community or at hospital.</p>
 organization: Public Health Scotland
+original_dataset_link: http://statistics.gov.scot/data/smoking-at-booking
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/smoking-at-booking
+resources: []
 schema: default
 title: Ante-Natal Smoking
 ---

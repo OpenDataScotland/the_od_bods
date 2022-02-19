@@ -17,11 +17,9 @@ notes: '<p>Dundee City Council actively encourages dog owners to act responsibly
   fouling</a> in the city, as well as other <a href="https://www.dundeecity.gov.uk/service-area/neighbourhood-services/environment/street-cleansing">street
   cleansing</a> information.</p>'
 organization: Dundee City Council
+original_dataset_link: https://data.dundeecity.gov.uk/dataset/dog-bins
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.dundeecity.gov.uk/dataset/dog-bins
 - format: CSV
   name: CSV
   url: https://data.dundeecity.gov.uk/dataset/a0bd7c32-7147-4e19-9e54-5c73607e3875/resource/09605904-7402-404c-9287-023293461a39/download/dog-bins-locations.csv

@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Scottish Government
 notes: <p>The difference between the employment rates for men and women (aged 16-64).</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/gender-employment-gap
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/gender-employment-gap
+resources: []
 schema: default
 title: Gender Employment Gap
 ---

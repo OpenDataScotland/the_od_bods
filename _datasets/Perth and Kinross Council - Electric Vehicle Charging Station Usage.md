@@ -9,11 +9,9 @@ notes: <p>Datasets for Perth &amp; Kinross Council's EV charging stations under 
   ChargePoint Scotland scheme. Includes anonymous data from each individual charging
   session.</p>
 organization: Perth and Kinross Council
+original_dataset_link: https://data.pkc.gov.uk/dataset/ev-charging-data
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.pkc.gov.uk/dataset/ev-charging-data
 - format: CSV
   name: CSV
   url: https://data.pkc.gov.uk/dataset/a3402e38-e9a5-4917-a23b-cbd18971754d/resource/d0bc0302-90e5-4f8c-bc2e-b54e648b88b6/download/electricvehiclechargecorrected.csv

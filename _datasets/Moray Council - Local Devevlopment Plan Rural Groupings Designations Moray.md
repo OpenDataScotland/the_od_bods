@@ -16,14 +16,9 @@ notes: <p>The Local Development Plan 2015 was superseded by the Local Developmen
   designations do not imply any right of access or use of private land, nor do they
   commit the Council to any form of maintenance or upkeep of the site.</p>
 organization: Moray Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=9bd82804a7d34a7aa8960f4947b15211
 records: 183
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=9bd82804a7d34a7aa8960f4947b15211
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Local Devevlopment Plan Rural Groupings Designations (Moray)
 ---

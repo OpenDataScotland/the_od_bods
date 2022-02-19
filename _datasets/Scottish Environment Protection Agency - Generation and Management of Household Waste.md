@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Scottish Environment Protection Agency
 notes: <p>Household waste presented by waste category and method of management</p>
 organization: Scottish Environment Protection Agency
+original_dataset_link: http://statistics.gov.scot/data/household-waste
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/household-waste
+resources: []
 schema: default
 title: Generation and Management of Household Waste
 ---

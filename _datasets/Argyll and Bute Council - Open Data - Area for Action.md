@@ -17,14 +17,9 @@ notes: "<p>Areas for Action designated in the Argyll and Bute adopted Local Deve
   \ AFAs may coincide with other categories of sites such as potential development\
   \ areas.</p>"
 organization: Argyll and Bute Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=07e827d3a3ea414a997a1eef6ab29f24
 records: 46
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=07e827d3a3ea414a997a1eef6ab29f24
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Open Data - Area for Action
 ---

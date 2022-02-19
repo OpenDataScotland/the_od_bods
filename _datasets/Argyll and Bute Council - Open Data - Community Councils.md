@@ -12,14 +12,9 @@ notes: <p>Community councils are required to be established by local authorities
   the gap between local authorities and communities and help to make public bodies
   aware of the opinions and needs of the communities they represent.</p>
 organization: Argyll and Bute Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=faa76111592f4802971cee44a6c54bf6
 records: 56
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=faa76111592f4802971cee44a6c54bf6
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Open Data - Community Councils
 ---

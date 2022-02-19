@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Perth and Kinross Council
 notes: <p>Location of various car parks in Perth and Kinross.</p>
 organization: Perth and Kinross Council
+original_dataset_link: https://data.pkc.gov.uk/dataset/car-parks-in-pkc
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.pkc.gov.uk/dataset/car-parks-in-pkc
 - format: HTML
   name: HTML
   url: http://opendata-pkc.opendata.arcgis.com/datasets/5bf68327e1eb4001a45191b37e248b9b_0

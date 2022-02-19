@@ -8,11 +8,9 @@ maintainer: Public Health Scotland
 notes: <p>The percentage of last 6 months of life spent at home or in a community
   setting</p>
 organization: Public Health Scotland
+original_dataset_link: http://statistics.gov.scot/data/end-of-life-care
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/end-of-life-care
+resources: []
 schema: default
 title: End of Life Care
 ---

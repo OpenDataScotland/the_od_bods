@@ -9,11 +9,9 @@ notes: <p>Number and percent of children who have completed their primary immuni
   course of the 6-in-1 vaccine by 24 months of age. The 6-in-1 vaccine replaced the
   5-in-1 vaccine in the routine childhood immunisation schedule from 1 October 2017.</p>
 organization: Public Health Scotland
+original_dataset_link: http://statistics.gov.scot/data/6-in-1-immunisation
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/6-in-1-immunisation
+resources: []
 schema: default
 title: 6-in-1 Immunisation
 ---

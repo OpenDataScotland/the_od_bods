@@ -14,11 +14,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Perth and Kinross Council
 notes: <p>Location of wind turbines with relevant planning application information.</p>
 organization: Perth and Kinross Council
+original_dataset_link: https://data.pkc.gov.uk/dataset/wind-turbines-by-planning-application
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.pkc.gov.uk/dataset/wind-turbines-by-planning-application
 - format: HTML
   name: HTML
   url: http://opendata-pkc.opendata.arcgis.com/datasets/bbb233741cc54ad9bf545ac30cf908f6_0

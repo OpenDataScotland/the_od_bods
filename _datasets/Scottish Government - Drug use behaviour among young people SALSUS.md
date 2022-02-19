@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Scottish Government
 notes: <p>Drug use among 13 and 15 year olds in Scotland.</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/drug-use-behaviour-among-young-people-salsus
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/drug-use-behaviour-among-young-people-salsus
+resources: []
 schema: default
 title: Drug use behaviour among young people (SALSUS)
 ---

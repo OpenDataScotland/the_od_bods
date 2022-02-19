@@ -11,14 +11,9 @@ notes: "<p>Moray Council Polling Places.  Point data showing the polling\_places
   \ go to cast their vote(s) during elections. A polling station is located within\
   \ a polling place. There may be more than one polling station in a polling place.</p>"
 organization: Moray Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=65e731a73f384fadad25bef39fdcc342
 records: 60
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=65e731a73f384fadad25bef39fdcc342
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Polling Places (Moray)
 ---

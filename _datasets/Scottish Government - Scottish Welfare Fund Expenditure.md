@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Scottish Government
 notes: <p>Expenditure for awards paid out for the Scottish Welfare Fund</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/scottish-welfare-fund-expenditure
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/scottish-welfare-fund-expenditure
+resources: []
 schema: default
 title: Scottish Welfare Fund Expenditure
 ---

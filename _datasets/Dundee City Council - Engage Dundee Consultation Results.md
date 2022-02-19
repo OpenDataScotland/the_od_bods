@@ -19,11 +19,9 @@ notes: "<p>The Place Standard is used to evaluate the quality of a \u201Cplace\u
   \ can read more about the results in the <a href=\"\" title=\"http://www.dundeepartnership.co.uk/sites/default/files/Engage%20Dundee%20PR%20summary.pdf\"\
   >Engage Dundee summary leaflet</a>.</p>"
 organization: Dundee City Council
+original_dataset_link: https://data.dundeecity.gov.uk/dataset/engage-dundee-consultation-results
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.dundeecity.gov.uk/dataset/engage-dundee-consultation-results
 - format: CSV
   name: CSV
   url: https://data.dundeecity.gov.uk/dataset/580f1406-01e2-4c4b-b865-1c49d15131e6/resource/e6f24705-c483-4544-a71d-dedd354b44ec/download/engage-dundee-scoring-comparison.csv

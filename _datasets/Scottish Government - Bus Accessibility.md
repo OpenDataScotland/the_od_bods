@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>The indicator gives a score for the availability and frequency of bus service
   in each data zone.</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/bus-accessibility
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/bus-accessibility
+resources: []
 schema: default
 title: Bus Accessibility
 ---

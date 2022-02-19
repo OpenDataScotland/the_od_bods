@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>Number, and rate per 10,000 population, of crimes and offences recorded
   by the police</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/recorded-crime
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/recorded-crime
+resources: []
 schema: default
 title: Recorded Crimes and Offences
 ---

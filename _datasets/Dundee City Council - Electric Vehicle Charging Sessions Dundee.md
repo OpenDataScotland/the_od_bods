@@ -12,11 +12,9 @@ notes: '<p>Every electric vehicle charging session at Dundee City Council owned 
   <p>More information about electric vehicles in Dundee can be found on the Drive
   Dundee Electric <a href="https://drivedundeeelectric.co.uk/">website</a>.</p>'
 organization: Dundee City Council
+original_dataset_link: https://data.dundeecity.gov.uk/dataset/ev-charging-data
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.dundeecity.gov.uk/dataset/ev-charging-data
 - format: CSV
   name: CSV
   url: https://data.dundeecity.gov.uk/dataset/ab3c487f-77c9-4157-a89f-ac9c95ae1b00/resource/f4c07f77-39f8-4f1b-9477-225d893dcf80/download/cp-data-mar-may-2018.csv

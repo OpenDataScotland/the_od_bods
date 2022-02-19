@@ -51,11 +51,9 @@ notes: '<p>This weekly data shows the cumulative number of positive Covid-19 cas
 
   </ul>'
 organization: Angus Council
+original_dataset_link: http://opendata.angus.gov.uk/dataset/school-covid-19-positive-cases-and-isolations
 records: null
 resources:
-- format: html
-  name: Description
-  url: http://opendata.angus.gov.uk/dataset/school-covid-19-positive-cases-and-isolations
 - format: CSV
   name: CSV
   url: http://data.angus.gov.uk/geoserver/services/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=services%3Aedn_schoolscovidcases&outputFormat=csv

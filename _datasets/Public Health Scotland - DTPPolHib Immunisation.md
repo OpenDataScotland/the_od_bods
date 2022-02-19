@@ -9,11 +9,9 @@ notes: <p>Number, and percent, of children who have completed their primary immu
   course of the DTP/Pol/Hib vaccine by 24 months of age. Also known as the '5-in-1'
   vaccination. </p>
 organization: Public Health Scotland
+original_dataset_link: http://statistics.gov.scot/data/dtp-pol-hib-uptake-by-24-months
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/dtp-pol-hib-uptake-by-24-months
+resources: []
 schema: default
 title: DTP/Pol/Hib Immunisation
 ---

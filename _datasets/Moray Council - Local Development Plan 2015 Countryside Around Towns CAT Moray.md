@@ -16,14 +16,9 @@ notes: "<p>The Local Development Plan 2015 was superseded by the Local Developme
   \ from the types of acceptable development to maintain and preserve the distinction\
   \ with the built up area.</p>"
 organization: Moray Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=754dc0fc293a43d3acf2c81f2a8bc705
 records: 5
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=754dc0fc293a43d3acf2c81f2a8bc705
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Local Development Plan 2015 Countryside Around Towns (CAT) (Moray)
 ---

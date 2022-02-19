@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Scottish Government
 notes: <p>Lettings of local authority dwellings, by local authority</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/local-authority-housing-lettings
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/local-authority-housing-lettings
+resources: []
 schema: default
 title: Local Authority Housing Lettings
 ---

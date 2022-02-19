@@ -9,11 +9,9 @@ notes: <p>The number of Debt Arrangement Scheme (DAS) Debt Payment Programmes ap
   DAS is a statutory debt management solution administered by Accountant in Bankruptcy
   (AiB)</p>
 organization: Accountant in Bankruptcy
+original_dataset_link: http://statistics.gov.scot/data/debt-arrangement-scheme-das
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/debt-arrangement-scheme-das
+resources: []
 schema: default
 title: Debt Arrangement Scheme (DAS)
 ---

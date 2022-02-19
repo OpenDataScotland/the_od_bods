@@ -8,11 +8,9 @@ maintainer: Public Health Scotland
 notes: <p>Occupancy rate in care homes, for different main client groups and across
   care sectors</p>
 organization: Public Health Scotland
+original_dataset_link: http://statistics.gov.scot/data/occupancy-rate-in-care-homes
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/occupancy-rate-in-care-homes
+resources: []
 schema: default
 title: 'Care Homes: Occupancy Rate'
 ---

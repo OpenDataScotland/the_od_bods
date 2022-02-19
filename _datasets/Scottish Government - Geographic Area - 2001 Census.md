@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Scottish Government
 notes: <p>Geographic Area - 2001 Census</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/geographic-area-2001
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/geographic-area-2001
+resources: []
 schema: default
 title: Geographic Area - 2001 Census
 ---

@@ -20,14 +20,9 @@ notes: "<p>Argyll &amp; Bute Council has adopted a Core Paths Plan for the Counc
   \ extends across the whole area with paths including trod paths across natural ground,\
   \ farm and forest tracks as well as minor roads and footways beside public roads.</p>"
 organization: Argyll and Bute Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=643b80fbbdfa4b139129e871a4ec2d69
 records: 964
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=643b80fbbdfa4b139129e871a4ec2d69
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Open Data - Adopted Core Paths
 ---

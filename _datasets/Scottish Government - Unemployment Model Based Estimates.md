@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Scottish Government
 notes: <p>Unemployment Model Based Estimates (level and rate)</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/unemployment-model-based-estimates
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/unemployment-model-based-estimates
+resources: []
 schema: default
 title: Unemployment Model Based Estimates
 ---

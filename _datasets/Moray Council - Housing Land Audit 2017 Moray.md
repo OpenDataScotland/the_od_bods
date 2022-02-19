@@ -14,14 +14,9 @@ notes: <p>Housing Land Audit 2017 sites for housing with a capacity for 4 or mor
   The audit meets the requirements of Scottish Planning Policy 2014. Further information
   can be found at Development Monitoring.</p>
 organization: Moray Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=89dc6334d385499394d60066627b3dc6
 records: 133
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=89dc6334d385499394d60066627b3dc6
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Housing Land Audit 2017 (Moray)
 ---

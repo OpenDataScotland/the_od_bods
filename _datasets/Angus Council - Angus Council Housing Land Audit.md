@@ -12,11 +12,9 @@ notes: <p>Angus Council and Dundee City Council have jointly prepared the Annual
   of Housing Land detailing those sites with a capacity of five or more houses which
   contribute to the available supply of land for house building in Angus and Dundee.</p>
 organization: Angus Council
+original_dataset_link: http://opendata.angus.gov.uk/dataset/angus-council-housing-land-audit
 records: null
 resources:
-- format: html
-  name: Description
-  url: http://opendata.angus.gov.uk/dataset/angus-council-housing-land-audit
 - format: WMS
   name: WMS
   url: http://data.angus.gov.uk/geoserver/inspire/inspire:pln_housinglandaudit2014/wms?service=WMS&version=1.1.0&request=GetMap

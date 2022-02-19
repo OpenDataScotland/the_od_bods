@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>Number and percentage of employees earning less than the living wage, based
   on workplace local authority</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/living-wage
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/living-wage
+resources: []
 schema: default
 title: Living Wage
 ---

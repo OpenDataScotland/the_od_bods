@@ -20,11 +20,9 @@ notes: "<p><strong>Fixed Penalty Notices (FPN) are issued by Stirling Council's 
   \ to remove and dispose appropriately any excrement after the dog has fouled in\
   \ all public places. The Fixed Penalty monetary value is \xA380.</strong></p>"
 organization: Stirling Council
+original_dataset_link: https://data.stirling.gov.uk/dataset/safer-communities-fixed-penalty-notices
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.stirling.gov.uk/dataset/safer-communities-fixed-penalty-notices
 - format: CSV
   name: CSV
   url: https://data.stirling.gov.uk/dataset/bfda5c46-a314-4c34-b0dd-208bf43911a4/resource/37aebb09-0062-40c3-b8f1-585a1171c818/download/20210510-fixed-penalty-notices-01.04.2017-to-31.03.2018.csv

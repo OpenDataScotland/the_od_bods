@@ -11,14 +11,9 @@ notes: <p>Depicts opportunities for improved management of existing native woodl
   TEXT AND OTHER SPATIAL DATA PRODUCTS ACCOMPANYING THE AYRSHIRE AND ARRAN FORESTRY
   AND WOODLAND STRATEGY</p>
 organization: South Ayrshire Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=e3b133a049904c1bb64199218198d939
 records: 1
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=e3b133a049904c1bb64199218198d939
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Native Woodland
 ---

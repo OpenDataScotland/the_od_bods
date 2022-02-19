@@ -9,11 +9,9 @@ notes: <p>The number and percentage of people claiming relevant benefits. This d
   contains the indicators that were used to calculate the income domain of the 2016
   Scottish Index of Multiple Deprivation.</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/scottish-index-of-multiple-deprivation---income-indicators
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/scottish-index-of-multiple-deprivation---income-indicators
+resources: []
 schema: default
 title: Scottish Index of Multiple Deprivation - Income Indicators
 ---

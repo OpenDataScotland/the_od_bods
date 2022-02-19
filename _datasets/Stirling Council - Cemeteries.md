@@ -19,11 +19,9 @@ notes: "<p><strong>Extract of electronic burial records for cemeteries managed a
   \ <strong>provide useful information for those wishing to research their family\
   \ tree.</strong></p>\n<p><strong>Next update available from Tuesday, 6th July, 2021.</strong></p>"
 organization: Stirling Council
+original_dataset_link: https://data.stirling.gov.uk/dataset/cemetery-records
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.stirling.gov.uk/dataset/cemetery-records
 - format: CSV
   name: CSV
   url: https://data.stirling.gov.uk/dataset/42afa6e2-db91-4940-b7bd-50ab8b4dd2c1/resource/e2c373ba-86b8-404c-8ff7-4d91cd9acb59/download/2021-06-01-20-05-09_epilog.csv

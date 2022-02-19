@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Scottish Government
 notes: <p>Percentage of summary criminal cases dealt with within 26 weeks.</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/court-process-times
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/court-process-times
+resources: []
 schema: default
 title: Court Process Times
 ---

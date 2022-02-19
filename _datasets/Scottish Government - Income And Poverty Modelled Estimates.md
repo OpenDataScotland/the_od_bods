@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>This dataset includes information about estimated household income, and
   percent of households with low incomes.</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/income-and-poverty-modelled-estimates
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/income-and-poverty-modelled-estimates
+resources: []
 schema: default
 title: Income And Poverty Modelled Estimates
 ---

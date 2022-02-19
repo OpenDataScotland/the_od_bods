@@ -10,11 +10,9 @@ notes: '<p>Expenditure for Best Start Grant (BSG) Pregnancy and Baby Payment, Ea
 
   <p>Contact email- MI@socialsecurity.gov.scot</p>'
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/best-start-grant-expenditure
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/best-start-grant-expenditure
+resources: []
 schema: default
 title: 'Best Start Grant and Best Start Foods: Expenditure'
 ---

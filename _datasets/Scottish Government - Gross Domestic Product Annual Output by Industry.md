@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>The value of goods and services produced annually, reported as an index
   (chainlinked volume measure)</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/gross-domestic-product-annual-output-by-industry
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/gross-domestic-product-annual-output-by-industry
+resources: []
 schema: default
 title: 'Gross Domestic Product: Annual Output by Industry'
 ---

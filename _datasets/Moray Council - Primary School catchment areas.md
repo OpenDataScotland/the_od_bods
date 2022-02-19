@@ -9,11 +9,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Moray Council
 notes: <p>Primary School Catchments (Moray) (non denominational)</p>
 organization: Moray Council
+original_dataset_link: http://www.moray.gov.uk/moray_standard/page_110140.html
 records: 43
 resources:
-- format: html
-  name: Description
-  url: http://www.moray.gov.uk/moray_standard/page_110140.html
 - format: CSV
   name: CSV
   url: https://data-moray.opendata.arcgis.com/datasets/moray::primary-school-catchments-moray-non-denominational/about

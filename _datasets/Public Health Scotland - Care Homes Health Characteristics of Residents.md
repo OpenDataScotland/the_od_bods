@@ -8,11 +8,9 @@ maintainer: Public Health Scotland
 notes: <p>The number and percentage of long stay residents by various health characteristics
   and those requiring nursing care, for different main client groups.</p>
 organization: Public Health Scotland
+original_dataset_link: http://statistics.gov.scot/data/care-homes-health-characteristics-of-residents
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/care-homes-health-characteristics-of-residents
+resources: []
 schema: default
 title: 'Care Homes: Health Characteristics of Residents'
 ---

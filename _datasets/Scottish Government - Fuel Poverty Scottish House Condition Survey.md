@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>Number of households in fuel poverty and extreme fuel poverty by selected
   dwelling and household characteristics.</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/fuel-poverty-shcs
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/fuel-poverty-shcs
+resources: []
 schema: default
 title: Fuel Poverty (Scottish House Condition Survey)
 ---

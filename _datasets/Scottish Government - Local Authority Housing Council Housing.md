@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Scottish Government
 notes: <p>Number of lettings, evictions and abandonments of local authority housing.</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/local-authority-housing-council-housing
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/local-authority-housing-council-housing
+resources: []
 schema: default
 title: Local Authority Housing Council Housing
 ---

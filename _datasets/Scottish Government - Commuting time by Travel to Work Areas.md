@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Scottish Government
 notes: ''
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/commuting-time-by-travel-to-work-areas
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/commuting-time-by-travel-to-work-areas
+resources: []
 schema: default
 title: Commuting time by Travel to Work Areas
 ---

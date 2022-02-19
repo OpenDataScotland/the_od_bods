@@ -8,11 +8,9 @@ maintainer: Public Health Scotland
 notes: <p>Number, and percent of, children who were immunised against measles, mumps
   and rubella by 5 years of age</p>
 organization: Public Health Scotland
+original_dataset_link: http://statistics.gov.scot/data/measles-mumps-rubella
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/measles-mumps-rubella
+resources: []
 schema: default
 title: Measles Mumps Rubella (MMR) Immunisation
 ---

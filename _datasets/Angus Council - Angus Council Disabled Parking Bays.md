@@ -10,11 +10,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Angus Council
 notes: <p>Disabled parking bays in Angus with enforceable restrictions.</p>
 organization: Angus Council
+original_dataset_link: http://opendata.angus.gov.uk/dataset/angus-council-disabled-parking-bays
 records: null
 resources:
-- format: html
-  name: Description
-  url: http://opendata.angus.gov.uk/dataset/angus-council-disabled-parking-bays
 - format: WMS
   name: WMS
   url: http://data.angus.gov.uk/geoserver/services/services:rds_dpe_disabled_bay/wms?
