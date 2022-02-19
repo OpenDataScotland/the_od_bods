@@ -11,8 +11,9 @@ category:
 - population
 - projections
 - statistics
-date_created: '2017-01-12'
-date_updated: '2017-01-04'
+- nan
+date_created: '2017-01-04'
+date_updated: '2017-01-12'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Angus Council
 notes: '<p>Sourced from National Records of Scotland website the fact sheet brings

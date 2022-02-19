@@ -1,12 +1,13 @@
 ---
 category:
-- Aberdeen
-- Art Gallery
-- Design
-- Fashion
-- Museum
-date_created: '2020-08-04'
-date_updated: '2020-02-03'
+- aberdeen
+- art gallery
+- design
+- fashion
+- museum
+- nan
+date_created: '2020-02-03'
+date_updated: '2020-08-04'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Aberdeen City Council
 notes: "<p>Bill Gibb (1943-1988), born in <strong>New Pitsligo</strong>, Aberdeenshire,\

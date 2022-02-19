@@ -1,7 +1,8 @@
 ---
 category:
-- Lesiure centres
-- ' community centres'
+- nan
+- lesiure centres
+- community centres
 date_created: ''
 date_updated: '2018-10-18'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

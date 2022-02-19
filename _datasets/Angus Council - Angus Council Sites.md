@@ -4,8 +4,9 @@ category:
 - planning
 - property
 - sites
-date_created: '2016-12-09'
-date_updated: '2016-11-25'
+- nan
+date_created: '2016-11-25'
+date_updated: '2016-12-09'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Angus Council
 notes: <p>Location of Angus Council owned and managed sites and properties. Includes

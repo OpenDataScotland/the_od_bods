@@ -1,8 +1,9 @@
 ---
 category:
-- LGCS Community Safety
-date_created: '2021-05-10'
-date_updated: '2019-02-26'
+- lgcs community safety
+- nan
+date_created: '2019-02-26'
+date_updated: '2022-01-06'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Stirling Council
 notes: "<p><strong>Fixed Penalty Notices (FPN) are issued by Stirling Council's Enforcement\
@@ -35,6 +36,9 @@ resources:
 - format: CSV
   name: CSV
   url: https://data.stirling.gov.uk/dataset/bfda5c46-a314-4c34-b0dd-208bf43911a4/resource/ed61d4ce-ef71-4cee-82d5-5f8da3ff63d4/download/20210510-fixed-penalty-notices-01.04.2020-to-31.03.2021.csv
+- format: CSV
+  name: CSV
+  url: https://data.stirling.gov.uk/dataset/bfda5c46-a314-4c34-b0dd-208bf43911a4/resource/eeef1785-3e3b-428a-aaa0-25ce3c3a3390/download/20220106-fixed-penalty-notices-01.04.2021-to-31.03.2022.csv
 schema: default
 title: Fixed Penalty Notices
 ---

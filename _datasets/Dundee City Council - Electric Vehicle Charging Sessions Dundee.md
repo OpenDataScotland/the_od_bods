@@ -1,8 +1,11 @@
 ---
 category:
-- EV,Electric Vehicle,Charging
-date_created: '2019-03-19'
-date_updated: '2017-12-04'
+- ev
+- electric vehicle
+- charging
+- nan
+date_created: '2017-12-04'
+date_updated: '2019-03-19'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dundee City Council
 notes: '<p>Every electric vehicle charging session at Dundee City Council owned charge

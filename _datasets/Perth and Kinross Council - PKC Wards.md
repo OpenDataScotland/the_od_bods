@@ -1,36 +1,39 @@
 ---
 category:
-- ArcGIS,Service Definition,adminstrative,boundaries,sd,ward
-date_created: '2019-06-25'
-date_updated: '2018-06-07'
-license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+- pkc
+- wards
+- nan
+date_created: '2021-09-30'
+date_updated: '2021-09-30'
+license: ''
 maintainer: Perth and Kinross Council
-notes: '<p>Electoral ward boundaries for Perth and Kinross council. For more information
-  on using the data see </p>
-
-  <p><a href="https://www.ordnancesurvey.co.uk/business-and-government/products/boundary-line.html">https://www.ordnancesurvey.co.uk/business-and-government/products/boundary-line.html</a></p>'
+notes: <p>Ward boundaries from 2017 onwards extracted from the OS Boundary Line product.
+  The Perth and Kinross (Electoral Arrangements) Order 2016 was laid before the Scottish
+  Parliament on 14th September 2016 and came into force on 30th September 2016. The
+  Order applies only for the purposes of an election to be held on or after 4th May
+  2017</p>
 organization: Perth and Kinross Council
 original_dataset_link: https://data.pkc.gov.uk/dataset/pkc-wards
 records: null
 resources:
 - format: HTML
   name: HTML
-  url: http://opendata-pkc.opendata.arcgis.com/datasets/7dae2aa0df664c978684656aac40f894_0
-- format: ESRI REST
-  name: ESRI REST
+  url: https://opendata-pkc.opendata.arcgis.com/datasets/82ad0197d62c4fd1a1ba38252e96e519_0
+- format: ARCGIS GEOSERVICES REST API
+  name: ARCGIS GEOSERVICES REST API
   url: https://services.arcgis.com/pfFDYSlYcp7mabvZ/arcgis/rest/services/PKC_Wards/FeatureServer/0
 - format: GEOJSON
   name: GEOJSON
-  url: http://opendata-pkc.opendata.arcgis.com/datasets/7dae2aa0df664c978684656aac40f894_0.geojson
+  url: https://opendata-pkc.opendata.arcgis.com/datasets/82ad0197d62c4fd1a1ba38252e96e519_0.geojson?outSR=%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D
 - format: CSV
   name: CSV
-  url: http://opendata-pkc.opendata.arcgis.com/datasets/7dae2aa0df664c978684656aac40f894_0.csv
+  url: https://opendata-pkc.opendata.arcgis.com/datasets/82ad0197d62c4fd1a1ba38252e96e519_0.csv?outSR=%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D
 - format: KML
   name: KML
-  url: http://opendata-pkc.opendata.arcgis.com/datasets/7dae2aa0df664c978684656aac40f894_0.kml
+  url: https://opendata-pkc.opendata.arcgis.com/datasets/82ad0197d62c4fd1a1ba38252e96e519_0.kml?outSR=%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D
 - format: ZIP
   name: ZIP
-  url: http://opendata-pkc.opendata.arcgis.com/datasets/7dae2aa0df664c978684656aac40f894_0.zip
+  url: https://opendata-pkc.opendata.arcgis.com/datasets/82ad0197d62c4fd1a1ba38252e96e519_0.zip?outSR=%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D
 schema: default
 title: PKC Wards
 ---

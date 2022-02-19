@@ -1,9 +1,10 @@
 ---
 category:
-- Adult Learning
+- adult learning
 - education
-date_created: '2020-07-14'
-date_updated: '2017-12-04'
+- nan
+date_created: '2017-12-04'
+date_updated: '2020-07-14'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Perth and Kinross Council
 notes: <p>Collated statistics related to the attendance at English language (ESOL)

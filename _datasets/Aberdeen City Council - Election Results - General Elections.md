@@ -1,10 +1,11 @@
 ---
 category:
-- Aberdeen
-- Democracy
-- Goverment
-date_created: '2020-08-04'
-date_updated: '2020-02-27'
+- aberdeen
+- democracy
+- goverment
+- nan
+date_created: '2020-02-27'
+date_updated: '2020-08-04'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Aberdeen City Council
 notes: '<p>The current UK Parliament constituencies were set in 2005.  The majority

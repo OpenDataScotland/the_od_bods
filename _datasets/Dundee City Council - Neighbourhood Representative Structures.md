@@ -1,8 +1,9 @@
 ---
 category:
-- Community development
-date_created: '2017-10-24'
-date_updated: '2017-10-12'
+- community development
+- nan
+date_created: '2017-10-12'
+date_updated: '2017-10-24'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dundee City Council
 notes: '<p>Neighbourhood Representative Structures are supported and recognised by

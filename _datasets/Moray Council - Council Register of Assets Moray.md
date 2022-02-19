@@ -1,9 +1,10 @@
 ---
 category:
-- INSPIRE
-- Business
+- inspire
+- business
+- nan
 date_created: '2017-08-21'
-date_updated: '2021-05-14'
+date_updated: '2020-11-30'
 license: ''
 maintainer: Moray Council
 notes: "<p>Council Register of Assets (Moray).\_ Section 94 of the Community Empowerment\
@@ -16,7 +17,7 @@ notes: "<p>Council Register of Assets (Moray).\_ Section 94 of the Community Emp
   \ to transfer that asset to the community.</p>"
 organization: Moray Council
 original_dataset_link: https://www.arcgis.com/home/item.html?id=400332609a0641e389c990dccfb42430
-records: 1137
+records: 1135
 resources: []
 schema: default
 title: Council Register of Assets (Moray)

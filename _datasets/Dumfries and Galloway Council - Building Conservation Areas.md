@@ -1,9 +1,12 @@
 ---
 category:
-- Built environment, Geospatial
-- Environmental, Architectural, Planning Permission
+- built environment
+- geospatial
+- environmental
+- architectural
+- planning permission
 date_created: '2018-07-16T09:00:41.285Z'
-date_updated: '2019-01-15 17:06:05.213'
+date_updated: '2019-01-15'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
 notes: ''

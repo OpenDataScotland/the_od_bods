@@ -1,8 +1,9 @@
 ---
 category:
 - energy
-date_created: '2021-06-13'
-date_updated: '2019-09-10'
+- nan
+date_created: '2019-09-10'
+date_updated: '2022-02-13'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Perth and Kinross Council
 notes: <p>Gas usage data from Perth &amp; Kinross Council owned buildings fitted with

@@ -1,8 +1,9 @@
 ---
 category:
 - procurement
-date_created: '2018-01-30'
-date_updated: '2018-01-25'
+- nan
+date_created: '2018-01-25'
+date_updated: '2018-01-30'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dundee City Council
 notes: <p>Current contract register, containing details of contract opportunities

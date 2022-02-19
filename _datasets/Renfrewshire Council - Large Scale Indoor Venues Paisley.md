@@ -1,12 +1,13 @@
 ---
 category:
-- Open Data
-- Renfrewshire
-- Paisley
-- Community
+- open data
+- renfrewshire
+- paisley
+- community
+- nan
 date_created: '2017-11-28'
 date_updated: '2017-11-28'
-license: ''
+license: http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Renfrewshire Council
 notes: "<p>A layer showing the location of large scale indoor venues in Paisley.\_\
   </p>"

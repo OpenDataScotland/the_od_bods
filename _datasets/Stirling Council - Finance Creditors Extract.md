@@ -1,8 +1,9 @@
 ---
 category:
-- LGCS Finance
-date_created: '2021-06-01'
-date_updated: '2019-07-02'
+- lgcs finance
+- nan
+date_created: '2019-07-02'
+date_updated: '2021-10-27'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Stirling Council
 notes: "<p><strong>Breakdown of individual payments to and credits from suppliers\
@@ -76,6 +77,12 @@ resources:
 - format: CSV
   name: CSV
   url: https://data.stirling.gov.uk/dataset/46f0a374-03f0-408b-a46d-27953b0551f6/resource/4451ceb2-a9af-4052-bbe1-0ced7ddb7ffb/download/20210601-10k-plus-fye-31.03.2021-v2.0.csv
+- format: CSV
+  name: CSV
+  url: https://data.stirling.gov.uk/dataset/46f0a374-03f0-408b-a46d-27953b0551f6/resource/0e1e81ce-f7f5-4e2b-8c51-ad5a801f17c7/download/20210820-efinancials-trade-creditors-30.06.2021.csv
+- format: CSV
+  name: CSV
+  url: https://data.stirling.gov.uk/dataset/46f0a374-03f0-408b-a46d-27953b0551f6/resource/23cf9575-5c80-4437-825f-d70a0a1aae22/download/20211026-efinancials-trade-creditors-30.09.2021.csv
 schema: default
 title: 'Finance: Creditors'' Extract'
 ---

@@ -1,7 +1,9 @@
 ---
-category: []
-date_created: '2019-06-25'
-date_updated: '2017-08-21'
+category:
+- nan
+- nan
+date_created: '2017-08-21'
+date_updated: '2019-06-25'
 license: other-closed
 maintainer: Perth and Kinross Council
 notes: '<p>Data taken from cycle counter on the North Inch, alongside <a href="https://www.google.co.uk/maps/place/56%C2%B024''10.7%22N+3%C2%B026''02.1%22W/@56.4026754,-3.4344972,18.25z/data=!4m5!3m4!1s0x0:0x0!8m2!3d56.402973!4d-3.433914">Bells

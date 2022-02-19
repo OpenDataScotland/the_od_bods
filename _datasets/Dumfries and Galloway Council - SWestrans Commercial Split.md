@@ -1,9 +1,9 @@
 ---
 category:
-- Transport / Mobility
-- Transport
+- transport / mobility
+- transport
 date_created: '2018-07-25T13:26:56.800Z'
-date_updated: '2018-09-27 13:52:47.761'
+date_updated: '2018-09-27'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
 notes: ''

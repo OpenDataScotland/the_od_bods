@@ -1,11 +1,12 @@
 ---
 category:
-- Renfrewshire
-- Open Data
-- Business and Economy
+- renfrewshire
+- open data
+- business and economy
+- nan
 date_created: '2019-07-23'
 date_updated: '2019-07-23'
-license: ''
+license: http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Renfrewshire Council
 notes: <p>Estimates about the number of VAT/PAYE registered stocks and sites operating
   in Renfrewshire, broken down by industry sector and intermediate zone areas, and

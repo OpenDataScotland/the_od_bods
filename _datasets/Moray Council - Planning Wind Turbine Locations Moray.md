@@ -1,9 +1,10 @@
 ---
 category:
-- Planning
-- INSPIRE
+- planning
+- inspire
+- nan
 date_created: '2018-01-11'
-date_updated: '2021-02-02'
+date_updated: '2020-11-30'
 license: ''
 maintainer: Moray Council
 notes: <p>Wind turbine locations generated from planning applications received by

@@ -1,8 +1,9 @@
 ---
 category:
-- Planning
+- planning
 - boundaries
-- INSPIRE
+- inspire
+- nan
 date_created: '2017-07-10'
 date_updated: '2020-11-30'
 license: ''

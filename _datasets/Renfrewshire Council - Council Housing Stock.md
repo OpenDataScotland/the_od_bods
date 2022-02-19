@@ -1,11 +1,12 @@
 ---
 category:
-- Open Data
-- Renfrewshire
-- Built Environment
+- open data
+- renfrewshire
+- built environment
+- nan
 date_created: '2017-12-01'
 date_updated: '2019-07-19'
-license: ''
+license: http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Renfrewshire Council
 notes: <p>Local Authority owned housing stock, by normal use of dwelling</p>
 organization: Renfrewshire Council

@@ -1,8 +1,11 @@
 ---
 category:
-- lighting,transport,street-assets
-date_created: '2019-03-19'
-date_updated: '2018-02-12'
+- lighting
+- transport
+- street-assets
+- nan
+date_created: '2018-02-12'
+date_updated: '2019-03-19'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dundee City Council
 notes: '<p>The street lighting in Dundee is delivered through the <a href="https://www.dundeecity.gov.uk/service-area/city-development/roads-and-transportation/street-lighting">Street

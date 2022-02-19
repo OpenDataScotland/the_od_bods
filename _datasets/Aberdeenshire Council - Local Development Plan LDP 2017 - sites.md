@@ -1,6 +1,8 @@
 ---
 category:
-- Planning, local developmen plan
+- nan
+- planning
+- local developmen plan
 date_created: ''
 date_updated: '2018-11-23'
 license: ''

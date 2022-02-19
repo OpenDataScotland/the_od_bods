@@ -1,8 +1,9 @@
 ---
 category:
-- LGCS Community Safety
-date_created: '2021-06-17'
-date_updated: '2019-02-27'
+- lgcs community safety
+- nan
+date_created: '2019-02-27'
+date_updated: '2022-02-03'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Stirling Council
 notes: '<p><strong><a href="https://www.legislation.gov.uk/ukpga/1991/40/contents">Decriminalised
@@ -30,7 +31,7 @@ resources:
   url: https://data.stirling.gov.uk/dataset/cb5bf6f3-4879-4baa-a7e9-243477d49aab/resource/3c9bd3f3-344f-4221-8f50-543b3b502bbd/download/20210510-penalty-charge-notices-01.04.2020-to-31.03.2021.csv
 - format: CSV
   name: CSV
-  url: https://data.stirling.gov.uk/dataset/cb5bf6f3-4879-4baa-a7e9-243477d49aab/resource/07bae006-78d2-4ff7-8f1c-39861a29e744/download/20210617-penalty-charge-notices-01.04.2021-to-31.03.2022.csv
+  url: https://data.stirling.gov.uk/dataset/cb5bf6f3-4879-4baa-a7e9-243477d49aab/resource/07bae006-78d2-4ff7-8f1c-39861a29e744/download/20220203-penalty-charge-notices-01.04.2021-to-31.03.2022.csv
 schema: default
 title: Penalty Charge Notices
 ---

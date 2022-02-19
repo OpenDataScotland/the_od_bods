@@ -1,13 +1,14 @@
 ---
 category:
-- Academy Catchments
-- Academy Zones
-- Boundaries
-- Education
-- Secondary Catchments
-- Secondary Zones
-date_created: '2020-09-22'
-date_updated: '2020-07-20'
+- academy catchments
+- academy zones
+- boundaries
+- education
+- secondary catchments
+- secondary zones
+- nan
+date_created: '2020-07-20'
+date_updated: '2020-09-22'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Aberdeen City Council
 notes: <div style='text-align:Left;'><div><div><p style='margin:0 0 14 0;'><span><span>Defined

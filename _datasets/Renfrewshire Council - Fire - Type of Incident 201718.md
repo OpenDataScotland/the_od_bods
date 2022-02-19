@@ -1,11 +1,12 @@
 ---
 category:
-- Open Data
-- Renfrewshire
-- Community
+- open data
+- renfrewshire
+- community
+- nan
 date_created: '2019-07-22'
 date_updated: '2019-07-23'
-license: ''
+license: http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Renfrewshire Council
 notes: "<p>This dataset provide the numbers and rates of fires in Renfrewshire down\
   \ to dintermediate zone level. Data is provided for the total number of fires, including\
