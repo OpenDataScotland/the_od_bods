@@ -1,8 +1,9 @@
 ---
 category:
-- LGCS Waste Management
-date_created: '2021-04-19'
-date_updated: '2019-02-11'
+- lgcs waste management
+- nan
+date_created: '2019-02-11'
+date_updated: '2021-04-19'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Stirling Council
 notes: '<p><strong>Domestic waste collection datasets are no longer published under

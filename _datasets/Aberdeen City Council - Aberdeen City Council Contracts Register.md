@@ -1,10 +1,11 @@
 ---
 category:
-- Aberdeen
-- Contracts
-- Finance
-date_created: '2020-08-04'
-date_updated: '2020-03-23'
+- aberdeen
+- contracts
+- finance
+- nan
+date_created: '2020-03-23'
+date_updated: '2020-08-04'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Aberdeen City Council
 notes: '<p>Aberdeen City Council in accordance with <a href="http://www.legislation.gov.uk/asp/2014/12/section/35"><strong>Section

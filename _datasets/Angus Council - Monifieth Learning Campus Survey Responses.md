@@ -1,12 +1,13 @@
 ---
 category:
 - '2021'
-- Monifieth
+- monifieth
 - campus
 - consultation
 - survey
-date_created: '2021-06-15'
-date_updated: '2021-06-10'
+- nan
+date_created: '2021-06-10'
+date_updated: '2021-06-15'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Angus Council
 notes: <p>Responses to on-line questionnaire seeking feedback on the proposals to

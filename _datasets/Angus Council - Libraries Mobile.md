@@ -1,7 +1,9 @@
 ---
-category: []
-date_created: '2016-08-08'
-date_updated: ''
+category:
+- nan
+- nan
+date_created: ''
+date_updated: '2016-08-08'
 license: Other (Public Domain)
 maintainer: Angus Council
 notes: <p>Text file of Angus Council's mobile library locations</p>

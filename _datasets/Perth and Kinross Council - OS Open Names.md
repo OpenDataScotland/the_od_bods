@@ -4,8 +4,9 @@ category:
 - geographical-names
 - os-locator
 - post-code
-date_created: '2020-04-29'
-date_updated: '2017-08-25'
+- nan
+date_created: '2017-08-25'
+date_updated: '2020-04-29'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Perth and Kinross Council
 notes: '<p>OS Open Names is a geographic directory that contains basic information

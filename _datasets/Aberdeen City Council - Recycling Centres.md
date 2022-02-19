@@ -1,12 +1,13 @@
 ---
 category:
-- Environment
-- Recycling
-- Rubbish
-- Tip
-- Waste Disposal
-date_created: '2020-09-22'
-date_updated: '2020-07-20'
+- environment
+- recycling
+- rubbish
+- tip
+- waste disposal
+- nan
+date_created: '2020-07-20'
+date_updated: '2020-09-22'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Aberdeen City Council
 notes: "<div style='text-align:Left;'><div><div><p style='margin:0 0 11 0;'><span>Point\

@@ -1,8 +1,9 @@
 ---
 category:
-- Waste
-date_created: '2019-03-19'
-date_updated: '2018-06-06'
+- waste
+- nan
+date_created: '2018-06-06'
+date_updated: '2019-03-19'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dundee City Council
 notes: <p>Locations of all public bins within Dundee City. The public bin network

@@ -1,8 +1,9 @@
 ---
 category:
-- Housing
-date_created: '2021-04-02'
-date_updated: '2017-08-16'
+- housing
+- nan
+date_created: '2017-08-16'
+date_updated: '2021-08-19'
 license: Public Sector End User Licence (Scotland)
 maintainer: Dundee City Council
 notes: '<h2>Properties available now from the Common Housing Register</h2>

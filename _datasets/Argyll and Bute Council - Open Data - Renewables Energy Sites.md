@@ -1,10 +1,11 @@
 ---
 category:
-- Renewables
-- Environment
-- Energy
+- renewables
+- environment
+- energy
+- nan
 date_created: '2017-07-07'
-date_updated: '2021-06-08'
+date_updated: '2021-08-03'
 license: ''
 maintainer: Argyll and Bute Council
 notes: "<p>All\_renewable energy developments in Argyll and Bute, by type (e.g. windfarms,\
@@ -12,7 +13,7 @@ notes: "<p>All\_renewable energy developments in Argyll and Bute, by type (e.g. 
   \ location.</p>"
 organization: Argyll and Bute Council
 original_dataset_link: https://www.arcgis.com/home/item.html?id=0c1c919409754d6db29f710fabd591c2
-records: 724
+records: 733
 resources: []
 schema: default
 title: Open Data - Renewables Energy Sites

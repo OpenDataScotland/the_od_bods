@@ -1,9 +1,10 @@
 ---
 category:
-- Geospatial
-- 'Public Access Routes , Walking and Cycling  '
+- geospatial
+- public access routes
+- walking and cycling
 date_created: '2018-07-12T12:59:26.547Z'
-date_updated: '2020-02-04 11:09:15.072'
+date_updated: '2020-02-04'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
 notes: ''

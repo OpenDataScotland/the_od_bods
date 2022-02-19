@@ -1,11 +1,12 @@
 ---
 category:
-- Renfrewshire
-- Open Data
-- Business and Economy
+- renfrewshire
+- open data
+- business and economy
+- nan
 date_created: '2019-07-19'
 date_updated: '2019-07-24'
-license: ''
+license: http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Renfrewshire Council
 notes: <p>Scottish Annual Business Survey 2017 (June 2019 release)- filtered for Renfrewshire.Scottish
   Annual Business Statistics (SABS), which is largely sourced to the Annual Business

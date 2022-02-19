@@ -1,14 +1,15 @@
 ---
 category:
-- LGCS Council Property
-date_created: '2021-04-19'
-date_updated: '2019-02-06'
+- lgcs council property
+- nan
+date_created: '2019-02-06'
+date_updated: '2022-01-24'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Stirling Council
 notes: '<p><strong>Stirling Council''s activities cover the area bordered by Clackmannanshire
   (to the east), North Lanarkshire (to the south), Falkirk (to the south-east), Perth
   &amp; Kinross (to the north and north-east), Argyll &amp; Bute (to the north and
-  north-west), and East and West Dunbartonshire (to the south-west).</strong>     </p>
+  north-west), and East and West Dunbartonshire (to the south-west).</strong></p>
 
   <p><strong>With the exception of properties owned by the Housing Service, this dataset
   details the land and property assets managed and maintained by Stirling Council.</strong></p>
@@ -19,7 +20,9 @@ notes: '<p><strong>Stirling Council''s activities cover the area bordered by Cla
   <p><strong>Please pass any comments or queries to <a href="mailto: surveyandinfo@stirling.gov.uk">surveyandinfo@stirling.gov.uk</a>.</strong></p>
 
   <p><strong>All data believed to be correct at the date of the last update, 12th
-  February, 2019.</strong></p>'
+  February, 2019.</strong></p>
+
+  <p><strong>Under review as at 14st January, 2022.</strong></p>'
 organization: Stirling Council
 original_dataset_link: https://data.stirling.gov.uk/dataset/asset-register
 records: null

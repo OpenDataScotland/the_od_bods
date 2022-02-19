@@ -1,9 +1,11 @@
 ---
 category:
-- Social / Community
-- Children, Education, Schools
+- social / community
+- children
+- education
+- schools
 date_created: '2017-11-21T15:27:30.905Z'
-date_updated: '2017-11-21 15:38:45.363'
+date_updated: '2017-11-21'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
 notes: ''

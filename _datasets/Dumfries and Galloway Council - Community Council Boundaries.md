@@ -1,9 +1,11 @@
 ---
 category:
-- Geospatial
-- Business, Social, Community
+- geospatial
+- business
+- social
+- community
 date_created: '2018-07-12T12:59:47.961Z'
-date_updated: '2018-10-02 09:02:04.110'
+date_updated: '2018-10-02'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
 notes: ''

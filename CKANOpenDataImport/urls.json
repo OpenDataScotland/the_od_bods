@@ -8,14 +8,6 @@
     "Url": "https://data.dundeecity.gov.uk/"
   },
   {
-    "SourceName": "City of Edinburgh Council",
-    "Url": "https://data.edinburghcouncilmaps.info/"
-  },
-  {
-    "SourceName": "Glasgow City Council",
-    "Url": "https://data.glasgow.gov.uk"
-  },
-  {
     "SourceName": "Perth and Kinross Council",
     "Url": "https://data.pkc.gov.uk/"
   },

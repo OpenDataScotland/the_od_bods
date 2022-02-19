@@ -1,9 +1,11 @@
 ---
 category:
-- Built environment
-- Government, Local, Planning
+- built environment
+- government
+- local
+- planning
 date_created: '2017-11-23T13:49:58.540Z'
-date_updated: '2019-02-21 10:37:51.568'
+date_updated: '2019-02-21'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
 notes: ''

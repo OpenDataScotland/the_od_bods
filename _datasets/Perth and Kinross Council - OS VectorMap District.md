@@ -6,8 +6,9 @@ category:
 - hydrography
 - mapping
 - mid-scales
-date_created: '2020-04-29'
-date_updated: '2017-08-25'
+- nan
+date_created: '2017-08-25'
+date_updated: '2020-04-29'
 license: ''
 maintainer: Perth and Kinross Council
 notes: "<p>OS VectorMap District is a simple vector dataset with a nominal scale of\

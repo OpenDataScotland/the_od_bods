@@ -3,6 +3,7 @@ using CsvHelper.Configuration;
 
 namespace CKANOpenDataImport.Models.Maps
 {
+    // ReSharper disable once UnusedType.Global
     public sealed class DatasetMap : ClassMap<DatasetEntry>
     {
         public DatasetMap()

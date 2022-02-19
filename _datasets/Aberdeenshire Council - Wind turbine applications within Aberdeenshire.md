@@ -1,8 +1,9 @@
 ---
 category:
+- nan
 - wind turbines
-- ' conservation'
-- ' energy'
+- conservation
+- energy
 date_created: ''
 date_updated: '2020-05-20'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

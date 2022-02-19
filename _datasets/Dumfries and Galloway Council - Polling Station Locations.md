@@ -1,9 +1,9 @@
 ---
 category:
-- Social / Community
-- Local
+- social / community
+- local
 date_created: '2017-11-24T11:53:01.762Z'
-date_updated: '2019-11-26 08:26:00.542'
+date_updated: '2019-11-26'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
 notes: ''

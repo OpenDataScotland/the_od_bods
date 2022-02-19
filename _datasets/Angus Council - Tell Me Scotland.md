@@ -6,8 +6,9 @@ category:
 - planning
 - public
 - traffic
-date_created: '2017-01-12'
-date_updated: '2016-12-07'
+- nan
+date_created: '2016-12-07'
+date_updated: '2017-01-12'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Angus Council
 notes: <p>Tells people about public notices that are published by Angus Council, eg,

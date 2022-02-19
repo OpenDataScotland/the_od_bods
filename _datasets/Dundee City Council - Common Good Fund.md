@@ -1,8 +1,9 @@
 ---
 category:
-- Grants
-date_created: '2019-03-19'
-date_updated: '2018-03-01'
+- grants
+- nan
+date_created: '2018-03-01'
+date_updated: '2019-03-19'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dundee City Council
 notes: '<p>Awards and recipients of the Common Good Fund. The Common Good Fund is

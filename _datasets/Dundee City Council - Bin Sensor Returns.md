@@ -1,8 +1,9 @@
 ---
 category:
 - waste
-date_created: '2019-03-19'
-date_updated: '2018-06-08'
+- nan
+date_created: '2018-06-08'
+date_updated: '2019-03-19'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dundee City Council
 notes: <p>Data for bins with attached sensors. </p>

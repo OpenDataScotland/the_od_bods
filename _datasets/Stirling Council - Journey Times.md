@@ -1,8 +1,9 @@
 ---
 category:
-- LGCS Transport Infrastructure
-date_created: '2021-06-02'
-date_updated: '2019-09-04'
+- lgcs transport infrastructure
+- nan
+date_created: '2019-09-04'
+date_updated: '2021-08-16'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Stirling Council
 notes: "<p><strong>This dataset grouping details the output from transport monitoring\
@@ -33,16 +34,16 @@ records: null
 resources:
 - format: CSV
   name: CSV
-  url: https://data.stirling.gov.uk/dataset/6ce872f4-2f71-4676-a032-9547f94782d7/resource/0e2eb140-c3c9-4312-8508-ebeb321a4de7/download/20200115-journey-times-jan-19-to-dec-19-v1.0.csv
+  url: https://data.stirling.gov.uk/dataset/6ce872f4-2f71-4676-a032-9547f94782d7/resource/0e2eb140-c3c9-4312-8508-ebeb321a4de7/download/20210816-journey-times-jan-19-to-dec-19-v1.0.csv
 - format: CSV
   name: CSV
-  url: https://data.stirling.gov.uk/dataset/6ce872f4-2f71-4676-a032-9547f94782d7/resource/3ef1b31a-898e-40fa-8a26-eb1eb05a2c88/download/20190618-46-routes-2018-v3.csv
+  url: https://data.stirling.gov.uk/dataset/6ce872f4-2f71-4676-a032-9547f94782d7/resource/3ef1b31a-898e-40fa-8a26-eb1eb05a2c88/download/20210816-46-routes-2018-v4.csv
 - format: CSV
   name: CSV
-  url: https://data.stirling.gov.uk/dataset/6ce872f4-2f71-4676-a032-9547f94782d7/resource/fde51662-8043-4d14-8a6b-867c75484178/download/20210107-journey-times-jan-2020-to-dec-2020-v1.0.csv
+  url: https://data.stirling.gov.uk/dataset/6ce872f4-2f71-4676-a032-9547f94782d7/resource/fde51662-8043-4d14-8a6b-867c75484178/download/20210816-journey-times-jan-2020-to-dec-2020-v1.0.csv
 - format: CSV
   name: CSV
-  url: https://data.stirling.gov.uk/dataset/6ce872f4-2f71-4676-a032-9547f94782d7/resource/fe9a4c6f-0d1e-4e89-975a-4948aa790a73/download/20210602-journey-times-jan-2021-to-dec-2021-v1.0.csv
+  url: https://data.stirling.gov.uk/dataset/6ce872f4-2f71-4676-a032-9547f94782d7/resource/fe9a4c6f-0d1e-4e89-975a-4948aa790a73/download/20210816-journey-times-jan-2021-to-dec-2021-v1.0.csv
 schema: default
 title: Journey Times
 ---

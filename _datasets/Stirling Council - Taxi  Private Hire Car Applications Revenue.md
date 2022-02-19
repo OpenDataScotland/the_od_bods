@@ -1,8 +1,9 @@
 ---
 category:
-- LGCS Consumer Affairs
-date_created: '2021-04-19'
-date_updated: '2019-12-20'
+- lgcs consumer affairs
+- nan
+date_created: '2019-12-20'
+date_updated: '2021-11-24'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Stirling Council
 notes: '<p><strong>In addition to a breakdown of  the fee revenue received from taxi

@@ -1,9 +1,14 @@
 ---
 category:
-- 2016,boundary,economy,land,Employment
-date_created: '2019-06-25'
-date_updated: '2018-06-07'
-license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+- '2016'
+- employment
+- boundary
+- economy
+- land
+- nan
+date_created: '2021-09-30'
+date_updated: '2021-09-30'
+license: ''
 maintainer: Perth and Kinross Council
 notes: <p>A survey issued by the Scottish Government to establish the extent &amp;
   state of vacant &amp; derelict land in Scotland. Local Authorities return data to
@@ -14,22 +19,22 @@ records: null
 resources:
 - format: HTML
   name: HTML
-  url: http://opendata-pkc.opendata.arcgis.com/datasets/b83c58ff1c5e4286990e8643212c146b_1
-- format: ESRI REST
-  name: ESRI REST
+  url: https://opendata-pkc.opendata.arcgis.com/datasets/b83c58ff1c5e4286990e8643212c146b_1
+- format: ARCGIS GEOSERVICES REST API
+  name: ARCGIS GEOSERVICES REST API
   url: https://services.arcgis.com/pfFDYSlYcp7mabvZ/arcgis/rest/services/Scottish_Vacant_and_Derelict_Land_2016/FeatureServer/1
 - format: GEOJSON
   name: GEOJSON
-  url: http://opendata-pkc.opendata.arcgis.com/datasets/b83c58ff1c5e4286990e8643212c146b_1.geojson
+  url: https://opendata-pkc.opendata.arcgis.com/datasets/b83c58ff1c5e4286990e8643212c146b_1.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D
 - format: CSV
   name: CSV
-  url: http://opendata-pkc.opendata.arcgis.com/datasets/b83c58ff1c5e4286990e8643212c146b_1.csv
+  url: https://opendata-pkc.opendata.arcgis.com/datasets/b83c58ff1c5e4286990e8643212c146b_1.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D
 - format: KML
   name: KML
-  url: http://opendata-pkc.opendata.arcgis.com/datasets/b83c58ff1c5e4286990e8643212c146b_1.kml
+  url: https://opendata-pkc.opendata.arcgis.com/datasets/b83c58ff1c5e4286990e8643212c146b_1.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D
 - format: ZIP
   name: ZIP
-  url: http://opendata-pkc.opendata.arcgis.com/datasets/b83c58ff1c5e4286990e8643212c146b_1.zip
+  url: https://opendata-pkc.opendata.arcgis.com/datasets/b83c58ff1c5e4286990e8643212c146b_1.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D
 schema: default
 title: Scottish Vacant and Derelict Land Survey 2016
 ---

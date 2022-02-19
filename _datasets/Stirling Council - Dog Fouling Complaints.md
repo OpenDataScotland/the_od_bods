@@ -1,8 +1,9 @@
 ---
 category:
-- LGCS Community Safety
-date_created: '2021-05-10'
-date_updated: '2019-02-22'
+- lgcs community safety
+- nan
+date_created: '2019-02-22'
+date_updated: '2022-01-06'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Stirling Council
 notes: "<p><strong>This dataset details complaints received from members of the public\
@@ -26,6 +27,9 @@ resources:
 - format: CSV
   name: CSV
   url: https://data.stirling.gov.uk/dataset/874b1a5c-bbe9-48c9-9066-2492e96349fa/resource/99e46798-c811-4548-9e83-c7183b03dbb4/download/20210510-dog-fouling-notices-01.04.2020-to-31.03.2021-v1.0.csv
+- format: CSV
+  name: CSV
+  url: https://data.stirling.gov.uk/dataset/874b1a5c-bbe9-48c9-9066-2492e96349fa/resource/940afe35-7c79-4f06-b763-eb156f5f7078/download/20220106-dog-fouling-notices-01.04.2021-to-31.03.2022-v1.0.csv
 schema: default
 title: Dog Fouling Complaints
 ---

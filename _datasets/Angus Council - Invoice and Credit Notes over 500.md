@@ -4,8 +4,9 @@ category:
 - finance
 - invoices
 - suppliers
-date_created: '2021-04-22'
-date_updated: '2020-03-04'
+- nan
+date_created: '2020-03-04'
+date_updated: '2021-11-23'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Angus Council
 notes: "<p>Every six months, we publish a list of all invoices and credit notes over\
@@ -39,6 +40,9 @@ resources:
 - format: XLS
   name: XLS
   url: http://opendata.angus.gov.uk/dataset/9974d9ac-8bc4-4f0b-badc-43faf9791976/resource/f3faeb88-1814-4d8f-8c72-8c51431ec6a5/download/supplier-payments-01-10-20-to-31-03-21.xls
+- format: XLS
+  name: XLS
+  url: http://opendata.angus.gov.uk/dataset/9974d9ac-8bc4-4f0b-badc-43faf9791976/resource/db18bd27-81c3-44c3-ac0a-4b0f2de359bc/download/supplier-payments-01-04-21-to-01-10-21.xls
 schema: default
 title: "Invoice and Credit Notes over \xA3500"
 ---

@@ -1,11 +1,12 @@
 ---
 category:
-- Open Data
-- Renfrewshire
-- Democracy and Governance
+- open data
+- renfrewshire
+- democracy and governance
+- nan
 date_created: '2018-01-09'
 date_updated: '2018-05-09'
-license: ''
+license: http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Renfrewshire Council
 notes: <p>Scottish Council Elections 4 May 2017 results and turnout</p>
 organization: Renfrewshire Council

@@ -1,8 +1,9 @@
 ---
 category:
-- LGCS Cemeteries & Crematoria
-date_created: '2021-06-01'
-date_updated: '2019-02-04'
+- lgcs cemeteries & crematoria
+- nan
+date_created: '2019-02-04'
+date_updated: '2022-02-02'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Stirling Council
 notes: "<p><strong>Extract of electronic burial records for cemeteries managed and\
@@ -17,14 +18,15 @@ notes: "<p><strong>Extract of electronic burial records for cemeteries managed a
   ><strong>National Records of Scotland</strong></a> <strong>and</strong> <a href=\"\
   https://www.scotlandspeople.gov.uk/\"><strong>Scotland\u2019s People</strong></a>\
   \ <strong>provide useful information for those wishing to research their family\
-  \ tree.</strong></p>\n<p><strong>Next update available from Tuesday, 6th July, 2021.</strong></p>"
+  \ tree.</strong></p>\n<p><strong>Next update available from Wednesday, 2nd March,\
+  \ 2022.</strong></p>"
 organization: Stirling Council
 original_dataset_link: https://data.stirling.gov.uk/dataset/cemetery-records
 records: null
 resources:
 - format: CSV
   name: CSV
-  url: https://data.stirling.gov.uk/dataset/42afa6e2-db91-4940-b7bd-50ab8b4dd2c1/resource/e2c373ba-86b8-404c-8ff7-4d91cd9acb59/download/2021-06-01-20-05-09_epilog.csv
+  url: https://data.stirling.gov.uk/dataset/42afa6e2-db91-4940-b7bd-50ab8b4dd2c1/resource/e2c373ba-86b8-404c-8ff7-4d91cd9acb59/download/2022-02-01-20-05-14_epilog_v1.0.csv
 schema: default
 title: Cemeteries
 ---

@@ -1,8 +1,11 @@
 ---
 category:
-- food,safety hygiene,ratings
-date_created: '2019-03-19'
-date_updated: '2017-11-29'
+- food
+- safety hygiene
+- ratings
+- nan
+date_created: '2017-11-29'
+date_updated: '2021-06-22'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dundee City Council
 notes: "<p>Food hygiene rating or inspection results given to a businesses and date\

@@ -2,6 +2,7 @@
 category:
 - elections
 - democracy
+- nan
 date_created: '2017-03-13'
 date_updated: '2021-03-24'
 license: ''
