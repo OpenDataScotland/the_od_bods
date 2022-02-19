@@ -18,5 +18,9 @@
   {
     "SourceName": "Angus Council",
     "Url": "http://opendata.angus.gov.uk/"
+  },
+  {
+    "SourceName": "Public Health Scotland",
+    "Url": "https://www.opendata.nhs.scot/"
   }
 ]
