@@ -7,7 +7,8 @@ date_created: '2019-11-01T15:43:40.911Z'
 date_updated: '2019-12-20'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: ''
+notes: <p>This dataset shows the number of vehicles at a particular traffic count
+  location for a particular year.</p>
 organization: Cycling Scotland
 original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/25db9595-479e-451b-b1ec-6f9a8c5e6dcb
 records: null

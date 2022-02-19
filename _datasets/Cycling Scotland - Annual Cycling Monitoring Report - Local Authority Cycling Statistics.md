@@ -7,7 +7,11 @@ date_created: '2021-05-13T13:35:32.999Z'
 date_updated: '2021-08-13'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: ''
+notes: '<p>The Local section of the Annual Cycling Monitoring Report examines all
+  the local authorities across Scotland and highlights statistics based on headline
+  trends,
+
+  workplaces and schools from a range of sources.</p>'
 organization: Cycling Scotland
 original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/5722da4b-7559-4819-ab1c-4d2c9a6f92ec
 records: null

@@ -6,7 +6,8 @@ date_created: '2018-01-23T14:16:42.175Z'
 date_updated: '2018-02-21'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
-notes: ''
+notes: <p>Number of Properties by Council Tax Band in each D&amp;G, plus All-Scotland
+  totals. This excludes Garages and Domestic Storage Premises.</p>
 organization: Dumfries and Galloway Council
 original_dataset_link: https://usmart.io/org/dumgal/discovery/discovery-view-detail/8c6e6e6c-8f11-4eab-a401-1318b477ffad
 records: null

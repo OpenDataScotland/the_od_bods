@@ -8,7 +8,8 @@ date_created: '2021-08-17T23:06:52.871Z'
 date_updated: '2021-11-16'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: ''
+notes: <p>A real-time hourly upload from each cycling counter within South Lanarkshire
+  Council's network.</p>
 organization: Cycling Scotland
 original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/1ba7b643-860e-41c9-8798-106fff4720cf
 records: null

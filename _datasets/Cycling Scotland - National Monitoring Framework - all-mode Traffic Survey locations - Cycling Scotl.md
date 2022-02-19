@@ -10,7 +10,9 @@ date_created: '2021-12-23T16:01:50.046Z'
 date_updated: '2022-01-05'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: ''
+notes: <p>This dataset holds the locations for all of Cycling Scotland's all-mode
+  traffic counts which are undertaken biannually across Scotland. The dates of each
+  count are included.</p>
 organization: Cycling Scotland
 original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/b4caea0b-4a89-41de-9bf4-5f349f1f7cea
 records: null

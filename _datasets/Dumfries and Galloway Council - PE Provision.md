@@ -7,7 +7,8 @@ date_created: '2017-11-29T14:02:26.204Z'
 date_updated: '2018-03-01'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
-notes: ''
+notes: <p>Physical Education provision in primary and secondary schools in Dumfries
+  and Galloway and other school variables, 2017</p>
 organization: Dumfries and Galloway Council
 original_dataset_link: https://usmart.io/org/dumgal/discovery/discovery-view-detail/7664f600-29a7-4c95-9a2a-8b1a433ad54b
 records: null

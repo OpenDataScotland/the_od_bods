@@ -8,7 +8,7 @@ date_created: '2019-06-20T13:28:53.883Z'
 date_updated: '2021-01-13'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: ''
+notes: <p>Glasgow City Council's raw data files for January to March 2019.</p>
 organization: Cycling Scotland
 original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/5e0304e7-bd04-4c70-be63-b1865fe9a8e8
 records: null

@@ -8,7 +8,8 @@ date_created: '2021-09-25T13:17:54.110Z'
 date_updated: '2021-11-16'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: ''
+notes: <p>A real-time hourly upload from each cycling counter within The Highland
+  Council's network.</p>
 organization: Cycling Scotland
 original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/c34d4636-7390-4a12-9e4f-01e7a88bd69a
 records: null

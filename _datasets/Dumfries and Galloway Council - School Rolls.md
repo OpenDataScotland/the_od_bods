@@ -6,7 +6,7 @@ date_created: '2018-02-21T11:08:06.136Z'
 date_updated: '2019-01-17'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
-notes: ''
+notes: <p>Historical School Rolls in Dumfries and Galloway</p>
 organization: Dumfries and Galloway Council
 original_dataset_link: https://usmart.io/org/dumgal/discovery/discovery-view-detail/e48094b9-b9d6-4f50-8b19-8825f881ddff
 records: null

@@ -8,7 +8,8 @@ date_created: '2017-11-15T09:59:28.542Z'
 date_updated: '2019-01-29'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
-notes: ''
+notes: <p>Number of Teachers in D&amp;G for Primary, Secondary and Special Education
+  Schools</p>
 organization: Dumfries and Galloway Council
 original_dataset_link: https://usmart.io/org/dumgal/discovery/discovery-view-detail/736fd2ea-a6da-4c06-87a9-5a7a39698347
 records: null

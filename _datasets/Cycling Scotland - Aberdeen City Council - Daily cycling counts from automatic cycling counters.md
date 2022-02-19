@@ -8,7 +8,8 @@ date_created: '2021-09-25T13:08:11.623Z'
 date_updated: '2021-11-16'
 license: http://opendatacommons.org/licenses/odbl/1-0/
 maintainer: Cycling Scotland
-notes: ''
+notes: <p>A real-time daily upload from each cycling counter within Aberdeen City
+  Council's network.</p>
 organization: Cycling Scotland
 original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/c3248da7-823b-40e7-ae5c-9b33a4ab7f16
 records: null

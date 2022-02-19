@@ -6,7 +6,7 @@ date_created: '2017-11-20T09:37:03.626Z'
 date_updated: '2019-09-17'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
-notes: ''
+notes: <p>Location of Salt Bins throughout Dumfries and Galloway</p>
 organization: Dumfries and Galloway Council
 original_dataset_link: https://usmart.io/org/dumgal/discovery/discovery-view-detail/be48ea86-9fb5-4b22-b948-97b8cbeeb64b
 records: null

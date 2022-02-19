@@ -9,7 +9,8 @@ date_created: '2019-10-17T15:06:31.003Z'
 date_updated: '2019-11-26'
 license: https://creativecommons.org/licenses/by/4.0/legalcode
 maintainer: Cycling Scotland
-notes: ''
+notes: <p>This data highlights all university and college campuses across Scotland
+  that have received a Cycling Friendly Campus Award</p>
 organization: Cycling Scotland
 original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/ccdfe336-fc50-44e4-8e07-77ec03547b0e
 records: null

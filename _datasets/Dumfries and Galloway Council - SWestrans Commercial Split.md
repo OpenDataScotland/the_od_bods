@@ -6,7 +6,7 @@ date_created: '2018-07-25T13:26:56.800Z'
 date_updated: '2018-09-27'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
-notes: ''
+notes: <p>SWestrans Commercial Split</p>
 organization: Dumfries and Galloway Council
 original_dataset_link: https://usmart.io/org/dumgal/discovery/discovery-view-detail/84085b60-c17d-445e-89c2-03d3862aba7a
 records: null

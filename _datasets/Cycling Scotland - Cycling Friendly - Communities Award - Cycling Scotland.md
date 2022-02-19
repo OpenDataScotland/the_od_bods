@@ -9,7 +9,8 @@ date_created: '2019-10-17T15:19:22.247Z'
 date_updated: '2019-11-08'
 license: https://creativecommons.org/licenses/by/4.0/legalcode
 maintainer: Cycling Scotland
-notes: ''
+notes: <p>This data set highlights communities across Scotland that have received
+  a Cycling Friendly Communities Award</p>
 organization: Cycling Scotland
 original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/8b952141-0d52-48f5-b16d-c11bb93664e8
 records: null

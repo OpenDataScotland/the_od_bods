@@ -6,7 +6,8 @@ date_created: '2018-01-23T14:03:57.604Z'
 date_updated: '2018-09-27'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
-notes: ''
+notes: <p>The Total Number of Non-Domestic Properties and Total Rateable Value in
+  each Local Authority within each Assessor's Area plus All Scotland totals.</p>
 organization: Dumfries and Galloway Council
 original_dataset_link: https://usmart.io/org/dumgal/discovery/discovery-view-detail/0aeb8640-04ea-44e3-9c03-63b53a3fe7d4
 records: null

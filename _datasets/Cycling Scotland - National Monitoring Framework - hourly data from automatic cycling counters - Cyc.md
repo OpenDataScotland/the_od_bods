@@ -8,7 +8,8 @@ date_created: '2020-04-03T14:53:09.123Z'
 date_updated: '2020-04-20'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: ''
+notes: <p>This dataset gives the hourly cycling count breakdown for all of Cycling
+  Scotland's automatic cycling counters. Most of counters also count pedestrians.</p>
 organization: Cycling Scotland
 original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/f3df8bdf-8305-4fef-af33-502488befec7
 records: null

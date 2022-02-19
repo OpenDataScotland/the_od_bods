@@ -8,7 +8,8 @@ date_created: '2019-10-21T10:07:11.873Z'
 date_updated: '2019-11-26'
 license: https://creativecommons.org/licenses/by/4.0/legalcode
 maintainer: Cycling Scotland
-notes: ''
+notes: <p>This data highlights all employers across Scotland that have received a
+  Cycling Friendly School Award</p>
 organization: Cycling Scotland
 original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/fa4d4cbb-b4a0-4efd-ae68-7767f6ab117d
 records: null

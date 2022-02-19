@@ -8,7 +8,7 @@ date_created: '2017-11-15T10:18:25.225Z'
 date_updated: '2017-11-16'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
-notes: ''
+notes: <p>Annual Attendance Percentages for Secondary Schools in Dumfries and Galloway</p>
 organization: Dumfries and Galloway Council
 original_dataset_link: https://usmart.io/org/dumgal/discovery/discovery-view-detail/8dd37ea1-2e1d-4e37-8fb7-323c90fdb192
 records: null

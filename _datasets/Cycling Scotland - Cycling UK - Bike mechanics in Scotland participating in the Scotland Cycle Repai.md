@@ -7,7 +7,13 @@ date_created: '2021-04-08T15:10:01.596Z'
 date_updated: '2021-04-23'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: ''
+notes: '<ul>
+
+  <li>All organisations listed provide bike repair services </li>
+
+  <li>All organisations listed have appropriate public liability insurance in place</li>
+
+  </ul>'
 organization: Cycling Scotland
 original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/a0f61e40-cdff-4f2c-85e6-5245d1980b9b
 records: null

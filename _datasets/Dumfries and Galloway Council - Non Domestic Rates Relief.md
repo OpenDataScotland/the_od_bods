@@ -6,7 +6,7 @@ date_created: '2019-09-17T20:04:49.144Z'
 date_updated: '2021-12-03'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
-notes: ''
+notes: <p>Non Domestic Rates Relief for Dumfries and Galloway Council Area</p>
 organization: Dumfries and Galloway Council
 original_dataset_link: https://usmart.io/org/dumgal/discovery/discovery-view-detail/8ae4ea96-f03e-427f-a706-b50e9d002348
 records: null

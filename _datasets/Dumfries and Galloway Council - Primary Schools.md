@@ -8,7 +8,7 @@ date_created: '2017-11-21T15:27:30.905Z'
 date_updated: '2017-11-21'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
-notes: ''
+notes: <p>Primary Schools in Dumfries and Galloway</p>
 organization: Dumfries and Galloway Council
 original_dataset_link: https://usmart.io/org/dumgal/discovery/discovery-view-detail/247a79cc-bd65-43c5-8b3b-26d463febe36
 records: null

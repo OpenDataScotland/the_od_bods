@@ -8,7 +8,8 @@ date_created: '2021-02-23T15:43:12.673Z'
 date_updated: '2021-08-13'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: ''
+notes: <p>A real-time hourly upload from each cycling counter within City of Edinburgh
+  Council's network.</p>
 organization: Cycling Scotland
 original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/9aef744b-846b-47c7-a3a6-4aef9f1fe371
 records: null

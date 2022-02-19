@@ -11,7 +11,8 @@ date_created: '2019-10-18T10:57:07.618Z'
 date_updated: '2019-10-30'
 license: https://creativecommons.org/licenses/by/4.0/legalcode
 maintainer: Cycling Scotland
-notes: ''
+notes: <p>This data highlights all primary and secondary schools across Scotland that
+  have received a Cycling Friendly School Award</p>
 organization: Cycling Scotland
 original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/a9c9055c-4393-4b9a-a1f9-e262674f64db
 records: null

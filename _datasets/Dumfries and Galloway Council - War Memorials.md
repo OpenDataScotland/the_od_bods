@@ -6,7 +6,7 @@ date_created: '2018-01-25T16:23:29.465Z'
 date_updated: '2018-03-01'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
-notes: ''
+notes: <p>First and Second World War Memorials In Dumfries and Galloway</p>
 organization: Dumfries and Galloway Council
 original_dataset_link: https://usmart.io/org/dumgal/discovery/discovery-view-detail/f509dd00-1165-4320-bb46-ccd30e6065fc
 records: null

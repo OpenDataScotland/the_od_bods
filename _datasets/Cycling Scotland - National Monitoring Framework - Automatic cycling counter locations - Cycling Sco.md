@@ -9,7 +9,9 @@ date_created: '2021-08-27T10:45:43.733Z'
 date_updated: '2021-09-03'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: ''
+notes: <p>This data set holds the locations for all of Cycling Scotland's permanent
+  cycle counter locations across Scotland, including the installation date of each
+  counter</p>
 organization: Cycling Scotland
 original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/14227968-8ed5-4caf-a5cb-2dbc3539100f
 records: null

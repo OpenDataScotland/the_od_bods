@@ -9,7 +9,8 @@ date_created: '2019-10-29T14:22:23.676Z'
 date_updated: '2020-04-20'
 license: https://creativecommons.org/licenses/by/4.0/legalcode
 maintainer: Cycling Scotland
-notes: ''
+notes: <p>This dataset holds the locations for all of Cycling Scotland's all-mode
+  traffic counts across Scotland, including the dates the counts were undertaken</p>
 organization: Cycling Scotland
 original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/68ab155b-875f-43e7-9c4c-c954ad094dfc
 records: null

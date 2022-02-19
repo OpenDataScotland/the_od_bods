@@ -11,7 +11,8 @@ date_created: '2020-02-05T09:44:01.233Z'
 date_updated: '2020-02-05'
 license: https://creativecommons.org/licenses/by-sa/3.0/
 maintainer: Cycling Scotland
-notes: ''
+notes: <p>Counter Locations on the John Muir Way administered by the Central Scotland
+  Green Network Trust</p>
 organization: Cycling Scotland
 original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/f15da707-ae6a-4899-9d94-68e709e6160a
 records: null

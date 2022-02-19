@@ -10,7 +10,8 @@ date_created: '2019-10-21T11:39:17.535Z'
 date_updated: '2019-10-29'
 license: https://creativecommons.org/licenses/by/4.0/legalcode
 maintainer: Cycling Scotland
-notes: ''
+notes: <p>This dataset shows all campuses across Scotland with a Campus Cycling Officer
+  (CCO) during the academic year 2019/2020</p>
 organization: Cycling Scotland
 original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/63a7fdf1-e5f1-4636-99b2-4d8ed0666776
 records: null

@@ -7,7 +7,7 @@ date_created: '2018-01-26T15:51:42.423Z'
 date_updated: '2018-03-01'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
-notes: ''
+notes: <p>Recycling Centres and Points in Dumfries and Galloway</p>
 organization: Dumfries and Galloway Council
 original_dataset_link: https://usmart.io/org/dumgal/discovery/discovery-view-detail/a423ccc2-51e4-4a86-af72-649e3ef991c1
 records: null

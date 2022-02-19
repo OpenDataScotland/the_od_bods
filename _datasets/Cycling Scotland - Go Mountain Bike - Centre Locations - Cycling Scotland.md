@@ -9,7 +9,8 @@ date_created: '2019-04-04T10:46:24.051Z'
 date_updated: '2019-11-08'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: ''
+notes: <p>This dataset shows the locations of Cycling Scotland's Go Mountrain Bike
+  centres across the UK as of 2019</p>
 organization: Cycling Scotland
 original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/ec90664f-00ed-4ef7-afe0-5a51aba90294
 records: null

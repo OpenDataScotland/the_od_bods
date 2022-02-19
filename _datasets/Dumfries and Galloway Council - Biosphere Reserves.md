@@ -7,7 +7,8 @@ date_created: '2017-11-22T14:12:02.428Z'
 date_updated: '2018-09-27'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
-notes: ''
+notes: <p>Areas of terrestrial and coastal ecosystems promoting the conservation of
+  biodiversity with sustainable use</p>
 organization: Dumfries and Galloway Council
 original_dataset_link: https://usmart.io/org/dumgal/discovery/discovery-view-detail/8ae382e0-1cea-447f-9dc3-b6d1503d08f9
 records: null

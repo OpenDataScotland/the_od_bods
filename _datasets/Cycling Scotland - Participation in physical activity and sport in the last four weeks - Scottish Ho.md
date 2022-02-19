@@ -8,7 +8,9 @@ date_created: '2018-05-11T13:55:31.912Z'
 date_updated: '2019-12-20'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: ''
+notes: <p>Data from the Scottish Household Survey (2007 - 2018) related to people's
+  participation in physical activity and sport in the 4 weeks prior to the question
+  being asked.</p>
 organization: Cycling Scotland
 original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/9bb661cb-1dea-4856-b6c2-6aac6508da03
 records: null

@@ -10,7 +10,9 @@ date_created: '2019-04-30T12:43:55.842Z'
 date_updated: '2019-12-20'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: ''
+notes: <p>Data from Transport and Travel in Scotland and the Scottish Household Survey
+  relating to the number of bikes available for private use by Local Authority in
+  2017.</p>
 organization: Cycling Scotland
 original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/d292fc7e-9657-4f1b-bb65-042262d196fd
 records: null

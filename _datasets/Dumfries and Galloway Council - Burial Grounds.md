@@ -6,7 +6,7 @@ date_created: '2018-01-25T16:07:09.343Z'
 date_updated: '2018-08-23'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
-notes: ''
+notes: <p>Burial Grounds in Dumfries and Galloway</p>
 organization: Dumfries and Galloway Council
 original_dataset_link: https://usmart.io/org/dumgal/discovery/discovery-view-detail/873818de-53dd-4008-ac1c-8cc0c6f74070
 records: null

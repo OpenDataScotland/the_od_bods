@@ -10,7 +10,8 @@ date_created: '2018-05-15T09:39:01.252Z'
 date_updated: '2019-12-20'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: ''
+notes: <p>Data from Reported Road Casualties Scotland showing annual traffic volumes
+  in Scotland from 2006 to 2017.</p>
 organization: Cycling Scotland
 original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/d87bdc18-b1e6-4e65-8b34-b9c83c67553b
 records: null

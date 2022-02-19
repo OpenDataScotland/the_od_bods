@@ -8,7 +8,7 @@ date_created: '2020-06-23T13:45:58.596Z'
 date_updated: '2021-08-17'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: ''
+notes: <p>All-mode traffic data from 48-hour surveys across Scotland in May 2019</p>
 organization: Cycling Scotland
 original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/a5c396fb-6da0-420d-9732-459d5d717264
 records: null

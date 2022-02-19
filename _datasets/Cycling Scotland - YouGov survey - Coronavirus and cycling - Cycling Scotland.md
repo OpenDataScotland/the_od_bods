@@ -9,7 +9,10 @@ date_created: '2020-06-22T08:39:30.001Z'
 date_updated: '2020-06-22'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: ''
+notes: <p>All figures, unless otherwise stated, are from YouGov Plc.  Total sample
+  size was 2035 adults. Fieldwork was undertaken between 14th - 22nd May 2020.  The
+  survey was carried out online. The figures have been weighted and are representative
+  of all Scotland adults (aged 18+).</p>
 organization: Cycling Scotland
 original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/bdd7303d-650f-499e-92ff-c3fd4e70dc1d
 records: null

@@ -7,7 +7,7 @@ date_created: '2019-01-24T15:10:17.795Z'
 date_updated: '2019-01-29'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
-notes: ''
+notes: <p>Secondry School Teachers FTE (Full Time Equivelnt) 2017</p>
 organization: Dumfries and Galloway Council
 original_dataset_link: https://usmart.io/org/dumgal/discovery/discovery-view-detail/9c8928da-f25f-46ac-99a4-ef024ece4b45
 records: null

@@ -9,7 +9,8 @@ date_created: '2019-10-21T10:38:12.077Z'
 date_updated: '2019-10-30'
 license: https://creativecommons.org/licenses/by/4.0/legalcode
 maintainer: Cycling Scotland
-notes: ''
+notes: <p>This data highlights all secondary schools across Scotland that have received
+  a Cycling Scotland Development Fund</p>
 organization: Cycling Scotland
 original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/31b68937-3327-4468-bca1-546d5d25de11
 records: null

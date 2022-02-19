@@ -8,7 +8,7 @@ date_created: '2017-11-23T13:49:58.540Z'
 date_updated: '2019-02-21'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
-notes: ''
+notes: <p>Local Government electoral wards for Dumfries and Galloway</p>
 organization: Dumfries and Galloway Council
 original_dataset_link: https://usmart.io/org/dumgal/discovery/discovery-view-detail/98341983-3962-4f12-881b-0b8966c5e120
 records: null

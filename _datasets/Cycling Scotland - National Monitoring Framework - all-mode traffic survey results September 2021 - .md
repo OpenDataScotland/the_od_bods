@@ -9,7 +9,8 @@ date_created: '2021-11-26T15:37:11.471Z'
 date_updated: '2021-11-29'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: ''
+notes: <p>All-mode traffic data from 48-hour surveys across Scotland in September
+  2021</p>
 organization: Cycling Scotland
 original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/2313c4cf-ea8f-4974-98d1-50476db791cd
 records: null

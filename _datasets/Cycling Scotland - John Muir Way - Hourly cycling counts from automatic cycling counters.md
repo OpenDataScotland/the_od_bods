@@ -8,7 +8,8 @@ date_created: '2021-07-29T17:34:56.704Z'
 date_updated: '2021-08-13'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: ''
+notes: <p>A real-time hourly upload from each cycling counter within John Muir Way's
+  cycle network.</p>
 organization: Cycling Scotland
 original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/e318582c-569a-4734-8304-5bf7df9f0db8
 records: null

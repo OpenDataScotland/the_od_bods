@@ -8,7 +8,8 @@ date_created: '2021-04-26T16:28:38.697Z'
 date_updated: '2021-08-13'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: ''
+notes: <p>A real-time hourly upload from each cycling counter within East Dunbartonshire
+  Council's network.</p>
 organization: Cycling Scotland
 original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/3b6d8d73-4e53-4d36-94fb-940fb830302e
 records: null

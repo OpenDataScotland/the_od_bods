@@ -8,7 +8,7 @@ date_created: '2018-07-16T09:12:21.645Z'
 date_updated: '2018-10-02'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
-notes: ''
+notes: <p>Polling Districts 2017</p>
 organization: Dumfries and Galloway Council
 original_dataset_link: https://usmart.io/org/dumgal/discovery/discovery-view-detail/9414517b-2fcd-47f7-b8eb-8659122454cc
 records: null

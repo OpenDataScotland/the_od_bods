@@ -8,7 +8,7 @@ date_created: '2017-11-17T11:31:23.930Z'
 date_updated: '2018-02-21'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
-notes: ''
+notes: <p>Secondary Schools in Dumfries and Galloway</p>
 organization: Dumfries and Galloway Council
 original_dataset_link: https://usmart.io/org/dumgal/discovery/discovery-view-detail/85141456-67b4-4af9-8c24-17e35d4753f6
 records: null

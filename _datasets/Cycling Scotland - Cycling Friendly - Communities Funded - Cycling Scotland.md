@@ -9,7 +9,8 @@ date_created: '2019-10-21T11:53:05.320Z'
 date_updated: '2019-11-08'
 license: https://creativecommons.org/licenses/by/4.0/legalcode
 maintainer: Cycling Scotland
-notes: ''
+notes: <p>This dataset shows communities across Scotland that have received funding
+  through Cycling Scotland's Cycling Friendly program</p>
 organization: Cycling Scotland
 original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/f623d8cf-cdaf-426a-90f2-63387b8d680b
 records: null

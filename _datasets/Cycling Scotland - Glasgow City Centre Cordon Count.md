@@ -8,7 +8,7 @@ date_created: '2019-05-13T14:44:51.982Z'
 date_updated: '2019-10-28'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: ''
+notes: <p>Cycle data from 2018 City Centre Cordon survey</p>
 organization: Cycling Scotland
 original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/ec524177-6c0e-497d-85b9-3906eb525840
 records: null

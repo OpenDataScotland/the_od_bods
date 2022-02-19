@@ -10,7 +10,8 @@ date_created: '2019-04-30T12:48:40.686Z'
 date_updated: '2019-12-20'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: ''
+notes: <p>Data from the Scottish Household Survey Travel Diary showing percentage
+  of journeys by main mode of travel between 2007 and 2017.</p>
 organization: Cycling Scotland
 original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/43ea90d9-39d4-44a6-bb44-b83a6955f6ab
 records: null

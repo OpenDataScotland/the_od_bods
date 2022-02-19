@@ -9,7 +9,9 @@ date_created: '2018-05-11T14:16:53.569Z'
 date_updated: '2019-12-16'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: ''
+notes: <p>Data from Transport and Travel in Scotland relating to cycling frequency
+  in the previous seven days. Split by gender, age, employment status, net household
+  income, SIMD and more.</p>
 organization: Cycling Scotland
 original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/1891331f-7ec1-4d7a-9ad5-4c43bb817ad8
 records: null

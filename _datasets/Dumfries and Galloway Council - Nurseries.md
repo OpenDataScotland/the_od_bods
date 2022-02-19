@@ -6,7 +6,7 @@ date_created: '2017-11-16T13:35:10.411Z'
 date_updated: '2017-11-16'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
-notes: ''
+notes: <p>Nurseries in Dumfries and Galloway with headcount of children attending.</p>
 organization: Dumfries and Galloway Council
 original_dataset_link: https://usmart.io/org/dumgal/discovery/discovery-view-detail/7b74d2d8-a96f-4b5a-be63-b895e4a939e2
 records: null

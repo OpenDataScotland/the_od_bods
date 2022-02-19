@@ -7,7 +7,8 @@ date_created: '2021-01-28T09:02:11.656Z'
 date_updated: '2021-10-13'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: ''
+notes: <p>Anonymised trip data from Just Eat Cycles in Edinburgh from its inception
+  in September 2018 to its discontinuation in September 2021</p>
 organization: Cycling Scotland
 original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/8550147c-9ce2-4382-929d-3b4ab43e554f
 records: null

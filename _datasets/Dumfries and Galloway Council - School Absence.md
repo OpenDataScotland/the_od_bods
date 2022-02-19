@@ -8,7 +8,7 @@ date_created: '2017-11-15T10:44:08.462Z'
 date_updated: '2017-11-16'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
-notes: ''
+notes: <p>Percentage of Absences by Authorised, Unauthorised and Exclusions</p>
 organization: Dumfries and Galloway Council
 original_dataset_link: https://usmart.io/org/dumgal/discovery/discovery-view-detail/c593551e-56da-46e8-8b8f-7d81e5343964
 records: null

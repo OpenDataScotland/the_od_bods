@@ -8,7 +8,8 @@ date_created: '2021-03-17T17:44:41.886Z'
 date_updated: '2022-02-17'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: ''
+notes: <p>A real-time hourly upload from each cycling counter within Glasgow City
+  Council's network.</p>
 organization: Cycling Scotland
 original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/01c6a04a-1b6f-4121-9b8a-d081c7e6ea28
 records: null

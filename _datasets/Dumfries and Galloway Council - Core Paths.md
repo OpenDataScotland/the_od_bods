@@ -7,7 +7,7 @@ date_created: '2018-07-12T12:59:26.547Z'
 date_updated: '2020-02-04'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
-notes: ''
+notes: <p>Core Paths</p>
 organization: Dumfries and Galloway Council
 original_dataset_link: https://usmart.io/org/dumgal/discovery/discovery-view-detail/a0518b9b-2b70-4334-bd7e-6631adf67c11
 records: null

@@ -6,7 +6,7 @@ date_created: '2018-07-25T12:16:30.004Z'
 date_updated: '2018-09-27'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
-notes: ''
+notes: <p>Transport Contract List</p>
 organization: Dumfries and Galloway Council
 original_dataset_link: https://usmart.io/org/dumgal/discovery/discovery-view-detail/57d4db7f-d91c-4464-92c4-ed12df5db423
 records: null

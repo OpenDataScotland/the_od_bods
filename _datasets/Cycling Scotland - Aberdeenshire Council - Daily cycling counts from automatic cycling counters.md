@@ -8,7 +8,8 @@ date_created: '2021-10-23T14:31:16.854Z'
 date_updated: '2021-11-16'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: ''
+notes: <p>A real-time daily upload from each cycling counter within Aberdeenshire  Council's
+  network.</p>
 organization: Cycling Scotland
 original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/2f91aa68-aebf-4d7b-bea6-9342995848cc
 records: null

@@ -6,7 +6,7 @@ date_created: '2017-11-24T11:53:01.762Z'
 date_updated: '2019-11-26'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
-notes: ''
+notes: <p>Polling Station Locations</p>
 organization: Dumfries and Galloway Council
 original_dataset_link: https://usmart.io/org/dumgal/discovery/discovery-view-detail/6b9e02f9-fa27-4631-a9bb-23ed1d44857c
 records: null

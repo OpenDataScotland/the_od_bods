@@ -8,7 +8,8 @@ date_created: '2021-08-17T15:47:37.719Z'
 date_updated: '2021-09-16'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: ''
+notes: <p>A real-time daily upload from each cycling counter within Stirling Council's
+  network.</p>
 organization: Cycling Scotland
 original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/2baff59f-b06f-4424-b6d9-9dc0d8c1d376
 records: null
