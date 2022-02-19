@@ -9,11 +9,9 @@ notes: <p>The weekly charges and sources of funding for long stay care home resi
   with and without nursing care. All data is for care homes whose main client group
   is aged 65 years and older.</p>
 organization: Public Health Scotland
+original_dataset_link: http://statistics.gov.scot/data/care-homes-weekly-charges-and-sources-of-funding
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/care-homes-weekly-charges-and-sources-of-funding
+resources: []
 schema: default
 title: 'Care Homes: Weekly Charges and Sources of Funding'
 ---

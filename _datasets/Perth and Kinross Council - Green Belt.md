@@ -9,11 +9,9 @@ maintainer: Perth and Kinross Council
 notes: <p>Perth Green Belt from the 2014 Perth &amp; Kinross Council Adopted Local
   Development Plan</p>
 organization: Perth and Kinross Council
+original_dataset_link: https://data.pkc.gov.uk/dataset/green-belt
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.pkc.gov.uk/dataset/green-belt
 - format: HTML
   name: HTML
   url: http://opendata-pkc.opendata.arcgis.com/datasets/dee9de7efe6d460489782d361b668d7b_0

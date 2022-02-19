@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Scottish Government
 notes: <p>Emotional and behavioural problems, by drinking behaviour, age, and gender</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/drinking-behaviour-and-emotional-and-behavioural-problems-salsus
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/drinking-behaviour-and-emotional-and-behavioural-problems-salsus
+resources: []
 schema: default
 title: Drinking behaviour and emotional and behavioural problems (SALSUS)
 ---

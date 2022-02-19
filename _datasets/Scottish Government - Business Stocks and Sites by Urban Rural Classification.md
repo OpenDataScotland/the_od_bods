@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>Number of VAT/PAYE registered stocks and sites operating in Scotland by
   Urban Rural Classification</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/business-stocks-and-sites-by-urban-rural-classification
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/business-stocks-and-sites-by-urban-rural-classification
+resources: []
 schema: default
 title: Business Stocks and Sites by Urban Rural Classification
 ---

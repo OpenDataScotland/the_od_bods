@@ -8,11 +8,9 @@ maintainer: Public Health Scotland
 notes: <p>Percent of people aged 65+ who are admitted as an emergency to hospitals
   at least twice within 12 months.</p>
 organization: Public Health Scotland
+original_dataset_link: http://statistics.gov.scot/data/emergency-repeat-admissions
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/emergency-repeat-admissions
+resources: []
 schema: default
 title: Emergency Repeat Admissions
 ---

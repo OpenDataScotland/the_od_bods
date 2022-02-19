@@ -8,11 +8,9 @@ maintainer: Public Health Scotland
 notes: <p>Percent of children who are classed as healthy weight, overweight, obese
   or severely obese at their Primary 1 review.</p>
 organization: Public Health Scotland
+original_dataset_link: http://statistics.gov.scot/data/p1-BMI-epi
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/p1-BMI-epi
+resources: []
 schema: default
 title: Primary 1 Children Body Mass Index - Epidemiological
 ---

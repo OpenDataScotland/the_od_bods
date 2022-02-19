@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>Proportion of people in Scotland who have been the victim of one or more
   crimes in the past year</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/crime-victimisation-rate-national-indicator
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/crime-victimisation-rate-national-indicator
+resources: []
 schema: default
 title: Crime Victimisation Rate (National Indicator)
 ---

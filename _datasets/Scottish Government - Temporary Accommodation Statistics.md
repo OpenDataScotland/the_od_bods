@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>These figures show a snapshot figure of the number of households in Temporary
   Accommodation per local authority at 31st March each year.</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/temporary-accommodation-statistics
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/temporary-accommodation-statistics
+resources: []
 schema: default
 title: Temporary Accommodation Statistics
 ---

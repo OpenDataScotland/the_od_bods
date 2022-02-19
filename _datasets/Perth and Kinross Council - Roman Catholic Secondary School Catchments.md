@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Perth and Kinross Council
 notes: <p>Boundary for the Roman Catholic secondary school catchment area</p>
 organization: Perth and Kinross Council
+original_dataset_link: https://data.pkc.gov.uk/dataset/roman-catholic-secondary-school-catchments
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.pkc.gov.uk/dataset/roman-catholic-secondary-school-catchments
 - format: HTML
   name: HTML
   url: http://opendata-pkc.opendata.arcgis.com/datasets/ac1cee7b64dd4a84920309b4c7119d96_0

@@ -10,11 +10,9 @@ notes: '<p>Electoral ward boundaries for Perth and Kinross council. For more inf
 
   <p><a href="https://www.ordnancesurvey.co.uk/business-and-government/products/boundary-line.html">https://www.ordnancesurvey.co.uk/business-and-government/products/boundary-line.html</a></p>'
 organization: Perth and Kinross Council
+original_dataset_link: https://data.pkc.gov.uk/dataset/pkc-wards
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.pkc.gov.uk/dataset/pkc-wards
 - format: HTML
   name: HTML
   url: http://opendata-pkc.opendata.arcgis.com/datasets/7dae2aa0df664c978684656aac40f894_0

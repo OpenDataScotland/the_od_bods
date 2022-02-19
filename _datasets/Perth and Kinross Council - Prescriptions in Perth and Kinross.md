@@ -11,11 +11,9 @@ notes: '<p>Detail on prescriptions in the Perth and Kinross, divided</p>
   title="http://www.nationalarchives.gov.uk/doc/open-government-licence/">Open Government
   Licence 3.0</a>.</p>'
 organization: Perth and Kinross Council
+original_dataset_link: https://data.pkc.gov.uk/dataset/prescriptions-in-perth-and-kinross
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.pkc.gov.uk/dataset/prescriptions-in-perth-and-kinross
 - format: CSV
   name: CSV
   url: https://data.pkc.gov.uk/dataset/253b3994-7512-4c99-86d8-7cfd6fa86fed/resource/c47253d0-5e93-4fef-9e82-61085738ef26/download/201706_prescribing_data_tayside_practicenames.csv

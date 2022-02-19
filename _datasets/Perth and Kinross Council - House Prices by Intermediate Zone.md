@@ -13,11 +13,9 @@ notes: <p>An adaptation from Scotland's official statistics giving house prices 
   stable geography that can be used to analyse change over time, with changes only
   occurring after a Census.</p>
 organization: Perth and Kinross Council
+original_dataset_link: https://data.pkc.gov.uk/dataset/house-prices-by-intermediate-zone
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.pkc.gov.uk/dataset/house-prices-by-intermediate-zone
 - format: CSV
   name: CSV
   url: https://data.pkc.gov.uk/dataset/991c64f3-5e67-4f89-8ccd-d3698dd657c6/resource/9d142f4b-f7c5-401e-983d-baba9aa1346a/download/2016housepricebyintzonemodifiedheaders.csv

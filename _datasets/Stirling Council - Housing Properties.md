@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Stirling Council
 notes: <p><strong>Profile of Stirling Council's housing properties and yearly allocations.</strong></p>
 organization: Stirling Council
+original_dataset_link: https://data.stirling.gov.uk/dataset/housing-stock-profiles
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.stirling.gov.uk/dataset/housing-stock-profiles
 - format: CSV
   name: CSV
   url: https://data.stirling.gov.uk/dataset/dfba3b8d-ac94-4c1b-8ecd-c5486cfe437b/resource/c6cdebeb-308e-404e-9466-f28f52e0401b/download/20181001-housing-stock-as-at-june-2018.csv

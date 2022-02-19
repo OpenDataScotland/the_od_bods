@@ -8,11 +8,9 @@ maintainer: Public Health Scotland
 notes: <p>Number of P1 BMI Reviews. Clinical and Epidemiological category measurements
   are provided in separate datasets.</p>
 organization: Public Health Scotland
+original_dataset_link: http://statistics.gov.scot/data/p1-reviews
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/p1-reviews
+resources: []
 schema: default
 title: Primary 1 BMI Distribution
 ---

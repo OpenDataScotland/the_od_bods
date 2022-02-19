@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>How households in Scotland manage financially, from the Scottish Household
   Survey (SHS)</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/household-financial-management---shs
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/household-financial-management---shs
+resources: []
 schema: default
 title: Household Financial Management - Scottish Household Survey
 ---

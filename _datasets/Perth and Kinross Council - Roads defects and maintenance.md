@@ -15,11 +15,9 @@ notes: <p>Summary of roads defects and maintenance carried out in financial year
   for safety inspections on public roads in the Perth and Kinross Council area including
   the nature and priority of response to defects encountered.</p>
 organization: Perth and Kinross Council
+original_dataset_link: https://data.pkc.gov.uk/dataset/roads-defects
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.pkc.gov.uk/dataset/roads-defects
 - format: CSV
   name: CSV
   url: https://data.pkc.gov.uk/dataset/3dc3aa62-d6a6-4f54-93ab-6d434bf64713/resource/5425064c-da6e-471b-9ead-f9d8b2cd143e/download/roads-defects-open-data-2018-19-financial-year.csv

@@ -9,11 +9,9 @@ notes: <p>A designated area where certain pollutants exceed certain levels and t
   need a Detailed Assessment. In PKC nitrogen dioxide and particulate matter have
   been identified.</p>
 organization: Perth and Kinross Council
+original_dataset_link: https://data.pkc.gov.uk/dataset/air-quality-management-area
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.pkc.gov.uk/dataset/air-quality-management-area
 - format: HTML
   name: HTML
   url: http://opendata-pkc.opendata.arcgis.com/datasets/8e7fed0202174329be528a1f9706dcd3_0

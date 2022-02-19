@@ -7,14 +7,9 @@ license: ''
 maintainer: Renfrewshire Council
 notes: ''
 organization: Renfrewshire Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=a4c8f2fa99bd429d86a7922451f7bdd6
 records: null
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=a4c8f2fa99bd429d86a7922451f7bdd6
-- format: IMAGE
-  name: IMAGE
-  url: ''
+resources: []
 schema: default
 title: 'Abbey Cropped '
 ---

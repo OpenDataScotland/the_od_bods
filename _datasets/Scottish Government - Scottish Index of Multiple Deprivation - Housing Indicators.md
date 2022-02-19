@@ -9,11 +9,9 @@ notes: <p>The Scottish Index of Multiple Deprivation (SIMD) was published in Aug
   2016. This dataset contains the indicators that were used to calculate the housing
   domain of SIMD.</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/scottish-index-of-multiple-deprivation---housing-indicators
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/scottish-index-of-multiple-deprivation---housing-indicators
+resources: []
 schema: default
 title: Scottish Index of Multiple Deprivation - Housing Indicators
 ---

@@ -10,11 +10,9 @@ notes: <p>Land and Buildings Transaction Tax (LBTT) notifiable transactions by m
   notifiable transactions in which Additional Dwelling Supplement was declared due
   by month of submission are also provided.</p>
 organization: Revenue Scotland
+original_dataset_link: http://statistics.gov.scot/data/land-and-buildings-transaction-tax-notifiable-transactions
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/land-and-buildings-transaction-tax-notifiable-transactions
+resources: []
 schema: default
 title: Land and Buildings Transaction Tax Notifiable Transactions
 ---

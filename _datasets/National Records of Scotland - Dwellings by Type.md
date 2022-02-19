@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: National Records of Scotland
 notes: <p>Number of dwellings by type</p>
 organization: National Records of Scotland
+original_dataset_link: http://statistics.gov.scot/data/dwellings-type
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/dwellings-type
+resources: []
 schema: default
 title: Dwellings by Type
 ---

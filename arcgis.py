@@ -2,17 +2,26 @@ from urllib import request, parse
 from datetime import datetime
 import json
 import csv
+import os
 
 def get_json(url):
     req = request.Request(url)
     return json.loads(request.urlopen(req).read().decode())
 
+def get_license(dataset):
+    try:
+        return dataset['attributes']['structuredLicense']['url']
+    except:
+        return ""
+
 #start_url = 'https://opendata.arcgis.com/api/v3/search?filter[tags]=any(renfrewshire)&filter[openData]=true'
 
-renfrew_start_url = 'https://opendata.arcgis.com/api/v3/search?catalog[groupIds]=any(79dc9ae7552e4782bf66dadbdf049a0d,bcaad01ef27a4457b9c9406818eaca5d)'
-argyll_start_url = 'https://opendata.arcgis.com/api/v3/search?catalog[groupIds]=any(2391aa86db9148d1857671888aefdc5f)'
-south_ayrshire_start_url = 'https://opendata.arcgis.com/api/v3/search?catalog[groupIds]=any(436655c931664e279f675390213d828e)'
-moray_start_url = 'https://opendata.arcgis.com/api/v3/search?catalog[groupIds]=any(b42b8e7bce20408684689845a268e8e6)'
+start_urls = {
+    'renfrew': 'https://opendata.arcgis.com/api/v3/search?catalog[groupIds]=any(79dc9ae7552e4782bf66dadbdf049a0d,bcaad01ef27a4457b9c9406818eaca5d)',
+    'argyll_and_bute': 'https://opendata.arcgis.com/api/v3/search?catalog[groupIds]=any(2391aa86db9148d1857671888aefdc5f)',
+    'south_ayrshire': 'https://opendata.arcgis.com/api/v3/search?catalog[groupIds]=any(436655c931664e279f675390213d828e)',
+    'moray': 'https://opendata.arcgis.com/api/v3/search?catalog[groupIds]=any(b42b8e7bce20408684689845a268e8e6)'
+    }
 
 def get_datasets(start_url, fname):
     url = start_url
@@ -52,7 +61,7 @@ def get_datasets(start_url, fname):
                         e['attributes'].get('recordCount', ""),
                         ";".join(e['attributes'].get('tags', [])),
                         "", #Manual tags
-                        "", #license
+                        get_license(e), #license
                         e['attributes'].get('searchDescription', "")
                         ])    
 
@@ -67,4 +76,7 @@ def get_datasets(start_url, fname):
                                                                        
 # get_datasets(argyll_start_url, "argyll_and_bute.csv")
 # get_datasets(south_ayrshire_start_url, "south_ayrshire.csv")
-get_datasets(moray_start_url, "moray.csv")
+# get_datasets(moray_start_url, "moray.csv")
+for name, url in start_urls.items():
+    print(name)
+    get_datasets(url, os.path.join('data', 'arcgis', name+'.csv'))

@@ -12,11 +12,9 @@ notes: "<p><a href=\"https://www.gov.scot/collections/scottish-index-of-multiple
   \ (employment, income, health, education, skills and training, geographic access,\
   \ crime and housing), combining them into a single index.</strong></p>"
 organization: Stirling Council
+original_dataset_link: https://data.stirling.gov.uk/dataset/scottish-index-of-multiple-deprivation-simd-2020
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.stirling.gov.uk/dataset/scottish-index-of-multiple-deprivation-simd-2020
 - format: PDF
   name: PDF
   url: https://data.stirling.gov.uk/dataset/41f3da13-b458-4e31-88a3-501bc684ee61/resource/1d9627a9-c7d2-48a6-a67e-e9a66b581716/download/simd-2020-domains-methodology.pdf

@@ -8,11 +8,9 @@ maintainer: Perth and Kinross Council
 notes: <p>Boundaries for secondary school catchment areas excluding Roman Catholic
   Schools.</p>
 organization: Perth and Kinross Council
+original_dataset_link: https://data.pkc.gov.uk/dataset/secondary-school-catchments
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.pkc.gov.uk/dataset/secondary-school-catchments
 - format: HTML
   name: HTML
   url: http://opendata-pkc.opendata.arcgis.com/datasets/95f83f651901440292a82ae2f737828d_0

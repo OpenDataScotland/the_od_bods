@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>A dataset with all of the organisations involved in creating and publishing
   statistics on this site.</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/organisations
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/organisations
+resources: []
 schema: default
 title: Organisations
 ---

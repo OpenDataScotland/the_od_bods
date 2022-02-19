@@ -29,11 +29,9 @@ notes: '<p>Aberdeen City Council in accordance with <a href="http://www.legislat
   City Council''s website</a>, along with a list of additional providers of procurement
   opportunities and contact details for the Commercial and Procurement Service. </p>'
 organization: Aberdeen City Council
+original_dataset_link: https://data.aberdeencity.gov.uk/dataset/aberdeen-city-council-contracts-register
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.aberdeencity.gov.uk/dataset/aberdeen-city-council-contracts-register
 - format: XLSX
   name: XLSX
   url: https://data.aberdeencity.gov.uk/dataset/f319b0c8-50a3-4167-bbb9-69e94a9aa8b1/resource/6878ec51-8fae-4654-ba5f-a9f6f10ba603/download/aberdeen-city-contract-register-feb-2020.xlsx

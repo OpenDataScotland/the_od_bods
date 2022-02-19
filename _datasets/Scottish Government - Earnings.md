@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: "<p>Mean and median gross weekly earnings (\xA3s) by gender, working pattern\
   \ and workplace/residence measure. </p>"
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/earnings
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/earnings
+resources: []
 schema: default
 title: Earnings
 ---

@@ -33,11 +33,9 @@ notes: '<p>The Claimant Count measures the number of people claiming benefit pri
   <p>Further information on the Claimant Count is available in the latest <a href="https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/uklabourmarket/latest">Statistical
   Bulletin</a>.</p>'
 organization: Dundee City Council
+original_dataset_link: https://data.dundeecity.gov.uk/dataset/claimant-count
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.dundeecity.gov.uk/dataset/claimant-count
 - format: CSV
   name: CSV
   url: http://www.nomisweb.co.uk/api/v01/dataset/NM_162_1.data.csv?geography=1883242642...1883242664,1879048547,968885401...968885588&date=latest&gender=0&age=0&measure=1...4&measures=20100&select=date_name,geography_name,geography_code,gender_name,age_name,measure_name,measures_name,obs_value,obs_status_name

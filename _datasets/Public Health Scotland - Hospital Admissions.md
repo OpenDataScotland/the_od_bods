@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Public Health Scotland
 notes: <p>Number of admissions to non-psychiatric/non-obstetric hospitals in Scotland.</p>
 organization: Public Health Scotland
+original_dataset_link: http://statistics.gov.scot/data/hospital-admissions
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/hospital-admissions
+resources: []
 schema: default
 title: Hospital Admissions
 ---

@@ -8,11 +8,9 @@ maintainer: Public Health Scotland
 notes: <p>The number of residents by their type of stay (long/short/respite stay)
   across care home sectors and for various main client groups.</p>
 organization: Public Health Scotland
+original_dataset_link: http://statistics.gov.scot/data/care-homes-type-of-stay
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/care-homes-type-of-stay
+resources: []
 schema: default
 title: 'Care Homes: Type Of Stay'
 ---

@@ -8,11 +8,9 @@ maintainer: Public Health Scotland
 notes: <p>The number of admissions, discharges and deaths in care homes, for different
   main client groups.</p>
 organization: Public Health Scotland
+original_dataset_link: http://statistics.gov.scot/data/care-homes-admissions-discharges-and-deaths
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/care-homes-admissions-discharges-and-deaths
+resources: []
 schema: default
 title: 'Care Homes: Admissions, Discharges and Deaths'
 ---

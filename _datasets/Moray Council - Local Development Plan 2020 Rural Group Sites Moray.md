@@ -9,11 +9,9 @@ license: INSPIRE Regulations 2009
 maintainer: Moray Council
 notes: ''
 organization: Moray Council
+original_dataset_link: https://data-moray.opendata.arcgis.com/datasets/moray::local-devevlopment-plan-2020-rural-group-sites-moray/about
 records: 200
 resources:
-- format: html
-  name: Description
-  url: https://data-moray.opendata.arcgis.com/datasets/moray::local-devevlopment-plan-2020-rural-group-sites-moray/about
 - format: CSV
   name: CSV
   url: https://data-moray.opendata.arcgis.com/datasets/moray::local-devevlopment-plan-2020-rural-group-sites-moray/about

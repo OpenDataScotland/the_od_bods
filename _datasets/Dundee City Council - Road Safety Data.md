@@ -15,11 +15,9 @@ notes: '<p>These files provide detailed road safety data about the circumstances
   and can be found on the <a href="https://data.gov.uk/dataset/road-accidents-safety-data">UK
   government data portal</a>.</p>'
 organization: Dundee City Council
+original_dataset_link: https://data.dundeecity.gov.uk/dataset/road-safety-data
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.dundeecity.gov.uk/dataset/road-safety-data
 - format: CSV
   name: CSV
   url: https://data.dundeecity.gov.uk/dataset/592cec6c-3628-43f8-a804-57144668e12f/resource/c3e7a3fc-5e81-4010-994d-93077c543721/download/road-safety-data-accidents-2016.csv

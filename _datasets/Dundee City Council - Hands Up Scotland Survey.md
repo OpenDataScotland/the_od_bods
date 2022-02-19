@@ -12,11 +12,9 @@ notes: "<p>The <a href=\"https://www.sustrans.org.uk/scotland/hands-up-scotland-
   \ complete the survey in class by asking their pupils \u2018How do you normally\
   \ travel to school?\u2019.</p>"
 organization: Dundee City Council
+original_dataset_link: https://data.dundeecity.gov.uk/dataset/hands-up-scotland-survey
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.dundeecity.gov.uk/dataset/hands-up-scotland-survey
 - format: XLSX
   name: XLSX
   url: https://data.dundeecity.gov.uk/dataset/36f42eab-3c48-46b7-8e78-68c41c0fe22a/resource/3c2f20ba-5b62-4965-94a1-d566d06d9fa3/download/hands-up-scotland-survey_2017_dundee-city.xlsx

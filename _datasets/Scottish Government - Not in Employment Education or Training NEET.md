@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>Number, and percent, of young people (16-19) who were not in education,
   employment or training.</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/neet
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/neet
+resources: []
 schema: default
 title: Not in Employment, Education or Training (NEET)
 ---

@@ -9,11 +9,9 @@ notes: <p>The number and percentage of children living in families in receipt of
   Tax Credit (CTC) whose reported income is less than 60 per cent of the median income
   or in receipt of Income Support (IS) or Income-Based Jobseekers Allowance (JSA).</p>
 organization: HM Revenue and Customs
+original_dataset_link: http://statistics.gov.scot/data/children-in-low-income-families
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/children-in-low-income-families
+resources: []
 schema: default
 title: Children in Low Income Families
 ---

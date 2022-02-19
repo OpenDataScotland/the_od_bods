@@ -17,14 +17,9 @@ notes: "<p>Moray Onshore Wind Energy 2017 Policy Guidance Map for Large Typologi
   \ typology are the areas with the fewest constraints and therefore the greatest\
   \ potential for wind farm developments.</p>"
 organization: Moray Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=886f3db2dff0431480fd86167523d669
 records: 1
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=886f3db2dff0431480fd86167523d669
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Moray Onshore Wind Energy 2017 Policy Guidance Map for Large Typologies (Moray)
 ---

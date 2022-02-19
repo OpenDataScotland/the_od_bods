@@ -8,11 +8,9 @@ maintainer: Public Health Scotland
 notes: <p>The number and percentage of long stay residents by age and sex, for different
   main client groups</p>
 organization: Public Health Scotland
+original_dataset_link: http://statistics.gov.scot/data/care-homes-demography
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/care-homes-demography
+resources: []
 schema: default
 title: 'Care Homes: Demographic Characteristics of Residents'
 ---

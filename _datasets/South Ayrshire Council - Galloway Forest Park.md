@@ -10,14 +10,9 @@ license: ''
 maintainer: South Ayrshire Council
 notes: <p>Extent of the Galloway Forest Park</p>
 organization: South Ayrshire Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=e64ef903744442a5befce9fb19a64e53
 records: 1
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=e64ef903744442a5befce9fb19a64e53
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Galloway Forest Park
 ---

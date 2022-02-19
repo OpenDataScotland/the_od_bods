@@ -27,11 +27,9 @@ notes: "<p>George Washington Wilson (1823-1893), born in <strong>Alvah</strong>,
   \ Gallery online catalogue (please note, all images are \xA9 Aberdeen Art Gallery\
   \ &amp; Museums Collections).</p>"
 organization: Aberdeen City Council
+original_dataset_link: https://data.aberdeencity.gov.uk/dataset/george-washington-wilson
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.aberdeencity.gov.uk/dataset/george-washington-wilson
 - format: XLSX
   name: XLSX
   url: https://data.aberdeencity.gov.uk/dataset/ff66d1cf-8b72-40df-be7f-6330536aea91/resource/992291f7-7cb0-43ab-bf7b-d266240bdc88/download/georgewashingtonwilsonarchive-spreadsheet.xlsx

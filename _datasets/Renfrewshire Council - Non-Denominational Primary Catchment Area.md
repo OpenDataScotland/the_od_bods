@@ -13,14 +13,9 @@ license: ''
 maintainer: Renfrewshire Council
 notes: <p>Education</p>
 organization: Renfrewshire Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=c2a6e872c69f48398701c72d6e23f233
 records: 33
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=c2a6e872c69f48398701c72d6e23f233
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Non-Denominational Primary Catchment Area
 ---

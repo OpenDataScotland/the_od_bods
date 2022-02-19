@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>Quarterly time series data on Scottish approvals, starts and completions
   by sector </p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/new-build-housing-starts-and-completions
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/new-build-housing-starts-and-completions
+resources: []
 schema: default
 title: New Build Housing Starts and Completions
 ---

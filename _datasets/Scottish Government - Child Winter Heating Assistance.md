@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>Child Winter Heating Assistance payments and expenditure since November
   2020</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/child-winter-heating-assistance
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/child-winter-heating-assistance
+resources: []
 schema: default
 title: Child Winter Heating Assistance
 ---

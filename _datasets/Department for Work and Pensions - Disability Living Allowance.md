@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Department for Work and Pensions
 notes: <p>Number of Disability Living Allowance claimants by age group and gender.</p>
 organization: Department for Work and Pensions
+original_dataset_link: http://statistics.gov.scot/data/disability-living-allowance
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/disability-living-allowance
+resources: []
 schema: default
 title: Disability Living Allowance
 ---

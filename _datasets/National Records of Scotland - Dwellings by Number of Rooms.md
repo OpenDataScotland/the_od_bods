@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: National Records of Scotland
 notes: <p>Number of dwellings by number of rooms within the dwelling</p>
 organization: National Records of Scotland
+original_dataset_link: http://statistics.gov.scot/data/dwellings-rooms
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/dwellings-rooms
+resources: []
 schema: default
 title: Dwellings by Number of Rooms
 ---

@@ -13,11 +13,9 @@ notes: '<p><strong><a href="https://www.legislation.gov.uk/ukpga/1991/40/content
   <p><strong>This dataset lists all PCNs issued and the contravention (reason) for
   the issue since DPE began on 03/05/2017.</strong></p>'
 organization: Stirling Council
+original_dataset_link: https://data.stirling.gov.uk/dataset/penalty-charge-notices
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.stirling.gov.uk/dataset/penalty-charge-notices
 - format: CSV
   name: CSV
   url: https://data.stirling.gov.uk/dataset/cb5bf6f3-4879-4baa-a7e9-243477d49aab/resource/ac2ebe4e-5eee-480b-a64a-536d48321ae4/download/20191016-parking-control-notices-03.05.2017-to-31.03.2018.csv

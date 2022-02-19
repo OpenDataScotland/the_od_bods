@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Scottish Government
 notes: <p>Number, and percent, of school leavers by destination from follow up survey</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/school-leaver-destinations-followup
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/school-leaver-destinations-followup
+resources: []
 schema: default
 title: School Leaver Destinations - Follow Up
 ---

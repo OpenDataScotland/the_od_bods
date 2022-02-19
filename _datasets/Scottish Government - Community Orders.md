@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>Number of Social Work Orders given by type, age, gender, employment status
   and ethnicity.</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/community-orders
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/community-orders
+resources: []
 schema: default
 title: Community Orders
 ---

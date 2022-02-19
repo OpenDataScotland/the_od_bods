@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: '<p>School leaver average total tariff score: grouped into the lowest 20%,
   middle 60% and highest 20% of attainers for each school</p>'
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/attainment-for-all
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/attainment-for-all
+resources: []
 schema: default
 title: Schools - Attainment for All
 ---

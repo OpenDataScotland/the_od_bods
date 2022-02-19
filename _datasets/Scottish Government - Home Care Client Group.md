@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>Number of home care clients by care type or disability. Number and rate
   per 1,000 population of home care clients by disability/condition</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/home-care-client-group
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/home-care-client-group
+resources: []
 schema: default
 title: Home Care Client Group
 ---

@@ -10,11 +10,9 @@ notes: <p>Financial and employment data by broad industry by year. Annual Busine
   and Service Sectors in Scotland. The statistics are best suited to the analysis
   of individual industries rather than the economy as a whole. </p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/annual-business-survey
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/annual-business-survey
+resources: []
 schema: default
 title: Annual Business Survey
 ---

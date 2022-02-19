@@ -21,11 +21,9 @@ notes: '<p>School term dates for schools within Dundee City for the following ac
   <p>Dates include public and school holidays as well as staff in service days. iCalendar
   format allows you to add dates to most calendar applications. </p>'
 organization: Dundee City Council
+original_dataset_link: https://data.dundeecity.gov.uk/dataset/school-term-dates
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.dundeecity.gov.uk/dataset/school-term-dates
 - format: ICS
   name: ICS
   url: https://data.dundeecity.gov.uk/dataset/b815109b-3aeb-45b0-bac0-1cdbcd36e295/resource/5740679d-4677-4461-a2f8-1dc36266e84f/download/school-terms-dates_-dundee-city.ics

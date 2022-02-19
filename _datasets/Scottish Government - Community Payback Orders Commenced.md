@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>Community payback orders commenced in each year from 2011-12 by age group
   and gender.</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/community-payback-orders-commenced
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/community-payback-orders-commenced
+resources: []
 schema: default
 title: 'Community Payback Orders: Commenced'
 ---

@@ -8,11 +8,9 @@ maintainer: National Records of Scotland
 notes: <p>Number of births by gender that were registered in a calendar year, or occurred
   in a mid-year period (1 July to 30 June). </p>
 organization: National Records of Scotland
+original_dataset_link: http://statistics.gov.scot/data/births
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/births
+resources: []
 schema: default
 title: Births
 ---

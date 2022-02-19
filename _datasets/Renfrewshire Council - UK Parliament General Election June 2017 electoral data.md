@@ -9,14 +9,9 @@ license: ''
 maintainer: Renfrewshire Council
 notes: <p>UK Parliament General Election 8 June 2017 electoral data.</p>
 organization: Renfrewshire Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=1f9c282884ce450f9f32e81402f52f5c
 records: 3
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=1f9c282884ce450f9f32e81402f52f5c
-- format: TABLE
-  name: TABLE
-  url: ''
+resources: []
 schema: default
 title: UK Parliament General Election June 2017 (electoral data)
 ---

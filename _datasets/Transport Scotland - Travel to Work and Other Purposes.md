@@ -9,11 +9,9 @@ notes: <p>Statistics on what mode of transport (walking, cycling, car, bus, trai
   people usually use to get to work and education, purposes of journeys made by Scottish
   people.</p>
 organization: Transport Scotland
+original_dataset_link: http://statistics.gov.scot/data/travel-to-work-other
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/travel-to-work-other
+resources: []
 schema: default
 title: Travel to Work and Other Purposes
 ---

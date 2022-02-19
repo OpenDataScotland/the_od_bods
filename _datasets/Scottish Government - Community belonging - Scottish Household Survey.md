@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>How strongly adults in Scotland feel they belong to their immediate neighbourhood,
   from the Scottish Household Survey (SHS)</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/community-belonging---shs
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/community-belonging---shs
+resources: []
 schema: default
 title: Community belonging - Scottish Household Survey
 ---

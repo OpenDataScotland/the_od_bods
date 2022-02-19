@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: National Records of Scotland
 notes: <p>Migration to and from Scotland by single year of age, sex and year.</p>
 organization: National Records of Scotland
+original_dataset_link: http://statistics.gov.scot/data/migration-to-and-from-scotland
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/migration-to-and-from-scotland
+resources: []
 schema: default
 title: Migration To and From Scotland
 ---

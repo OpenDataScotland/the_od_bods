@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>How adults in Scotland rate their local neighbourhood as a place to live,
   from the Scottish Household Survey (SHS)</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/neighbourhood-rating---shs
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/neighbourhood-rating---shs
+resources: []
 schema: default
 title: Neighbourhood rating - Scottish Household Survey
 ---

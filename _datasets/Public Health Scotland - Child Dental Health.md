@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Public Health Scotland
 notes: <p>Percentage of P1 children in Scotland with no obvious decay experience.</p>
 organization: Public Health Scotland
+original_dataset_link: http://statistics.gov.scot/data/child-dental-health
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/child-dental-health
+resources: []
 schema: default
 title: Child Dental Health
 ---

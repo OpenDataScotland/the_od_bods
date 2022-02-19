@@ -12,11 +12,9 @@ notes: <p>OS Open Rivers is a two-dimensional topologically connected link and n
   central alignment of the watercourse. Attribution indicates the Flow Direction and
   Name of the watercourse.</p>
 organization: Perth and Kinross Council
+original_dataset_link: https://data.pkc.gov.uk/dataset/os-open-rivers
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.pkc.gov.uk/dataset/os-open-rivers
 - format: HTML
   name: HTML
   url: https://www.ordnancesurvey.co.uk/business-government/products/open-map-rivers

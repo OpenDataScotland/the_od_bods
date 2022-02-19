@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>Applications received and authorised, and total value of payments for Scottish
   Child Payment</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/scottish-child-payment-applications-and-payments
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/scottish-child-payment-applications-and-payments
+resources: []
 schema: default
 title: 'Scottish Child Payment: Applications and Payments'
 ---

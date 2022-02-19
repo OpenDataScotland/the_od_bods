@@ -29,11 +29,9 @@ notes: '<p>Energy usage recorded every half hour for primary and high schools in
 
   </ul>'
 organization: Dundee City Council
+original_dataset_link: https://data.dundeecity.gov.uk/dataset/energy-consumption-of-schools
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.dundeecity.gov.uk/dataset/energy-consumption-of-schools
 - format: CSV
   name: CSV
   url: https://data.dundeecity.gov.uk/dataset/7027c35f-d6b6-4306-9e82-fd61dc1e2256/resource/96e14a3c-4828-49fd-a69a-057d8f99bc85/download/schools-energy-consumption-gas.csv

@@ -9,11 +9,9 @@ notes: <p>Mental wellbeing by tenure, household type, age, sex and disability. T
   Scottish Survey Core Questions is an innovative project drawing together multiple
   household surveys to provide a large sample for subnational analysis.</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/mental-wellbeing-sscq
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/mental-wellbeing-sscq
+resources: []
 schema: default
 title: Mental Wellbeing - Scottish Surveys Core Questions
 ---

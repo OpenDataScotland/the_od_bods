@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Scottish Government
 notes: <p>The percentage of 13 and 15 year olds who have ever drunk alcohol.</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/alcohol-use-ever-among-young-people-salsus
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/alcohol-use-ever-among-young-people-salsus
+resources: []
 schema: default
 title: Alcohol use ever among young people (SALSUS)
 ---

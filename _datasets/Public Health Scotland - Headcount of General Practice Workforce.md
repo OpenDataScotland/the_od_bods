@@ -8,11 +8,9 @@ maintainer: Public Health Scotland
 notes: <p>Data indicates headcount of GP workforce by Health Board and Local Authority
   as at 30 September for each year presented.</p>
 organization: Public Health Scotland
+original_dataset_link: http://statistics.gov.scot/data/headcount-of-general-practice-workforce
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/headcount-of-general-practice-workforce
+resources: []
 schema: default
 title: Headcount of General Practice Workforce
 ---

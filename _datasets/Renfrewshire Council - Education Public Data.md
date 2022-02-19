@@ -13,14 +13,9 @@ license: ''
 maintainer: Renfrewshire Council
 notes: <p>Education</p>
 organization: Renfrewshire Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=c2a6e872c69f48398701c72d6e23f233
 records: null
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=c2a6e872c69f48398701c72d6e23f233
-- format: FEATURE SERVICE
-  name: FEATURE SERVICE
-  url: ''
+resources: []
 schema: default
 title: Education Public Data
 ---

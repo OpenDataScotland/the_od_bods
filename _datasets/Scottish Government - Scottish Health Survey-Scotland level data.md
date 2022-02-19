@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>Indicators of population health and related risk factors from the Scottish
   Health Survey (2008-2019).</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/scottish-health-survey-scotland-level-data
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/scottish-health-survey-scotland-level-data
+resources: []
 schema: default
 title: Scottish Health Survey-Scotland level data
 ---

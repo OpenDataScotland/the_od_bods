@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>Number, and percent, of people aged 16+ who have never had a paid or unpaid
   job</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/never-worked
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/never-worked
+resources: []
 schema: default
 title: Never Worked
 ---

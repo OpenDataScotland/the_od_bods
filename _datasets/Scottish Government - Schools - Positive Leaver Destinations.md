@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>The percentage of school leavers going to a 'positive destination' on leaving
   school</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/positive-destinations
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/positive-destinations
+resources: []
 schema: default
 title: Schools - Positive Leaver Destinations
 ---

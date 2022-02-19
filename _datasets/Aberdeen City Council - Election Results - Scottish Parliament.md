@@ -66,11 +66,9 @@ notes: '<p>In Scottish parliamentary elections voters use the <strong>first past
 
   </ul>'
 organization: Aberdeen City Council
+original_dataset_link: https://data.aberdeencity.gov.uk/dataset/election-results-scottish-parliament
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.aberdeencity.gov.uk/dataset/election-results-scottish-parliament
 - format: CSV
   name: CSV
   url: https://data.aberdeencity.gov.uk/dataset/778d3ccd-22ae-4676-afc6-4c82ffda2cc3/resource/658734cf-c435-4bb4-aba0-4501538d6bf3/download/scotparl2016-constituency-abcrl.csv

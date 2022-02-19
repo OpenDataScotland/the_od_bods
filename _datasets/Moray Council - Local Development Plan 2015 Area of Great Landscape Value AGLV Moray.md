@@ -18,14 +18,9 @@ notes: "<p>The Local Development Plan 2015 was superseded by the Local Developme
   \ of the new track, but also from the drainage and erosion effects on the local\
   \ area.</p>"
 organization: Moray Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=7fe8dc2f9ea1476592c29db5661450f4
 records: 8
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=7fe8dc2f9ea1476592c29db5661450f4
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Local Development Plan 2015 Area of Great Landscape Value (AGLV) (Moray)
 ---

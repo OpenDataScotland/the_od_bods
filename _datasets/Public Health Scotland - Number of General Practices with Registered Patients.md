@@ -8,11 +8,9 @@ maintainer: Public Health Scotland
 notes: <p>Data indicates the number of general practices (GP surgeries) by area as
   at 1 October for each year presented.</p>
 organization: Public Health Scotland
+original_dataset_link: http://statistics.gov.scot/data/number-of-general-practices-with-registered-patients
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/number-of-general-practices-with-registered-patients
+resources: []
 schema: default
 title: Number of General Practices with Registered Patients
 ---

@@ -13,14 +13,9 @@ notes: <p>Action proposed by the 2015 Local Development Plan in support of its s
   plans and proposals involving safeguarding measures, feasibility studies into options
   and the undertaking of development road schemes.</p>
 organization: Argyll and Bute Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=c6ec4637aa244b41a86e2623b6089a84
 records: 5
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=c6ec4637aa244b41a86e2623b6089a84
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Open Data - Development Road Action Area
 ---

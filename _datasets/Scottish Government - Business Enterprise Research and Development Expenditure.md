@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>Expenditure and employment on research and development by businesses in
   Scotland since 2001.</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/business-enterprise-research-and-development-expenditure
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/business-enterprise-research-and-development-expenditure
+resources: []
 schema: default
 title: Business Enterprise Research and Development Expenditure
 ---

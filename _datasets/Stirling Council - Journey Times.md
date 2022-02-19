@@ -28,11 +28,9 @@ notes: "<p><strong>This dataset grouping details the output from transport monit
   https://www.roadworksscotland.org/\">Scottish Roadworks Commissioner</a> can give\
   \ further details on any planned roadworks throughout the country.</strong></p>"
 organization: Stirling Council
+original_dataset_link: https://data.stirling.gov.uk/dataset/journey-times
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.stirling.gov.uk/dataset/journey-times
 - format: CSV
   name: CSV
   url: https://data.stirling.gov.uk/dataset/6ce872f4-2f71-4676-a032-9547f94782d7/resource/0e2eb140-c3c9-4312-8508-ebeb321a4de7/download/20200115-journey-times-jan-19-to-dec-19-v1.0.csv

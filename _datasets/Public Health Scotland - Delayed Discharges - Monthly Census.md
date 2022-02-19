@@ -8,11 +8,9 @@ maintainer: Public Health Scotland
 notes: <p>Number of delays by length of delay and reason for delay at the monthly
   census point.</p>
 organization: Public Health Scotland
+original_dataset_link: http://statistics.gov.scot/data/delayed-discharges-monthly-census
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/delayed-discharges-monthly-census
+resources: []
 schema: default
 title: Delayed Discharges - Monthly Census
 ---

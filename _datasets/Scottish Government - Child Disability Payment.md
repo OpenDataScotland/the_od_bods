@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Scottish Government
 notes: <p>Applications received and authorised for Child Disability Payment</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/child-disability-payment
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/child-disability-payment
+resources: []
 schema: default
 title: Child Disability Payment
 ---

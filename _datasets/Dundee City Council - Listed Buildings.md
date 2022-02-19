@@ -32,11 +32,9 @@ notes: '<p>Buildings are listed by Historic Scotland for their special architect
   can also visit <a href="https://www.historicenvironment.scot/advice-and-support/listing-scheduling-and-designations/listed-buildings/search-for-a-listed-building/">Historic
   Environment Scotland for national data</a> on listed buildings.</p>'
 organization: Dundee City Council
+original_dataset_link: https://data.dundeecity.gov.uk/dataset/listed-buildings
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.dundeecity.gov.uk/dataset/listed-buildings
 - format: CSV
   name: CSV
   url: http://inspire.dundeecity.gov.uk/geoserver/inspire/wfs?version=2.0.0&service=wfs&request=GetFeature&typeName=inspire:LISTEDBUILDINGS&outputFormat=csv

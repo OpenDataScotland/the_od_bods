@@ -8,11 +8,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Dumfries and Galloway Council
 notes: ''
 organization: Dumfries and Galloway Council
+original_dataset_link: https://usmart.io/org/dumgal/discovery/discovery-view-detail/0aeb8640-04ea-44e3-9c03-63b53a3fe7d4
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://usmart.io/org/dumgal/discovery/discovery-view-detail/0aeb8640-04ea-44e3-9c03-63b53a3fe7d4
 - format: CSV
   name: CSV
   url: https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/resource?resourceGUID=bcd1bd61-af38-4ffb-8a49-35e8e18a0372

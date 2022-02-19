@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>Number, and percent, of people receiving job related training in the last
   3 months.</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/job-related-training
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/job-related-training
+resources: []
 schema: default
 title: Job Related Training
 ---

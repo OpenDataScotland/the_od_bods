@@ -8,11 +8,9 @@ maintainer: National Records of Scotland
 notes: <p>Mid-year population estimates. Higher geographies are aggregated from 2011
   Data Zones.</p>
 organization: National Records of Scotland
+original_dataset_link: http://statistics.gov.scot/data/population-estimates-current-geographic-boundaries
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/population-estimates-current-geographic-boundaries
+resources: []
 schema: default
 title: Population Estimates (Current Geographic Boundaries)
 ---

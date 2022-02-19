@@ -12,11 +12,9 @@ notes: '<p>National Public Transport Access Nodes (NaPTAN) is the national syste
   <p>The links provided lead to the up-to-date NaPTAN, filtered to only include points
   that fall within the Perth &amp; Kinross area.</p>'
 organization: Perth and Kinross Council
+original_dataset_link: https://data.pkc.gov.uk/dataset/naptan-perth-kinross
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.pkc.gov.uk/dataset/naptan-perth-kinross
 - format: XML
   name: XML
   url: http://naptan.app.dft.gov.uk/DataRequest/Naptan.ashx?format=xml&LA=648

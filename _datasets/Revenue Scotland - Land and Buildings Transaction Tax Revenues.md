@@ -9,11 +9,9 @@ notes: <p>Land and Buildings Transaction Tax revenues by month of submission, ty
   of transaction, type of property and total consideration. Additional Dwelling Supplement
   revenue and repayments claimed by month of submission are also provided.</p>
 organization: Revenue Scotland
+original_dataset_link: http://statistics.gov.scot/data/land-and-buildings-transaction-tax-revenues
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/land-and-buildings-transaction-tax-revenues
+resources: []
 schema: default
 title: Land and Buildings Transaction Tax Revenues
 ---

@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Scottish Government
 notes: <p>Indicators from the Scottish House Condition Survey (SHCS)</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/shqs
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/shqs
+resources: []
 schema: default
 title: Scottish Housing Quality Standard (SHQS)
 ---

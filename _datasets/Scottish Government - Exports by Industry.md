@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>Scottish international exports and Scottish exports to the rest of the UK
   broken down by industry sector.</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/exports
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/exports
+resources: []
 schema: default
 title: Exports by Industry
 ---

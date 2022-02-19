@@ -15,14 +15,9 @@ notes: "<p>This dataset provide the numbers and rates of fires in Renfrewshire d
   \ taken on different dates such as the statistics published on the\_Scottish Fire\
   \ and Rescue Service website.</p>"
 organization: Renfrewshire Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=5ccecdc001ad421ebac54c69b23bf914
 records: 38
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=5ccecdc001ad421ebac54c69b23bf914
-- format: TABLE
-  name: TABLE
-  url: ''
+resources: []
 schema: default
 title: Fire - Type of Incident 2017/18
 ---

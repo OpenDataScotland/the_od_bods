@@ -57,6 +57,24 @@ def merge_data():
     ### Creating a dummy column
     data['AssetStatus'] = None
 
+
+    ### Cleaning dataset categories
+    def tidy_categories(categories_string):
+        """tidies up the categories: removes commas, strips whitespace, converts all to lower and strips any trailing ";"
+
+        Args:
+            categories_string (string): the dataset categories as a string
+        """
+        tidied_string = str(categories_string).replace(',',';')
+        tidied_string=";".join(str(cat.lower().strip()) for cat in tidied_string.split(';') if cat!="")
+        if (len(tidied_string)>0):
+            if (tidied_string[-1]==";"):
+                tidied_string = tidied_string[:-1]
+        return tidied_string
+
+    data['OriginalTags'] = data['OriginalTags'].apply(lambda x: tidy_categories(x))
+    data['ManualTags'] = data['ManualTags'].apply(lambda x: tidy_categories(x))
+    
     ### Output combined data to csv
     data.to_csv('../data/merged_output.csv')
 

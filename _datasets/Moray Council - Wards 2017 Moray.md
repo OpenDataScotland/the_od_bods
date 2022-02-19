@@ -8,14 +8,9 @@ license: ''
 maintainer: Moray Council
 notes: <p>Wards 2017 (Moray) (OS Boundary Line Open Data)</p>
 organization: Moray Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=8fb355abdba34c07b60dc31f3d55377c
 records: 8
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=8fb355abdba34c07b60dc31f3d55377c
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Wards 2017 (Moray)
 ---

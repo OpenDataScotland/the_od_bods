@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>Number of Full-Time Equivalent (FTE) police officers in Scotland at the
   end of each respective quarter.</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/police-officer-quarterly-strength
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/police-officer-quarterly-strength
+resources: []
 schema: default
 title: Police Officer Quarterly Strength
 ---

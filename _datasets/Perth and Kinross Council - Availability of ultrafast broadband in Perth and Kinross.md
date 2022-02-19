@@ -15,11 +15,9 @@ notes: <p>Percentage of premises that have Ultrafast Broadband coverage (300Mbit
   infrastructure. However, the information provided in this file may be useful in
   identifying variations in broadband availability. More information from - https://www.ofcom.org.uk/research-and-data/multi-sector-research/infrastructure-research/connected-nations-update-spring-2018</p>
 organization: Perth and Kinross Council
+original_dataset_link: https://data.pkc.gov.uk/dataset/availability-of-ultrafast-broadband-in-pkc
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.pkc.gov.uk/dataset/availability-of-ultrafast-broadband-in-pkc
 - format: HTML
   name: HTML
   url: http://opendata-pkc.opendata.arcgis.com/datasets/db354a69d2304b0a8b75cca71c316286_0

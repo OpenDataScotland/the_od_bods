@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>Percentage of adults living within various walking distances to their nearest
   green or blue space</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/green-or-blue-space-shs
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/green-or-blue-space-shs
+resources: []
 schema: default
 title: Distance to Green or Blue Space - Scottish Household Survey
 ---

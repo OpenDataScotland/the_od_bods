@@ -8,11 +8,9 @@ maintainer: Scottish Government
 notes: <p>Geography lookup tables used for aggregation, from 2011 data zones to higher
   level geographies</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/data-zone-lookup
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/data-zone-lookup
+resources: []
 schema: default
 title: Data Zone Lookup
 ---

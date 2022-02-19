@@ -9,11 +9,9 @@ notes: <p>Current contract register, containing details of contract opportunitie
   with Dundee City Council. Link to Public Contracts Scotland, the electronic national
   contracts advertising portal.</p>
 organization: Dundee City Council
+original_dataset_link: https://data.dundeecity.gov.uk/dataset/contract-register
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.dundeecity.gov.uk/dataset/contract-register
 - format: HTML
   name: HTML
   url: https://www.publiccontractsscotland.gov.uk/Contracts/Contracts_Search.aspx?AuthID=AA00220

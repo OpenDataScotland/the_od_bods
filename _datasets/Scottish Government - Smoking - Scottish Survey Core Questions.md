@@ -9,11 +9,9 @@ notes: <p>Current smokers by Current smokers by tenure, household type, age, sex
   disability. The Scottish Survey Core Questions is an innovative project drawing
   together multiple household surveys to provide a large sample for subnational analysis.</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/smoking-sscq
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/smoking-sscq
+resources: []
 schema: default
 title: Smoking - Scottish Survey Core Questions
 ---

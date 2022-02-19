@@ -9,11 +9,9 @@ notes: <p>Number of social work orders completed/terminated in each local author
   area from 2004-05 onwards, broken down by type of order and whether successfully
   completed.</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/social-work-orders-terminated
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/social-work-orders-terminated
+resources: []
 schema: default
 title: Social Work Orders Terminated
 ---

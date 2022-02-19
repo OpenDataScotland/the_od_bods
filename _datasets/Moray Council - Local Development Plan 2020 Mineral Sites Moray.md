@@ -8,14 +8,9 @@ license: ''
 maintainer: Moray Council
 notes: <p>Local Development Plan 2020 Mineral Sites (Moray)</p>
 organization: Moray Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=ddbc67e3368447b28218fc71fe53fd73
 records: 20
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=ddbc67e3368447b28218fc71fe53fd73
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Local Development Plan 2020 Mineral Sites (Moray)
 ---

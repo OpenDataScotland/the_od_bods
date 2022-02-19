@@ -9,11 +9,9 @@ notes: <p>Job Start Payment is a new benefit that helps young people in Scotland
   aged 16 to 24, who are receiving certain benefits, with the costs of starting a
   new job.</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/job-start-payment-applications-and-payments
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/job-start-payment-applications-and-payments
+resources: []
 schema: default
 title: 'Job Start Payment: Applications and Payments'
 ---

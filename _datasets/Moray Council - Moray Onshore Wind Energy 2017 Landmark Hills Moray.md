@@ -8,14 +8,9 @@ license: ''
 maintainer: Moray Council
 notes: <p>Moray Onshore Wind Energy 2017 Landmark Hills (Moray)</p>
 organization: Moray Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=9ea1485201f9406987d8813481c3d651
 records: 19
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=9ea1485201f9406987d8813481c3d651
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Moray Onshore Wind Energy 2017 Landmark Hills (Moray)
 ---

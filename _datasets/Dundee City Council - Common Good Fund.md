@@ -16,11 +16,9 @@ notes: '<p>Awards and recipients of the Common Good Fund. The Common Good Fund i
   here. Other organisations using the standard and their associated data can be found
   on the <a href="http://www.threesixtygiving.org/">360Giving</a> website.</p>'
 organization: Dundee City Council
+original_dataset_link: https://data.dundeecity.gov.uk/dataset/common-good-fund
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.dundeecity.gov.uk/dataset/common-good-fund
 - format: CSV
   name: CSV
   url: https://data.dundeecity.gov.uk/dataset/a81848fd-7b66-454c-aab5-915a149025cb/resource/61ad4749-d702-4c17-81b3-79a6ed85f67e/download/360-giving-dundeecommongooddata.csv

@@ -80,7 +80,7 @@ for r in fulld.values:
             file_type = r[ind('FileType')]
         ))
 
-scotgov_data = pd.read_csv("scotgov-datasets.csv", dtype=str, na_filter=False)
+scotgov_data = pd.read_csv("data/scotgov-datasets.csv", dtype=str, na_filter=False)
 for r in scotgov_data.values:
     ds = Dataset(
         title = r[0],
@@ -127,11 +127,10 @@ for k, ds in data.items():
     y['title'] = ds.title
     y['organization'] = ds.owner
     y['notes'] = markdown.markdown(ds.description)
-    y['resources'] = [{'name': 'Description',
-                       'url': ds.page_url,
-                       'format': 'html'}] + [{'name': d.file_type,
-                                              'url': d.url,
-                                              'format': d.file_type} for d in ds.files]
+    y['original_dataset_link'] = ds.page_url
+    y['resources'] = [{'name': d.file_type,
+                       'url': d.url,
+                       'format': d.file_type} for d in ds.files if d.url]
     y['license'] = license_link(ds.license)
     y['category'] = ds.original_tags + ds.manual_tags
     y['maintainer'] = ds.owner

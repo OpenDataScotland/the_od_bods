@@ -10,11 +10,9 @@ notes: <p>Scottish Landfill Tax (SLfT) revenues and contributions to the Scottis
   the number of SLfT returns received and the number of landfill sites covered by
   these returns is also provided.</p>
 organization: Revenue Scotland
+original_dataset_link: http://statistics.gov.scot/data/scottish-landfill-tax
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/scottish-landfill-tax
+resources: []
 schema: default
 title: Scottish Landfill Tax
 ---

@@ -11,14 +11,9 @@ notes: "<p>Administrative Areas used by Argyll and Bute Council for administerin
   \ CowalHelensburgh\_and LomondMid Argyll,\_Kintyre and the IslandsOban, Lorn and\
   \ the Isles</p>"
 organization: Argyll and Bute Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=17079d024402462788d9825b6e474da1
 records: 4
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=17079d024402462788d9825b6e474da1
-- format: FEATURE LAYER
-  name: FEATURE LAYER
-  url: ''
+resources: []
 schema: default
 title: Open Data - Administrative Area
 ---

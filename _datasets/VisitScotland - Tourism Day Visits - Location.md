@@ -8,11 +8,9 @@ maintainer: VisitScotland
 notes: <p>The Great Britain Day Visits Survey measures the visits and expenditure
   of tourism day visitors to Scotland.</p>
 organization: VisitScotland
+original_dataset_link: http://statistics.gov.scot/data/tourism-day-visits---location
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/tourism-day-visits---location
+resources: []
 schema: default
 title: Tourism Day Visits - Location
 ---

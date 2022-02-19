@@ -12,14 +12,9 @@ license: ''
 maintainer: Renfrewshire Council
 notes: ''
 organization: Renfrewshire Council
+original_dataset_link: https://www.arcgis.com/home/item.html?id=c86021e027d141969ead4a69f3c569ff
 records: null
-resources:
-- format: html
-  name: Description
-  url: https://www.arcgis.com/home/item.html?id=c86021e027d141969ead4a69f3c569ff
-- format: FEATURE SERVICE
-  name: FEATURE SERVICE
-  url: ''
+resources: []
 schema: default
 title: Non Statutory Boundaries
 ---

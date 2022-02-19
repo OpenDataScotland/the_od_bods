@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Scottish Government
 notes: <p>Travel times (minutes) to key services by car or public transport</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/travel-times
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/travel-times
+resources: []
 schema: default
 title: Travel times to key services by car or public transport
 ---

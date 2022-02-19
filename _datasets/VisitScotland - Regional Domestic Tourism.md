@@ -9,11 +9,9 @@ notes: <p>Domestic tourism statistics by region and year. All figures come from 
   Great Britain Tourism Survey (GBTS) and represent 3-year annual averages due to
   small sample sizes on regional level.</p>
 organization: VisitScotland
+original_dataset_link: http://statistics.gov.scot/data/regional-domestic-tourism
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/regional-domestic-tourism
+resources: []
 schema: default
 title: Regional Domestic Tourism
 ---

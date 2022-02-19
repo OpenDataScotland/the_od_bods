@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Scottish Government
 notes: <p>Percentage of places in Care Homes which have ensuite facilities</p>
 organization: Scottish Government
+original_dataset_link: http://statistics.gov.scot/data/ensuite-places-in-care-homes
 records: null
-resources:
-- format: html
-  name: Description
-  url: http://statistics.gov.scot/data/ensuite-places-in-care-homes
+resources: []
 schema: default
 title: Places in Care Homes with En-Suite Facilities
 ---

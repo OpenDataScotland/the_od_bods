@@ -7,11 +7,9 @@ license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version
 maintainer: Perth and Kinross Council
 notes: <p>Community Council boundaries adopted in November 2011.</p>
 organization: Perth and Kinross Council
+original_dataset_link: https://data.pkc.gov.uk/dataset/community-councils
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.pkc.gov.uk/dataset/community-councils
 - format: HTML
   name: HTML
   url: http://opendata-pkc.opendata.arcgis.com/datasets/0d911f5dd4e14c03b0b434ed6076fe00_0

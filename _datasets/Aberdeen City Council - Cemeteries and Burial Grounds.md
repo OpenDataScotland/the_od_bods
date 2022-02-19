@@ -20,11 +20,9 @@ notes: '<p>Locations of all Aberdeen City Council run cemeteries and burial grou
   <p>For more local maps have a look at the <a href="https://accabdn.maps.arcgis.com/apps/MinimalGallery/index.html?appid=ef2d388404864ef9955640d5b7efb9b5">Aberdeen
   City Council Public Map Gallery</a></p>'
 organization: Aberdeen City Council
+original_dataset_link: https://data.aberdeencity.gov.uk/dataset/cemeteries
 records: null
 resources:
-- format: html
-  name: Description
-  url: https://data.aberdeencity.gov.uk/dataset/cemeteries
 - format: CSV
   name: CSV
   url: https://data.aberdeencity.gov.uk/dataset/ebced524-379a-4282-893d-e3bff180ddd8/resource/eb210854-f99e-450f-863d-b0c6a332a174/download/cemeterylocations_csv.csv
