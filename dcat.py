@@ -18,7 +18,8 @@ def get_license(dataset):
 #start_url = 'https://opendata.arcgis.com/api/v3/search?filter[tags]=any(renfrewshire)&filter[openData]=true'
 
 urls = {
-    'glasgow': 'https://open-data-design-glasgowgis.hub.arcgis.com/api/feed/dcat-ap/2.0.1.json'
+    'glasgow': 'https://open-data-design-glasgowgis.hub.arcgis.com/api/feed/dcat-ap/2.0.1.json',
+    'edinburgh': 'https://city-of-edinburgh-council-open-spatial-data-cityofedinburgh.hub.arcgis.com/api/feed/dcat-ap/2.0.1.json'
     }
 
 def get_datasets(start_url, fname):
