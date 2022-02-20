@@ -84,7 +84,7 @@ for r in fulld.values:
 unknown_lics = []
 def license_link(l):
     ogl = ["Open Government Licence 3.0 (United Kingdom)", "uk-ogl",
-           "UK Open Government Licence (OGL)", "OGL3"]
+           "UK Open Government Licence (OGL)", "OGL3", "Open Government Licence v3.0"]
     if l in ogl:
         return "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
     if l == "Creative Commons Attribution Share-Alike 4.0":
