@@ -57,7 +57,7 @@ def merge_data():
     data = data.reset_index(drop=True)
 
     ### Saves copy of data without cleaning - for analysis purposes
-    data.to_csv('../data/merged_output_untidy.csv')
+    data.to_csv('../data/merged_output_untidy.csv', index=False)
 
     ### Some cleaning
     ### Renaming entries to match
@@ -98,13 +98,13 @@ def merge_data():
     
 
     ### Tidy licence names
-    def tidy_license(license_name):
+    def tidy_licence(licence_name):
         """ Temporary licence conversion to match export2jkan -- FOR ANALYTICS ONLY, will discard in 2022Q2 Milestone
 
         Returns:
-            string: a tidied license name
+            string: a tidied licence name
         """
-        known_licenses= {
+        known_licences= {
                     'https://creativecommons.org/licenses/by-sa/3.0/': 'Creative Commons Attribution Share-Alike 3.0',
                     'Creative Commons Attribution 4.0':'Creative Commons Attribution 4.0',
                     'https://creativecommons.org/licenses/by/4.0/legalcode':'Creative Commons Attribution 4.0',
@@ -117,14 +117,14 @@ def merge_data():
                     'http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/':'Open Government Licence v2.0',
                     'http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/':'Open Government Licence v3.0',
                     }
-        if license_name in known_licenses:
-            tidied_license = known_licenses[license_name]
-        elif str(license_name)=="nan":
-            tidied_license = "No license"
+        if licence_name in known_licences:
+            tidied_licence = known_licences[licence_name]
+        elif str(licence_name)=="nan":
+            tidied_licence = "No licence"
         else:
-            tidied_license = "Custom license: " + str(license_name)
-        return tidied_license
-    data['License'] = data['License'].apply(lambda x: tidy_license(x))
+            tidied_licence = "Custom licence: " + str(licence_name)
+        return tidied_licence
+    data['License'] = data['License'].apply(lambda x: tidy_licence(x))
 
     
     ### Output combined data to csv
