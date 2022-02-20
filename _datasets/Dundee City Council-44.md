@@ -1,7 +1,6 @@
 ---
 category:
 - education
-- nan
 date_created: '2017-10-14'
 date_updated: '2017-10-24'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

@@ -1,18 +1,17 @@
 ---
 category:
-- ldp2
+- boundaries
+- tourism
 - planning
-- town centres
-- nan
-date_created: '2021-10-18'
-date_updated: '2021-10-18'
+date_created: '2015-10-30'
+date_updated: '2019-09-13'
 license: ''
 maintainer: South Ayrshire Council
-notes: ''
+notes: <p>Central core area of the Gallway Dark Skies Park</p>
 organization: South Ayrshire Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=b12aeb6748a74b239bf87caf88de41b0
-records: 34
+original_dataset_link: https://www.arcgis.com/home/item.html?id=17a25600d18f42538dac2997aa6369fa
+records: 1
 resources: []
 schema: default
-title: LDP2 Town Centre Policies
+title: Dark Skies Park Core Area
 ---

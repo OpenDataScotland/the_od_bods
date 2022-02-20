@@ -1,6 +1,5 @@
 ---
 category:
-- nan
 - lesiure centres
 - community centres
 date_created: ''

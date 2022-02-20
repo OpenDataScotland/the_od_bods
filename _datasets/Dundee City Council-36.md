@@ -1,7 +1,6 @@
 ---
 category:
 - community development
-- nan
 date_created: '2017-10-12'
 date_updated: '2017-10-24'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

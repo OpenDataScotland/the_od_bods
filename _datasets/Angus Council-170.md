@@ -6,7 +6,6 @@ category:
 - planning
 - public
 - traffic
-- nan
 date_created: '2016-12-07'
 date_updated: '2017-01-12'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

@@ -6,7 +6,6 @@ category:
 - local government
 - non-domestic rates
 - tax relief
-- nan
 date_created: '2021-05-07'
 date_updated: '2021-12-23'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

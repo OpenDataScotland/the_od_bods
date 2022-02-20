@@ -1,6 +1,5 @@
 ---
 category:
-- nan
 - cooling towers
 date_created: ''
 date_updated: '2018-11-28'

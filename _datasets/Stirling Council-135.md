@@ -1,7 +1,6 @@
 ---
 category:
 - lgcs waste management
-- nan
 date_created: '2019-02-11'
 date_updated: '2021-04-19'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

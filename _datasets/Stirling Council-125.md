@@ -1,7 +1,6 @@
 ---
 category:
 - lgcs consumer affairs
-- nan
 date_created: '2019-09-25'
 date_updated: '2022-02-07'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

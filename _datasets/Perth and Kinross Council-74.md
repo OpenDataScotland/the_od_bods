@@ -1,7 +1,6 @@
 ---
 category:
 - energy
-- nan
 date_created: '2017-09-15'
 date_updated: '2021-12-15'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

@@ -1,7 +1,6 @@
 ---
 category:
 - school
-- nan
 date_created: '2018-04-23'
 date_updated: '2021-11-08'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

@@ -6,7 +6,6 @@ category:
 - residency
 - sbu
 - special health board
-- nan
 date_created: '2018-03-21'
 date_updated: '2021-02-25'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

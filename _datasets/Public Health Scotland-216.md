@@ -10,7 +10,6 @@ category:
 - lookup
 - medicine
 - primary care
-- nan
 date_created: '2018-02-13'
 date_updated: '2022-02-17'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

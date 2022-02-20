@@ -1,6 +1,5 @@
 ---
 category:
-- nan
 - museums
 - culture
 date_created: ''

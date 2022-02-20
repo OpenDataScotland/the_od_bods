@@ -1,7 +1,6 @@
 ---
 category:
 - lgcs cemeteries & crematoria
-- nan
 date_created: '2019-02-04'
 date_updated: '2022-02-02'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

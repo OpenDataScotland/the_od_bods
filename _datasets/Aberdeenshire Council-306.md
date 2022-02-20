@@ -1,6 +1,5 @@
 ---
 category:
-- nan
 - wind turbines
 - conservation
 - energy

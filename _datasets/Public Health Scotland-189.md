@@ -8,7 +8,6 @@ category:
 - deaths
 - health board
 - positive cases
-- nan
 date_created: '2020-04-22'
 date_updated: '2022-02-18'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

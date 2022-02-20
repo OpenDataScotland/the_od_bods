@@ -10,7 +10,6 @@ category:
 - intermed zone
 - intermediate zone
 - number of people
-- nan
 date_created: '2018-02-06'
 date_updated: '2021-10-11'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

@@ -1,19 +1,18 @@
 ---
 category:
-- democracy
-- elections
-- council
 - boundaries
-- nan
+- woodland
+- tourism
+- environment
 date_created: '2015-10-30'
-date_updated: '2020-11-11'
+date_updated: '2019-09-13'
 license: ''
 maintainer: South Ayrshire Council
-notes: <p>Polygons depicting South Ayrshire Council Electoral Wards</p>
+notes: <p>Extent of the Galloway Forest Park</p>
 organization: South Ayrshire Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=a2f8a89dc3e7448c96dbd0e2b7de6e5b
-records: 8
+original_dataset_link: https://www.arcgis.com/home/item.html?id=e64ef903744442a5befce9fb19a64e53
+records: 1
 resources: []
 schema: default
-title: Council Wards
+title: Galloway Forest Park
 ---

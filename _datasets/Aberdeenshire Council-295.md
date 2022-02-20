@@ -1,6 +1,5 @@
 ---
 category:
-- nan
 - nature
 - conservation
 date_created: ''

@@ -2,7 +2,6 @@
 category:
 - adult learning
 - education
-- nan
 date_created: '2017-12-04'
 date_updated: '2020-07-14'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

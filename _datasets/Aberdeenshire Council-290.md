@@ -1,6 +1,5 @@
 ---
 category:
-- nan
 - housing
 date_created: ''
 date_updated: '2018-02-14'

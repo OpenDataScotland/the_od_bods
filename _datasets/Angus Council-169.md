@@ -4,7 +4,6 @@ category:
 - pupil numbers
 - school
 - schools
-- nan
 date_created: '2018-10-01'
 date_updated: '2018-10-03'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

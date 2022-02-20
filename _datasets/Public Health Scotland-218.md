@@ -5,7 +5,6 @@ category:
 - health board
 - hospital
 - specialty
-- nan
 date_created: '2019-11-07'
 date_updated: '2021-11-30'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

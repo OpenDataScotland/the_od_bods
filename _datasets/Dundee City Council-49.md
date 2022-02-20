@@ -3,7 +3,6 @@ category:
 - environment
 - waste
 - geospatial
-- nan
 date_created: '2018-08-07'
 date_updated: '2019-08-16'
 license: https://opendatacommons.org/licenses/odbl/

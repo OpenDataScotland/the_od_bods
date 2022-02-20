@@ -1,7 +1,6 @@
 ---
 category:
 - transport
-- nan
 date_created: '2017-09-23'
 date_updated: '2017-10-25'
 license: https://opendatacommons.org/licenses/odbl/

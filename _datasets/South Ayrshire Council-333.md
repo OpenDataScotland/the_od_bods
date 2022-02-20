@@ -1,19 +1,17 @@
 ---
 category:
-- community councils
-- council
 - boundaries
-- democracy
-- nan
+- schools
+- education
 date_created: '2015-10-30'
 date_updated: '2019-09-13'
 license: ''
 maintainer: South Ayrshire Council
-notes: <p>Areas depicting community council boundaries for South Ayrshire</p>
+notes: <p>Areas depicting catchment zones for denominational secondary schools</p>
 organization: South Ayrshire Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=2210e29ba21043acacaddf98daecdaf9
-records: 30
+original_dataset_link: https://www.arcgis.com/home/item.html?id=88a6db9db81349e8be6a4e94f1f1378d
+records: 2
 resources: []
 schema: default
-title: Community Councils
+title: Denominational Secondary Catchments
 ---

@@ -3,7 +3,6 @@ category:
 - roads
 - safety
 - transport
-- nan
 date_created: '2017-08-21'
 date_updated: '2020-07-14'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

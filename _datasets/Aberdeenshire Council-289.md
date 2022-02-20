@@ -1,6 +1,5 @@
 ---
 category:
-- nan
 - harbours
 - coast
 - fishing

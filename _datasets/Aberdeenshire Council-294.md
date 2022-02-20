@@ -1,6 +1,5 @@
 ---
 category:
-- nan
 - planning
 - local developmen plan
 date_created: ''

@@ -1,19 +1,17 @@
 ---
 category:
-- environment
-- walking
-- paths
-- outdoor access
-- nan
+- planning
+- regeneration
+- land
 date_created: '2015-10-30'
 date_updated: '2020-11-25'
 license: ''
 maintainer: South Ayrshire Council
-notes: <p>Footpaths for the area - not indicative of a public right of way</p>
+notes: <p>Areas of vacant and derelict land</p>
 organization: South Ayrshire Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=fdd0530913d84cf398ab315c86278a06
-records: 110
+original_dataset_link: https://www.arcgis.com/home/item.html?id=a7fef8a46e4c49d497c2718ef40f80bb
+records: 83
 resources: []
 schema: default
-title: Footpaths
+title: Vacant and Derelict Land
 ---

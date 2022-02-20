@@ -5,7 +5,6 @@ category:
 - hospital
 - operation
 - waiting time
-- nan
 date_created: '2019-04-02'
 date_updated: '2022-02-01'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

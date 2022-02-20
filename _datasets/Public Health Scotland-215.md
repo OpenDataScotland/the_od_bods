@@ -13,7 +13,6 @@ category:
 - intermediate zone
 - lookup
 - map
-- nan
 date_created: '2017-09-27'
 date_updated: '2021-06-30'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

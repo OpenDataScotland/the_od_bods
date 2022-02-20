@@ -2,7 +2,6 @@
 category:
 - council tax
 - households
-- nan
 date_created: '2022-01-06'
 date_updated: '2022-01-06'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

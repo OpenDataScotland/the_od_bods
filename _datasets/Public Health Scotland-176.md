@@ -7,7 +7,6 @@ category:
 - icd10
 - incidence
 - smr06
-- nan
 date_created: '2019-02-06'
 date_updated: '2021-06-29'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

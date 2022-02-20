@@ -3,7 +3,6 @@ category:
 - food
 - safety hygiene
 - ratings
-- nan
 date_created: '2017-11-29'
 date_updated: '2021-06-22'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

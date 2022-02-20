@@ -1,6 +1,5 @@
 ---
 category:
-- nan
 - recycling
 date_created: ''
 date_updated: '2019-02-13'

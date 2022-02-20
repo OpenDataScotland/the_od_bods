@@ -1,6 +1,5 @@
 ---
 category:
-- nan
 - admininstration
 - boundaries
 - committees

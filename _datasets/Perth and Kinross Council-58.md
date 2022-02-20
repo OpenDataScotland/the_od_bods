@@ -4,7 +4,6 @@ category:
 - car park zone
 - transport
 - transportation
-- nan
 date_created: '2021-09-30'
 date_updated: '2021-09-30'
 license: ''

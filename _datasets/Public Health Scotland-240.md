@@ -10,7 +10,6 @@ category:
 - overweight
 - primary 1
 - school
-- nan
 date_created: '2018-12-07'
 date_updated: '2021-12-14'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

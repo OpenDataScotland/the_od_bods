@@ -8,7 +8,6 @@ category:
 - smoking
 - stop smoking
 - stop smoking services
-- nan
 date_created: '2020-03-12'
 date_updated: '2021-06-30'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

@@ -1,18 +1,17 @@
 ---
 category:
-- environment
-- conservation
-- wildlife
-- nan
+- planning
+- development
+- community safety
 date_created: '2015-10-30'
 date_updated: '2019-09-13'
 license: ''
 maintainer: South Ayrshire Council
-notes: <p>Areas depicting wildlife sites South Ayrshire</p>
+notes: <p>Safeguarding zones for developments around Prestwick Airport</p>
 organization: South Ayrshire Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=177b941c716b4aada41ade02cd687d30
-records: 107
+original_dataset_link: https://www.arcgis.com/home/item.html?id=310950083fd945d5b618d2b18495d47a
+records: 126
 resources: []
 schema: default
-title: Wildlife Sites
+title: Prestwick Airport Safeguarding Zones
 ---

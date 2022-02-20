@@ -1,7 +1,5 @@
 ---
-category:
-- nan
-- nan
+category: []
 date_created: ''
 date_updated: '2016-08-08'
 license: Other (Public Domain)

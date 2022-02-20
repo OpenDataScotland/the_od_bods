@@ -1,25 +1,21 @@
 ---
 category:
+- inspire
 - planning
-- environment
-- open data
-- nan
-date_created: '2017-12-13'
+date_created: '2017-08-22'
 date_updated: '2020-11-30'
 license: ''
 maintainer: Moray Council
-notes: "<p>The Local Development Plan 2015 was superseded by the Local Development\
-  \ Plan 2020 on 27 July 2020.The five main towns of Elgin, Forres, Buckie, Keith\
-  \ and Lossiemouth are subject to the highest development pressures and Countryside\
-  \ Around Towns (CAT\u2019s) have been designated to prevent development sprawl into\
-  \ the countryside. Only certain types of development are appropriate within CAT\u2019\
-  s to protect their special character. New housing development is specifically excluded\
-  \ from the types of acceptable development to maintain and preserve the distinction\
-  \ with the built up area.</p>"
+notes: <p>Vacant and Derelict Land Audit 2017 (Moray) The Scottish Vacant and Derelict
+  Land Survey is a data collection undertaken to establish the extent and state of
+  vacant and derelict land in Scotland. The survey has been operating since 1988,
+  and is managed by the Scottish Government Communities Analysis Division. The data
+  is sourced from local authorities and the Loch Lomond and Trossachs National Park
+  Authority.</p>
 organization: Moray Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=754dc0fc293a43d3acf2c81f2a8bc705
-records: 5
+original_dataset_link: https://www.arcgis.com/home/item.html?id=bc20bcb55c1245489bf3da4128a3aba1
+records: 21
 resources: []
 schema: default
-title: Local Development Plan 2015 Countryside Around Towns (CAT) (Moray)
+title: Vacant and Derelict Land Audit 2017 (Moray)
 ---

@@ -4,7 +4,6 @@ category:
 - finance
 - invoices
 - suppliers
-- nan
 date_created: '2020-03-04'
 date_updated: '2021-11-23'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

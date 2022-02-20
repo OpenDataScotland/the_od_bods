@@ -4,7 +4,6 @@ category:
 - cervical
 - screening
 - screening programme
-- nan
 date_created: '2020-05-28'
 date_updated: '2021-10-05'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

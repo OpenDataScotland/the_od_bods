@@ -22,7 +22,6 @@ category:
 - upper gi
 - urological
 - waiting time
-- nan
 date_created: '2018-07-06'
 date_updated: '2022-02-11'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

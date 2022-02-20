@@ -1,7 +1,6 @@
 ---
 category:
 - school meals
-- nan
 date_created: '2018-01-23'
 date_updated: '2019-03-19'
 license: https://creativecommons.org/licenses/by/4.0/

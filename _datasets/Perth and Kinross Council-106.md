@@ -2,7 +2,6 @@
 category:
 - scottish vacant and derelict land 2019
 - economy
-- nan
 date_created: '2021-09-30'
 date_updated: '2021-09-30'
 license: ''

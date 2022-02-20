@@ -1,6 +1,5 @@
 ---
 category:
-- nan
 - education
 date_created: ''
 date_updated: ''

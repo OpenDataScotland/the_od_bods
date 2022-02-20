@@ -1,6 +1,5 @@
 ---
 category:
-- nan
 - public offices
 - council offices
 date_created: ''

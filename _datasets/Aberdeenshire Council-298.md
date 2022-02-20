@@ -1,6 +1,5 @@
 ---
 category:
-- nan
 - polling
 - democracy
 date_created: ''

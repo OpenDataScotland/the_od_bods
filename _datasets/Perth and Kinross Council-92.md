@@ -6,7 +6,6 @@ category:
 - hydrography
 - mapping
 - mid-scales
-- nan
 date_created: '2017-08-25'
 date_updated: '2020-04-29'
 license: ''

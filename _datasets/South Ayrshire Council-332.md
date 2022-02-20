@@ -1,18 +1,17 @@
 ---
 category:
-- administration
-- planning
 - boundaries
-- nan
-date_created: '2015-10-15'
+- schools
+- education
+date_created: '2015-10-30'
 date_updated: '2019-09-13'
 license: ''
 maintainer: South Ayrshire Council
-notes: <p>Town and village settlement boundaries as defined in the 2007 LDP</p>
+notes: <p>Areas depicting catchment zones for non-denominational primary schools</p>
 organization: South Ayrshire Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=2fee7037164841e4b4325cccaef39f45
-records: 30
+original_dataset_link: https://www.arcgis.com/home/item.html?id=bbb6cbfbf1044a7bb7652f642c41ef72
+records: 45
 resources: []
 schema: default
-title: Settlement Boundaries
+title: Non-denominational Primary Catchments
 ---

@@ -7,7 +7,6 @@ category:
 - pregnancy
 - vaccination
 - vaccine
-- nan
 date_created: '2021-07-12'
 date_updated: '2021-10-06'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

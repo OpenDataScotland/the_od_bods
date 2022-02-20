@@ -1,7 +1,6 @@
 ---
 category:
 - lgcs housing
-- nan
 date_created: '2018-05-28'
 date_updated: '2021-04-19'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

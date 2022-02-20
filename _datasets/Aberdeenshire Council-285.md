@@ -1,6 +1,5 @@
 ---
 category:
-- nan
 - green belt
 - planning
 date_created: ''
