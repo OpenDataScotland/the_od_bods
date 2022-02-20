@@ -29,7 +29,7 @@ class Dataset:
 
 fulld = pd.read_csv("data/merged_output.csv", dtype=str, na_filter=False)
 def ind(name):
-    f = ['Unnamed: 0', 'Title', 'Owner', 'PageURL', 'AssetURL', 'DateCreated',
+    f = ['Title', 'Owner', 'PageURL', 'AssetURL', 'DateCreated',
        'DateUpdated', 'FileSize', 'FileSizeUnit', 'FileType', 'NumRecords',
        'OriginalTags', 'ManualTags', 'License', 'Description', 'Source']
     return f.index(name)

@@ -68,7 +68,7 @@ def merge_data():
     data = clean_data(data)
     
     ### Output cleaned data to csv
-    data.to_csv('../data/merged_output.csv')
+    data.to_csv('../data/merged_output.csv', index=False)
 
     return data
 
