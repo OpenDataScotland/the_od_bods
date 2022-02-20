@@ -14,6 +14,20 @@ def merge_data():
     source_gsheets = pd.read_csv('../data/from_Google_Sheets.csv', parse_dates=['DateUpdated'])
     source_gsheets['Source'] = 'manual extraction'
 
+    ### From scotgov csv
+    source_scotgov = pd.read_csv('../data/scotgov-datasets.csv')
+    source_scotgov = source_scotgov.rename(columns={
+                                                    'title':'Title',
+                                                    'category':'OriginalTags',
+                                                    'organization':'Owner',
+                                                    'notes':'Description',
+                                                    'date_created':'DateCreated',
+                                                    'date_updated':'DateUpdated',
+                                                    'url':'PageURL'
+                                                    })
+    source_scotgov['Source'] = 'manual extraction'
+    source_scotgov['License'] = 'OGL3'
+
     ### From arcgis api
     source_arcgis = pd.DataFrame()
     folder = '../data/arcgis/'
@@ -47,7 +61,9 @@ def merge_data():
                     'Aberdeen': 'Aberdeen City',
                     'Dundee': 'Dundee City',
                     'Perth': 'Perth and Kinross',
-                    'open.data@southayrshire':'South Ayrshire'
+                    'open.data@southayrshire':'South Ayrshire',
+                    'SEPA': 'Scottish Environment Protection Agency',
+                    'South Ayrshire': 'South Ayrshire Council'
                     }
     data['Owner'] = data['Owner'].replace(owner_renames)
     ### Format dates as datetime type

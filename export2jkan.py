@@ -80,27 +80,6 @@ for r in fulld.values:
             file_type = r[ind('FileType')]
         ))
 
-scotgov_data = pd.read_csv("data/scotgov-datasets.csv", dtype=str, na_filter=False)
-for r in scotgov_data.values:
-    ds = Dataset(
-        title = r[0],
-        original_tags = [r[1]],
-        owner = r[2],
-        description = r[3],
-        date_created = r[4],
-        date_updated = r[5],
-        page_url = r[6],
-        manual_tags = [],
-        license = "OGL3",
-        num_records = None,
-        files = []
-    )
-    if ds.owner == "SEPA":
-        ds.owner = "Scottish Environment Protection Agency"
-    if ds.owner == "South Ayrshire":
-        ds.owner = "South Ayrshire Council" # TODO: check if any of these actually supposed to be in the HSCP
-    data[ds.page_url + ds.title] = ds
-
 
 unknown_lics = []
 def license_link(l):
