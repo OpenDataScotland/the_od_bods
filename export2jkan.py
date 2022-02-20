@@ -101,7 +101,7 @@ def license_link(l):
 
 md = markdown.Markdown()
 
-for k, ds in data.items():
+for n, (k, ds) in enumerate(data.items()):
     y = {'schema': 'default'}
     y['title'] = ds.title
     y['organization'] = ds.owner
@@ -116,7 +116,7 @@ for k, ds in data.items():
     y['date_created'] = ds.date_created
     y['date_updated'] = ds.date_updated
     y['records'] = ds.num_records
-    fn = ds.owner + " - " + ds.title
+    fn = f'{ds.owner}-{n}'
     fn = re.sub(r'[^\w\s-]', '', fn).strip()[:100]
     # ^^ need something better for filnames...
     with open(f"_datasets/{fn}.md", "w") as f:
