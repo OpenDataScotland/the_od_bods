@@ -49,13 +49,13 @@ def merge_data():
 
 
     ### Combine all data into single table
-    data = source_ckan.append([source_gsheets, source_arcgis, source_usmart])
+    data = source_ckan.append([source_gsheets, source_arcgis, source_usmart, source_scotgov])
     data = data.reset_index(drop=True)
 
+    ### Saves copy of data without cleaning - for analysis purposes
+    data.to_csv('../data/merged_output_untidy.csv')
+
     ### Some cleaning
-    ### Remove these irrelevant entries (not councils)
-    drop_list = ['Development, Safety and Regulation']
-    data = data[~data['Owner'].isin(drop_list)]
     ### Renaming entries to match
     owner_renames = {
                     'Aberdeen': 'Aberdeen City',
