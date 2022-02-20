@@ -14,6 +14,20 @@ def merge_data():
     source_gsheets = pd.read_csv('../data/from_Google_Sheets.csv', parse_dates=['DateUpdated'])
     source_gsheets['Source'] = 'manual extraction'
 
+    ### From scotgov csv
+    source_scotgov = pd.read_csv('../data/scotgov-datasets.csv')
+    source_scotgov = source_scotgov.rename(columns={
+                                                    'title':'Title',
+                                                    'category':'OriginalTags',
+                                                    'organization':'Owner',
+                                                    'notes':'Description',
+                                                    'date_created':'DateCreated',
+                                                    'date_updated':'DateUpdated',
+                                                    'url':'PageURL'
+                                                    })
+    source_scotgov['Source'] = 'manual extraction'
+    source_scotgov['License'] = 'OGL3'
+
     ### From arcgis api
     source_arcgis = pd.DataFrame()
     folder = '../data/arcgis/'
@@ -39,19 +53,21 @@ def merge_data():
 
 
     ### Combine all data into single table
-    data = source_ckan.append([source_gsheets, source_arcgis, source_usmart, source_dcat])
+    data = source_ckan.append([source_gsheets, source_arcgis, source_usmart, source_scotgov, source_dcat])
     data = data.reset_index(drop=True)
 
+    ### Saves copy of data without cleaning - for analysis purposes
+    data.to_csv('../data/merged_output_untidy.csv')
+
     ### Some cleaning
-    ### Remove these irrelevant entries (not councils)
-    drop_list = ['Development, Safety and Regulation']
-    data = data[~data['Owner'].isin(drop_list)]
     ### Renaming entries to match
     owner_renames = {
                     'Aberdeen': 'Aberdeen City',
                     'Dundee': 'Dundee City',
                     'Perth': 'Perth and Kinross',
-                    'open.data@southayrshire':'South Ayrshire'
+                    'open.data@southayrshire':'South Ayrshire',
+                    'SEPA': 'Scottish Environment Protection Agency',
+                    'South Ayrshire': 'South Ayrshire Council'
                     }
     data['Owner'] = data['Owner'].replace(owner_renames)
     ### Format dates as datetime type
@@ -79,6 +95,37 @@ def merge_data():
 
     data['OriginalTags'] = data['OriginalTags'].apply(lambda x: tidy_categories(x))
     data['ManualTags'] = data['ManualTags'].apply(lambda x: tidy_categories(x))
+    
+
+    ### Tidy licence names
+    def tidy_license(license_name):
+        """ Temporary licence conversion to match export2jkan -- FOR ANALYTICS ONLY, will discard in 2022Q2 Milestone
+
+        Returns:
+            string: a tidied license name
+        """
+        known_licenses= {
+                    'https://creativecommons.org/licenses/by-sa/3.0/': 'Creative Commons Attribution Share-Alike 3.0',
+                    'Creative Commons Attribution 4.0':'Creative Commons Attribution 4.0',
+                    'https://creativecommons.org/licenses/by/4.0/legalcode':'Creative Commons Attribution 4.0',
+                    'OGL3':'Open Government Licence v3.0',
+                    'Open Government Licence 3.0 (United Kingdom)':'Open Government Licence v3.0',
+                    'UK Open Government Licence (OGL)':'Open Government Licence v3.0',
+                    'uk-ogl':'Open Government Licence v3.0',
+                    'Open Data Commons Open Database License 1.0':'Open Data Commons Open Database License 1.0',
+                    'http://opendatacommons.org/licenses/odbl/1-0/':'Open Data Commons Open Database License 1.0',
+                    'http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/':'Open Government Licence v2.0',
+                    'http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/':'Open Government Licence v3.0',
+                    }
+        if license_name in known_licenses:
+            tidied_license = known_licenses[license_name]
+        elif str(license_name)=="nan":
+            tidied_license = "No license"
+        else:
+            tidied_license = "Custom license: " + str(license_name)
+        return tidied_license
+    data['License'] = data['License'].apply(lambda x: tidy_license(x))
+
     
     ### Output combined data to csv
     data.to_csv('../data/merged_output.csv')
