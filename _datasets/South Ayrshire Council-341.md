@@ -1,18 +1,17 @@
 ---
 category:
-- boundaries
-- environment
-- conservation
+- ldp2
 - planning
-date_created: '2015-10-30'
-date_updated: '2018-04-20'
+- town centres
+date_created: '2021-10-18'
+date_updated: '2021-10-18'
 license: ''
 maintainer: South Ayrshire Council
-notes: <p>Special areas of conservation in Ayrshire</p>
+notes: ''
 organization: South Ayrshire Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=1df49391cbf448e4a7786efe6b52f008
-records: 2034
+original_dataset_link: https://www.arcgis.com/home/item.html?id=377c6805161848569939d70aa47da8cb
+records: 5
 resources: []
 schema: default
-title: Special Areas of Conservation
+title: LDP2 Town Centre Boundaries
 ---

@@ -1,16 +1,25 @@
 ---
 category:
+- planning
 - open data
-- boundaries
-date_created: '2019-09-25'
+date_created: '2018-03-29'
 date_updated: '2020-11-30'
 license: ''
 maintainer: Moray Council
-notes: <p>Wards 2017 (Moray) (OS Boundary Line Open Data)</p>
+notes: "<p>Moray Onshore Wind Energy 2017 Policy Guidance Map for Medium Typologies\
+  \ (Moray) Areas of Greatest Potential. Scottish Planning Policy states that planning\
+  \ authorities \u201Cshould identify where there is strategic capacity for wind farms,\
+  \ and areas with the greatest potential for wind development\u201D. Areas of greatest\
+  \ scope for further investigating the feasibility of developing wind farms. These\
+  \ areas have been identified on Policy Guidance maps by removing additional constraints\
+  \ from the spatial framework map of the areas likely to be most appropriate for\
+  \ wind farm development. The remaining areas which have been mapped for each development\
+  \ typology are the areas with the fewest constraints and therefore the greatest\
+  \ potential for wind farm developments.</p>"
 organization: Moray Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=8fb355abdba34c07b60dc31f3d55377c
-records: 8
+original_dataset_link: https://www.arcgis.com/home/item.html?id=1f923e623ab245019197e556c1a31daf
+records: 6
 resources: []
 schema: default
-title: Wards 2017 (Moray)
+title: Moray Onshore Wind Energy 2017 Policy Guidance Map for Medium Typologies (Moray)
 ---

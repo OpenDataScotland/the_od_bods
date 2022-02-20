@@ -1,15 +1,16 @@
 ---
 category:
-- ''
-date_created: '2020-03-03'
-date_updated: '2020-03-11'
+- Education, Skills and Training
+date_created: '2018-11-05'
+date_updated: '2020-10-02'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: ''
+notes: "<p>The score is based on school leavers\u2019 highest level of qualification,\
+  \ averaged across all leavers within a data zone. </p>"
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/commuting-time-by-travel-to-work-areas
+original_dataset_link: http://statistics.gov.scot/data/educational-attainment-of-school-leavers
 records: null
 resources: []
 schema: default
-title: Commuting time by Travel to Work Areas
+title: Educational attainment of school leavers
 ---

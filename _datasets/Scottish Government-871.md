@@ -1,16 +1,16 @@
 ---
 category:
-- Business, Enterprise and Energy
-date_created: '2021-05-07'
-date_updated: '2021-10-25'
+- Economy
+date_created: '2018-11-23'
+date_updated: '2021-11-24'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: ''
+notes: <p>The average amount of economic output produced per job and per hour worked
+  in Scotland.</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/information-and-communication-technologies-ict-including-related-industries
+original_dataset_link: http://statistics.gov.scot/data/labour-productivity-annual
 records: null
 resources: []
 schema: default
-title: 'Annual Business Survey: Information and communication technologies (ICT) including
-  related industries'
+title: 'Labour Productivity: Annual'
 ---

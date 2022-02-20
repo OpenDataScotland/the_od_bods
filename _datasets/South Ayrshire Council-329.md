@@ -1,17 +1,19 @@
 ---
 category:
-- environment
-- conservation
-- planning
-date_created: '2015-10-30'
-date_updated: '2020-11-25'
+- alcohol prohibition areas
+date_created: '2017-03-30'
+date_updated: '2017-03-30'
 license: ''
 maintainer: South Ayrshire Council
-notes: <p>Boundary for the Southern Ayrshire and Galloway Biosphere</p>
+notes: "<p>South Ayrshire Council has passed byelaws to prohibit the drinking of alcohol\
+  \ in designated public places under provisions contained in the Local Government\
+  \ (Scotland) Act 1973 (under sections 201, 202 and 203). \_This Alcohol Prohibition\
+  \ Areas dataset depicts the boundaries around settlements within South Ayrshire\
+  \ where these byelaws apply.</p>"
 organization: South Ayrshire Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=1247dc0ed92647e0aa1f999a3409e0b6
-records: 2
+original_dataset_link: https://www.arcgis.com/home/item.html?id=31ae04f92a5f4d5793e03f64bfa0a925
+records: 33
 resources: []
 schema: default
-title: Southern Ayrshire and Galloway Biosphere
+title: Alcohol Prohibition Areas
 ---

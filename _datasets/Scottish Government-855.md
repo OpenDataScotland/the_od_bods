@@ -1,16 +1,16 @@
 ---
 category:
-- Scottish Index of Multiple Deprivation
-date_created: '2020-03-27'
-date_updated: '2020-03-31'
+- Economic Activity, Benefits and Tax Credits
+date_created: '2018-06-04'
+date_updated: '2021-06-21'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Dataset containing the Broadband Indicator used to calculate the SIMD 2020
-  Access To Services Domain</p>
+notes: <p>Number of applications received by Local Authorities for Discretionary Housing
+  Payments</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/scottish-index-of-multiple-deprivation---broadband-access-indicator
+original_dataset_link: http://statistics.gov.scot/data/discretionary-housing-payments-applications
 records: null
 resources: []
 schema: default
-title: Scottish Index of Multiple Deprivation - Broadband Access Indicator
+title: Discretionary Housing Payments Applications
 ---

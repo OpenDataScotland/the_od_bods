@@ -1,16 +1,15 @@
 ---
 category:
-- Crime and Justice
-date_created: '2017-07-13'
-date_updated: '2020-10-23'
+- Education, Skills and Training
+date_created: '2014-07-29'
+date_updated: '2016-02-09'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Percent of respondents who believe that crime has stayed the same or reduced
-  in the past 2 years in their local area</p>
+notes: <p>Percent of people with a given highest qualification level.</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/local-crime-rate-national-indicator
+original_dataset_link: http://statistics.gov.scot/data/qualifications-working-age-people
 records: null
 resources: []
 schema: default
-title: Local Crime Rate (National Indicator)
+title: Qualifications of working age adults
 ---

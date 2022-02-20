@@ -1,15 +1,16 @@
 ---
 category:
-- Community Wellbeing and Social Environment
+- Economic Activity, Benefits and Tax Credits
 date_created: '2014-07-29'
-date_updated: '2019-08-30'
+date_updated: '2016-02-09'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Geographic Area - 2001 Census</p>
+notes: <p>Number, and percent, of people receiving job related training in the last
+  3 months.</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/geographic-area-2001
+original_dataset_link: http://statistics.gov.scot/data/job-related-training
 records: null
 resources: []
 schema: default
-title: Geographic Area - 2001 Census
+title: Job Related Training
 ---

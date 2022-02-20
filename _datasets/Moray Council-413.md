@@ -1,19 +1,20 @@
 ---
 category:
-- planning
+- boundaries
 - inspire
-date_created: '2020-07-23'
+- planning
+date_created: '2017-07-10'
 date_updated: '2020-11-30'
 license: ''
 maintainer: Moray Council
-notes: <p>Local Development Plan 2020 Settlement Boundaries are used for the distribution
-  of housing and employment land across Moray as per the spatial strategy set out
-  within the Moray Local Development Plan 2020. Settlement boundaries contain the
-  primary, secondary and third tier settlements.</p>
+notes: <p>Employment Land Audit 2017 sites provides am overview of the supply and
+  availability of employment land across the Moray Council area. The audit provides
+  details of Moray's employment land supply as at January 2017. Further information
+  can be found at Development Monitoring.</p>
 organization: Moray Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=98fd19de341d4263a367236b19c06032
+original_dataset_link: https://www.arcgis.com/home/item.html?id=4f325085a09e4460a4246e749c443cc7
 records: 33
 resources: []
 schema: default
-title: Local Devevlopment Plan 2020 Settlement Boundary (Moray)
+title: Employment Land Audit 2017 (Moray)
 ---

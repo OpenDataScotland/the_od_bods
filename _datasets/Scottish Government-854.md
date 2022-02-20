@@ -1,15 +1,17 @@
 ---
 category:
-- Scottish Index of Multiple Deprivation
-date_created: '2020-01-28'
-date_updated: '2020-06-12'
+- Management Information
+date_created: '2018-05-01'
+date_updated: '2021-09-16'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: ''
+notes: '<p>Management Information: environmental data on Non-domestic Energy Performance
+  Certificate (EPC) and Recommendations Report for each current record held on the
+  Scottish EPC Register from Q1 2013 to Q2 2021.  Data extracted July 2021.</p>'
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/scottish-index-of-multiple-deprivation
+original_dataset_link: http://statistics.gov.scot/data/non-domestic-energy-performance-certificates
 records: null
 resources: []
 schema: default
-title: Scottish Index of Multiple Deprivation 2020
+title: Non-domestic Energy Performance Certificates - Dataset to Q2 2021
 ---

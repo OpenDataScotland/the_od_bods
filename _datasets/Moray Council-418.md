@@ -1,20 +1,23 @@
 ---
 category:
-- planning
-- inspire
-date_created: '2017-08-08'
+- open data
+- boundaries
+- democracy
+date_created: '2018-04-19'
 date_updated: '2020-11-30'
 license: ''
 maintainer: Moray Council
-notes: <p>The Local Development Plan 2015 was superseded by the Local Development
-  Plan 2020 on 27 July 2020.Local Development Plan 2015 Settlement Boundaries are
-  used for the distribution of housing and employment land across Moray as per the
-  spatial strategy set out within the Moray Local Development Plan 2015. Settlement
-  boundaries contain the primary, secondary and third tier settlements.</p>
+notes: <p>Community Councils 2013 - 2017 (Moray). The purpose of community councils
+  is to ascertain, co-ordinate and express the views of the community it represents
+  to local authorities and other pubic bodies. This includes community councils appointing
+  one person as their point of contact for all planning matters. Community Councils
+  are regularly consulted by the local authority and public bodies on a wide range
+  of issues which affect their area, such as planning, environment and health. All
+  Community Council meetings are open to the public.</p>
 organization: Moray Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=5c51907e5088428ea44e8d4068cf8e51
-records: 33
+original_dataset_link: https://www.arcgis.com/home/item.html?id=6182d61788b6422982eb83c5d2d33e4a
+records: 20
 resources: []
 schema: default
-title: Local Development Plan 2015 Settlement Boundaries (Moray)
+title: Community Councils Boundaries 2013 - 2017 (Moray)
 ---

@@ -1,17 +1,15 @@
 ---
 category:
 - Housing
-date_created: '2018-08-03'
-date_updated: '2020-11-05'
+date_created: '2017-07-13'
+date_updated: '2021-06-25'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: National Records of Scotland
-notes: <p>25 year projection of households for Council Areas, Health Board Areas,
-  and National Parks. The data is broken down by the household reference person age
-  and the type of household</p>
+notes: <p>The number of households in each council area and in Scotland</p>
 organization: National Records of Scotland
-original_dataset_link: http://statistics.gov.scot/data/household-projections
+original_dataset_link: http://statistics.gov.scot/data/mid-year-household-estimates
 records: null
 resources: []
 schema: default
-title: Household Projections
+title: Mid-Year Household Estimates
 ---

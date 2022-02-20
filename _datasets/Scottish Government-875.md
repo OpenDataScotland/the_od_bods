@@ -1,16 +1,16 @@
 ---
 category:
-- Community Wellbeing and Social Environment
-date_created: '2021-05-13'
-date_updated: '2021-05-13'
+- Business, Enterprise and Energy
+date_created: '2019-01-30'
+date_updated: '2021-09-09'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Official Statistics of the number and proportions of working-age adults
-  in poverty. Various poverty measures and breakdowns are available.</p>
+notes: <p>Number of VAT/PAYE registered stocks and sites operating in Scotland by
+  Urban Rural Classification</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/poverty-working-age-adults
+original_dataset_link: http://statistics.gov.scot/data/business-stocks-and-sites-by-urban-rural-classification
 records: null
 resources: []
 schema: default
-title: Poverty (working age adults)
+title: Business Stocks and Sites by Urban Rural Classification
 ---

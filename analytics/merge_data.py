@@ -33,9 +33,13 @@ def merge_data():
     source_usmart['Source'] = 'USMART API'
     source_usmart['DateUpdated'] = source_usmart['DateUpdated'].apply(lambda x: x.replace(tzinfo=None))
 
+    ## From DCAT
+    source_dcat = pd.read_csv('../data/dcat/glasgow.csv', parse_dates=['DateUpdated'])
+    source_dcat['Source'] = 'DCAT feed'
+
 
     ### Combine all data into single table
-    data = source_ckan.append([source_gsheets, source_arcgis, source_usmart])
+    data = source_ckan.append([source_gsheets, source_arcgis, source_usmart, source_dcat])
     data = data.reset_index(drop=True)
 
     ### Some cleaning

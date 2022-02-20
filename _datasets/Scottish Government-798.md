@@ -1,15 +1,17 @@
 ---
 category:
-- Business, Enterprise and Energy
-date_created: '2018-06-18'
-date_updated: '2021-09-01'
+- Housing
+date_created: '2017-08-17'
+date_updated: '2021-01-19'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Gross Expenditure on Research and Development in Scotland since 2001.</p>
+notes: <p>The way in which the household occupies their accomodation. The Scottish
+  Survey Core Questions is an innovative project drawing together multiple household
+  surveys to provide a large sample for subnational analysis.</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/gross-expenditure-on-research-and-development
+original_dataset_link: http://statistics.gov.scot/data/household-tenure-sscq
 records: null
 resources: []
 schema: default
-title: Gross Expenditure on Research and Development
+title: Household Tenure - Scottish Survey Core Questions
 ---

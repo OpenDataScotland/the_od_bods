@@ -1,15 +1,16 @@
 ---
 category:
-- Labour Force
-date_created: '2018-10-10'
-date_updated: '2021-10-06'
+- Crime and Justice
+date_created: '2017-07-13'
+date_updated: '2020-10-23'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Self Employment level and ratio (aged 16 and over).</p>
+notes: <p>Percent of respondents who believe that crime has stayed the same or reduced
+  in the past 2 years in their local area</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/self-employment
+original_dataset_link: http://statistics.gov.scot/data/local-crime-rate-national-indicator
 records: null
 resources: []
 schema: default
-title: Self Employment
+title: Local Crime Rate (National Indicator)
 ---

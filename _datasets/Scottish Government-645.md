@@ -1,15 +1,17 @@
 ---
 category:
-- Crime and Justice
-date_created: '2014-07-29'
-date_updated: '2021-10-28'
+- Management Information
+date_created: '2019-12-18'
+date_updated: '2021-11-18'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Reconviction rates by offenders' gender and age</p>
+notes: <p>Data underlying the National Performance Framework Indicators. These give
+  a measure of national wellbeing including a range of economic, social and environmental
+  indicators. </p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/reconvictions
+original_dataset_link: http://statistics.gov.scot/data/national-performance-framework
 records: null
 resources: []
 schema: default
-title: Reconvictions
+title: National Performance Framework
 ---

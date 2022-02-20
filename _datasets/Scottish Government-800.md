@@ -1,16 +1,15 @@
 ---
 category:
-- Environment
-date_created: '2018-07-10'
-date_updated: '2020-10-23'
+- Economic Activity, Benefits and Tax Credits
+date_created: '2017-05-23'
+date_updated: '2018-06-15'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Percentage of adults living within 5 minutes walking distance of their nearest
-  green or blue space</p>
+notes: <p>Gross household income distribution estimates at Data Zone level for 2014</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/green-and-blue-spaces
+original_dataset_link: http://statistics.gov.scot/data/local-level-distribution-of-household-income-estimates-2014
 records: null
 resources: []
 schema: default
-title: Distance to Nearest Green or Blue Space (National Indicator)
+title: Local Level Distribution of Household Income Estimates 2014
 ---

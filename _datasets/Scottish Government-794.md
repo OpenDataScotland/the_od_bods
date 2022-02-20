@@ -1,16 +1,15 @@
 ---
 category:
 - Economic Activity, Benefits and Tax Credits
-date_created: '2018-06-04'
-date_updated: '2021-06-21'
+date_created: '2017-04-26'
+date_updated: '2021-11-04'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Number of determinations (decisions to make or not make an award) made by
-  Local Authorities on Discretionary Housing Payments applications.</p>
+notes: <p>Expenditure for awards paid out for the Scottish Welfare Fund</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/discretionary-housing-payments-determinations
+original_dataset_link: http://statistics.gov.scot/data/scottish-welfare-fund-expenditure
 records: null
 resources: []
 schema: default
-title: Discretionary Housing Payments Determinations
+title: Scottish Welfare Fund Expenditure
 ---
