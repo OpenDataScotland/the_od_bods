@@ -1,28 +1,22 @@
 ---
 category:
 - transport / mobility
-- government
-- scottish household survey
-- transport and travel in scotland
-date_created: '2019-10-17T13:27:07.273Z'
-date_updated: '2019-12-16'
+- cycling
+- active travel
+- traffic counts
+date_created: '2021-08-17T23:07:23.270Z'
+date_updated: '2021-11-16'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: <p>Data from the Transport and Travel related questions asked in the Scottish
-  Household Survey 2017. Data is of average distance traveled (km) nationally. Data
-  is classified by Local Authority, Regional Transport Partnership, and Urban/Rural
-  Classification. Reproduced via Open Government Licence. https://www.transport.gov.scot/publication/transport-and-travel-in-scotland-2017/</p>
+notes: <p>A real-time hourly upload from each cycling counter within South Lanarkshire
+  Council's network.</p>
 organization: Cycling Scotland
-original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/33e828ef-a1a7-4666-b938-f929f19683d4
+original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/aa516804-3c9a-459b-a28c-75e80ef39e0f
 records: null
 resources:
-- format: CSV
-  name: CSV
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=e74ac331-0479-4a50-8181-49c888d756c7
 - format: JSON
   name: JSON
-  url: https://api.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/f6db47aa-b724-422f-87d0-95bc50ecc2ec/2/urql
+  url: https://api.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/1751a710-7f65-4fde-ad6a-9fb1ba3d19bf/1/urql
 schema: default
-title: Average distance traveled (km) - Transport and Travel in Scotland 2017 - Scottish
-  Household Survey
+title: South Lanarkshire - Daily cycling counts from automatic cycling counters
 ---

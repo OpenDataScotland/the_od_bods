@@ -1,22 +1,31 @@
 ---
 category:
 - transport / mobility
-- cycling
-- traffic counts
 - active travel
-date_created: '2021-09-25T13:03:52.003Z'
-date_updated: '2021-11-16'
-license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+- bikeability scotland
+- children
+- cycling scotland
+- schools
+- featured
+date_created: '2019-11-08T11:37:05.577Z'
+date_updated: '2021-10-13'
+license: https://creativecommons.org/licenses/by/4.0/
 maintainer: Cycling Scotland
-notes: <p>A real-time daily upload from each cycling counter within North Ayrshire
-  Council's network.</p>
+notes: <p>Schools in Scotland which delivered Bikeability Scotland training in 2018/19.
+  Bikeability Scotland is a cycle training programme designed to give children the
+  skills and confidence they need both to cycle safely on the roads, and to encourage
+  them to carry on cycling into adulthood.</p>
 organization: Cycling Scotland
-original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/0bbe839b-6eb0-427f-9da0-105fc91cad59
+original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/e2de0fb8-ef8b-4b22-8342-c22f08b81395
 records: null
 resources:
 - format: JSON
   name: JSON
-  url: https://api.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/1b1f46df-8b37-48fb-90fa-9f464bb8f30a/1/urql
+  url: https://api.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/b7008642-43ed-43b5-9e03-69e08f88172a/2/urql
+- format: CSV
+  name: CSV
+  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=21710091-2919-4f96-8c1e-3eb8940e955b
 schema: default
-title: North Ayrshire Council- Daily cycling counts from automatic cycling counters
+title: Bikeability Scotland - Schools delivering Level 1 and/or Level 2 - 2018/19
+  - Cycling Scotland
 ---

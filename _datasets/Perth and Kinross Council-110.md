@@ -4,7 +4,7 @@ category:
 - vacant and derelict land
 date_created: '2021-09-30'
 date_updated: '2021-09-30'
-license: ''
+license: No licence
 maintainer: Perth and Kinross Council
 notes: <div style='text-align:Left;font-size:12pt'><p><span>A survey issued by the
   Scottish Government to establish the extent &amp; state of vacant &amp; derelict

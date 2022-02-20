@@ -1,15 +1,15 @@
 ---
 category:
-- Access to Services
-date_created: '2019-11-19'
-date_updated: '2021-01-21'
+- labour force
+date_created: '2018-10-08'
+date_updated: '2021-10-06'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: ''
+notes: <p>The difference between the employment rates for men and women (aged 16-64).</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/local-service-satisfaction-sscq
+original_dataset_link: http://statistics.gov.scot/data/gender-employment-gap
 records: null
 resources: []
 schema: default
-title: Local Service Satisfaction - Scottish Surveys Core Questions
+title: Gender Employment Gap
 ---

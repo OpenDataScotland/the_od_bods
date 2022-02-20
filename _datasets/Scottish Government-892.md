@@ -1,16 +1,16 @@
 ---
 category:
-- Crime and Justice
-date_created: '2019-06-19'
-date_updated: '2021-03-08'
+- community wellbeing and social environment
+date_created: '2018-03-23'
+date_updated: '2020-12-03'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Community payback orders commenced in each year from 2011-12 by age group
-  and gender.</p>
+notes: <p>If local neighbourhood has improved over the last three years, from the
+  Scottish Household Survey (SHS)</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/community-payback-orders-commenced
+original_dataset_link: http://statistics.gov.scot/data/area-improvement---shs
 records: null
 resources: []
 schema: default
-title: 'Community Payback Orders: Commenced'
+title: Area improvement - Scottish Household Survey
 ---

@@ -1,32 +1,38 @@
 ---
 category:
-- city development plan
-date_created: '2021-12-13T16:33:23.000Z'
+- council glasgow life buildings community facilities council managed
+- community
+- property
+date_created: '2021-08-12T14:08:39.000Z'
 date_updated: ''
-license: ''
+license: No licence
 maintainer: Glasgow City Council
-notes: <p>Spatial Data layers referenced in City Development Plan Policy and Proposals
-  &amp; Supplementary Guidance Maps. Third party data displayed in the above mentioned
-  maps are not included herein.</p>
+notes: <p>Locations of Major GCC and Glasgow Life Buildings, by specified type. Includes
+  GCC Service Department HQs/main buildings, Major Glasgow Life Facilities, ALEO HQs
+  etc e.g. Libraries, Sports Centres, Swimming Pools, Museums, etc. Selected Community
+  Facilities - Community Halls, Youth Centres, Neighbourhood Centres - which have
+  Glasgow Life managemanagement committment but which and operated by the Voluntary
+  Sector. Selected Community Facilities - Community Centres, Youth Centres, Recreation
+  Centres - managed and operated by Glasgow Life. </p>
 organization: Glasgow City Council
-original_dataset_link: https://data.glasgow.gov.uk/datasets/05d8a63e2f934523a367d3dc5cc1aca2_7
+original_dataset_link: https://data.glasgow.gov.uk/datasets/ea63fcac577e4cefb6e632cd8d84365b_2
 records: null
 resources:
 - format: ARCGIS GEOSERVICE
   name: ARCGIS GEOSERVICE
-  url: https://www.mapping.glasgow.gov.uk/arcgis_web/rest/services/OPEN_DATA/City_Development_Plan/MapServer/7
+  url: https://utility.arcgis.com/usrsvcs/servers/ea63fcac577e4cefb6e632cd8d84365b/rest/services/OPEN_DATA/Public_Buildings/MapServer/2
 - format: GEOJSON
   name: GEOJSON
-  url: https://data.glasgow.gov.uk/datasets/05d8a63e2f934523a367d3dc5cc1aca2_7.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D
+  url: https://data.glasgow.gov.uk/datasets/ea63fcac577e4cefb6e632cd8d84365b_2.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D
 - format: CSV
   name: CSV
-  url: https://data.glasgow.gov.uk/datasets/05d8a63e2f934523a367d3dc5cc1aca2_7.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D
+  url: https://data.glasgow.gov.uk/datasets/ea63fcac577e4cefb6e632cd8d84365b_2.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D
 - format: KML
   name: KML
-  url: https://data.glasgow.gov.uk/datasets/05d8a63e2f934523a367d3dc5cc1aca2_7.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D
+  url: https://data.glasgow.gov.uk/datasets/ea63fcac577e4cefb6e632cd8d84365b_2.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D
 - format: ZIP
   name: ZIP
-  url: https://data.glasgow.gov.uk/datasets/05d8a63e2f934523a367d3dc5cc1aca2_7.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D
+  url: https://data.glasgow.gov.uk/datasets/ea63fcac577e4cefb6e632cd8d84365b_2.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D
 schema: default
-title: 'Principal Office Retail and Commercial Areas: CDP3'
+title: Community Managed Facilities
 ---

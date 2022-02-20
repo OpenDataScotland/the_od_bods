@@ -36,7 +36,7 @@ def get_datasets(start_url, fname):
     prepped = []
     for e in datasets:
         ds = [e.get('dct:title', ""),
-              e.get('dct:publisher', ""),
+              e.get('dct:publisher', "").replace(" Mapping", ""),
               "", #link to page
               "", #Link to data
               e.get('dct:issued', ""),

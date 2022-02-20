@@ -4,13 +4,13 @@ category:
 - inspire
 date_created: '2020-07-23'
 date_updated: '2020-11-30'
-license: ''
+license: No licence
 maintainer: Moray Council
-notes: <p>Local Development Plan 2020 Waste Sites (Moray)</p>
+notes: <p>Local Development Plan 2020 Landscape Enhancements (Moray)</p>
 organization: Moray Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=60a64be6443046ce8ce4c2fe628f2c37
-records: 4
+original_dataset_link: https://www.arcgis.com/home/item.html?id=50e84f0b10d84095a47a267c921fdd6c
+records: 417
 resources: []
 schema: default
-title: Local Development Plan 2020 Waste Sites (Moray)
+title: Local Development Plan 2020 Landscape Enhancements (Moray)
 ---

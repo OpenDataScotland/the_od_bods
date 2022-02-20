@@ -4,7 +4,7 @@ category:
 - culture
 date_created: ''
 date_updated: '2018-07-10'
-license: ''
+license: No licence
 maintainer: Aberdeenshire Council
 notes: ''
 organization: Aberdeenshire Council

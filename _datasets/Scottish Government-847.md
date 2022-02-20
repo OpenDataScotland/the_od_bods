@@ -1,18 +1,15 @@
 ---
 category:
-- Housing
-date_created: '2018-03-28'
-date_updated: '2020-11-26'
+- health and social care
+date_created: '2017-08-03'
+date_updated: '2017-08-11'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>The proportion of households with any (basic) disrepair, disrepair to critical
-  elements, urgent disrepair or extensive disrepair to their dwelling, by dwelling
-  types,  household characteristics and council area. Derived from the Scottish House
-  Condition Survey (SHCS). </p>
+notes: <p>Emotional and behavioural problems, by drinking behaviour, age, and gender</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/dwelling-disrepair-scottish-house-condition-survey
+original_dataset_link: http://statistics.gov.scot/data/drinking-behaviour-and-emotional-and-behavioural-problems-salsus
 records: null
 resources: []
 schema: default
-title: Dwelling Disrepair (Scottish House Condition Survey)
+title: Drinking behaviour and emotional and behavioural problems (SALSUS)
 ---

@@ -1,16 +1,16 @@
 ---
 category:
-- Economic Activity, Benefits and Tax Credits
-date_created: '2021-04-29'
-date_updated: '2021-09-22'
+- geography
+date_created: '2019-04-25'
+date_updated: '2021-10-08'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Application outcome for clients responding to Equality Monitoring and Feedback
-  forms when making applications to Social Security Scotland since 9th December 2019.</p>
+notes: <p>Geography lookup tables used for aggregation, from 2011 data zones to higher
+  level geographies</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/social-security-scotland-client-equalities-with-application-outcome
+original_dataset_link: http://statistics.gov.scot/data/data-zone-lookup
 records: null
 resources: []
 schema: default
-title: 'Social Security Scotland: clients equalities with application outcome'
+title: Data Zone Lookup
 ---

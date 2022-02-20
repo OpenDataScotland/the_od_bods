@@ -1,15 +1,16 @@
 ---
 category:
-- Economic Activity, Benefits and Tax Credits
-date_created: '2019-07-12'
-date_updated: '2021-06-30'
+- economy
+date_created: '2018-04-19'
+date_updated: '2021-10-25'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Feedback statistics covering complaints received by Social Security Scotland.</p>
+notes: <p>Scottish international exports and Scottish exports to the rest of the UK
+  broken down by industry sector.</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/social-security-scotland-feedback-complaints
+original_dataset_link: http://statistics.gov.scot/data/exports
 records: null
 resources: []
 schema: default
-title: 'Social Security Scotland Feedback: Complaints'
+title: Exports by Industry
 ---

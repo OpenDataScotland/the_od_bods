@@ -2,21 +2,21 @@
 category:
 - transport / mobility
 - cycling
-- active travel
 - traffic counts
-date_created: '2021-08-17T15:42:36.457Z'
-date_updated: '2021-09-16'
+- active travel
+date_created: '2021-07-29T17:34:56.704Z'
+date_updated: '2021-08-13'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: <p>A real-time hourly upload from each cycling counter within Stirling Council's
-  network.</p>
+notes: <p>A real-time hourly upload from each cycling counter within John Muir Way's
+  cycle network.</p>
 organization: Cycling Scotland
-original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/83ca4907-393d-45d3-b141-853266140346
+original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/e318582c-569a-4734-8304-5bf7df9f0db8
 records: null
 resources:
 - format: JSON
   name: JSON
-  url: https://api.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/455c088b-1f4a-4e95-9ba4-803f663c2500/1/urql
+  url: https://api.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/dfa2e487-eeda-460a-aaf3-03f4b73893b4/1/urql
 schema: default
-title: Stirling - Hourly cycling counts from automatic cycling counters
+title: John Muir Way - Hourly cycling counts from automatic cycling counters
 ---

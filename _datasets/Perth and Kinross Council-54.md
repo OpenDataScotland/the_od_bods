@@ -6,7 +6,7 @@ category:
 - quality
 date_created: '2021-09-30'
 date_updated: '2021-09-30'
-license: ''
+license: No licence
 maintainer: Perth and Kinross Council
 notes: <p>A designated area where certain pollutants exceed certain levels and therefore
   need a Detailed Assessment. In PKC nitrogen dioxide and particulate matter have

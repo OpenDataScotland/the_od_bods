@@ -1,16 +1,16 @@
 ---
 category:
-- Economic Activity, Benefits and Tax Credits
-date_created: '2021-06-03'
-date_updated: '2021-09-13'
+- economic activity
+- benefits and tax credits
+date_created: '2019-07-12'
+date_updated: '2021-06-30'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Applications received and authorised, and total value of payments for Scottish
-  Child Payment</p>
+notes: <p>Feedback statistics covering complaints received by Social Security Scotland.</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/scottish-child-payment-applications-and-payments
+original_dataset_link: http://statistics.gov.scot/data/social-security-scotland-feedback-complaint-outcomes
 records: null
 resources: []
 schema: default
-title: 'Scottish Child Payment: Applications and Payments'
+title: 'Social Security Scotland Feedback: Complaint Outcomes'
 ---

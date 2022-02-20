@@ -1,17 +1,16 @@
 ---
 category:
-- Scottish Index of Multiple Deprivation
-date_created: '2019-10-09'
-date_updated: '2020-03-31'
+- housing
+date_created: '2018-07-20'
+date_updated: '2021-08-30'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>The Scottish Index of Multiple Deprivation (SIMD) was published in August
-  2016. This dataset contains the indicators that were used to calculate the education
-  domain of SIMD.</p>
+notes: <p>Number of Local Authority dwellings falling vacant during the year and which
+  are available for reletting (whether or not relet)</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/scottish-index-of-multiple-deprivation---education-indicators
+original_dataset_link: http://statistics.gov.scot/data/local-authority-vacant-dwellings-vacancies-arising-during-the-year
 records: null
 resources: []
 schema: default
-title: Scottish Index of Multiple Deprivation - Education Indicators
+title: Local Authority Vacant Dwellings (vacancies arising during the year)
 ---

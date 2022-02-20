@@ -1,16 +1,15 @@
 ---
 category:
-- Environment
-date_created: '2019-03-09'
-date_updated: '2021-10-08'
+- housing
+date_created: '2017-11-22'
+date_updated: '2021-08-30'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Percentage of adults living within various walking distances to their nearest
-  green or blue space</p>
+notes: <p>Local Authority owned housing stock, by type of dwelling</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/green-or-blue-space-shs
+original_dataset_link: http://statistics.gov.scot/data/local-authority-housing-stock-by-type
 records: null
 resources: []
 schema: default
-title: Distance to Green or Blue Space - Scottish Household Survey
+title: Local Authority Housing Stock by Type
 ---

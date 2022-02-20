@@ -1,15 +1,15 @@
 ---
 category:
-- Health and Social Care
-date_created: '2016-12-01'
-date_updated: '2016-12-05'
+- health and social care
+date_created: '2014-07-29'
+date_updated: '2019-08-26'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Drug use among 13 and 15 year olds in Scotland.</p>
+notes: <p>Percentage of single room places in Care Homes by type of provision.</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/drug-use-behaviour-among-young-people-salsus
+original_dataset_link: http://statistics.gov.scot/data/places-in-single-rooms-in-care-homes
 records: null
 resources: []
 schema: default
-title: Drug use behaviour among young people (SALSUS)
+title: Places In Single Rooms In Care Homes
 ---

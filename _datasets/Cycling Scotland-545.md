@@ -1,27 +1,29 @@
 ---
 category:
 - transport / mobility
+- traffic counts
 - active travel
-- cycling
-- cycling scotland
-- scottish household survey
-- transport
 - transport and travel in scotland
-date_created: '2018-05-15T10:17:06.963Z'
-date_updated: '2019-12-20'
+- national monitoring framework
+- cycling scotland
+date_created: '2021-12-23T16:01:50.046Z'
+date_updated: '2022-01-05'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: <p>Data from Transport and Travel in Scotland and the Scottish Household Survey
-  relating to the number of bikes available for private use by Local Authority in
-  2016.</p>
+notes: <p>This dataset holds the locations for all of Cycling Scotland's all-mode
+  traffic counts which are undertaken biannually across Scotland. The dates of each
+  count are included.</p>
 organization: Cycling Scotland
-original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/0f20095c-c878-4f07-962d-8db0faaa0b5c
+original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/b4caea0b-4a89-41de-9bf4-5f349f1f7cea
 records: null
 resources:
+- format: JSON
+  name: JSON
+  url: https://api.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/b7c2f32e-599b-4c60-b298-38ae1257ae7e/1/urql
 - format: CSV
   name: CSV
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=aa86d727-c4eb-4c00-b8ae-69fdd191ceb7
+  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=e9a35cef-fa69-4c96-aeba-59c79ea73a2a
 schema: default
-title: Number of bikes available for private use - Travel and Transport Scotland 2016
-  - Scottish Household Survey
+title: National Monitoring Framework - all-mode Traffic Survey locations - Cycling
+  Scotland
 ---

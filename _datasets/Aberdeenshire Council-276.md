@@ -4,7 +4,7 @@ category:
 - transport
 date_created: ''
 date_updated: '2021-01-13'
-license: Custom
+license: 'Custom licence: Custom'
 maintainer: Aberdeenshire Council
 notes: ''
 organization: Aberdeenshire Council

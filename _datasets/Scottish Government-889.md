@@ -1,17 +1,17 @@
 ---
 category:
-- Economic Activity, Benefits and Tax Credits
-date_created: '2019-05-31'
-date_updated: '2021-11-02'
+- business
+- enterprise and energy
+date_created: '2018-06-18'
+date_updated: '2021-03-29'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Received applications and authorised applications (awards) for Best Start
-  Grant Pregnancy and Baby Payment,  Early Learning Payment, School Age Payment and
-  Best Start Foods Payment</p>
+notes: <p>Expenditure and employment on research and development by businesses in
+  Scotland since 2001.</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/best-start-grant
+original_dataset_link: http://statistics.gov.scot/data/business-enterprise-research-and-development-expenditure
 records: null
 resources: []
 schema: default
-title: 'Best Start Grant and Best Start Foods: Applications'
+title: Business Enterprise Research and Development Expenditure
 ---

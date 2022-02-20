@@ -4,7 +4,7 @@ category:
 - democracy
 date_created: '2017-03-13'
 date_updated: '2021-03-24'
-license: ''
+license: No licence
 maintainer: South Ayrshire Council
 notes: <p>Points depicting polling places in South Ayrshire</p>
 organization: South Ayrshire Council

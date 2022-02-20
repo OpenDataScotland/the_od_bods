@@ -6,7 +6,7 @@ category:
 - outdoor access
 date_created: '2015-10-30'
 date_updated: '2020-11-25'
-license: ''
+license: No licence
 maintainer: South Ayrshire Council
 notes: <p>Footpaths for the area - not indicative of a public right of way</p>
 organization: South Ayrshire Council

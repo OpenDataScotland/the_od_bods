@@ -5,7 +5,7 @@ category:
 - wind turbines
 date_created: 11/01/18
 date_updated: '2021-02-02'
-license: INSPIRE Regulations 2009
+license: 'Custom licence: INSPIRE Regulations 2009'
 maintainer: Moray Council
 notes: ''
 organization: Moray Council

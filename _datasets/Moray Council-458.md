@@ -1,20 +1,21 @@
 ---
 category:
-- planning
 - inspire
-date_created: '2017-08-08'
+- planning
+date_created: '2017-08-22'
 date_updated: '2020-11-30'
-license: ''
+license: No licence
 maintainer: Moray Council
-notes: <p>The Local Development Plan 2015 was superseded by the Local Development
-  Plan 2020 on 27 July 2020.Local Development Plan 2015 Settlement Boundaries are
-  used for the distribution of housing and employment land across Moray as per the
-  spatial strategy set out within the Moray Local Development Plan 2015. Settlement
-  boundaries contain the primary, secondary and third tier settlements.</p>
+notes: <p>Vacant and Derelict Land Audit 2017 (Moray) The Scottish Vacant and Derelict
+  Land Survey is a data collection undertaken to establish the extent and state of
+  vacant and derelict land in Scotland. The survey has been operating since 1988,
+  and is managed by the Scottish Government Communities Analysis Division. The data
+  is sourced from local authorities and the Loch Lomond and Trossachs National Park
+  Authority.</p>
 organization: Moray Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=5c51907e5088428ea44e8d4068cf8e51
-records: 33
+original_dataset_link: https://www.arcgis.com/home/item.html?id=bc20bcb55c1245489bf3da4128a3aba1
+records: 21
 resources: []
 schema: default
-title: Local Development Plan 2015 Settlement Boundaries (Moray)
+title: Vacant and Derelict Land Audit 2017 (Moray)
 ---

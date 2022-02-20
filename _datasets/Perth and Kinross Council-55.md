@@ -5,7 +5,7 @@ category:
 - economy
 date_created: '2021-09-30'
 date_updated: '2021-09-30'
-license: ''
+license: No licence
 maintainer: Perth and Kinross Council
 notes: "<table width='100%'><tbody><tr><td></td></tr><tr><td></td><td>Availability\
   \ of Superfast (% of Premises) \u2013 Percentage of premises that have at least\

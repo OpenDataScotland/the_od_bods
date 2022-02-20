@@ -1,15 +1,16 @@
 ---
 category:
-- Education, Skills and Training
-date_created: '2014-07-29'
-date_updated: '2021-03-31'
+- business
+- enterprise and energy
+date_created: '2018-04-11'
+date_updated: '2021-09-23'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Number, and percent, of school leavers by destination from initial survey</p>
+notes: <p>Number and rate (per 10,000 adults) of VAT/PAYE registrations and de-registrations.</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/school-leaver-destinations
+original_dataset_link: http://statistics.gov.scot/data/business-demography---births-and-deaths
 records: null
 resources: []
 schema: default
-title: School Leaver Destinations Initial
+title: Business Demography - Births and Deaths
 ---

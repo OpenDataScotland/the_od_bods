@@ -2,26 +2,30 @@
 category:
 - transport / mobility
 - active travel
+- cycling
 - cycling scotland
-date_created: '2020-07-20T08:51:08.163Z'
-date_updated: '2021-08-17'
+- scottish household survey
+- transport and travel in scotland
+date_created: '2019-04-30T12:48:40.686Z'
+date_updated: '2019-12-20'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: <p>All-mode traffic data from 48-hour surveys across Scotland in May 2018</p>
+notes: <p>Data from the Scottish Household Survey Travel Diary showing percentage
+  of journeys by main mode of travel between 2007 and 2017.</p>
 organization: Cycling Scotland
-original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/6ecbae85-3827-45ea-968a-d97939bf7f7e
+original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/43ea90d9-39d4-44a6-bb44-b83a6955f6ab
 records: null
 resources:
 - format: JSON
   name: JSON
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=093651c1-b4c8-4cc1-8343-7e91937c3e00
+  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=febbc0b9-e30b-4743-9d62-77b029c696dd
 - format: CSV
   name: CSV
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=42d30410-5949-4fb4-b770-7b83f27ca117
+  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=1e4e42a2-e891-4595-bbe7-043491118569
 - format: XML
   name: XML
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=2fbdb32d-7b03-472a-ac75-d8984e476de8
+  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=48559fa7-126e-4d5a-9f5f-4ded9ca4d30f
 schema: default
-title: National Monitoring Framework - all-mode traffic survey results May 2018 -
-  Cycling Scotland
+title: Percentage of journeys by main mode of travel 2007-2017 - Transport and Travel
+  - Scottish Household Survey
 ---

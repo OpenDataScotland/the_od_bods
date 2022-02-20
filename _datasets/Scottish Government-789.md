@@ -1,17 +1,17 @@
 ---
 category:
-- Crime and Justice
-date_created: '2017-03-21'
-date_updated: '2021-03-08'
+- economic activity
+- benefits and tax credits
+date_created: '2014-07-29'
+date_updated: '2016-02-10'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Number of social work orders completed/terminated in each local authority
-  area from 2004-05 onwards, broken down by type of order and whether successfully
-  completed.</p>
+notes: <p>Number of people claiming Attendance Allowance by age, gender and rate of
+  award</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/social-work-orders-terminated
+original_dataset_link: http://statistics.gov.scot/data/attendance-allowance
 records: null
 resources: []
 schema: default
-title: Social Work Orders Terminated
+title: Attendance Allowance
 ---

@@ -6,7 +6,7 @@ category:
 - development plans
 date_created: 13/12/17
 date_updated: '2020-11-30'
-license: INSPIRE Regulations 2009
+license: 'Custom licence: INSPIRE Regulations 2009'
 maintainer: Moray Council
 notes: ''
 organization: Moray Council

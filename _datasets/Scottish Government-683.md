@@ -1,15 +1,16 @@
 ---
 category:
-- Crime and Justice
+- economic activity
+- benefits and tax credits
 date_created: '2014-07-29'
-date_updated: '2021-09-01'
+date_updated: '2021-10-06'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Crimes cleared up by the police as a percentage of those recorded.</p>
+notes: <p>Economic inactivity level and rate by gender</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/crime-clear-up-rates
+original_dataset_link: http://statistics.gov.scot/data/economic-inactivity
 records: null
 resources: []
 schema: default
-title: Crime Clear up Rates
+title: Economic Inactivity
 ---

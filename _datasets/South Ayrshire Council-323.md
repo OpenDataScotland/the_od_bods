@@ -4,7 +4,7 @@ category:
 - planning
 date_created: '2021-10-12'
 date_updated: '2021-10-12'
-license: ''
+license: No licence
 maintainer: South Ayrshire Council
 notes: <p>Marketable sites and locations for businesses allocated in development plans</p>
 organization: South Ayrshire Council

@@ -3,7 +3,7 @@ category:
 - parks and open spaces
 date_created: '2021-09-30'
 date_updated: '2021-09-30'
-license: ''
+license: No licence
 maintainer: Perth and Kinross Council
 notes: <p>Location of the 8 major parks with Perth and Kinross</p>
 organization: Perth and Kinross Council

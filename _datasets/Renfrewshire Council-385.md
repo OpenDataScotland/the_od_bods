@@ -3,16 +3,16 @@ category:
 - open data
 - renfrewshire
 - democracy and governance
-date_created: '2017-10-19'
-date_updated: '2017-10-19'
-license: http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+date_created: '2018-01-09'
+date_updated: '2018-05-09'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Renfrewshire Council
-notes: "<p>A layer showing the location of polling\_stations in Renfrewshire in June\
-  \ 2017.</p>"
+notes: <p>Renfrewshire South and Renfrewshire North Scottish Parliamnet Election results
+  5 May 2016.</p>
 organization: Renfrewshire Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=000b32d31a22485d9107a1666577372b
-records: 174
+original_dataset_link: https://www.arcgis.com/home/item.html?id=2d38f2e56bbc4aefba1fe872c0fc4f73
+records: 2
 resources: []
 schema: default
-title: Situation of Polling Stations
+title: Scottish Parliament Election May 2016
 ---

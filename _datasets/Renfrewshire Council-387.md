@@ -1,22 +1,18 @@
 ---
 category:
-- hub site
-date_created: '2017-05-10'
-date_updated: '2022-01-07'
-license: ''
+- renfrewshire
+- open data
+- tourism
+date_created: '2019-07-19'
+date_updated: '2019-07-23'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Renfrewshire Council
-notes: <p>Renfrewshire Open Data Platform This is the community's public platform
-  for exploring and downloading open data, discovering and building apps, and engaging
-  to solve important local issues. You can analyse and combine Open Datasets using
-  maps, as well as develop new web and mobile applications. Let's make our great community
-  even better, together! Boundaries Built Environment Business and Economy Community
-  Democracy and Governance Education Health and Wellbeing Population and Society Tourism
-  Transportation Renfrewshire Open Data Platform Guide Scottish Index of Multiple
-  Deprivation 2016 Renfrewshire Open Data Strategy Contact Information danny.mcallion@renfrewshire.gov.uk</p>
+notes: <p>Scottish Annual Business Survey 2017, Sustainable Tourism (June 2019 release)-
+  filtered for Renfrewshire</p>
 organization: Renfrewshire Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=713c57b0af4a414783366ad9321e4f91
-records: null
+original_dataset_link: https://www.arcgis.com/home/item.html?id=1a29736b06fd42339bb3e9bac85d0bf3
+records: 12
 resources: []
 schema: default
-title: Open Data Site
+title: Sustainable Tourism
 ---

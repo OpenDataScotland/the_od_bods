@@ -2,30 +2,25 @@
 category:
 - transport / mobility
 - active travel
-- cycling
 - cycling scotland
-date_created: '2018-12-18T13:28:31.800Z'
-date_updated: '2021-10-13'
-license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+- schools
+- young people
+date_created: '2019-10-21T10:38:12.077Z'
+date_updated: '2019-10-30'
+license: https://creativecommons.org/licenses/by/4.0/
 maintainer: Cycling Scotland
-notes: <p>Schools in Scotland which delivered Bikeability Scotland training in 2017/18.
-  Bikeability Scotland is a cycle training programme designed to give children the
-  skills and confidence they need both to cycle safely on the roads, and to encourage
-  them to carry on cycling into adulthood.</p>
+notes: <p>This data highlights all secondary schools across Scotland that have received
+  a Cycling Scotland Development Fund</p>
 organization: Cycling Scotland
-original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/c2dac095-6b06-495f-8531-dec6c0b27dc2
+original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/31b68937-3327-4468-bca1-546d5d25de11
 records: null
 resources:
 - format: JSON
   name: JSON
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=52ac5039-7ff4-44f0-8e41-708c0e2eb1de
-- format: XML
-  name: XML
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=71dd3758-e670-43a4-9623-7d4ced6277de
+  url: https://api.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/3ad3768f-134c-4e77-a50f-cd22b39e2ee6/2/urql
 - format: CSV
   name: CSV
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=b64cd424-bba7-40fc-b3ff-0170e6be5b47
+  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=1662f845-427f-4b6e-b59f-d6eb353c742b
 schema: default
-title: Bikeability Scotland - Schools delivering Level 1 and/or Level 2 - 2017/18
-  - Cycling Scotland
+title: Cycling Friendly - Secondary School Development Fund - Cycling Scotland
 ---

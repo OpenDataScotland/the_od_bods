@@ -1,31 +1,28 @@
 ---
 category:
 - transport / mobility
-- national monitoring framework
-- featured
-- cycling scotland
 - active travel
-date_created: '2021-08-27T10:45:43.733Z'
-date_updated: '2021-09-03'
+- traffic counts
+date_created: '2020-07-20T08:53:30.537Z'
+date_updated: '2021-08-17'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: <p>This data set holds the locations for all of Cycling Scotland's permanent
-  cycle counter locations across Scotland, including the installation date of each
-  counter</p>
+notes: <p>All-mode traffic data from 48-hour surveys across Scotland in September
+  2018</p>
 organization: Cycling Scotland
-original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/14227968-8ed5-4caf-a5cb-2dbc3539100f
+original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/a0f74c16-ff56-4d36-a26d-8d07e9a5a449
 records: null
 resources:
 - format: JSON
   name: JSON
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=79e31b87-fbd8-4cc7-b0fb-bd8cf56beba3
-- format: CSV
-  name: CSV
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=dd1d4f08-6aba-4e14-abfd-3d6e6d79b811
+  url: https://api.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/20f490ba-edef-4843-822a-cd3e2670916f/2/urql
 - format: XML
   name: XML
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=38d63877-40f3-462d-92b7-91685f20c22d
+  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=f255f058-4237-42a4-8ddf-e88d2627ae66
+- format: CSV
+  name: CSV
+  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=7b202b52-1850-4396-b668-dca476a69da5
 schema: default
-title: National Monitoring Framework - Automatic cycling counter locations - Cycling
-  Scotland
+title: National Monitoring Framework - all-mode traffic survey results September 2018
+  - Cycling Scotland
 ---

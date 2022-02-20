@@ -5,7 +5,7 @@ category:
 - community safety
 date_created: '2015-10-30'
 date_updated: '2019-09-13'
-license: ''
+license: No licence
 maintainer: South Ayrshire Council
 notes: <p>Safeguarding zones for developments around Prestwick Airport</p>
 organization: South Ayrshire Council

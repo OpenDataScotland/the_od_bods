@@ -1,17 +1,16 @@
 ---
 category:
-- Management Information
-date_created: '2020-12-04'
-date_updated: '2021-07-20'
+- labour force
+date_created: '2019-02-28'
+date_updated: '2021-08-02'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>This dataset details the Scottish Government's spend with it's top 50 suppliers,
-  calculated using spend by value, by financial year.  This comprises spend on goods,
-  works and services.</p>
+notes: <p>Number and percentage of employees earning less than the living wage, based
+  on workplace local authority</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/scottish-government-spend-with-top-50-suppliers
+original_dataset_link: http://statistics.gov.scot/data/living-wage
 records: null
 resources: []
 schema: default
-title: Scottish Government Spend with Top 50 Suppliers
+title: Living Wage
 ---

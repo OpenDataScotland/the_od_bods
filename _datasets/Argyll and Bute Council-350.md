@@ -1,23 +1,18 @@
 ---
 category:
+- ldp
+- local development plan
 - planning
-- conservation
-- tree
-- woodland
-- environment
 date_created: '2017-07-07'
 date_updated: '2017-07-18'
-license: ''
+license: No licence
 maintainer: Argyll and Bute Council
-notes: <p>Tree Preservation Orders (TPO) are served by the council to protect individual
-  and groups of trees which are considered of sufficient merit to warrant formal protection
-  either for their contribution to the setting of the landscape/ built environment
-  or where the tree itself is considered to be of interest either as an example of
-  its species or of local / historic interest.</p>
+notes: <p>Development Management Zones designated in the Argyll and Bute adopted Local
+  Development Plan 2015.</p>
 organization: Argyll and Bute Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=beb58178a74f45eb9eca942cf2584c48
-records: 176
+original_dataset_link: https://www.arcgis.com/home/item.html?id=c438cbaf9b99421fbc603738caa910a2
+records: 9373
 resources: []
 schema: default
-title: Open Data - Tree Preservation Orders
+title: Open Data - Development Management Zones
 ---

@@ -1,16 +1,15 @@
 ---
 category:
-- Education, Skills and Training
-date_created: '2018-04-24'
-date_updated: '2021-05-03'
+- scottish index of multiple deprivation
+date_created: 15:38:45Z
+date_updated: '2020-03-31'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: '<p>School leaver average total tariff score: grouped into the lowest 20%,
-  middle 60% and highest 20% of attainers for each school</p>'
+notes: <p>The number and percentage of people who are employment deprived</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/attainment-for-all
+original_dataset_link: http://statistics.gov.scot/data/scottish-index-of-multiple-deprivation---employment-indicators
 records: null
 resources: []
 schema: default
-title: Schools - Attainment for All
+title: Scottish Index of Multiple Deprivation - Employment Indicators
 ---

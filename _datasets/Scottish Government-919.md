@@ -1,16 +1,17 @@
 ---
 category:
-- Scottish Index of Multiple Deprivation
-date_created: '2020-02-13'
-date_updated: '2020-02-13'
+- business
+- enterprise and energy
+date_created: '2019-01-30'
+date_updated: '2021-09-09'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Data Zone level ranks and quantiles for the 2016 Scottish Index of Multiple
-  Deprivation (SIMD) overall, and by individual domain</p>
+notes: <p>Number of VAT/PAYE registered stocks and sites operating in Scotland by
+  Urban Rural Classification</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/scottish-index-of-multiple-deprivation-historical-ii
+original_dataset_link: http://statistics.gov.scot/data/business-stocks-and-sites-by-urban-rural-classification
 records: null
 resources: []
 schema: default
-title: Scottish Index of Multiple Deprivation (Historical) - 2016
+title: Business Stocks and Sites by Urban Rural Classification
 ---

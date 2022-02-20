@@ -1,25 +1,25 @@
 ---
 category:
-- infrastructure
 - transport / mobility
-- cycling
-- transport and travel in scotland
-date_created: '2019-06-20T13:28:53.883Z'
-date_updated: '2021-01-13'
-license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+- active travel
+- business
+- cycling scotland
+date_created: '2019-10-21T10:07:11.873Z'
+date_updated: '2019-11-26'
+license: https://creativecommons.org/licenses/by/4.0/
 maintainer: Cycling Scotland
-notes: <p>Glasgow City Council's raw data files for January to March 2019.</p>
+notes: <p>This data highlights all employers across Scotland that have received a
+  Cycling Friendly School Award</p>
 organization: Cycling Scotland
-original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/5e0304e7-bd04-4c70-be63-b1865fe9a8e8
+original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/fa4d4cbb-b4a0-4efd-ae68-7767f6ab117d
 records: null
 resources:
-- format: VND.MS-EXCEL
-  name: VND.MS-EXCEL
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=c3e8b496-290b-4f9e-b040-8acbaad84e00
-- format: PDF
-  name: PDF
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/additionalDocumentation/e6b0978b-db1a-44f3-9f44-88a75181b7bf/Automatic
-    Cycle Counter Locations City Centre Cordon.pdf
+- format: JSON
+  name: JSON
+  url: https://api.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/2976a33d-5707-4144-8ac5-9df05abf5071/5/urql
+- format: CSV
+  name: CSV
+  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=c045f5f5-7e79-440c-a8be-477d686c5fdc
 schema: default
-title: City Centre Cordon - Automatic Cycle Counts - Quarter 1 2019
+title: Cycling Friendly - Employers Award - Cycling Scotland
 ---

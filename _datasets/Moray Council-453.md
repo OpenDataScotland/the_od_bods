@@ -4,16 +4,13 @@ category:
 - inspire
 date_created: '2020-07-23'
 date_updated: '2020-11-30'
-license: ''
+license: No licence
 maintainer: Moray Council
-notes: <p>Local Development Plan 2020 Settlement Boundaries are used for the distribution
-  of housing and employment land across Moray as per the spatial strategy set out
-  within the Moray Local Development Plan 2020. Settlement boundaries contain the
-  primary, secondary and third tier settlements.</p>
+notes: <p>Local Development Plan 2020 Waste Sites (Moray)</p>
 organization: Moray Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=98fd19de341d4263a367236b19c06032
-records: 33
+original_dataset_link: https://www.arcgis.com/home/item.html?id=60a64be6443046ce8ce4c2fe628f2c37
+records: 4
 resources: []
 schema: default
-title: Local Devevlopment Plan 2020 Settlement Boundary (Moray)
+title: Local Development Plan 2020 Waste Sites (Moray)
 ---

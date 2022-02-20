@@ -6,7 +6,7 @@ category:
 - special
 date_created: '2021-09-30'
 date_updated: '2021-09-30'
-license: ''
+license: No licence
 maintainer: Perth and Kinross Council
 notes: <p>Designated landscapes within Perth and Kinross which merit special attention,
   either because they are of particular value and warrant protection or because they

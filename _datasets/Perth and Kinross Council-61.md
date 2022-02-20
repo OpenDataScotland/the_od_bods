@@ -9,7 +9,7 @@ category:
 - polling
 date_created: '2021-09-30'
 date_updated: '2021-09-30'
-license: ''
+license: No licence
 maintainer: Perth and Kinross Council
 notes: <p>Community Council boundaries adopted in November 2019. Also includes a minor
   change made in June 2021. A Community Council is a voluntary organisation set up

@@ -1,20 +1,18 @@
 ---
 category:
-- boundary
-- electoral
-- community
-date_created: '2017-07-07'
-date_updated: '2017-07-18'
-license: ''
+- renewable energy
+- planning
+- ldp
+date_created: '2019-07-31'
+date_updated: '2019-07-31'
+license: No licence
 maintainer: Argyll and Bute Council
-notes: <p>Community councils are required to be established by local authorities.
-  They are the most local tier of statutory representation in Scotland. They bridge
-  the gap between local authorities and communities and help to make public bodies
-  aware of the opinions and needs of the communities they represent.</p>
+notes: '<p>Spatial Framework for Wind Turbines over 50 metres: Supplementary Guidance
+  to Local Development Plan 2015. Adopted December 2016</p>'
 organization: Argyll and Bute Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=faa76111592f4802971cee44a6c54bf6
-records: 56
+original_dataset_link: https://www.arcgis.com/home/item.html?id=2078db2e07f54b38af1f5e96bbd95dc4
+records: 4
 resources: []
 schema: default
-title: Open Data - Community Councils
+title: Spatial Framework for Wind Energy
 ---

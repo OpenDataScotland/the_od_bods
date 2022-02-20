@@ -1,25 +1,23 @@
 ---
 category:
 - transport / mobility
-- cycling
-- cycling scotland
 - active travel
-- transport and travel in scotland
-date_created: '2018-05-11T14:16:53.569Z'
-date_updated: '2019-12-16'
+- cycling
+- traffic counts
+date_created: '2021-07-03T15:12:25.015Z'
+date_updated: '2021-08-13'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: <p>Data from Transport and Travel in Scotland relating to cycling frequency
-  in the previous seven days. Split by gender, age, employment status, net household
-  income, SIMD and more.</p>
+notes: <p>A real-time daily upload from each cycling counter within Comhairle nan
+  Eilean Siar's network.</p>
 organization: Cycling Scotland
-original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/1891331f-7ec1-4d7a-9ad5-4c43bb817ad8
+original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/95dcdb65-ced2-4291-abb2-27209c132115
 records: null
 resources:
-- format: CSV
-  name: CSV
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=7a097bf0-1a75-4cf2-b4d7-90d6b73aa15e
+- format: JSON
+  name: JSON
+  url: https://api.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/76b1d034-058f-4c23-9b33-e3bc11fcf8f2/1/urql
 schema: default
-title: Frequency of cycling in the previous seven days 2016 - Transport and Travel
-  Scotland 2018 - Scottish Household Survey
+title: Comhairle nan Eilean Siar (Western Isles Council) - Daily cycling counts from
+  automatic cycling counters
 ---

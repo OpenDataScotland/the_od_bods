@@ -1,21 +1,22 @@
 ---
 category:
 - planning
-- environment
-- boundaries
-- open data
-date_created: '2018-02-22'
+- inspire
+date_created: '2017-12-13'
 date_updated: '2020-11-30'
-license: ''
+license: No licence
 maintainer: Moray Council
-notes: "<p>Conservation Areas are areas of special architectural of historic interest\
-  \ where it is desirable to preserve or enhance the character or appearance of the\
-  \ area. The aim of this policy is to preserve and enhance Moray\u2019s Conservation\
-  \ Areas.</p>"
+notes: <p>The Local Development Plan 2015 was superseded by the Local Development
+  Plan 2020 on 27 July 2020.Local Development Plan 2015 Settlement Designations set
+  out the current and proposed land uses related to the boundaries for the primary,
+  secondary and third tier settlements. In general the land use designations indicate
+  the types of uses that will be acceptable under the terms of the plan. However any
+  proposal for development will also have to satisfy the key governing policies that
+  are set out in the Policy section of the Local Development Plan.</p>
 organization: Moray Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=ae82221d985d4517b788b14be8285329
-records: 18
+original_dataset_link: https://www.arcgis.com/home/item.html?id=24a749c00aa442ad928d71a22d5c4261
+records: 766
 resources: []
 schema: default
-title: Conservation Areas (CA)(Moray)
+title: Local Development Plan 2015 Settlement Designations (Moray)
 ---

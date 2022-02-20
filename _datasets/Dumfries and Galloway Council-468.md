@@ -1,24 +1,27 @@
 ---
 category:
 - social / community
-- http://publications.europa.eu/resource/authority/data-theme/heal
+- children
+- education
 - schools
-date_created: '2017-11-29T14:02:26.204Z'
-date_updated: '2018-03-01'
+date_created: '2017-11-21T15:27:30.905Z'
+date_updated: '2017-11-21'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
-notes: <p>Physical Education provision in primary and secondary schools in Dumfries
-  and Galloway and other school variables, 2017</p>
+notes: <p>Primary Schools in Dumfries and Galloway</p>
 organization: Dumfries and Galloway Council
-original_dataset_link: https://usmart.io/org/dumgal/discovery/discovery-view-detail/7664f600-29a7-4c95-9a2a-8b1a433ad54b
+original_dataset_link: https://usmart.io/org/dumgal/discovery/discovery-view-detail/247a79cc-bd65-43c5-8b3b-26d463febe36
 records: null
 resources:
 - format: JSON
   name: JSON
-  url: https://api.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/e2ccd990-359d-4ebd-b1d4-2c67e4830a3e/1/urql
+  url: https://api.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/d1d37cf0-246c-4f67-bcc2-4ab9fbc351ae/1/urql
 - format: CSV
   name: CSV
-  url: https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/resource?resourceGUID=2d7dc236-7e75-4c27-a60f-2000d039dda2
+  url: https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/resource?resourceGUID=9eeff79f-6e79-4e91-984a-5cc347b2eaf4
+- format: XML
+  name: XML
+  url: https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/resource?resourceGUID=d6c7780e-7d08-4f74-a2f1-a8fb3ac3ddb4
 schema: default
-title: PE Provision
+title: Primary Schools
 ---

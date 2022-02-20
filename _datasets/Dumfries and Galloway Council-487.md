@@ -1,24 +1,25 @@
 ---
 category:
-- geospatial
-- business
-- social
-- community
-date_created: '2018-07-12T12:59:47.961Z'
-date_updated: '2018-10-02'
+- social / community
+- children
+date_created: '2017-11-16T13:35:10.411Z'
+date_updated: '2017-11-16'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
-notes: <p>Community Council Boundaries</p>
+notes: <p>Nurseries in Dumfries and Galloway with headcount of children attending.</p>
 organization: Dumfries and Galloway Council
-original_dataset_link: https://usmart.io/org/dumgal/discovery/discovery-view-detail/1efec530-bc75-40c3-8578-e263b5d750ab
+original_dataset_link: https://usmart.io/org/dumgal/discovery/discovery-view-detail/7b74d2d8-a96f-4b5a-be63-b895e4a939e2
 records: null
 resources:
-- format: ZIP
-  name: ZIP
-  url: https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/resource?resourceGUID=8479d7d9-5c9a-4415-afff-46ddbc164fcb
 - format: JSON
   name: JSON
-  url: https://api.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/cd71ccc9-9e96-473b-b542-063aa16acfc1/1/urql
+  url: https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/resource?resourceGUID=a4871862-2752-4209-8ff8-d0f9c8da3574
+- format: CSV
+  name: CSV
+  url: https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/resource?resourceGUID=683b2713-b1bb-4e1d-acc7-26b24e5fca8a
+- format: XML
+  name: XML
+  url: https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/resource?resourceGUID=a46dab69-e9f0-4e52-bf11-f8e707a12846
 schema: default
-title: Community Council Boundaries
+title: Nurseries
 ---

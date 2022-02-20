@@ -1,20 +1,21 @@
 ---
 category:
-- environment
 - planning
+- environment
 - boundaries
 - open data
-date_created: '2018-02-16'
+date_created: '2018-02-22'
 date_updated: '2020-11-30'
-license: ''
+license: No licence
 maintainer: Moray Council
-notes: <p>Tree Preservation Orders (TPO's) are served on potentially vulnerable trees
-  which are of significant amenity value to the community as a whole, or trees of
-  significant biodiversity value.</p>
+notes: "<p>Conservation Areas are areas of special architectural of historic interest\
+  \ where it is desirable to preserve or enhance the character or appearance of the\
+  \ area. The aim of this policy is to preserve and enhance Moray\u2019s Conservation\
+  \ Areas.</p>"
 organization: Moray Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=17aa00fec3f248aa8c92bd3c12355996
-records: 87
+original_dataset_link: https://www.arcgis.com/home/item.html?id=ae82221d985d4517b788b14be8285329
+records: 18
 resources: []
 schema: default
-title: Tree Preservation Orders (TPO) (Moray)
+title: Conservation Areas (CA)(Moray)
 ---

@@ -1,15 +1,15 @@
 ---
 category:
-- Health and Social Care
-date_created: '2017-08-03'
-date_updated: '2017-08-11'
+- environment
+date_created: '2014-07-29'
+date_updated: '2016-02-09'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Emotional and behavioural problems, by drinking behaviour, age, and gender</p>
+notes: <p>Number of dwellings in flood risk areas</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/drinking-behaviour-and-emotional-and-behavioural-problems-salsus
+original_dataset_link: http://statistics.gov.scot/data/dwellings-in-flood-risk-areas
 records: null
 resources: []
 schema: default
-title: Drinking behaviour and emotional and behavioural problems (SALSUS)
+title: Dwellings In Flood Risk Areas
 ---

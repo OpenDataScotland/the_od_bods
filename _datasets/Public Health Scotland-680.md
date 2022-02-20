@@ -1,16 +1,16 @@
 ---
 category:
-- Health and Social Care
+- health and social care
 date_created: '2014-07-29'
-date_updated: '2021-09-03'
+date_updated: '2021-10-12'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Public Health Scotland
-notes: <p>Occupancy rate in care homes, for different main client groups and across
-  care sectors</p>
+notes: <p>Number and European Age-sex Standardised Rates (EASRs) of general acute
+  inpatient and day case discharges with an alcohol-related diagnosis.</p>
 organization: Public Health Scotland
-original_dataset_link: http://statistics.gov.scot/data/occupancy-rate-in-care-homes
+original_dataset_link: http://statistics.gov.scot/data/alcohol-related-discharge
 records: null
 resources: []
 schema: default
-title: 'Care Homes: Occupancy Rate'
+title: Alcohol Related Hospital Discharges
 ---

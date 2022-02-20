@@ -6,7 +6,7 @@ category:
 - transportation
 date_created: '2021-09-30'
 date_updated: '2021-09-30'
-license: ''
+license: No licence
 maintainer: Perth and Kinross Council
 notes: "<p>Car parking zones in Perth city centre. Parking in Perth City is divided\
   \ into three zones.\_Different pricing and waiting periods apply depending on the\

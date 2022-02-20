@@ -1,22 +1,30 @@
 ---
 category:
 - transport / mobility
-- active travel
-- cycling
+- transport
+- national monitoring framework
 - traffic counts
-date_created: '2021-03-17T17:44:41.886Z'
-date_updated: '2022-02-17'
+- active travel
+date_created: '2021-11-26T15:37:11.471Z'
+date_updated: '2021-11-29'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: <p>A real-time hourly upload from each cycling counter within Glasgow City
-  Council's network.</p>
+notes: <p>All-mode traffic data from 48-hour surveys across Scotland in September
+  2021</p>
 organization: Cycling Scotland
-original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/01c6a04a-1b6f-4121-9b8a-d081c7e6ea28
+original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/2313c4cf-ea8f-4974-98d1-50476db791cd
 records: null
 resources:
 - format: JSON
   name: JSON
-  url: https://api.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/9697fc32-5f26-466a-b6b8-f9e15e6a0c3c/1/urql
+  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=e0cb9563-d672-4dad-aaae-4aebbd06060d
+- format: CSV
+  name: CSV
+  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=eea394b4-241b-4c4a-ab2e-19026132615f
+- format: XML
+  name: XML
+  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=f8dbd8bf-91e7-4ae7-9d0d-38f1e0ef63e1
 schema: default
-title: Glasgow City Council - Hourly cycling counts from automatic cycling counters
+title: National Monitoring Framework - all-mode traffic survey results September 2021
+  - Cycling Scotland
 ---

@@ -1,16 +1,16 @@
 ---
 category:
-- Community Wellbeing and Social Environment
-date_created: '2019-03-14'
-date_updated: '2020-12-03'
+- housing
+date_created: '2018-01-29'
+date_updated: '2021-10-08'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>How safe adults in Scotland feel when walking alone in their neighbourhood
-  after dark, from the Scottish Household Survey (SHS)</p>
+notes: <p>How households in Scotland manage financially, from the Scottish Household
+  Survey (SHS)</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/neighbourhood-safety-when-walking-alone---scottish-household-survey
+original_dataset_link: http://statistics.gov.scot/data/household-financial-management---shs
 records: null
 resources: []
 schema: default
-title: Neighbourhood safety when walking alone - Scottish Household Survey
+title: Household Financial Management - Scottish Household Survey
 ---

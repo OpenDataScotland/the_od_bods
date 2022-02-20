@@ -1,17 +1,20 @@
 ---
 category:
 - renfrewshire
+- open data platform
 - open data
+- renfrewshire
+- care homes
 - health and wellbeing
-date_created: '2019-07-19'
-date_updated: '2019-07-19'
-license: ''
+date_created: '2017-09-06'
+date_updated: '2017-09-06'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Renfrewshire Council
-notes: <p>Drug-related deaths 2018, filtered for Renfrewshire.</p>
+notes: <p>A layer presenting Care Homes in Renfrewshire Council area</p>
 organization: Renfrewshire Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=15e7aa41b25940ea93b29da0158b2411
-records: 23
+original_dataset_link: https://www.arcgis.com/home/item.html?id=0310460f85374ba3a850e76f1fd84b34
+records: 33
 resources: []
 schema: default
-title: Drug related deaths 2018
+title: Care Homes
 ---

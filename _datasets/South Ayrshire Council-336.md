@@ -6,7 +6,7 @@ category:
 - boundaries
 date_created: '2015-10-30'
 date_updated: '2018-04-20'
-license: ''
+license: No licence
 maintainer: South Ayrshire Council
 notes: <p>Areas depicting greenbelt in South Ayrshire</p>
 organization: South Ayrshire Council

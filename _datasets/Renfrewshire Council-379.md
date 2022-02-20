@@ -1,17 +1,18 @@
 ---
 category:
-- renfrewshire
 - open data
-- community
-date_created: '2018-08-10'
+- renfrewshire
+- democracy and governance
+date_created: '2018-01-09'
 date_updated: '2018-09-12'
-license: http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Renfrewshire Council
-notes: <p>Dataset listing Big Lottery funded projects in Renfrewshire in 2017.</p>
+notes: <p>UK Parliament General Election 8 June 2017 results for Paisley and Renfrewshire
+  North and Paisley and Renfrewshire South.</p>
 organization: Renfrewshire Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=ff235ddc77b64f1a8ccea9781b97f572
-records: 26
+original_dataset_link: https://www.arcgis.com/home/item.html?id=5e81f9e2f68843c180ce2d144303f8b1
+records: 9
 resources: []
 schema: default
-title: Big Lottery Funded Projects 2017
+title: UK Parliament General Election June 2017 (results)
 ---

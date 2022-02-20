@@ -9,7 +9,7 @@ category:
 - polling
 date_created: '2021-09-30'
 date_updated: '2021-09-30'
-license: ''
+license: No licence
 maintainer: Perth and Kinross Council
 notes: "<p><font size='3'>Location of polling places to be used for elections in PKC.\_\
   A polling place is a building or area in which a polling station is located. There\

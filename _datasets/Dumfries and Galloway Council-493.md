@@ -1,24 +1,22 @@
 ---
 category:
-- social / community
-- children
-- education
-- schools
-date_created: '2017-11-17T11:31:23.930Z'
-date_updated: '2018-02-21'
+- built environment
+- planning
+date_created: '2018-07-12T13:05:10.581Z'
+date_updated: '2018-10-02'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
-notes: <p>Secondary Schools in Dumfries and Galloway</p>
+notes: <p>Contaminated Land Register</p>
 organization: Dumfries and Galloway Council
-original_dataset_link: https://usmart.io/org/dumgal/discovery/discovery-view-detail/85141456-67b4-4af9-8c24-17e35d4753f6
+original_dataset_link: https://usmart.io/org/dumgal/discovery/discovery-view-detail/b05ebc9e-e5b6-4a18-bcb7-c3c316ec20cb
 records: null
 resources:
-- format: CSV
-  name: CSV
-  url: https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/resource?resourceGUID=d50c4283-1e69-4347-a7e5-93b556135152
+- format: ZIP
+  name: ZIP
+  url: https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/resource?resourceGUID=e9b516c9-2ccd-4da5-96b8-d3c252418a15
 - format: JSON
   name: JSON
-  url: https://api.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/7631a55f-a450-4658-ae08-a1c3ddc626f7/1/urql
+  url: https://api.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/2f44f5af-a48f-4e4f-8387-799c130da2df/1/urql
 schema: default
-title: Secondary Schools
+title: Contaminated Land Register
 ---

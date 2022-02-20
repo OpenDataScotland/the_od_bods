@@ -1,16 +1,15 @@
 ---
 category:
-- Labour Force
+- health and social care
 date_created: '2014-07-29'
-date_updated: '2016-02-09'
+date_updated: '2019-08-26'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Number, and percent, of young people (16-19) who were not in education,
-  employment or training.</p>
+notes: <p>Percentage of places in Care Homes which have ensuite facilities</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/neet
+original_dataset_link: http://statistics.gov.scot/data/ensuite-places-in-care-homes
 records: null
 resources: []
 schema: default
-title: Not in Employment, Education or Training (NEET)
+title: Places in Care Homes with En-Suite Facilities
 ---

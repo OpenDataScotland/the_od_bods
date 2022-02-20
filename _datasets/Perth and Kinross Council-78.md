@@ -3,7 +3,7 @@ category:
 - forest woodland strategy
 date_created: '2021-09-30'
 date_updated: '2021-09-30'
-license: ''
+license: No licence
 maintainer: Perth and Kinross Council
 notes: '<div style=''text-align:Left;font-size:12pt''><p><span>Adopted at March 2020,
   the strategy provides a strategic framework for the development of forest and woodland

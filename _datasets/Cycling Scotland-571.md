@@ -2,22 +2,30 @@
 category:
 - transport / mobility
 - active travel
-- cycling
-- traffic counts
-date_created: '2021-07-03T15:12:25.015Z'
-date_updated: '2021-08-13'
+- government
+- featured
+- scottish household survey
+date_created: '2021-09-14T16:43:33.184Z'
+date_updated: '2021-09-14'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: <p>A real-time daily upload from each cycling counter within Comhairle nan
-  Eilean Siar's network.</p>
+notes: <p>Data from Transport and Travel in Scotland and the Scottish Household Survey
+  relating to the number of bikes available for private use by Local Authority in
+  2019.</p>
 organization: Cycling Scotland
-original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/95dcdb65-ced2-4291-abb2-27209c132115
+original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/0d94f83a-4b54-407c-89ae-6010ebd3ac8d
 records: null
 resources:
 - format: JSON
   name: JSON
-  url: https://api.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/76b1d034-058f-4c23-9b33-e3bc11fcf8f2/1/urql
+  url: https://api.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/ae0b651b-ce85-42b8-a9b6-7423465de8f4/1/urql
+- format: XML
+  name: XML
+  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=14508826-0c68-4dce-beb9-01620d1b4c7c
+- format: CSV
+  name: CSV
+  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=614df944-323e-4899-b099-9da795a66f77
 schema: default
-title: Comhairle nan Eilean Siar (Western Isles Council) - Daily cycling counts from
-  automatic cycling counters
+title: Number of bikes available for private use - Travel and Transport Scotland 2019
+  - Scottish Household Survey
 ---

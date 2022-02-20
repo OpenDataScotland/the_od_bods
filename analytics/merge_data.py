@@ -48,7 +48,12 @@ def merge_data():
     source_usmart['DateUpdated'] = source_usmart['DateUpdated'].apply(lambda x: x.replace(tzinfo=None))
 
     ## From DCAT
-    source_dcat = pd.read_csv('../data/dcat/glasgow.csv', parse_dates=['DateUpdated'])
+    source_dcat = pd.DataFrame()
+    folder = '../data/dcat/'
+    for dirname, _, filenames in os.walk(folder):
+        for filename in filenames:
+            if filename.rsplit('.',1)[1] == 'csv':
+                source_usmart = source_usmart.append(pd.read_csv(folder + r'/' + filename, parse_dates=['DateUpdated']))
     source_dcat['Source'] = 'DCAT feed'
 
 
@@ -113,8 +118,8 @@ def clean_data(dataframe):
                 tidied_string = tidied_string[:-1]
         return tidied_string
 
-    data['OriginalTags'] = data['OriginalTags'].apply(lambda x: tidy_categories(x))
-    data['ManualTags'] = data['ManualTags'].apply(lambda x: tidy_categories(x))
+    data['OriginalTags'] = data['OriginalTags'].apply(tidy_categories)
+    data['ManualTags'] = data['ManualTags'].apply(tidy_categories)
     
 
     ### Tidy licence names
@@ -144,7 +149,7 @@ def clean_data(dataframe):
         else:
             tidied_licence = "Custom licence: " + str(licence_name)
         return tidied_licence
-    data['License'] = data['License'].apply(lambda x: tidy_licence(x))
+    data['License'] = data['License'].apply(tidy_licence)
 
 
     return data 

@@ -1,27 +1,27 @@
 ---
 category:
-- infrastructure
 - transport / mobility
 - active travel
-date_created: '2021-01-28T09:02:11.656Z'
-date_updated: '2021-10-13'
+- cycling scotland
+date_created: '2020-07-20T08:51:08.163Z'
+date_updated: '2021-08-17'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: <p>Anonymised trip data from Just Eat Cycles in Edinburgh from its inception
-  in September 2018 to its discontinuation in September 2021</p>
+notes: <p>All-mode traffic data from 48-hour surveys across Scotland in May 2018</p>
 organization: Cycling Scotland
-original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/8550147c-9ce2-4382-929d-3b4ab43e554f
+original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/6ecbae85-3827-45ea-968a-d97939bf7f7e
 records: null
 resources:
 - format: JSON
   name: JSON
-  url: https://api.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/80324843-fa22-4e40-92b4-4a97f0b0be2c/2/urql
-- format: XML
-  name: XML
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=5872e566-d5ac-4059-a38b-e2ae4a228fae
+  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=093651c1-b4c8-4cc1-8343-7e91937c3e00
 - format: CSV
   name: CSV
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=f8a61a46-1ebd-45f0-9892-da341631260c
+  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=42d30410-5949-4fb4-b770-7b83f27ca117
+- format: XML
+  name: XML
+  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=2fbdb32d-7b03-472a-ac75-d8984e476de8
 schema: default
-title: Just Eat Cycles - Edinburgh (2018 - 2021)
+title: National Monitoring Framework - all-mode traffic survey results May 2018 -
+  Cycling Scotland
 ---

@@ -5,7 +5,7 @@ category:
 - local plan
 date_created: '2015-10-30'
 date_updated: '2018-04-20'
-license: ''
+license: No licence
 maintainer: South Ayrshire Council
 notes: <p>Local landscape designations - areas depicting scenic area boundaries for
   South Ayrshire</p>

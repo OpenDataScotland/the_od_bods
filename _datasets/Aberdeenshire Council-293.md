@@ -4,7 +4,7 @@ category:
 - local developmen plan
 date_created: ''
 date_updated: '2018-11-23'
-license: ''
+license: No licence
 maintainer: Aberdeenshire Council
 notes: ''
 organization: Aberdeenshire Council

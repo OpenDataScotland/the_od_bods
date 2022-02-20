@@ -1,15 +1,15 @@
 ---
 category:
-- Health and Social Care
+- environment
 date_created: '2014-07-29'
-date_updated: '2017-05-25'
+date_updated: '2021-11-29'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Number and rate per 1,000 population of home care clients by living arrangement</p>
+notes: <p>Percent of A-listed buildings on the Buildings at Risk Register (BARR)</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/home-care-client-living-arrangements
+original_dataset_link: http://statistics.gov.scot/data/buildings-at-risk-register
 records: null
 resources: []
 schema: default
-title: Home Care Client Living Arrangements
+title: Buildings at Risk Register
 ---

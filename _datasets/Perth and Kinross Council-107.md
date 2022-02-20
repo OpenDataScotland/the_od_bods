@@ -6,7 +6,7 @@ category:
 - vacant
 date_created: '2021-09-30'
 date_updated: '2021-09-30'
-license: ''
+license: No licence
 maintainer: Perth and Kinross Council
 notes: "<p>An annual survey issued by the Scottish Government to establish the extent\_\
   and state of vacant\_and derelict land in Scotland. Local Authorities return data\

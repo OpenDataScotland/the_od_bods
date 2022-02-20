@@ -1,16 +1,18 @@
 ---
 category:
-- Business, Enterprise and Energy
-date_created: '2021-05-07'
-date_updated: '2021-10-25'
+- economic activity
+- benefits and tax credits
+date_created: '2019-05-31'
+date_updated: '2021-11-02'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: ''
+notes: <p>Received applications and authorised applications (awards) for Best Start
+  Grant Pregnancy and Baby Payment,  Early Learning Payment, School Age Payment and
+  Best Start Foods Payment</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/information-and-communication-technologies-ict-including-related-industries
+original_dataset_link: http://statistics.gov.scot/data/best-start-grant
 records: null
 resources: []
 schema: default
-title: 'Annual Business Survey: Information and communication technologies (ICT) including
-  related industries'
+title: 'Best Start Grant and Best Start Foods: Applications'
 ---

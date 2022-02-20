@@ -2,26 +2,30 @@
 category:
 - transport / mobility
 - active travel
-- national monitoring framework
-date_created: '2021-08-10T14:30:44.494Z'
-date_updated: '2021-08-17'
+- cycling
+- cycling scotland
+date_created: '2018-12-18T13:28:31.800Z'
+date_updated: '2021-10-13'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: <p>All-mode traffic data from 48-hour surveys across Scotland in May 2021</p>
+notes: <p>Schools in Scotland which delivered Bikeability Scotland training in 2017/18.
+  Bikeability Scotland is a cycle training programme designed to give children the
+  skills and confidence they need both to cycle safely on the roads, and to encourage
+  them to carry on cycling into adulthood.</p>
 organization: Cycling Scotland
-original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/0b4e027e-59e2-4147-994f-c2f01cd08747
+original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/c2dac095-6b06-495f-8531-dec6c0b27dc2
 records: null
 resources:
 - format: JSON
   name: JSON
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=eafbe615-dba0-4a67-a711-5b966bf72fde
-- format: CSV
-  name: CSV
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=764a63a7-fb84-424b-a957-eb0f6008630c
+  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=52ac5039-7ff4-44f0-8e41-708c0e2eb1de
 - format: XML
   name: XML
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=d8a1badd-3280-40bf-b1fa-c6c505c902b5
+  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=71dd3758-e670-43a4-9623-7d4ced6277de
+- format: CSV
+  name: CSV
+  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=b64cd424-bba7-40fc-b3ff-0170e6be5b47
 schema: default
-title: National Monitoring Framework - all-mode traffic survey results May 2021 -
-  Cycling Scotland
+title: Bikeability Scotland - Schools delivering Level 1 and/or Level 2 - 2017/18
+  - Cycling Scotland
 ---

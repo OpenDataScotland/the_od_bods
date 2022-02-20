@@ -1,23 +1,24 @@
 ---
 category:
+- planning
+- environment
 - open data
-- boundaries
-- democracy
-date_created: '2018-04-19'
+date_created: '2017-12-13'
 date_updated: '2020-11-30'
-license: ''
+license: No licence
 maintainer: Moray Council
-notes: <p>Community Councils 2013 - 2017 (Moray). The purpose of community councils
-  is to ascertain, co-ordinate and express the views of the community it represents
-  to local authorities and other pubic bodies. This includes community councils appointing
-  one person as their point of contact for all planning matters. Community Councils
-  are regularly consulted by the local authority and public bodies on a wide range
-  of issues which affect their area, such as planning, environment and health. All
-  Community Council meetings are open to the public.</p>
+notes: "<p>The Local Development Plan 2015 was superseded by the Local Development\
+  \ Plan 2020 on 27 July 2020.The five main towns of Elgin, Forres, Buckie, Keith\
+  \ and Lossiemouth are subject to the highest development pressures and Countryside\
+  \ Around Towns (CAT\u2019s) have been designated to prevent development sprawl into\
+  \ the countryside. Only certain types of development are appropriate within CAT\u2019\
+  s to protect their special character. New housing development is specifically excluded\
+  \ from the types of acceptable development to maintain and preserve the distinction\
+  \ with the built up area.</p>"
 organization: Moray Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=6182d61788b6422982eb83c5d2d33e4a
-records: 20
+original_dataset_link: https://www.arcgis.com/home/item.html?id=754dc0fc293a43d3acf2c81f2a8bc705
+records: 5
 resources: []
 schema: default
-title: Community Councils Boundaries 2013 - 2017 (Moray)
+title: Local Development Plan 2015 Countryside Around Towns (CAT) (Moray)
 ---

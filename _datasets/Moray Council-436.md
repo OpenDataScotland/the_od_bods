@@ -1,23 +1,21 @@
 ---
 category:
-- democracy
-- boundaries
+- planning
+- environment
 - open data
-date_created: '2017-06-26'
+date_created: '2017-12-13'
 date_updated: '2020-11-30'
-license: ''
+license: No licence
 maintainer: Moray Council
-notes: <p>The purpose of community councils is to ascertain, co-ordinate and express
-  the views of the community it represents to local authorities and other pubic bodies.
-  This includes community councils appointing one person as their point of contact
-  for all planning matters. Community Councils are regularly consulted by the local
-  authority and public bodies on a wide range of issues which affect their area, such
-  as planning, environment and health. All Community Council meetings are open to
-  the public.</p>
+notes: <p>The Local Development Plan 2015 was superseded by the Local Development
+  Plan 2020 on 27 July 2020.The objective of the designation is to protect and enhance
+  the Moray coast for its landscape, nature conservation, recreation and tourism benefits.
+  The undeveloped coastline is protected through identification of a Coastal Protection
+  Zone (CPZ) within which only certain types of development will be acceptable.</p>
 organization: Moray Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=e5ea01c5c01546c2ba1f89ae3e792010
-records: 35
+original_dataset_link: https://www.arcgis.com/home/item.html?id=1bd85abb1ff749c691db2a7bcdf4aee4
+records: 1
 resources: []
 schema: default
-title: Community Council Boundary Divisions (Moray)
+title: Local Development Plan 2015 Coastal Protection Zone (CPZ) (Moray)
 ---

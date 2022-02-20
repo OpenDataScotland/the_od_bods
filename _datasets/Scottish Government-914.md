@@ -1,16 +1,15 @@
 ---
 category:
-- Economic Activity, Benefits and Tax Credits
-date_created: '2019-12-09'
-date_updated: '2019-12-09'
+- labour force
+date_created: '2018-10-10'
+date_updated: '2021-10-06'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Number of children in families benefitting from tax credits. The figures
-  presented are for live tax credit cases, at 31st August of the stated years.</p>
+notes: <p>Self Employment level and ratio (aged 16 and over).</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/personal-tax-credits-number-of-children
+original_dataset_link: http://statistics.gov.scot/data/self-employment
 records: null
 resources: []
 schema: default
-title: 'Personal Tax Credits: Number of Children'
+title: Self Employment
 ---

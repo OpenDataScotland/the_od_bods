@@ -1,21 +1,17 @@
 ---
 category:
-- community council
-- population
-- renfrewshire
 - open data
-- boundaries
-date_created: '2017-09-12'
-date_updated: '2017-10-09'
-license: http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+- renfrewshire
+- democracy and governance
+date_created: '2018-01-09'
+date_updated: '2018-07-27'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Renfrewshire Council
-notes: <p>Community Councils within Renfrewshire. Community Councils play an active
-  role in expressing the views and concerns of local people within their area on a
-  wide range of issues of public interest.The layer includes population figures. </p>
+notes: "<p>Results of the\_Referendum on the UK's membership of the EU, 23 June 2016.</p>"
 organization: Renfrewshire Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=08b01bbb82314f15a0c921213aaf241a
-records: 25
+original_dataset_link: https://www.arcgis.com/home/item.html?id=b5e4b39bcca2452b99ab6e375dc6221c
+records: 1
 resources: []
 schema: default
-title: Community Councils 2017
+title: Referendum on the UK's membership of the EU June 2016
 ---

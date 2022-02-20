@@ -1,15 +1,15 @@
 ---
 category:
-- Labour Force
-date_created: '2018-10-10'
-date_updated: '2021-10-06'
+- housing
+date_created: '2017-11-29'
+date_updated: '2021-08-30'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Self Employment level and ratio (aged 16 and over).</p>
+notes: <p>Local Authority owned housing stock, by normal use of dwelling</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/self-employment
+original_dataset_link: http://statistics.gov.scot/data/local-authority-housing-stock-by-normal-use
 records: null
 resources: []
 schema: default
-title: Self Employment
+title: Local Authority Housing Stock by Normal Use
 ---
