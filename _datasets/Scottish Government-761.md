@@ -1,16 +1,18 @@
 ---
 category:
-- Transport
-date_created: '2017-10-10'
-date_updated: '2021-10-25'
+- Environment
+date_created: '2016-10-24'
+date_updated: '2021-07-21'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>The indicator gives a score for the availability and frequency of bus service
-  in each data zone.</p>
+notes: <p>This contains the results of the Scottish Greenhouse Gas Inventory, which
+  is the key tool for understanding the origins and magnitudes of greenhouse emissions.  This
+  presentation uses the sectoral classifications used in the main publication prior
+  to the June 2020 publication.</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/bus-accessibility
+original_dataset_link: http://statistics.gov.scot/data/greenhouse-gas-emissions-by-source-sector
 records: null
 resources: []
 schema: default
-title: Bus Accessibility
+title: Greenhouse Gas Emissions by Source Sector (Historical categories)
 ---

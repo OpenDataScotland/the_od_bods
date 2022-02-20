@@ -5,7 +5,6 @@ category:
 - creativity
 - dundee
 - community
-- nan
 date_created: '2017-10-30'
 date_updated: '2019-03-19'
 license: https://creativecommons.org/licenses/by/4.0/

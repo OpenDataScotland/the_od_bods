@@ -2,7 +2,6 @@
 category:
 - employment land supply
 - planning
-- nan
 date_created: '2021-10-12'
 date_updated: '2021-10-12'
 license: ''

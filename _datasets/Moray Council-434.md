@@ -3,7 +3,6 @@ category:
 - planning
 - environment
 - inspire
-- nan
 date_created: '2019-02-19'
 date_updated: '2020-11-30'
 license: ''

@@ -1,17 +1,16 @@
 ---
 category:
-- Crime and Justice
-date_created: '2017-03-21'
-date_updated: '2021-03-08'
+- Health and Social Care
+date_created: '2019-09-24'
+date_updated: '2021-10-28'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Number of social work orders completed/terminated in each local authority
-  area from 2004-05 onwards, broken down by type of order and whether successfully
-  completed.</p>
+notes: <p>Indicators of population health and related risk factors from the Scottish
+  Health Survey (2008-2019).</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/social-work-orders-terminated
+original_dataset_link: http://statistics.gov.scot/data/scottish-health-survey-scotland-level-data
 records: null
 resources: []
 schema: default
-title: Social Work Orders Terminated
+title: Scottish Health Survey-Scotland level data
 ---

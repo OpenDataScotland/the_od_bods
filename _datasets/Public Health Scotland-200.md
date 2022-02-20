@@ -9,7 +9,6 @@ category:
 - labour
 - maternity
 - pregnancy
-- nan
 date_created: '2021-03-16'
 date_updated: '2022-02-02'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

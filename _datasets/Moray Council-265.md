@@ -1,6 +1,5 @@
 ---
 category:
-- nan
 - carparks
 date_created: ''
 date_updated: ''

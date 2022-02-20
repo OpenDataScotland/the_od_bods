@@ -1,16 +1,17 @@
 ---
 category:
-- Education, Skills and Training
-date_created: '2018-04-24'
-date_updated: '2021-05-03'
+- Health and Social Care
+date_created: 14:23:54Z
+date_updated: '2021-01-19'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>The average total tariff score, and percentage of school leavers by Scottish
-  Index of Multiple Deprivation (SIMD) Quintile                  </p>
+notes: <p>Self-assessed general health by tenure, household type, age, sex and disability.
+  The Scottish Survey Core Questions is an innovative project drawing together multiple
+  household surveys to provide a large sample for subnational analysis. </p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/attainment-by-deprivation-quintile
+original_dataset_link: http://statistics.gov.scot/data/general-health-sscq
 records: null
 resources: []
 schema: default
-title: Schools - Attainment by Deprivation
+title: General Health - Scottish Surveys Core Questions
 ---

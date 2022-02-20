@@ -3,7 +3,6 @@ category:
 - open data
 - renfrewshire
 - transportation
-- nan
 date_created: '2018-05-11'
 date_updated: '2018-05-11'
 license: http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

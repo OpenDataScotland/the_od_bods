@@ -8,7 +8,6 @@ category:
 - education
 - hospital
 - school
-- nan
 date_created: '2021-03-29'
 date_updated: '2022-01-14'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

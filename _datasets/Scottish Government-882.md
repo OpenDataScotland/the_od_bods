@@ -1,17 +1,16 @@
 ---
 category:
-- Economic Activity, Benefits and Tax Credits
-date_created: '2021-09-23'
-date_updated: '2021-11-30'
+- Community Wellbeing and Social Environment
+date_created: '2019-03-14'
+date_updated: '2020-12-03'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Job Start Payment is a new benefit that helps young people in Scotland,
-  aged 16 to 24, who are receiving certain benefits, with the costs of starting a
-  new job.</p>
+notes: <p>How safe adults in Scotland feel when alone in their home at night, from
+  the Scottish Household Survey (SHS)</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/job-start-payment-applications-and-payments
+original_dataset_link: http://statistics.gov.scot/data/feeling-safe-when-alone-at-home---scottish-household-survey
 records: null
 resources: []
 schema: default
-title: 'Job Start Payment: Applications and Payments'
+title: Feeling safe when alone at home - Scottish Household Survey
 ---

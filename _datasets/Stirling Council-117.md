@@ -1,7 +1,6 @@
 ---
 category:
 - lgcs education & skills
-- nan
 date_created: '2019-02-14'
 date_updated: '2020-01-20'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

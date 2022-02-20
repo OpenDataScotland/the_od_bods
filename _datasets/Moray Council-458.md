@@ -2,7 +2,6 @@
 category:
 - planning
 - inspire
-- nan
 date_created: '2017-08-08'
 date_updated: '2020-11-30'
 license: ''

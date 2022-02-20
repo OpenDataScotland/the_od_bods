@@ -1,6 +1,5 @@
 ---
 category:
-- nan
 - playpark
 date_created: ''
 date_updated: ''

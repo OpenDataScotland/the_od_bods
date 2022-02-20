@@ -2,7 +2,6 @@
 category:
 - data zone
 - lookup
-- nan
 date_created: '2018-04-06'
 date_updated: '2021-06-30'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

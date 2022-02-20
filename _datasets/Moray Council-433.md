@@ -3,7 +3,6 @@ category:
 - inspire
 - democracy
 - boundaries
-- nan
 date_created: '2017-04-10'
 date_updated: '2020-11-30'
 license: ''

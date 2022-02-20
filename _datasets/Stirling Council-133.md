@@ -1,7 +1,6 @@
 ---
 category:
 - simd
-- nan
 date_created: '2021-04-30'
 date_updated: '2021-09-02'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

@@ -1,16 +1,15 @@
 ---
 category:
-- Labour Force
+- Health and Social Care
 date_created: '2014-07-29'
-date_updated: '2021-08-02'
+date_updated: '2017-05-25'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>The difference between male and female median earnings (gross hourly earnings
-  excluding overtime) as a percentage of male earnings.</p>
+notes: <p>Number and rate per 1,000 population of home care clients by living arrangement</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/earnings-paygap
+original_dataset_link: http://statistics.gov.scot/data/home-care-client-living-arrangements
 records: null
 resources: []
 schema: default
-title: Gender Pay Gap
+title: Home Care Client Living Arrangements
 ---

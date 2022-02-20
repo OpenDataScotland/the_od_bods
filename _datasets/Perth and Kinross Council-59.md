@@ -2,7 +2,6 @@
 category:
 - economic
 - economic development
-- nan
 date_created: '2017-09-19'
 date_updated: '2019-06-25'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

@@ -3,7 +3,6 @@ category:
 - renfrewshire
 - open data
 - community
-- nan
 date_created: '2019-04-17'
 date_updated: '2019-04-17'
 license: ''

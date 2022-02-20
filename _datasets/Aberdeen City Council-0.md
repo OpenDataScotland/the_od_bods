@@ -3,7 +3,6 @@ category:
 - aberdeen
 - contracts
 - finance
-- nan
 date_created: '2020-03-23'
 date_updated: '2020-08-04'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

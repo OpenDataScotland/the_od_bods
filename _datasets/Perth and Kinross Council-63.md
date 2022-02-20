@@ -1,7 +1,6 @@
 ---
 category:
 - local government
-- nan
 date_created: '2018-10-23'
 date_updated: '2020-07-13'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

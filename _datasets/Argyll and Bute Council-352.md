@@ -3,7 +3,6 @@ category:
 - renewables
 - environment
 - energy
-- nan
 date_created: '2017-07-07'
 date_updated: '2021-08-03'
 license: ''

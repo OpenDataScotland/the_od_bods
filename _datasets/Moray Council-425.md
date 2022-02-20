@@ -2,7 +2,6 @@
 category:
 - inspire
 - business
-- nan
 date_created: '2017-08-21'
 date_updated: '2020-11-30'
 license: ''

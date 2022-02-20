@@ -3,7 +3,6 @@ category:
 - planning
 - boundaries
 - open data
-- nan
 date_created: '2018-03-28'
 date_updated: '2020-11-30'
 license: ''

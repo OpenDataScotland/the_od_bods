@@ -1,16 +1,15 @@
 ---
 category:
-- Geography
-date_created: '2019-04-25'
-date_updated: '2021-10-08'
+- Housing
+date_created: '2017-11-29'
+date_updated: '2021-08-30'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Geography lookup tables used for aggregation, from 2011 data zones to higher
-  level geographies</p>
+notes: <p>Local Authority owned housing stock, by normal use of dwelling</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/data-zone-lookup
+original_dataset_link: http://statistics.gov.scot/data/local-authority-housing-stock-by-normal-use
 records: null
 resources: []
 schema: default
-title: Data Zone Lookup
+title: Local Authority Housing Stock by Normal Use
 ---

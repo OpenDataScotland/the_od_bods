@@ -3,7 +3,6 @@ category:
 - open data
 - renfrewshire
 - democracy and governance
-- nan
 date_created: '2017-10-19'
 date_updated: '2017-10-19'
 license: http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

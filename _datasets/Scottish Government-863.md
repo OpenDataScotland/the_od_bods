@@ -1,16 +1,16 @@
 ---
 category:
-- Management Information
-date_created: '2020-04-23'
-date_updated: '2021-11-24'
+- Housing
+date_created: '2018-07-20'
+date_updated: '2021-08-30'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>The data provide past data around COVID-19 for the daily updates provided
-  by the Scottish Government.</p>
+notes: '<p>Local authority vacant stock: as at 31 March each year, by current status
+  and length of vacancy</p>'
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/coronavirus-covid-19-management-information
+original_dataset_link: http://statistics.gov.scot/data/local-authority-vacant-dwellings
 records: null
 resources: []
 schema: default
-title: Coronavirus - COVID-19 - Management Information
+title: Local Authority Vacant Dwellings
 ---

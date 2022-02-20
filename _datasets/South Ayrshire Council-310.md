@@ -3,7 +3,6 @@ category:
 - planning
 - regeneration
 - land
-- nan
 date_created: '2015-10-30'
 date_updated: '2020-11-25'
 license: ''

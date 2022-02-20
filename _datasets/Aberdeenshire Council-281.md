@@ -1,6 +1,5 @@
 ---
 category:
-- nan
 - business
 - contracts
 date_created: ''

@@ -3,7 +3,6 @@ category:
 - education
 - school
 - buildings
-- nan
 date_created: '2017-07-17'
 date_updated: '2017-07-18'
 license: ''

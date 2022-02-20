@@ -5,7 +5,6 @@ category:
 - renfrewshire
 - open data
 - boundaries
-- nan
 date_created: '2017-09-12'
 date_updated: '2017-10-09'
 license: http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

@@ -7,7 +7,6 @@ category:
 - health board
 - number of people
 - population
-- nan
 date_created: '2019-04-17'
 date_updated: '2021-06-30'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

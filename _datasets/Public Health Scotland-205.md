@@ -6,7 +6,6 @@ category:
 - discharge
 - health board
 - social care
-- nan
 date_created: '2020-03-12'
 date_updated: '2022-02-01'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

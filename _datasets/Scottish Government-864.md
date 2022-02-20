@@ -1,17 +1,16 @@
 ---
 category:
-- Economic Activity, Benefits and Tax Credits
-date_created: '2020-05-11'
-date_updated: '2021-05-06'
+- Housing
+date_created: '2018-07-20'
+date_updated: '2021-08-30'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Number of clients responding to Equality Monitoring and Feedback forms from
-  10th December 2018 to 8th December 2019.</p>
+notes: <p>Number of Local Authority dwellings falling vacant during the year and which
+  are available for reletting (whether or not relet)</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/social-security-scotland-clients-responding-to-equality-forms-to-december-2019
+original_dataset_link: http://statistics.gov.scot/data/local-authority-vacant-dwellings-vacancies-arising-during-the-year
 records: null
 resources: []
 schema: default
-title: 'Social Security Scotland: clients responding to equality forms to December
-  2019'
+title: Local Authority Vacant Dwellings (vacancies arising during the year)
 ---

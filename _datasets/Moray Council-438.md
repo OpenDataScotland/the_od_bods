@@ -2,7 +2,6 @@
 category:
 - open data
 - education
-- nan
 date_created: '2017-11-14'
 date_updated: '2020-12-01'
 license: ''

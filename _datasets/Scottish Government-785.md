@@ -1,18 +1,17 @@
 ---
 category:
-- Housing
-date_created: '2018-03-28'
-date_updated: '2020-11-26'
+- Scottish Index of Multiple Deprivation
+date_created: 10:26:03Z
+date_updated: '2019-10-29'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>The proportion of households with any (basic) disrepair, disrepair to critical
-  elements, urgent disrepair or extensive disrepair to their dwelling, by dwelling
-  types,  household characteristics and council area. Derived from the Scottish House
-  Condition Survey (SHCS). </p>
+notes: <p>The number and percentage of people claiming relevant benefits. This dataset
+  contains the indicators that were used to calculate the income domain of the 2016
+  Scottish Index of Multiple Deprivation.</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/dwelling-disrepair-scottish-house-condition-survey
+original_dataset_link: http://statistics.gov.scot/data/scottish-index-of-multiple-deprivation---income-indicators
 records: null
 resources: []
 schema: default
-title: Dwelling Disrepair (Scottish House Condition Survey)
+title: Scottish Index of Multiple Deprivation - Income Indicators
 ---

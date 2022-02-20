@@ -1,7 +1,6 @@
 ---
 category:
 - lgcs finance
-- nan
 date_created: '2019-07-02'
 date_updated: '2021-10-27'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

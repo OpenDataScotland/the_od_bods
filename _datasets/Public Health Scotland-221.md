@@ -4,7 +4,6 @@ category:
 - hospital admissions
 - hospital mortality
 - hsmr
-- nan
 date_created: '2021-08-09'
 date_updated: '2022-02-08'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

@@ -3,7 +3,6 @@ category:
 - renfrewshire
 - open data
 - education
-- nan
 date_created: '2019-07-19'
 date_updated: '2019-07-23'
 license: ''

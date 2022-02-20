@@ -1,16 +1,16 @@
 ---
 category:
-- Community Wellbeing and Social Environment
-date_created: '2021-05-12'
-date_updated: '2021-05-12'
+- Business, Enterprise and Energy
+date_created: '2019-02-08'
+date_updated: '2021-09-09'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Official Statistics of the number and proportions of pensionable age adults
-  in poverty. Various poverty measures and breakdowns are available.</p>
+notes: <p>Number of VAT/PAYE registered stocks and sites operating in Scotland by
+  region of ownership</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/poverty-pensionable-age-adults
+original_dataset_link: http://statistics.gov.scot/data/business-stocks-and-sites-by-region-of-ownership
 records: null
 resources: []
 schema: default
-title: Poverty (pensionable age adults)
+title: Business Stocks and Sites by Region of Ownership
 ---

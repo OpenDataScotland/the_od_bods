@@ -3,7 +3,6 @@ category:
 - ldp2
 - planning
 - town centres
-- nan
 date_created: '2021-10-18'
 date_updated: '2021-10-18'
 license: ''

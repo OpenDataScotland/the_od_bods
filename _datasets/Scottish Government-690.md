@@ -1,16 +1,15 @@
 ---
 category:
-- Labour Force
+- Crime and Justice
 date_created: '2014-07-29'
-date_updated: '2016-02-09'
+date_updated: '2021-10-12'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Number, and percent, of young people (16-19) who were not in education,
-  employment or training.</p>
+notes: <p>Number of breaches applications for social work orders by order type.</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/neet
+original_dataset_link: http://statistics.gov.scot/data/breached-order-applications
 records: null
 resources: []
 schema: default
-title: Not in Employment, Education or Training (NEET)
+title: Breached Order Applications
 ---

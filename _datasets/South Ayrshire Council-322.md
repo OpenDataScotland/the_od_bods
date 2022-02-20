@@ -4,7 +4,6 @@ category:
 - conservation
 - environment
 - planning
-- nan
 date_created: '2015-10-30'
 date_updated: '2018-04-20'
 license: ''

@@ -1,15 +1,15 @@
 ---
 category:
-- Housing
+- Community Wellbeing and Social Environment
 date_created: '2014-07-29'
-date_updated: '2021-08-30'
+date_updated: '2020-10-02'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Number of House in Multiple Occupation (HMO) Licences in force at 31 March.</p>
+notes: <p>Area of Derelict and Urban Vacant Land (hectares)</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/hmo-licences
+original_dataset_link: http://statistics.gov.scot/data/vacant-derelict-land
 records: null
 resources: []
 schema: default
-title: Number of HMO Licences in Force
+title: Derelict and Urban Vacant Land
 ---

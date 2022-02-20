@@ -3,7 +3,6 @@ category:
 - open data
 - renfrewshire
 - population and society
-- nan
 date_created: '2017-12-04'
 date_updated: '2018-09-12'
 license: http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

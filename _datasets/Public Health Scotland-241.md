@@ -5,7 +5,6 @@ category:
 - intervention
 - mental health
 - waiting time
-- nan
 date_created: '2019-04-30'
 date_updated: '2021-12-07'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

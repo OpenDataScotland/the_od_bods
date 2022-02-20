@@ -8,7 +8,6 @@ category:
 - injury
 - performance
 - waiting time
-- nan
 date_created: '2018-12-06'
 date_updated: '2022-02-01'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

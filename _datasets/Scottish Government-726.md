@@ -1,16 +1,16 @@
 ---
 category:
-- Population
-date_created: '2020-08-27'
-date_updated: '2021-09-30'
+- Health and Social Care
+date_created: '2014-07-29'
+date_updated: '2021-02-24'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Mid-year population estimates. Higher geographies are aggregated from 2011
-  Data Zones.</p>
+notes: <p>Indicators of population health and related risk factors from the Scottish
+  Health Survey.</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/population-estimates-2011-datazone-linked-dataset
+original_dataset_link: http://statistics.gov.scot/data/scottish-health-survey
 records: null
 resources: []
 schema: default
-title: Population Estimates Summary (Current Geographic Boundaries)
+title: Scottish Health Survey
 ---

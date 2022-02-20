@@ -1,7 +1,5 @@
 ---
-category:
-- nan
-- nan
+category: []
 date_created: '2017-08-21'
 date_updated: '2019-06-25'
 license: other-closed

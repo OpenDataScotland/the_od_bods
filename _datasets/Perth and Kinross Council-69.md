@@ -3,7 +3,6 @@ category:
 - '2018'
 - employment land audit
 - pkc
-- nan
 date_created: '2021-09-30'
 date_updated: '2021-09-30'
 license: ''

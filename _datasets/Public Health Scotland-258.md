@@ -5,7 +5,6 @@ category:
 - health board
 - injury
 - smr01
-- nan
 date_created: '2020-02-27'
 date_updated: '2021-10-26'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

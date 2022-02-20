@@ -11,7 +11,6 @@ category:
 - pharmacy
 - service
 - smoking
-- nan
 date_created: '2017-09-13'
 date_updated: '2021-12-14'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

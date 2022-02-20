@@ -1,15 +1,15 @@
 ---
 category:
 - Housing
-date_created: '2017-07-07'
-date_updated: '2021-06-25'
+date_created: '2014-07-29'
+date_updated: '2021-05-17'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: National Records of Scotland
-notes: <p>The average number of people per household in each council area and in Scotland</p>
+notes: <p>Number of dwellings by number of rooms within the dwelling</p>
 organization: National Records of Scotland
-original_dataset_link: http://statistics.gov.scot/data/average-household-size
+original_dataset_link: http://statistics.gov.scot/data/dwellings-rooms
 records: null
 resources: []
 schema: default
-title: Average Household Size
+title: Dwellings by Number of Rooms
 ---

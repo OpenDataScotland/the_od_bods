@@ -1,15 +1,16 @@
 ---
 category:
-- Economic Activity, Benefits and Tax Credits
-date_created: '2019-07-12'
-date_updated: '2021-06-30'
+- Children and Young People
+date_created: '2017-11-28'
+date_updated: '2019-06-26'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Feedback statistics covering compliments received by Social Security Scotland.</p>
+notes: <p>Percent of children in families that have both low income and cannot afford
+  three or more out of a list of 22 basic necessities.</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/social-security-scotland-feedback-compliments
+original_dataset_link: http://statistics.gov.scot/data/children-in-families-with-limited-resources
 records: null
 resources: []
 schema: default
-title: 'Social Security Scotland Feedback: Compliments'
+title: Children in Families with Limited Resources
 ---

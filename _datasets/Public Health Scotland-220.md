@@ -6,7 +6,6 @@ category:
 - hospital
 - hospital onset
 - surveillance
-- nan
 date_created: '2020-12-03'
 date_updated: '2022-02-16'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

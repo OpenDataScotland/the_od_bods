@@ -1,6 +1,5 @@
 ---
 category:
-- nan
 - polling
 date_created: 30/11/20
 date_updated: '2021-02-02'

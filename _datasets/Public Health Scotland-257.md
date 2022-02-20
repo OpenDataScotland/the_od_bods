@@ -10,7 +10,6 @@ category:
 - simd
 - suicide
 - suicide overview
-- nan
 date_created: '2020-04-02'
 date_updated: '2021-08-18'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

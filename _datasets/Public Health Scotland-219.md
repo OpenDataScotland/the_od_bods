@@ -7,7 +7,6 @@ category:
 - health board
 - hospital
 - lookup
-- nan
 date_created: '2018-03-27'
 date_updated: '2022-01-10'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

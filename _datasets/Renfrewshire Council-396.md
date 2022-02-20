@@ -2,7 +2,6 @@
 category:
 - open data
 - renfrewshire
-- nan
 date_created: '2017-11-22'
 date_updated: '2019-07-29'
 license: ''

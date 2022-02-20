@@ -1,6 +1,5 @@
 ---
 category:
-- nan
 - cemeteries
 date_created: ''
 date_updated: '2018-11-10'

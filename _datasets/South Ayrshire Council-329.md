@@ -1,7 +1,6 @@
 ---
 category:
 - alcohol prohibition areas
-- nan
 date_created: '2017-03-30'
 date_updated: '2017-03-30'
 license: ''

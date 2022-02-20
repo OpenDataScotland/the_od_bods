@@ -2,7 +2,6 @@
 category:
 - open data
 - boundaries
-- nan
 date_created: '2019-09-25'
 date_updated: '2020-11-30'
 license: ''

@@ -4,7 +4,6 @@ category:
 - library
 - monifieth
 - public
-- nan
 date_created: '2021-10-20'
 date_updated: '2021-10-28'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

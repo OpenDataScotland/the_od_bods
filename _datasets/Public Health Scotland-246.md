@@ -3,7 +3,6 @@ category:
 - deprivation
 - population weighted
 - simd
-- nan
 date_created: '2017-09-21'
 date_updated: '2021-06-30'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

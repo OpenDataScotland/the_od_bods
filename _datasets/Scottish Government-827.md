@@ -1,17 +1,16 @@
 ---
 category:
-- Economic Activity, Benefits and Tax Credits
-date_created: '2019-05-31'
-date_updated: '2021-11-02'
+- Education, Skills and Training
+date_created: '2018-04-24'
+date_updated: '2021-05-03'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Received applications and authorised applications (awards) for Best Start
-  Grant Pregnancy and Baby Payment,  Early Learning Payment, School Age Payment and
-  Best Start Foods Payment</p>
+notes: <p>The average total tariff score, and percentage of school leavers by Scottish
+  Index of Multiple Deprivation (SIMD) Quintile                  </p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/best-start-grant
+original_dataset_link: http://statistics.gov.scot/data/attainment-by-deprivation-quintile
 records: null
 resources: []
 schema: default
-title: 'Best Start Grant and Best Start Foods: Applications'
+title: Schools - Attainment by Deprivation
 ---

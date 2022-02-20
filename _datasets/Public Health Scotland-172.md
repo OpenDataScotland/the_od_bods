@@ -8,7 +8,6 @@ category:
 - health board
 - infant
 - language
-- nan
 date_created: '2018-04-23'
 date_updated: '2021-06-29'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

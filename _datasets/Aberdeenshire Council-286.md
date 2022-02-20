@@ -1,6 +1,5 @@
 ---
 category:
-- nan
 - winter
 - roads
 - gritting

@@ -10,7 +10,6 @@ category:
 - sex
 - smr01
 - smr04
-- nan
 date_created: '2018-01-25'
 date_updated: '2022-02-01'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

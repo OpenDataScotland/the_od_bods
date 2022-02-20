@@ -1,6 +1,5 @@
 ---
 category:
-- nan
 - roads
 - transport
 date_created: ''

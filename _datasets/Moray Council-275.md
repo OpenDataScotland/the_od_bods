@@ -3,7 +3,6 @@ category:
 - education
 - open data
 - boundaries
-- nan
 date_created: 27/10/17
 date_updated: '2020-11-30'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

@@ -1,15 +1,15 @@
 ---
 category:
-- Health and Social Care
-date_created: '2016-12-01'
-date_updated: '2016-12-05'
+- Education, Skills and Training
+date_created: '2014-07-29'
+date_updated: '2021-03-31'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>The percentage of 13 and 15 year olds who have ever drunk alcohol.</p>
+notes: <p>Number, and percent, of school leavers by destination from initial survey</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/alcohol-use-ever-among-young-people-salsus
+original_dataset_link: http://statistics.gov.scot/data/school-leaver-destinations
 records: null
 resources: []
 schema: default
-title: Alcohol use ever among young people (SALSUS)
+title: School Leaver Destinations Initial
 ---

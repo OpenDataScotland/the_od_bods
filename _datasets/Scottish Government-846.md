@@ -1,17 +1,15 @@
 ---
 category:
-- Scottish Index of Multiple Deprivation
-date_created: '2019-10-09'
-date_updated: '2020-03-31'
+- Business, Enterprise and Energy
+date_created: '2018-04-11'
+date_updated: '2021-09-24'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>The Scottish Index of Multiple Deprivation (SIMD) was published in August
-  2016. This dataset contains the indicators that were used to calculate the education
-  domain of SIMD.</p>
+notes: <p>Number and rate (percent) of VAT/PAYE business survival.</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/scottish-index-of-multiple-deprivation---education-indicators
+original_dataset_link: http://statistics.gov.scot/data/business-demography---survival
 records: null
 resources: []
 schema: default
-title: Scottish Index of Multiple Deprivation - Education Indicators
+title: Business Demography - Survival
 ---

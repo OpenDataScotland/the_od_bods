@@ -2,7 +2,6 @@
 category:
 - planning
 - open data
-- nan
 date_created: '2018-03-29'
 date_updated: '2020-11-30'
 license: ''

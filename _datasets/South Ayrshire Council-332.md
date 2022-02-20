@@ -3,7 +3,6 @@ category:
 - administration
 - planning
 - boundaries
-- nan
 date_created: '2015-10-15'
 date_updated: '2019-09-13'
 license: ''

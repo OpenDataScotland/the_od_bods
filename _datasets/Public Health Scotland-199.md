@@ -5,7 +5,6 @@ category:
 - covid-19
 - healthcare impact
 - hospital admissions
-- nan
 date_created: '2020-05-21'
 date_updated: '2022-02-02'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

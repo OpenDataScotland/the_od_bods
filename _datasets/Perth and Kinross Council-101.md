@@ -1,7 +1,5 @@
 ---
-category:
-- nan
-- nan
+category: []
 date_created: '2017-08-23'
 date_updated: '2019-06-25'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

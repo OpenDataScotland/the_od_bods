@@ -2,7 +2,6 @@
 category:
 - boundary
 - electoral
-- nan
 date_created: '2017-07-07'
 date_updated: '2021-05-04'
 license: ''

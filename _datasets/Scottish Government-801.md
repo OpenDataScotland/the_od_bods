@@ -1,16 +1,15 @@
 ---
 category:
-- Housing
-date_created: '2018-07-20'
-date_updated: '2021-08-30'
+- Health and Social Care
+date_created: '2017-06-06'
+date_updated: '2017-06-06'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: '<p>Local authority vacant stock: as at 31 March each year, by current status
-  and length of vacancy</p>'
+notes: <p>Self-assessed general health by smoking status, age, and gender</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/local-authority-vacant-dwellings
+original_dataset_link: http://statistics.gov.scot/data/smoking-behaviour-and-self-rated-health-salsus
 records: null
 resources: []
 schema: default
-title: Local Authority Vacant Dwellings
+title: Smoking behaviour and self-rated health (SALSUS)
 ---

@@ -1,7 +1,6 @@
 ---
 category:
 - hub site
-- nan
 date_created: '2017-05-10'
 date_updated: '2022-01-07'
 license: ''

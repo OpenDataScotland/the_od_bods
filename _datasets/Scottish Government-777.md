@@ -1,15 +1,16 @@
 ---
 category:
-- Population
-date_created: '2018-03-23'
-date_updated: '2021-09-28'
+- Housing
+date_created: '2016-12-12'
+date_updated: '2021-09-16'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Life expectancy in years, at birth and for age groups</p>
+notes: <p>Quarterly time series data on Scottish approvals, starts and completions
+  by sector </p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/Life-Expectancy
+original_dataset_link: http://statistics.gov.scot/data/new-build-housing-starts-and-completions
 records: null
 resources: []
 schema: default
-title: Life Expectancy
+title: New Build Housing Starts and Completions
 ---

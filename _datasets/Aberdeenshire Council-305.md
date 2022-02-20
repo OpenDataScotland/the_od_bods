@@ -1,6 +1,5 @@
 ---
 category:
-- nan
 - schools
 - education
 date_created: ''

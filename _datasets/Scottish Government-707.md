@@ -1,17 +1,15 @@
 ---
 category:
 - Crime and Justice
-date_created: '2016-11-10'
-date_updated: '2021-03-16'
+date_created: '2014-07-29'
+date_updated: '2021-10-28'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Perceptions of the local crime rate by tenure, household type, sex and disability.
-  The Scottish Survey Core Questions is an innovative project drawing together multiple
-  household surveys to provide a large sample for subnational analysis. </p>
+notes: <p>Reconviction rates by offenders' gender and age</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/perceptions-of-local-crime-rate-sscq
+original_dataset_link: http://statistics.gov.scot/data/reconvictions
 records: null
 resources: []
 schema: default
-title: Perceptions of Local Crime - Scottish Surveys Core Questions
+title: Reconvictions
 ---
