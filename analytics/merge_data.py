@@ -58,16 +58,36 @@ def merge_data():
 
     ### Saves copy of data without cleaning - for analysis purposes
     data.to_csv('../data/merged_output_untidy.csv', index=False)
+    
+    ### clean data
+    data = clean_data(data)
+    
+    ### Output cleaned data to csv
+    data.to_csv('../data/merged_output.csv')
 
-    ### Some cleaning
+    return data
+
+def clean_data(dataframe):
+    """cleans data in a dataframe
+
+    Args:
+        dataframe (pd.dataframe): the name of the dataframe of data to clean
+
+    Returns:
+        dataframe: dataframe of cleaned data
+    """
+    ### to avoid confusion and avoid re-naming everything...
+    data = dataframe
+
     ### Renaming entries to match
     owner_renames = {
                     'Aberdeen': 'Aberdeen City',
                     'Dundee': 'Dundee City',
                     'Perth': 'Perth and Kinross',
-                    'open.data@southayrshire':'South Ayrshire',
+                    'open.data@southayrshire':'South Ayrshire Council',
                     'SEPA': 'Scottish Environment Protection Agency',
-                    'South Ayrshire': 'South Ayrshire Council'
+                    'South Ayrshire': 'South Ayrshire Council',
+                    'East Ayrshire': 'East Ayrshire Council'
                     }
     data['Owner'] = data['Owner'].replace(owner_renames)
     ### Format dates as datetime type
@@ -126,9 +146,6 @@ def merge_data():
         return tidied_licence
     data['License'] = data['License'].apply(lambda x: tidy_licence(x))
 
-    
-    ### Output combined data to csv
-    data.to_csv('../data/merged_output.csv')
 
     return data 
 
