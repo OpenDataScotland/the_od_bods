@@ -1,16 +1,17 @@
 ---
 category:
-- Economy
-date_created: '2018-11-23'
-date_updated: '2021-11-24'
+- education
+- skills and training
+date_created: '2018-04-24'
+date_updated: '2021-05-03'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>The average amount of economic output produced per job and per hour worked
-  in Scotland</p>
+notes: '<p>School leaver average total tariff score: grouped into the lowest 20%,
+  middle 60% and highest 20% of attainers for each school</p>'
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/labour-productivity-quarterly
+original_dataset_link: http://statistics.gov.scot/data/attainment-for-all
 records: null
 resources: []
 schema: default
-title: 'Labour Productivity: Quarterly'
+title: Schools - Attainment for All
 ---

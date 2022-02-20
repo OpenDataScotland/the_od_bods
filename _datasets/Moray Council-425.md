@@ -1,23 +1,25 @@
 ---
 category:
-- inspire
-- business
-date_created: '2017-08-21'
+- planning
+- open data
+date_created: '2018-03-29'
 date_updated: '2020-11-30'
-license: ''
+license: No licence
 maintainer: Moray Council
-notes: "<p>Council Register of Assets (Moray).\_ Section 94 of the Community Empowerment\
-  \ (Scotland) Act 2015 (the Act) requires public authorities to make available to\
-  \ members of the public a register of land that it owns or leases \u201Cto the best\
-  \ of its knowledge and belief\u201D.\_ The purpose of the register is to help Community\
-  \ Transfer Bodies identify assets that may be available through asset transfer under\
-  \ Part 5 of the Act.\_ The inclusion of an asset on the register is a requirement\
-  \ of the Act and does not necessarily imply that the Council is actively seeking\
-  \ to transfer that asset to the community.</p>"
+notes: "<p>Moray Onshore Wind Energy 2017 Policy Guidance Map for Large Typologies\
+  \ (Moray) Areas of Greatest Potential. Scottish Planning Policy states that planning\
+  \ authorities \u201Cshould identify where there is strategic capacity for wind farms,\
+  \ and areas with the greatest potential for wind development\u201D. Areas of greatest\
+  \ scope for further investigating the feasibility of developing wind farms. These\
+  \ areas have been identified on Policy Guidance maps by removing additional constraints\
+  \ from the spatial framework map of the areas likely to be most appropriate for\
+  \ wind farm development. The remaining areas which have been mapped for each development\
+  \ typology are the areas with the fewest constraints and therefore the greatest\
+  \ potential for wind farm developments.</p>"
 organization: Moray Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=400332609a0641e389c990dccfb42430
-records: 1135
+original_dataset_link: https://www.arcgis.com/home/item.html?id=886f3db2dff0431480fd86167523d669
+records: 1
 resources: []
 schema: default
-title: Council Register of Assets (Moray)
+title: Moray Onshore Wind Energy 2017 Policy Guidance Map for Large Typologies (Moray)
 ---

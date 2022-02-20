@@ -2,28 +2,26 @@
 category:
 - transport / mobility
 - active travel
+- cycling
 - cycling scotland
-- tourism
-- mountain biking
-date_created: '2019-04-04T10:46:24.051Z'
-date_updated: '2019-11-08'
-license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+- national monitoring framework
+date_created: '2019-10-29T14:22:23.676Z'
+date_updated: '2020-04-20'
+license: https://creativecommons.org/licenses/by/4.0/
 maintainer: Cycling Scotland
-notes: <p>This dataset shows the locations of Cycling Scotland's Go Mountrain Bike
-  centres across the UK as of 2019</p>
+notes: <p>This dataset holds the locations for all of Cycling Scotland's all-mode
+  traffic counts across Scotland, including the dates the counts were undertaken</p>
 organization: Cycling Scotland
-original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/ec90664f-00ed-4ef7-afe0-5a51aba90294
+original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/68ab155b-875f-43e7-9c4c-c954ad094dfc
 records: null
 resources:
 - format: JSON
   name: JSON
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=989cccbd-1e21-4aa3-8071-5556c0aa720e
+  url: https://api.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/9dab7bac-c9ca-4c4f-9daa-d2617b328017/1/urql
 - format: CSV
   name: CSV
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=8fa7d5eb-ed2e-4020-9d6b-e56bb9e9e5fe
-- format: XML
-  name: XML
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=efa338b1-2fe2-4f65-a08c-21400237de94
+  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=fd716c64-9be6-431b-843d-ba1d1bd3f393
 schema: default
-title: Go Mountain Bike - Centre Locations - Cycling Scotland
+title: National Monitoring Framework - all-mode traffic survey locations - Cycling
+  Scotland
 ---

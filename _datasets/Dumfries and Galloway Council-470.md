@@ -1,25 +1,22 @@
 ---
 category:
-- built environment
-- ndr
-date_created: '2019-09-17T20:04:49.144Z'
-date_updated: '2021-12-03'
+- social / community
+- population
+date_created: '2018-01-25T16:07:09.343Z'
+date_updated: '2018-08-23'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
-notes: <p>Non Domestic Rates Relief for Dumfries and Galloway Council Area</p>
+notes: <p>Burial Grounds in Dumfries and Galloway</p>
 organization: Dumfries and Galloway Council
-original_dataset_link: https://usmart.io/org/dumgal/discovery/discovery-view-detail/8ae4ea96-f03e-427f-a706-b50e9d002348
+original_dataset_link: https://usmart.io/org/dumgal/discovery/discovery-view-detail/873818de-53dd-4008-ac1c-8cc0c6f74070
 records: null
 resources:
-- format: CSV
-  name: CSV
-  url: https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/resource?resourceGUID=28db21b3-6231-40f7-9e94-ab3c61fff8dd
-- format: XML
-  name: XML
-  url: https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/resource?resourceGUID=8f9353f4-82a6-4085-bf27-1095ca866a60
 - format: JSON
   name: JSON
-  url: https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/resource?resourceGUID=6d703535-b04d-4355-9591-08d14e6d5fd9
+  url: https://api.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/ac87ee48-ba3d-4742-938f-7f97269454c7/1/urql
+- format: CSV
+  name: CSV
+  url: https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/resource?resourceGUID=4ac6c7de-b05b-4dce-ab05-faab6ccff4e3
 schema: default
-title: Non Domestic Rates Relief
+title: Burial Grounds
 ---

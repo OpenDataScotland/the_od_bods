@@ -2,7 +2,7 @@
 category: []
 date_created: ''
 date_updated: '2016-08-08'
-license: Other (Public Domain)
+license: 'Custom licence: Other (Public Domain)'
 maintainer: Angus Council
 notes: <p>Text file of Angus Council's mobile library locations</p>
 organization: Angus Council

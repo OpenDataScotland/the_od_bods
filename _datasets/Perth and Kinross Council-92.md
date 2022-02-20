@@ -8,7 +8,7 @@ category:
 - mid-scales
 date_created: '2017-08-25'
 date_updated: '2020-04-29'
-license: ''
+license: No licence
 maintainer: Perth and Kinross Council
 notes: "<p>OS VectorMap District is a simple vector dataset with a nominal scale of\
   \ 1:25000 covering the whole of Great Britain that has been designed for creating\

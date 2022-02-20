@@ -1,17 +1,19 @@
 ---
 category:
-- planning
-- environment
 - inspire
-date_created: '2019-02-19'
+- democracy
+- boundaries
+date_created: '2017-04-10'
 date_updated: '2020-11-30'
-license: ''
+license: No licence
 maintainer: Moray Council
-notes: <p>Wildlife Sites (Moray)</p>
+notes: "<p>Moray Council Polling District Boundaries.  Polygon data showing the polling\
+  \ district boundaries for the Moray Council area used\_for the purposes of designating\
+  \ an area of electors which attend a particular polling place.</p>"
 organization: Moray Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=b2258a5522394cc69ea34ce8c5f31313
-records: 7
+original_dataset_link: https://www.arcgis.com/home/item.html?id=bd878bfec39f4a659c2d016f1b3bc920
+records: 60
 resources: []
 schema: default
-title: Wildlife Sites (Moray)
+title: Polling Districts (Moray)
 ---

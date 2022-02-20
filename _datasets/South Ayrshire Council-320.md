@@ -5,7 +5,7 @@ category:
 - planning
 date_created: '2015-10-30'
 date_updated: '2019-09-13'
-license: ''
+license: No licence
 maintainer: South Ayrshire Council
 notes: <p>Central core area of the Gallway Dark Skies Park</p>
 organization: South Ayrshire Council

@@ -1,31 +1,24 @@
 ---
 category:
 - planning
-- inspire
 - boundaries
+- inspire
 date_created: '2017-12-13'
 date_updated: '2020-11-30'
-license: ''
+license: No licence
 maintainer: Moray Council
-notes: "<p>The Local Development Plan 2015 was superseded by the Local Development\
-  \ Plan 2020 on 27 July 2020.Local Development Plan Rural Grouping Boundaries depicts\
-  \ the small villages/groupings/clusters of houses that will be covered by Policy\
-  \ H5 (LDP2015). Proposals associated with any other location will be dealt with\
-  \ under H7 (LDP2015), and assessed against criteria such as visual prominence; character;\
-  \ settlement pattern; build up. Boundaries have been drawn around these groupings,\
-  \ and there will be a presumption in favour of developments within this boundary.\
-  \ (The settlement boundary policy E9 (LDP2015) will apply).The concept of identifying\
-  \ and promoting rural development in existing \u201Crural communities\u201D was\
-  \ originally contained in the 1993-98 Plan. At that time they were identified as\
-  \ small rural settlements, which served as social focal points for the surrounding\
-  \ area, with the presence of one or more community facilities (school/hall/shop).\
-  \ In subsequent Plans, the requirement for community facilities has been reduced,\
-  \ and further groupings have been designated based on their status as a cohesive,\
-  \ physical grouping. Consolidation of these remains the preference.</p>"
+notes: <p>The Local Development Plan 2015 was superseded by the Local Development
+  Plan 2020 on 27 July 2020.Local Development Plan Rural Grouping Designations have
+  been set out within many of the Local Development Plan Rural Groupings. Sites with
+  development potential have been identified. These are acceptable in principle subject
+  to compliance with the Moray Local Development Plan (MLDP) 2015, but will still
+  require confirmation of technical requirements (eg road access; drainage).These
+  designations do not imply any right of access or use of private land, nor do they
+  commit the Council to any form of maintenance or upkeep of the site.</p>
 organization: Moray Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=4a37fbbf212d46ed90f5e87eaabdda02
-records: 81
+original_dataset_link: https://www.arcgis.com/home/item.html?id=9bd82804a7d34a7aa8960f4947b15211
+records: 183
 resources: []
 schema: default
-title: Local Development Plan Rural Groupings (Moray)
+title: Local Devevlopment Plan Rural Groupings Designations (Moray)
 ---

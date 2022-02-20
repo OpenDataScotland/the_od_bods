@@ -3,7 +3,7 @@ category:
 - planning
 date_created: '2016-12-02'
 date_updated: '2019-09-13'
-license: ''
+license: No licence
 maintainer: South Ayrshire Council
 notes: <p>Sites designated as part of the areas housing land supply</p>
 organization: South Ayrshire Council

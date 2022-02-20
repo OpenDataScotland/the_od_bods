@@ -2,27 +2,25 @@
 category:
 - transport / mobility
 - active travel
-- traffic counts
-date_created: '2020-07-20T08:53:30.537Z'
-date_updated: '2021-08-17'
-license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+- cycle friendly
+- cycling
+- cycling scotland
+date_created: '2019-10-17T15:19:22.247Z'
+date_updated: '2019-11-08'
+license: https://creativecommons.org/licenses/by/4.0/
 maintainer: Cycling Scotland
-notes: <p>All-mode traffic data from 48-hour surveys across Scotland in September
-  2018</p>
+notes: <p>This data set highlights communities across Scotland that have received
+  a Cycling Friendly Communities Award</p>
 organization: Cycling Scotland
-original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/a0f74c16-ff56-4d36-a26d-8d07e9a5a449
+original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/8b952141-0d52-48f5-b16d-c11bb93664e8
 records: null
 resources:
 - format: JSON
   name: JSON
-  url: https://api.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/20f490ba-edef-4843-822a-cd3e2670916f/2/urql
-- format: XML
-  name: XML
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=f255f058-4237-42a4-8ddf-e88d2627ae66
+  url: https://api.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/c7dfc2d0-cd22-47ad-bc99-4011a93b3af0/6/urql
 - format: CSV
   name: CSV
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=7b202b52-1850-4396-b668-dca476a69da5
+  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=7453274b-382f-4aee-a852-ecb911395aea
 schema: default
-title: National Monitoring Framework - all-mode traffic survey results September 2018
-  - Cycling Scotland
+title: Cycling Friendly - Communities Award - Cycling Scotland
 ---

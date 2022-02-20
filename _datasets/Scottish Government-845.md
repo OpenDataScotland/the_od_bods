@@ -1,16 +1,15 @@
 ---
 category:
-- Business, Enterprise and Energy
-date_created: '2018-06-18'
-date_updated: '2021-03-29'
+- health and social care
+date_created: '2017-06-06'
+date_updated: '2017-06-06'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Expenditure and employment on research and development by businesses in
-  Scotland since 2001.</p>
+notes: <p>Self-assessed general health by smoking status, age, and gender</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/business-enterprise-research-and-development-expenditure
+original_dataset_link: http://statistics.gov.scot/data/smoking-behaviour-and-self-rated-health-salsus
 records: null
 resources: []
 schema: default
-title: Business Enterprise Research and Development Expenditure
+title: Smoking behaviour and self-rated health (SALSUS)
 ---

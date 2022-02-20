@@ -5,7 +5,7 @@ category:
 - town centres
 date_created: '2021-10-18'
 date_updated: '2021-10-18'
-license: ''
+license: No licence
 maintainer: South Ayrshire Council
 notes: ''
 organization: South Ayrshire Council

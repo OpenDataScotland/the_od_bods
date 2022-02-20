@@ -1,33 +1,22 @@
 ---
 category:
 - transport / mobility
-- active travel
 - cycling
-- schools
-- transport
-- bikeability scotland
-date_created: '2018-10-05T11:13:06.948Z'
-date_updated: '2021-10-13'
+- active travel
+- traffic counts
+date_created: '2021-10-23T14:34:32.003Z'
+date_updated: '2021-11-16'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: <p>Schools in Scotland which delivered Bikeability Scotland training in 2016/17.
-  Bikeability Scotland is a cycle training programme designed to give children the
-  skills and confidence they need both to cycle safely on the roads, and to encourage
-  them to carry on cycling into adulthood.</p>
+notes: <p>A real-time daily upload from each cycling counter within Aberdeenshire
+  Council's network.</p>
 organization: Cycling Scotland
-original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/84b8b2e7-8e18-4f36-822d-85fbf59c8d76
+original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/be55e07e-234e-4506-b478-b614097c355e
 records: null
 resources:
 - format: JSON
   name: JSON
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=aade7d6a-8a66-4d65-b01f-999bc2727795
-- format: CSV
-  name: CSV
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=39f733f5-e2a7-456b-85a3-be5604e9dd04
-- format: XML
-  name: XML
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=8c903843-448a-46df-9321-2d6f934d0272
+  url: https://api.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/4373c5be-42a7-4dd3-8062-9f8b16a4d3f1/1/urql
 schema: default
-title: Bikeability Scotland - Schools delivering Level 1 and/or Level 2 - 2016/17
-  - Cycling Scotland
+title: Aberdeenshire Council - Hourly cycling counts from automatic cycling counters
 ---

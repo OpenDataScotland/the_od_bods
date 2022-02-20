@@ -2,18 +2,22 @@
 category:
 - open data
 - renfrewshire
-- transportation
-date_created: '2018-05-11'
-date_updated: '2018-05-11'
-license: http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+- community
+date_created: '2019-07-22'
+date_updated: '2019-07-23'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Renfrewshire Council
-notes: "<p>Extract of data taken from the\_Disabled Person Protection Policy. Data\
-  \ details the access for wheelchairs or disabled people when using rails stations.\_\
-  </p>"
+notes: "<p>This dataset provide the numbers and rates of fires in Renfrewshire down\
+  \ to dintermediate zone level. Data is provided for the total number of fires, including\
+  \ accidental and deliberate causes.Data is entered by the Scottish Fire and Rescue\
+  \ Service into the Incident Recording System. This dataset is an extract from this\
+  \ live management information system, and thus may differ slightly from other extracts\
+  \ taken on different dates such as the statistics published on the\_Scottish Fire\
+  \ and Rescue Service website.</p>"
 organization: Renfrewshire Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=b0b58021aad34051a5f14ea4b68dfd34
-records: 10
+original_dataset_link: https://www.arcgis.com/home/item.html?id=5ccecdc001ad421ebac54c69b23bf914
+records: 38
 resources: []
 schema: default
-title: ScotRail Station Facilities
+title: Fire - Type of Incident 2017/18
 ---

@@ -1,15 +1,16 @@
 ---
 category:
-- open data
-date_created: '2017-08-23'
-date_updated: '2019-04-18'
-license: ''
+- nomis
+- employment
+date_created: '2019-08-02'
+date_updated: '2019-08-02'
+license: No licence
 maintainer: Renfrewshire Council
 notes: ''
 organization: Renfrewshire Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=a4c8f2fa99bd429d86a7922451f7bdd6
+original_dataset_link: https://www.arcgis.com/home/item.html?id=0160a10b8604479a89a364f2a135e5fd
 records: null
 resources: []
 schema: default
-title: 'Abbey Cropped '
+title: NM 17 5.data
 ---

@@ -1,30 +1,27 @@
 ---
 category:
 - transport / mobility
-- transport
-- national monitoring framework
-- traffic counts
-- active travel
-date_created: '2021-11-26T15:37:11.471Z'
-date_updated: '2021-11-29'
+- government
+- transport and travel in scotland
+date_created: '2019-10-17T11:16:41.438Z'
+date_updated: '2019-12-16'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: <p>All-mode traffic data from 48-hour surveys across Scotland in September
-  2021</p>
+notes: <p>Data from the Transport and Travel related questions asked in the Scottish
+  Household Survey 2016. Data is of average distance traveled (km) nationally. Data
+  is classified by Local Authority, Regional Transport Partnership, and Urban/Rural
+  Classification. Reproduced via Open Government Licence. https://www.transport.gov.scot/publication/26-september-2017-transport-and-travel-in-scotland-2016/</p>
 organization: Cycling Scotland
-original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/2313c4cf-ea8f-4974-98d1-50476db791cd
+original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/ba9b5d11-01c5-4a50-9232-9c54634ebb62
 records: null
 resources:
 - format: JSON
   name: JSON
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=e0cb9563-d672-4dad-aaae-4aebbd06060d
+  url: https://api.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/6b18c08b-3562-4f6a-8154-6fab63fbafe6/2/urql
 - format: CSV
   name: CSV
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=eea394b4-241b-4c4a-ab2e-19026132615f
-- format: XML
-  name: XML
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=f8dbd8bf-91e7-4ae7-9d0d-38f1e0ef63e1
+  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=9f6d8939-bd70-44d2-b569-6bfc32f35353
 schema: default
-title: National Monitoring Framework - all-mode traffic survey results September 2021
-  - Cycling Scotland
+title: Average distance traveled (km) - Transport and Travel in Scotland 2016 - Scottish
+  Household Survey
 ---

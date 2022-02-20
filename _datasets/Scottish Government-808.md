@@ -1,16 +1,17 @@
 ---
 category:
-- Crime and Justice
-date_created: '2017-07-13'
-date_updated: '2020-10-23'
+- health and social care
+date_created: 14:46:06Z
+date_updated: '2021-01-19'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Percent of respondents who believe that crime has stayed the same or reduced
-  in the past 2 years in their local area</p>
+notes: <p>Unpaid care provision by tenure, household type, age, sex and disability.
+  The Scottish Survey Core Questions is an innovative project drawing together multiple
+  household surveys to provide a large sample for subnational analysis. </p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/local-crime-rate-national-indicator
+original_dataset_link: http://statistics.gov.scot/data/unpaid-care-provision-sscq
 records: null
 resources: []
 schema: default
-title: Local Crime Rate (National Indicator)
+title: Unpaid Care Provision - Scottish Surveys Core Questions
 ---

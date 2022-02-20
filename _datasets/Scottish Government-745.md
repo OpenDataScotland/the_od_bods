@@ -1,16 +1,16 @@
 ---
 category:
-- Economic Activity, Benefits and Tax Credits
+- economic activity
+- benefits and tax credits
 date_created: '2014-07-29'
-date_updated: '2016-02-10'
+date_updated: '2021-10-06'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Number of people claiming Attendance Allowance by age, gender and rate of
-  award</p>
+notes: <p>Economic activity level and rate by gender</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/attendance-allowance
+original_dataset_link: http://statistics.gov.scot/data/economic-activity
 records: null
 resources: []
 schema: default
-title: Attendance Allowance
+title: Economic Activity
 ---

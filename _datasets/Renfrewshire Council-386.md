@@ -1,18 +1,18 @@
 ---
 category:
-- renfrewshire
 - open data
-- tourism
-date_created: '2019-07-19'
-date_updated: '2019-07-23'
-license: http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+- renfrewshire
+- democracy and governance
+date_created: '2017-10-19'
+date_updated: '2017-10-19'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Renfrewshire Council
-notes: <p>Scottish Annual Business Survey 2017, Sustainable Tourism (June 2019 release)-
-  filtered for Renfrewshire</p>
+notes: "<p>A layer showing the location of polling\_stations in Renfrewshire in June\
+  \ 2017.</p>"
 organization: Renfrewshire Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=1a29736b06fd42339bb3e9bac85d0bf3
-records: 12
+original_dataset_link: https://www.arcgis.com/home/item.html?id=000b32d31a22485d9107a1666577372b
+records: 174
 resources: []
 schema: default
-title: Sustainable Tourism
+title: Situation of Polling Stations
 ---

@@ -1,15 +1,15 @@
 ---
 category:
-- Community Wellbeing and Social Environment
+- housing
 date_created: '2014-07-29'
-date_updated: '2019-06-25'
+date_updated: '2016-02-09'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Percent of people living within 500 metres of a derelict site.</p>
+notes: <p>Number of lettings, evictions and abandonments of local authority housing.</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/proximity-to-derelict-site
+original_dataset_link: http://statistics.gov.scot/data/local-authority-housing-council-housing
 records: null
 resources: []
 schema: default
-title: Population living in close proximity to a derelict site
+title: Local Authority Housing Council Housing
 ---

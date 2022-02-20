@@ -1,16 +1,17 @@
 ---
 category:
-- Health and Social Care
+- education
+- skills and training
 date_created: '2014-07-29'
-date_updated: '2017-05-25'
+date_updated: '2021-03-31'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Number of home care clients by care type or disability. Number and rate
-  per 1,000 population of home care clients by disability/condition</p>
+notes: <p>Number of pupils who attained a given number of qualifications by level
+  and stage.</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/home-care-client-group
+original_dataset_link: http://statistics.gov.scot/data/pupil-attainment
 records: null
 resources: []
 schema: default
-title: Home Care Client Group
+title: Pupil Attainment
 ---

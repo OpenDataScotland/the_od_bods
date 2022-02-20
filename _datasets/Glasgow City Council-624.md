@@ -1,25 +1,38 @@
 ---
 category:
-- remote sensing
-- 3d
-- lidar
-- dem
-- tem
-- model
-- 3d urban model
-date_created: '2021-10-07T19:20:30.000Z'
+- council glasgow life buildings community facilities council managed
+- community
+- property
+date_created: '2021-08-12T14:08:39.000Z'
 date_updated: ''
-license: ''
+license: No licence
 maintainer: Glasgow City Council
-notes: <p>LIDAR data is extremely accurate 3D data generated from sensors on the ground
-  or on airplanes. This data was acquired in 2021.</p>
+notes: <p>Locations of Major GCC and Glasgow Life Buildings, by specified type. Includes
+  GCC Service Department HQs/main buildings, Major Glasgow Life Facilities, ALEO HQs
+  etc e.g. Libraries, Sports Centres, Swimming Pools, Museums, etc. Selected Community
+  Facilities - Community Halls, Youth Centres, Neighbourhood Centres - which have
+  Glasgow Life managemanagement committment but which and operated by the Voluntary
+  Sector. Selected Community Facilities - Community Centres, Youth Centres, Recreation
+  Centres - managed and operated by Glasgow Life. </p>
 organization: Glasgow City Council
-original_dataset_link: https://data.glasgow.gov.uk/datasets/5e01825608454952bbb3386c4ab395a3
+original_dataset_link: https://data.glasgow.gov.uk/datasets/ea63fcac577e4cefb6e632cd8d84365b_1
 records: null
 resources:
 - format: ARCGIS GEOSERVICE
   name: ARCGIS GEOSERVICE
-  url: https://spatialdata.gov.scot/geonetwork/srv/eng/catalog.search#/metadata/63c46ac1-b10f-4453-968e-b1e95be0e47d
+  url: https://utility.arcgis.com/usrsvcs/servers/ea63fcac577e4cefb6e632cd8d84365b/rest/services/OPEN_DATA/Public_Buildings/MapServer/1
+- format: GEOJSON
+  name: GEOJSON
+  url: https://data.glasgow.gov.uk/datasets/ea63fcac577e4cefb6e632cd8d84365b_1.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D
+- format: CSV
+  name: CSV
+  url: https://data.glasgow.gov.uk/datasets/ea63fcac577e4cefb6e632cd8d84365b_1.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D
+- format: KML
+  name: KML
+  url: https://data.glasgow.gov.uk/datasets/ea63fcac577e4cefb6e632cd8d84365b_1.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D
+- format: ZIP
+  name: ZIP
+  url: https://data.glasgow.gov.uk/datasets/ea63fcac577e4cefb6e632cd8d84365b_1.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D
 schema: default
-title: LIDAR data
+title: Glasgow Life Council Managed Facilities
 ---

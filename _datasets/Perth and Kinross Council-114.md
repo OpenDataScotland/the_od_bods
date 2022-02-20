@@ -3,7 +3,7 @@ category:
 - street lighting
 date_created: '2021-09-30'
 date_updated: '2021-09-30'
-license: ''
+license: No licence
 maintainer: Perth and Kinross Council
 notes: "<p>Street lighting columns PKC open dataset\_</p>"
 organization: Perth and Kinross Council

@@ -1,15 +1,16 @@
 ---
 category:
-- Crime and Justice
-date_created: '2014-07-29'
-date_updated: '2021-10-12'
+- crime and justice
+date_created: '2017-02-21'
+date_updated: '2021-03-08'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Number of probation orders commenced by length.</p>
+notes: <p>Number of social work orders commenced in each local authority area from
+  2004-05 onwards, broken down by type of order</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/probation-orders-by-length
+original_dataset_link: http://statistics.gov.scot/data/social-work-orders-commenced
 records: null
 resources: []
 schema: default
-title: Probation Orders By Length
+title: Social Work Orders Commenced
 ---

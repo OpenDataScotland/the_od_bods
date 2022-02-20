@@ -1,33 +1,22 @@
 ---
 category:
 - transport / mobility
+- traffic counts
+- cycling
 - active travel
-- transport and travel in scotland
-date_created: '2021-04-08T15:10:01.596Z'
-date_updated: '2021-04-23'
+date_created: '2021-03-25T16:21:15.609Z'
+date_updated: '2022-02-17'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: '<ul>
-
-  <li>All organisations listed provide bike repair services </li>
-
-  <li>All organisations listed have appropriate public liability insurance in place</li>
-
-  </ul>'
+notes: <p>A real-time daily upload from each cycling counter within Glasgow City Council's
+  network.</p>
 organization: Cycling Scotland
-original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/a0f61e40-cdff-4f2c-85e6-5245d1980b9b
+original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/af7fedef-7a7a-413f-a5c9-46b8eeeabeda
 records: null
 resources:
 - format: JSON
   name: JSON
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=0473e05d-8f43-4b5f-9694-c307b79178ab
-- format: XML
-  name: XML
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=0e015863-3700-4c04-954a-79c74dc7f6b9
-- format: CSV
-  name: CSV
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=b9a4e147-2393-4cf4-a1c6-1228053cbc76
+  url: https://api.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/657f6f93-932b-4851-ae21-830b321c185d/1/urql
 schema: default
-title: Cycling UK - Bike mechanics in Scotland participating in the Scotland Cycle
-  Repair Scheme 2020/21
+title: Glasgow City Council - Daily cycling counts from automatic cycling counters
 ---

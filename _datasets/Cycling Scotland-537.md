@@ -2,26 +2,26 @@
 category:
 - transport / mobility
 - active travel
-- surveys
-date_created: '2020-07-22T14:01:15.068Z'
-date_updated: '2021-08-17'
-license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+- campus
+- cycle friendly
+- cycling
+- cycling scotland
+date_created: '2019-10-21T11:39:17.535Z'
+date_updated: '2019-10-29'
+license: https://creativecommons.org/licenses/by/4.0/
 maintainer: Cycling Scotland
-notes: <p>All-mode traffic data from 48-hour surveys across Scotland in May 2017</p>
+notes: <p>This dataset shows all campuses across Scotland with a Campus Cycling Officer
+  (CCO) during the academic year 2019/2020</p>
 organization: Cycling Scotland
-original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/2fe0e496-9f15-401e-9be4-9006c0494fe6
+original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/63a7fdf1-e5f1-4636-99b2-4d8ed0666776
 records: null
 resources:
 - format: JSON
   name: JSON
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=4e16a09d-cdf0-4f3f-b391-a1c5324b3338
+  url: https://api.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/8e0c9075-413d-42c7-b7f0-13b0b2535e99/3/urql
 - format: CSV
   name: CSV
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=04c3987d-bf0a-474a-8ef7-f65ed54c4272
-- format: XML
-  name: XML
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=c570a1a8-e2bb-4b69-be1d-13c35c4327dd
+  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=1c0d1da7-cfb9-4825-911c-6118a1670db4
 schema: default
-title: National Monitoring Framework - all-mode traffic survey results May 2017 -
-  Cycling Scotland
+title: Cycling Friendly - Campus Cycling Officer - Cycling Scotland
 ---

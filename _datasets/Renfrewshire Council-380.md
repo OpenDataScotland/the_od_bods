@@ -1,19 +1,17 @@
 ---
 category:
-- open data
 - renfrewshire
-- paisley
+- open data
 - community
-date_created: '2017-11-28'
-date_updated: '2017-11-28'
-license: http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+date_created: '2018-08-10'
+date_updated: '2018-09-12'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Renfrewshire Council
-notes: "<p>A layer showing the location of large scale indoor venues in Paisley.\_\
-  </p>"
+notes: <p>Dataset listing Big Lottery funded projects in Renfrewshire in 2017.</p>
 organization: Renfrewshire Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=da0815b4bdea4e819eeb0e3cceda635c
-records: 13
+original_dataset_link: https://www.arcgis.com/home/item.html?id=ff235ddc77b64f1a8ccea9781b97f572
+records: 26
 resources: []
 schema: default
-title: Large Scale Indoor Venues Paisley
+title: Big Lottery Funded Projects 2017
 ---

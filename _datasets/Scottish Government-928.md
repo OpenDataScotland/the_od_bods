@@ -1,16 +1,16 @@
 ---
 category:
-- Environment
-date_created: '2020-06-19'
-date_updated: '2021-07-21'
+- community wellbeing and social environment
+date_created: '2019-03-26'
+date_updated: '2021-10-08'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>This contains the results of the Scottish Greenhouse Gas Inventory, which
-  is the key tool for understanding the origins and magnitudes of greenhouse emissions</p>
+notes: <p>Percentage of adults who agree with various statements about involvement
+  with people in their neighbourhood, from the Scottish Household Survey (SHS)</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/greenhouse-gas-emissions-by-national-communications-category
+original_dataset_link: http://statistics.gov.scot/data/involvement-with-people-in-the-neighbourhood---scottish-household-survey
 records: null
 resources: []
 schema: default
-title: Greenhouse Gas Emissions by National Communications Category
+title: Involvement with people in the neighbourhood - Scottish Household Survey
 ---

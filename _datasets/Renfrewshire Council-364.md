@@ -1,23 +1,26 @@
 ---
 category:
-- open data
 - renfrewshire
-- community
-date_created: '2019-07-22'
-date_updated: '2019-07-23'
-license: http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+- open data
+- business and economy
+date_created: '2019-07-19'
+date_updated: '2019-07-24'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Renfrewshire Council
-notes: "<p>This dataset provide the numbers and rates of fires in Renfrewshire down\
-  \ to dintermediate zone level. Data is provided for the total number of fires, including\
-  \ accidental and deliberate causes.Data is entered by the Scottish Fire and Rescue\
-  \ Service into the Incident Recording System. This dataset is an extract from this\
-  \ live management information system, and thus may differ slightly from other extracts\
-  \ taken on different dates such as the statistics published on the\_Scottish Fire\
-  \ and Rescue Service website.</p>"
+notes: <p>Scottish Annual Business Survey 2017 (June 2019 release)- filtered for Renfrewshire.Scottish
+  Annual Business Statistics (SABS), which is largely sourced to the Annual Business
+  Survey, provides data mainly on the Production (including Manufacturing), Construction
+  and Service Sectors in Scotland. The main sectors not covered are the financial
+  sector &amp; parts of agriculture and the public sector. Data are classified according
+  to industry group and geographical area. All figures are at current prices.Variables
+  include employment, employees, turnover, purchases of goods &amp; services, approximate
+  gross value added (GVA), gross wages &amp; salaries, labour costs, total output
+  and number of business units. GVA per head, gross wages &amp; salaries per head
+  and labour costs per head are also available.</p>
 organization: Renfrewshire Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=5ccecdc001ad421ebac54c69b23bf914
-records: 38
+original_dataset_link: https://www.arcgis.com/home/item.html?id=549c194eaec6427cb9b93808d7a2afda
+records: 12
 resources: []
 schema: default
-title: Fire - Type of Incident 2017/18
+title: Annual Business Statistics
 ---

@@ -1,15 +1,16 @@
 ---
 category:
-- Housing
-date_created: '2018-05-16'
-date_updated: '2021-08-30'
+- crime and justice
+date_created: '2017-07-13'
+date_updated: '2020-10-23'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Lettings of local authority dwellings, by local authority</p>
+notes: <p>Percent of respondents who believe that crime has stayed the same or reduced
+  in the past 2 years in their local area</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/local-authority-housing-lettings
+original_dataset_link: http://statistics.gov.scot/data/local-crime-rate-national-indicator
 records: null
 resources: []
 schema: default
-title: Local Authority Housing Lettings
+title: Local Crime Rate (National Indicator)
 ---

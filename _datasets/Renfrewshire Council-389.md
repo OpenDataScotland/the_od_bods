@@ -1,20 +1,18 @@
 ---
 category:
 - renfrewshire
-- open data platform
 - open data
-- renfrewshire
-- care homes
-- health and wellbeing
-date_created: '2017-09-06'
-date_updated: '2017-09-06'
-license: http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+- tourism
+date_created: '2019-07-19'
+date_updated: '2019-07-23'
+license: No licence
 maintainer: Renfrewshire Council
-notes: <p>A layer presenting Care Homes in Renfrewshire Council area</p>
+notes: <p>Locations of hotels in Renfrewshire, with information on number of rooms,
+  grade and website links.</p>
 organization: Renfrewshire Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=0310460f85374ba3a850e76f1fd84b34
-records: 33
+original_dataset_link: https://www.arcgis.com/home/item.html?id=a56faca05f8847889a66c9518ea7f53b
+records: null
 resources: []
 schema: default
-title: Care Homes
+title: Hotel Rooms
 ---

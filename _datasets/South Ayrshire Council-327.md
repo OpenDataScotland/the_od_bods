@@ -3,7 +3,7 @@ category:
 - planning
 date_created: '2017-03-21'
 date_updated: '2019-09-13'
-license: ''
+license: No licence
 maintainer: South Ayrshire Council
 notes: <p>The LDP is a strategic land use plan that sets out strategic spatial priorities
   and policies for South Ayrshire and will secure land for specified uses (e.g. housing/industry

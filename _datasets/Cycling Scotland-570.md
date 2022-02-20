@@ -2,30 +2,23 @@
 category:
 - transport / mobility
 - active travel
-- government
-- featured
-- scottish household survey
-date_created: '2021-09-14T16:43:33.184Z'
-date_updated: '2021-09-14'
-license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+- culture
+- cycling scotland
+- attitudes and behaviours
+date_created: '2020-01-23T14:17:31.971Z'
+date_updated: '2021-12-21'
+license: https://creativecommons.org/licenses/by/4.0/
 maintainer: Cycling Scotland
-notes: <p>Data from Transport and Travel in Scotland and the Scottish Household Survey
-  relating to the number of bikes available for private use by Local Authority in
-  2019.</p>
+notes: <p>Cycling Scotland undertakes research biennially into the attitudes and behaviours
+  of people towards cycling. This dataset has the results in pdf format from the first
+  (2017), second (2019) and third (2021) rounds.</p>
 organization: Cycling Scotland
-original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/0d94f83a-4b54-407c-89ae-6010ebd3ac8d
+original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/f9e2f1dc-5f97-4508-a370-ea6f744f6f62
 records: null
 resources:
-- format: JSON
-  name: JSON
-  url: https://api.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/ae0b651b-ce85-42b8-a9b6-7423465de8f4/1/urql
-- format: XML
-  name: XML
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=14508826-0c68-4dce-beb9-01620d1b4c7c
-- format: CSV
-  name: CSV
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=614df944-323e-4899-b099-9da795a66f77
+- format: PDF
+  name: PDF
+  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=5bb69fcd-128a-46c7-8320-20f6232549f7
 schema: default
-title: Number of bikes available for private use - Travel and Transport Scotland 2019
-  - Scottish Household Survey
+title: Attitudes and behaviours towards cycling in Scotland - Cycling Scotland
 ---

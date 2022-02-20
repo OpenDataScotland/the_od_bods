@@ -3,7 +3,7 @@ category:
 - core paths. adopted
 date_created: '2021-09-30'
 date_updated: '2021-09-30'
-license: ''
+license: No licence
 maintainer: Perth and Kinross Council
 notes: <DIV STYLE="text-align:Left;font-size:12pt"><P><SPAN>Core Path network adopted
   by Perth &amp; Kinross Council on 25/01/2012. The Inquiry Report is available on

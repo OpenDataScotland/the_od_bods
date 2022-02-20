@@ -1,18 +1,17 @@
 ---
 category:
-- ldp
-- local development plan
-- planning
+- boundary
+- education
+- school
 date_created: '2017-07-07'
 date_updated: '2017-07-18'
-license: ''
+license: No licence
 maintainer: Argyll and Bute Council
-notes: <p>Development Management Zones designated in the Argyll and Bute adopted Local
-  Development Plan 2015.</p>
+notes: <p>Boundaries of Secondary School Catchment Areas in Argyll and Bute</p>
 organization: Argyll and Bute Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=c438cbaf9b99421fbc603738caa910a2
-records: 9373
+original_dataset_link: https://www.arcgis.com/home/item.html?id=d344834454e54fc891966ce23c3cfa34
+records: 12
 resources: []
 schema: default
-title: Open Data - Development Management Zones
+title: Open Data - Secondary School Catchment Areas
 ---

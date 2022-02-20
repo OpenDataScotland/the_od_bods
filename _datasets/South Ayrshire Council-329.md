@@ -3,7 +3,7 @@ category:
 - alcohol prohibition areas
 date_created: '2017-03-30'
 date_updated: '2017-03-30'
-license: ''
+license: No licence
 maintainer: South Ayrshire Council
 notes: "<p>South Ayrshire Council has passed byelaws to prohibit the drinking of alcohol\
   \ in designated public places under provisions contained in the Local Government\

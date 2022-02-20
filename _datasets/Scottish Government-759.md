@@ -1,15 +1,16 @@
 ---
 category:
-- Environment
+- health and social care
 date_created: '2014-07-29'
-date_updated: '2016-02-09'
+date_updated: '2016-02-10'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Number of dwellings in flood risk areas</p>
+notes: <p>Percent of people aged 65+ with high levels of care needs who are cared
+  for at home</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/dwellings-in-flood-risk-areas
+original_dataset_link: http://statistics.gov.scot/data/intensive-home-care
 records: null
 resources: []
 schema: default
-title: Dwellings In Flood Risk Areas
+title: Intensive Home Care
 ---

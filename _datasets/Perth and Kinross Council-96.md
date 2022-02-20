@@ -9,7 +9,7 @@ category:
 - polling
 date_created: '2021-09-30'
 date_updated: '2021-09-30'
-license: ''
+license: No licence
 maintainer: Perth and Kinross Council
 notes: "<p>Parliamentary polling district boundaries are used\_to manage elections.\
   \ They are sub-divisions of the 2017 electoral ward boundaries.</p>"

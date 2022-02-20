@@ -1,15 +1,16 @@
 ---
 category:
-- Economy
-date_created: '2019-07-17'
-date_updated: '2020-09-02'
+- economic activity
+- benefits and tax credits
+date_created: '2018-06-04'
+date_updated: '2021-06-21'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Local authority estimates of international exports, by destination </p>
+notes: <p>Amount spent by Local Authorities on awards for Discretionary Housing Payments</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/exports-by-local-authority
+original_dataset_link: http://statistics.gov.scot/data/discretionary-housing-payments-expenditure
 records: null
 resources: []
 schema: default
-title: Exports by Local Authority
+title: Discretionary Housing Payments Expenditure
 ---

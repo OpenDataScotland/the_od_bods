@@ -1,16 +1,15 @@
 ---
 category:
-- renfrewshire
-- open data
-date_created: '2017-10-19'
-date_updated: '2020-12-20'
-license: ''
+- economic development
+date_created: '2021-07-08'
+date_updated: '2021-08-25'
+license: No licence
 maintainer: Renfrewshire Council
 notes: ''
 organization: Renfrewshire Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=e72a2b2e62bb431dbb9dfa5bc46dcda1
+original_dataset_link: https://www.arcgis.com/home/item.html?id=84f1823966ba442eb9f58993bcc15e3f
 records: null
 resources: []
 schema: default
-title: Renfrewshire Open Data Platform Guide
+title: Renfrewshire Manufacturing Business Survey
 ---

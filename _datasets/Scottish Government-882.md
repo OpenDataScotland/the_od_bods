@@ -1,16 +1,15 @@
 ---
 category:
-- Community Wellbeing and Social Environment
-date_created: '2019-03-14'
-date_updated: '2020-12-03'
+- community wellbeing and social environment
+date_created: '2018-02-14'
+date_updated: '2021-10-20'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>How safe adults in Scotland feel when alone in their home at night, from
-  the Scottish Household Survey (SHS)</p>
+notes: <p>Area of land in community ownership (hectares)</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/feeling-safe-when-alone-at-home---scottish-household-survey
+original_dataset_link: http://statistics.gov.scot/data/community-ownership-area-of-land
 records: null
 resources: []
 schema: default
-title: Feeling safe when alone at home - Scottish Household Survey
+title: "Community Ownership \u2013 Area of Land"
 ---

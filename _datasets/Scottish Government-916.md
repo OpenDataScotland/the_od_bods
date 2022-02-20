@@ -1,15 +1,16 @@
 ---
 category:
-- Scottish Index of Multiple Deprivation
-date_created: '2020-01-28'
-date_updated: '2020-06-12'
+- economy
+date_created: '2018-11-23'
+date_updated: '2021-11-24'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: ''
+notes: <p>The average amount of economic output produced per job and per hour worked
+  in Scotland</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/scottish-index-of-multiple-deprivation
+original_dataset_link: http://statistics.gov.scot/data/labour-productivity-quarterly
 records: null
 resources: []
 schema: default
-title: Scottish Index of Multiple Deprivation 2020
+title: 'Labour Productivity: Quarterly'
 ---

@@ -5,7 +5,7 @@ category:
 - committees
 date_created: ''
 date_updated: '2019-12-09'
-license: ''
+license: No licence
 maintainer: Aberdeenshire Council
 notes: ''
 organization: Aberdeenshire Council

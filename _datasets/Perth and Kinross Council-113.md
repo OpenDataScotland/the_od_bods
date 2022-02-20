@@ -7,7 +7,7 @@ category:
 - schools
 date_created: '2021-09-30'
 date_updated: '2021-09-30'
-license: ''
+license: No licence
 maintainer: Perth and Kinross Council
 notes: <p>St Ninians Episcopal School Catchment Boundary (Whole of PKC)</p>
 organization: Perth and Kinross Council

@@ -1,19 +1,18 @@
 ---
 category:
-- boundary
-- electoral
+- ldp
+- local development plan
+- business
+- planning
 date_created: '2017-07-07'
 date_updated: '2017-07-18'
-license: ''
+license: No licence
 maintainer: Argyll and Bute Council
-notes: "<p>Administrative Areas used by Argyll and Bute Council for administering\
-  \ services. The council area is divided into four administrative areas:Bute and\
-  \ CowalHelensburgh\_and LomondMid Argyll,\_Kintyre and the IslandsOban, Lorn and\
-  \ the Isles</p>"
+notes: <p>Established Business and Industry Area in the 2015 Local Development Plan</p>
 organization: Argyll and Bute Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=17079d024402462788d9825b6e474da1
-records: 4
+original_dataset_link: https://www.arcgis.com/home/item.html?id=48dccdf221ba41f3b1d7f8b1d619183b
+records: 53
 resources: []
 schema: default
-title: Open Data - Administrative Area
+title: Open Data - Established Business and Industry Area
 ---

@@ -2,16 +2,18 @@
 category:
 - open data
 - renfrewshire
-- democracy and governance
-date_created: '2018-01-09'
-date_updated: '2018-07-27'
-license: http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+- paisley
+- community
+date_created: '2017-11-28'
+date_updated: '2017-11-28'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Renfrewshire Council
-notes: "<p>Results of the\_Referendum on the UK's membership of the EU, 23 June 2016.</p>"
+notes: "<p>A layer showing the location of large scale indoor venues in Paisley.\_\
+  </p>"
 organization: Renfrewshire Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=b5e4b39bcca2452b99ab6e375dc6221c
-records: 1
+original_dataset_link: https://www.arcgis.com/home/item.html?id=da0815b4bdea4e819eeb0e3cceda635c
+records: 13
 resources: []
 schema: default
-title: Referendum on the UK's membership of the EU June 2016
+title: Large Scale Indoor Venues Paisley
 ---

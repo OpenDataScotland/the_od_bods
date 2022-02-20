@@ -1,17 +1,16 @@
 ---
 category:
-- Scottish Index of Multiple Deprivation
-date_created: '2019-10-09'
-date_updated: '2019-10-09'
+- housing
+date_created: '2018-07-20'
+date_updated: '2021-08-30'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>The Scottish Index of Multiple Deprivation (SIMD) was published in August
-  2016. This dataset contains the indicators that were used to calculate the housing
-  domain of SIMD.</p>
+notes: '<p>Local authority vacant stock: as at 31 March each year, by current status
+  and length of vacancy</p>'
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/scottish-index-of-multiple-deprivation---housing-indicators
+original_dataset_link: http://statistics.gov.scot/data/local-authority-vacant-dwellings
 records: null
 resources: []
 schema: default
-title: Scottish Index of Multiple Deprivation - Housing Indicators
+title: Local Authority Vacant Dwellings
 ---

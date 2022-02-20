@@ -1,23 +1,24 @@
 ---
 category:
 - social / community
-- architectural
-date_created: '2018-01-23T14:03:57.604Z'
-date_updated: '2018-09-27'
+- children
+- schools
+- education
+date_created: '2017-11-15T10:28:01.702Z'
+date_updated: '2017-11-16'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
-notes: <p>The Total Number of Non-Domestic Properties and Total Rateable Value in
-  each Local Authority within each Assessor's Area plus All Scotland totals.</p>
+notes: <p>Annual Attendance Percentage of Primary Schools in Dumfries and Galloway</p>
 organization: Dumfries and Galloway Council
-original_dataset_link: https://usmart.io/org/dumgal/discovery/discovery-view-detail/0aeb8640-04ea-44e3-9c03-63b53a3fe7d4
+original_dataset_link: https://usmart.io/org/dumgal/discovery/discovery-view-detail/3090c5a4-79f9-4659-b549-7abf59bcfddb
 records: null
 resources:
-- format: CSV
-  name: CSV
-  url: https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/resource?resourceGUID=bcd1bd61-af38-4ffb-8a49-35e8e18a0372
 - format: JSON
   name: JSON
-  url: https://api.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/4bbaa7b5-9da9-4614-9b4b-ff566f330217/1/urql
+  url: https://api.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/b2b9e26f-0692-4a4f-8a61-1f51e45cbf09/1/urql
+- format: CSV
+  name: CSV
+  url: https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/resource?resourceGUID=6d588204-d094-47e7-82e7-bce532ca2c35
 schema: default
-title: Valuation Roll
+title: Primary School Attendance
 ---

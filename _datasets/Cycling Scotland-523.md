@@ -1,31 +1,30 @@
 ---
 category:
 - transport / mobility
-- schools
-- active travel
 - transport
-date_created: '2021-10-13T12:02:45.152Z'
-date_updated: '2021-10-25'
+- cycling
+- cycling scotland
+- active travel
+- reported road casualties scotland
+date_created: '2018-05-15T09:39:01.252Z'
+date_updated: '2019-12-20'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: <p>Schools in Scotland which delivered Bikeability Scotland training in 2020/21.
-  Bikeability Scotland is a cycle training programme designed to give children the
-  skills and confidence they need both to cycle safely on the roads, and to encourage
-  them to carry on cycling into adulthood.</p>
+notes: <p>Data from Reported Road Casualties Scotland showing annual traffic volumes
+  in Scotland from 2006 to 2017.</p>
 organization: Cycling Scotland
-original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/abd9a110-9d4d-4b06-82e1-b3b6d1b3090f
+original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/d87bdc18-b1e6-4e65-8b34-b9c83c67553b
 records: null
 resources:
-- format: JSON
-  name: JSON
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=892d071f-1787-493b-a8d7-f031979271f9
 - format: CSV
   name: CSV
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=6b17067a-86b5-4cbb-ab2f-819bd8e81c24
+  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=56e2cce4-27d1-4823-b85f-49cb4582e096
 - format: XML
   name: XML
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=7685f4d0-4919-4610-86b4-9ac457171e51
+  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=e80be9f4-251a-4ae0-b8e8-c776393e1df0
+- format: JSON
+  name: JSON
+  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=38a45d25-229c-4b9d-bb85-dc39cde90a21
 schema: default
-title: Bikeability Scotland - Schools delivering Level 1 and/or Level 2 - 2020/21
-  - Cycling Scotland
+title: Traffic volumes (2006-17) - Key reported road casualties - Transport Scotland
 ---

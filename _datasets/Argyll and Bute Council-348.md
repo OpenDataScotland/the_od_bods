@@ -5,13 +5,14 @@ category:
 - school
 date_created: '2017-07-07'
 date_updated: '2017-07-18'
-license: ''
+license: No licence
 maintainer: Argyll and Bute Council
-notes: <p>Boundaries of Secondary School Catchment Areas in Argyll and Bute</p>
+notes: <p>Boundaries of Primary School Catchment Areas in Argyll and Bute, including
+  denominational (Roman Catholic) Primary Schools.</p>
 organization: Argyll and Bute Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=d344834454e54fc891966ce23c3cfa34
-records: 12
+original_dataset_link: https://www.arcgis.com/home/item.html?id=e25fab81a2c045ca85cccf6cdee98b0f
+records: 84
 resources: []
 schema: default
-title: Open Data - Secondary School Catchment Areas
+title: Open Data - Primary School Catchment Areas
 ---

@@ -4,7 +4,7 @@ category:
 - wards
 date_created: '2021-09-30'
 date_updated: '2021-09-30'
-license: ''
+license: No licence
 maintainer: Perth and Kinross Council
 notes: <p>Ward boundaries from 2017 onwards extracted from the OS Boundary Line product.
   The Perth and Kinross (Electoral Arrangements) Order 2016 was laid before the Scottish

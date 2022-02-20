@@ -1,16 +1,16 @@
 ---
 category:
 - planning
-- open data
+- inspire
 date_created: '2018-12-13'
 date_updated: '2020-11-30'
-license: ''
+license: No licence
 maintainer: Moray Council
-notes: <p>Proposed Plan 2019 Special Landscape Area (SLA) (Moray)</p>
+notes: <p>Proposed Plan 2019 Settlement Designations (Moray)</p>
 organization: Moray Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=5b9b70606eac495dabf0bcf82455e9b0
-records: 13
+original_dataset_link: https://www.arcgis.com/home/item.html?id=4c46411e0cfe447295acb5c95fff862a
+records: 766
 resources: []
 schema: default
-title: Proposed Plan 2019 Special Landscape Area (SLA) (Moray)
+title: Proposed Plan 2019 Settlement Designations (Moray)
 ---

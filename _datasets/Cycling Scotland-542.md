@@ -1,26 +1,32 @@
 ---
 category:
 - transport / mobility
+- transport
+- bikeability scotland
 - active travel
-- cycling
-- cycling scotland
-- cycling friendly
-date_created: '2019-10-21T11:53:05.320Z'
-date_updated: '2019-11-08'
-license: https://creativecommons.org/licenses/by/4.0/legalcode
+- schools
+date_created: '2021-10-13T11:55:10.006Z'
+date_updated: '2021-10-25'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: <p>This dataset shows communities across Scotland that have received funding
-  through Cycling Scotland's Cycling Friendly program</p>
+notes: <p>Schools in Scotland which delivered Bikeability Scotland training in 2019/20.
+  Bikeability Scotland is a cycle training programme designed to give children the
+  skills and confidence they need both to cycle safely on the roads, and to encourage
+  them to carry on cycling into adulthood.</p>
 organization: Cycling Scotland
-original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/f623d8cf-cdaf-426a-90f2-63387b8d680b
+original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/b9fa9cf4-16b3-4d13-97c0-29c2d0c21d6a
 records: null
 resources:
 - format: CSV
   name: CSV
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=9e4f2a31-315e-4b91-a501-26753fa87137
+  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=ddd63aef-2696-46d3-a7b5-89559ac8c803
 - format: JSON
   name: JSON
-  url: https://api.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/9b8b85e0-8d97-4b9f-8ecb-36419272ecc5/1/urql
+  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=9c85eebd-326e-4713-b81b-76cc3734a81d
+- format: XML
+  name: XML
+  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=5a716f5c-b44b-42ff-aa29-9fccba0aab6f
 schema: default
-title: Cycling Friendly - Communities Funded - Cycling Scotland
+title: Bikeability Scotland - Schools delivering Level 1 and/or Level 2 - 2019/20
+  - Cycling Scotland
 ---

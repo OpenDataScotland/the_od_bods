@@ -1,24 +1,25 @@
 ---
 category:
-- social / community
+- built environment
 - geospatial
-- education
-- government
-- schools
-- young people
-date_created: '2017-11-16T15:14:09.245Z'
-date_updated: '2020-12-11'
+- environmental
+- architectural
+- planning permission
+date_created: '2018-07-16T09:00:41.285Z'
+date_updated: '2019-01-15'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Dumfries and Galloway Council
-notes: <p>Dumfries and Galloway School Catchment area boundaries</p>
+notes: <p>Building Conservation Areas</p>
 organization: Dumfries and Galloway Council
-original_dataset_link: https://usmart.io/org/dumgal/discovery/discovery-view-detail/b958299b-9fca-4380-a6f1-047bdf0223aa
+original_dataset_link: https://usmart.io/org/dumgal/discovery/discovery-view-detail/9f76f5eb-3744-4470-9d64-19b17aa8e1ca
 records: null
 resources:
 - format: ZIP
   name: ZIP
-  url: https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/additionalDocumentation/29388337-4e19-4ac9-8a8c-5d99e0639d9b/Secondary
-    Catchments ND.zip
+  url: https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/resource?resourceGUID=550e04c6-4e0b-410f-b163-d6803cdbe1ac
+- format: JSON
+  name: JSON
+  url: https://api.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/710fb75a-4c63-4d05-a4cd-cb7f5dfd752e/1/urql
 schema: default
-title: School Catchment Areas
+title: Building Conservation Areas
 ---

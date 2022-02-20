@@ -1,17 +1,17 @@
 ---
 category:
-- open data
 - renfrewshire
-- democracy and governance
-date_created: '2018-01-09'
-date_updated: '2018-09-12'
-license: http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+- open data
+- community
+date_created: '2019-04-17'
+date_updated: '2019-04-17'
+license: No licence
 maintainer: Renfrewshire Council
-notes: <p>UK Parliament General Election 8 June 2017 electoral data.</p>
+notes: <p>Dataset listing Big Lottery funded projects in Renfrewshire in 2018.</p>
 organization: Renfrewshire Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=1f9c282884ce450f9f32e81402f52f5c
-records: 3
+original_dataset_link: https://www.arcgis.com/home/item.html?id=3ab34647842e4971889def454f31f2e8
+records: 36
 resources: []
 schema: default
-title: UK Parliament General Election June 2017 (electoral data)
+title: Big Lottery Funded Projects 2018
 ---

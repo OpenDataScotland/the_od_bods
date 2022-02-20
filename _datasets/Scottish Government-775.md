@@ -1,15 +1,15 @@
 ---
 category:
-- Health and Social Care
-date_created: '2016-12-01'
-date_updated: '2016-12-05'
+- housing
+date_created: '2014-07-29'
+date_updated: '2017-10-25'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>When 13 and 15 year olds last had an alcoholic drink.</p>
+notes: <p>Number of council house sales to sitting tenants by housing type.</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/drinking-behaviour-among-young-people-salsus
+original_dataset_link: http://statistics.gov.scot/data/council-house-sales
 records: null
 resources: []
 schema: default
-title: Drinking behaviour among young people (SALSUS)
+title: Council House Sales
 ---

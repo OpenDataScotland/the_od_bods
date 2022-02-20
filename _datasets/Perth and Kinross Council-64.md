@@ -3,7 +3,7 @@ category:
 - defibrillators
 date_created: '2021-09-30'
 date_updated: '2021-09-30'
-license: ''
+license: No licence
 maintainer: Perth and Kinross Council
 notes: <div style='text-align:Left;font-size:12pt'><p><span>Location of Defibrillators
   in PKC</span></p></div>

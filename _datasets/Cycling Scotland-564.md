@@ -1,22 +1,23 @@
 ---
 category:
 - transport / mobility
-- cycling
 - traffic counts
+- cycling
 - active travel
-date_created: '2021-09-25T13:17:54.110Z'
-date_updated: '2021-11-16'
+date_created: '2021-07-03T15:11:51.836Z'
+date_updated: '2021-08-13'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: <p>A real-time hourly upload from each cycling counter within The Highland
-  Council's network.</p>
+notes: <p>A real-time hourly upload from each cycling counter within Comhairle nan
+  Eilean Siar's network.</p>
 organization: Cycling Scotland
-original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/c34d4636-7390-4a12-9e4f-01e7a88bd69a
+original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/2f431f6f-5fea-42a5-9504-7f1c0c7ce67d
 records: null
 resources:
 - format: JSON
   name: JSON
-  url: https://api.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/7ac87fa3-45e1-40eb-9274-13359c00f195/1/urql
+  url: https://api.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/5376053f-a413-47b6-9310-9d43bba464e9/1/urql
 schema: default
-title: The Highland Council - Hourly cycling counts from automatic cycling counters
+title: Comhairle nan Eilean Siar (Western Isles Council) - Hourly cycling counts from
+  automatic cycling counters
 ---

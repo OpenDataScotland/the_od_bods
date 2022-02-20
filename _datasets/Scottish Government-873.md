@@ -1,16 +1,16 @@
 ---
 category:
-- Economic Activity, Benefits and Tax Credits
-date_created: '2018-12-14'
-date_updated: '2020-08-28'
+- education
+- skills and training
+date_created: '2018-04-24'
+date_updated: '2021-05-03'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Geographical analysis of families claiming Child Benefit at small area levels.
-  Number of families in a live Child Benefit award as at 31st August.</p>
+notes: <p>The number of school leavers for each establishment, by year</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/child-benefit---families
+original_dataset_link: http://statistics.gov.scot/data/leaver-count
 records: null
 resources: []
 schema: default
-title: Child Benefit - Families
+title: Schools - Leaver Count
 ---

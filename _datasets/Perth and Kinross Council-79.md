@@ -9,7 +9,7 @@ category:
 - planningcadastre
 date_created: '2021-09-30'
 date_updated: '2021-09-30'
-license: ''
+license: No licence
 maintainer: Perth and Kinross Council
 notes: <p>Perth Green Belt from the 2019 Perth &amp; Kinross Council Adopted Local
   Development Plan</p>

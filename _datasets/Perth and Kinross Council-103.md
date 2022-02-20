@@ -8,7 +8,7 @@ category:
 - schools
 date_created: '2021-09-30'
 date_updated: '2021-09-30'
-license: ''
+license: No licence
 maintainer: Perth and Kinross Council
 notes: <p>Boundaries for Roman Catholic primary school catchment areas</p>
 organization: Perth and Kinross Council

@@ -4,13 +4,13 @@ category:
 - inspire
 date_created: '2020-07-23'
 date_updated: '2020-11-30'
-license: ''
+license: No licence
 maintainer: Moray Council
-notes: <p>Local Development Plan 2020 Special Landscape Areas (SLA) (Moray)</p>
+notes: <p>Local Development Plan 2020 Wind Farm Spatial Framework (Moray)</p>
 organization: Moray Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=f20718b1400045ba964b0ebb553d43b1
-records: 13
+original_dataset_link: https://www.arcgis.com/home/item.html?id=f1cf505350cb4e909d27f832367a534e
+records: 1
 resources: []
 schema: default
-title: Local Development Plan 2020 Special Landscape Areas (SLA) (Moray)
+title: Local Development Plan 2020 Wind Farm Spatial Framework (Moray)
 ---

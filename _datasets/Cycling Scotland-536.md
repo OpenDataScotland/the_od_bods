@@ -2,26 +2,32 @@
 category:
 - transport / mobility
 - active travel
-- campus
-- cycle friendly
-- cycling
-- cycling scotland
-date_created: '2019-10-21T11:39:17.535Z'
-date_updated: '2019-10-29'
-license: https://creativecommons.org/licenses/by/4.0/legalcode
+- transport and travel in scotland
+date_created: '2021-04-08T15:10:01.596Z'
+date_updated: '2021-04-23'
+license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Cycling Scotland
-notes: <p>This dataset shows all campuses across Scotland with a Campus Cycling Officer
-  (CCO) during the academic year 2019/2020</p>
+notes: '<ul>
+
+  <li>All organisations listed provide bike repair services </li>
+
+  <li>All organisations listed have appropriate public liability insurance in place</li>
+
+  </ul>'
 organization: Cycling Scotland
-original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/63a7fdf1-e5f1-4636-99b2-4d8ed0666776
+original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/a0f61e40-cdff-4f2c-85e6-5245d1980b9b
 records: null
 resources:
 - format: JSON
   name: JSON
-  url: https://api.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/8e0c9075-413d-42c7-b7f0-13b0b2535e99/3/urql
+  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=0473e05d-8f43-4b5f-9694-c307b79178ab
+- format: XML
+  name: XML
+  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=0e015863-3700-4c04-954a-79c74dc7f6b9
 - format: CSV
   name: CSV
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=1c0d1da7-cfb9-4825-911c-6118a1670db4
+  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=b9a4e147-2393-4cf4-a1c6-1228053cbc76
 schema: default
-title: Cycling Friendly - Campus Cycling Officer - Cycling Scotland
+title: Cycling UK - Bike mechanics in Scotland participating in the Scotland Cycle
+  Repair Scheme 2020/21
 ---

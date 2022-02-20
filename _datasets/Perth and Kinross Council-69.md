@@ -5,7 +5,7 @@ category:
 - pkc
 date_created: '2021-09-30'
 date_updated: '2021-09-30'
-license: ''
+license: No licence
 maintainer: Perth and Kinross Council
 notes: '<div>The Perth and Kinross Employment Land Audit is prepared annually to provide
   up to date and accurate information on the supply and availability of employment

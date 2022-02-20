@@ -1,27 +1,26 @@
 ---
 category:
 - transport / mobility
-- government
-- transport and travel in scotland
-date_created: '2019-10-17T11:16:41.438Z'
-date_updated: '2019-12-16'
-license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+- active travel
+- cycle friendly
+- cycling
+- cycling scotland
+date_created: '2019-10-17T15:06:31.003Z'
+date_updated: '2019-11-26'
+license: https://creativecommons.org/licenses/by/4.0/
 maintainer: Cycling Scotland
-notes: <p>Data from the Transport and Travel related questions asked in the Scottish
-  Household Survey 2016. Data is of average distance traveled (km) nationally. Data
-  is classified by Local Authority, Regional Transport Partnership, and Urban/Rural
-  Classification. Reproduced via Open Government Licence. https://www.transport.gov.scot/publication/26-september-2017-transport-and-travel-in-scotland-2016/</p>
+notes: <p>This data highlights all university and college campuses across Scotland
+  that have received a Cycling Friendly Campus Award</p>
 organization: Cycling Scotland
-original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/ba9b5d11-01c5-4a50-9232-9c54634ebb62
+original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/ccdfe336-fc50-44e4-8e07-77ec03547b0e
 records: null
 resources:
 - format: JSON
   name: JSON
-  url: https://api.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/6b18c08b-3562-4f6a-8154-6fab63fbafe6/2/urql
+  url: https://api.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/c92986a3-157a-485b-b967-f15f041ccecf/5/urql
 - format: CSV
   name: CSV
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=9f6d8939-bd70-44d2-b569-6bfc32f35353
+  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=a101efee-bc93-47fc-b403-3d97149a0f38
 schema: default
-title: Average distance traveled (km) - Transport and Travel in Scotland 2016 - Scottish
-  Household Survey
+title: Cycling Friendly - Campus Award - Cycling Scotland
 ---

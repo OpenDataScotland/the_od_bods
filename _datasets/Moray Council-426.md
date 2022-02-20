@@ -1,26 +1,23 @@
 ---
 category:
-- planning
 - inspire
-date_created: '2018-01-11'
+- business
+date_created: '2017-08-21'
 date_updated: '2020-11-30'
-license: ''
+license: No licence
 maintainer: Moray Council
-notes: <p>Wind turbine locations generated from planning applications received by
-  Moray Council this includes applications Moray Council dealt with and Section 36
-  applications which were dealt with by Scottish Government. It also includes refused
-  applications, some of the refused applications maybe appealed. Some applications
-  maybe for the same site where the applicant has submitted a revised application
-  to change turbine size/location etc.Any turbine location co-ordinates we provide
-  will not be exact locations taken from GPS or similar. The co-ordinates will be
-  either calculated from plans provide by the applicant or grid co-ordinates stated
-  in the application, these co-ordinates will not take into account for any micro-siting
-  at construction stage. The data is provided based on the best information available
-  to the council at the time of writing.</p>
+notes: "<p>Council Register of Assets (Moray).\_ Section 94 of the Community Empowerment\
+  \ (Scotland) Act 2015 (the Act) requires public authorities to make available to\
+  \ members of the public a register of land that it owns or leases \u201Cto the best\
+  \ of its knowledge and belief\u201D.\_ The purpose of the register is to help Community\
+  \ Transfer Bodies identify assets that may be available through asset transfer under\
+  \ Part 5 of the Act.\_ The inclusion of an asset on the register is a requirement\
+  \ of the Act and does not necessarily imply that the Council is actively seeking\
+  \ to transfer that asset to the community.</p>"
 organization: Moray Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=3af52ce7fed049c79ba57f80c66fc1bc
-records: 812
+original_dataset_link: https://www.arcgis.com/home/item.html?id=400332609a0641e389c990dccfb42430
+records: 1135
 resources: []
 schema: default
-title: Planning Wind Turbine Locations (Moray)
+title: Council Register of Assets (Moray)
 ---

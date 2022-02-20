@@ -4,13 +4,13 @@ category:
 - inspire
 date_created: '2020-07-23'
 date_updated: '2020-11-30'
-license: ''
+license: No licence
 maintainer: Moray Council
-notes: <p>Local Development Plan 2020 Rural Group Boundary (Moray)</p>
+notes: <p>Local Development Plan 2020 Countryside Around Towns (CAT) (Moray)</p>
 organization: Moray Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=e060c11e0790471f826ef40c08029094
-records: 89
+original_dataset_link: https://www.arcgis.com/home/item.html?id=9739369e0233450bb36720efecd09295
+records: 5
 resources: []
 schema: default
-title: Local Development Plan 2020 Rural Group Boundary (Moray)
+title: Local Development Plan 2020 Countryside Around Towns (CAT) (Moray)
 ---

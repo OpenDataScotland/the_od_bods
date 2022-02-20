@@ -5,9 +5,9 @@ category:
 - boundaries
 date_created: '2017-10-27'
 date_updated: '2020-11-30'
-license: ''
+license: No licence
 maintainer: Moray Council
-notes: "<p>Secondary School Catchments 24/04/1996 - 23/10/2016 (Moray) (non denominational)In\
+notes: "<p>Secondary School Catchments 24/10/2016 - 13/08/2017 (Moray) (non denominational)In\
   \  Moray, the education authority discharges its duty to secure adequate  and efficient\
   \ education for the local authority area by operating a  \u201Ccatchment area\u201D\
   \ system to enable parents/carers to comply with their  duty to provide efficient\
@@ -19,9 +19,9 @@ notes: "<p>Secondary School Catchments 24/04/1996 - 23/10/2016 (Moray) (non deno
   \ school which is not the  designated catchment area school for their postal address,\
   \ they must  make an out-of-zone \u2018placing request\u2019.\_ </p>"
 organization: Moray Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=40b74eeb21874aa482f2b7dec312ce4a
+original_dataset_link: https://www.arcgis.com/home/item.html?id=f527fa3a9475430cb08a496817fcecd7
 records: 8
 resources: []
 schema: default
-title: Secondary School Catchments 1996 - 2016 (Moray) (non denominational)
+title: Secondary School Catchments 2016 - 2017 (Moray) (non denominational)
 ---

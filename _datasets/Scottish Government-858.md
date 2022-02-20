@@ -1,15 +1,16 @@
 ---
 category:
-- Economic Activity, Benefits and Tax Credits
-date_created: '2018-06-04'
-date_updated: '2021-06-21'
+- economy
+date_created: '2017-08-23'
+date_updated: '2021-09-15'
 license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 maintainer: Scottish Government
-notes: <p>Amount spent by Local Authorities on awards for Discretionary Housing Payments</p>
+notes: <p>The value of goods and services produced annually, reported as an index
+  (chainlinked volume measure)</p>
 organization: Scottish Government
-original_dataset_link: http://statistics.gov.scot/data/discretionary-housing-payments-expenditure
+original_dataset_link: http://statistics.gov.scot/data/gross-domestic-product-annual-output-by-industry
 records: null
 resources: []
 schema: default
-title: Discretionary Housing Payments Expenditure
+title: 'Gross Domestic Product: Annual Output by Industry'
 ---

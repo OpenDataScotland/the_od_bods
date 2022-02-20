@@ -2,24 +2,26 @@
 category:
 - ldp
 - local development plan
+- nature conservation
+- environment
 - planning
 date_created: '2017-07-07'
 date_updated: '2017-07-18'
-license: ''
+license: No licence
 maintainer: Argyll and Bute Council
-notes: "<p>Areas for Action designated in the Argyll and Bute adopted Local Development\
-  \ Plan 2015.\_ Subject to resource availability during the plan-period, these areas\
-  \ will be the focus for partnership or community action. Area remits for these AFAs\
-  \ are being worked up in the Supplementary Information and Guidance report; these\
-  \ area remits may include investment and funding packages, land assembly and asset\
-  \ management programmes, development and redevelopment proposals, infrastructure\
-  \ provision and environmental enhancement proposals. Depending on circumstances,\
-  \ AFAs may coincide with other categories of sites such as potential development\
-  \ areas.</p>"
+notes: '<p>These are shown on the proposals maps, and are locally important sites
+  for wildlife or nature interests. They have been judged to be important because:
+  the site supports a natural or semi-natural plant community(ies), and/orthe site
+  supports a high diversity of floral species and contains uncommon/rare fauna, and/orthe
+  site is of value for environmental education for local communities and local schools
+  and/oris a landscape, landform or rock feature identified as having a particular
+  value for education and tourism. Local Nature Conservation Sites include: Local
+  Nature ReservesRegionally Important Geological/ Geomorphological SitesThe former
+  sites of important for nature conservation (SINC)Other local wildlife sites</p>'
 organization: Argyll and Bute Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=07e827d3a3ea414a997a1eef6ab29f24
-records: 46
+original_dataset_link: https://www.arcgis.com/home/item.html?id=d05f7337b41e48b4af933404dc0592a2
+records: 158
 resources: []
 schema: default
-title: Open Data - Area for Action
+title: Open Data - Local Nature Conservation Site
 ---

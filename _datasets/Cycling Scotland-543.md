@@ -1,28 +1,26 @@
 ---
 category:
 - transport / mobility
+- active travel
+- cycling
 - cycling scotland
-- data
-- national monitoring framework
-date_created: '2020-06-23T14:45:34.278Z'
-date_updated: '2021-08-17'
-license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+- cycling friendly
+date_created: '2019-10-21T11:53:05.320Z'
+date_updated: '2019-11-08'
+license: https://creativecommons.org/licenses/by/4.0/
 maintainer: Cycling Scotland
-notes: <p>All-mode traffic data from 48-hour surveys across Scotland in May 2020</p>
+notes: <p>This dataset shows communities across Scotland that have received funding
+  through Cycling Scotland's Cycling Friendly program</p>
 organization: Cycling Scotland
-original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/efd6da79-b22b-404b-86f4-dfd2987ba92e
+original_dataset_link: https://usmart.io/org/cyclingscotland/discovery/discovery-view-detail/f623d8cf-cdaf-426a-90f2-63387b8d680b
 records: null
 resources:
-- format: JSON
-  name: JSON
-  url: https://api.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/c8363aa0-5cff-40ba-b60a-893455bc1e0b/3/urql
 - format: CSV
   name: CSV
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=a238bc4b-b71b-4c9b-b3e9-f3d96455309d
-- format: XML
-  name: XML
-  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=b00b0df0-fbdf-47aa-833d-1eea8e7bef50
+  url: https://data.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/resource?resourceGUID=9e4f2a31-315e-4b91-a501-26753fa87137
+- format: JSON
+  name: JSON
+  url: https://api.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/9b8b85e0-8d97-4b9f-8ecb-36419272ecc5/1/urql
 schema: default
-title: National Monitoring Framework - all-mode traffic survey results May 2020 -
-  Cycling Scotland
+title: Cycling Friendly - Communities Funded - Cycling Scotland
 ---

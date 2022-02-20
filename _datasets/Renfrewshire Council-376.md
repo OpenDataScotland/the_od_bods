@@ -2,16 +2,16 @@
 category:
 - renfrewshire
 - open data
-- community
+- population and society
 date_created: '2019-04-17'
-date_updated: '2019-04-17'
-license: ''
+date_updated: '2019-04-18'
+license: No licence
 maintainer: Renfrewshire Council
-notes: <p>Dataset listing Big Lottery funded projects in Renfrewshire in 2018.</p>
+notes: "<p>Estimated population by single year of age and electoral ward,\_ mid-2017</p>"
 organization: Renfrewshire Council
-original_dataset_link: https://www.arcgis.com/home/item.html?id=3ab34647842e4971889def454f31f2e8
-records: 36
+original_dataset_link: https://www.arcgis.com/home/item.html?id=8e6a60c35291492cabf1c480fcd2d123
+records: 12
 resources: []
 schema: default
-title: Big Lottery Funded Projects 2018
+title: Population by Age and Ward 2017
 ---
