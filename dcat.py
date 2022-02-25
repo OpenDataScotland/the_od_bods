@@ -39,8 +39,8 @@ def get_datasets(start_url, fname):
               e.get('dct:publisher', "").replace(" Mapping", ""),
               "", #link to page
               "", #Link to data
+              "", #date created
               e.get('dct:issued', ""),
-              "", #updated
               "", # size
               "", #size unit
               "", #filetype

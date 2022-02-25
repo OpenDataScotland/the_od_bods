@@ -53,7 +53,8 @@ def merge_data():
     for dirname, _, filenames in os.walk(folder):
         for filename in filenames:
             if filename.rsplit('.',1)[1] == 'csv':
-                source_usmart = source_usmart.append(pd.read_csv(folder + r'/' + filename, parse_dates=['DateUpdated']))
+                source_dcat = source_dcat.append(pd.read_csv(folder + r'/' + filename, parse_dates=['DateUpdated']))
+                #source_dcat['DateUpdated'] = source_dcat['DateUpdated'].dt.tz_convert(None)
     source_dcat['Source'] = 'DCAT feed'
 
 
@@ -96,7 +97,7 @@ def clean_data(dataframe):
                     }
     data['Owner'] = data['Owner'].replace(owner_renames)
     ### Format dates as datetime type
-    data['DateUpdated'] = pd.to_datetime(data['DateUpdated'], format='%Y-%m-%d', errors='coerce').dt.date
+    data['DateUpdated'] = pd.to_datetime(data['DateUpdated'], format='%Y-%m-%d', errors='coerce', utc=True).dt.date
     ### Inconsistencies in casing for FileType
     data['FileType'] = data['FileType'].str.upper()
     ### Creating a dummy column
