@@ -6,6 +6,9 @@ on:
 jobs:
   CKAN:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./CKANOpenDataImport
 
     steps:
     - uses: actions/checkout@v3
@@ -14,8 +17,7 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Change directory
-      run: cd CKANOpenDataImport
-           |ls
+      run: ls
     - name: Restore dependencies
       run: dotnet restore ./CKANOpenDataImport.csproj
     - name: Build
