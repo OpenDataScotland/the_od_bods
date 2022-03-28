@@ -24,8 +24,8 @@ jobs:
       run: dotnet run
     - name: Copy output to folder
       run: cp ckan_output.csv ../data/ckan_output.csv
-    - name: Test
-      run: ls -R
-    - name: Test2
+    - name: Git status
       run: git status
+    - name: Commit and push
+      run: git add -A && git commit -m "Updated CKAN output" && git push
     
