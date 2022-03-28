@@ -16,14 +16,16 @@ jobs:
       uses: actions/setup-dotnet@v2
       with:
         dotnet-version: 6.0.x
-    - name: Change directory
-      run: ls
     - name: Restore dependencies
       run: dotnet restore ./CKANOpenDataImport.csproj
     - name: Build
       run: dotnet build ./CKANOpenDataImport.csproj --no-restore
     - name: Run
       run: dotnet run
-    - name: Test directory
+    - name: Copy output to folder
+      run: cp ckan_output.csv ../data/ckan_output.csv
+    - name: Test
       run: ls -R
+    - name: Test2
+      run: git status
     
