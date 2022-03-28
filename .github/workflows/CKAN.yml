@@ -1,0 +1,26 @@
+name: CKAN data scraper
+
+on:
+  workflow_dispatch
+
+jobs:
+  CKAN:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: 6.0.x
+    - name: Change directory
+      run: cd CKANOpenDataImport
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --no-restore
+    - name: Run
+      run: dotnet run
+    - name: Test directory
+      run: ls -R
+    
