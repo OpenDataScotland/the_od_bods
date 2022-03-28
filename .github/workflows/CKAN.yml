@@ -16,9 +16,9 @@ jobs:
     - name: Change directory
       run: cd CKANOpenDataImport
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore ./CKANOpenDataImport.csproj
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build ./CKANOpenDataImport.csproj --no-restore
     - name: Run
       run: dotnet run
     - name: Test directory
