@@ -15,6 +15,7 @@ jobs:
         dotnet-version: 6.0.x
     - name: Change directory
       run: cd CKANOpenDataImport
+           |ls
     - name: Restore dependencies
       run: dotnet restore ./CKANOpenDataImport.csproj
     - name: Build
