@@ -31,5 +31,5 @@ jobs:
     - name: Git status
       run: git status
     - name: Commit and push
-      run: git add -A && git commit -m "Updated CKAN output" && git push origin master
+      run: git add -A && git commit -m "Updated CKAN output" && git push origin main
     
