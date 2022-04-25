@@ -20,8 +20,7 @@ class Dataset:
     page_url: str
     date_created: str
     date_updated: str
-    original_tags: List[str]
-    manual_tags: List[str]
+    ods_categories: List[str]
     license: str
     description: str
     num_records: int
@@ -29,9 +28,25 @@ class Dataset:
 
 fulld = pd.read_csv("data/merged_output.csv", dtype=str, na_filter=False)
 def ind(name):
-    f = ['Title', 'Owner', 'PageURL', 'AssetURL', 'DateCreated',
-       'DateUpdated', 'FileSize', 'FileSizeUnit', 'FileType', 'NumRecords',
-       'OriginalTags', 'ManualTags', 'License', 'Description', 'Source']
+    f = ['Title',
+        'Owner',
+        'PageURL',
+        'AssetURL',
+        'DateCreated',
+        'DateUpdated',
+        'FileSize',
+        'FileSizeUnit',
+        'FileType',
+        'NumRecords',
+        'OriginalTags',
+        'ManualTags',
+        'License',
+        'Description',
+        'Source',
+        'AssetStatus',
+        'CombinedTags',
+        'ODSCategories'
+        ]
     return f.index(name)
 
 def splittags(tags):
@@ -62,8 +77,7 @@ for r in fulld.values:
             page_url = r[ind('PageURL')],
             date_created = r[ind('DateCreated')],
             date_updated = r[ind('DateUpdated')].removesuffix(' 00:00:00.000'),
-            original_tags = splittags(r[ind('OriginalTags')]),
-            manual_tags = splittags(r[ind('ManualTags')]),
+            ods_categories = splittags(r[ind('ODSCategories')]),
             license = r[ind('License')],
             description = str(r[ind('Description')]),
             num_records = makeint(r[ind('NumRecords')]),
@@ -111,7 +125,7 @@ for n, (k, ds) in enumerate(data.items()):
                        'url': d.url,
                        'format': d.file_type} for d in ds.files if d.url]
     y['license'] = license_link(ds.license)
-    y['category'] = ds.original_tags + ds.manual_tags
+    y['category'] = ds.ods_categories
     y['maintainer'] = ds.owner
     y['date_created'] = ds.date_created
     y['date_updated'] = ds.date_updated
@@ -119,7 +133,7 @@ for n, (k, ds) in enumerate(data.items()):
     fn = f'{ds.owner}-{n}'
     fn = re.sub(r'[^\w\s-]', '', fn).strip()[:100]
     # ^^ need something better for filnames...
-    with open(f"_datasets/{fn}.md", "w") as f:
+    with open(f"../jkan/_datasets/{fn}.md", "w") as f:
         f.write("---\n")
         f.write(yaml.dump(y))
         f.write("---\n")
