@@ -5,6 +5,8 @@ from math import isnan
 import markdown
 import re
 import yaml
+import shutil
+import os
 
 @dataclass
 class DataFile:
@@ -114,6 +116,10 @@ def license_link(l):
     return l
 
 md = markdown.Markdown()
+
+### Replace folder by deleting and writing
+shutil.rmtree('../jkan/_datasets/')
+os.makedirs('../jkan/_datasets/')
 
 for n, (k, ds) in enumerate(data.items()):
     y = {'schema': 'default'}
