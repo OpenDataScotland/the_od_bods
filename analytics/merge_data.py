@@ -119,9 +119,71 @@ def clean_data(dataframe):
                 tidied_string = tidied_string[:-1]
         return tidied_string
 
+    ### Combining dataset categories
+    def combine_categories(dataset_row):
+        """Combine OriginalTags and ManualTags to get all tags
+
+        Args:
+            dataset_row (dataframe): one row of the dataset set
+        """
+        combined_tags = []
+        if str(dataset_row['OriginalTags'])!='nan':
+            combined_tags = combined_tags + str(dataset_row['OriginalTags']).split(';') 
+        if str(dataset_row['ManualTags'])!='nan':
+            combined_tags = combined_tags + str(dataset_row['ManualTags']).split(';')
+
+        combined_tags = ";".join(str(cat) for cat in set(combined_tags))
+        return combined_tags
+
     data['OriginalTags'] = data['OriginalTags'].apply(tidy_categories)
     data['ManualTags'] = data['ManualTags'].apply(tidy_categories)
-    
+    data['CombinedTags'] = data.apply(lambda x: combine_categories(x),axis=1)
+
+    ### Creating new dataset categories for ODS
+    def assign_ODScategories(categories_string):
+        """Assigns one of ODS' 13 categories, or 'Uncategorised' if none.
+
+        Args:
+            categories_string (string): the dataset categories as a string
+        """
+        combined_tags = categories_string.split(';')
+
+        ### Set association between dataset tag and ODS category
+        ods_categories={
+        'Arts / Culture / History':['arts','culture','history','military','art gallery','design','fashion','museum'],
+        'Budget / Finance':['budget','finance'],
+        'Economy':['economy','economic','economic activity','economic development'],
+        'Education':['education','eductional','library'],
+        'Elections / Politics':['elections','politics','elecorate','election','electoral','electorate','local authority'],
+        'Environment':['environment','forest woodland strategy'],
+        'Food':['food'],
+        'Health / Human Services':['health','human services', 'covid-19','covid','hospital'],
+        'Parks / Recreation':['parks','recreation'],
+        'Planning / Zoning':['planning','zoning'],
+        'Public Safety':['public safety'],
+        'Real Estate / Land Records':['real estate','land records'],
+        'Transportation':['transportation','mobility','pedestrian','walking','walk','cycle','cycling','parking','car','bus','tram','train','transport','electric vehicle','electric vehicle charging points']
+        }
+
+        ### Return ODS if tag is a match
+        applied_category = []
+        for tag in combined_tags:
+            for cat in ods_categories:
+                if tag in ods_categories[cat]:
+                    applied_category = applied_category + [cat]
+
+        ### If no match, assign "Uncategorised". Tidy list of ODS categories into string.
+        if len(applied_category) == 0:
+            applied_category = ['Uncategorised']
+
+        applied_category = ";".join(str(cat) for cat in set(applied_category))
+        applied_category
+
+        return applied_category
+
+    ### Apply ODS categorisation
+    data['ODSCategories'] = data['CombinedTags'].apply(assign_ODScategories)
+
 
     ### Tidy licence names
     def tidy_licence(licence_name):
