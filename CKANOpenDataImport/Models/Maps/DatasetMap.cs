@@ -14,6 +14,7 @@ namespace CKANOpenDataImport.Models.Maps
             Map(x => x.AssetURL).Name("AssetURL");
             Map(x => x.DateCreated).Name("DateCreated");
             Map(x => x.DateUpdated).Name("DateUpdated");
+            Map(x => x.FileName).Name("FileName");
             Map(x => x.FileSize).Name("FileSize");
             Map(x => x.FileType).Name("FileType");
             Map(x => x.NumRecords).Name("NumRecords");

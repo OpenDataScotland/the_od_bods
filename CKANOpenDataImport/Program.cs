@@ -127,6 +127,7 @@ namespace CKANOpenDataImport
                             AssetURL = resource.URL,
                             DateCreated = packageMetadata.DateCreated.HasValue ? packageMetadata.DateCreated.Value.ToString("yyyy-MM-dd") : "",
                             DateUpdated = packageMetadata.DateModified.HasValue ? packageMetadata.DateModified.Value.ToString("yyyy-MM-dd") : "",
+                            FileName = resource.Name,
                             FileSize = resource.Archiver != null ? resource.Archiver.Size.ToString() : "",
                             FileSizeUnit = resource.Archiver != null ? "B": "",
                             FileType = resource.Format,

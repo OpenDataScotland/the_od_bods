@@ -1,0 +1,35 @@
+name: CKAN data scraper
+
+on:
+  workflow_dispatch
+
+jobs:
+  CKAN:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./CKANOpenDataImport
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: 6.0.x
+    - name: Restore dependencies
+      run: dotnet restore ./CKANOpenDataImport.csproj
+    - name: Build
+      run: dotnet build ./CKANOpenDataImport.csproj --no-restore
+    - name: Run
+      run: dotnet run
+    - name: Copy output to folder
+      run: cp ckan_output.csv ../data/ckan_output.csv
+    - name: Git config
+      run: |
+        git config user.name "GitHub Actions"
+        git config user.email "<>"
+    - name: Git status
+      run: git status
+    - name: Commit and push
+      run: git add -A && git commit -m "Updated CKAN output" && git push origin main
+    
