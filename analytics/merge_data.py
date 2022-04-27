@@ -150,19 +150,19 @@ def clean_data(dataframe):
 
         ### Set association between dataset tag and ODS category
         ods_categories={
-        'Arts / Culture / History':['arts','culture','history','military','art gallery','design','fashion','museum'],
-        'Budget / Finance':['budget','finance'],
-        'Economy':['economy','economic','economic activity','economic development'],
-        'Education':['education','eductional','library'],
-        'Elections / Politics':['elections','politics','elecorate','election','electoral','electorate','local authority'],
-        'Environment':['environment','forest woodland strategy'],
-        'Food':['food'],
-        'Health / Human Services':['health','human services', 'covid-19','covid','hospital'],
-        'Parks / Recreation':['parks','recreation'],
-        'Planning / Zoning':['planning','zoning'],
-        'Public Safety':['public safety'],
-        'Real Estate / Land Records':['real estate','land records'],
-        'Transportation':['transportation','mobility','pedestrian','walking','walk','cycle','cycling','parking','car','bus','tram','train','transport','electric vehicle','electric vehicle charging points']
+        'Arts / Culture / History':['arts','culture','history','military','art gallery','design','fashion','museum','historic centre','conservation'],
+        'Budget / Finance':['budget','finance','payment','grants','financial year'],
+        'Economy':['economy','economic','economic activity','economic development','deprivation','scottish index of multiple deprivation','simd','business','estimated population','population','labour force'],
+        'Education':['education','eductional','library','school meals','schools','school'],
+        'Elections / Politics':['elections','politics','elecorate','election','electoral','electorate','local authority','council area','democracy','polling','lgcs democracy','democracy and governance','local government'],
+        'Environment':['environment','forest woodland strategy','waste','recycling','lgcs waste management','water-network'],
+        'Food':['food','school meals','allotment'],
+        'Health / Human Services':['health','human services', 'covid-19','covid','hospital','health board', 'health and social care partnership','medicine','health and social care','health and fitness','nhs24','hospital admissions','hospital mortality'],
+        'Parks / Recreation':['parks','recreation','woodland','parks and open spaces'],
+        'Planning / Zoning':['planning','zoning','council area','address','addresses','city development plan','boundaries','post-code','dwellings','planning permission','postcode-units','housing','property'],
+        'Public Safety':['public safety','crime and justice','lgcs community safety','street lighting','community safety','cctv','road safety'],
+        'Real Estate / Land Records':['real estate','land records','land-cover','woodland','dwellings','burial grounds','cemeteries','property','vacant and derelict land','scottish vacant and derelict land','allotment'],
+        'Transportation':['transportation','mobility','pedestrian','walking','walk','cycle','cycling','parking','car','bus','tram','train','transport','electric vehicle','electric vehicle charging points','transport / mobility','active travel','road safety','roads']
         }
 
         ### Return ODS if tag is a match
