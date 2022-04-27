@@ -36,6 +36,7 @@ def ind(name):
         'AssetURL',
         'DateCreated',
         'DateUpdated',
+        'FileName',
         'FileSize',
         'FileSizeUnit',
         'FileType',
