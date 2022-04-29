@@ -51,7 +51,7 @@ def get_datasets(start_url, fname):
               ";".join(e.get('dcat:keyword', [])),
               "", #Manual tags
               "", #license
-              e.get('dct:description', "")
+              e.get('dct:description', "").strip(u'\u200b')
         ]
         pages = e.get('dcat:distribution')
         for p in pages:
