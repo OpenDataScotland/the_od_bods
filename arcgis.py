@@ -20,10 +20,7 @@ start_urls = {
     'renfrew': 'https://opendata.arcgis.com/api/v3/search?catalog[groupIds]=any(79dc9ae7552e4782bf66dadbdf049a0d,bcaad01ef27a4457b9c9406818eaca5d)',
     'argyll_and_bute': 'https://opendata.arcgis.com/api/v3/search?catalog[groupIds]=any(2391aa86db9148d1857671888aefdc5f)',
     'south_ayrshire': 'https://opendata.arcgis.com/api/v3/search?catalog[groupIds]=any(436655c931664e279f675390213d828e)',
-    'moray': 'https://opendata.arcgis.com/api/v3/search?catalog[groupIds]=any(b42b8e7bce20408684689845a268e8e6)',
-    'highland': 'https://map-highland.opendata.arcgis.com/api/v3/search',
-    'north_ayrshire': 'https://maps-north-ayrshire.opendata.arcgis.com/api/v3/search',
-    'north_lanarkshire': 'https://gisdata.northlanarkshire.gov.uk/api/v3/search'
+    'moray': 'https://opendata.arcgis.com/api/v3/search?catalog[groupIds]=any(b42b8e7bce20408684689845a268e8e6)'
     }
 
 def get_datasets(start_url, fname):

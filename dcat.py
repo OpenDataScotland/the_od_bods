@@ -19,7 +19,10 @@ def get_license(dataset):
 
 urls = {
     'glasgow': 'https://open-data-design-glasgowgis.hub.arcgis.com/api/feed/dcat-ap/2.0.1.json',
-    'edinburgh': 'https://city-of-edinburgh-council-open-spatial-data-cityofedinburgh.hub.arcgis.com/api/feed/dcat-ap/2.0.1.json'
+    'edinburgh': 'https://city-of-edinburgh-council-open-spatial-data-cityofedinburgh.hub.arcgis.com/api/feed/dcat-ap/2.0.1.json',
+    'highland': 'https://map-highland.opendata.arcgis.com/api/feed/dcat-ap/2.0.1.json',
+    'north_ayrshire': 'https://maps-north-ayrshire.opendata.arcgis.com/api/feed/dcat-ap/2.0.1.json',
+    'north_lanarkshire': 'https://gisdata-nlcmaps.opendata.arcgis.com/api/feed/dcat-ap/2.0.1.json',
     }
 
 def get_datasets(start_url, fname):
