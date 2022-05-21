@@ -10,6 +10,7 @@ def get_feeds(soup):
 
     feeds = []
 
+    # get title and files associated to the feed
     for row in rows:
         tds = row.find_all('td')
         feed = {}
@@ -31,20 +32,4 @@ if __name__ == "__main__":
     page = urlopen(req).read()
     soup = BeautifulSoup(page, 'html.parser')
     feeds = get_feeds(soup)
-
-    ### process file titles
-    titles = []
-
-    owners  = []
-    page_urls = []
-    asset_urls = []
-    date_createds = []
-    date_updateds = []
-    file_sizes = []
-    file_size_units = []
-    file_types = []
-    num_records = []
-    original_tags = []
-    manual_tags = []
-    licenses = []
-    descriptions = []
+    print(feeds)
