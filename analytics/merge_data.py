@@ -162,7 +162,7 @@ def clean_data(dataframe):
         'Planning / Zoning':['planning','zoning','council area','address','addresses','city development plan','boundaries','post-code','dwellings','planning permission','postcode-units','housing','property', 'building control', 'conservation'],
         'Public Safety':['public safety','crime and justice','lgcs community safety','street lighting','community safety','cctv','road safety'],
         'Real Estate / Land Records':['real estate','land records','land-cover','woodland','dwellings','burial grounds','cemeteries','property','vacant and derelict land','scottish vacant and derelict land','allotment'],
-        'Tourism':['tourism','tourist','attractions','accomodation', 'historic buildings','tourist routes', 'cafes','restaurants', 'hotels','hotel']
+        'Tourism':['tourism','tourist','attractions','accomodation', 'historic buildings','tourist routes', 'cafes','restaurants', 'hotels','hotel'],
         'Transportation':['transportation','mobility','pedestrian','walking','walk','cycle','cycling','parking','car','bus','tram','train','taxi','transport','electric vehicle','electric vehicle charging points','transport / mobility','active travel','road safety','roads', 'community transport', 'road works', 'road closures','speed limits', 'port', 'harbour']
         }
 
