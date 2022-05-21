@@ -13,9 +13,7 @@ def get_headers():
         }
     return headers    
 
-
-
-if __name__ == "__main__":
+def get_all_files():
     url = "https://www.east-ayrshire.gov.uk/CouncilAndGovernment/About-the-Council/Information-and-statistics/Open-Data.aspx"
     req = requests.get(url, get_headers())
     soup = BeautifulSoup(req.content, 'html.parser')
@@ -24,19 +22,31 @@ if __name__ == "__main__":
     for poss in list_of_a_tags:
         if (poss['href'].endswith('csv')):
             list_of_files.append(poss)
-    
-    
 
+    return list_of_files        
+
+
+def csv_file_metadata():
     res = requests.get(url , get_headers())
     t = res.iter_lines("https://www.east-ayrshire.gov.uk/Resources/CSV/Open-Data-001-Primary-School-Contacts.csv")
     data = csv.reader(t, delimiter=',')
-    
-    
+    print(len(list(data)))
+
+def csv_output():
+    pass
+
+if __name__ == "__main__":  
     titles = []
     owners = []
     urls = []
-    for fi in list_of_files:
+    date_created = []
+    date_updated = []  
+    for fi in get_all_files():
         titles.append(list_of_files[0].string)
         owners.append("East Ayrshire Council")
         urls.append(url)
+        date_created.append("NULL")
+        date_updated.append("NULL")
+
+        
 
