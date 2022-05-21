@@ -27,8 +27,6 @@ try:
     issue_label = repo.get_label('broken link')
 
     open_issues = repo.get_issues(state='open', labels=[issue_label])
-    for issue in open_issues:
-        print(issue.title)
     
     # Get the project's 'To do' column
     projects = repo.get_projects()
