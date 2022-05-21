@@ -68,6 +68,3 @@ if __name__ == "__main__":
         data.append(output)
 
     csv_output(header, data)
-    
-        
-
