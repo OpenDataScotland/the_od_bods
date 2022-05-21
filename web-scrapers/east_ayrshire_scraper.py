@@ -64,7 +64,7 @@ if __name__ == "__main__":
     list_of_files = get_all_files()
     for fi in list_of_files:
         metadata = csv_file_metadata(fi['href'])
-        output = [fi.string, "East Ayrshire Council", URL_COUNCIL+URL_PAGE, URL_COUNCIL+fi['href'], "NULL", "NULL", metadata[1], "B", "CSV", "B", metadata[0], "NULL", "Education", "Open Government", "NULL"]     
+        output = [fi.string, "East Ayrshire Council", URL_COUNCIL+URL_PAGE, URL_COUNCIL+fi['href'], "NULL", "NULL", metadata[1], "B", "CSV", "B", metadata[0], "NULL", "Education", "Open Government Licence 3.0 (United Kingdom)", "NULL"]     
         data.append(output)
 
     csv_output(header, data)
