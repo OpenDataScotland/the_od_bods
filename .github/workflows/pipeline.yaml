@@ -31,6 +31,7 @@ jobs:
     - name: Build
       run: dotnet build ./CKANOpenDataImport/CKANOpenDataImport.csproj --no-restore
     - name: Run
+      working-directory: ${{ env.working-directory  }}
       run: dotnet run
     - name: Copy output to folder
       run: cp ./CKANOpenDataImport/ckan_output.csv ./data/ckan_output.csv
