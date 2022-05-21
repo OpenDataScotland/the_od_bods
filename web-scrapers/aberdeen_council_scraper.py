@@ -13,7 +13,25 @@ def find_files(soup):
 
 
 if __name__ == "__main__":
+    ### fetch file URLs
     req = Request('https://www.aberdeenshire.gov.uk/data/open-data/', headers={'User-Agent': 'Mozilla/5.0'})
     page = urlopen(req).read()
     soup = BeautifulSoup(page, 'html.parser')
-    print(find_files(soup))
+    file_links = find_files(soup)
+
+    ### process file titles
+    titles = []
+
+    owners  = []
+    page_urls = []
+    asset_urls = []
+    date_createds = []
+    date_updateds = []
+    file_sizes = []
+    file_size_units = []
+    file_types = []
+    num_records = []
+    original_tags = []
+    manual_tags = []
+    licenses = []
+    descriptions = []
