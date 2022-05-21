@@ -38,9 +38,9 @@ jobs:
     - name: Run Script dcat.py
       run: python dcat.py
     - name: Install dependencies for merge_data.py
-      run: python -m pip install pandas
+      run: python -m pip install pandas markdown pyyaml
     - name: Run Script merge_data.py
-      run: python ./analytics/merge_data.py
+      run: python ./merge_data.py
     - name: Run Script export2jkan.py
       run: python ./export2jkan.py
     - name: Git config
