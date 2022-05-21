@@ -3,6 +3,9 @@ import requests
 import csv
 from bs4 import BeautifulSoup
 
+URL_COUNCIL = "https://www.east-ayrshire.gov.uk/"
+URL_PAGE = "CouncilAndGovernment/About-the-Council/Information-and-statistics/Open-Data.aspx"
+
 def get_headers():
     headers = {
         'Access-Control-Allow-Origin': '*',
@@ -14,7 +17,7 @@ def get_headers():
     return headers    
 
 def get_all_files():
-    url = "https://www.east-ayrshire.gov.uk/CouncilAndGovernment/About-the-Council/Information-and-statistics/Open-Data.aspx"
+    url = URL_COUNCIL+URL_PAGE 
     req = requests.get(url, get_headers())
     soup = BeautifulSoup(req.content, 'html.parser')
     list_of_a_tags = soup.find_all("a", href=True)
@@ -26,27 +29,61 @@ def get_all_files():
     return list_of_files        
 
 
-def csv_file_metadata():
-    res = requests.get(url , get_headers())
-    t = res.iter_lines("https://www.east-ayrshire.gov.uk/Resources/CSV/Open-Data-001-Primary-School-Contacts.csv")
-    data = csv.reader(t, delimiter=',')
-    print(len(list(data)))
+def csv_file_metadata(file_loc):
+    text = requests.get(URL_COUNCIL+file_loc , get_headers()).text
+    lines = text.splitlines()
+    data = csv.reader(lines)
+    number_of_records = len(list(data))-1
+    print(number_of_records)
+    return number_of_records
+    
 
 def csv_output():
     pass
 
 if __name__ == "__main__":  
+    # Record Headings
     titles = []
     owners = []
     urls = []
+    asset_urls = []
     date_created = []
-    date_updated = []  
-    for fi in get_all_files():
-        titles.append(list_of_files[0].string)
+    date_updated = [] 
+    file_size = []
+    file_unit = []
+    file_type = []
+    num_records = []
+    original_tags = []
+    manual_tags = []
+    lisence = []
+    description = [] 
+    # Record Headings
+
+    list_of_files = get_all_files()
+    for fi in list_of_files:
+        titles.append(fi.string)
         owners.append("East Ayrshire Council")
-        urls.append(url)
+        urls.append(URL_COUNCIL+URL_PAGE)
+        asset_urls.append(URL_COUNCIL+fi['href'])
         date_created.append("NULL")
         date_updated.append("NULL")
+        file_type.append("CSV")
+        
+        # File metadata
+        num_records.append(csv_file_metadata(fi['href']))
 
+        lisence.append("Open Government")
+        description.append("")
+
+    print(titles)
+    print(owners)
+    print(urls)
+    print(asset_urls)
+    print(date_created)
+    print(date_updated)
+    print(file_type)
+    print(num_records)
+    print(lisence)
+    print(description)    
         
 
