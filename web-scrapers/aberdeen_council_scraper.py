@@ -1,5 +1,10 @@
 from urllib.request import Request, urlopen
 from bs4 import BeautifulSoup
+import datefinder
+
+def get_last_updated(string):
+    matches = datefinder.find_dates(string)
+    return [match for match in matches][0].strftime("%d/%m/%Y")
 
 def get_feeds(soup):
     """Get feeds and construct dictionaries with all the values that will be used for the output csv"""
@@ -17,14 +22,21 @@ def get_feeds(soup):
         # Add title
         title = tds[0].string
         feed['title'] = title
-        # Add files
-        file_links = [link.get('href') for link in tds[1].find_all('a', href=True)]
-        feed['links'] = []
-        for link in file_links:
+        # Add files with their links, last updated and filesize.
+        files = [a_tag for a_tag in tds[1].find_all('a', href=True)]
+        for anchor in files:
+            link = anchor.get('href')
             if link.endswith('.kmz') or link.endswith('.csv') or link.endswith('.zip'):
-                feed['links'].append(link)
+                filename = link.rsplit('/', 1)[-1]
+                # get last updated
+                last_updated = get_last_updated(anchor.text)
+
+                feed[filename] = {'link': link, 'filesize': urlopen(link).length, 'last-updated': last_updated}
         feeds.append(feed)
     return feeds
+
+def parse_feeds(feeds):
+    pass
 
 if __name__ == "__main__":
     ### construct array of feed objects
