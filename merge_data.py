@@ -7,15 +7,15 @@ def merge_data():
     ### Loading data
 
     ### From ckan output
-    source_ckan = pd.read_csv('../data/ckan_output.csv', parse_dates=['DateUpdated'])
+    source_ckan = pd.read_csv('data/ckan_output.csv', parse_dates=['DateUpdated'])
     source_ckan['Source'] = 'ckan API'
 
     ### From google sheets
-    source_gsheets = pd.read_csv('../data/from_Google_Sheets.csv', parse_dates=['DateUpdated'])
+    source_gsheets = pd.read_csv('data/from_Google_Sheets.csv', parse_dates=['DateUpdated'])
     source_gsheets['Source'] = 'manual extraction'
 
     ### From scotgov csv
-    source_scotgov = pd.read_csv('../data/scotgov-datasets.csv')
+    source_scotgov = pd.read_csv('data/scotgov-datasets.csv')
     source_scotgov = source_scotgov.rename(columns={
                                                     'title':'Title',
                                                     'category':'OriginalTags',
@@ -30,7 +30,7 @@ def merge_data():
 
     ### From arcgis api
     source_arcgis = pd.DataFrame()
-    folder = '../data/arcgis/'
+    folder = 'data/arcgis/'
     for dirname, _, filenames in os.walk(folder):
         for filename in filenames:
             if filename.rsplit('.',1)[1] == 'csv':
@@ -39,7 +39,7 @@ def merge_data():
 
     ### From usmart api
     source_usmart = pd.DataFrame()
-    folder = '../data/USMART/'
+    folder = 'data/USMART/'
     for dirname, _, filenames in os.walk(folder):
         for filename in filenames:
             if filename.rsplit('.',1)[1] == 'csv':
@@ -49,7 +49,7 @@ def merge_data():
 
     ## From DCAT
     source_dcat = pd.DataFrame()
-    folder = '../data/dcat/'
+    folder = 'data/dcat/'
     for dirname, _, filenames in os.walk(folder):
         for filename in filenames:
             if filename.rsplit('.',1)[1] == 'csv':
@@ -63,13 +63,13 @@ def merge_data():
     data = data.reset_index(drop=True)
 
     ### Saves copy of data without cleaning - for analysis purposes
-    data.to_csv('../data/merged_output_untidy.csv', index=False)
+    data.to_csv('data/merged_output_untidy.csv', index=False)
     
     ### clean data
     data = clean_data(data)
     
     ### Output cleaned data to csv
-    data.to_csv('../data/merged_output.csv', index=False)
+    data.to_csv('data/merged_output.csv', index=False)
 
     return data
 
