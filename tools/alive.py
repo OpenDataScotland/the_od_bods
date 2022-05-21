@@ -6,13 +6,29 @@ from urllib.error import URLError, HTTPError
 import csv
 import os
 
-github_access_token = os.environ.get('GITHUB_ACCESS_TOKEN')
 GITHUB_REPO = 'OpenDataScotland/the_od_bods'
-GITHUB_USER_ASSIGNEE = 'AndrewSage'
+
+github_access_token = os.environ.get('GITHUB_ACCESS_TOKEN')
+github_user_assignee = os.environ.get('GITHUB_USER_ASSIGNEE')
+
+if github_access_token == None:
+    print("GITHUB_ACCESS_TOKEN needs to be defined")
+    quit()
+
+if github_user_assignee == None:
+    print("GITHUB_USER_ASSIGNEE needs to be defined")
+    quit()
 
 try:
     git = Github(github_access_token)
     repo = git.get_repo(GITHUB_REPO)
+
+    # Get the repo's 'broken link' issue label
+    issue_label = repo.get_label('broken link')
+
+    open_issues = repo.get_issues(state='open', labels=[issue_label])
+    for issue in open_issues:
+        print(issue.title)
     
     # Get the project's 'To do' column
     projects = repo.get_projects()
@@ -32,23 +48,34 @@ try:
                 row['Source URL'])
             try:
                 response = urlopen(req)
-            except HTTPError as e:
-                print('{} server couldn\'t fulfill the request {} : {}'.format(
-                    row['Name'], row['Source URL'], e.code))
-            except URLError as e:
-                print('{} failed {} : {}'.format(
-                    row['Name'], row['Source URL'], e.reason))
+            except (HTTPError, URLError) as e:
                 issue_body = '**Broken URL:** [#{}]({})\n\n'.format(
                     row['Source URL'], row['Source URL'])
                 # Create an issue on GitHub
                 issue_title = 'Broken URL for {}'.format(row['Name'])
-                # Get the repo's 'broken link' issue tag
-                issue_label = repo.get_label('broken link')
-                new_issue = repo.create_issue(title=issue_title, assignee=GITHUB_USER_ASSIGNEE, body=issue_body, labels=[issue_label])
-                to_do_column.create_card(content_id=new_issue.id, content_type='Issue')
-                # print(new_issue)
+
+                # Has an issue already been raised?
+                exists = False
+                for issue in open_issues:
+                    if issue.title == issue_title:
+                        exists = True
+                        break
+
+                if exists == False:                
+                    new_issue = repo.create_issue(title=issue_title, assignee=github_user_assignee, body=issue_body, labels=[issue_label])
+                    to_do_column.create_card(content_id=new_issue.id, content_type='Issue')
+                    print(new_issue)
             else:
-                print('{} working fine'.format(row['Name']))
+                issue_body = '**Broken URL:** [#{}]({})\n\n'.format(
+                    row['Source URL'], row['Source URL'])
+                # Close an issue if open for previously broken URL
+                issue_title = 'Broken URL for {}'.format(row['Name'])
+
+                for issue in open_issues:
+                    if issue.title == issue_title:
+                        issue.create_comment("Automatically closed due to URL now working.")
+                        issue.edit(state='closed')
+                        break
 
 except GithubException as err:
     print('Github: Connect: error {}', format(err.data))

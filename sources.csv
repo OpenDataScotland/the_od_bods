@@ -1,4 +1,3 @@
 Name,Source URL,Processor
 glasgow,https://open-data-design-glasgowgis.hub.arcgis.com/api/feed/dcat-ap/2.0.1.json,dcat
-fake place,https://open-data.fake,dcat
 edinburgh,https://city-of-edinburgh-council-open-spatial-data-cityofedinburgh.hub.arcgis.com/api/feed/dcat-ap/2.0.1.json,dcat
