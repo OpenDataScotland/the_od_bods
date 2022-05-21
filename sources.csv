@@ -1,3 +1,12 @@
 Name,Source URL,Processor
+renfrew,https://opendata.arcgis.com/api/v3/search?catalog[groupIds]=any(79dc9ae7552e4782bf66dadbdf049a0d,bcaad01ef27a4457b9c9406818eaca5d),arcgis
+argyll_and_bute,'https://opendata.arcgis.com/api/v3/search?catalog[groupIds]=any(2391aa86db9148d1857671888aefdc5f),arcgis
+south_ayrshire,'https://opendata.arcgis.com/api/v3/search?catalog[groupIds]=any(436655c931664e279f675390213d828e),arcgis
+moray,'https://opendata.arcgis.com/api/v3/search?catalog[groupIds]=any(b42b8e7bce20408684689845a268e8e6),arcgis
 glasgow,https://open-data-design-glasgowgis.hub.arcgis.com/api/feed/dcat-ap/2.0.1.json,dcat
 edinburgh,https://city-of-edinburgh-council-open-spatial-data-cityofedinburgh.hub.arcgis.com/api/feed/dcat-ap/2.0.1.json,dcat
+highland,https://map-highland.opendata.arcgis.com/api/feed/dcat-ap/2.0.1.json,dcat
+north_ayrshire,https://maps-north-ayrshire.opendata.arcgis.com/api/feed/dcat-ap/2.0.1.json,dcat
+north_lanarkshire,https://gisdata-nlcmaps.opendata.arcgis.com/api/feed/dcat-ap/2.0.1.json,dcat
+Dumfries and Galloway Council,https://discovery.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/dcat/data.json,usmart
+Cycling Scotland,https://discovery.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/dcat/data.json,usmart
