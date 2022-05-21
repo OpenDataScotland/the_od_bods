@@ -20,18 +20,18 @@ jobs:
       run: python arcgis.py
     - name: Run Script py_USMART_import/Import_DCAT.ipynb
       run: python py_USMART_import/Import_DCAT.ipynb
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v2
-      with:
-        dotnet-version: 6.0.x
-    - name: Restore dependencies
-      run: dotnet restore ./CKANOpenDataImport/CKANOpenDataImport.csproj
-    - name: Build
-      run: dotnet build ./CKANOpenDataImport/CKANOpenDataImport.csproj --no-restore
-    - name: Run
-      run: dotnet run
-    - name: Copy output to folder
-      run: cp ./CKANOpenDataImport/ckan_output.csv ./data/ckan_output.csv
+#     - name: Setup .NET
+#       uses: actions/setup-dotnet@v2
+#       with:
+#         dotnet-version: 6.0.x
+#     - name: Restore dependencies
+#       run: dotnet restore ./CKANOpenDataImport/CKANOpenDataImport.csproj
+#     - name: Build
+#       run: dotnet build ./CKANOpenDataImport/CKANOpenDataImport.csproj --no-restore
+#     - name: Run
+#       run: dotnet run
+#     - name: Copy output to folder
+#       run: cp ./CKANOpenDataImport/ckan_output.csv ./data/ckan_output.csv
     - name: Run Script dcat.py
       run: python dcat.py
     - name: Run Script merge_data.py
