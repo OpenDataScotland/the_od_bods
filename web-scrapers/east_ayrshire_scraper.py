@@ -34,56 +34,40 @@ def csv_file_metadata(file_loc):
     lines = text.splitlines()
     data = csv.reader(lines)
     number_of_records = len(list(data))-1
-    print(number_of_records)
-    return number_of_records
+
+    total_bytes = -1
+    for line in lines:
+        bytes_on_this_line = len(line) + 1
+        total_bytes += bytes_on_this_line
+
+
+    return number_of_records, total_bytes
     
 
-def csv_output():
-    pass
+def csv_output(header, data): 
+
+    with open('the_od_bods/web-scrapers/output.csv', 'w', encoding='UTF8') as f:
+        writer = csv.writer(f)
+
+    # write the header
+        writer.writerow(header)
+
+    # write the data
+        for record in data:
+            writer.writerow(record)
 
 if __name__ == "__main__":  
     # Record Headings
-    titles = []
-    owners = []
-    urls = []
-    asset_urls = []
-    date_created = []
-    date_updated = [] 
-    file_size = []
-    file_unit = []
-    file_type = []
-    num_records = []
-    original_tags = []
-    manual_tags = []
-    lisence = []
-    description = [] 
-    # Record Headings
+    header = ["Title","Owner","PageURL","AssetURL","DateCreated","DateUpdated","FileSize","FileSizeUnit","FileType","NumRecords","OriginalTags","ManualTags","License","Description"]
+    data = []
 
     list_of_files = get_all_files()
     for fi in list_of_files:
-        titles.append(fi.string)
-        owners.append("East Ayrshire Council")
-        urls.append(URL_COUNCIL+URL_PAGE)
-        asset_urls.append(URL_COUNCIL+fi['href'])
-        date_created.append("NULL")
-        date_updated.append("NULL")
-        file_type.append("CSV")
-        
-        # File metadata
-        num_records.append(csv_file_metadata(fi['href']))
+        metadata = csv_file_metadata(fi['href'])
+        output = [fi.string, "East Ayrshire Council", URL_COUNCIL+URL_PAGE, URL_COUNCIL+fi['href'], "NULL", "NULL", metadata[1], "B", "CSV", "B", metadata[0], "NULL", "Education", "Open Government", "NULL"]     
+        data.append(output)
 
-        lisence.append("Open Government")
-        description.append("")
-
-    print(titles)
-    print(owners)
-    print(urls)
-    print(asset_urls)
-    print(date_created)
-    print(date_updated)
-    print(file_type)
-    print(num_records)
-    print(lisence)
-    print(description)    
+    csv_output(header, data)
+    
         
 
