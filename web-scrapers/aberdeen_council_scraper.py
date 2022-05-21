@@ -1,16 +1,6 @@
 from urllib.request import Request, urlopen
 from bs4 import BeautifulSoup
 
-def find_files(soup):
-    """Used to find all kmz, zip or csv files in the td"""
-    links = [link for link in soup.find_all('a', href=True)]
-    file_links = []
-    for l in links:
-        link = l.get("href")
-        if link.endswith('.kmz') or link.endswith('.csv') or link.endswith('.zip'):
-            file_links.append(link)
-    return file_links
-
 def get_feeds(soup):
     """Get feeds and construct dictionaries with all the values that will be used for the output csv"""
 
