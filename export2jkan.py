@@ -7,6 +7,7 @@ import re
 import yaml
 import shutil
 import os
+import urllib
 
 @dataclass
 class DataFile:
@@ -122,6 +123,7 @@ md = markdown.Markdown()
 shutil.rmtree('../jkan/_datasets/')
 os.makedirs('../jkan/_datasets/')
 
+
 for n, (k, ds) in enumerate(data.items()):
     y = {'schema': 'default'}
     y['title'] = ds.title
@@ -137,10 +139,13 @@ for n, (k, ds) in enumerate(data.items()):
     y['date_created'] = ds.date_created
     y['date_updated'] = ds.date_updated
     y['records'] = ds.num_records
-    fn = f'{ds.owner}-{n}'
-    fn = re.sub(r'[^\w\s-]', '', fn).strip()[:100]
+    #fn = f'{ds.owner}-{ds.title}'
+    #fn = re.sub(r'[^\w\s-]', '', fn).strip()[:100]
+    fn = urllib.parse.quote_plus(f'{(ds.owner).lower()}-{(ds.title).lower()}')
+    #fn = {ds.owner}-{ds.title})
     # ^^ need something better for filnames...
     with open(f"../jkan/_datasets/{fn}.md", "w") as f:
         f.write("---\n")
         f.write(yaml.dump(y))
         f.write("---\n")
+
