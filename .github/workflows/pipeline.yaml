@@ -40,7 +40,7 @@ jobs:
     - name: Install dependencies for merge_data.py
       run: python -m pip install pandas
     - name: Run Script merge_data.py
-      run: python ./analytics/merge_data.py
+      run: python ./merge_data.py
     - name: Run Script export2jkan.py
       run: python ./export2jkan.py
     - name: Git config
