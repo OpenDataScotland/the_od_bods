@@ -7,13 +7,21 @@ import math
 
 # https://stackoverflow.com/a/14822210/13940304
 def convert_size(size_bytes):
-   if size_bytes == 0:
-       return "0B"
-   size_name = ("B", "KB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB")
-   i = int(math.floor(math.log(size_bytes, 1024)))
-   p = math.pow(1024, i)
-   s = round(size_bytes / p, 2)
-   return ("%s" % (s), size_name[i])
+    """ Takes a size in bytes and convert units
+
+    Args:
+        size_bytes (int): raw size in bytes
+
+    Returns:
+        tuple: string with size and a unit string
+    """
+    if size_bytes == 0:
+        return "0B"
+    size_name = ("B", "KB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB")
+    i = int(math.floor(math.log(size_bytes, 1024)))
+    p = math.pow(1024, i)
+    s = round(size_bytes / p, 2)
+    return ("%s" % (s), size_name[i])
 
 def get_last_updated(string):
     matches = datefinder.find_dates(string)
@@ -21,7 +29,14 @@ def get_last_updated(string):
 
 
 def get_feeds(soup):
-    """Get feeds and construct dictionaries with all the values that will be used for the output csv"""
+    """Get feeds and construct dictionaries with all the values that will be used for the output csv
+
+    Args:
+        soup (BeautifulSoup): Beautifulsoup object
+
+    Returns:
+        list: list containing all feed dictionaries
+    """
 
     #Get table and rows
     table = soup.find('table')
