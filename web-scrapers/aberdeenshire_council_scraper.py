@@ -71,6 +71,9 @@ def parse_feeds(feeds):
             proc_feeds.append(formatted_feed)
     return proc_feeds
 
+def output(parsed):
+    pass
+
 
 if __name__ == "__main__":
     ### construct array of feed objects
