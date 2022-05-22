@@ -1,7 +1,7 @@
 from urllib.request import Request, urlopen
 from bs4 import BeautifulSoup
 import datefinder
-import re
+import csv
 
 import math
 
@@ -68,11 +68,25 @@ def parse_feeds(feeds):
             formatted_feed.append(feed['files'][datafile]['filesize']['value'])
             formatted_feed.append(feed['files'][datafile]['filesize']['unit'])
             formatted_feed.append(feed['files'][datafile]['filetype'])
+            formatted_feed.append('NULL')
+            formatted_feed.append(' ')
+            formatted_feed.append(' ')
+            formatted_feed.append('Open Government')
+            formatted_feed.append(' ')
             proc_feeds.append(formatted_feed)
     return proc_feeds
 
 def output(parsed):
-    pass
+    with open('aberdeenshire.csv', 'w', encoding='UTF8') as f:
+        writer = csv.writer(f)
+
+        # write the header
+        header = ["Title","Owner","PageURL","AssetURL","DateCreated","DateUpdated","FileSize","FileSizeUnit","FileType","NumRecords","OriginalTags","ManualTags","License","Description"]
+        writer.writerow(header)
+
+        # write the data
+        for record in parsed:
+            writer.writerow(record)
 
 
 if __name__ == "__main__":
@@ -82,4 +96,6 @@ if __name__ == "__main__":
     soup = BeautifulSoup(page, 'html.parser')
     feeds = get_feeds(soup)
     parsed = parse_feeds(feeds)
-    print(parsed)
+    
+    # make csv file
+    output(parsed)
