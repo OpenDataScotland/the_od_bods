@@ -1,226 +1,156 @@
 	0
-	347
-open data	41
-north ayrshire	26
+	258
+open data	33
 lgcs finance	23
-renfrewshire	22
-community wellbeing and social environment	22
-nac	15
-pkc	12
-treatment	12
+renfrewshire	19
+north ayrshire	16
 lgcs transport infrastructure	11
-nan	11
-waiting time	11
-outpatient	11
-waiting list	11
-stage of treatment	11
-daycase	11
-inpatient	11
-alcohol	11
-council buildings	10
-local	10
-areas	10
-sexual health	10
-built environment	9
-social / community	9
-community	8
-community development	8
-council	8
+nac	10
 lgcs education & skills	8
-pregnancy	7
-induced abortion	7
-therapeutic abortion	7
-termination	7
-abortion	7
-co-dependency	6
-2018	6
+community development	8
 community centres	6
-alcohol and drug partnership	6
-care homes	6
-waiting times	6
-drugs	6
-substance use	6
 primary schools	6
-adp	6
-employment land audit	6
-defibrillators	6
-wards	6
-core paths. adopted	6
 public toilets	6
+employment land audit	6
+pkc	6
+2018	6
+core paths. adopted	6
+community councils	5
+tree preservation order	5
+preservation	5
+north lanarkshire council	5
+data	5
+open	5
+nlc	5
+lhma	5
 order	5
-polling places	5
+land	5
+green	5
+tpo	5
+belt	5
+contaminated	5
+political	5
+tree	5
+north lanarkshire	5
 geography	5
 management information	5
-children	5
-open	5
-data	5
-charity	5
-political	5
-association	5
-population and society	5
-belt	5
-index	5
-poverty alleviating grants	5
-vacant and derelict land supply	5
-hla	5
-2020	5
-breast feeding	5
-halls	5
-assets	5
-lhma	5
+management	5
 air	5
-aqma	5
-great	5
-nlc	5
-preservation	5
-rights of way	5
-tree preservation order	5
-tpo	5
-north lanarkshire	5
+areas	5
+quality	5
+local	5
+reserves	5
+nature	5
+community	5
+population and society	5
+value	5
 landscape	5
 area	5
-value	5
-reserves	5
+association	5
+great	5
+rights of way	5
+charity	5
+aqma	5
+assets	5
 housing data supply 2020	5
-nature	5
-tree	5
-north lanarkshire council	5
-land	5
-contaminated	5
-community councils	5
-green	5
-management	5
-quality	5
-prohibition	5
-elderly	5
+hla	5
+vacant and derelict land supply	5
+council buildings	5
 energy	5
-screening	4
-screening programme	4
-cancer	4
-standardisation	4
+halls	5
+2020	5
+polling places	5
 european standard population	4
 world standard population	4
-procurement	4
-cervical	4
+standardisation	4
 children and young people	4
 lgcs consumer affairs	4
-iud	3
-ius	3
-pis	3
-prescribing	3
-access to services	3
-nash	3
-larc	3
-contraception	3
-arcgis hub page	3
-geospatial	3
-implant	3
-voluntary	3
-contextual	3
-localities	3
-towns	3
 gazetteer	3
-3d	3
-government	3
-buildings	3
-mapping	3
+contextual	3
+access to services	3
+non domestic rates	3
+consultant expenditure	3
 hydrography	3
 backdrop	3
-ndr	3
+arcgis hub page	3
 mid-scales	3
-issue	3
-contracts	3
-lookup	3
-non domestic rates	3
-libraries	3
-issued	3
-libary	3
-corporate procurement	3
-books	3
-consultant expenditure	3
-contract register	3
-voting	2
-polling districts	2
-model	2
-hub site	2
-spot-heights	2
-tidelines	2
+localities	3
+towns	3
+buildings	3
+3d	3
+mapping	3
 breaklines	2
-logistics	2
-architectural	2
-elevation	2
-community assets	2
-lgcs housing	2
-water	2
-agriculture	2
-enviroment	2
-business and economy	2
 contours	2
-health and wellbeing	2
-open data platform	2
+tidelines	2
+elevation	2
+lgcs housing	2
+spot-heights	2
+model	2
+business and economy	2
+hub site	2
+lookup	2
 height	2
-equipment	1
-fleet vehicles	1
-website analytics	1
-sites and monuments	1
-plant	1
+bike	1
 urban model	1
-ntriples	1
+remote sensing	1
+3d urban model	1
+site	1
+tem	1
+dem	1
+lidar	1
+complaints	1
+reference	1
+commercial and labour affairs	1
+c. difficile	1
+cdi	1
+e. coli	1
+campus	1
+survey	1
+consultation	1
+monifieth	1
+2021	1
+lgcs cemeteries & crematoria	1
+lgcs council property	1
+general economic	1
 rdf	1
-linked-data	1
+hai	1
+json	1
 turtle	1
 infofeaturetypeservice	1
-bike	1
-3d urban model	1
-dem	1
-site	1
-lidar	1
-remote sensing	1
-tem	1
-json	1
-speciality	1
-commercial and labour affairs	1
+ntriples	1
+linked-data	1
+plant	1
+fleet vehicles	1
+equipment	1
+website analytics	1
+sites and monuments	1
+procurement	1
 surgical site infection	1
-public offices	1
-council offices	1
-healthcare associated infection	1
-lesiure centres	1
-harbours	1
+bacteraemia	1
+paisley is	1
 coast	1
+open data platform	1
+table	1
+nomis	1
+employment	1
+health and wellbeing	1
+paisley	1
+alcohol prohibition areas	1
+council offices	1
+public offices	1
 fishing	1
+harbours	1
 cyle routes	1
+staphylococcus aureus	1
 cooling towers	1
 playpark	1
-complaints	1
-data zone	1
-bacteraemia	1
-cdi	1
-c. difficile	1
-staphylococcus aureus	1
-symbols	1
-guidlines	1
-qualifiers	1
-alcohol prohibition areas	1
-sab	1
-general economic	1
-e. coli	1
-lgcs council property	1
-lgcs cemeteries & crematoria	1
-consultation	1
-campus	1
-monifieth	1
-survey	1
-2021	1
-specialty	1
-reference	1
-hai	1
-walking and cycling	1
-public access routes	1
-paisley is	1
-table	1
-employment	1
-nomis	1
-ecb	1
-paisley	1
-ssi	1
 carparks	1
+data zone	1
+guidlines	1
+symbols	1
+qualifiers	1
+sab	1
+healthcare associated infection	1
+ecb	1
+ssi	1
+lesiure centres	1
