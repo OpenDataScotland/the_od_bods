@@ -5,13 +5,10 @@ class ProcessorARCGIS(Processor):
     def __init__(self):
         super().__init__(type='arcgis')
 
-    def get_datasets(self, start_url, fname):
-        url = start_url
-
-        header = ["Title", "Owner", "PageURL", "AssetURL", "DateCreated", "DateUpdated", "FileSize",
-                "FileSizeUnit", "FileType", "NumRecords", "OriginalTags", "ManualTags", "License",
-                "Description"]
+    def get_datasets(self, owner, start_url, fname):
         datasets = []
+
+        url = start_url
 
         while True:
             d = processor.get_json(url)
@@ -46,7 +43,7 @@ class ProcessorARCGIS(Processor):
                             self.get_license(e),  # license
                             e['attributes'].get('searchDescription', "")
                             ])
-        processor.write_csv(fname, header, prepped)
+        processor.write_csv(fname, prepped)
     
 processor = ProcessorARCGIS()
 processor.process()

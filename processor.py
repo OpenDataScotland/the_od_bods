@@ -3,10 +3,14 @@ import csv
 import json
 import os
 
+
 class Processor:
     # Type should be one of the following: 'dcat', 'arcgis', 'usmart'
     def __init__(self, type):
         self.type = type
+        self.header = ["Title", "Owner", "PageURL", "AssetURL", "DateCreated", "DateUpdated", "FileSize",
+                       "FileSizeUnit", "FileType", "NumRecords", "OriginalTags", "ManualTags", "License",
+                       "Description"]
         self.urls = {}
 
     def get_urls(self):
@@ -26,21 +30,22 @@ class Processor:
         except:
             return ""
 
-    def write_csv(self, fname, header, prepped):
+    def write_csv(self, fname, prepped):
         with open(fname, 'w') as csvf:
             w = csv.writer(csvf, quoting=csv.QUOTE_MINIMAL)
-            w.writerow(header)
+            w.writerow(self.header)
             for r in prepped:
                 if r[-1]:
                     r[-1] = r[-1].replace('\n', ' ')
                 w.writerow(r)
 
-    def get_datasets(self, url, fname):
-        print("Do something")
+    def get_datasets(self, owner, url, fname):
+        print("Override this method")
 
     def process(self):
         self.get_urls()
 
         for name, url in self.urls.items():
             print(name)
-            self.get_datasets(url, os.path.join('data', self.type, name+'.csv'))
+            self.get_datasets(name, url, os.path.join(
+                'data', self.type, name+'.csv'))
