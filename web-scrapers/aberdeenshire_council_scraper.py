@@ -92,7 +92,7 @@ def parse_feeds(feeds):
     return proc_feeds
 
 def output(parsed):
-    with open('aberdeenshire.csv', 'w', encoding='UTF8') as f:
+    with open('../data/scraped-results/aberdeenshire.csv', 'w', encoding='UTF8') as f:
         writer = csv.writer(f)
 
         # write the header
