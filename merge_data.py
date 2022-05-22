@@ -87,13 +87,16 @@ def clean_data(dataframe):
 
     ### Renaming entries to match
     owner_renames = {
-                    'Aberdeen': 'Aberdeen City',
-                    'Dundee': 'Dundee City',
-                    'Perth': 'Perth and Kinross',
+                    'Aberdeen': 'Aberdeen City Council',
+                    'Dundee': 'Dundee City Council',
+                    'Perth': 'Perth and Kinross Council',
+                    'Stirling': 'Stirling Council',
+                    'Angus': 'Angus Council',
                     'open.data@southayrshire':'South Ayrshire Council',
                     'SEPA': 'Scottish Environment Protection Agency',
                     'South Ayrshire': 'South Ayrshire Council',
-                    'East Ayrshire': 'East Ayrshire Council'
+                    'East Ayrshire': 'East Ayrshire Council',
+                    'Highland Council GIS Organisation': 'Highland Council'
                     }
     data['Owner'] = data['Owner'].replace(owner_renames)
     ### Format dates as datetime type
