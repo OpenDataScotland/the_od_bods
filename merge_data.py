@@ -155,6 +155,7 @@ def clean_data(dataframe):
         ods_categories={
             'Arts / Culture / History':['arts','culture','history','military','art gallery','design','fashion','museum','historic centre','conservation', 'archaeology', 'events','theatre'],
             'Budget / Finance':['budget','finance','payment','grants','financial year', 'council tax'],
+            'Council and Government':['council', 'councils', 'council tax', 'benefits', 'council grants', 'grants', 'council departments', 'data protection', 'FOI', 'freedom of information', 'council housing', 'politicians', 'MPs', 'MSPs', 'councillors', 'elected members', 'wards', 'constituencies', 'boundaries', 'council minutes', 'council agendas', 'council plans', 'council policies'],
             'Economy':['economy','economic','economic activity','economic development','deprivation','scottish index of multiple deprivation','simd','business','estimated population','population','labour force'],
             'Education':['education','eductional','library','school meals','schools','school', 'nurseries', 'playgroups',],
             'Elections / Politics':['elections','politics','elecorate','election','electoral','electorate','local authority','council area','democracy','polling','lgcs democracy','democracy and governance','local government', 'councillor', 'councillors','community council'],
