@@ -3,19 +3,22 @@ from bs4 import BeautifulSoup
 import datefinder
 import re
 
+import math
+
+# https://stackoverflow.com/a/14822210/13940304
+def convert_size(size_bytes):
+   if size_bytes == 0:
+       return "0B"
+   size_name = ("B", "KB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB")
+   i = int(math.floor(math.log(size_bytes, 1024)))
+   p = math.pow(1024, i)
+   s = round(size_bytes / p, 2)
+   return ("%s %s" % (s, size_name[i]), size_name[i])
+
 def get_last_updated(string):
     matches = datefinder.find_dates(string)
     return [match for match in matches][0].strftime("%d/%m/%Y")
 
-def get_file_metadata(string):
-    file_meta_regex = re.compile(r"\((.*?)\)")
-    file_meta = file_meta_regex.search(string).group().strip()
-    file_meta = file_meta.strip("(")
-    file_meta = file_meta.strip(")")
-    file_meta = re.split(",|\s", string)
-    filetype = file_meta[0]
-    filesize = file_meta[1].strip()
-    return (filetype, filesize)
 
 def get_feeds(soup):
     """Get feeds and construct dictionaries with all the values that will be used for the output csv"""
@@ -43,9 +46,10 @@ def get_feeds(soup):
                 # get last updated
                 last_updated = get_last_updated(anchor.text)
                 # get size of file
-                filetype, filesize = get_file_metadata(anchor.text)
+                filesize = urlopen(link).length
+                formatted_fs, unit = convert_size(filesize)
 
-                feed['files'][filename] = {'link': link, 'filesize': urlopen(link).length, 'last-updated': last_updated, 'filetype': filetype, 'filesize': filesize}
+                feed['files'][filename] = {'link': link, 'filesize': {'value':formatted_fs, 'unit': unit}, 'last-updated': last_updated, 'filetype': filename[-3:].upper(), 'filesize': filesize}
         feeds.append(feed)
     return feeds
 
