@@ -18,8 +18,8 @@ jobs:
           python-version: '3.9'
     - name: Set up environment
       run: |
-        export GITHUB_ACCESS_TOKEN=${{secrets.ALIVE_GITHUB_TOKEN}}
-        export GITHUB_USER_ASSIGNEE="jackgilmore"
+        GITHUB_ACCESS_TOKEN=${{secrets.ALIVE_GITHUB_TOKEN}}
+        GITHUB_USER_ASSIGNEE="jackgilmore"
         pip install pygithub
     - name: Run status checker
       run: python ./alive.py 
