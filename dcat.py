@@ -1,11 +1,10 @@
-#!/usr/bin/env python3
-
 from urllib import request, parse
 from datetime import datetime
 import json
 import csv
 import os
 import copy
+
 
 def get_json(url):
     req = request.Request(url)
@@ -17,6 +16,7 @@ def get_license(dataset):
         return dataset['attributes']['structuredLicense']['url']
     except:
         return ""
+
 
 def get_urls():
     urls = {}
@@ -82,6 +82,7 @@ def get_datasets(start_url, fname):
             if r[-1]:
                 r[-1] = r[-1].replace('\n', ' ')
             w.writerow(r)
+
 
 urls = get_urls()
 for name, url in urls.items():
