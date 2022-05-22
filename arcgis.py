@@ -19,7 +19,7 @@ def get_license(dataset):
 
 def get_urls():
     urls = {}
-    with open('sources.csv', 'r') as file:
+    with open('./sources.csv', 'r') as file:
         csv_file = csv.DictReader(file)
         for row in csv_file:
             if row['Processor'] == 'arcgis':
