@@ -7,7 +7,17 @@ from bs4 import BeautifulSoup
 URL_COUNCIL = "https://www.east-ayrshire.gov.uk/"
 URL_PAGE = "CouncilAndGovernment/About-the-Council/Information-and-statistics/Open-Data.aspx"
 
+# Global Variables
 def get_headers():
+    """
+    Gets headers to make a request from the URL. Optimized so website doesn't think a bot is making a request.
+
+    Args:
+        NULL
+
+    Returns:
+        headers (Dictionary) : header values
+    """
     headers = {
         'Access-Control-Allow-Origin': '*',
         'Access-Control-Allow-Methods': 'GET',
@@ -18,6 +28,15 @@ def get_headers():
     return headers    
 
 def get_all_files():
+    """
+    Gets lists of tags from webpage. Optimized for .csv files and to get data from td tags.
+
+    Args:
+        NULL
+
+    Returns:
+        headers (List) : list of csv files.
+    """ 
     url = URL_COUNCIL+URL_PAGE 
     req = requests.get(url, get_headers())
     soup = BeautifulSoup(req.content, 'html.parser')
@@ -29,8 +48,16 @@ def get_all_files():
 
     return list_of_files        
 
-
 def csv_file_metadata(file_loc):
+    """
+    Gets file size and number of record for .csv file. 
+
+    Args:
+        file_loc (String): URL for location of file on the internet
+
+    Returns:
+        number_of_records (int), total_bytes (int) : total number of records and total number of bytes of .csv files.
+    """
     text = requests.get(URL_COUNCIL+file_loc , get_headers()).text
     lines = text.splitlines()
     data = csv.reader(lines)
@@ -42,11 +69,18 @@ def csv_file_metadata(file_loc):
         total_bytes += bytes_on_this_line
 
 
-    return number_of_records, total_bytes
-    
+    return number_of_records, total_bytes    
 
-def csv_output(header, data): 
+def csv_output(header, data):
+    """
+    Create output csv file of the final data scrapped from website. 
 
+    Args:
+        header (List): A list of header items that are Strings.
+        data (List): A list of records. 
+    Returns:
+        NULL
+    """   
     with open('the_od_bods/web-scrapers/output_east_ayrshire.csv', 'w', encoding='UTF8') as f:
         writer = csv.writer(f)
 
@@ -59,14 +93,24 @@ def csv_output(header, data):
 
 # https://stackoverflow.com/a/14822210/13940304
 def convert_size(size_bytes):
-   if size_bytes == 0:
-       return "0B"
-   size_name = ("B", "KB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB")
-   i = int(math.floor(math.log(size_bytes, 1024)))
-   p = math.pow(1024, i)
-   s = round(size_bytes / p, 2)
-   return ("%s %s" % (s, size_name[i]), size_name[i])
+    """
+    Create human-readable way to display .csv file sizes.
 
+    Source: # https://stackoverflow.com/a/14822210/13940304
+
+    Args:
+        size_bytes (int): A list of header items that are Strings.
+        data (List): A list of records. 
+    Returns:
+        tuple (Tuple): a tuple which has the file size and the file unit
+    """
+    if size_bytes == 0:
+       return "0B"
+    size_name = ("B", "KB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB")
+    i = int(math.floor(math.log(size_bytes, 1024)))
+    p = math.pow(1024, i)
+    s = round(size_bytes / p, 2)
+    return ("%s %s" % (s, size_name[i]), size_name[i])
 
 if __name__ == "__main__":  
     # Record Headings
