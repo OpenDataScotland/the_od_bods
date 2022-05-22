@@ -13,7 +13,7 @@ def convert_size(size_bytes):
    i = int(math.floor(math.log(size_bytes, 1024)))
    p = math.pow(1024, i)
    s = round(size_bytes / p, 2)
-   return ("%s %s" % (s, size_name[i]), size_name[i])
+   return ("%s" % (s), size_name[i])
 
 def get_last_updated(string):
     matches = datefinder.find_dates(string)
@@ -69,10 +69,10 @@ def parse_feeds(feeds):
             formatted_feed.append(feed['files'][datafile]['filesize']['unit'])
             formatted_feed.append(feed['files'][datafile]['filetype'])
             formatted_feed.append('NULL')
-            formatted_feed.append(' ')
-            formatted_feed.append(' ')
+            formatted_feed.append('NULL')
+            formatted_feed.append('NULL')
             formatted_feed.append('Open Government')
-            formatted_feed.append(' ')
+            formatted_feed.append('NULL')
             proc_feeds.append(formatted_feed)
     return proc_feeds
 
