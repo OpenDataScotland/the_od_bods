@@ -167,6 +167,7 @@ def clean_data(dataframe):
             'Parks / Recreation':['parks','recreation','woodland','parks and open spaces'],
             'Planning / Zoning':['planning','zoning','council area','address','addresses','city development plan','boundaries','post-code','dwellings','planning permission','postcode-units','housing','property', 'building control', 'conservation'],
             'Public Safety':['emergency planning','public safety','crime and justice','lgcs community safety','street lighting','community safety','cctv','road safety'],
+            'Sport and Leisure':['sport', 'sports', 'sports facilities',' sports activities','countryside', 'wildlife', 'leisure', 'leisure clubs', 'clubs', 'groups', 'societies', 'libraries', 'archives', 'local history', 'heritage', 'museums', 'galleries', 'parks', 'gardens', 'open spaces', 'sports', 'sports clubs', 'leisure centres'],
             'Tourism':['tourism','tourist','attractions','accomodation', 'historic buildings','tourist routes', 'cafes','restaurants', 'hotels','hotel'],
             'Transportation':['transportation','mobility','pedestrian','walking','walk','cycle','cycling','parking','car','bus','tram','train','taxi','transport','electric vehicle','electric vehicle charging points','transport / mobility','active travel','road safety','roads', 'community transport', 'road works', 'road closures','speed limits', 'port', 'harbour']
         }
