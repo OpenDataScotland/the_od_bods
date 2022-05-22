@@ -5,13 +5,8 @@ class ProcessorDCAT(Processor):
     def __init__(self):
         super().__init__(type='dcat')
 
-    def get_datasets(self, start_url, fname):
-        url = start_url
-
-        header = ["Title", "Owner", "PageURL", "AssetURL", "DateCreated", "DateUpdated", "FileSize",
-                "FileSizeUnit", "FileType", "NumRecords", "OriginalTags", "ManualTags", "License",
-                "Description"]
-        d = processor.get_json(url)
+    def get_datasets(self, owner, start_url, fname):
+        d = processor.get_json(start_url)
         datasets = d['dcat:dataset']
 
         print(f"Found {len(datasets)} datasets")
@@ -50,7 +45,7 @@ class ProcessorDCAT(Processor):
             prepped += dsl
 
         print(f'{len(prepped)} lines for csv')
-        processor.write_csv(fname, header, prepped)
+        processor.write_csv(fname, prepped)
 
 
 def get_license(dataset):
