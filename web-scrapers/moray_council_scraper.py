@@ -86,7 +86,7 @@ def csv_output(header, data):
         NULL
     """  
 
-    with open('the_od_bods/data/scraped-results/output_east_ayrshire.csv', 'w', encoding='UTF8') as f:
+    with open('the_od_bods/data/scraped-results/output_moray.csv', 'w', encoding='UTF8') as f:
         writer = csv.writer(f)
 
         # write the header
