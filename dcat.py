@@ -5,9 +5,11 @@ import csv
 import os
 import copy
 
+
 def get_json(url):
     req = request.Request(url)
     return json.loads(request.urlopen(req).read().decode())
+
 
 def get_license(dataset):
     try:
@@ -15,21 +17,23 @@ def get_license(dataset):
     except:
         return ""
 
-#start_url = 'https://opendata.arcgis.com/api/v3/search?filter[tags]=any(renfrewshire)&filter[openData]=true'
 
-urls = {
-    'glasgow': 'https://open-data-design-glasgowgis.hub.arcgis.com/api/feed/dcat-ap/2.0.1.json',
-    'edinburgh': 'https://city-of-edinburgh-council-open-spatial-data-cityofedinburgh.hub.arcgis.com/api/feed/dcat-ap/2.0.1.json',
-    'highland': 'https://map-highland.opendata.arcgis.com/api/feed/dcat-ap/2.0.1.json',
-    'north_ayrshire': 'https://maps-north-ayrshire.opendata.arcgis.com/api/feed/dcat-ap/2.0.1.json',
-    'north_lanarkshire': 'https://gisdata-nlcmaps.opendata.arcgis.com/api/feed/dcat-ap/2.0.1.json',
-    }
+def get_urls():
+    urls = {}
+    with open('sources.csv', 'r') as file:
+        csv_file = csv.DictReader(file)
+        for row in csv_file:
+            if row['Processor'] == 'dcat':
+                urls[row['Name']] = row['Source URL']
+
+    return urls
+
 
 def get_datasets(start_url, fname):
     url = start_url
 
-    header = ["Title","Owner","PageURL","AssetURL","DateCreated","DateUpdated","FileSize",
-              "FileSizeUnit","FileType","NumRecords","OriginalTags","ManualTags","License",
+    header = ["Title", "Owner", "PageURL", "AssetURL", "DateCreated", "DateUpdated", "FileSize",
+              "FileSizeUnit", "FileType", "NumRecords", "OriginalTags", "ManualTags", "License",
               "Description"]
     d = get_json(url)
     datasets = d['dcat:dataset']
@@ -40,19 +44,19 @@ def get_datasets(start_url, fname):
     for e in datasets:
         ds = [e.get('dct:title', ""),
               e.get('dct:publisher', "").replace(" Mapping", ""),
-              "", #link to page
-              "", #Link to data
-              "", #date created
+              "",  # link to page
+              "",  # Link to data
+              "",  # date created
               e.get('dct:issued', ""),
-              "", # size
-              "", #size unit
-              "", #filetype
-              "", #numrecords
+              "",  # size
+              "",  # size unit
+              "",  # filetype
+              "",  # numrecords
               ";".join(e.get('dcat:keyword', [])),
-              "", #Manual tags
-              "", #license
+              "",  # Manual tags
+              "",  # license
               e.get('dct:description', "").strip(u'\u200b')
-        ]
+              ]
         pages = e.get('dcat:distribution')
         for p in pages:
             if p.get('dct:description', '') == 'Web Page':
@@ -78,11 +82,9 @@ def get_datasets(start_url, fname):
             if r[-1]:
                 r[-1] = r[-1].replace('\n', ' ')
             w.writerow(r)
-                                                                       
-                                                                       
-# get_datasets(argyll_start_url, "argyll_and_bute.csv")
-# get_datasets(south_ayrshire_start_url, "south_ayrshire.csv")
-# get_datasets(moray_start_url, "moray.csv")
+
+
+urls = get_urls()
 for name, url in urls.items():
     print(name)
     get_datasets(url, os.path.join('data', 'dcat', name+'.csv'))
