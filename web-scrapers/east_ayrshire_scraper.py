@@ -1,6 +1,7 @@
-# Packages: beautifulsoup4, csv, requests
+# Packages: beautifulsoup4, csv, requests, math
 import requests
 import csv
+import math
 from bs4 import BeautifulSoup
 
 URL_COUNCIL = "https://www.east-ayrshire.gov.uk/"
@@ -46,7 +47,7 @@ def csv_file_metadata(file_loc):
 
 def csv_output(header, data): 
 
-    with open('the_od_bods/web-scrapers/output.csv', 'w', encoding='UTF8') as f:
+    with open('the_od_bods/web-scrapers/output_east_ayrshire.csv', 'w', encoding='UTF8') as f:
         writer = csv.writer(f)
 
     # write the header
@@ -56,6 +57,17 @@ def csv_output(header, data):
         for record in data:
             writer.writerow(record)
 
+# https://stackoverflow.com/a/14822210/13940304
+def convert_size(size_bytes):
+   if size_bytes == 0:
+       return "0B"
+   size_name = ("B", "KB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB")
+   i = int(math.floor(math.log(size_bytes, 1024)))
+   p = math.pow(1024, i)
+   s = round(size_bytes / p, 2)
+   return ("%s %s" % (s, size_name[i]), size_name[i])
+
+
 if __name__ == "__main__":  
     # Record Headings
     header = ["Title","Owner","PageURL","AssetURL","DateCreated","DateUpdated","FileSize","FileSizeUnit","FileType","NumRecords","OriginalTags","ManualTags","License","Description"]
@@ -64,7 +76,8 @@ if __name__ == "__main__":
     list_of_files = get_all_files()
     for fi in list_of_files:
         metadata = csv_file_metadata(fi['href'])
-        output = [fi.string, "East Ayrshire Council", URL_COUNCIL+URL_PAGE, URL_COUNCIL+fi['href'], "NULL", "NULL", metadata[1], "B", "CSV", "B", metadata[0], "NULL", "Education", "Open Government Licence 3.0 (United Kingdom)", "NULL"]     
+        file_size = convert_size(metadata[1])
+        output = [fi.string, "East Ayrshire Council", URL_COUNCIL+URL_PAGE, URL_COUNCIL+fi['href'], "NULL", "NULL", file_size[0], file_size[1], "CSV", metadata[0], "NULL", "Education", "Open Government Licence 3.0 (United Kingdom)", "NULL"]     
         data.append(output)
 
     csv_output(header, data)
