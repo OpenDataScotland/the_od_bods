@@ -34,7 +34,7 @@ def get_feeds(soup):
         tds = row.find_all('td')
         feed = {}
         # Add title and files key
-        title = tds[0].string
+        title = tds[0].get_text()
         feed['title'] = title
         feed['files'] = {}
         # Add files with their links, last updated and filesize.
