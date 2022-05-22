@@ -150,20 +150,21 @@ def clean_data(dataframe):
 
         ### Set association between dataset tag and ODS category
         ods_categories={
-        'Arts / Culture / History':['arts','culture','history','military','art gallery','design','fashion','museum','historic centre','conservation', 'archaeology', 'events','theatre'],
-        'Budget / Finance':['budget','finance','payment','grants','financial year', 'council tax'],
-        'Economy':['economy','economic','economic activity','economic development','deprivation','scottish index of multiple deprivation','simd','business','estimated population','population','labour force'],
-        'Education':['education','eductional','library','school meals','schools','school', 'nurseries', 'playgroups',],
-        'Elections / Politics':['elections','politics','elecorate','election','electoral','electorate','local authority','council area','democracy','polling','lgcs democracy','democracy and governance','local government', 'councillor', 'councillors','community council'],
-        'Environment':['environment','forest woodland strategy','waste','recycling','lgcs waste management','water-network', 'grafitti', 'street occupations', 'regeneration','vandalism','street cleansing', 'litter', 'toilets', 'drains','flytipping', 'flyposting','pollution', 'air quality', 'household waste', 'commercial waste'],
-        'Food':['food','school meals','allotment'],
-        'Health / Human Services':['health','human services', 'covid-19','covid','hospital','health board', 'health and social care partnership','medicine','health and social care','health and fitness','nhs24','hospital admissions','hospital mortality', 'mental health', 'pharmacy', 'GP', 'surgery'],
-        'Parks / Recreation':['parks','recreation','woodland','parks and open spaces'],
-        'Planning / Zoning':['planning','zoning','council area','address','addresses','city development plan','boundaries','post-code','dwellings','planning permission','postcode-units','housing','property', 'building control', 'conservation'],
-        'Public Safety':['public safety','crime and justice','lgcs community safety','street lighting','community safety','cctv','road safety'],
-        'Real Estate / Land Records':['real estate','land records','land-cover','woodland','dwellings','burial grounds','cemeteries','property','vacant and derelict land','scottish vacant and derelict land','allotment'],
-        'Tourism':['tourism','tourist','attractions','accomodation', 'historic buildings','tourist routes', 'cafes','restaurants', 'hotels','hotel'],
-        'Transportation':['transportation','mobility','pedestrian','walking','walk','cycle','cycling','parking','car','bus','tram','train','taxi','transport','electric vehicle','electric vehicle charging points','transport / mobility','active travel','road safety','roads', 'community transport', 'road works', 'road closures','speed limits', 'port', 'harbour']
+            'Arts / Culture / History':['arts','culture','history','military','art gallery','design','fashion','museum','historic centre','conservation', 'archaeology', 'events','theatre'],
+            'Budget / Finance':['budget','finance','payment','grants','financial year', 'council tax'],
+            'Economy':['economy','economic','economic activity','economic development','deprivation','scottish index of multiple deprivation','simd','business','estimated population','population','labour force'],
+            'Education':['education','eductional','library','school meals','schools','school', 'nurseries', 'playgroups',],
+            'Elections / Politics':['elections','politics','elecorate','election','electoral','electorate','local authority','council area','democracy','polling','lgcs democracy','democracy and governance','local government', 'councillor', 'councillors','community council'],
+            'Environment':['environment','forest woodland strategy','waste','recycling','lgcs waste management','water-network', 'grafitti', 'street occupations', 'regeneration','vandalism','street cleansing', 'litter', 'toilets', 'drains','flytipping', 'flyposting','pollution', 'air quality', 'household waste', 'commercial waste'],
+            'Food':['food','school meals','allotment'],
+            'Health and Social Care':['health','human services', 'covid-19','covid','hospital','health board', 'health and social care partnership','medicine','health and social care','health and fitness','nhs24','hospital admissions','hospital mortality', 'mental health', 'pharmacy', 'GP', 'surgery','fostering','adoption', 'social work', 'asylum', 'immigration', 'citizenship', 'carers'],
+            'Law and Licensing':['law', 'licensing', 'regulation', 'regulations', 'licence', 'licenses', 'permit', 'permits', 'police', 'court', 'courts', 'tribunal', 'tribunals'],
+            'Parks / Recreation':['parks','recreation','woodland','parks and open spaces'],
+            'Planning / Zoning':['planning','zoning','council area','address','addresses','city development plan','boundaries','post-code','dwellings','planning permission','postcode-units','housing','property', 'building control', 'conservation'],
+            'Public Safety':['emergency planning','public safety','crime and justice','lgcs community safety','street lighting','community safety','cctv','road safety'],
+            'Real Estate / Land Records':['real estate','land records','land-cover','woodland','dwellings','burial grounds','cemeteries','property','vacant and derelict land','scottish vacant and derelict land','allotment'],
+            'Tourism':['tourism','tourist','attractions','accomodation', 'historic buildings','tourist routes', 'cafes','restaurants', 'hotels','hotel']
+            'Transportation':['transportation','mobility','pedestrian','walking','walk','cycle','cycling','parking','car','bus','tram','train','taxi','transport','electric vehicle','electric vehicle charging points','transport / mobility','active travel','road safety','roads', 'community transport', 'road works', 'road closures','speed limits', 'port', 'harbour']
         }
 
         ### Return ODS if tag is a match
