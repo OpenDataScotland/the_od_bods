@@ -49,12 +49,28 @@ def get_feeds(soup):
                 filesize = urlopen(link).length
                 formatted_fs, unit = convert_size(filesize)
 
-                feed['files'][filename] = {'link': link, 'filesize': {'value':formatted_fs, 'unit': unit}, 'last-updated': last_updated, 'filetype': filename[-3:].upper(), 'filesize': filesize}
+                feed['files'][filename] = {'link': link, 'filesize': {'value':formatted_fs, 'unit': unit}, 'last-updated': last_updated, 'filetype': filename[-3:].upper()}
         feeds.append(feed)
     return feeds
 
 def parse_feeds(feeds):
-    pass
+    """ Process feeds to be ready for csv ouput """
+    proc_feeds = []
+    for feed in feeds:
+        for datafile in feed['files'].keys():
+            formatted_feed = []
+            formatted_feed.append(feed['title'])
+            formatted_feed.append('Aberdeenshire Council')
+            formatted_feed.append('https://www.aberdeenshire.gov.uk/online/open-data/')
+            formatted_feed.append(feed['files'][datafile]['link'])
+            formatted_feed.append('NULL')
+            formatted_feed.append(feed['files'][datafile]['last-updated'])
+            formatted_feed.append(feed['files'][datafile]['filesize']['value'])
+            formatted_feed.append(feed['files'][datafile]['filesize']['unit'])
+            formatted_feed.append(feed['files'][datafile]['filetype'])
+            proc_feeds.append(formatted_feed)
+    return proc_feeds
+
 
 if __name__ == "__main__":
     ### construct array of feed objects
@@ -62,4 +78,5 @@ if __name__ == "__main__":
     page = urlopen(req).read()
     soup = BeautifulSoup(page, 'html.parser')
     feeds = get_feeds(soup)
-    print(feeds)
+    parsed = parse_feeds(feeds)
+    print(parsed)
