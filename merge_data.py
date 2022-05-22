@@ -64,10 +64,10 @@ def merge_data():
 
     ### Saves copy of data without cleaning - for analysis purposes
     data.to_csv('data/merged_output_untidy.csv', index=False)
-    
+
     ### clean data
     data = clean_data(data)
-    
+
     ### Output cleaned data to csv
     data.to_csv('data/merged_output.csv', index=False)
 
@@ -131,7 +131,7 @@ def clean_data(dataframe):
         """
         combined_tags = []
         if str(dataset_row['OriginalTags'])!='nan':
-            combined_tags = combined_tags + str(dataset_row['OriginalTags']).split(';') 
+            combined_tags = combined_tags + str(dataset_row['OriginalTags']).split(';')
         if str(dataset_row['ManualTags'])!='nan':
             combined_tags = combined_tags + str(dataset_row['ManualTags']).split(';')
 
@@ -156,16 +156,16 @@ def clean_data(dataframe):
             'Arts / Culture / History':['arts','culture','history','military','art gallery','design','fashion','museum','historic centre','conservation', 'archaeology', 'events','theatre'],
             'Budget / Finance':['budget','finance','payment','grants','financial year', 'council tax'],
             'Business and Economy':['business', 'business and trade', 'economic information', 'economic development', 'business grants', 'business awards', 'health and safety', 'trading standards', 'food safety', 'business rates', 'commercial land and property' 'commercial waste', 'pollution', 'farming', 'forestry', 'crofting', 'countryside', 'farming', 'emergency planning', 'health and safety', 'trading standards', 'health and safety at work', 'regeneration', 'shopping', 'shopping centres', 'markets', 'tenders', 'contracts', 'city centre management', 'town centre management','economy','economic','economic activity','economic development','deprivation','scottish index of multiple deprivation','simd','business','estimated population','population','labour force'],
-            'Council and Government':['council', 'councils', 'council tax', 'benefits', 'council grants', 'grants', 'council departments', 'data protection', 'FOI', 'freedom of information', 'council housing', 'politicians', 'MPs', 'MSPs', 'councillors', 'elected members', 'wards', 'constituencies', 'boundaries', 'council minutes', 'council agendas', 'council plans', 'council policies'],
+            'Council and Government':['council and government','council', 'councils', 'council tax', 'benefits', 'council grants', 'grants', 'council departments', 'data protection', 'FOI', 'freedom of information', 'council housing', 'politicians', 'MPs', 'MSPs', 'councillors', 'elected members', 'wards', 'constituencies', 'boundaries', 'council minutes', 'council agendas', 'council plans', 'council policies'],
             'Education':['education','eductional','library','school meals','schools','school', 'nurseries', 'playgroups',],
             'Elections / Politics':['elections','politics','elecorate','election','electoral','electorate','local authority','council area','democracy','polling','lgcs democracy','democracy and governance','local government', 'councillor', 'councillors','community council'],
             'Environment':['environment','forest woodland strategy','waste','recycling','lgcs waste management','water-network', 'grafitti', 'street occupations', 'regeneration','vandalism','street cleansing', 'litter', 'toilets', 'drains','flytipping', 'flyposting','pollution', 'air quality', 'household waste', 'commercial waste'],
             'Food':['food','school meals','allotment'],
-            'Health and Social Care':['health','human services', 'covid-19','covid','hospital','health board', 'health and social care partnership','medicine','health and social care','health and fitness','nhs24','hospital admissions','hospital mortality', 'mental health', 'pharmacy', 'GP', 'surgery','fostering','adoption', 'social work', 'asylum', 'immigration', 'citizenship', 'carers'],
+            'Health and Social Care':['contraception', 'implant','cervical','iud','ius','pis','prescribing','elderly','screening','screening programme','cancer','breast feeding','defibrillators','wards','alcohol and drug partnership', 'care homes', 'waiting times', 'drugs', 'substance use', 'pregnancy', 'induced abortion','therapeutic abortion','termination', 'abortion','co-dependency','sexual health', 'outpatient','waiting list', 'stage of treatment', 'daycase','inpatient', 'alcohol','waiting time','treatment','community wellbeing and social environment','health','human services', 'covid-19','covid','hospital','health board', 'health and social care partnership','medicine','health and social care','health and fitness','nhs24','hospital admissions','hospital mortality', 'mental health', 'pharmacy', 'GP', 'surgery','fostering','adoption', 'social work', 'asylum', 'immigration', 'citizenship', 'carers'],
             'Housing and Estates':['multiple occupation', 'housing', 'sheltered housing', 'adaptations', 'repairs', 'council housing', 'landlord', 'landlord registration', 'rent arrears', 'parking', 'garages', 'homelessness', 'temporary accommodation', 'rent', 'tenancy', 'housing advice', 'housing associations', 'housing advice', 'housing repairs', 'lettings','real estate','land records','land-cover','woodland','dwellings','burial grounds','cemeteries','property','vacant and derelict land','scottish vacant and derelict land','allotment'],
             'Law and Licensing':['law', 'licensing', 'regulation', 'regulations', 'licence', 'licenses', 'permit', 'permits', 'police', 'court', 'courts', 'tribunal', 'tribunals'],
             'Parks / Recreation':['parks','recreation','woodland','parks and open spaces'],
-            'Planning and Development':['planning','zoning','council area','address','addresses','city development plan','boundaries','post-code','dwellings','planning permission','postcode-units','housing','property', 'building control', 'conservation'],
+            'Planning and Development':['built environment','planning','zoning','council area','address','addresses','city development plan','boundaries','post-code','dwellings','planning permission','postcode-units','housing','property', 'building control', 'conservation'],
             'Public Safety':['emergency planning','public safety','crime and justice','lgcs community safety','street lighting','community safety','cctv','road safety'],
             'Sport and Leisure':['sport', 'sports', 'sports facilities',' sports activities','countryside', 'wildlife', 'leisure', 'leisure clubs', 'clubs', 'groups', 'societies', 'libraries', 'archives', 'local history', 'heritage', 'museums', 'galleries', 'parks', 'gardens', 'open spaces', 'sports', 'sports clubs', 'leisure centres'],
             'Tourism':['tourism','tourist','attractions','accomodation', 'historic buildings','tourist routes', 'cafes','restaurants', 'hotels','hotel'],
