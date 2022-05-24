@@ -10,10 +10,6 @@ def merge_data():
     source_ckan = pd.read_csv('data/ckan_output.csv', parse_dates=['DateUpdated'])
     source_ckan['Source'] = 'ckan API'
 
-    ### From google sheets
-    source_gsheets = pd.read_csv('data/from_Google_Sheets.csv', parse_dates=['DateUpdated'])
-    source_gsheets['Source'] = 'manual extraction'
-
     ### From scotgov csv
     source_scotgov = pd.read_csv('data/scotgov-datasets.csv')
     source_scotgov = source_scotgov.rename(columns={
@@ -57,9 +53,17 @@ def merge_data():
                 #source_dcat['DateUpdated'] = source_dcat['DateUpdated'].dt.tz_convert(None)
     source_dcat['Source'] = 'DCAT feed'
 
+    ## From web scraped results
+    source_scraped = pd.DataFrame()
+    folder = 'data/scraped-results/'
+    for dirname, _, filenames in os.walk(folder):
+        for filename in filenames:
+            if filename.rsplit('.',1)[1] == 'csv':
+                source_scraped = source_scraped.append(pd.read_csv(folder + r'/' + filename, parse_dates=['DateUpdated']))
+    source_scraped['Source'] = 'Web Scraped'
 
     ### Combine all data into single table
-    data = source_ckan.append([source_gsheets, source_arcgis, source_usmart, source_scotgov, source_dcat])
+    data = source_ckan.append([source_arcgis, source_usmart, source_scotgov, source_dcat, source_scraped])
     data = data.reset_index(drop=True)
 
     ### Saves copy of data without cleaning - for analysis purposes

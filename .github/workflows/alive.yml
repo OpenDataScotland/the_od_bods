@@ -1,7 +1,9 @@
 name: Website status checker
 
 on:
-  workflow_dispatch
+  workflow_dispatch:    
+  schedule:
+    - cron: '0 8 * * *'
 
 jobs:
   check_status:
