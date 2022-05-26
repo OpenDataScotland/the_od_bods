@@ -26,7 +26,28 @@ class Processor:
 
     def get_license(self, dataset):
         try:
-            return dataset['attributes']['structuredLicense']['url']
+            # Known Licenses info
+            allLicenses = ['http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/',
+            'http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/',
+            'http://opendatacommons.org/licenses/odbl/1-0/',
+            'Open Data Commons Open Database License 1.0',
+            'uk-ogl', 'UK Open Government Licence (OGL)',
+            'Open Government Licence 3.0 (United Kingdom)',
+            'OGL3', 'https://creativecommons.org/licenses/by/4.0/legalcode',
+            'Creative Commons Attribution 4.0', 'https://creativecommons.org/licenses/by-sa/3.0/'];
+
+            # Return License info, If License 'url' key available
+            if('url' in dataset['attributes']['structuredLicense']):
+                return dataset['attributes']['structuredLicense']['url']
+            # Check for License in 'text' key and return the license info, if license 'url' key not available
+            elif('text' in dataset['attributes']['structuredLicense']):
+                for license in allLicenses:
+                    if(license in dataset['attributes']['structuredLicense']['text']):
+                        return license;
+                return "";
+            # Return '', if 'url' & 'text' key not available
+            else:
+                return ""
         except:
             return ""
 
