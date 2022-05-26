@@ -2,7 +2,6 @@ from urllib.request import Request, urlopen
 from bs4 import BeautifulSoup
 import datefinder
 import csv
-
 import math
 
 # https://stackoverflow.com/a/14822210/13940304
@@ -50,6 +49,7 @@ def get_feeds(soup):
         feed = {}
         # Add title and files key
         title = tds[0].get_text()
+        print(title)
         feed['title'] = title
         feed['files'] = {}
         # Add files with their links, last updated and filesize.
@@ -85,7 +85,35 @@ def parse_feeds(feeds):
             formatted_feed.append(feed['files'][datafile]['filetype'])
             formatted_feed.append('NULL')
             formatted_feed.append('NULL')
-            formatted_feed.append('NULL')
+            #hack to create categories
+            if 'school' in feed['title'].lower():
+                formatted_feed.append('education')
+            elif 'burial' in feed['title'].lower():
+                formatted_feed.append('burial grounds')
+            elif 'car parks' or 'cycle' or 'grit' or 'harbours' or 'core paths' in title:
+                formatted_feed.append('transport')
+            elif 'polling'in feed['title'].lower():
+                formatted_feed.append('elections')
+            elif 'applications' or 'development' or 'green belt' or 'land audit' in feed['title'].lower():
+                formatted_feed.append('planning')
+            elif 'recycling' in feed['title'].lower():
+                formatted_feed.append('recycling')
+            elif 'toiliets' in feed['title'].lower():
+                formatted_feed.append('toilets')
+            elif 'museums' in feed['title'].lower():
+                formatted_feed.append('museum')
+            elif 'nature' in feed['title'].lower():
+                formatted_feed.append('nature')
+            elif 'leisure' in feed['title'].lower():
+                formatted_feed.append ('leisure')
+            elif 'cooling tower' in feed['title'].lower():
+                formatted_feed.append('health and safety')
+            elif 'contracts register' in feed['title'].lower():
+                formatted_feed.append('contracts')
+            elif 'committee areas' or 'community councils' or 'offices open' in feed['title'].lower():
+                formatted_feed.append('council and government')
+            else:
+                formatted_feed.append('council and government')
             formatted_feed.append('Open Government')
             formatted_feed.append('NULL')
             proc_feeds.append(formatted_feed)
@@ -109,6 +137,7 @@ if __name__ == "__main__":
     req = Request('https://www.aberdeenshire.gov.uk/data/open-data/', headers={'User-Agent': 'Mozilla/5.0'})
     page = urlopen(req).read()
     soup = BeautifulSoup(page, 'html.parser')
+
     feeds = get_feeds(soup)
     parsed = parse_feeds(feeds)
     
