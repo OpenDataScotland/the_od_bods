@@ -87,6 +87,9 @@ for r in fulld.values:
             num_records = makeint(r[ind('NumRecords')]),
             files = []
         )
+
+        # Sort categories to keep consistent when syncing
+        ds.ods_categories.sort()
         
         data[id] = ds
     data[id].files.append(
