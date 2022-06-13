@@ -14,6 +14,6 @@ Read about the [12-month plan for the project, its history, and the technology w
 
 # Contact Us
 * on Twitter [@opendata_sco](https://twitter.com/opendata_sco) 
-* on [Slack: Open Data Scotland](https://join.slack.com/t/opendatascotland/shared_invite/zt-yfcc64tg-xIF1cOxkWbKZqI8ZBPzkGg) #od-bods
+* on [Slack: Open Data Scotland](https://join.slack.com/t/opendatascotland/shared_invite/zt-yfcc64tg-xIF1cOxkWbKZqI8ZBPzkGg) #ods-website
 
 We are looking for contributors!
