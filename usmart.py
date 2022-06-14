@@ -2,7 +2,7 @@ from processor import Processor
 
 class ProcessorUSMART(Processor):
     def __init__(self):
-        super().__init__(type='USMART')
+        super().__init__(type='usmart')
 
     def get_datasets(self, owner, start_url, fname):
         data = processor.get_json(start_url)
@@ -10,6 +10,7 @@ class ProcessorUSMART(Processor):
         print("Number of datasets: ", str(len(datasets)))
 
         prepped = []
+
 
         for dataset in datasets:
             Title = dataset["title"]
@@ -38,24 +39,24 @@ class ProcessorUSMART(Processor):
                     ManualTags.append(kw)
             else:
                 ManualTags.append(" ")
-                for item in filetypes:
-                    line = [
-                        Title,
-                        Owner,
-                        PageURL,
-                        filetypes[item],
-                        DateCreated,
-                        DateUpdated,
-                        "",
-                        "",
-                        item,
-                        "",
-                        " ".join(OriginalTags),
-                        " ".join(ManualTags),
-                        Licence,
-                        Description]
+            for item in filetypes:
+                line = [
+                    Title,
+                    Owner,
+                    PageURL,
+                    filetypes[item],
+                    DateCreated,
+                    DateUpdated,
+                    "",
+                    "",
+                    item,
+                    "",
+                    " ".join(OriginalTags),
+                    " ".join(ManualTags),
+                    Licence,
+                    Description]
 
-                    prepped.append(line)
+                prepped.append(line)
 
         processor.write_csv(fname, prepped)
 
