@@ -2,7 +2,7 @@ from processor import Processor
 
 class ProcessorUSMART(Processor):
     def __init__(self):
-        super().__init__(type='usmart')
+        super().__init__(type='USMART')
 
     def get_datasets(self, owner, start_url, fname):
         data = processor.get_json(start_url)
