@@ -155,11 +155,14 @@ if __name__ == "__main__":
                       "Spatial data": "map-spatial-data",
                       "Organisational data": "organisational-data"}
 
+    print("Getting datasets list")
     req = requests.get(ODR_URL, get_headers()).content.decode("utf-8")
+
     csvreader = csv.reader(req.splitlines(), delimiter=",")
     next(csvreader)
 
     for row in csvreader:
+        print("Processing dataset: " + row[0])
         owner = "National Library of Scotland"
         title = row[0]
         collection = row[1]
@@ -186,4 +189,5 @@ if __name__ == "__main__":
                   "NULL", "NULL", nls_license, "NULL", ]
         data.append(output)
 
+    print("Outputting to CSV")
     csv_output(header, data)
