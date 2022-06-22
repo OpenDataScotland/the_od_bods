@@ -98,34 +98,6 @@ def fetch_data_page_urls(url: str) -> str:
     return data_page_urls
 
 
-def fetch_page_data(url: str):
-    """
-    Fetches relevant metadata from page hosting direct link to dataset.
-
-    Args:
-        url (str): A URL for the page hosting direct link to dataset.
-    Returns:
-        asseturl (str): Direct link to the dataset.
-        filesize (str): Numerical component for dataset size (usually compressed)
-        sizeunit (str): Magnitude component for dataset size (eg KB/MB/GB)
-        numrecs (str): Currently nulled: for possibly scraping record numbers from file_contents
-    """
-    req = requests.get(url, get_headers())
-    soup = BeautifulSoup(req.content, "html.parser")
-    asseturl = "NULL"
-    filesize = "NULL"
-    sizeunit = "NULL"
-    file_contents = ""
-    size_data = ""
-
-    #data_type = row[4]
-
-
-
-
-    return asseturl, filesize, sizeunit, "NULL"
-
-
 def fetch_title(page):
     dataset_title = page.find("h1", class_="hestia-title").text
     return dataset_title
@@ -157,7 +129,7 @@ def fetch_create_date(page):
 
 
 def fetch_file_size(page):
-    headlines = soup.find_all("h4")
+    headlines = page.find_all("h4")
     for headline in headlines:
         if "All the data" in headline.contents[0]:
             file_contents = headline.find_next("p").contents[0]
@@ -168,7 +140,7 @@ def fetch_file_size(page):
                 size_data = ""
 
     if not file_contents:
-        headlines = soup.find_all("h3")
+        headlines = page.find_all("h3")
         for headline in headlines:
             if "All the data" in headline.contents[0]:
                 file_contents = headline.find_next("p").contents[0]
@@ -178,7 +150,7 @@ def fetch_file_size(page):
                 size_data = headline.find_next("strong").contents[0]
 
     if not file_contents:
-        headlines = soup.find_all("h3")
+        headlines = page.find_all("h3")
         for headline in headlines:
             if "Download the data" in headline.contents[0]:
                 file_contents = headline.find_next("p").contents[0]
@@ -212,6 +184,19 @@ def fetch_licenses(page):
         list_of_licenses.append(license)
 
     return list_of_licenses
+
+
+"""
+error with file_contents, line 142
+
+add explanatory comments to all functions (see original file)
+
+fill functions fetch_data_type and fetch_num_recs
+num_recs maybe by simply adding the numbers in the html line "File content"
+
+resolve British Army Lists conflict below, maybe same way as in licenses (returning a list, instead of single value)
+
+"""
 
 
 if __name__ == "__main__":
@@ -259,7 +244,6 @@ if __name__ == "__main__":
                 file_unit = "NULL"
                 num_recs = "NULL"
             else:"""
-            asset_url, file_size, file_unit, num_recs = fetch_page_data(url)
 
             output = [title, owner, pageurl, asset_url, create_date, "NULL", file_size, file_unit, data_type, num_recs,
                       "NULL", "NULL", nls_license, "NULL", ]
