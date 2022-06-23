@@ -129,6 +129,11 @@ def fetch_create_date(page):
 
 
 def fetch_file_size(page):
+    filesize = "NULL"
+    sizeunit = "NULL"
+    file_contents = ""
+    size_data = ""
+
     headlines = page.find_all("h4")
     for headline in headlines:
         if "All the data" in headline.contents[0]:
@@ -167,11 +172,35 @@ def fetch_file_size(page):
 
 
 def fetch_data_type(page):
-    pass
+    list_of_types = []
+    content = page.find(string=re.compile("File content"))
+    parts = content.split(":")
+    files = parts[1].split(";")
+    for item in files:
+        break_up = item.split(" ")
+        file_type = break_up[2]
+        amount_recs += amount
+
+    print("parts:", amount_recs, list_of_types)
+    return amount_recs, list_of_types
 
 
-def fetch_num_recs(page):
-    pass
+def fetch_num_recs_and_data_types(page):
+    amount_recs = 0
+    list_of_types = []
+    content = page.find(string=re.compile("File content"))
+    parts = content.split(":")
+    files = parts[1].split(";")
+
+    for item in files:
+        break_up = item.split(" ")
+        amount = int(break_up[1])
+        file_type = break_up[2]
+        #print(amount, file_type)
+        amount_recs += amount
+        list_of_types.append(file_type)
+
+    return list_of_types, amount_recs
 
 
 def fetch_licenses(page):
@@ -187,12 +216,7 @@ def fetch_licenses(page):
 
 
 """
-error with file_contents, line 142
-
 add explanatory comments to all functions (see original file)
-
-fill functions fetch_data_type and fetch_num_recs
-num_recs maybe by simply adding the numbers in the html line "File content"
 
 resolve British Army Lists conflict below, maybe same way as in licenses (returning a list, instead of single value)
 
@@ -231,9 +255,8 @@ if __name__ == "__main__":
             file_size, file_unit = fetch_file_size(soup)
             print("file_size:", file_size)
             print("file_unit:", file_unit)
-            data_type = fetch_data_type(soup)
+            data_type, num_recs = fetch_num_recs_and_data_types(soup)
             print("data_type:", data_type)
-            num_recs = fetch_num_recs(soup)
             print(("num_recs:", num_recs))
             nls_license = fetch_licenses(soup)
             print("nls_license:", nls_license)
@@ -252,39 +275,3 @@ if __name__ == "__main__":
 
     print("Outputting to CSV")
     csv_output(header, data)
-
-
-
-"""
-    for row in csvreader:
-        print("Processing dataset: " + row[0])
-        owner = "National Library of Scotland"
-        title = row[0]
-        collection = row[1]
-        create_date = row[2]
-        data_type = row[4]
-        nls_license = row[6]
-
-        outer_url = f"https://data.nls.uk/data/{category_match[collection]}/"
-
-        if title == "Encyclopaedia Britannica, 1771-1860":  # Hardcoded because ODR and page has mismatching dates
-            pageurl = "https://data.nls.uk/data/digitised-collections/encyclopaedia-britannica/"
-        else:
-            pageurl = fetch_page_url(title, outer_url)
-
-        if title == "British Army Lists":  # Contains 4 separate download links: temporarily nulled to prevent conflicts
-            asset_url = "NULL"
-            file_size = "NULL"
-            file_unit = "NULL"
-            num_recs = "NULL"
-        else:
-            asset_url, file_size, file_unit, num_recs = fetch_page_data(pageurl)
-
-        output = [title, owner, pageurl, asset_url, create_date, "NULL", file_size, file_unit, data_type, num_recs,
-                  "NULL", "NULL", nls_license, "NULL", ]
-        data.append(output)
-
-    print("Outputting to CSV")
-    csv_output(header, data)
-
-"""
