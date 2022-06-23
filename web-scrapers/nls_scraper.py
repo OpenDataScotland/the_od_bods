@@ -28,29 +28,6 @@ def get_headers():
     return headers
 
 
-def fetch_category_links():
-    """
-        Fetches links to data category pages from ODR_URL.
-
-        Returns:
-            list_of_links (List): A list of URLs linking to the pages for each data category.
-        """
-    list_of_links = []
-    initial_req = requests.get(ODR_URL, get_headers())
-    initial_soup = BeautifulSoup(initial_req.text, "html.parser")
-    data_button = initial_soup.find("li", id="menu-item-41")
-    dropdown_list = data_button.find_all("li")
-
-    for dropdown_item in dropdown_list:
-        a_tag = dropdown_item.find("a")
-        link = a_tag.get("href")
-        list_of_links.append(link)
-
-    print(list_of_links)
-    return list_of_links
-
-
-
 def csv_output(header, data):
     """
     Create output csv file of the final data scrapped from website.
@@ -73,38 +50,75 @@ def csv_output(header, data):
             writer.writerow(record)
 
 
-def fetch_data_page_urls(url: str) -> str:
+def fetch_category_links():
     """
-    Fetches page url for dataset.
+        Fetches links to data category pages from ODR_URL. It uses the dropdown menu on the 'Data' button.
+
+        Returns:
+            list_of_links (List): A list of URLs linking to the pages for each data category.
+    """
+    list_of_links = []
+    initial_req = requests.get(ODR_URL, get_headers())
+    initial_soup = BeautifulSoup(initial_req.text, "html.parser")
+    data_button = initial_soup.find("li", id="menu-item-41")
+    dropdown_list = data_button.find_all("li")
+
+    for dropdown_item in dropdown_list:
+        a_tag = dropdown_item.find("a")
+        link = a_tag.get("href")
+        list_of_links.append(link)
+
+    print(list_of_links) # for logging and debugging
+    return list_of_links
+
+
+def fetch_data_page_urls(url: str) -> list:
+    """
+    Fetches page urls for datasets in each data category.
 
     Args:
-        title (str): The title of the dataset, from the ODR.
         url (str): A URL for the category the dataset is in.
     Returns:
-        pageurl (str): A URL linking to the parent page for the dataset.
+        data_page_urls (List): A list of URLs linking to the parent pages for the datasets.
     """
     req = requests.get(url, get_headers())  # opens page for each data category
     soup = BeautifulSoup(req.content, "html.parser")
 
     data_page_urls = []
     captions = soup.select("figcaption")
-    # print(captions) # debugging help
+    # print(captions) # for debugging
     for caption in captions:
-        # print(caption) # debugging help
+        # print(caption) # for debugging
         for tag in caption.find_all("a"):
             data_page_urls.append(tag.get("href"))
-    print(data_page_urls)
 
+    print(data_page_urls) # for logging and debugging
     return data_page_urls
 
 
-def fetch_title(page):
+def fetch_title(page: str) -> str:
+    """
+    Fetches title/name of the specific dataset.
+
+    Args:
+        page (str): A URL for the specific dataset.
+    Returns:
+        dataset_title (str): A name of the dataset.
+    """
     dataset_title = page.find("h1", class_="hestia-title").text
     return dataset_title
 
 
-def fetch_asset_url(page):
-    #print("asset_url", page)
+def fetch_asset_url(page: str) -> str:
+    """
+    Fetches url to the data files of the specific dataset.
+
+    Args:
+        page (str): A URL for the specific dataset.
+    Returns:
+        asseturl (str): A url to the data files of the specific dataset.
+    """
+    asseturl = "NULL"
     possible_button_text = ["Download full dataset", "Download the dataset", "Download the data", ]
 
     buttons = page.find_all("a", class_="wp-block-button__link no-border-radius")
@@ -122,13 +136,33 @@ def fetch_asset_url(page):
     return asseturl
 
 
-def fetch_create_date(page):
+def fetch_create_date(page: str) -> str:
+    """
+    Fetches the publication date of the specific dataset.
+
+    Args:
+        page (str): A URL for the specific dataset.
+    Returns:
+        date (str): A publication date.
+    """
     publication = page.find(string=re.compile("Publication"))
-    date = publication.split(" ")[2]
+    if not publication == None:
+        date = publication.split(" ")[2]
+    else:
+        date = "NULL"
     return date
 
 
 def fetch_file_size(page):
+    """
+    Fetches the file size and size unit of the specific dataset.
+
+    Args:
+        page (str): A URL for the specific dataset.
+    Returns:
+        filesize (str): the number of the size of the whole dataset.
+        sizeunit (str): the unit for the size of the dataset.
+    """
     filesize = "NULL"
     sizeunit = "NULL"
     file_contents = ""
@@ -171,55 +205,57 @@ def fetch_file_size(page):
     return filesize, sizeunit
 
 
-def fetch_data_type(page):
-    list_of_types = []
-    content = page.find(string=re.compile("File content"))
-    parts = content.split(":")
-    files = parts[1].split(";")
-    for item in files:
-        break_up = item.split(" ")
-        file_type = break_up[2]
-        amount_recs += amount
+def fetch_num_recs_and_data_types(page: str) -> tuple:
+    """
+    Fetches the data types and the number of files of the specific dataset.
 
-    print("parts:", amount_recs, list_of_types)
-    return amount_recs, list_of_types
-
-
-def fetch_num_recs_and_data_types(page):
+    Args:
+        page (str): A URL for the specific dataset.
+    Returns:
+        list_of_types (List): A list of file types present in the dataset.
+        amount_recs (int): A number of files in the dataset.
+    """
     amount_recs = 0
     list_of_types = []
     content = page.find(string=re.compile("File content"))
-    parts = content.split(":")
-    files = parts[1].split(";")
+    if not content == None:
+        parts = content.split(":")
+        files = parts[1].split(";")
 
-    for item in files:
-        break_up = item.split(" ")
-        amount = int(break_up[1])
-        file_type = break_up[2]
-        #print(amount, file_type)
-        amount_recs += amount
-        list_of_types.append(file_type)
+        for item in files:
+            break_up = item.split(" ")
+            amount = int(break_up[1].replace(",", ""))
+            file_type = break_up[2]
+            #print(amount, file_type)
+            amount_recs += amount
+            list_of_types.append(file_type)
 
     return list_of_types, amount_recs
 
 
 def fetch_licenses(page):
+    """
+    Fetches the licenses, under which the specific dataset is published.
+
+    Args:
+        page (str): A URL for the specific dataset.
+    Returns:
+        list_of_licenses (List): A list of licenses.
+    """
     list_of_licenses = []
     figures = page.find_all("figure", class_="wp-block-image is-resized")
-
-    for figure in figures:
-        license = figure.find("img").get("alt")
-        #print("license:", license)
-        list_of_licenses.append(license)
+    if not figures == None:
+        for figure in figures:
+            license = figure.find("img").get("alt")
+            #print("license:", license)
+            list_of_licenses.append(license)
 
     return list_of_licenses
 
 
 """
-add explanatory comments to all functions (see original file)
-
 resolve British Army Lists conflict below, maybe same way as in licenses (returning a list, instead of single value)
-
+asseturl should become a list then, same for other parameters?
 """
 
 
@@ -231,7 +267,9 @@ if __name__ == "__main__":
     category_match = {"Digitised material collection": "digitised-collections",
                       "Metadata collection": "metadata-collections",
                       "Spatial data": "map-spatial-data",
-                      "Organisational data": "organisational-data"}
+                      "Organisational data": "organisational-data"} # this code is probably not required anymore, since
+    # category_match only served to assemble the data_page_url. But I kept it for the time being, in case we want to
+    # include this in the output_csv.
 
     print("Getting data categories")
     category_links = fetch_category_links()
@@ -246,7 +284,7 @@ if __name__ == "__main__":
             title = fetch_title(soup)
             print("title:", title)
             owner = "National Library of Scotland"
-            pageurl = category_link
+            pageurl = url
             print("pageurl:", pageurl)
             asset_url = fetch_asset_url(soup)
             print("asset_url:", asset_url)
@@ -271,7 +309,6 @@ if __name__ == "__main__":
             output = [title, owner, pageurl, asset_url, create_date, "NULL", file_size, file_unit, data_type, num_recs,
                       "NULL", "NULL", nls_license, "NULL", ]
             data.append(output)
-
 
     print("Outputting to CSV")
     csv_output(header, data)
