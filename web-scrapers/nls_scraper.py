@@ -72,7 +72,7 @@ def fetch_category_links():
         list_of_links.append(link)
     """
 
-    print(list_of_links) # for logging and debugging
+    #print(list_of_links) # for logging and debugging
     return list_of_links
 
 
@@ -96,7 +96,7 @@ def fetch_data_page_urls(url: str) -> list:
         for tag in caption.find_all("a"):
             data_page_urls.append(tag.get("href"))
 
-    print(data_page_urls) # for logging and debugging
+    #print(data_page_urls) # for logging and debugging
     return data_page_urls
 
 
@@ -315,30 +315,6 @@ def fetch_licences(page):
     return [tidy_licence(f.find("a").get("href")) for f in figures]
 
 
-    """
-    list_of_licences = []
-
-    figures = page.find_all("figure", class_="wp-block-image is-resized")
-    # print("figures1", figures)
-    if figures == None or figures == []:
-        figures = page.find_all("figure", class_="wp-block-image size-medium is-resized")
-        # print("figures2", figures)
-        if figures == None or figures == []:
-            figures = page.find_all("figure", class_="wp-block-image size-large is-resized")
-            # print("figures3", figures)
-
-    if not figures == None:
-        for figure in figures:
-            licence_url = figure.find("a").get("href")
-            # print("licence:", licence)
-            tidied_licence = tidy_licence(licence_url)
-            list_of_licences.append(tidied_licence)
-
-    return list_of_licences
-    """
-
-
-### Tidy licence names
 def tidy_licence(licence_name):
     """ Temporary licence conversion to match export2jkan -- FOR ANALYTICS ONLY, will discard in 2022Q2 Milestone
     Returns:
@@ -401,23 +377,23 @@ if __name__ == "__main__":
             req = requests.get(url, get_headers())
             soup = BeautifulSoup(req.content, "html.parser")
             title = fetch_title(soup)
-            print("title:", title)
+            #print("title:", title)
             owner = "National Library of Scotland"
             pageurl = url
-            print("pageurl:", pageurl)
+            #print("pageurl:", pageurl)
             asset_url = fetch_asset_url(soup)
-            print("asset_url:", asset_url)
+            #print("asset_url:", asset_url)
             create_date = fetch_create_date(soup)
-            print("create_date:", create_date)
+            #print("create_date:", create_date)
             file_size, file_unit = fetch_file_size(soup)
-            print("file_size:", file_size)
-            print("file_unit:", file_unit)
+            #print("file_size:", file_size)
+            #print("file_unit:", file_unit)
             data_type = fetch_data_types(soup)
-            print("data_type:", data_type)
+            #print("data_type:", data_type)
             num_recs = fetch_num_recs(soup)
-            print(("num_recs:", num_recs))
+            #print(("num_recs:", num_recs))
             nls_licence = fetch_licences(soup)
-            print("nls_licence:", nls_licence)
+            #print("nls_licence:", nls_licence)
 
             """if title == "British Army Lists":  # Contains 4 separate download links: temporarily nulled to prevent conflicts
                 asset_url = "NULL"
@@ -438,8 +414,6 @@ if __name__ == "__main__":
 issues with this scraper:
 - if publication date present on webpage, then only year. In the csv it is the complete date
 - for two data sets, the file types are not listed the same way as the other pages. Needs to be addressed, if possible
-
 - resolve British Army Lists conflict below, maybe same way as in licenses (returning a list, instead of single value)
 -> asseturl should become a list then, same for other parameters? Discuss with team first
-
 """
