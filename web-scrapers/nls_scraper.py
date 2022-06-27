@@ -224,13 +224,52 @@ def fetch_num_recs_and_data_types(page: str) -> tuple:
 
         for item in files:
             break_up = item.split(" ")
+            # print("break_up", break_up)
             amount = int(break_up[1].replace(",", ""))
-            file_type = break_up[2]
+            file_type = break_up[2:]
+            # print("file_type", file_type)
+            lowercase_file_types = []
+            for item in file_type:
+                lowercase_file_type = item.lower().strip('.()')
+                lowercase_file_types.append(lowercase_file_type)
+            print("lowercase_file_types", lowercase_file_types)
+            tidied_file_type = tidy_data_type(lowercase_file_types)
             #print(amount, file_type)
             amount_recs += amount
-            list_of_types.append(file_type)
+            list_of_types.append(tidied_file_type)
 
     return list_of_types, amount_recs
+
+
+def tidy_data_type(file_type):
+    """ Temporary data type conversion
+    Returns:
+        string: a tidied data type name
+    """
+    known_data_types= {
+        'plain text': 'TXT',
+        'text': 'TXT',
+        'txt': 'TXT',
+        'csv': 'CSV',
+        'tsv': 'TSV',
+        'zip': 'ZIP',
+        'html': 'HTML',
+        'mets': 'METS XML',
+        'alto': 'ALTO XML',
+        'image': 'Image',
+        'xml': 'XML',
+    }
+    tidied_data_type = "NULL"
+    if str(file_type) == []:
+        tidied_data_type = "No file type"
+    else:
+        for type in file_type:
+            print("type", type)
+            if type in known_data_types:
+                tidied_data_type = known_data_types[type]
+        #else:
+        #    tidied_data_type = "Custom file type: " + str(file_type)
+    return tidied_data_type
 
 
 def fetch_licences(page):
@@ -246,24 +285,14 @@ def fetch_licences(page):
     list_of_licences = []
 
     figures = page.find_all("figure", class_="wp-block-image is-resized")
-    print("figures1", figures)
+    # print("figures1", figures)
     if figures == None or figures == []:
         figures = page.find_all("figure", class_="wp-block-image size-medium is-resized")
-        print("figures2", figures)
+        # print("figures2", figures)
         if figures == None or figures == []:
             figures = page.find_all("figure", class_="wp-block-image size-large is-resized")
-            print("figures3", figures)
+            # print("figures3", figures)
 
-    """
-        if not figures == None:
-            for figure in figures:
-                licence = figure.find("img").get("alt")
-                if licence == "": # one of the data pages does not provide content for the 'alt' tag of the licence image.
-                    licence = figure.find("a").get("href")
-                # print("licence:", licence)
-                tidied_licence = tidy_licence(licence)
-                list_of_licences.append(tidied_licence)
-        """
     if not figures == None:
         for figure in figures:
             licence_url = figure.find("a").get("href")
