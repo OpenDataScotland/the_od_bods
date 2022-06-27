@@ -198,30 +198,43 @@ def clean_data(dataframe):
     ### Tidy licence names
     def tidy_licence(licence_name):
         """ Temporary licence conversion to match export2jkan -- FOR ANALYTICS ONLY, will discard in 2022Q2 Milestone
-
         Returns:
             string: a tidied licence name
         """
-        known_licences= {
-                    'https://creativecommons.org/licenses/by-sa/3.0/': 'Creative Commons Attribution Share-Alike 3.0',
-                    'Creative Commons Attribution 4.0':'Creative Commons Attribution 4.0',
-                    'https://creativecommons.org/licenses/by/4.0/legalcode':'Creative Commons Attribution 4.0',
-                    'OGL3':'Open Government Licence v3.0',
-                    'Open Government Licence 3.0 (United Kingdom)':'Open Government Licence v3.0',
-                    'UK Open Government Licence (OGL)':'Open Government Licence v3.0',
-                    'uk-ogl':'Open Government Licence v3.0',
-                    'Open Data Commons Open Database License 1.0':'Open Data Commons Open Database License 1.0',
-                    'http://opendatacommons.org/licenses/odbl/1-0/':'Open Data Commons Open Database License 1.0',
-                    'http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/':'Open Government Licence v2.0',
-                    'http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/':'Open Government Licence v3.0',
-                    }
+        known_licences = {
+            'https://creativecommons.org/licenses/by-sa/3.0/': 'Creative Commons Attribution Share-Alike 3.0',
+            'Creative Commons Attribution 4.0': 'Creative Commons Attribution 4.0 International',
+            'https://creativecommons.org/licenses/by/4.0': 'Creative Commons Attribution 4.0 International',
+            'https://creativecommons.org/licenses/by/4.0/': 'Creative Commons Attribution 4.0 International',
+            'https://creativecommons.org/licenses/by/4.0/legalcode': 'Creative Commons Attribution 4.0 International',
+            'CC BY 4.0': 'Creative Commons Attribution 4.0 International',
+            'CC-BY 4.0': 'Creative Commons Attribution 4.0 International',
+            'OGL3': 'Open Government Licence v3.0',
+            'Open Government Licence 3.0 (United Kingdom)': 'Open Government Licence v3.0',
+            'UK Open Government Licence (OGL)': 'Open Government Licence v3.0',
+            'uk-ogl': 'Open Government Licence v3.0',
+            'Open Data Commons Open Database License 1.0': 'Open Data Commons Open Database License 1.0',
+            'http://opendatacommons.org/licenses/odbl/1-0/': 'Open Data Commons Open Database License 1.0',
+            'http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/': 'Open Government Licence v2.0',
+            'http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/': 'Open Government Licence v3.0',
+            'https://creativecommons.org/publicdomain/mark/1.0/': 'Public Domain',
+            'Public Domain Mark 1.0': 'Public Domain',
+            'Public Domain': 'Public Domain',
+            'Public domain': 'Public Domain',
+            'CC0': 'Creative Commons CC0',
+            'CCO': 'Creative Commons CC0',
+            'https://creativecommons.org/share-your-work/public-domain/cc0': 'Creative Commons CC0',
+            'https://rightsstatements.org/page/NoC-NC/1.0/': 'Non-Commercial Use Only',
+        }
         if licence_name in known_licences:
             tidied_licence = known_licences[licence_name]
-        elif str(licence_name)=="nan":
+        elif str(licence_name) == "nan" or str(licence_name) == "No Known Copyright" or str(
+                licence_name) == "http://rightsstatements.org/vocab/NKC/1.0/":
             tidied_licence = "No licence"
         else:
             tidied_licence = "Custom licence: " + str(licence_name)
         return tidied_licence
+
     data['License'] = data['License'].apply(tidy_licence)
 
 
