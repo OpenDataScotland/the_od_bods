@@ -57,16 +57,20 @@ def fetch_category_links():
         Returns:
             list_of_links (List): A list of URLs linking to the pages for each data category.
     """
-    list_of_links = []
     initial_req = requests.get(ODR_URL, get_headers())
     initial_soup = BeautifulSoup(initial_req.text, "html.parser")
     data_button = initial_soup.find("li", id="menu-item-41")
     dropdown_list = data_button.find_all("li")
 
+    list_of_links = [dropdown_item.find("a").get("href") for dropdown_item in dropdown_list]
+
+    """
+    list_of_links = []
     for dropdown_item in dropdown_list:
         a_tag = dropdown_item.find("a")
         link = a_tag.get("href")
         list_of_links.append(link)
+    """
 
     print(list_of_links) # for logging and debugging
     return list_of_links
@@ -96,12 +100,12 @@ def fetch_data_page_urls(url: str) -> list:
     return data_page_urls
 
 
-def fetch_title(page: str) -> str:
+def fetch_title(page: BeautifulSoup) -> str:
     """
     Fetches title/name of the specific dataset.
 
     Args:
-        page (str): A URL for the specific dataset.
+        page (BeautifulSoup object): A BeautifulSoup object for the specific dataset.
     Returns:
         dataset_title (str): A name of the dataset.
     """
@@ -109,12 +113,12 @@ def fetch_title(page: str) -> str:
     return dataset_title
 
 
-def fetch_asset_url(page: str) -> str:
+def fetch_asset_url(page: BeautifulSoup) -> str:
     """
     Fetches url to the data files of the specific dataset.
 
     Args:
-        page (str): A URL for the specific dataset.
+        page (BeautifulSoup object): A BeautifulSoup object for the specific dataset.
     Returns:
         asseturl (str): A url to the data files of the specific dataset.
     """
@@ -136,12 +140,12 @@ def fetch_asset_url(page: str) -> str:
     return asseturl
 
 
-def fetch_create_date(page: str) -> str:
+def fetch_create_date(page: BeautifulSoup) -> str:
     """
     Fetches the publication date of the specific dataset.
 
     Args:
-        page (str): A URL for the specific dataset.
+        page (BeautifulSoup object): A BeautifulSoup object for the specific dataset.
     Returns:
         date (str): A publication date.
     """
@@ -153,12 +157,12 @@ def fetch_create_date(page: str) -> str:
     return date
 
 
-def fetch_file_size(page):
+def fetch_file_size(page: BeautifulSoup) -> tuple:
     """
     Fetches the file size and size unit of the specific dataset.
 
     Args:
-        page (str): A URL for the specific dataset.
+        page (BeautifulSoup object): A BeautifulSoup object for the specific dataset.
     Returns:
         filesize (str): the number of the size of the whole dataset.
         sizeunit (str): the unit for the size of the dataset.
@@ -205,18 +209,16 @@ def fetch_file_size(page):
     return filesize, sizeunit
 
 
-def fetch_num_recs_and_data_types(page: str) -> tuple:
+def fetch_num_recs(page: BeautifulSoup) -> int:
     """
-    Fetches the data types and the number of files of the specific dataset.
+    Fetches the number of files of the specific dataset.
 
     Args:
-        page (str): A URL for the specific dataset.
+        page (BeautifulSoup object): A BeautifulSoup object for the specific dataset.
     Returns:
-        list_of_types (List): A list of file types present in the dataset.
         amount_recs (int): A number of files in the dataset.
     """
     amount_recs = 0
-    list_of_types = []
     content = page.find(string=re.compile("File content"))
     if not content == None:
         parts = content.split(":")
@@ -226,25 +228,50 @@ def fetch_num_recs_and_data_types(page: str) -> tuple:
             break_up = item.split(" ")
             # print("break_up", break_up)
             amount = int(break_up[1].replace(",", ""))
+            amount_recs += amount
+
+    return amount_recs
+
+
+
+def fetch_data_types(page: BeautifulSoup) -> list:
+    """
+    Fetches the data types of the specific dataset.
+
+    Args:
+        page (BeautifulSoup object): A BeautifulSoup object for the specific dataset.
+    Returns:
+        list_of_types (List): A list of file types present in the dataset.
+    """
+    list_of_types = []
+    content = page.find(string=re.compile("File content"))
+    if not content == None:
+        parts = content.split(":")
+        files = parts[1].split(";")
+
+        for item in files:
+            break_up = item.split(" ")
+            # print("break_up", break_up)
             file_type = break_up[2:]
             # print("file_type", file_type)
             lowercase_file_types = []
             for item in file_type:
                 lowercase_file_type = item.lower().strip('.()')
                 lowercase_file_types.append(lowercase_file_type)
-            print("lowercase_file_types", lowercase_file_types)
+            #print("lowercase_file_types", lowercase_file_types)
             tidied_file_type = tidy_data_type(lowercase_file_types)
-            #print(amount, file_type)
-            amount_recs += amount
             list_of_types.append(tidied_file_type)
+            list_of_types = list(set(list_of_types)) # make it a list, where each file type is listed just once
 
-    return list_of_types, amount_recs
+    return list_of_types
 
 
 def tidy_data_type(file_type):
     """ Temporary data type conversion
+    Args:
+        file_type (str): the data type name
     Returns:
-        string: a tidied data type name
+        tidied_data_type (str): a tidied data type name
     """
     known_data_types= {
         'plain text': 'TXT',
@@ -264,7 +291,7 @@ def tidy_data_type(file_type):
         tidied_data_type = "No file type"
     else:
         for type in file_type:
-            print("type", type)
+            #print("type", type)
             if type in known_data_types:
                 tidied_data_type = known_data_types[type]
         #else:
@@ -277,11 +304,18 @@ def fetch_licences(page):
     Fetches the licences, under which the specific dataset is published.
 
     Args:
-        page (str): A URL for the specific dataset.
+        page (BeautifulSoup object): A BeautifulSoup object for the specific dataset.
     Returns:
         list_of_licences (List): A list of licences.
     """
+    if not (figures := page.find_all("figure", class_="wp-block-image is-resized")):
+        if not (figures := page.find_all("figure", class_="wp-block-image size-medium is-resized")):
+            if not (figures := page.find_all("figure", class_="wp-block-image size-large is-resized")):
+                return []
+    return [tidy_licence(f.find("a").get("href")) for f in figures]
 
+
+    """
     list_of_licences = []
 
     figures = page.find_all("figure", class_="wp-block-image is-resized")
@@ -301,6 +335,7 @@ def fetch_licences(page):
             list_of_licences.append(tidied_licence)
 
     return list_of_licences
+    """
 
 
 ### Tidy licence names
@@ -343,13 +378,6 @@ def tidy_licence(licence_name):
     return tidied_licence
 
 
-
-"""
-resolve British Army Lists conflict below, maybe same way as in licenses (returning a list, instead of single value)
-asseturl should become a list then, same for other parameters?
-"""
-
-
 if __name__ == "__main__":
     # Record Headings
     header = ["Title", "Owner", "PageURL", "AssetURL", "DateCreated", "DateUpdated", "FileSize", "FileSizeUnit",
@@ -384,8 +412,9 @@ if __name__ == "__main__":
             file_size, file_unit = fetch_file_size(soup)
             print("file_size:", file_size)
             print("file_unit:", file_unit)
-            data_type, num_recs = fetch_num_recs_and_data_types(soup)
+            data_type = fetch_data_types(soup)
             print("data_type:", data_type)
+            num_recs = fetch_num_recs(soup)
             print(("num_recs:", num_recs))
             nls_licence = fetch_licences(soup)
             print("nls_licence:", nls_licence)
@@ -408,5 +437,9 @@ if __name__ == "__main__":
 """
 issues with this scraper:
 - if publication date present on webpage, then only year. In the csv it is the complete date
-- file types in new scraper not in standard format, yet. But this can be adopted, if I know what the standard is
+- for two data sets, the file types are not listed the same way as the other pages. Needs to be addressed, if possible
+
+- resolve British Army Lists conflict below, maybe same way as in licenses (returning a list, instead of single value)
+-> asseturl should become a list then, same for other parameters? Discuss with team first
+
 """
