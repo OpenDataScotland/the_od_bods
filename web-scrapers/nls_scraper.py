@@ -233,24 +233,86 @@ def fetch_num_recs_and_data_types(page: str) -> tuple:
     return list_of_types, amount_recs
 
 
-def fetch_licenses(page):
+def fetch_licences(page):
     """
-    Fetches the licenses, under which the specific dataset is published.
+    Fetches the licences, under which the specific dataset is published.
 
     Args:
         page (str): A URL for the specific dataset.
     Returns:
-        list_of_licenses (List): A list of licenses.
+        list_of_licences (List): A list of licences.
     """
-    list_of_licenses = []
+
+    list_of_licences = []
+
     figures = page.find_all("figure", class_="wp-block-image is-resized")
+    print("figures1", figures)
+    if figures == None or figures == []:
+        figures = page.find_all("figure", class_="wp-block-image size-medium is-resized")
+        print("figures2", figures)
+        if figures == None or figures == []:
+            figures = page.find_all("figure", class_="wp-block-image size-large is-resized")
+            print("figures3", figures)
+
+    """
+        if not figures == None:
+            for figure in figures:
+                licence = figure.find("img").get("alt")
+                if licence == "": # one of the data pages does not provide content for the 'alt' tag of the licence image.
+                    licence = figure.find("a").get("href")
+                # print("licence:", licence)
+                tidied_licence = tidy_licence(licence)
+                list_of_licences.append(tidied_licence)
+        """
     if not figures == None:
         for figure in figures:
-            license = figure.find("img").get("alt")
-            #print("license:", license)
-            list_of_licenses.append(license)
+            licence_url = figure.find("a").get("href")
+            # print("licence:", licence)
+            tidied_licence = tidy_licence(licence_url)
+            list_of_licences.append(tidied_licence)
 
-    return list_of_licenses
+    return list_of_licences
+
+
+### Tidy licence names
+def tidy_licence(licence_name):
+    """ Temporary licence conversion to match export2jkan -- FOR ANALYTICS ONLY, will discard in 2022Q2 Milestone
+    Returns:
+        string: a tidied licence name
+    """
+    known_licences= {
+        'https://creativecommons.org/licenses/by-sa/3.0/': 'Creative Commons Attribution Share-Alike 3.0',
+        'Creative Commons Attribution 4.0':'Creative Commons Attribution 4.0 International',
+        'https://creativecommons.org/licenses/by/4.0':'Creative Commons Attribution 4.0 International',
+        'https://creativecommons.org/licenses/by/4.0/':'Creative Commons Attribution 4.0 International',
+        'https://creativecommons.org/licenses/by/4.0/legalcode':'Creative Commons Attribution 4.0 International',
+        'CC BY 4.0':'Creative Commons Attribution 4.0 International',
+        'CC-BY 4.0': 'Creative Commons Attribution 4.0 International',
+        'OGL3':'Open Government Licence v3.0',
+        'Open Government Licence 3.0 (United Kingdom)':'Open Government Licence v3.0',
+        'UK Open Government Licence (OGL)':'Open Government Licence v3.0',
+        'uk-ogl':'Open Government Licence v3.0',
+        'Open Data Commons Open Database License 1.0':'Open Data Commons Open Database License 1.0',
+        'http://opendatacommons.org/licenses/odbl/1-0/':'Open Data Commons Open Database License 1.0',
+        'http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/':'Open Government Licence v2.0',
+        'http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/':'Open Government Licence v3.0',
+        'https://creativecommons.org/publicdomain/mark/1.0/':'Public Domain',
+        'Public Domain Mark 1.0':'Public Domain',
+        'Public Domain': 'Public Domain',
+        'Public domain': 'Public Domain',
+        'CC0':'Creative Commons CC0',
+        'CCO':'Creative Commons CC0',
+        'https://creativecommons.org/share-your-work/public-domain/cc0':'Creative Commons CC0',
+        'https://rightsstatements.org/page/NoC-NC/1.0/':'Non-Commercial Use Only',
+    }
+    if licence_name in known_licences:
+        tidied_licence = known_licences[licence_name]
+    elif str(licence_name)=="nan" or str(licence_name)=="No Known Copyright" or str(licence_name) == "http://rightsstatements.org/vocab/NKC/1.0/":
+        tidied_licence = "No licence"
+    else:
+        tidied_licence = "Custom licence: " + str(licence_name)
+    return tidied_licence
+
 
 
 """
@@ -296,8 +358,8 @@ if __name__ == "__main__":
             data_type, num_recs = fetch_num_recs_and_data_types(soup)
             print("data_type:", data_type)
             print(("num_recs:", num_recs))
-            nls_license = fetch_licenses(soup)
-            print("nls_license:", nls_license)
+            nls_licence = fetch_licences(soup)
+            print("nls_licence:", nls_licence)
 
             """if title == "British Army Lists":  # Contains 4 separate download links: temporarily nulled to prevent conflicts
                 asset_url = "NULL"
@@ -307,8 +369,15 @@ if __name__ == "__main__":
             else:"""
 
             output = [title, owner, pageurl, asset_url, create_date, "NULL", file_size, file_unit, data_type, num_recs,
-                      "NULL", "NULL", nls_license, "NULL", ]
+                      "NULL", "NULL", nls_licence, "NULL", ]
             data.append(output)
 
     print("Outputting to CSV")
     csv_output(header, data)
+
+
+"""
+issues with this scraper:
+- if publication date present on webpage, then only year. In the csv it is the complete date
+- file types in new scraper not in standard format, yet. But this can be adopted, if I know what the standard is
+"""
