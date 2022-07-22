@@ -61,12 +61,13 @@ def get_feeds(soup):
                 # get last updated
                 last_updated = get_last_updated(anchor.text)
                 # get size of file
-                try:
-                    filesize = urlopen(link).length
-                except Exception as e: 
-                    print("Couldn't get file size!")
-                    print(e)
-                    filesize = 0 
+                # try:
+                #     filesize = urlopen(link).length
+                # except Exception as e: 
+                #     print("Couldn't get file size!")
+                #     print(e)
+                #     filesize = 0 
+                filesize = 0
                 formatted_fs, unit = convert_size(filesize)
 
                 feed['files'][filename] = {'link': link, 'filesize': {'value':formatted_fs, 'unit': unit}, 'last-updated': last_updated, 'filetype': filename[-3:].upper()}
