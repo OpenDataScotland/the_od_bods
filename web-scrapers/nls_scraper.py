@@ -1,10 +1,11 @@
 # Packages: beautifulsoup4, csv, requests, math
 import requests
 import csv
+import re
 from bs4 import BeautifulSoup
 
 # Global Variables
-ODR_URL = "https://data.nls.uk/download/national-library-of-scotland-open-data-register-2019.csv"
+ODR_URL = "https://data.nls.uk/"
 
 
 def get_headers():
@@ -49,56 +50,84 @@ def csv_output(header, data):
             writer.writerow(record)
 
 
-def fetch_page_url(title: str, url: str) -> str:
+def fetch_category_links():
     """
-    Fetches page url for dataset.
+        Fetches links to data category pages from ODR_URL. It uses the dropdown menu on the 'Data' button.
+
+        Returns:
+            list_of_links (List): A list of URLs linking to the pages for each data category.
+    """
+    initial_req = requests.get(ODR_URL, get_headers())
+    initial_soup = BeautifulSoup(initial_req.text, "html.parser")
+    data_button = initial_soup.find("li", id="menu-item-41")
+    dropdown_list = data_button.find_all("li")
+
+    list_of_links = [dropdown_item.find("a").get("href") for dropdown_item in dropdown_list]
+
+    """
+    list_of_links = []
+    for dropdown_item in dropdown_list:
+        a_tag = dropdown_item.find("a")
+        link = a_tag.get("href")
+        list_of_links.append(link)
+    """
+
+    #print(list_of_links) # for logging and debugging
+    return list_of_links
+
+
+def fetch_data_page_urls(url: str) -> list:
+    """
+    Fetches page urls for datasets in each data category.
 
     Args:
-        title (str): The title of the dataset, from the ODR.
         url (str): A URL for the category the dataset is in.
     Returns:
-        pageurl (str): A URL linking to the parent page for the dataset.
+        data_page_urls (List): A list of URLs linking to the parent pages for the datasets.
     """
-    req = requests.get(url, get_headers())
+    req = requests.get(url, get_headers())  # opens page for each data category
     soup = BeautifulSoup(req.content, "html.parser")
 
-    outer_tags = soup.select("figcaption")
+    data_page_urls = []
+    captions = soup.select("figcaption")
+    # print(captions) # for debugging
+    for caption in captions:
+        # print(caption) # for debugging
+        for tag in caption.find_all("a"):
+            data_page_urls.append(tag.get("href"))
 
-    for outer_tag in outer_tags:
-        inner_tag = outer_tag.find(href=True)
-        if inner_tag:
-            cleaned_title = title.lower().replace(" ", "").replace("'", "’")
-            cleaned_contents = str(inner_tag.contents[0]).lower().replace(" ", "")
-            if cleaned_title in cleaned_contents:
-                return inner_tag["href"]
-
-    return "NULL"
+    #print(data_page_urls) # for logging and debugging
+    return data_page_urls
 
 
-def fetch_page_data(url: str):
+def fetch_title(page: BeautifulSoup) -> str:
     """
-    Fetches relevant metadata from page hosting direct link to dataset.
+    Fetches title/name of the specific dataset.
 
     Args:
-        url (str): A URL for the page hosting direct link to dataset.
+        page (BeautifulSoup object): A BeautifulSoup object for the specific dataset.
     Returns:
-        asseturl (str): Direct link to the dataset.
-        filesize (str): Numerical component for dataset size (usually compressed)
-        sizeunit (str): Magnitude component for dataset size (eg KB/MB/GB)
-        numrecs (str): Currently nulled: for possibly scraping record numbers from file_contents
+        dataset_title (str): A name of the dataset.
     """
-    req = requests.get(url, get_headers())
-    soup = BeautifulSoup(req.content, "html.parser")
+    dataset_title = page.find("h1", class_="hestia-title").text
+    return dataset_title
+
+
+def fetch_asset_url(page: BeautifulSoup) -> str:
+    """
+    Fetches url to the data files of the specific dataset.
+
+    Args:
+        page (BeautifulSoup object): A BeautifulSoup object for the specific dataset.
+    Returns:
+        asseturl (str): A url to the data files of the specific dataset.
+    """
     asseturl = "NULL"
-    filesize = "NULL"
-    sizeunit = "NULL"
-    file_contents = ""
-    size_data = ""
     possible_button_text = ["Download full dataset", "Download the dataset", "Download the data", ]
 
-    buttons = soup.find_all("a", class_="wp-block-button__link no-border-radius")
+    buttons = page.find_all("a", class_="wp-block-button__link no-border-radius")
     if not buttons:  # Because one collection's page uses a different button class
-        buttons = soup.find("div", class_="wp-block-button is-style-fill")
+        buttons = page.find("div", class_="wp-block-button is-style-fill")
         buttons = buttons.find_all("a", class_="wp-block-button__link")
 
     for button in buttons:
@@ -108,7 +137,42 @@ def fetch_page_data(url: str):
     if asseturl[:10] == "/download/":  # Make relative URLs absolute
         asseturl = "https://data.nls.uk" + asseturl
 
-    headlines = soup.find_all("h4")
+    return asseturl
+
+
+def fetch_create_date(page: BeautifulSoup) -> str:
+    """
+    Fetches the publication date of the specific dataset.
+
+    Args:
+        page (BeautifulSoup object): A BeautifulSoup object for the specific dataset.
+    Returns:
+        date (str): A publication date.
+    """
+    publication = page.find(string=re.compile("Publication"))
+    if not publication == None:
+        date = publication.split(" ")[2]
+    else:
+        date = "NULL"
+    return date
+
+
+def fetch_file_size(page: BeautifulSoup) -> tuple:
+    """
+    Fetches the file size and size unit of the specific dataset.
+
+    Args:
+        page (BeautifulSoup object): A BeautifulSoup object for the specific dataset.
+    Returns:
+        filesize (str): the number of the size of the whole dataset.
+        sizeunit (str): the unit for the size of the dataset.
+    """
+    filesize = "NULL"
+    sizeunit = "NULL"
+    file_contents = ""
+    size_data = ""
+
+    headlines = page.find_all("h4")
     for headline in headlines:
         if "All the data" in headline.contents[0]:
             file_contents = headline.find_next("p").contents[0]
@@ -119,7 +183,7 @@ def fetch_page_data(url: str):
                 size_data = ""
 
     if not file_contents:
-        headlines = soup.find_all("h3")
+        headlines = page.find_all("h3")
         for headline in headlines:
             if "All the data" in headline.contents[0]:
                 file_contents = headline.find_next("p").contents[0]
@@ -129,7 +193,7 @@ def fetch_page_data(url: str):
                 size_data = headline.find_next("strong").contents[0]
 
     if not file_contents:
-        headlines = soup.find_all("h3")
+        headlines = page.find_all("h3")
         for headline in headlines:
             if "Download the data" in headline.contents[0]:
                 file_contents = headline.find_next("p").contents[0]
@@ -142,7 +206,152 @@ def fetch_page_data(url: str):
         filesize = size_data.split()[2]
         sizeunit = size_data.split()[3]
 
-    return asseturl, filesize, sizeunit, "NULL"
+    return filesize, sizeunit
+
+
+def fetch_num_recs(page: BeautifulSoup) -> int:
+    """
+    Fetches the number of files of the specific dataset.
+
+    Args:
+        page (BeautifulSoup object): A BeautifulSoup object for the specific dataset.
+    Returns:
+        amount_recs (int): A number of files in the dataset.
+    """
+    amount_recs = 0
+    content = page.find(string=re.compile("File content"))
+    if not content == None:
+        parts = content.split(":")
+        files = parts[1].split(";")
+
+        for item in files:
+            break_up = item.split(" ")
+            # print("break_up", break_up)
+            amount = int(break_up[1].replace(",", ""))
+            amount_recs += amount
+
+    return amount_recs
+
+
+
+def fetch_data_types(page: BeautifulSoup) -> list:
+    """
+    Fetches the data types of the specific dataset.
+
+    Args:
+        page (BeautifulSoup object): A BeautifulSoup object for the specific dataset.
+    Returns:
+        list_of_types (List): A list of file types present in the dataset.
+    """
+    list_of_types = []
+    content = page.find(string=re.compile("File content"))
+    if not content == None:
+        parts = content.split(":")
+        files = parts[1].split(";")
+
+        for item in files:
+            break_up = item.split(" ")
+            # print("break_up", break_up)
+            file_type = break_up[2:]
+            # print("file_type", file_type)
+            lowercase_file_types = []
+            for item in file_type:
+                lowercase_file_type = item.lower().strip('.()')
+                lowercase_file_types.append(lowercase_file_type)
+            #print("lowercase_file_types", lowercase_file_types)
+            tidied_file_type = tidy_data_type(lowercase_file_types)
+            list_of_types.append(tidied_file_type)
+            list_of_types = list(set(list_of_types)) # make it a list, where each file type is listed just once
+
+    return list_of_types
+
+
+def tidy_data_type(file_type):
+    """ Temporary data type conversion
+    Args:
+        file_type (str): the data type name
+    Returns:
+        tidied_data_type (str): a tidied data type name
+    """
+    known_data_types= {
+        'plain text': 'TXT',
+        'text': 'TXT',
+        'txt': 'TXT',
+        'csv': 'CSV',
+        'tsv': 'TSV',
+        'zip': 'ZIP',
+        'html': 'HTML',
+        'mets': 'METS XML',
+        'alto': 'ALTO XML',
+        'image': 'Image',
+        'xml': 'XML',
+    }
+    tidied_data_type = "NULL"
+    if str(file_type) == []:
+        tidied_data_type = "No file type"
+    else:
+        for type in file_type:
+            #print("type", type)
+            if type in known_data_types:
+                tidied_data_type = known_data_types[type]
+        #else:
+        #    tidied_data_type = "Custom file type: " + str(file_type)
+    return tidied_data_type
+
+
+def fetch_licences(page):
+    """
+    Fetches the licences, under which the specific dataset is published.
+
+    Args:
+        page (BeautifulSoup object): A BeautifulSoup object for the specific dataset.
+    Returns:
+        list_of_licences (List): A list of licences.
+    """
+    if not (figures := page.find_all("figure", class_="wp-block-image is-resized")):
+        if not (figures := page.find_all("figure", class_="wp-block-image size-medium is-resized")):
+            if not (figures := page.find_all("figure", class_="wp-block-image size-large is-resized")):
+                return []
+    return [tidy_licence(f.find("a").get("href")) for f in figures]
+
+
+def tidy_licence(licence_name):
+    """ Temporary licence conversion to match export2jkan -- FOR ANALYTICS ONLY, will discard in 2022Q2 Milestone
+    Returns:
+        string: a tidied licence name
+    """
+    known_licences= {
+        'https://creativecommons.org/licenses/by-sa/3.0/': 'Creative Commons Attribution Share-Alike 3.0',
+        'Creative Commons Attribution 4.0':'Creative Commons Attribution 4.0 International',
+        'https://creativecommons.org/licenses/by/4.0':'Creative Commons Attribution 4.0 International',
+        'https://creativecommons.org/licenses/by/4.0/':'Creative Commons Attribution 4.0 International',
+        'https://creativecommons.org/licenses/by/4.0/legalcode':'Creative Commons Attribution 4.0 International',
+        'CC BY 4.0':'Creative Commons Attribution 4.0 International',
+        'CC-BY 4.0': 'Creative Commons Attribution 4.0 International',
+        'OGL3':'Open Government Licence v3.0',
+        'Open Government Licence 3.0 (United Kingdom)':'Open Government Licence v3.0',
+        'UK Open Government Licence (OGL)':'Open Government Licence v3.0',
+        'uk-ogl':'Open Government Licence v3.0',
+        'Open Data Commons Open Database License 1.0':'Open Data Commons Open Database License 1.0',
+        'http://opendatacommons.org/licenses/odbl/1-0/':'Open Data Commons Open Database License 1.0',
+        'http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/':'Open Government Licence v2.0',
+        'http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/':'Open Government Licence v3.0',
+        'https://creativecommons.org/publicdomain/mark/1.0/':'Public Domain',
+        'Public Domain Mark 1.0':'Public Domain',
+        'Public Domain': 'Public Domain',
+        'Public domain': 'Public Domain',
+        'CC0':'Creative Commons CC0',
+        'CCO':'Creative Commons CC0',
+        'https://creativecommons.org/share-your-work/public-domain/cc0':'Creative Commons CC0',
+        'https://rightsstatements.org/page/NoC-NC/1.0/':'Non-Commercial Use Only',
+    }
+    if licence_name in known_licences:
+        tidied_licence = known_licences[licence_name]
+    elif str(licence_name)=="nan" or str(licence_name)=="No Known Copyright" or str(licence_name) == "http://rightsstatements.org/vocab/NKC/1.0/":
+        tidied_licence = "No licence"
+    else:
+        tidied_licence = "Custom licence: " + str(licence_name)
+    return tidied_licence
 
 
 if __name__ == "__main__":
@@ -153,41 +362,58 @@ if __name__ == "__main__":
     category_match = {"Digitised material collection": "digitised-collections",
                       "Metadata collection": "metadata-collections",
                       "Spatial data": "map-spatial-data",
-                      "Organisational data": "organisational-data"}
+                      "Organisational data": "organisational-data"} # this code is probably not required anymore, since
+    # category_match only served to assemble the data_page_url. But I kept it for the time being, in case we want to
+    # include this in the output_csv.
 
-    print("Getting datasets list")
-    req = requests.get(ODR_URL, get_headers()).content.decode("utf-8")
+    print("Getting data categories")
+    category_links = fetch_category_links()
 
-    csvreader = csv.reader(req.splitlines(), delimiter=",")
-    next(csvreader)
+    print("Getting data page URLs")
+    for category_link in category_links:
+        url_list = fetch_data_page_urls(category_link)
+        print("Getting data")
+        for url in url_list:
+            req = requests.get(url, get_headers())
+            soup = BeautifulSoup(req.content, "html.parser")
+            title = fetch_title(soup)
+            #print("title:", title)
+            owner = "National Library of Scotland"
+            pageurl = url
+            #print("pageurl:", pageurl)
+            asset_url = fetch_asset_url(soup)
+            #print("asset_url:", asset_url)
+            create_date = fetch_create_date(soup)
+            #print("create_date:", create_date)
+            file_size, file_unit = fetch_file_size(soup)
+            #print("file_size:", file_size)
+            #print("file_unit:", file_unit)
+            data_type = fetch_data_types(soup)
+            #print("data_type:", data_type)
+            num_recs = fetch_num_recs(soup)
+            #print(("num_recs:", num_recs))
+            nls_licence = fetch_licences(soup)
+            #print("nls_licence:", nls_licence)
 
-    for row in csvreader:
-        print("Processing dataset: " + row[0])
-        owner = "National Library of Scotland"
-        title = row[0]
-        collection = row[1]
-        create_date = row[2]
-        data_type = row[4]
-        nls_license = row[6]
+            """if title == "British Army Lists":  # Contains 4 separate download links: temporarily nulled to prevent conflicts
+                asset_url = "NULL"
+                file_size = "NULL"
+                file_unit = "NULL"
+                num_recs = "NULL"
+            else:"""
 
-        outer_url = f"https://data.nls.uk/data/{category_match[collection]}/"
-
-        if title == "Encyclopaedia Britannica, 1771-1860":  # Hardcoded because ODR and page has mismatching dates
-            pageurl = "https://data.nls.uk/data/digitised-collections/encyclopaedia-britannica/"
-        else:
-            pageurl = fetch_page_url(title, outer_url)
-
-        if title == "British Army Lists":  # Contains 4 separate download links: temporarily nulled to prevent conflicts
-            asset_url = "NULL"
-            file_size = "NULL"
-            file_unit = "NULL"
-            num_recs = "NULL"
-        else:
-            asset_url, file_size, file_unit, num_recs = fetch_page_data(pageurl)
-
-        output = [title, owner, pageurl, asset_url, create_date, "NULL", file_size, file_unit, data_type, num_recs,
-                  "NULL", "NULL", nls_license, "NULL", ]
-        data.append(output)
+            output = [title, owner, pageurl, asset_url, create_date, "NULL", file_size, file_unit, data_type, num_recs,
+                      "NULL", "NULL", nls_licence, "NULL", ]
+            data.append(output)
 
     print("Outputting to CSV")
     csv_output(header, data)
+
+
+"""
+issues with this scraper:
+- if publication date present on webpage, then only year. In the csv it is the complete date
+- for two data sets, the file types are not listed the same way as the other pages. Needs to be addressed, if possible
+- resolve British Army Lists conflict below, maybe same way as in licenses (returning a list, instead of single value)
+-> asseturl should become a list then, same for other parameters? Discuss with team first
+"""
