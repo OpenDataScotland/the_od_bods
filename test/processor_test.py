@@ -100,6 +100,17 @@ def test_get_licence_link(test_input):
     assert mock_processor.get_license(dataset) == "test_url"
 
 
+def test_write_csv():
+    """test write to csv"""
+    mock_processor = ValidMockProcessor()
+    fname = "test/mock_data/mockcsv.csv"
+    prepped = [["a", "b", "c"], ["1", "2", "3"]]
+    mock_processor.write_csv(fname, prepped)
+    with open(fname, 'r') as check_file:
+        line_count = len(check_file.readlines())
+    assert line_count == len(prepped)+1
+
+
 def test_get_datasets():
     """test the get_datasets function has been properly attached"""
     mock_processor = ValidMockProcessor()
