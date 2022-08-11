@@ -5,7 +5,7 @@ import pytest
 from ..processor import Processor
 
 
-class ValidSudoProcessor(Processor):
+class ValidMockProcessor(Processor):
     """This class represents a super class of processor
     it must contain the function get_datasets to be valid
     """
@@ -21,17 +21,17 @@ def test_get_urls():
     """test we can read urls based on type
     currently a rubbish test as we can't spoof the csv were the urls are kept
     """
-    sudo_processor = ValidSudoProcessor()
-    sudo_processor.get_urls()
+    mock_processor = ValidMockProcessor()
+    mock_processor.get_urls()
     expected_urls = {}
-    assert sudo_processor.urls == expected_urls
+    assert mock_processor.urls == expected_urls
 
 
 def test_get_json():
     """test we can load local json file (as if it were from a url)"""
-    sudo_processor = ValidSudoProcessor()
-    json_data = sudo_processor.get_json(
-        "file:///" + os.path.abspath("test/sudo_data/get_json_data.json")
+    mock_processor = ValidMockProcessor()
+    json_data = mock_processor.get_json(
+        "file:///" + os.path.abspath("test/mock_data/get_json_data.json")
     )
     assert json_data["test_data"][0]["Title"] == "test_title"
 
@@ -78,10 +78,10 @@ def test_get_json():
 )
 def test_get_licence_text(test_input, expected):
     """test licence can be picked out from text"""
-    sudo_processor = ValidSudoProcessor()
+    mock_processor = ValidMockProcessor()
     dataset = {"attributes": {"structuredLicense": {"text": ""}}}
     dataset["attributes"]["structuredLicense"]["text"] = test_input
-    assert sudo_processor.get_license(dataset) == expected
+    assert mock_processor.get_license(dataset) == expected
 
 
 @pytest.mark.parametrize(
@@ -94,16 +94,16 @@ def test_get_licence_text(test_input, expected):
 )
 def test_get_licence_link(test_input):
     """test licence can be picked out from link"""
-    sudo_processor = ValidSudoProcessor()
+    mock_processor = ValidMockProcessor()
     dataset = {"attributes": {"structuredLicense": {"text": "", "url": "test_url"}}}
     dataset["attributes"]["structuredLicense"]["text"] = test_input
-    assert sudo_processor.get_license(dataset) == "test_url"
+    assert mock_processor.get_license(dataset) == "test_url"
 
 
 def test_get_datasets():
     """test the get_datasets function has been properly attached"""
-    sudo_processor = ValidSudoProcessor()
+    mock_processor = ValidMockProcessor()
     name = "test_name"
     url = "test_url"
     fname = "test_file"
-    assert sudo_processor.get_datasets(name, url, fname) == "getting data"
+    assert mock_processor.get_datasets(name, url, fname) == "getting data"
