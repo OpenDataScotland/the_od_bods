@@ -52,7 +52,7 @@ class Processor:
             return ""
 
     def write_csv(self, fname, prepped):
-        with open(fname, 'w') as csvf:
+        with open(fname, 'w', newline='') as csvf:
             w = csv.writer(csvf, quoting=csv.QUOTE_MINIMAL)
             w.writerow(self.header)
             for r in prepped:
