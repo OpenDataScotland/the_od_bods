@@ -7,7 +7,7 @@ jobs:
     name: Auto-assign issue to project
     runs-on: ubuntu-latest
     env:
-      MY_GITHUB_TOKEN: '${{ secrets.AUTO_ASSIGN_TOKEN }}'
+      GITHUB_TOKEN: '${{ secrets.AUTO_ASSIGN_TOKEN }}'
     steps:
       - name: Assign new issues to project
         uses: srggrs/assign-one-project-github-action@1.2.1
