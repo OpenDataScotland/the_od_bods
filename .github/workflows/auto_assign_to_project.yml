@@ -1,8 +1,7 @@
 name: Issue auto-assigner
 on:
-  issues: null
-  types:
-    - opened
+  issues:
+    types: [ opened ]
 jobs:
   auto_assign:
     name: Auto-assign issue to project
