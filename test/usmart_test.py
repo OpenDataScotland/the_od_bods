@@ -11,13 +11,16 @@ test_proc = ProcessorUSMART()
 
 def test_get_datasets():
     owner = "test_owner"
+    outputdir = "test/mock_data/output/usmart/"
     start_url = "file:///" + os.path.abspath(
         "test/mock_data/usmart/dumfries and galloway.json"
     )
-    fname = "test/mock_data/output/usmart/dumfries and galloway.csv"
+    fname = outputdir + "dumfries and galloway.csv"
     expected_fname = "test/mock_data/usmart/expected/dumfries and galloway.csv"
     if os.path.exists(fname):
         os.remove(fname)
+    if not os.path.exists(outputdir):
+        os.makedirs(outputdir)
     test_proc.get_datasets(owner, start_url, fname)
     with open(fname, "r", newline="") as check_file:
         csv_check_file = csv.reader(check_file)

@@ -103,11 +103,15 @@ def test_get_licence_link(test_input):
 def test_write_csv():
     """test write to csv"""
     mock_processor = ValidMockProcessor()
-    fname = "test/mock_data/output/mockcsv.csv"
+    outputdir = "test/mock_data/output/"
+    fname = outputdir + "mockcsv.csv"
     prepped = [["a", "b", "c"], ["1", "2", "3"]]
     if os.path.exists(fname):
         os.remove(fname)
-
+    if os.path.exists(fname):
+        os.remove(fname)
+    if not os.path.exists(outputdir):
+        os.makedirs(outputdir)
     mock_processor.write_csv(fname, prepped)
     with open(fname, "r") as check_file:
         line_count = len(check_file.readlines())
