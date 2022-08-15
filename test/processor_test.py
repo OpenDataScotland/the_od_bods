@@ -103,7 +103,7 @@ def test_get_licence_link(test_input):
 def test_write_csv():
     """test write to csv"""
     mock_processor = ValidMockProcessor()
-    fname = "test/mock_data/mockcsv.csv"
+    fname = "test/mock_data/output/mockcsv.csv"
     prepped = [["a", "b", "c"], ["1", "2", "3"]]
     if os.path.exists(fname):
         os.remove(fname)
