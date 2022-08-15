@@ -1,4 +1,3 @@
-from wsgiref.validate import validator
 import validators
 import filecmp
 import os
