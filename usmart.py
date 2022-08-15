@@ -18,13 +18,13 @@ class ProcessorUSMART(Processor):
         for dataset in datasets:
             Title = dataset["title"]
             Owner = owner
-            PageURL = dataset["landingPage"]
+            PageURL = dataset["landingPage"].replace(" ", "%20")
             filetypes = dict()
             for dist in dataset["distribution"]:
                 if "/" in dist["mediaType"]:
-                    filetypes[dist["mediaType"].split("/")[1]] = dist["accessURL"]
+                    filetypes[dist["mediaType"].split("/")[1]] = dist["accessURL"].replace(" ", "%20")
                 else:
-                    filetypes[dist["mediaType"]] = dist["accessURL"]
+                    filetypes[dist["mediaType"]] = dist["accessURL"].replace(" ", "%20")
 
             DateCreated = dataset["createdAt"]
             DateUpdated = dataset["modified"]
