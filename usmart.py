@@ -1,4 +1,7 @@
-from processor import Processor
+try:
+    from processor import Processor
+except:
+    from .processor import Processor
 
 class ProcessorUSMART(Processor):
     def __init__(self):
@@ -61,4 +64,6 @@ class ProcessorUSMART(Processor):
         processor.write_csv(fname, prepped)
 
 processor = ProcessorUSMART()
-processor.process()
+
+if __name__ == "__main__":
+    processor.process()
