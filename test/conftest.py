@@ -1,4 +1,5 @@
 import validators
+import pytest
 import dateutil.parser
 
 
@@ -17,13 +18,14 @@ def is_valid_date(date_to_check):
 
 def is_valid_number(str_to_check):
     if str_to_check:
-        return isinstance(str_to_check, float)
+        return str_to_check.isnumeric()
     return True
 
 
 def is_valid_file_size_unit(str_to_check):
     file_size_units = [
         "",  # blank
+        "bytes",  # alt bytes
         "B",  # Bytes
         "kB",
         "MB",

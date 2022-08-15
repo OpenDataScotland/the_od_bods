@@ -3,7 +3,7 @@ import os
 import re
 import csv
 import pytest
-from .csv_validator import csv_checker
+from .conftest import csv_checker
 from ..dcat import ProcessorDCAT
 
 test_proc = ProcessorDCAT()
