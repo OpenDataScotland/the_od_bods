@@ -11,10 +11,10 @@ test_proc = ProcessorDCAT()
 
 def test_get_datasets():
     owner = "test_owner"
-    outputdir = "test/mock_data/output/dcat/"
-    start_url = "file:///" + os.path.abspath("test/mock_data/dcat/glasgow.json")
+    outputdir = "tests/mock_data/output/dcat/"
+    start_url = "file:///" + os.path.abspath("tests/mock_data/dcat/glasgow.json")
     fname = outputdir + "glasgow.csv"
-    expected_fname = "test/mock_data/dcat/expected/glasgow.csv"
+    expected_fname = "tests/mock_data/dcat/expected/glasgow.csv"
     if os.path.exists(fname):
         os.remove(fname)
     if not os.path.exists(outputdir):

@@ -363,5 +363,5 @@ MigrationBackup/
 FodyWeavers.xsd
 
 # Pytest outputs
-test/mock_data/mockcsv.csv
-test/mock_data/output
+tests/mock_data/mockcsv.csv
+tests/mock_data/output

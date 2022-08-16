@@ -31,7 +31,7 @@ def test_get_json():
     """test we can load local json file (as if it were from a url)"""
     mock_processor = ValidMockProcessor()
     json_data = mock_processor.get_json(
-        "file:///" + os.path.abspath("test/mock_data/get_json_data.json")
+        "file:///" + os.path.abspath("tests/mock_data/get_json_data.json")
     )
     assert json_data["test_data"][0]["Title"] == "test_title"
 
@@ -103,7 +103,7 @@ def test_get_licence_link(test_input):
 def test_write_csv():
     """test write to csv"""
     mock_processor = ValidMockProcessor()
-    outputdir = "test/mock_data/output/"
+    outputdir = "tests/mock_data/output/"
     fname = outputdir + "mockcsv.csv"
     prepped = [["a", "b", "c"], ["1", "2", "3"]]
     if os.path.exists(fname):

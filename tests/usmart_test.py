@@ -4,17 +4,19 @@ import re
 import csv
 import pytest
 from .conftest import csv_checker
-from ..arcgis import ProcessorARCGIS
+from ..usmart import ProcessorUSMART
 
-test_proc = ProcessorARCGIS()
+test_proc = ProcessorUSMART()
 
 
 def test_get_datasets():
     owner = "test_owner"
-    outputdir = "test/mock_data/output/arcgis/"
-    start_url = "file:///" + os.path.abspath("test/mock_data/arcgis/renfrew.json")
-    fname = outputdir + "renfrew.csv"
-    expected_fname = "test/mock_data/arcgis/expected/renfrew.csv"
+    outputdir = "tests/mock_data/output/usmart/"
+    start_url = "file:///" + os.path.abspath(
+        "tests/mock_data/usmart/dumfries and galloway.json"
+    )
+    fname = outputdir + "dumfries and galloway.csv"
+    expected_fname = "tests/mock_data/usmart/expected/dumfries and galloway.csv"
     if os.path.exists(fname):
         os.remove(fname)
     if not os.path.exists(outputdir):
