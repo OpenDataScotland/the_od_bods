@@ -203,32 +203,29 @@ def clean_data(dataframe):
         """
         known_licences = {
             'https://creativecommons.org/licenses/by-sa/3.0/': 'Creative Commons Attribution Share-Alike 3.0',
-            'Creative Commons Attribution 4.0': 'Creative Commons Attribution 4.0 International',
+            'creative commons attribution 4.0': 'Creative Commons Attribution 4.0 International',
             'https://creativecommons.org/licenses/by/4.0': 'Creative Commons Attribution 4.0 International',
-            'https://creativecommons.org/licenses/by/4.0/': 'Creative Commons Attribution 4.0 International',
-            'https://creativecommons.org/licenses/by/4.0/legalcode': 'Creative Commons Attribution 4.0 International',
-            'CC BY 4.0': 'Creative Commons Attribution 4.0 International',
-            'CC-BY 4.0': 'Creative Commons Attribution 4.0 International',
-            'OGL3': 'Open Government Licence v3.0',
-            'Open Government Licence 3.0 (United Kingdom)': 'Open Government Licence v3.0',
-            'UK Open Government Licence (OGL)': 'Open Government Licence v3.0',
-            'uk-ogl': 'Open Government Licence v3.0',
-            'Open Data Commons Open Database License 1.0': 'Open Data Commons Open Database License 1.0',
-            'http://opendatacommons.org/licenses/odbl/1-0/': 'Open Data Commons Open Database License 1.0',
+            'by 4.0': 'Creative Commons Attribution 4.0 International',
+            'ogl': 'Open Government Licence v3.0',
+            'open government': 'Open Government Licence v3.0',
             'http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/': 'Open Government Licence v2.0',
             'http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/': 'Open Government Licence v3.0',
-            'https://creativecommons.org/publicdomain/mark/1.0/': 'Public Domain',
-            'Public Domain Mark 1.0': 'Public Domain',
-            'Public Domain': 'Public Domain',
-            'Public domain': 'Public Domain',
-            'CC0': 'Creative Commons CC0',
-            'CCO': 'Creative Commons CC0',
-            'https://creativecommons.org/share-your-work/public-domain/cc0': 'Creative Commons CC0',
-            'https://rightsstatements.org/page/NoC-NC/1.0/': 'Non-Commercial Use Only',
+            'open data commons open database license 1.0': 'Open Data Commons Open Database License 1.0',
+            'http://opendatacommons.org/licenses/odbl/1-0/': 'Open Data Commons Open Database License 1.0',
+            'https://creativecommons.org/publicdomain/mark/1.0/': 'No licence',
+            'public domain': 'No licence',
+            'cc0': 'No licence',
+            'cco': 'No licence',
+            'https://creativecommons.org/share-your-work/public-domain/cc0': 'No licence',
+            'https://rightsstatements.org/page/noc-nc/1.0/': 'Non-Commercial Use Only',
         }
-        if licence_name in known_licences:
-            tidied_licence = known_licences[licence_name]
-        elif str(licence_name) == "nan" or str(licence_name) == "No Known Copyright" or str(
+
+        for key in known_licences.keys():
+            if str(licence_name).lower().__contains__(key):
+                tidied_licence = known_licences[key]
+                return tidied_licence
+
+        if str(licence_name) == "nan" or str(licence_name) == "No Known Copyright" or str(
                 licence_name) == "http://rightsstatements.org/vocab/NKC/1.0/":
             tidied_licence = "No licence"
         else:
@@ -238,6 +235,53 @@ def clean_data(dataframe):
     data['License'] = data['License'].apply(tidy_licence)
 
 
+    def tidy_data_type(file_type):
+        """ Temporary data type conversion
+        Args:
+            file_type (str): the data type name
+        Returns:
+            tidied_data_type (str): a tidied data type name
+        """
+        known_data_types = {
+            'plain text': 'TXT',
+            'text': 'TXT',
+            'txt': 'TXT',
+            'csv': 'CSV',
+            'tsv': 'TSV',
+            'zip': 'ZIP',
+            'html': 'HTML',
+            'image': 'Image',
+            'mets': 'XML',
+            'alto': 'XML',
+            'xml': 'XML',
+            'vnd.ms-excel': 'EXCEL Spreadsheet',
+            'xls': 'EXCEL Spreadsheet',
+            'xlsx': 'EXCEL Spreadsheet',
+            'WEB MAP': 'WEB MAP',
+            'WEB MAPPING APPLICATION': 'WEB MAP',
+            'ARCGIS GEOSERVICE': 'ARCGIS GEOSERVICE',
+            'ARCGIS GEOSERVICES REST API': 'ARCGIS GEOSERVICE',
+        }
+        tidied_data_type = "NULL"
+        print("Test", type(file_type), file_type)
+        if type(file_type) != list:
+            list_file_type = []
+            list_file_type.append(file_type)
+            file_type = list_file_type
+            print("file_type", file_type)
+        if str(file_type) == []:
+            tidied_data_type = "No file type"
+        else:
+            for data_type in file_type:
+                print("data_type", data_type)
+                if data_type in known_data_types:
+                    tidied_data_type = known_data_types[data_type]
+            # else:
+            #    tidied_data_type = "Custom file type: " + str(file_type)
+        return tidied_data_type
+
+    ### Inconsistencies in casing for FileType
+    data['FileType'] = data['FileType'].apply(tidy_data_type)
     return data 
 
 if __name__=="__main__":
