@@ -33,8 +33,13 @@ def merge_data():
     for dirname, _, filenames in os.walk(folder):
         for filename in filenames:
             if filename.rsplit(".", 1)[1] == "csv":
-                source_arcgis = source_arcgis.append(
-                    pd.read_csv(folder + r"/" + filename, parse_dates=["DateUpdated"])
+                source_arcgis = pd.concat(
+                    [
+                        source_arcgis,
+                        pd.read_csv(
+                            folder + r"/" + filename, parse_dates=["DateUpdated"]
+                        ),
+                    ]
                 )
     source_arcgis["Source"] = "arcgis API"
 
@@ -44,8 +49,13 @@ def merge_data():
     for dirname, _, filenames in os.walk(folder):
         for filename in filenames:
             if filename.rsplit(".", 1)[1] == "csv":
-                source_usmart = source_usmart.append(
-                    pd.read_csv(folder + r"/" + filename, parse_dates=["DateUpdated"])
+                source_usmart = pd.concat(
+                    [
+                        source_usmart,
+                        pd.read_csv(
+                            folder + r"/" + filename, parse_dates=["DateUpdated"]
+                        ),
+                    ]
                 )
     source_usmart["Source"] = "USMART API"
     source_usmart["DateUpdated"] = source_usmart["DateUpdated"].apply(
@@ -58,8 +68,13 @@ def merge_data():
     for dirname, _, filenames in os.walk(folder):
         for filename in filenames:
             if filename.rsplit(".", 1)[1] == "csv":
-                source_dcat = source_dcat.append(
-                    pd.read_csv(folder + r"/" + filename, parse_dates=["DateUpdated"])
+                source_dcat = pd.concat(
+                    [
+                        source_dcat,
+                        pd.read_csv(
+                            folder + r"/" + filename, parse_dates=["DateUpdated"]
+                        ),
+                    ]
                 )
                 # source_dcat['DateUpdated'] = source_dcat['DateUpdated'].dt.tz_convert(None)
     source_dcat["Source"] = "DCAT feed"
@@ -70,14 +85,26 @@ def merge_data():
     for dirname, _, filenames in os.walk(folder):
         for filename in filenames:
             if filename.rsplit(".", 1)[1] == "csv":
-                source_scraped = source_scraped.append(
-                    pd.read_csv(folder + r"/" + filename, parse_dates=["DateUpdated"])
+                source_scraped = pd.concat(
+                    [
+                        source_scraped,
+                        pd.read_csv(
+                            folder + r"/" + filename, parse_dates=["DateUpdated"]
+                        ),
+                    ]
                 )
     source_scraped["Source"] = "Web Scraped"
 
     ### Combine all data into single table
-    data = source_ckan.append(
-        [source_arcgis, source_usmart, source_scotgov, source_dcat, source_scraped]
+    data = pd.concat(
+        [
+            source_ckan,
+            source_arcgis,
+            source_usmart,
+            source_scotgov,
+            source_dcat,
+            source_scraped,
+        ]
     )
     data = data.reset_index(drop=True)
 
