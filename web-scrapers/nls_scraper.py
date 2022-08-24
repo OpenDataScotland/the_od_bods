@@ -19,12 +19,12 @@ def get_headers():
         headers (Dictionary) : header values
     """
     headers = {
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Methods': 'GET',
-        'Access-Control-Allow-Headers': 'Content-Type',
-        'Access-Control-Max-Age': '3600',
-        'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0'
-        }
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET",
+        "Access-Control-Allow-Headers": "Content-Type",
+        "Access-Control-Max-Age": "3600",
+        "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0",
+    }
     return headers
 
 
@@ -39,7 +39,7 @@ def csv_output(header, data):
         NULL
     """
 
-    with open('../data/scraped-results/output_nls.csv', 'w', encoding='UTF8') as f:
+    with open("../data/scraped-results/output_nls.csv", "w", encoding="UTF8") as f:
         writer = csv.writer(f)
 
         # write the header
@@ -52,17 +52,19 @@ def csv_output(header, data):
 
 def fetch_category_links():
     """
-        Fetches links to data category pages from ODR_URL. It uses the dropdown menu on the 'Data' button.
+    Fetches links to data category pages from ODR_URL. It uses the dropdown menu on the 'Data' button.
 
-        Returns:
-            list_of_links (List): A list of URLs linking to the pages for each data category.
+    Returns:
+        list_of_links (List): A list of URLs linking to the pages for each data category.
     """
     initial_req = requests.get(ODR_URL, get_headers())
     initial_soup = BeautifulSoup(initial_req.text, "html.parser")
     data_button = initial_soup.find("li", id="menu-item-41")
     dropdown_list = data_button.find_all("li")
 
-    list_of_links = [dropdown_item.find("a").get("href") for dropdown_item in dropdown_list]
+    list_of_links = [
+        dropdown_item.find("a").get("href") for dropdown_item in dropdown_list
+    ]
 
     """
     list_of_links = []
@@ -72,7 +74,7 @@ def fetch_category_links():
         list_of_links.append(link)
     """
 
-    #print(list_of_links) # for logging and debugging
+    # print(list_of_links) # for logging and debugging
     return list_of_links
 
 
@@ -96,7 +98,7 @@ def fetch_data_page_urls(url: str) -> list:
         for tag in caption.find_all("a"):
             data_page_urls.append(tag.get("href"))
 
-    #print(data_page_urls) # for logging and debugging
+    # print(data_page_urls) # for logging and debugging
     return data_page_urls
 
 
@@ -123,7 +125,11 @@ def fetch_asset_url(page: BeautifulSoup) -> str:
         asseturl (str): A url to the data files of the specific dataset.
     """
     asseturl = "NULL"
-    possible_button_text = ["Download full dataset", "Download the dataset", "Download the data", ]
+    possible_button_text = [
+        "Download full dataset",
+        "Download the dataset",
+        "Download the data",
+    ]
 
     buttons = page.find_all("a", class_="wp-block-button__link no-border-radius")
     if not buttons:  # Because one collection's page uses a different button class
@@ -233,7 +239,6 @@ def fetch_num_recs(page: BeautifulSoup) -> int:
     return amount_recs
 
 
-
 def fetch_data_types(page: BeautifulSoup) -> list:
     """
     Fetches the data types of the specific dataset.
@@ -256,45 +261,47 @@ def fetch_data_types(page: BeautifulSoup) -> list:
             # print("file_type", file_type)
             lowercase_file_types = []
             for item in file_type:
-                lowercase_file_type = item.lower().strip('.()')
+                lowercase_file_type = item.lower().strip(".()")
                 lowercase_file_types.append(lowercase_file_type)
-            #print("lowercase_file_types", lowercase_file_types)
+            # print("lowercase_file_types", lowercase_file_types)
             tidied_file_type = tidy_data_type(lowercase_file_types)
             list_of_types.append(tidied_file_type)
-            list_of_types = list(set(list_of_types)) # make it a list, where each file type is listed just once
+            list_of_types = list(
+                set(list_of_types)
+            )  # make it a list, where each file type is listed just once
 
     return list_of_types
 
 
 def tidy_data_type(file_type):
-    """ Temporary data type conversion
+    """Temporary data type conversion
     Args:
         file_type (str): the data type name
     Returns:
         tidied_data_type (str): a tidied data type name
     """
-    known_data_types= {
-        'plain text': 'TXT',
-        'text': 'TXT',
-        'txt': 'TXT',
-        'csv': 'CSV',
-        'tsv': 'TSV',
-        'zip': 'ZIP',
-        'html': 'HTML',
-        'mets': 'METS XML',
-        'alto': 'ALTO XML',
-        'image': 'Image',
-        'xml': 'XML',
+    known_data_types = {
+        "plain text": "TXT",
+        "text": "TXT",
+        "txt": "TXT",
+        "csv": "CSV",
+        "tsv": "TSV",
+        "zip": "ZIP",
+        "html": "HTML",
+        "mets": "METS XML",
+        "alto": "ALTO XML",
+        "image": "Image",
+        "xml": "XML",
     }
     tidied_data_type = "NULL"
     if str(file_type) == []:
         tidied_data_type = "No file type"
     else:
         for type in file_type:
-            #print("type", type)
+            # print("type", type)
             if type in known_data_types:
                 tidied_data_type = known_data_types[type]
-        #else:
+        # else:
         #    tidied_data_type = "Custom file type: " + str(file_type)
     return tidied_data_type
 
@@ -309,45 +316,57 @@ def fetch_licences(page):
         list_of_licences (List): A list of licences.
     """
     if not (figures := page.find_all("figure", class_="wp-block-image is-resized")):
-        if not (figures := page.find_all("figure", class_="wp-block-image size-medium is-resized")):
-            if not (figures := page.find_all("figure", class_="wp-block-image size-large is-resized")):
+        if not (
+            figures := page.find_all(
+                "figure", class_="wp-block-image size-medium is-resized"
+            )
+        ):
+            if not (
+                figures := page.find_all(
+                    "figure", class_="wp-block-image size-large is-resized"
+                )
+            ):
                 return []
     return [tidy_licence(f.find("a").get("href")) for f in figures]
 
 
 def tidy_licence(licence_name):
-    """ Temporary licence conversion to match export2jkan -- FOR ANALYTICS ONLY, will discard in 2022Q2 Milestone
+    """Temporary licence conversion to match export2jkan -- FOR ANALYTICS ONLY, will discard in 2022Q2 Milestone
     Returns:
         string: a tidied licence name
     """
-    known_licences= {
-        'https://creativecommons.org/licenses/by-sa/3.0/': 'Creative Commons Attribution Share-Alike 3.0',
-        'Creative Commons Attribution 4.0':'Creative Commons Attribution 4.0 International',
-        'https://creativecommons.org/licenses/by/4.0':'Creative Commons Attribution 4.0 International',
-        'https://creativecommons.org/licenses/by/4.0/':'Creative Commons Attribution 4.0 International',
-        'https://creativecommons.org/licenses/by/4.0/legalcode':'Creative Commons Attribution 4.0 International',
-        'CC BY 4.0':'Creative Commons Attribution 4.0 International',
-        'CC-BY 4.0': 'Creative Commons Attribution 4.0 International',
-        'OGL3':'Open Government Licence v3.0',
-        'Open Government Licence 3.0 (United Kingdom)':'Open Government Licence v3.0',
-        'UK Open Government Licence (OGL)':'Open Government Licence v3.0',
-        'uk-ogl':'Open Government Licence v3.0',
-        'Open Data Commons Open Database License 1.0':'Open Data Commons Open Database License 1.0',
-        'http://opendatacommons.org/licenses/odbl/1-0/':'Open Data Commons Open Database License 1.0',
-        'http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/':'Open Government Licence v2.0',
-        'http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/':'Open Government Licence v3.0',
-        'https://creativecommons.org/publicdomain/mark/1.0/':'Public Domain',
-        'Public Domain Mark 1.0':'Public Domain',
-        'Public Domain': 'Public Domain',
-        'Public domain': 'Public Domain',
-        'CC0':'Creative Commons CC0',
-        'CCO':'Creative Commons CC0',
-        'https://creativecommons.org/share-your-work/public-domain/cc0':'Creative Commons CC0',
-        'https://rightsstatements.org/page/NoC-NC/1.0/':'Non-Commercial Use Only',
+    known_licences = {
+        "https://creativecommons.org/licenses/by-sa/3.0/": "Creative Commons Attribution Share-Alike 3.0",
+        "Creative Commons Attribution 4.0": "Creative Commons Attribution 4.0 International",
+        "https://creativecommons.org/licenses/by/4.0": "Creative Commons Attribution 4.0 International",
+        "https://creativecommons.org/licenses/by/4.0/": "Creative Commons Attribution 4.0 International",
+        "https://creativecommons.org/licenses/by/4.0/legalcode": "Creative Commons Attribution 4.0 International",
+        "CC BY 4.0": "Creative Commons Attribution 4.0 International",
+        "CC-BY 4.0": "Creative Commons Attribution 4.0 International",
+        "OGL3": "Open Government Licence v3.0",
+        "Open Government Licence 3.0 (United Kingdom)": "Open Government Licence v3.0",
+        "UK Open Government Licence (OGL)": "Open Government Licence v3.0",
+        "uk-ogl": "Open Government Licence v3.0",
+        "Open Data Commons Open Database License 1.0": "Open Data Commons Open Database License 1.0",
+        "http://opendatacommons.org/licenses/odbl/1-0/": "Open Data Commons Open Database License 1.0",
+        "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/": "Open Government Licence v2.0",
+        "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/": "Open Government Licence v3.0",
+        "https://creativecommons.org/publicdomain/mark/1.0/": "Public Domain",
+        "Public Domain Mark 1.0": "Public Domain",
+        "Public Domain": "Public Domain",
+        "Public domain": "Public Domain",
+        "CC0": "Creative Commons CC0",
+        "CCO": "Creative Commons CC0",
+        "https://creativecommons.org/share-your-work/public-domain/cc0": "Creative Commons CC0",
+        "https://rightsstatements.org/page/NoC-NC/1.0/": "Non-Commercial Use Only",
     }
     if licence_name in known_licences:
         tidied_licence = known_licences[licence_name]
-    elif str(licence_name)=="nan" or str(licence_name)=="No Known Copyright" or str(licence_name) == "http://rightsstatements.org/vocab/NKC/1.0/":
+    elif (
+        str(licence_name) == "nan"
+        or str(licence_name) == "No Known Copyright"
+        or str(licence_name) == "http://rightsstatements.org/vocab/NKC/1.0/"
+    ):
         tidied_licence = "No licence"
     else:
         tidied_licence = "Custom licence: " + str(licence_name)
@@ -356,13 +375,29 @@ def tidy_licence(licence_name):
 
 if __name__ == "__main__":
     # Record Headings
-    header = ["Title", "Owner", "PageURL", "AssetURL", "DateCreated", "DateUpdated", "FileSize", "FileSizeUnit",
-              "FileType", "NumRecords", "OriginalTags", "ManualTags", "License", "Description", ]
+    header = [
+        "Title",
+        "Owner",
+        "PageURL",
+        "AssetURL",
+        "DateCreated",
+        "DateUpdated",
+        "FileSize",
+        "FileSizeUnit",
+        "FileType",
+        "NumRecords",
+        "OriginalTags",
+        "ManualTags",
+        "License",
+        "Description",
+    ]
     data = []
-    category_match = {"Digitised material collection": "digitised-collections",
-                      "Metadata collection": "metadata-collections",
-                      "Spatial data": "map-spatial-data",
-                      "Organisational data": "organisational-data"} # this code is probably not required anymore, since
+    category_match = {
+        "Digitised material collection": "digitised-collections",
+        "Metadata collection": "metadata-collections",
+        "Spatial data": "map-spatial-data",
+        "Organisational data": "organisational-data",
+    }  # this code is probably not required anymore, since
     # category_match only served to assemble the data_page_url. But I kept it for the time being, in case we want to
     # include this in the output_csv.
 
@@ -377,23 +412,23 @@ if __name__ == "__main__":
             req = requests.get(url, get_headers())
             soup = BeautifulSoup(req.content, "html.parser")
             title = fetch_title(soup)
-            #print("title:", title)
+            # print("title:", title)
             owner = "National Library of Scotland"
             pageurl = url
-            #print("pageurl:", pageurl)
+            # print("pageurl:", pageurl)
             asset_url = fetch_asset_url(soup)
-            #print("asset_url:", asset_url)
+            # print("asset_url:", asset_url)
             create_date = fetch_create_date(soup)
-            #print("create_date:", create_date)
+            # print("create_date:", create_date)
             file_size, file_unit = fetch_file_size(soup)
-            #print("file_size:", file_size)
-            #print("file_unit:", file_unit)
+            # print("file_size:", file_size)
+            # print("file_unit:", file_unit)
             data_type = fetch_data_types(soup)
-            #print("data_type:", data_type)
+            # print("data_type:", data_type)
             num_recs = fetch_num_recs(soup)
-            #print(("num_recs:", num_recs))
+            # print(("num_recs:", num_recs))
             nls_licence = fetch_licences(soup)
-            #print("nls_licence:", nls_licence)
+            # print("nls_licence:", nls_licence)
 
             """if title == "British Army Lists":  # Contains 4 separate download links: temporarily nulled to prevent conflicts
                 asset_url = "NULL"
@@ -402,8 +437,22 @@ if __name__ == "__main__":
                 num_recs = "NULL"
             else:"""
 
-            output = [title, owner, pageurl, asset_url, create_date, "NULL", file_size, file_unit, data_type, num_recs,
-                      "NULL", "NULL", nls_licence, "NULL", ]
+            output = [
+                title,
+                owner,
+                pageurl,
+                asset_url,
+                create_date,
+                "NULL",
+                file_size,
+                file_unit,
+                data_type,
+                num_recs,
+                "NULL",
+                "NULL",
+                nls_licence,
+                "NULL",
+            ]
             data.append(output)
 
     print("Outputting to CSV")
