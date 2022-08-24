@@ -234,16 +234,17 @@ def fetch_num_recs(page: BeautifulSoup) -> int:
 
 
 
-def fetch_data_types(page: BeautifulSoup) -> list:
+def fetch_data_types(page: BeautifulSoup) -> str:
     """
     Fetches the data types of the specific dataset.
 
     Args:
         page (BeautifulSoup object): A BeautifulSoup object for the specific dataset.
     Returns:
-        list_of_types (List): A list of file types present in the dataset.
+        string_of_types (str): A string of file types present in the dataset.
     """
     list_of_types = []
+    string_of_types = ""
     content = page.find(string=re.compile("File content"))
     if not content == None:
         parts = content.split(":")
@@ -262,8 +263,11 @@ def fetch_data_types(page: BeautifulSoup) -> list:
             tidied_file_type = tidy_data_type(lowercase_file_types)
             list_of_types.append(tidied_file_type)
             list_of_types = list(set(list_of_types)) # make it a list, where each file type is listed just once
+            string2 = ", "
+            string_of_types = string2.join(list_of_types)
+            print(string_of_types)
 
-    return list_of_types
+    return string_of_types
 
 
 def tidy_data_type(file_type):
@@ -281,8 +285,8 @@ def tidy_data_type(file_type):
         'tsv': 'TSV',
         'zip': 'ZIP',
         'html': 'HTML',
-        'mets': 'METS XML',
-        'alto': 'ALTO XML',
+        'mets': 'XML',
+        'alto': 'XML',
         'image': 'Image',
         'xml': 'XML',
     }
@@ -320,34 +324,32 @@ def tidy_licence(licence_name):
     Returns:
         string: a tidied licence name
     """
-    known_licences= {
+    known_licences = {
         'https://creativecommons.org/licenses/by-sa/3.0/': 'Creative Commons Attribution Share-Alike 3.0',
-        'Creative Commons Attribution 4.0':'Creative Commons Attribution 4.0 International',
-        'https://creativecommons.org/licenses/by/4.0':'Creative Commons Attribution 4.0 International',
-        'https://creativecommons.org/licenses/by/4.0/':'Creative Commons Attribution 4.0 International',
-        'https://creativecommons.org/licenses/by/4.0/legalcode':'Creative Commons Attribution 4.0 International',
-        'CC BY 4.0':'Creative Commons Attribution 4.0 International',
-        'CC-BY 4.0': 'Creative Commons Attribution 4.0 International',
-        'OGL3':'Open Government Licence v3.0',
-        'Open Government Licence 3.0 (United Kingdom)':'Open Government Licence v3.0',
-        'UK Open Government Licence (OGL)':'Open Government Licence v3.0',
-        'uk-ogl':'Open Government Licence v3.0',
-        'Open Data Commons Open Database License 1.0':'Open Data Commons Open Database License 1.0',
-        'http://opendatacommons.org/licenses/odbl/1-0/':'Open Data Commons Open Database License 1.0',
-        'http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/':'Open Government Licence v2.0',
-        'http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/':'Open Government Licence v3.0',
-        'https://creativecommons.org/publicdomain/mark/1.0/':'Public Domain',
-        'Public Domain Mark 1.0':'Public Domain',
-        'Public Domain': 'Public Domain',
-        'Public domain': 'Public Domain',
-        'CC0':'Creative Commons CC0',
-        'CCO':'Creative Commons CC0',
-        'https://creativecommons.org/share-your-work/public-domain/cc0':'Creative Commons CC0',
-        'https://rightsstatements.org/page/NoC-NC/1.0/':'Non-Commercial Use Only',
+        'creative commons attribution 4.0': 'Creative Commons Attribution 4.0 International',
+        'https://creativecommons.org/licenses/by/4.0': 'Creative Commons Attribution 4.0 International',
+        'by 4.0': 'Creative Commons Attribution 4.0 International',
+        'ogl': 'Open Government Licence v3.0',
+        'open government': 'Open Government Licence v3.0',
+        'http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/': 'Open Government Licence v2.0',
+        'http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/': 'Open Government Licence v3.0',
+        'open data commons open database license 1.0': 'Open Data Commons Open Database License 1.0',
+        'http://opendatacommons.org/licenses/odbl/1-0/': 'Open Data Commons Open Database License 1.0',
+        'https://creativecommons.org/publicdomain/mark/1.0/': 'No licence',
+        'public domain': 'No licence',
+        'cc0': 'No licence',
+        'cco': 'No licence',
+        'https://creativecommons.org/share-your-work/public-domain/cc0': 'No licence',
+        'https://rightsstatements.org/page/noc-nc/1.0/': 'Non-Commercial Use Only',
     }
-    if licence_name in known_licences:
-        tidied_licence = known_licences[licence_name]
-    elif str(licence_name)=="nan" or str(licence_name)=="No Known Copyright" or str(licence_name) == "http://rightsstatements.org/vocab/NKC/1.0/":
+
+    for key in known_licences.keys():
+        if str(licence_name).lower().__contains__(key):
+            tidied_licence = known_licences[key]
+            return tidied_licence
+
+    if str(licence_name) == "nan" or str(licence_name) == "No Known Copyright" or str(
+            licence_name) == "http://rightsstatements.org/vocab/NKC/1.0/":
         tidied_licence = "No licence"
     else:
         tidied_licence = "Custom licence: " + str(licence_name)
