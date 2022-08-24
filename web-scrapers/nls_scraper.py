@@ -243,16 +243,17 @@ def fetch_num_recs(page: BeautifulSoup) -> int:
     return amount_recs
 
 
-def fetch_data_types(page: BeautifulSoup) -> list:
+def fetch_data_types(page: BeautifulSoup) -> str:
     """
     Fetches the data types of the specific dataset.
 
     Args:
         page (BeautifulSoup object): A BeautifulSoup object for the specific dataset.
     Returns:
-        list_of_types (List): A list of file types present in the dataset.
+        string_of_types (str): A string of file types present in the dataset.
     """
     list_of_types = []
+    string_of_types = ""
     content = page.find(string=re.compile("File content"))
     if not content == None:
         parts = content.split(":")
@@ -273,8 +274,10 @@ def fetch_data_types(page: BeautifulSoup) -> list:
             list_of_types = list(
                 set(list_of_types)
             )  # make it a list, where each file type is listed just once
+            string1 = ", "
+            string_of_types = string1.join(list_of_types)
 
-    return list_of_types
+    return string_of_types
 
 
 def tidy_data_type(file_type):
@@ -292,8 +295,8 @@ def tidy_data_type(file_type):
         "tsv": "TSV",
         "zip": "ZIP",
         "html": "HTML",
-        "mets": "METS XML",
-        "alto": "ALTO XML",
+        "mets": "XML",
+        "alto": "XML",
         "image": "Image",
         "xml": "XML",
     }
