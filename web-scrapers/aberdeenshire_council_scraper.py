@@ -6,7 +6,7 @@ import math
 
 # https://stackoverflow.com/a/14822210/13940304
 def convert_size(size_bytes):
-    """ Takes a size in bytes and convert units
+    """Takes a size in bytes and convert units
 
     Args:
         size_bytes (int): raw size in bytes
@@ -21,6 +21,7 @@ def convert_size(size_bytes):
     p = math.pow(1024, i)
     s = round(size_bytes / p, 2)
     return ("%s" % (s), size_name[i])
+
 
 def get_last_updated(string):
     matches = datefinder.find_dates(string)
@@ -37,100 +38,133 @@ def get_feeds(soup):
         list: list containing all feed dictionaries
     """
 
-    #Get table and rows
-    table = soup.find('table')
-    rows = table.find_all('tr')[1:]
+    # Get table and rows
+    table = soup.find("table")
+    rows = table.find_all("tr")[1:]
 
     feeds = []
 
     # get title and files associated to the feed
     for row in rows:
-        tds = row.find_all('td')
+        tds = row.find_all("td")
         feed = {}
         # Add title and files key
         title = tds[0].get_text()
         print(title)
-        feed['title'] = title
-        feed['files'] = {}
+        feed["title"] = title
+        feed["files"] = {}
         # Add files with their links, last updated and filesize.
-        files = [a_tag for a_tag in tds[1].find_all('a', href=True)]
+        files = [a_tag for a_tag in tds[1].find_all("a", href=True)]
         for anchor in files:
-            link = anchor.get('href')
-            if link.endswith('.kmz') or link.endswith('.csv') or link.endswith('.zip'):
-                filename = link.rsplit('/', 1)[-1]
+            link = anchor.get("href")
+            if link.endswith(".kmz") or link.endswith(".csv") or link.endswith(".zip"):
+                filename = link.rsplit("/", 1)[-1]
                 # get last updated
                 last_updated = get_last_updated(anchor.text)
                 # get size of file
                 # try:
                 #     filesize = urlopen(link).length
-                # except Exception as e: 
+                # except Exception as e:
                 #     print("Couldn't get file size!")
                 #     print(e)
-                #     filesize = 0 
+                #     filesize = 0
                 filesize = 0
                 formatted_fs, unit = convert_size(filesize)
 
-                feed['files'][filename] = {'link': link, 'filesize': {'value':formatted_fs, 'unit': unit}, 'last-updated': last_updated, 'filetype': filename[-3:].upper()}
+                feed["files"][filename] = {
+                    "link": link,
+                    "filesize": {"value": formatted_fs, "unit": unit},
+                    "last-updated": last_updated,
+                    "filetype": filename[-3:].upper(),
+                }
         feeds.append(feed)
     return feeds
 
+
 def parse_feeds(feeds):
-    """ Process feeds to be ready for csv ouput """
+    """Process feeds to be ready for csv ouput"""
     proc_feeds = []
     for feed in feeds:
-        for datafile in feed['files'].keys():
+        for datafile in feed["files"].keys():
             formatted_feed = []
-            formatted_feed.append(feed['title'])
-            formatted_feed.append('Aberdeenshire Council')
-            formatted_feed.append('https://www.aberdeenshire.gov.uk/online/open-data/')
-            formatted_feed.append(feed['files'][datafile]['link'])
-            formatted_feed.append('NULL')
-            formatted_feed.append(feed['files'][datafile]['last-updated'])
-            formatted_feed.append(feed['files'][datafile]['filesize']['value'])
-            formatted_feed.append(feed['files'][datafile]['filesize']['unit'])
-            formatted_feed.append(feed['files'][datafile]['filetype'])
-            formatted_feed.append('NULL')
-            formatted_feed.append('NULL')
-            #hack to create categories
-            if 'school' in feed['title'].lower():
-                formatted_feed.append('education')
-            elif 'burial' in feed['title'].lower():
-                formatted_feed.append('burial grounds')
-            elif 'car parks' or 'cycle' or 'grit' or 'harbours' or 'core paths' in title:
-                formatted_feed.append('transport')
-            elif 'polling'in feed['title'].lower():
-                formatted_feed.append('elections')
-            elif 'applications' or 'development' or 'green belt' or 'land audit' in feed['title'].lower():
-                formatted_feed.append('planning')
-            elif 'recycling' in feed['title'].lower():
-                formatted_feed.append('recycling')
-            elif 'toiliets' in feed['title'].lower():
-                formatted_feed.append('toilets')
-            elif 'museums' in feed['title'].lower():
-                formatted_feed.append('museum')
-            elif 'nature' in feed['title'].lower():
-                formatted_feed.append('nature')
-            elif 'leisure' in feed['title'].lower():
-                formatted_feed.append ('leisure')
-            elif 'cooling tower' in feed['title'].lower():
-                formatted_feed.append('health and safety')
-            elif 'contracts register' in feed['title'].lower():
-                formatted_feed.append('contracts')
-            elif 'committee areas' or 'community councils' or 'offices open' in feed['title'].lower():
-                formatted_feed.append('council and government')
+            formatted_feed.append(feed["title"])
+            formatted_feed.append("Aberdeenshire Council")
+            formatted_feed.append("https://www.aberdeenshire.gov.uk/online/open-data/")
+            formatted_feed.append(feed["files"][datafile]["link"])
+            formatted_feed.append("NULL")
+            formatted_feed.append(feed["files"][datafile]["last-updated"])
+            formatted_feed.append(feed["files"][datafile]["filesize"]["value"])
+            formatted_feed.append(feed["files"][datafile]["filesize"]["unit"])
+            formatted_feed.append(feed["files"][datafile]["filetype"])
+            formatted_feed.append("NULL")
+            formatted_feed.append("NULL")
+            # hack to create categories
+            if "school" in feed["title"].lower():
+                formatted_feed.append("education")
+            elif "burial" in feed["title"].lower():
+                formatted_feed.append("burial grounds")
+            elif (
+                "car parks" or "cycle" or "grit" or "harbours" or "core paths" in title
+            ):
+                formatted_feed.append("transport")
+            elif "polling" in feed["title"].lower():
+                formatted_feed.append("elections")
+            elif (
+                "applications"
+                or "development"
+                or "green belt"
+                or "land audit" in feed["title"].lower()
+            ):
+                formatted_feed.append("planning")
+            elif "recycling" in feed["title"].lower():
+                formatted_feed.append("recycling")
+            elif "toiliets" in feed["title"].lower():
+                formatted_feed.append("toilets")
+            elif "museums" in feed["title"].lower():
+                formatted_feed.append("museum")
+            elif "nature" in feed["title"].lower():
+                formatted_feed.append("nature")
+            elif "leisure" in feed["title"].lower():
+                formatted_feed.append("leisure")
+            elif "cooling tower" in feed["title"].lower():
+                formatted_feed.append("health and safety")
+            elif "contracts register" in feed["title"].lower():
+                formatted_feed.append("contracts")
+            elif (
+                "committee areas"
+                or "community councils"
+                or "offices open" in feed["title"].lower()
+            ):
+                formatted_feed.append("council and government")
             else:
-                formatted_feed.append('council and government')
-            formatted_feed.append('Open Government')
-            formatted_feed.append('NULL')
+                formatted_feed.append("council and government")
+            formatted_feed.append("Open Government")
+            formatted_feed.append("NULL")
             proc_feeds.append(formatted_feed)
     return proc_feeds
 
+
 def output(parsed):
-    with open('../data/scraped-results/aberdeenshire.csv', 'w', encoding='UTF8') as f:
+    with open("../data/scraped-results/aberdeenshire.csv", "w", encoding="UTF8") as f:
         writer = csv.writer(f)
 
         # write the header
-        header = ["Title","Owner","PageURL","AssetURL","DateCreated","DateUpdated","FileSize","FileSizeUnit","FileType","NumRecords","OriginalTags","ManualTags","License","Description"]
+        header = [
+            "Title",
+            "Owner",
+            "PageURL",
+            "AssetURL",
+            "DateCreated",
+            "DateUpdated",
+            "FileSize",
+            "FileSizeUnit",
+            "FileType",
+            "NumRecords",
+            "OriginalTags",
+            "ManualTags",
+            "License",
+            "Description",
+        ]
         writer.writerow(header)
 
         # write the data
@@ -140,12 +174,15 @@ def output(parsed):
 
 if __name__ == "__main__":
     ### construct array of feed objects
-    req = Request('https://www.aberdeenshire.gov.uk/data/open-data/', headers={'User-Agent': 'Mozilla/5.0'})
+    req = Request(
+        "https://www.aberdeenshire.gov.uk/data/open-data/",
+        headers={"User-Agent": "Mozilla/5.0"},
+    )
     page = urlopen(req).read()
-    soup = BeautifulSoup(page, 'html.parser')
+    soup = BeautifulSoup(page, "html.parser")
 
     feeds = get_feeds(soup)
     parsed = parse_feeds(feeds)
-    
+
     # make csv file
     output(parsed)
