@@ -23,9 +23,12 @@ def convert_size(size_bytes):
     return ("%s" % (s), size_name[i])
 
 
-def get_last_updated(string):
-    matches = datefinder.find_dates(string)
-    return [match for match in matches][0].strftime("%d/%m/%Y")
+def get_last_updated(link_text: str) -> str:
+    # Strict to prevent numbers in dataset name returning false dates
+    matches = datefinder.find_dates(link_text, strict=True)
+
+    date = next(matches)
+    return date.strftime("%d/%m/%Y")
 
 
 def get_feeds(soup):
