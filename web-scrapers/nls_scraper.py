@@ -134,7 +134,10 @@ def fetch_asset_url(page: BeautifulSoup) -> str:
     buttons = page.find_all("a", class_="wp-block-button__link no-border-radius")
     if not buttons:  # Because one collection's page uses a different button class
         buttons = page.find("div", class_="wp-block-button is-style-fill")
-        buttons = buttons.find_all("a", class_="wp-block-button__link")
+        if buttons is None:
+            buttons = page.find_all("a", class_="wp-block-button__link")
+        else:
+            buttons = buttons.find_all("a", class_="wp-block-button__link")
 
     for button in buttons:
         if str(button.contents[0]) in possible_button_text:
@@ -409,6 +412,7 @@ if __name__ == "__main__":
         url_list = fetch_data_page_urls(category_link)
         print("Getting data")
         for url in url_list:
+            print("Getting " + url)
             req = requests.get(url, get_headers())
             soup = BeautifulSoup(req.content, "html.parser")
             title = fetch_title(soup)
