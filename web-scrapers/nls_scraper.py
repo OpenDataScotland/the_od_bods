@@ -427,7 +427,8 @@ if __name__ == "__main__":
             file_size, file_unit = fetch_file_size(soup)
             # print("file_size:", file_size)
             # print("file_unit:", file_unit)
-            data_type = fetch_data_types(soup)
+            ### fetch_data_types is more accurate & useful, but file extension is consistent with other listings
+            data_type = asset_url.rsplit('.',1)[1] #fetch_data_types(soup) 
             # print("data_type:", data_type)
             num_recs = fetch_num_recs(soup)
             # print(("num_recs:", num_recs))
