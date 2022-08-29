@@ -20,7 +20,7 @@ def test_get_datasets():
     if not os.path.exists(outputdir):
         os.makedirs(outputdir)
     test_proc.get_datasets(owner, start_url, fname)
-    with open(fname, "r", newline="") as check_file:
+    with open(fname, "r", newline="", encoding="utf-8") as check_file:
         csv_check_file = csv.reader(check_file)
         assert csv_checker(csv_check_file)
     assert filecmp.cmp(fname, expected_fname)

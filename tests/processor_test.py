@@ -113,7 +113,7 @@ def test_write_csv():
     if not os.path.exists(outputdir):
         os.makedirs(outputdir)
     mock_processor.write_csv(fname, prepped)
-    with open(fname, "r") as check_file:
+    with open(fname, "r", encoding="utf-8") as check_file:
         line_count = len(check_file.readlines())
     assert line_count == len(prepped) + 1
 

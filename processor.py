@@ -27,7 +27,7 @@ class Processor:
         self.urls = {}
 
     def get_urls(self):
-        with open("sources.csv", "r") as file:
+        with open("sources.csv", "r", encoding="utf-8") as file:
             csv_file = csv.DictReader(file)
             for row in csv_file:
                 if row["Processor"] == self.type:
@@ -70,7 +70,7 @@ class Processor:
             return ""
 
     def write_csv(self, fname, prepped):
-        with open(fname, 'w', newline='') as csvf:
+        with open(fname, "w", newline="", encoding="utf-8") as csvf:
             w = csv.writer(csvf, quoting=csv.QUOTE_MINIMAL)
             w.writerow(self.header)
             for r in prepped:
