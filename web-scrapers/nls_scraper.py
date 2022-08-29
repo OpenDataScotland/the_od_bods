@@ -243,10 +243,6 @@ def fetch_num_recs(page: BeautifulSoup) -> int:
     return amount_recs
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> OpenDataScotland-main
 def fetch_data_types(page: BeautifulSoup) -> str:
     """
     Fetches the data types of the specific dataset.
@@ -275,18 +271,11 @@ def fetch_data_types(page: BeautifulSoup) -> str:
             # print("lowercase_file_types", lowercase_file_types)
             tidied_file_type = tidy_data_type(lowercase_file_types)
             list_of_types.append(tidied_file_type)
-<<<<<<< HEAD
-            list_of_types = list(set(list_of_types)) # make it a list, where each file type is listed just once
-            string2 = ", "
-            string_of_types = string2.join(list_of_types)
-            print(string_of_types)
-=======
             list_of_types = list(
                 set(list_of_types)
             )  # make it a list, where each file type is listed just once
             string1 = ", "
             string_of_types = string1.join(list_of_types)
->>>>>>> OpenDataScotland-main
 
     return string_of_types
 
@@ -298,20 +287,6 @@ def tidy_data_type(file_type):
     Returns:
         tidied_data_type (str): a tidied data type name
     """
-<<<<<<< HEAD
-    known_data_types= {
-        'plain text': 'TXT',
-        'text': 'TXT',
-        'txt': 'TXT',
-        'csv': 'CSV',
-        'tsv': 'TSV',
-        'zip': 'ZIP',
-        'html': 'HTML',
-        'mets': 'XML',
-        'alto': 'XML',
-        'image': 'Image',
-        'xml': 'XML',
-=======
     known_data_types = {
         "plain text": "TXT",
         "text": "TXT",
@@ -324,7 +299,6 @@ def tidy_data_type(file_type):
         "alto": "XML",
         "image": "Image",
         "xml": "XML",
->>>>>>> OpenDataScotland-main
     }
     tidied_data_type = "NULL"
     if str(file_type) == []:
@@ -360,48 +334,7 @@ def fetch_licences(page):
                 )
             ):
                 return []
-<<<<<<< HEAD
-    return [tidy_licence(f.find("a").get("href")) for f in figures]
-
-
-def tidy_licence(licence_name):
-    """ Temporary licence conversion to match export2jkan -- FOR ANALYTICS ONLY, will discard in 2022Q2 Milestone
-    Returns:
-        string: a tidied licence name
-    """
-    known_licences = {
-        'https://creativecommons.org/licenses/by-sa/3.0/': 'Creative Commons Attribution Share-Alike 3.0',
-        'creative commons attribution 4.0': 'Creative Commons Attribution 4.0 International',
-        'https://creativecommons.org/licenses/by/4.0': 'Creative Commons Attribution 4.0 International',
-        'by 4.0': 'Creative Commons Attribution 4.0 International',
-        'ogl': 'Open Government Licence v3.0',
-        'open government': 'Open Government Licence v3.0',
-        'http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/': 'Open Government Licence v2.0',
-        'http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/': 'Open Government Licence v3.0',
-        'open data commons open database license 1.0': 'Open Data Commons Open Database License 1.0',
-        'http://opendatacommons.org/licenses/odbl/1-0/': 'Open Data Commons Open Database License 1.0',
-        'https://creativecommons.org/publicdomain/mark/1.0/': 'No licence',
-        'public domain': 'No licence',
-        'cc0': 'No licence',
-        'cco': 'No licence',
-        'https://creativecommons.org/share-your-work/public-domain/cc0': 'No licence',
-        'https://rightsstatements.org/page/noc-nc/1.0/': 'Non-Commercial Use Only',
-    }
-
-    for key in known_licences.keys():
-        if str(licence_name).lower().__contains__(key):
-            tidied_licence = known_licences[key]
-            return tidied_licence
-
-    if str(licence_name) == "nan" or str(licence_name) == "No Known Copyright" or str(
-            licence_name) == "http://rightsstatements.org/vocab/NKC/1.0/":
-        tidied_licence = "No licence"
-    else:
-        tidied_licence = "Custom licence: " + str(licence_name)
-    return tidied_licence
-=======
     return [f.find("a").get("href") for f in figures]
->>>>>>> OpenDataScotland-main
 
 
 if __name__ == "__main__":
