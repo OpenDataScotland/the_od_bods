@@ -19,12 +19,12 @@ def get_headers():
         headers (Dictionary) : header values
     """
     headers = {
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Methods': 'GET',
-        'Access-Control-Allow-Headers': 'Content-Type',
-        'Access-Control-Max-Age': '3600',
-        'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0'
-        }
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET",
+        "Access-Control-Allow-Headers": "Content-Type",
+        "Access-Control-Max-Age": "3600",
+        "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0",
+    }
     return headers
 
 
@@ -39,7 +39,7 @@ def csv_output(header, data):
         NULL
     """
 
-    with open('../data/scraped-results/output_nls.csv', 'w', encoding='UTF8') as f:
+    with open("../data/scraped-results/output_nls.csv", "w", encoding="UTF8") as f:
         writer = csv.writer(f)
 
         # write the header
@@ -52,17 +52,19 @@ def csv_output(header, data):
 
 def fetch_category_links():
     """
-        Fetches links to data category pages from ODR_URL. It uses the dropdown menu on the 'Data' button.
+    Fetches links to data category pages from ODR_URL. It uses the dropdown menu on the 'Data' button.
 
-        Returns:
-            list_of_links (List): A list of URLs linking to the pages for each data category.
+    Returns:
+        list_of_links (List): A list of URLs linking to the pages for each data category.
     """
     initial_req = requests.get(ODR_URL, get_headers())
     initial_soup = BeautifulSoup(initial_req.text, "html.parser")
     data_button = initial_soup.find("li", id="menu-item-41")
     dropdown_list = data_button.find_all("li")
 
-    list_of_links = [dropdown_item.find("a").get("href") for dropdown_item in dropdown_list]
+    list_of_links = [
+        dropdown_item.find("a").get("href") for dropdown_item in dropdown_list
+    ]
 
     """
     list_of_links = []
@@ -72,7 +74,7 @@ def fetch_category_links():
         list_of_links.append(link)
     """
 
-    #print(list_of_links) # for logging and debugging
+    # print(list_of_links) # for logging and debugging
     return list_of_links
 
 
@@ -96,7 +98,7 @@ def fetch_data_page_urls(url: str) -> list:
         for tag in caption.find_all("a"):
             data_page_urls.append(tag.get("href"))
 
-    #print(data_page_urls) # for logging and debugging
+    # print(data_page_urls) # for logging and debugging
     return data_page_urls
 
 
@@ -123,12 +125,20 @@ def fetch_asset_url(page: BeautifulSoup) -> str:
         asseturl (str): A url to the data files of the specific dataset.
     """
     asseturl = "NULL"
-    possible_button_text = ["Download full dataset", "Download the dataset", "Download the data", ]
+    possible_button_text = [
+        "Download full dataset",
+        "Download the dataset",
+        "Download the data",
+        "Download sample dataset"
+    ]
 
     buttons = page.find_all("a", class_="wp-block-button__link no-border-radius")
     if not buttons:  # Because one collection's page uses a different button class
         buttons = page.find("div", class_="wp-block-button is-style-fill")
-        buttons = buttons.find_all("a", class_="wp-block-button__link")
+        if buttons is None:
+            buttons = page.find_all("a", class_="wp-block-button__link")
+        else:
+            buttons = buttons.find_all("a", class_="wp-block-button__link")
 
     for button in buttons:
         if str(button.contents[0]) in possible_button_text:
@@ -233,7 +243,10 @@ def fetch_num_recs(page: BeautifulSoup) -> int:
     return amount_recs
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> OpenDataScotland-main
 def fetch_data_types(page: BeautifulSoup) -> str:
     """
     Fetches the data types of the specific dataset.
@@ -257,26 +270,35 @@ def fetch_data_types(page: BeautifulSoup) -> str:
             # print("file_type", file_type)
             lowercase_file_types = []
             for item in file_type:
-                lowercase_file_type = item.lower().strip('.()')
+                lowercase_file_type = item.lower().strip(".()")
                 lowercase_file_types.append(lowercase_file_type)
-            #print("lowercase_file_types", lowercase_file_types)
+            # print("lowercase_file_types", lowercase_file_types)
             tidied_file_type = tidy_data_type(lowercase_file_types)
             list_of_types.append(tidied_file_type)
+<<<<<<< HEAD
             list_of_types = list(set(list_of_types)) # make it a list, where each file type is listed just once
             string2 = ", "
             string_of_types = string2.join(list_of_types)
             print(string_of_types)
+=======
+            list_of_types = list(
+                set(list_of_types)
+            )  # make it a list, where each file type is listed just once
+            string1 = ", "
+            string_of_types = string1.join(list_of_types)
+>>>>>>> OpenDataScotland-main
 
     return string_of_types
 
 
 def tidy_data_type(file_type):
-    """ Temporary data type conversion
+    """Temporary data type conversion
     Args:
         file_type (str): the data type name
     Returns:
         tidied_data_type (str): a tidied data type name
     """
+<<<<<<< HEAD
     known_data_types= {
         'plain text': 'TXT',
         'text': 'TXT',
@@ -289,16 +311,30 @@ def tidy_data_type(file_type):
         'alto': 'XML',
         'image': 'Image',
         'xml': 'XML',
+=======
+    known_data_types = {
+        "plain text": "TXT",
+        "text": "TXT",
+        "txt": "TXT",
+        "csv": "CSV",
+        "tsv": "TSV",
+        "zip": "ZIP",
+        "html": "HTML",
+        "mets": "XML",
+        "alto": "XML",
+        "image": "Image",
+        "xml": "XML",
+>>>>>>> OpenDataScotland-main
     }
     tidied_data_type = "NULL"
     if str(file_type) == []:
         tidied_data_type = "No file type"
     else:
         for type in file_type:
-            #print("type", type)
+            # print("type", type)
             if type in known_data_types:
                 tidied_data_type = known_data_types[type]
-        #else:
+        # else:
         #    tidied_data_type = "Custom file type: " + str(file_type)
     return tidied_data_type
 
@@ -313,9 +349,18 @@ def fetch_licences(page):
         list_of_licences (List): A list of licences.
     """
     if not (figures := page.find_all("figure", class_="wp-block-image is-resized")):
-        if not (figures := page.find_all("figure", class_="wp-block-image size-medium is-resized")):
-            if not (figures := page.find_all("figure", class_="wp-block-image size-large is-resized")):
+        if not (
+            figures := page.find_all(
+                "figure", class_="wp-block-image size-medium is-resized"
+            )
+        ):
+            if not (
+                figures := page.find_all(
+                    "figure", class_="wp-block-image size-large is-resized"
+                )
+            ):
                 return []
+<<<<<<< HEAD
     return [tidy_licence(f.find("a").get("href")) for f in figures]
 
 
@@ -354,17 +399,36 @@ def tidy_licence(licence_name):
     else:
         tidied_licence = "Custom licence: " + str(licence_name)
     return tidied_licence
+=======
+    return [f.find("a").get("href") for f in figures]
+>>>>>>> OpenDataScotland-main
 
 
 if __name__ == "__main__":
     # Record Headings
-    header = ["Title", "Owner", "PageURL", "AssetURL", "DateCreated", "DateUpdated", "FileSize", "FileSizeUnit",
-              "FileType", "NumRecords", "OriginalTags", "ManualTags", "License", "Description", ]
+    header = [
+        "Title",
+        "Owner",
+        "PageURL",
+        "AssetURL",
+        "DateCreated",
+        "DateUpdated",
+        "FileSize",
+        "FileSizeUnit",
+        "FileType",
+        "NumRecords",
+        "OriginalTags",
+        "ManualTags",
+        "License",
+        "Description",
+    ]
     data = []
-    category_match = {"Digitised material collection": "digitised-collections",
-                      "Metadata collection": "metadata-collections",
-                      "Spatial data": "map-spatial-data",
-                      "Organisational data": "organisational-data"} # this code is probably not required anymore, since
+    category_match = {
+        "Digitised material collection": "digitised-collections",
+        "Metadata collection": "metadata-collections",
+        "Spatial data": "map-spatial-data",
+        "Organisational data": "organisational-data",
+    }  # this code is probably not required anymore, since
     # category_match only served to assemble the data_page_url. But I kept it for the time being, in case we want to
     # include this in the output_csv.
 
@@ -376,26 +440,28 @@ if __name__ == "__main__":
         url_list = fetch_data_page_urls(category_link)
         print("Getting data")
         for url in url_list:
+            print("Getting " + url)
             req = requests.get(url, get_headers())
             soup = BeautifulSoup(req.content, "html.parser")
             title = fetch_title(soup)
-            #print("title:", title)
+            # print("title:", title)
             owner = "National Library of Scotland"
             pageurl = url
-            #print("pageurl:", pageurl)
+            # print("pageurl:", pageurl)
             asset_url = fetch_asset_url(soup)
-            #print("asset_url:", asset_url)
+            # print("asset_url:", asset_url)
             create_date = fetch_create_date(soup)
-            #print("create_date:", create_date)
+            # print("create_date:", create_date)
             file_size, file_unit = fetch_file_size(soup)
-            #print("file_size:", file_size)
-            #print("file_unit:", file_unit)
-            data_type = fetch_data_types(soup)
-            #print("data_type:", data_type)
+            # print("file_size:", file_size)
+            # print("file_unit:", file_unit)
+            ### fetch_data_types is more accurate & useful, but file extension is consistent with other listings
+            data_type = asset_url.rsplit('.',1)[1] #fetch_data_types(soup) 
+            # print("data_type:", data_type)
             num_recs = fetch_num_recs(soup)
-            #print(("num_recs:", num_recs))
+            # print(("num_recs:", num_recs))
             nls_licence = fetch_licences(soup)
-            #print("nls_licence:", nls_licence)
+            # print("nls_licence:", nls_licence)
 
             """if title == "British Army Lists":  # Contains 4 separate download links: temporarily nulled to prevent conflicts
                 asset_url = "NULL"
@@ -404,8 +470,22 @@ if __name__ == "__main__":
                 num_recs = "NULL"
             else:"""
 
-            output = [title, owner, pageurl, asset_url, create_date, "NULL", file_size, file_unit, data_type, num_recs,
-                      "NULL", "NULL", nls_licence, "NULL", ]
+            output = [
+                title,
+                owner,
+                pageurl,
+                asset_url,
+                create_date,
+                "NULL",
+                file_size,
+                file_unit,
+                data_type,
+                num_recs,
+                "NULL",
+                "NULL",
+                nls_licence,
+                "NULL",
+            ]
             data.append(output)
 
     print("Outputting to CSV")
