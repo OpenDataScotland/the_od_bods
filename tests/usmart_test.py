@@ -1,6 +1,6 @@
 import filecmp
 import os
-import re
+from os.path import isfile, join
 import csv
 import pytest
 from .conftest import csv_checker
@@ -9,14 +9,25 @@ from ..usmart import ProcessorUSMART
 test_proc = ProcessorUSMART()
 
 
-def test_get_datasets():
+def list_sources(dir):
+    sources_path = os.path.abspath(dir)
+    sources = [
+        f.split(".")[0]
+        for f in os.listdir(sources_path)
+        if isfile(join(sources_path, f))
+    ]
+    return sources
+
+
+@pytest.mark.parametrize("sources", list_sources("tests/mock_data/usmart"))
+def test_get_datasets(sources):
     owner = "test_owner"
     outputdir = "tests/mock_data/output/usmart/"
     start_url = "file:///" + os.path.abspath(
-        "tests/mock_data/usmart/Dumfries and Galloway Council.json"
+        "tests/mock_data/usmart/" + sources + ".json"
     )
-    fname = outputdir + "Dumfries and Galloway Council.csv"
-    expected_fname = "tests/mock_data/usmart/expected/Dumfries and Galloway Council.csv"
+    fname = outputdir + sources + ".csv"
+    expected_fname = "tests/mock_data/usmart/expected/" + sources + ".csv"
     if os.path.exists(fname):
         os.remove(fname)
     if not os.path.exists(outputdir):
