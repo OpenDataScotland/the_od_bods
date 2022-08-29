@@ -1,0 +1,1829 @@
+{
+    "@context": {
+        "dcat": "http://www.w3.org/ns/dcat#",
+        "dct": "http://purl.org/dc/terms/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "vcard": "http://www.w3.org/2006/vcard/ns#",
+        "ftype": "http://publications.europa.eu/resource/authority/file-type/",
+        "lang": "http://publications.europa.eu/resource/authority/language/"
+    },
+    "@id": "https://map-Highland.opendata.arcgis.com",
+    "@type": "dcat:Catalog",
+    "dct:description": "DO NOT DELETE OR MODIFY THIS ITEM. This item is managed by the ArcGIS Hub application. To make changes to this site, please visit https://hub.arcgis.com/admin/sites",
+    "dct:title": "Highland Council Open Map Data",
+    "dct:publisher": "Highland Council GIS Organisation",
+    "foaf:homepage": {
+        "foaf:Document": "https://map-Highland.opendata.arcgis.com/search"
+    },
+    "dct:language": {
+        "@id": "lang:ENG"
+    },
+    "dct:creator": {
+        "@id": "https://Highland.maps.arcgis.com",
+        "@type": "foaf:Agent",
+        "foaf:name": "Highland Council GIS Organisation"
+    },
+    "dcat:dataset": [
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://map-highland.opendata.arcgis.com/maps/1927bede99ea4e66b3e5ea9b851bd483_0",
+            "dct:title": "Environmental Health Operational Areas (simplify10m)",
+            "dct:description": "Operational\nAreas within the Environmental Health Section of The Highland Council - North\nHighland, Mid Highland and West Highland. Please note that this is a slightly generalised version of the boundaries.<div><br /></div><div>Gemini\nmetadata  record is at:</div><div><a href='https://www.spatialdata.gov.scot/geonetwork/srv/eng/catalog.search#/metadata/29f4dc28-5a56-4fad-b27e-12b74e159a17' rel='nofollow ugc'>https://www.spatialdata.gov.scot/geonetwork/srv/eng/catalog.search#/metadata/29f4dc28-5a56-4fad-b27e-12b74e159a17</a></div>",
+            "dcat:contactPoint": {
+                "@id": "https://Highland.maps.arcgis.com/sharing/rest/community/users/hcgisadmin?f=json",
+                "@type": "Contact",
+                "vcard:fn": "hcgisadmin",
+                "vcard:hasEmail": "{{orgContactEmail}}"
+            },
+            "dct:publisher": "Highland Council GIS Organisation",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=1927bede99ea4e66b3e5ea9b851bd483&sublayer=0",
+            "dcat:keyword": [
+                "boundaries",
+                "environment",
+                "open data"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2016-07-07T11:06:04.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/maps/1927bede99ea4e66b3e5ea9b851bd483_0",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://services1.arcgis.com/MfbPb778y5QTu2Wv/arcgis/rest/services/EnvironmentalHealth_OperationalAreas_simplify_10m/FeatureServer/0",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/1927bede99ea4e66b3e5ea9b851bd483_0.geojson?outSR=%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/1927bede99ea4e66b3e5ea9b851bd483_0.csv?outSR=%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/1927bede99ea4e66b3e5ea9b851bd483_0.kml?outSR=%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/1927bede99ea4e66b3e5ea9b851bd483_0.zip?outSR=%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://map-highland.opendata.arcgis.com/maps/516df9b993334e37b8a160bd41e39103_0",
+            "dct:title": "Flare Zones (simplify10m)",
+            "dct:description": "Flare\nZones within the Highland Council Area. A Flare Zone is an administrative area\nreferred to within the operations for Environmental Health. Flare is the\nInformation Management System used within the Environmental Health Function of\nThe Highland Council - this database is also known as CIVICA APP. Please note that this is a slightly generalised version of the boundaries.<div><br /></div><div>Gemini\nmetadata  record is at:</div><div><a href='https://www.spatialdata.gov.scot/geonetwork/srv/eng/catalog.search#/metadata/{4c20561e-1a50-4a7b-b4eb-98e2af45a00a}' rel='nofollow ugc'>https://www.spatialdata.gov.scot/geonetwork/srv/eng/catalog.search#/metadata/{4c20561e-1a50-4a7b-b4eb-98e2af45a00a}</a></div>",
+            "dcat:contactPoint": {
+                "@id": "https://Highland.maps.arcgis.com/sharing/rest/community/users/hcgisadmin?f=json",
+                "@type": "Contact",
+                "vcard:fn": "hcgisadmin",
+                "vcard:hasEmail": "{{orgContactEmail}}"
+            },
+            "dct:publisher": "Highland Council GIS Organisation",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=516df9b993334e37b8a160bd41e39103&sublayer=0",
+            "dcat:keyword": [
+                "flare zones",
+                "boundaries",
+                "environmental health"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2016-07-15T12:05:52.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/maps/516df9b993334e37b8a160bd41e39103_0",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://services1.arcgis.com/MfbPb778y5QTu2Wv/arcgis/rest/services/FlareZones_simplify10m/FeatureServer/0",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/516df9b993334e37b8a160bd41e39103_0.geojson?outSR=%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/516df9b993334e37b8a160bd41e39103_0.csv?outSR=%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/516df9b993334e37b8a160bd41e39103_0.kml?outSR=%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/516df9b993334e37b8a160bd41e39103_0.zip?outSR=%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://map-highland.opendata.arcgis.com/maps/a8ab0322f9a042e588745dfed90189b4_0",
+            "dct:title": "Bridge Height Restrictions",
+            "dct:description": "Locations of bridge height restrictions over roads adopted by The Highland Council.<div><br /></div><div><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>Gemini metadata record is at </span><a href='https://www.spatialdata.gov.scot/geonetwork/srv/eng/catalog.search#/metadata/3581e0d3-a33e-48e7-b479-579c9b5b1fc0' target='_blank' rel='nofollow ugc noopener noreferrer'>https://www.spatialdata.gov.scot/geonetwork/srv/eng/catalog.search#/metadata/3581e0d3-a33e-48e7-b479-579c9b5b1fc0</a><br /></div>",
+            "dcat:contactPoint": {
+                "@id": "https://Highland.maps.arcgis.com/sharing/rest/community/users/hcgisadmin?f=json",
+                "@type": "Contact",
+                "vcard:fn": "hcgisadmin",
+                "vcard:hasEmail": "{{orgContactEmail}}"
+            },
+            "dct:publisher": "Highland Council GIS Organisation",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=a8ab0322f9a042e588745dfed90189b4&sublayer=0",
+            "dcat:keyword": [
+                "bridge height restrictions",
+                "transport"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2022-02-23T14:42:29.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/maps/a8ab0322f9a042e588745dfed90189b4_0",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://services1.arcgis.com/MfbPb778y5QTu2Wv/arcgis/rest/services/BridgeHeightRestrictions/FeatureServer/0",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/a8ab0322f9a042e588745dfed90189b4_0.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/a8ab0322f9a042e588745dfed90189b4_0.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/a8ab0322f9a042e588745dfed90189b4_0.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/a8ab0322f9a042e588745dfed90189b4_0.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://map-highland.opendata.arcgis.com/maps/65ebc11167ff4772801b874fc8da6fe5_0",
+            "dct:title": "Operational Areas (historical 1999 to 2007)",
+            "dct:description": "<p>The 8 historical Operational Areas from 1999-2007 - ie. Caithness, Sutherland, Ross &amp; Cromarty, Skye &amp; Lochalsh, Inverness, Nairn, Lochaber, Badenoch &amp; Strathspey.</p><p>Full dataset- ie. not simplified version.</p><p>Gemini metadata record is at <a href='https://www.spatialdata.gov.scot/geonetwork/srv/eng/catalog.search#/metadata/40bb2aba-98ee-4509-ae08-41badcdf9018' target='_blank' rel='nofollow ugc noopener noreferrer'>https://www.spatialdata.gov.scot/geonetwork/srv/eng/catalog.search#/metadata/40bb2aba-98ee-4509-ae08-41badcdf9018</a><br /></p><div>Created by uploading zipped .shp.</div>",
+            "dcat:contactPoint": {
+                "@id": "https://Highland.maps.arcgis.com/sharing/rest/community/users/hcgisadmin?f=json",
+                "@type": "Contact",
+                "vcard:fn": "hcgisadmin",
+                "vcard:hasEmail": "{{orgContactEmail}}"
+            },
+            "dct:publisher": "Highland Council GIS Organisation",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=65ebc11167ff4772801b874fc8da6fe5&sublayer=0",
+            "dcat:keyword": [
+                "operational areas",
+                "boundaries"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2015-09-18T15:04:43.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/maps/65ebc11167ff4772801b874fc8da6fe5_0",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://services1.arcgis.com/MfbPb778y5QTu2Wv/arcgis/rest/services/OperationalAreas_8old/FeatureServer/0",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/65ebc11167ff4772801b874fc8da6fe5_0.geojson?outSR=%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/65ebc11167ff4772801b874fc8da6fe5_0.csv?outSR=%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/65ebc11167ff4772801b874fc8da6fe5_0.kml?outSR=%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/65ebc11167ff4772801b874fc8da6fe5_0.zip?outSR=%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://map-highland.opendata.arcgis.com/maps/Highland::private-water-supplies",
+            "dct:title": "Private Water Supplies",
+            "dct:description": "This dataset contains the location details of Type A and Type B Private Water Supplies known of by The Highland Council within The Highland Council Area. There are likely to be private water supplies that the council has not been notified of and so are not yet recorded in this dataset but they will be added when the council is made aware of them. Gemini metadata record is at https://www.spatialdata.gov.scot/geonetwork/srv/eng/catalog.search#/metadata/%7Bf7b4d832-1712-4c53-864e-0e755e0873ef%7D ",
+            "dcat:contactPoint": {
+                "@id": "https://Highland.maps.arcgis.com/sharing/rest/community/users/hcgisadmin?f=json",
+                "@type": "Contact",
+                "vcard:fn": "hcgisadmin",
+                "vcard:hasEmail": "{{orgContactEmail}}"
+            },
+            "dct:publisher": "Highland Council GIS Organisation",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=ded172bbade24650bb2c1baec5e0d318&sublayer=0",
+            "dcat:keyword": [
+                " environmental health",
+                " open data",
+                " Private Water Supplies",
+                " environment"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2016-09-27T07:55:58.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/maps/Highland::private-water-supplies",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://services1.arcgis.com/MfbPb778y5QTu2Wv/arcgis/rest/services/PrivateWaterSupplies/FeatureServer/0",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/Highland::private-water-supplies.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/Highland::private-water-supplies.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/Highland::private-water-supplies.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/Highland::private-water-supplies.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://map-highland.opendata.arcgis.com/maps/Highland::primary-school-catchments",
+            "dct:title": "Primary School Catchments",
+            "dct:description": "<p>Primary School Catchments in Highland. </p><p>Gemini metadata record is at <a href='https://www.spatialdata.gov.scot/geonetwork/srv/eng/catalog.search#/metadata/37631a4c-9490-4a1d-9772-d55d51ac0f06' rel='nofollow ugc'>https://www.spatialdata.gov.scot/geonetwork/srv/eng/catalog.search#/metadata/37631a4c-9490-4a1d-9772-d55d51ac0f06</a>.</p>",
+            "dcat:contactPoint": {
+                "@id": "https://Highland.maps.arcgis.com/sharing/rest/community/users/hcgisadmin?f=json",
+                "@type": "Contact",
+                "vcard:fn": "hcgisadmin",
+                "vcard:hasEmail": "{{orgContactEmail}}"
+            },
+            "dct:publisher": "Highland Council GIS Organisation",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=6132b8751bea482b92801140935d6467&sublayer=0",
+            "dcat:keyword": [
+                "boundaries",
+                " primary school catchment",
+                " education"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2017-09-08T11:35:00.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/maps/Highland::primary-school-catchments",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://services1.arcgis.com/MfbPb778y5QTu2Wv/arcgis/rest/services/PrimarySchoolCatchments/FeatureServer/0",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/Highland::primary-school-catchments.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/Highland::primary-school-catchments.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/Highland::primary-school-catchments.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/Highland::primary-school-catchments.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://map-highland.opendata.arcgis.com/maps/Highland::gaelicmediumschoolcatchments",
+            "dct:title": "Gaelic Medium School Catchments",
+            "dct:description": "Gaelic Medium School Catchments in The Highland Council area. <div><br /></div><div>Gemini metadata record is at:</div><div><a href='https://www.spatialdata.gov.scot/geonetwork/srv/eng/catalog.search;jsessionid=849E94BF1293D399FBAB18CD31897E56#/metadata/df14bb65-e2bd-4e96-aa85-7ef128ca4794' rel='nofollow ugc'>https://www.spatialdata.gov.scot/geonetwork/srv/eng/catalog.search;jsessionid=849E94BF1293D399FBAB18CD31897E56#/metadata/df14bb65-e2bd-4e96-aa85-7ef128ca4794</a><br /></div>",
+            "dcat:contactPoint": {
+                "@id": "https://Highland.maps.arcgis.com/sharing/rest/community/users/hcgisadmin?f=json",
+                "@type": "Contact",
+                "vcard:fn": "hcgisadmin",
+                "vcard:hasEmail": "{{orgContactEmail}}"
+            },
+            "dct:publisher": "Highland Council GIS Organisation",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=1344ea30c26a4623be3fae41150f4319&sublayer=0",
+            "dcat:keyword": [
+                "Gaelic Medium School Catchments",
+                "gaelic",
+                "boundaries",
+                "education"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2018-05-22T09:02:19.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/maps/Highland::gaelicmediumschoolcatchments",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://services1.arcgis.com/MfbPb778y5QTu2Wv/arcgis/rest/services/GaelicMediumSchoolCatchments/FeatureServer/0",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/Highland::gaelicmediumschoolcatchments.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/Highland::gaelicmediumschoolcatchments.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/Highland::gaelicmediumschoolcatchments.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/Highland::gaelicmediumschoolcatchments.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://map-highland.opendata.arcgis.com/maps/4438ec7b7ddb4574af4b765d22302c16_0",
+            "dct:title": "CEA HC Property Centroids",
+            "dct:description": "<div>Centroids of corporate properties owned by The Highland Council. Published for Community Empowerment (Scotland) Act 2015.</div><div><br /></div><div>Gemini metadata record is at <a href='https://www.spatialdata.gov.scot/geonetwork/srv/eng/catalog.search#/metadata/79d7eb3e-1aaa-4974-a37c-e704d0f69d40' target='_blank' rel='nofollow ugc noopener noreferrer'>https://www.spatialdata.gov.scot/geonetwork/srv/eng/catalog.search#/metadata/79d7eb3e-1aaa-4974-a37c-e704d0f69d40</a>.</div>",
+            "dcat:contactPoint": {
+                "@id": "https://Highland.maps.arcgis.com/sharing/rest/community/users/hcproperty?f=json",
+                "@type": "Contact",
+                "vcard:fn": "hcproperty",
+                "vcard:hasEmail": "{{orgContactEmail}}"
+            },
+            "dct:publisher": "Highland Council GIS Organisation",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=4438ec7b7ddb4574af4b765d22302c16&sublayer=0",
+            "dcat:keyword": [
+                "HC Property Centroids",
+                "Community Empowerment Act",
+                "property",
+                "community"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2022-01-11T14:28:54.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/maps/4438ec7b7ddb4574af4b765d22302c16_0",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://services1.arcgis.com/MfbPb778y5QTu2Wv/arcgis/rest/services/CEA_HC_Property_Centroids/FeatureServer/0",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/4438ec7b7ddb4574af4b765d22302c16_0.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/4438ec7b7ddb4574af4b765d22302c16_0.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/4438ec7b7ddb4574af4b765d22302c16_0.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/4438ec7b7ddb4574af4b765d22302c16_0.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://map-highland.opendata.arcgis.com/maps/a28227b21bbd49dbb70cae596c9d1d58_0",
+            "dct:title": "Air Quality Management Areas",
+            "dct:description": "Air\nQuality Management Areas in Highland Council area.<div><br /></div><div>Gemini\nmetadata  record is at:</div><div><a href='https://www.spatialdata.gov.scot/geonetwork/srv/eng/catalog.search#/metadata/50122181-5f4c-49ed-9423-b63f502fea9a' rel='nofollow ugc'>https://www.spatialdata.gov.scot/geonetwork/srv/eng/catalog.search#/metadata/50122181-5f4c-49ed-9423-b63f502fea9a</a></div><div><br /></div>",
+            "dcat:contactPoint": {
+                "@id": "https://Highland.maps.arcgis.com/sharing/rest/community/users/hcgisadmin?f=json",
+                "@type": "Contact",
+                "vcard:fn": "hcgisadmin",
+                "vcard:hasEmail": "{{orgContactEmail}}"
+            },
+            "dct:publisher": "Highland Council GIS Organisation",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=a28227b21bbd49dbb70cae596c9d1d58&sublayer=0",
+            "dcat:keyword": [
+                "air quality",
+                "environment",
+                "open data"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2019-11-21T11:50:06.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/maps/a28227b21bbd49dbb70cae596c9d1d58_0",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://services1.arcgis.com/MfbPb778y5QTu2Wv/arcgis/rest/services/AirQualityManagementAreas/FeatureServer/0",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/a28227b21bbd49dbb70cae596c9d1d58_0.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/a28227b21bbd49dbb70cae596c9d1d58_0.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/a28227b21bbd49dbb70cae596c9d1d58_0.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/a28227b21bbd49dbb70cae596c9d1d58_0.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://map-highland.opendata.arcgis.com/maps/45c3003e7c724eba833832197459e86c_0",
+            "dct:title": "Contaminated Land Register",
+            "dct:description": "​Land indentified as Contaminated Land as per Part IIA Environmental Protection Act 1990 (Statutory Instrument).<div>Gemini\nmetadata  record is at :<br /></div><p><a href='https://www.spatialdata.gov.scot/geonetwork/srv/eng/catalog.search#/metadata/e17f9012-fae9-402e-a127-48ffa2919901' rel='nofollow ugc'>https://www.spatialdata.gov.scot/geonetwork/srv/eng/catalog.search#/metadata/e17f9012-fae9-402e-a127-48ffa2919901</a></p>",
+            "dcat:contactPoint": {
+                "@id": "https://Highland.maps.arcgis.com/sharing/rest/community/users/hcgisadmin?f=json",
+                "@type": "Contact",
+                "vcard:fn": "hcgisadmin",
+                "vcard:hasEmail": "{{orgContactEmail}}"
+            },
+            "dct:publisher": "Highland Council GIS Organisation",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=45c3003e7c724eba833832197459e86c&sublayer=0",
+            "dcat:keyword": [
+                "contamindated land",
+                "environment",
+                "open data"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2020-08-11T07:35:22.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/maps/45c3003e7c724eba833832197459e86c_0",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://services1.arcgis.com/MfbPb778y5QTu2Wv/arcgis/rest/services/Contaminated_Land_Register/FeatureServer/0",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/45c3003e7c724eba833832197459e86c_0.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/45c3003e7c724eba833832197459e86c_0.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/45c3003e7c724eba833832197459e86c_0.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/45c3003e7c724eba833832197459e86c_0.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://map-highland.opendata.arcgis.com/maps/Highland::secondary-school-catchments",
+            "dct:title": "Secondary School Catchments",
+            "dct:description": "<p>Secondary school catchment areas in Highland. </p><p>Gemini metadata record is at <a href='https://www.spatialdata.gov.scot/geonetwork/srv/eng/catalog.search#/metadata/%7Be7b26e01-6aa9-4a91-8f7d-7e4f5bc631c1%7D' rel='nofollow ugc'>https://www.spatialdata.gov.scot/geonetwork/srv/eng/catalog.search#/metadata/%7Be7b26e01-6aa9-4a91-8f7d-7e4f5bc631c1%7D</a>.</p>",
+            "dcat:contactPoint": {
+                "@id": "https://Highland.maps.arcgis.com/sharing/rest/community/users/hcgisadmin?f=json",
+                "@type": "Contact",
+                "vcard:fn": "hcgisadmin",
+                "vcard:hasEmail": "{{orgContactEmail}}"
+            },
+            "dct:publisher": "Highland Council GIS Organisation",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=2d07fb33ca344eafbf3d5944a526aae2&sublayer=0",
+            "dcat:keyword": [
+                "Secondary School Catchments",
+                "education",
+                "boundaries"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2018-02-27T12:34:03.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/maps/Highland::secondary-school-catchments",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://services1.arcgis.com/MfbPb778y5QTu2Wv/arcgis/rest/services/SecondarySchoolCatchments/FeatureServer/0",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/Highland::secondary-school-catchments.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/Highland::secondary-school-catchments.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/Highland::secondary-school-catchments.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/Highland::secondary-school-catchments.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://map-highland.opendata.arcgis.com/maps/d3ba297529eb4574a1a00a981e8fe58b_0",
+            "dct:title": "Area Committee Areas",
+            "dct:description": "Area Committee areas in The Highland Council area.<div><br /></div><div>Gemini metadata record is at <a href='https://www.spatialdata.gov.scot/geonetwork/srv/eng/catalog.search#/metadata/fbd2ae73-db7a-4298-8eb1-74729246ab3a' target='_blank' rel='nofollow ugc noopener noreferrer'>https://www.spatialdata.gov.scot/geonetwork/srv/eng/catalog.search#/metadata/fbd2ae73-db7a-4298-8eb1-74729246ab3a</a></div>",
+            "dcat:contactPoint": {
+                "@id": "https://Highland.maps.arcgis.com/sharing/rest/community/users/hcgisadmin?f=json",
+                "@type": "Contact",
+                "vcard:fn": "hcgisadmin",
+                "vcard:hasEmail": "{{orgContactEmail}}"
+            },
+            "dct:publisher": "Highland Council GIS Organisation",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=d3ba297529eb4574a1a00a981e8fe58b&sublayer=0",
+            "dcat:keyword": [
+                "Area Committee Areas",
+                "boundaries"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2018-01-16T12:10:14.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/maps/d3ba297529eb4574a1a00a981e8fe58b_0",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://services1.arcgis.com/MfbPb778y5QTu2Wv/arcgis/rest/services/AreaCommitteeAreas/FeatureServer/0",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/d3ba297529eb4574a1a00a981e8fe58b_0.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/d3ba297529eb4574a1a00a981e8fe58b_0.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/d3ba297529eb4574a1a00a981e8fe58b_0.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/d3ba297529eb4574a1a00a981e8fe58b_0.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://map-highland.opendata.arcgis.com/maps/Highland::community-councils",
+            "dct:title": "Community Councils",
+            "dct:description": "<div><span style='font-size:medium;'>Community Councils in The Highland Council area.</span><br /></div><div><span style='font-size:medium;'><br /></span></div><div><span style='font-size:medium;'>Gemini metadata record is at </span><a href='https://www.spatialdata.gov.scot/geonetwork/srv/eng/catalog.search#/metadata/%7Bd1fc43dd-46dd-4c97-afa0-168d7ac3e3f6%7D' style='font-size:medium;' rel='nofollow ugc'>https://www.spatialdata.gov.scot/geonetwork/srv/eng/catalog.search#/metadata/%7Bd1fc43dd-46dd-4c97-afa0-168d7ac3e3f6%7D</a><span style='font-size:medium;'>.</span><br /></div>",
+            "dcat:contactPoint": {
+                "@id": "https://Highland.maps.arcgis.com/sharing/rest/community/users/hcgisadmin?f=json",
+                "@type": "Contact",
+                "vcard:fn": "hcgisadmin",
+                "vcard:hasEmail": "{{orgContactEmail}}"
+            },
+            "dct:publisher": "Highland Council GIS Organisation",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=d5519409fc9043e6b15d2ef77089993e&sublayer=0",
+            "dcat:keyword": [
+                " community councils",
+                "boundaries"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2017-05-15T11:01:27.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/maps/Highland::community-councils",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://services1.arcgis.com/MfbPb778y5QTu2Wv/arcgis/rest/services/CommunityCouncils/FeatureServer/0",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/Highland::community-councils.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/Highland::community-councils.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/Highland::community-councils.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/Highland::community-councils.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://map-highland.opendata.arcgis.com/maps/19957b55e2594d6a8e17662af358cfc4_0",
+            "dct:title": "Blue-Green Algae Lochs",
+            "dct:description": "Blue-Green\nAlgae warning notices for lochs within The Highland Council area.<div><br /></div><div>Gemini\nmetadata  record is at:</div><div><a href='https://www.spatialdata.gov.scot/geonetwork/srv/eng/catalog.search#/metadata/{f3fd69dd-0e9d-4742-a1d1-69507deefd15}' rel='nofollow ugc'>https://www.spatialdata.gov.scot/geonetwork/srv/eng/catalog.search#/metadata/{f3fd69dd-0e9d-4742-a1d1-69507deefd15}</a> </div>",
+            "dcat:contactPoint": {
+                "@id": "https://Highland.maps.arcgis.com/sharing/rest/community/users/hcgisadmin?f=json",
+                "@type": "Contact",
+                "vcard:fn": "hcgisadmin",
+                "vcard:hasEmail": "{{orgContactEmail}}"
+            },
+            "dct:publisher": "Highland Council GIS Organisation",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=19957b55e2594d6a8e17662af358cfc4&sublayer=0",
+            "dcat:keyword": [
+                "blue green algae lochs",
+                "environment"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2015-05-13T09:32:58.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/maps/19957b55e2594d6a8e17662af358cfc4_0",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://services1.arcgis.com/MfbPb778y5QTu2Wv/arcgis/rest/services/Blue_Green_Algae_Lochs/FeatureServer/0",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/19957b55e2594d6a8e17662af358cfc4_0.geojson?outSR=%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/19957b55e2594d6a8e17662af358cfc4_0.csv?outSR=%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/19957b55e2594d6a8e17662af358cfc4_0.kml?outSR=%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/19957b55e2594d6a8e17662af358cfc4_0.zip?outSR=%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://map-highland.opendata.arcgis.com/maps/Highland::community-partnerships",
+            "dct:title": "Community Partnerships",
+            "dct:description": "<p>Community Partnerships in Highland Council area (revised March 2017).</p><p>Gemini metadata record is at <a href='https://www.spatialdata.gov.scot/geonetwork/srv/eng/catalog.search#/metadata/55254015-cf99-4021-a9be-cdc3c9b40358'>https://www.spatialdata.gov.scot/geonetwork/srv/eng/catalog.search#/metadata/55254015-cf99-4021-a9be-cdc3c9b40358</a>.</p>",
+            "dcat:contactPoint": {
+                "@id": "https://Highland.maps.arcgis.com/sharing/rest/community/users/hcgisadmin?f=json",
+                "@type": "Contact",
+                "vcard:fn": "hcgisadmin",
+                "vcard:hasEmail": "{{orgContactEmail}}"
+            },
+            "dct:publisher": "Highland Council GIS Organisation",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=d32e10b6d44043098f3f4fb5c31785f3&sublayer=0",
+            "dcat:keyword": [
+                "Community Partnerships",
+                "community empowerment",
+                "community",
+                "boundaries"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2017-03-28T08:13:19.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/maps/Highland::community-partnerships",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://services1.arcgis.com/MfbPb778y5QTu2Wv/arcgis/rest/services/CommunityPartnerships/FeatureServer/0",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/Highland::community-partnerships.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/Highland::community-partnerships.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/Highland::community-partnerships.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/Highland::community-partnerships.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://map-highland.opendata.arcgis.com/maps/Highland::core-paths",
+            "dct:title": "Core Paths",
+            "dct:description": "<p>Core paths are a system of paths, track and other routes identified by The Highland Council, as a duty under the Land Reform (Scotland) Act 2003, that provide the public with a reasonable access resource in their area.</p><p>Gemini metadata record is at <a href='https://www.spatialdata.gov.scot/geonetwork/srv/eng/catalog.search#/metadata/8937f063-73b9-45ec-82af-416c4df3b2e0' rel='nofollow ugc'>https://www.spatialdata.gov.scot/geonetwork/srv/eng/catalog.search#/metadata/8937f063-73b9-45ec-82af-416c4df3b2e0</a>.</p>",
+            "dcat:contactPoint": {
+                "@id": "https://Highland.maps.arcgis.com/sharing/rest/community/users/hcgisadmin?f=json",
+                "@type": "Contact",
+                "vcard:fn": "hcgisadmin",
+                "vcard:hasEmail": "{{orgContactEmail}}"
+            },
+            "dct:publisher": "Highland Council GIS Organisation",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=4ff063a3130b4914bec21d1e90434b5c&sublayer=0",
+            "dcat:keyword": [
+                "Core Paths",
+                "highland",
+                "access",
+                "highland council",
+                "open data",
+                "environment"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2018-10-02T09:30:13.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/maps/Highland::core-paths",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://services1.arcgis.com/MfbPb778y5QTu2Wv/arcgis/rest/services/CorePaths/FeatureServer/0",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/Highland::core-paths.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/Highland::core-paths.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/Highland::core-paths.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/Highland::core-paths.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://map-highland.opendata.arcgis.com/maps/Highland::primary-schools",
+            "dct:title": "Primary Schools",
+            "dct:description": "<p>Primary schools in Highland. </p><p>Gemini metadata record is at <a href='https://www.spatialdata.gov.scot/geonetwork/srv/eng/catalog.search#/metadata/%7Bb22faf78-3005-46d2-940b-9a9d1f9638d0%7D' rel='nofollow ugc'>https://www.spatialdata.gov.scot/geonetwork/srv/eng/catalog.search#/metadata/%7Bb22faf78-3005-46d2-940b-9a9d1f9638d0%7D</a>.</p>",
+            "dcat:contactPoint": {
+                "@id": "https://Highland.maps.arcgis.com/sharing/rest/community/users/hcgisadmin?f=json",
+                "@type": "Contact",
+                "vcard:fn": "hcgisadmin",
+                "vcard:hasEmail": "{{orgContactEmail}}"
+            },
+            "dct:publisher": "Highland Council GIS Organisation",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=e76a1bb4e47645b2bfc20a4e7dbaef32&sublayer=0",
+            "dcat:keyword": [
+                "Primary Schools",
+                "education"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2016-11-03T12:38:01.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/maps/Highland::primary-schools",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://services1.arcgis.com/MfbPb778y5QTu2Wv/arcgis/rest/services/PrimarySchools/FeatureServer/0",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/Highland::primary-schools.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/Highland::primary-schools.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/Highland::primary-schools.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/Highland::primary-schools.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://map-highland.opendata.arcgis.com/maps/Highland::secondary-schools",
+            "dct:title": "Secondary Schools",
+            "dct:description": "<p>Secondary schools in Highland. </p><p>Gemini metadata record is at <a href='https://www.spatialdata.gov.scot/geonetwork/srv/eng/catalog.search#/metadata/%7B0554bf19-e65a-4aa7-ac57-7d54c5f48432%7D' rel='nofollow ugc'>https://www.spatialdata.gov.scot/geonetwork/srv/eng/catalog.search#/metadata/%7B0554bf19-e65a-4aa7-ac57-7d54c5f48432%7D</a>.</p>",
+            "dcat:contactPoint": {
+                "@id": "https://Highland.maps.arcgis.com/sharing/rest/community/users/hcgisadmin?f=json",
+                "@type": "Contact",
+                "vcard:fn": "hcgisadmin",
+                "vcard:hasEmail": "{{orgContactEmail}}"
+            },
+            "dct:publisher": "Highland Council GIS Organisation",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=abce8d50021e4ac780f4a475e976f8b9&sublayer=0",
+            "dcat:keyword": [
+                "Secondary Schools",
+                "education"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2016-11-03T12:44:04.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/maps/Highland::secondary-schools",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://services1.arcgis.com/MfbPb778y5QTu2Wv/arcgis/rest/services/SecondarySchools/FeatureServer/0",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/Highland::secondary-schools.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/Highland::secondary-schools.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/Highland::secondary-schools.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/Highland::secondary-schools.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://map-highland.opendata.arcgis.com/maps/2cbe97c74943451a929ed5461fbf2926_0",
+            "dct:title": "Education Areas",
+            "dct:description": "Education Areas in The Highland Council area.<div><br /></div><div>Gemini metadata record is at:</div><div><a href='https://www.spatialdata.gov.scot/geonetwork/srv/eng/catalog.search#/metadata/eac1f643-4c60-4c4c-9d07-8e4c1224c86e' target='_blank' rel='nofollow ugc noopener noreferrer'>https://www.spatialdata.gov.scot/geonetwork/srv/eng/catalog.search#/metadata/eac1f643-4c60-4c4c-9d07-8e4c1224c86e</a><br /><div><br /></div></div>",
+            "dcat:contactPoint": {
+                "@id": "https://Highland.maps.arcgis.com/sharing/rest/community/users/hcgisadmin?f=json",
+                "@type": "Contact",
+                "vcard:fn": "hcgisadmin",
+                "vcard:hasEmail": "{{orgContactEmail}}"
+            },
+            "dct:publisher": "Highland Council GIS Organisation",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=2cbe97c74943451a929ed5461fbf2926&sublayer=0",
+            "dcat:keyword": [
+                "education",
+                "boundaries"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2019-10-29T12:04:02.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/maps/2cbe97c74943451a929ed5461fbf2926_0",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://services1.arcgis.com/MfbPb778y5QTu2Wv/arcgis/rest/services/EducationAreas/FeatureServer/0",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/2cbe97c74943451a929ed5461fbf2926_0.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/2cbe97c74943451a929ed5461fbf2926_0.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/2cbe97c74943451a929ed5461fbf2926_0.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/2cbe97c74943451a929ed5461fbf2926_0.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://map-highland.opendata.arcgis.com/maps/d31e35a0f7464253aedb3f5557e8e4f2_0",
+            "dct:title": "Operational Areas",
+            "dct:description": "The Highland Council Operational Areas (from 2007).<div><br /></div><div>Gemini metadata record is at <a href='https://www.spatialdata.gov.scot/geonetwork/srv/eng/catalog.search#/metadata/6c4edd1f-8542-46c6-a0fa-3ae678249107' target='_blank' rel='nofollow ugc noopener noreferrer'>https://www.spatialdata.gov.scot/geonetwork/srv/eng/catalog.search#/metadata/6c4edd1f-8542-46c6-a0fa-3ae678249107</a><br /></div>",
+            "dcat:contactPoint": {
+                "@id": "https://Highland.maps.arcgis.com/sharing/rest/community/users/hcgisadmin?f=json",
+                "@type": "Contact",
+                "vcard:fn": "hcgisadmin",
+                "vcard:hasEmail": "{{orgContactEmail}}"
+            },
+            "dct:publisher": "Highland Council GIS Organisation",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=d31e35a0f7464253aedb3f5557e8e4f2&sublayer=0",
+            "dcat:keyword": [
+                "Operational Areas",
+                "boundaries"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2019-11-18T14:58:31.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/maps/d31e35a0f7464253aedb3f5557e8e4f2_0",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://services1.arcgis.com/MfbPb778y5QTu2Wv/arcgis/rest/services/OperationalAreas/FeatureServer/0",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/d31e35a0f7464253aedb3f5557e8e4f2_0.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/d31e35a0f7464253aedb3f5557e8e4f2_0.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/d31e35a0f7464253aedb3f5557e8e4f2_0.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/d31e35a0f7464253aedb3f5557e8e4f2_0.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://map-highland.opendata.arcgis.com/maps/77fa374a2e9146e2afdd3690e650d50e_0",
+            "dct:title": "Polling Districts",
+            "dct:description": "Polling Districts in the Highland Council area.",
+            "dcat:contactPoint": {
+                "@id": "https://Highland.maps.arcgis.com/sharing/rest/community/users/hcgisadmin?f=json",
+                "@type": "Contact",
+                "vcard:fn": "hcgisadmin",
+                "vcard:hasEmail": "{{orgContactEmail}}"
+            },
+            "dct:publisher": "Highland Council GIS Organisation",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=77fa374a2e9146e2afdd3690e650d50e&sublayer=0",
+            "dcat:keyword": [
+                "Polling Districts",
+                "boundaries",
+                "elections"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2017-03-16T10:24:19.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/maps/77fa374a2e9146e2afdd3690e650d50e_0",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://services1.arcgis.com/MfbPb778y5QTu2Wv/arcgis/rest/services/PollingDistricts/FeatureServer/0",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/77fa374a2e9146e2afdd3690e650d50e_0.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/77fa374a2e9146e2afdd3690e650d50e_0.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/77fa374a2e9146e2afdd3690e650d50e_0.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/77fa374a2e9146e2afdd3690e650d50e_0.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://map-highland.opendata.arcgis.com/maps/Highland::pollingplaces",
+            "dct:title": "Polling Places",
+            "dct:description": "Polling Places in the Highland Council area.",
+            "dcat:contactPoint": {
+                "@id": "https://Highland.maps.arcgis.com/sharing/rest/community/users/hcgisadmin?f=json",
+                "@type": "Contact",
+                "vcard:fn": "hcgisadmin",
+                "vcard:hasEmail": "{{orgContactEmail}}"
+            },
+            "dct:publisher": "Highland Council GIS Organisation",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=90b9f56554f24d628d12329e0eebcb58&sublayer=0",
+            "dcat:keyword": [
+                "Polling Places",
+                "elections"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2017-03-16T10:30:50.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/maps/Highland::pollingplaces",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://services1.arcgis.com/MfbPb778y5QTu2Wv/arcgis/rest/services/PollingPlaces/FeatureServer/0",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/Highland::pollingplaces.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/Highland::pollingplaces.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/Highland::pollingplaces.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://map-highland.opendata.arcgis.com/datasets/Highland::pollingplaces.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        }
+    ]
+}

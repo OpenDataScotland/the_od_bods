@@ -13,10 +13,10 @@ def test_get_datasets():
     owner = "test_owner"
     outputdir = "tests/mock_data/output/usmart/"
     start_url = "file:///" + os.path.abspath(
-        "tests/mock_data/usmart/dumfries and galloway.json"
+        "tests/mock_data/usmart/Dumfries and Galloway Council.json"
     )
-    fname = outputdir + "dumfries and galloway.csv"
-    expected_fname = "tests/mock_data/usmart/expected/dumfries and galloway.csv"
+    fname = outputdir + "Dumfries and Galloway Council.csv"
+    expected_fname = "tests/mock_data/usmart/expected/Dumfries and Galloway Council.csv"
     if os.path.exists(fname):
         os.remove(fname)
     if not os.path.exists(outputdir):
