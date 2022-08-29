@@ -71,7 +71,7 @@ class Processor:
 
     def write_csv(self, fname, prepped):
         with open(fname, "w", newline="", encoding="utf-8") as csvf:
-            w = csv.writer(csvf, quoting=csv.QUOTE_MINIMAL)
+            w = csv.writer(csvf, quoting=csv.QUOTE_MINIMAL, lineterminator="\n")
             w.writerow(self.header)
             for r in prepped:
                 if r[-1]:
