@@ -662,41 +662,48 @@ def clean_data(dataframe):
             tidied_data_type (str): a tidied data type name
         """
         known_data_types = {
-            'plain text': 'TXT',
-            'text': 'TXT',
-            'txt': 'TXT',
-            'csv': 'CSV',
-            'tsv': 'TSV',
-            'zip': 'ZIP',
-            'html': 'HTML',
-            'image': 'Image',
-            'mets': 'XML',
-            'alto': 'XML',
-            'xml': 'XML',
-            'vnd.ms-excel': 'EXCEL Spreadsheet',
-            'xls': 'EXCEL Spreadsheet',
-            'xlsx': 'EXCEL Spreadsheet',
-            'WEB MAP': 'WEB MAP',
-            'WEB MAPPING APPLICATION': 'WEB MAP',
-            'ARCGIS GEOSERVICE': 'ARCGIS GEOSERVICE',
-            'ARCGIS GEOSERVICES REST API': 'ARCGIS GEOSERVICE',
+            "arcgis geoservice": "ARCGIS GEOSERVICE",
+            "esri rest": "ARCGIS GEOSERVICE",
+            "atom": "ATOM FEED",
+            "csv": "CSV",
+            "vnd.ms-excel": "EXCEL Spreadsheet",
+            "xls": "EXCEL Spreadsheet",
+            "geojson": "GEOJSON",
+            "html": "HTML",
+            "ics": "iCalendar",
+            "image": "Image",
+            "jpeg": "Image",
+            "json": "JSON",
+            "kml": "KML",
+            "kmz": "KMZ",
+            "pdf": "PDF",
+            "tsv": "TSV",
+            "text": "TXT",
+            "txt": "TXT",
+            "web map": "WEB MAP",
+            "wfs": "WFS",
+            "wms": "WMS",
+            "mets": "XML",
+            "alto": "XML",
+            "xml": "XML",
+            "zip": "ZIP",
         }
         tidied_data_type = "NULL"
-        print("Test", type(file_type), file_type)
-        if type(file_type) != list:
-            list_file_type = []
-            list_file_type.append(file_type)
-            file_type = list_file_type
-            print("file_type", file_type)
-        if str(file_type) == []:
+
+        for key in known_data_types.keys():
+            if str(file_type).lower().__contains__(key):
+                tidied_data_type = known_data_types[key]
+                return tidied_data_type
+
+        if (
+            str(file_type) == "nan"
+            or str(file_type) == ""
+        ):
             tidied_data_type = "No file type"
         else:
-            for data_type in file_type:
-                print("data_type", data_type)
-                if data_type in known_data_types:
-                    tidied_data_type = known_data_types[data_type]
-            # else:
-            #    tidied_data_type = "Custom file type: " + str(file_type)
+            print("data type: ", key, file_type)
+            tidied_data_type = "Custom file type: " + str(file_type)
+
         return tidied_data_type
 
     ### Inconsistencies in casing for FileType
