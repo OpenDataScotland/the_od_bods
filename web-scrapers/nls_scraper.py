@@ -349,7 +349,7 @@ if __name__ == "__main__":
             pageurl = url
             # print("pageurl:", pageurl)
             asset_url = fetch_asset_url(soup)
-            # print("asset_url:", asset_url)
+            print("asset_url:", asset_url)
             create_date = fetch_create_date(soup)
             # print("create_date:", create_date)
             file_size, file_unit = fetch_file_size(soup)
