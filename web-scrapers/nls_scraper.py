@@ -115,22 +115,16 @@ def fetch_title(page: BeautifulSoup) -> str:
     return dataset_title
 
 
-def fetch_asset_url(page: BeautifulSoup) -> str:
+def fetch_asset_url(page: BeautifulSoup) -> list:
     """
-    Fetches url to the data files of the specific dataset.
+    Fetches urls to the data files of the specific dataset.
 
     Args:
         page (BeautifulSoup object): A BeautifulSoup object for the specific dataset.
     Returns:
-        asseturl (str): A url to the data files of the specific dataset.
+        list_of_asseturls (list): A list of urls to the data files of the specific dataset.
     """
     asseturl = "NULL"
-    possible_button_text = [
-        "Download full dataset",
-        "Download the dataset",
-        "Download the data",
-        "Download sample dataset"
-    ]
 
     buttons = page.find_all("a", class_="wp-block-button__link no-border-radius")
     if not buttons:  # Because one collection's page uses a different button class
@@ -140,14 +134,16 @@ def fetch_asset_url(page: BeautifulSoup) -> str:
         else:
             buttons = buttons.find_all("a", class_="wp-block-button__link")
 
+    list_of_asseturls = []
+
     for button in buttons:
-        if str(button.contents[0]) in possible_button_text:
+        if str(button.contents[0]).lower().__contains__("download"):
             asseturl = button["href"]
+            if asseturl[:10] == "/download/":  # Make relative URLs absolute
+                asseturl = "https://data.nls.uk" + asseturl
+            list_of_asseturls.append(asseturl)
 
-    if asseturl[:10] == "/download/":  # Make relative URLs absolute
-        asseturl = "https://data.nls.uk" + asseturl
-
-    return asseturl
+    return list_of_asseturls
 
 
 def fetch_create_date(page: BeautifulSoup) -> str:
