@@ -115,7 +115,7 @@ def fetch_title(page: BeautifulSoup) -> str:
     return dataset_title
 
 
-def fetch_asset_url(page: BeautifulSoup) -> list:
+def fetch_asset_urls(page: BeautifulSoup) -> list:
     """
     Fetches urls to the data files of the specific dataset.
 
@@ -163,21 +163,47 @@ def fetch_create_date(page: BeautifulSoup) -> str:
     return date
 
 
-def fetch_file_size(page: BeautifulSoup) -> tuple:
+def fetch_file_size(page: BeautifulSoup) -> list:
     """
     Fetches the file size and size unit of the specific dataset.
 
     Args:
         page (BeautifulSoup object): A BeautifulSoup object for the specific dataset.
     Returns:
-        filesize (str): the number of the size of the whole dataset.
-        sizeunit (str): the unit for the size of the dataset.
+        list_of_filesizes (list): A list of lists, each containing the file size and the file size unit.
     """
     filesize = "NULL"
     sizeunit = "NULL"
     file_contents = ""
     size_data = ""
+    list_of_filesizes = []
 
+    #filesizes = page.find_all("p")
+    #print("filesizes1: ", filesizes)
+    filesize_strings = page.find_all(string=re.compile("File size"))
+    print("filesizes1: ", filesize_strings)
+    for filesize_string in filesize_strings:
+        print(filesize_string, type(filesize_string))
+        filesize = filesize_string.split(":")[1].strip().split(" ")[0:2]
+        #if filesize == "":
+
+        list_of_filesizes.append(filesize)
+    print("list_of_filesizes", list_of_filesizes)
+
+
+    p_tags = page.find_all("p")
+    for p_tag in p_tags:
+        print("p_tag", p_tag)
+        print("p_tag_contents", p_tag.contents[0])
+        if unicode(p_tag.contents[0]).__contains__("File size"):
+            print("p_tag2", p_tag)
+        test = p_tag.contents[0].find_all(string=re.compile("File size"))
+        print("test", test)
+            #filesize_strings = p_tag.contents[0]
+            #print("filesizes1: ", filesize_strings)
+            #for filesize_string in filesize_strings:
+
+    """
     headlines = page.find_all("h4")
     for headline in headlines:
         if "All the data" in headline.contents[0]:
@@ -213,7 +239,8 @@ def fetch_file_size(page: BeautifulSoup) -> tuple:
         sizeunit = size_data.split()[3]
 
     return filesize, sizeunit
-
+    """
+    return list_of_filesizes
 
 def fetch_num_recs(page: BeautifulSoup) -> int:
     """
@@ -339,59 +366,59 @@ if __name__ == "__main__":
             print("Getting " + url)
             req = requests.get(url, get_headers())
             soup = BeautifulSoup(req.content, "html.parser")
-            title = fetch_title(soup)
-            # print("title:", title)
-            owner = "National Library of Scotland"
-            pageurl = url
-            # print("pageurl:", pageurl)
-            asset_url = fetch_asset_url(soup)
-            print("asset_url:", asset_url)
-            create_date = fetch_create_date(soup)
-            # print("create_date:", create_date)
-            file_size, file_unit = fetch_file_size(soup)
-            # print("file_size:", file_size)
-            # print("file_unit:", file_unit)
-            ### fetch_data_types is more accurate & useful, but file extension is consistent with other listings
-            data_type = asset_url.rsplit('.',1)[1] #fetch_data_types(soup) 
-            # print("data_type:", data_type)
-            num_recs = fetch_num_recs(soup)
-            # print(("num_recs:", num_recs))
-            nls_licence = fetch_licences(soup)
-            # print("nls_licence:", nls_licence)
+            list_of_asset_urls = fetch_asset_urls(soup)
+            fetched_file_size = fetch_file_size(soup)
+            counter = 0
+            for asseturl in list_of_asset_urls:
+                title = fetch_title(soup)
+                # print("title:", title)
+                owner = "National Library of Scotland"
+                pageurl = url
+                # print("pageurl:", pageurl)
+                asset_url = asseturl
+                #print("asset_url:", asset_url)
+                create_date = fetch_create_date(soup)
+                # print("create_date:", create_date)
+                file_size = fetched_file_size[counter][0]
+                file_unit = fetched_file_size[counter][1]
+                # print("file_size:", file_size)
+                # print("file_unit:", file_unit)
+                ### fetch_data_types is more accurate & useful, but file extension is consistent with other listings
+                data_type = asset_url.rsplit('.',1)[1] #fetch_data_types(soup)
+                # print("data_type:", data_type)
+                num_recs = fetch_num_recs(soup)
+                # print(("num_recs:", num_recs))
+                nls_licence = fetch_licences(soup)
+                # print("nls_licence:", nls_licence)
 
-            """if title == "British Army Lists":  # Contains 4 separate download links: temporarily nulled to prevent conflicts
-                asset_url = "NULL"
-                file_size = "NULL"
-                file_unit = "NULL"
-                num_recs = "NULL"
-            else:"""
-
-            output = [
-                title,
-                owner,
-                pageurl,
-                asset_url,
-                create_date,
-                "NULL",
-                file_size,
-                file_unit,
-                data_type,
-                num_recs,
-                "NULL",
-                "NULL",
-                nls_licence,
-                "NULL",
-            ]
-            data.append(output)
+                output = [
+                    title,
+                    owner,
+                    pageurl,
+                    asset_url,
+                    create_date,
+                    "NULL",
+                    file_size,
+                    file_unit,
+                    data_type,
+                    num_recs,
+                    "NULL",
+                    "NULL",
+                    nls_licence,
+                    "NULL",
+                ]
+                data.append(output)
+                counter += 1
 
     print("Outputting to CSV")
     csv_output(header, data)
 
 
 """
+still to do:
+- file size based on specific download link
+- num_files based on specific download link
 issues with this scraper:
 - if publication date present on webpage, then only year. In the csv it is the complete date
 - for two data sets, the file types are not listed the same way as the other pages. Needs to be addressed, if possible
-- resolve British Army Lists conflict below, maybe same way as in licenses (returning a list, instead of single value)
--> asseturl should become a list then, same for other parameters? Discuss with team first
 """
