@@ -31760,14 +31760,13 @@
             "filter": {
                 "isCancelled": "eventsEq(false)",
                 "status": "not(private,draft,planned)",
-                "endDate": "eventsBefore(1661806985430)"
+                "endDate": "eventsBefore(1662113452960)"
             }
         },
         "stats": {
             "count": 20,
             "totalCount": 26,
             "aggs": {}
-        },
-        "next": "https://opendata.arcgis.com/api/v3/search?catalog%5BgroupIds%5D=any%282391aa86db9148d1857671888aefdc5f%29&page%5Bkey%5D=eyJodWIiOnsic3RhcnQiOjIxLCJzaXplIjoxMH0sImFnbyI6eyJzdGFydCI6MSwic2l6ZSI6MTB9fQ%3D%3D"
+        }
     }
 }

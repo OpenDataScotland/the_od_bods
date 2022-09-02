@@ -66,7 +66,11 @@ def main():
             location = (
                 "tests\\mock_data\\" + url_list[name]["type"] + "\\" + name + ".json"
             )
-            save_json(get_json(url_list[name]["url"]), location)
+            json_data = get_json(url_list[name]["url"])
+            if url_list[name]["type"] == "arcgis":
+                if "next" in json_data["meta"] and json_data["meta"]["next"]:
+                    del json_data["meta"]["next"]  # avoids link list urls
+            save_json(json_data, location)
             test_get_datasets(name, url_list[name]["type"])
 
 

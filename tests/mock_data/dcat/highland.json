@@ -1355,7 +1355,7 @@
             "dct:identifier": "https://www.arcgis.com/home/item.html?id=e76a1bb4e47645b2bfc20a4e7dbaef32&sublayer=0",
             "dcat:keyword": [
                 "Primary Schools",
-                "education"
+                " education"
             ],
             "dct:provenance": "",
             "dct:issued": "2016-11-03T12:38:01.000Z",

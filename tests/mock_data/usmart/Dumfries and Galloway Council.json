@@ -21,67 +21,6 @@
                 "email": "opendata@dumgal.gov.uk"
             },
             "coverageArea": null,
-            "createdAt": "2018-07-25T13:26:56.800Z",
-            "description": "SWestrans Commercial Split",
-            "distribution": [
-                {
-                    "@type": "dcat:Distribution",
-                    "accessURL": "https://api.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/5daa415c-869e-43be-bd0d-06a58b802945/1/urql",
-                    "mediaType": "application/json",
-                    "title": "API"
-                },
-                {
-                    "@type": "dcat:Distribution",
-                    "accessURL": "https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/resource?resourceGUID=ac89c2de-4a8d-4bfc-b574-e4c28412bcf1",
-                    "mediaType": "text/csv",
-                    "title": "SWestrans Commercial split 2018.csv"
-                }
-            ],
-            "identifier": "https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/dataset:viewDiscovery?datasetGUID=84085b60-c17d-445e-89c2-03d3862aba7a",
-            "issued": "2018-07-25T13:26:56.800Z",
-            "issueDate": "2018-07-24T23:00:00.000Z",
-            "landingPage": "https://usmart.io/org/dumgal/discovery/discovery-view-detail/84085b60-c17d-445e-89c2-03d3862aba7a",
-            "language": null,
-            "lastModificationDate": "2018-07-24T23:00:00.000Z",
-            "licence": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-            "lineage": null,
-            "modified": "2018-09-27T13:52:47.761Z",
-            "notes": null,
-            "publisher": {
-                "@type": "org:Organization",
-                "name": "https://usmart.io/org/dumgal"
-            },
-            "spatialReferenceSystem": null,
-            "spatialResolution": null,
-            "status": "Published",
-            "targetDate": "2018-07-25T16:00:00.000Z",
-            "temporalCoverageEnd": null,
-            "temporalCoverageStart": null,
-            "temporalNotes": null,
-            "title": "SWestrans Commercial Split",
-            "accrualPeriodicity": "Irregular",
-            "verticalExtent": null,
-            "keyword": [
-                "Transport"
-            ],
-            "theme": [
-                "Transport / Mobility"
-            ]
-        },
-        {
-            "@type": "dcat:Dataset",
-            "accessLevel": "public",
-            "boundingBoxEast": null,
-            "boundingBoxNorth": null,
-            "boundingBoxSouth": null,
-            "boundingBoxWest": null,
-            "conformsTo": null,
-            "contactPoint": {
-                "@type": "vcard:Contact",
-                "fn": "Open Data",
-                "email": "opendata@dumgal.gov.uk"
-            },
-            "coverageArea": null,
             "createdAt": "2017-11-16T14:25:40.882Z",
             "description": "Number of Pupils in Secondary schools in Dumfries and Galloway",
             "distribution": [
@@ -129,6 +68,67 @@
             ],
             "theme": [
                 "Social / Community"
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "boundingBoxEast": null,
+            "boundingBoxNorth": null,
+            "boundingBoxSouth": null,
+            "boundingBoxWest": null,
+            "conformsTo": null,
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Open Data",
+                "email": "opendata@dumgal.gov.uk"
+            },
+            "coverageArea": null,
+            "createdAt": "2018-07-25T13:26:56.800Z",
+            "description": "SWestrans Commercial Split",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://api.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/5daa415c-869e-43be-bd0d-06a58b802945/1/urql",
+                    "mediaType": "application/json",
+                    "title": "API"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/resource?resourceGUID=ac89c2de-4a8d-4bfc-b574-e4c28412bcf1",
+                    "mediaType": "text/csv",
+                    "title": "SWestrans Commercial split 2018.csv"
+                }
+            ],
+            "identifier": "https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/dataset:viewDiscovery?datasetGUID=84085b60-c17d-445e-89c2-03d3862aba7a",
+            "issued": "2018-07-25T13:26:56.800Z",
+            "issueDate": "2018-07-24T23:00:00.000Z",
+            "landingPage": "https://usmart.io/org/dumgal/discovery/discovery-view-detail/84085b60-c17d-445e-89c2-03d3862aba7a",
+            "language": null,
+            "lastModificationDate": "2018-07-24T23:00:00.000Z",
+            "licence": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+            "lineage": null,
+            "modified": "2018-09-27T13:52:47.761Z",
+            "notes": null,
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "https://usmart.io/org/dumgal"
+            },
+            "spatialReferenceSystem": null,
+            "spatialResolution": null,
+            "status": "Published",
+            "targetDate": "2018-07-25T16:00:00.000Z",
+            "temporalCoverageEnd": null,
+            "temporalCoverageStart": null,
+            "temporalNotes": null,
+            "title": "SWestrans Commercial Split",
+            "accrualPeriodicity": "Irregular",
+            "verticalExtent": null,
+            "keyword": [
+                "Transport"
+            ],
+            "theme": [
+                "Transport / Mobility"
             ]
         },
         {
@@ -407,158 +407,6 @@
         {
             "@type": "dcat:Dataset",
             "accessLevel": "public",
-            "boundingBoxEast": null,
-            "boundingBoxNorth": null,
-            "boundingBoxSouth": null,
-            "boundingBoxWest": null,
-            "conformsTo": null,
-            "contactPoint": {
-                "@type": "vcard:Contact",
-                "fn": "Open Data",
-                "email": "opendata@dumgal.gov.uk"
-            },
-            "coverageArea": null,
-            "createdAt": "2017-11-29T11:05:07.274Z",
-            "description": "Primary school class sizes as at September 2016",
-            "distribution": [
-                {
-                    "@type": "dcat:Distribution",
-                    "accessURL": "https://api.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/55fbc78a-e9eb-46c9-94b1-13aa16ae2178/1/urql",
-                    "mediaType": "application/json",
-                    "title": "API"
-                },
-                {
-                    "@type": "dcat:Distribution",
-                    "accessURL": "https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/resource?resourceGUID=74a0bbbf-55f8-4ccf-83f9-388b93b219e9",
-                    "mediaType": "application/json",
-                    "title": "Class Sizes.json"
-                },
-                {
-                    "@type": "dcat:Distribution",
-                    "accessURL": "https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/resource?resourceGUID=e42a8889-9106-41ee-9d0c-cb22e81fe69d",
-                    "mediaType": "text/csv",
-                    "title": "Class Sizes.csv"
-                },
-                {
-                    "@type": "dcat:Distribution",
-                    "accessURL": "https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/resource?resourceGUID=b3f0b67b-7d62-4f94-a99b-e12105d36483",
-                    "mediaType": "application/xml",
-                    "title": "Class Sizes.xml"
-                }
-            ],
-            "identifier": "https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/dataset:viewDiscovery?datasetGUID=49492547-04d7-4dc8-b962-21c2c389be7a",
-            "issued": "2017-11-29T11:05:07.274Z",
-            "issueDate": null,
-            "landingPage": "https://usmart.io/org/dumgal/discovery/discovery-view-detail/49492547-04d7-4dc8-b962-21c2c389be7a",
-            "language": null,
-            "lastModificationDate": null,
-            "licence": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-            "lineage": null,
-            "modified": "2018-03-01T11:56:13.034Z",
-            "notes": "Primary School Class Size Information, September 2016\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\nData on class sizes in primary schools are collected each year as part of the pupil census.\t\t\t\t\t\t\t\t\t\t\nThe attached data give the number of pupils in each class in September 2016.\t\t\t\t\t\t\t\t\t\t\n\"Class type\" gives the stage of pupils in the class or, where more than one stage is present\t\t\t\t\t\t\t\t\t\t\n\"Co\" denotes a composite class.\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\nA class size maxima for P1 pupils is 25 and 30 for single stage class P2 or P3 is set out in  The Education (Lower Class Sizes) (Scotland) Amendment Regulations 2010.  \t\t\t\t\t\t\t\t\t\t\nThese regulations allow certain exceptions such as pupils who join a class after the end of a placing round and Additional Support Needs pupils who only join a class for part of the \t\t\t\t\t\t\t\t\t\t\ntime.  For P4-P7 class size maxima are set out in teachers terms and conditions of service.  For these years there is a normal maximum of \t\t\t\t\t\t\t\t\t\t\n33.  Composite classes throughout primary have a class size maximum of 25.\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\nExcepted pupils in class-size legislation are-\t\t\t\t\t\t\t\t\t\t\n(a) children whose record of additional support needs specify that they should be educated at the school concerned, and who are placed in the school outside a normal placing round;\t\t\t\t\t\t\t\t\t\t\n(b) children initially refused a place at a school, but subsequently on appeal offered a place outside a normal placing round or because the education authority recognise that an error\t\t\t\t\t\t\t\t\t\t\nwas made in implementing their placing arrangements for the school;\t\t\t\t\t\t\t\t\t\t\n(c) children who cannot gain a place at any other suitable school within a reasonable distance of their home because they move into an area outside a normal placing round;\t\t\t\t\t\t\t\t\t\t\n(d) children who are pupils at special schools, but who receive part of their education at a mainstream school; and\t\t\t\t\t\t\t\t\t\t\n(e) children with additional support needs who are normally educated in a special unit in a mainstream school, but who receive part of their lessons in a non-special class.\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\nThese are National Statistics background data. National Statistics are produced to high professional standards set out in the National Statistics \t\t\t\t\t\t\t\t\t\t\nCode of Practice. They undergo regular quality assurance reviews to ensure that they meet customer needs. They are produced free from \t\t\t\t\t\t\t\t\t\t\nany political interference. \t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\nAnalysis of class size at a national level is available through the following link:\t\n\t\t\t\t\t\t\t\t\t\nhttp://www.gov.scot/Topics/Statistics/Browse/School-Education/ClassSizeDatasets/classsize2016",
-            "publisher": {
-                "@type": "org:Organization",
-                "name": "https://usmart.io/org/dumgal"
-            },
-            "spatialReferenceSystem": null,
-            "spatialResolution": null,
-            "status": "Published",
-            "targetDate": "2017-11-30T17:00:00.000Z",
-            "temporalCoverageEnd": null,
-            "temporalCoverageStart": null,
-            "temporalNotes": null,
-            "title": "Class Sizes",
-            "accrualPeriodicity": null,
-            "verticalExtent": null,
-            "keyword": [
-                "Children",
-                "Education",
-                "Schools"
-            ],
-            "theme": [
-                "Social / Community"
-            ]
-        },
-        {
-            "@type": "dcat:Dataset",
-            "accessLevel": "public",
-            "boundingBoxEast": "347000",
-            "boundingBoxNorth": "622000",
-            "boundingBoxSouth": "531000",
-            "boundingBoxWest": "195000",
-            "conformsTo": null,
-            "contactPoint": {
-                "@type": "vcard:Contact",
-                "fn": "Barry Young",
-                "email": "barry.young@dumgal.gov.uk"
-            },
-            "coverageArea": null,
-            "createdAt": "2017-11-16T15:14:09.245Z",
-            "description": "Dumfries and Galloway School Catchment area boundaries",
-            "distribution": [
-                {
-                    "@type": "dcat:Distribution",
-                    "accessURL": "https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/resource?resourceGUID=265c34ba-7a4e-4324-b679-56db74d5fa9c",
-                    "mediaType": "application/zip",
-                    "title": "School_Catchments_DG.zip"
-                },
-                {
-                    "@type": "dcat:Distribution",
-                    "accessURL": "https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/additionalDocumentation/606fc22b-ee1c-4568-b1f6-5f4a2f1f55bf/School_Catchments_DG_RC.zip",
-                    "mediaType": "application/zip",
-                    "title": "School_Catchments_DG_RC.zip"
-                },
-                {
-                    "@type": "dcat:Distribution",
-                    "accessURL": "https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/additionalDocumentation/15a4c424-a3ff-43b4-9de4-f806e64698b3/Secondary Catchments Denominational.zip",
-                    "mediaType": "application/zip",
-                    "title": "Secondary Catchments Denominational.zip"
-                },
-                {
-                    "@type": "dcat:Distribution",
-                    "accessURL": "https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/additionalDocumentation/29388337-4e19-4ac9-8a8c-5d99e0639d9b/Secondary Catchments ND.zip",
-                    "mediaType": "application/zip",
-                    "title": "Secondary Catchments ND.zip"
-                }
-            ],
-            "identifier": "https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/dataset:viewDiscovery?datasetGUID=b958299b-9fca-4380-a6f1-047bdf0223aa",
-            "issued": "2017-11-16T15:14:09.245Z",
-            "issueDate": "2018-07-10T23:00:00.000Z",
-            "landingPage": "https://usmart.io/org/dumgal/discovery/discovery-view-detail/b958299b-9fca-4380-a6f1-047bdf0223aa",
-            "language": "en",
-            "lastModificationDate": "2018-07-10T23:00:00.000Z",
-            "licence": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-            "lineage": null,
-            "modified": "2020-12-11T14:12:07.979Z",
-            "notes": "Data captured at approx 1:25,000 scale.  Data includes primary school catchments with attributes identifying the associated secondary school.  Please note that some primary schools will have dual choice - i.e. pupils have the option of 2 secondary schools.",
-            "publisher": {
-                "@type": "org:Organization",
-                "name": "https://usmart.io/org/dumgal"
-            },
-            "spatialReferenceSystem": "British National Grid",
-            "spatialResolution": null,
-            "status": "Published",
-            "targetDate": "2017-11-16T17:00:00.000Z",
-            "temporalCoverageEnd": null,
-            "temporalCoverageStart": null,
-            "temporalNotes": null,
-            "title": "School Catchment Areas",
-            "accrualPeriodicity": "Irregular",
-            "verticalExtent": null,
-            "keyword": [
-                "Education",
-                "Government",
-                "Schools",
-                "Young People"
-            ],
-            "theme": [
-                "Social / Community",
-                "Geospatial"
-            ]
-        },
-        {
-            "@type": "dcat:Dataset",
-            "accessLevel": "public",
             "boundingBoxEast": "347000",
             "boundingBoxNorth": "622000",
             "boundingBoxSouth": "531000",
@@ -745,6 +593,68 @@
         {
             "@type": "dcat:Dataset",
             "accessLevel": "public",
+            "boundingBoxEast": null,
+            "boundingBoxNorth": null,
+            "boundingBoxSouth": null,
+            "boundingBoxWest": null,
+            "conformsTo": null,
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Open Data",
+                "email": "opendata@dumgal.gov.uk"
+            },
+            "coverageArea": null,
+            "createdAt": "2019-01-24T15:10:17.795Z",
+            "description": "Secondry School Teachers FTE (Full Time Equivelnt) 2017",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://api.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/dda8302f-f4d3-494a-839b-fa6916cc1dd2/1/urql",
+                    "mediaType": "application/json",
+                    "title": "API"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/resource?resourceGUID=c0002a4b-37c9-49e2-8725-1dd44734b349",
+                    "mediaType": "text/csv",
+                    "title": "Secondary School Teaches FTE.csv"
+                }
+            ],
+            "identifier": "https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/dataset:viewDiscovery?datasetGUID=9c8928da-f25f-46ac-99a4-ef024ece4b45",
+            "issued": "2019-01-24T15:10:17.795Z",
+            "issueDate": null,
+            "landingPage": "https://usmart.io/org/dumgal/discovery/discovery-view-detail/9c8928da-f25f-46ac-99a4-ef024ece4b45",
+            "language": null,
+            "lastModificationDate": null,
+            "licence": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+            "lineage": null,
+            "modified": "2019-01-29T08:35:05.268Z",
+            "notes": null,
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "https://usmart.io/org/dumgal"
+            },
+            "spatialReferenceSystem": null,
+            "spatialResolution": null,
+            "status": "Published",
+            "targetDate": "2019-01-29T17:00:00.000Z",
+            "temporalCoverageEnd": null,
+            "temporalCoverageStart": null,
+            "temporalNotes": null,
+            "title": "Secondary School Teaches FTE",
+            "accrualPeriodicity": "Irregular",
+            "verticalExtent": null,
+            "keyword": [
+                "Schools",
+                "Young People"
+            ],
+            "theme": [
+                "Social / Community"
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
             "boundingBoxEast": "347000",
             "boundingBoxNorth": "622000",
             "boundingBoxSouth": "531000",
@@ -888,6 +798,83 @@
         {
             "@type": "dcat:Dataset",
             "accessLevel": "public",
+            "boundingBoxEast": "347000",
+            "boundingBoxNorth": "622000",
+            "boundingBoxSouth": "531000",
+            "boundingBoxWest": "195000",
+            "conformsTo": null,
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Barry Young",
+                "email": "barry.young@dumgal.gov.uk"
+            },
+            "coverageArea": null,
+            "createdAt": "2017-11-16T15:14:09.245Z",
+            "description": "Dumfries and Galloway School Catchment area boundaries",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/resource?resourceGUID=265c34ba-7a4e-4324-b679-56db74d5fa9c",
+                    "mediaType": "application/zip",
+                    "title": "School_Catchments_DG.zip"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/additionalDocumentation/606fc22b-ee1c-4568-b1f6-5f4a2f1f55bf/School_Catchments_DG_RC.zip",
+                    "mediaType": "application/zip",
+                    "title": "School_Catchments_DG_RC.zip"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/additionalDocumentation/15a4c424-a3ff-43b4-9de4-f806e64698b3/Secondary Catchments Denominational.zip",
+                    "mediaType": "application/zip",
+                    "title": "Secondary Catchments Denominational.zip"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/additionalDocumentation/29388337-4e19-4ac9-8a8c-5d99e0639d9b/Secondary Catchments ND.zip",
+                    "mediaType": "application/zip",
+                    "title": "Secondary Catchments ND.zip"
+                }
+            ],
+            "identifier": "https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/dataset:viewDiscovery?datasetGUID=b958299b-9fca-4380-a6f1-047bdf0223aa",
+            "issued": "2017-11-16T15:14:09.245Z",
+            "issueDate": "2018-07-10T23:00:00.000Z",
+            "landingPage": "https://usmart.io/org/dumgal/discovery/discovery-view-detail/b958299b-9fca-4380-a6f1-047bdf0223aa",
+            "language": "en",
+            "lastModificationDate": "2018-07-10T23:00:00.000Z",
+            "licence": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+            "lineage": null,
+            "modified": "2020-12-11T14:12:07.979Z",
+            "notes": "Data captured at approx 1:25,000 scale.  Data includes primary school catchments with attributes identifying the associated secondary school.  Please note that some primary schools will have dual choice - i.e. pupils have the option of 2 secondary schools.",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "https://usmart.io/org/dumgal"
+            },
+            "spatialReferenceSystem": "British National Grid",
+            "spatialResolution": null,
+            "status": "Published",
+            "targetDate": "2017-11-16T17:00:00.000Z",
+            "temporalCoverageEnd": null,
+            "temporalCoverageStart": null,
+            "temporalNotes": null,
+            "title": "School Catchment Areas",
+            "accrualPeriodicity": "Irregular",
+            "verticalExtent": null,
+            "keyword": [
+                "Education",
+                "Government",
+                "Schools",
+                "Young People"
+            ],
+            "theme": [
+                "Social / Community",
+                "Geospatial"
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
             "boundingBoxEast": null,
             "boundingBoxNorth": null,
             "boundingBoxSouth": null,
@@ -899,32 +886,44 @@
                 "email": "opendata@dumgal.gov.uk"
             },
             "coverageArea": null,
-            "createdAt": "2019-01-24T15:10:17.795Z",
-            "description": "Secondry School Teachers FTE (Full Time Equivelnt) 2017",
+            "createdAt": "2017-11-29T11:05:07.274Z",
+            "description": "Primary school class sizes as at September 2016",
             "distribution": [
                 {
                     "@type": "dcat:Distribution",
-                    "accessURL": "https://api.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/dda8302f-f4d3-494a-839b-fa6916cc1dd2/1/urql",
+                    "accessURL": "https://api.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/55fbc78a-e9eb-46c9-94b1-13aa16ae2178/1/urql",
                     "mediaType": "application/json",
                     "title": "API"
                 },
                 {
                     "@type": "dcat:Distribution",
-                    "accessURL": "https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/resource?resourceGUID=c0002a4b-37c9-49e2-8725-1dd44734b349",
+                    "accessURL": "https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/resource?resourceGUID=74a0bbbf-55f8-4ccf-83f9-388b93b219e9",
+                    "mediaType": "application/json",
+                    "title": "Class Sizes.json"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/resource?resourceGUID=e42a8889-9106-41ee-9d0c-cb22e81fe69d",
                     "mediaType": "text/csv",
-                    "title": "Secondary School Teaches FTE.csv"
+                    "title": "Class Sizes.csv"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/resource?resourceGUID=b3f0b67b-7d62-4f94-a99b-e12105d36483",
+                    "mediaType": "application/xml",
+                    "title": "Class Sizes.xml"
                 }
             ],
-            "identifier": "https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/dataset:viewDiscovery?datasetGUID=9c8928da-f25f-46ac-99a4-ef024ece4b45",
-            "issued": "2019-01-24T15:10:17.795Z",
+            "identifier": "https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/dataset:viewDiscovery?datasetGUID=49492547-04d7-4dc8-b962-21c2c389be7a",
+            "issued": "2017-11-29T11:05:07.274Z",
             "issueDate": null,
-            "landingPage": "https://usmart.io/org/dumgal/discovery/discovery-view-detail/9c8928da-f25f-46ac-99a4-ef024ece4b45",
+            "landingPage": "https://usmart.io/org/dumgal/discovery/discovery-view-detail/49492547-04d7-4dc8-b962-21c2c389be7a",
             "language": null,
             "lastModificationDate": null,
             "licence": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
             "lineage": null,
-            "modified": "2019-01-29T08:35:05.268Z",
-            "notes": null,
+            "modified": "2018-03-01T11:56:13.034Z",
+            "notes": "Primary School Class Size Information, September 2016\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\nData on class sizes in primary schools are collected each year as part of the pupil census.\t\t\t\t\t\t\t\t\t\t\nThe attached data give the number of pupils in each class in September 2016.\t\t\t\t\t\t\t\t\t\t\n\"Class type\" gives the stage of pupils in the class or, where more than one stage is present\t\t\t\t\t\t\t\t\t\t\n\"Co\" denotes a composite class.\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\nA class size maxima for P1 pupils is 25 and 30 for single stage class P2 or P3 is set out in  The Education (Lower Class Sizes) (Scotland) Amendment Regulations 2010.  \t\t\t\t\t\t\t\t\t\t\nThese regulations allow certain exceptions such as pupils who join a class after the end of a placing round and Additional Support Needs pupils who only join a class for part of the \t\t\t\t\t\t\t\t\t\t\ntime.  For P4-P7 class size maxima are set out in teachers terms and conditions of service.  For these years there is a normal maximum of \t\t\t\t\t\t\t\t\t\t\n33.  Composite classes throughout primary have a class size maximum of 25.\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\nExcepted pupils in class-size legislation are-\t\t\t\t\t\t\t\t\t\t\n(a) children whose record of additional support needs specify that they should be educated at the school concerned, and who are placed in the school outside a normal placing round;\t\t\t\t\t\t\t\t\t\t\n(b) children initially refused a place at a school, but subsequently on appeal offered a place outside a normal placing round or because the education authority recognise that an error\t\t\t\t\t\t\t\t\t\t\nwas made in implementing their placing arrangements for the school;\t\t\t\t\t\t\t\t\t\t\n(c) children who cannot gain a place at any other suitable school within a reasonable distance of their home because they move into an area outside a normal placing round;\t\t\t\t\t\t\t\t\t\t\n(d) children who are pupils at special schools, but who receive part of their education at a mainstream school; and\t\t\t\t\t\t\t\t\t\t\n(e) children with additional support needs who are normally educated in a special unit in a mainstream school, but who receive part of their lessons in a non-special class.\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\nThese are National Statistics background data. National Statistics are produced to high professional standards set out in the National Statistics \t\t\t\t\t\t\t\t\t\t\nCode of Practice. They undergo regular quality assurance reviews to ensure that they meet customer needs. They are produced free from \t\t\t\t\t\t\t\t\t\t\nany political interference. \t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\nAnalysis of class size at a national level is available through the following link:\t\n\t\t\t\t\t\t\t\t\t\nhttp://www.gov.scot/Topics/Statistics/Browse/School-Education/ClassSizeDatasets/classsize2016",
             "publisher": {
                 "@type": "org:Organization",
                 "name": "https://usmart.io/org/dumgal"
@@ -932,16 +931,17 @@
             "spatialReferenceSystem": null,
             "spatialResolution": null,
             "status": "Published",
-            "targetDate": "2019-01-29T17:00:00.000Z",
+            "targetDate": "2017-11-30T17:00:00.000Z",
             "temporalCoverageEnd": null,
             "temporalCoverageStart": null,
             "temporalNotes": null,
-            "title": "Secondary School Teaches FTE",
-            "accrualPeriodicity": "Irregular",
+            "title": "Class Sizes",
+            "accrualPeriodicity": null,
             "verticalExtent": null,
             "keyword": [
-                "Schools",
-                "Young People"
+                "Children",
+                "Education",
+                "Schools"
             ],
             "theme": [
                 "Social / Community"
@@ -1337,67 +1337,6 @@
                 "email": "louise.boyce@dumgal.gov.uk"
             },
             "coverageArea": null,
-            "createdAt": "2018-01-23T14:16:42.175Z",
-            "description": "Number of Properties by Council Tax Band in each D&G, plus All-Scotland totals. This excludes Garages and Domestic Storage Premises.",
-            "distribution": [
-                {
-                    "@type": "dcat:Distribution",
-                    "accessURL": "https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/resource?resourceGUID=07ca781c-21a0-4ee6-937f-b4048c6fd0d1",
-                    "mediaType": "text/csv",
-                    "title": "ct_band.csv"
-                },
-                {
-                    "@type": "dcat:Distribution",
-                    "accessURL": "https://api.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/219fbf9a-4471-4997-8ea9-95c55c063442/1/urql",
-                    "mediaType": "application/json",
-                    "title": "API"
-                }
-            ],
-            "identifier": "https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/dataset:viewDiscovery?datasetGUID=8c6e6e6c-8f11-4eab-a401-1318b477ffad",
-            "issued": "2018-01-23T14:16:42.175Z",
-            "issueDate": null,
-            "landingPage": "https://usmart.io/org/dumgal/discovery/discovery-view-detail/8c6e6e6c-8f11-4eab-a401-1318b477ffad",
-            "language": "en",
-            "lastModificationDate": null,
-            "licence": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-            "lineage": null,
-            "modified": "2018-02-21T14:40:54.379Z",
-            "notes": null,
-            "publisher": {
-                "@type": "org:Organization",
-                "name": "https://usmart.io/org/dumgal"
-            },
-            "spatialReferenceSystem": null,
-            "spatialResolution": null,
-            "status": "Published",
-            "targetDate": null,
-            "temporalCoverageEnd": null,
-            "temporalCoverageStart": null,
-            "temporalNotes": null,
-            "title": "Council Tax",
-            "accrualPeriodicity": "Annual",
-            "verticalExtent": null,
-            "keyword": [
-                "Planning"
-            ],
-            "theme": [
-                "Built environment"
-            ]
-        },
-        {
-            "@type": "dcat:Dataset",
-            "accessLevel": "public",
-            "boundingBoxEast": null,
-            "boundingBoxNorth": null,
-            "boundingBoxSouth": null,
-            "boundingBoxWest": null,
-            "conformsTo": null,
-            "contactPoint": {
-                "@type": "vcard:Contact",
-                "fn": "Louise Boyce",
-                "email": "louise.boyce@dumgal.gov.uk"
-            },
-            "coverageArea": null,
             "createdAt": "2018-02-21T11:08:06.136Z",
             "description": "Historical School Rolls in Dumfries and Galloway",
             "distribution": [
@@ -1440,6 +1379,67 @@
             "verticalExtent": null,
             "keyword": [
                 "Children"
+            ],
+            "theme": [
+                "Built environment"
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "boundingBoxEast": null,
+            "boundingBoxNorth": null,
+            "boundingBoxSouth": null,
+            "boundingBoxWest": null,
+            "conformsTo": null,
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Louise Boyce",
+                "email": "louise.boyce@dumgal.gov.uk"
+            },
+            "coverageArea": null,
+            "createdAt": "2018-01-23T14:16:42.175Z",
+            "description": "Number of Properties by Council Tax Band in each D&G, plus All-Scotland totals. This excludes Garages and Domestic Storage Premises.",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/resource?resourceGUID=07ca781c-21a0-4ee6-937f-b4048c6fd0d1",
+                    "mediaType": "text/csv",
+                    "title": "ct_band.csv"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://api.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/219fbf9a-4471-4997-8ea9-95c55c063442/1/urql",
+                    "mediaType": "application/json",
+                    "title": "API"
+                }
+            ],
+            "identifier": "https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/dataset:viewDiscovery?datasetGUID=8c6e6e6c-8f11-4eab-a401-1318b477ffad",
+            "issued": "2018-01-23T14:16:42.175Z",
+            "issueDate": null,
+            "landingPage": "https://usmart.io/org/dumgal/discovery/discovery-view-detail/8c6e6e6c-8f11-4eab-a401-1318b477ffad",
+            "language": "en",
+            "lastModificationDate": null,
+            "licence": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+            "lineage": null,
+            "modified": "2018-02-21T14:40:54.379Z",
+            "notes": null,
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "https://usmart.io/org/dumgal"
+            },
+            "spatialReferenceSystem": null,
+            "spatialResolution": null,
+            "status": "Published",
+            "targetDate": null,
+            "temporalCoverageEnd": null,
+            "temporalCoverageStart": null,
+            "temporalNotes": null,
+            "title": "Council Tax",
+            "accrualPeriodicity": "Annual",
+            "verticalExtent": null,
+            "keyword": [
+                "Planning"
             ],
             "theme": [
                 "Built environment"
@@ -1779,6 +1779,67 @@
             "conformsTo": null,
             "contactPoint": {
                 "@type": "vcard:Contact",
+                "fn": "Louise Boyce",
+                "email": "louise.boyce@dumgal.gov.uk"
+            },
+            "coverageArea": null,
+            "createdAt": "2018-01-23T14:03:57.604Z",
+            "description": "The Total Number of Non-Domestic Properties and Total Rateable Value in each Local Authority within each Assessor's Area plus All Scotland totals.",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/resource?resourceGUID=bcd1bd61-af38-4ffb-8a49-35e8e18a0372",
+                    "mediaType": "text/csv",
+                    "title": "vr_subject_total.csv"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://api.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/4bbaa7b5-9da9-4614-9b4b-ff566f330217/1/urql",
+                    "mediaType": "application/json",
+                    "title": "API"
+                }
+            ],
+            "identifier": "https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/dataset:viewDiscovery?datasetGUID=0aeb8640-04ea-44e3-9c03-63b53a3fe7d4",
+            "issued": "2018-01-23T14:03:57.604Z",
+            "issueDate": null,
+            "landingPage": "https://usmart.io/org/dumgal/discovery/discovery-view-detail/0aeb8640-04ea-44e3-9c03-63b53a3fe7d4",
+            "language": "en",
+            "lastModificationDate": null,
+            "licence": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+            "lineage": null,
+            "modified": "2018-09-27T14:12:11.924Z",
+            "notes": null,
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "https://usmart.io/org/dumgal"
+            },
+            "spatialReferenceSystem": null,
+            "spatialResolution": null,
+            "status": "Published",
+            "targetDate": null,
+            "temporalCoverageEnd": null,
+            "temporalCoverageStart": null,
+            "temporalNotes": null,
+            "title": "Valuation Roll",
+            "accrualPeriodicity": null,
+            "verticalExtent": null,
+            "keyword": [
+                "Architectural"
+            ],
+            "theme": [
+                "Social / Community"
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "boundingBoxEast": null,
+            "boundingBoxNorth": null,
+            "boundingBoxSouth": null,
+            "boundingBoxWest": null,
+            "conformsTo": null,
+            "contactPoint": {
+                "@type": "vcard:Contact",
                 "fn": "Adam Lawrie",
                 "email": "adam.lawrie@dumgal.gov.uk"
             },
@@ -1831,123 +1892,6 @@
             "verticalExtent": null,
             "keyword": [
                 "Community Assets"
-            ],
-            "theme": [
-                "Social / Community"
-            ]
-        },
-        {
-            "@type": "dcat:Dataset",
-            "accessLevel": "public",
-            "boundingBoxEast": "347000",
-            "boundingBoxNorth": "622000",
-            "boundingBoxSouth": "531000",
-            "boundingBoxWest": "195000",
-            "conformsTo": null,
-            "contactPoint": {
-                "@type": "vcard:Contact",
-                "fn": "Open Data",
-                "email": "opendata@dumgal.gov.uk"
-            },
-            "coverageArea": "Dumfries and Galloway",
-            "createdAt": "2018-07-12T12:59:26.547Z",
-            "description": "Core Paths",
-            "distribution": [
-                {
-                    "@type": "dcat:Distribution",
-                    "accessURL": "https://api.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/2b1c99ec-bc89-44a9-89f1-54218f52318d/1/urql",
-                    "mediaType": "application/json",
-                    "title": "API"
-                }
-            ],
-            "identifier": "https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/dataset:viewDiscovery?datasetGUID=a0518b9b-2b70-4334-bd7e-6631adf67c11",
-            "issued": "2018-07-12T12:59:26.547Z",
-            "issueDate": null,
-            "landingPage": "https://usmart.io/org/dumgal/discovery/discovery-view-detail/a0518b9b-2b70-4334-bd7e-6631adf67c11",
-            "language": "en",
-            "lastModificationDate": null,
-            "licence": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-            "lineage": null,
-            "modified": "2020-02-04T11:09:15.072Z",
-            "notes": null,
-            "publisher": {
-                "@type": "org:Organization",
-                "name": "https://usmart.io/org/dumgal"
-            },
-            "spatialReferenceSystem": "British National Grid",
-            "spatialResolution": null,
-            "status": "Published",
-            "targetDate": "2018-07-16T16:00:00.000Z",
-            "temporalCoverageEnd": null,
-            "temporalCoverageStart": null,
-            "temporalNotes": null,
-            "title": "Core Paths",
-            "accrualPeriodicity": "Irregular",
-            "verticalExtent": null,
-            "keyword": [
-                "Public Access Routes ",
-                "Walking and Cycling  "
-            ],
-            "theme": [
-                "Geospatial"
-            ]
-        },
-        {
-            "@type": "dcat:Dataset",
-            "accessLevel": "public",
-            "boundingBoxEast": null,
-            "boundingBoxNorth": null,
-            "boundingBoxSouth": null,
-            "boundingBoxWest": null,
-            "conformsTo": null,
-            "contactPoint": {
-                "@type": "vcard:Contact",
-                "fn": "Louise Boyce",
-                "email": "louise.boyce@dumgal.gov.uk"
-            },
-            "coverageArea": null,
-            "createdAt": "2018-01-23T14:03:57.604Z",
-            "description": "The Total Number of Non-Domestic Properties and Total Rateable Value in each Local Authority within each Assessor's Area plus All Scotland totals.",
-            "distribution": [
-                {
-                    "@type": "dcat:Distribution",
-                    "accessURL": "https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/resource?resourceGUID=bcd1bd61-af38-4ffb-8a49-35e8e18a0372",
-                    "mediaType": "text/csv",
-                    "title": "vr_subject_total.csv"
-                },
-                {
-                    "@type": "dcat:Distribution",
-                    "accessURL": "https://api.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/4bbaa7b5-9da9-4614-9b4b-ff566f330217/1/urql",
-                    "mediaType": "application/json",
-                    "title": "API"
-                }
-            ],
-            "identifier": "https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/dataset:viewDiscovery?datasetGUID=0aeb8640-04ea-44e3-9c03-63b53a3fe7d4",
-            "issued": "2018-01-23T14:03:57.604Z",
-            "issueDate": null,
-            "landingPage": "https://usmart.io/org/dumgal/discovery/discovery-view-detail/0aeb8640-04ea-44e3-9c03-63b53a3fe7d4",
-            "language": "en",
-            "lastModificationDate": null,
-            "licence": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-            "lineage": null,
-            "modified": "2018-09-27T14:12:11.924Z",
-            "notes": null,
-            "publisher": {
-                "@type": "org:Organization",
-                "name": "https://usmart.io/org/dumgal"
-            },
-            "spatialReferenceSystem": null,
-            "spatialResolution": null,
-            "status": "Published",
-            "targetDate": null,
-            "temporalCoverageEnd": null,
-            "temporalCoverageStart": null,
-            "temporalNotes": null,
-            "title": "Valuation Roll",
-            "accrualPeriodicity": null,
-            "verticalExtent": null,
-            "keyword": [
-                "Architectural"
             ],
             "theme": [
                 "Social / Community"
@@ -2019,6 +1963,62 @@
             ],
             "theme": [
                 "Infrastructure"
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "accessLevel": "public",
+            "boundingBoxEast": "347000",
+            "boundingBoxNorth": "622000",
+            "boundingBoxSouth": "531000",
+            "boundingBoxWest": "195000",
+            "conformsTo": null,
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Open Data",
+                "email": "opendata@dumgal.gov.uk"
+            },
+            "coverageArea": "Dumfries and Galloway",
+            "createdAt": "2018-07-12T12:59:26.547Z",
+            "description": "Core Paths",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://api.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/2b1c99ec-bc89-44a9-89f1-54218f52318d/1/urql",
+                    "mediaType": "application/json",
+                    "title": "API"
+                }
+            ],
+            "identifier": "https://data.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/dataset:viewDiscovery?datasetGUID=a0518b9b-2b70-4334-bd7e-6631adf67c11",
+            "issued": "2018-07-12T12:59:26.547Z",
+            "issueDate": null,
+            "landingPage": "https://usmart.io/org/dumgal/discovery/discovery-view-detail/a0518b9b-2b70-4334-bd7e-6631adf67c11",
+            "language": "en",
+            "lastModificationDate": null,
+            "licence": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+            "lineage": null,
+            "modified": "2020-02-04T11:09:15.072Z",
+            "notes": null,
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "https://usmart.io/org/dumgal"
+            },
+            "spatialReferenceSystem": "British National Grid",
+            "spatialResolution": null,
+            "status": "Published",
+            "targetDate": "2018-07-16T16:00:00.000Z",
+            "temporalCoverageEnd": null,
+            "temporalCoverageStart": null,
+            "temporalNotes": null,
+            "title": "Core Paths",
+            "accrualPeriodicity": "Irregular",
+            "verticalExtent": null,
+            "keyword": [
+                "Public Access Routes ",
+                "Walking and Cycling  "
+            ],
+            "theme": [
+                "Geospatial"
             ]
         }
     ]

@@ -283,9 +283,9 @@
         },
         {
             "@type": "dcat:Dataset",
-            "@id": "https://maps-north-ayrshire.opendata.arcgis.com/maps/north-ayrshire::ldp2-flood-vulnerable-areas",
-            "dct:title": "LDP2 - Flood Vulnerable Areas",
-            "dct:description": "Boundaries of Flood Vulnerable Areas within North Ayrshire as set out in the Adopted Local Development Plan 2",
+            "@id": "https://maps-north-ayrshire.opendata.arcgis.com/maps/north-ayrshire::ldp2-carbon-rich-soils-and-peatlands",
+            "dct:title": "LDP2 - Carbon Rich Soils and Peatlands",
+            "dct:description": "Boundaries of Carbon Rich Soils and Peatlands within North Ayrshire as set out in the Adopted Local Development Plan 2",
             "dcat:contactPoint": {
                 "@id": "https://north-ayrshire.maps.arcgis.com/sharing/rest/community/users/NAC_OpenData?f=json",
                 "@type": "Contact",
@@ -295,24 +295,24 @@
             "dct:publisher": "North Ayrshire Council",
             "dcat:theme": "geospatial",
             "dct:accessRights": "public",
-            "dct:identifier": "https://www.arcgis.com/home/item.html?id=d759bef539b84387b483e9756d1992cd&sublayer=67",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=7acb5d7709d0450fb509b0fc896d3bac&sublayer=73",
             "dcat:keyword": [
                 "NAC",
                 "Open Data",
                 "Planning",
                 "Local Development Plan",
                 "LDP2",
-                "Flood Vulnerable Areas"
+                "Carbon Rich Soils and Peatlands"
             ],
             "dct:provenance": "",
-            "dct:issued": "2020-02-13T10:31:21.000Z",
+            "dct:issued": "2020-02-13T10:32:31.000Z",
             "dct:language": {
                 "@id": "lang:ENG"
             },
             "dcat:distribution": [
                 {
                     "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/maps/north-ayrshire::ldp2-flood-vulnerable-areas",
+                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/maps/north-ayrshire::ldp2-carbon-rich-soils-and-peatlands",
                     "dct:format": {
                         "@id": "ftype:HTML"
                     },
@@ -321,7 +321,7 @@
                 },
                 {
                     "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://www.maps.north-ayrshire.gov.uk/arcgis/rest/services/AGOL/Open_Data_Portal4/MapServer/67",
+                    "dcat:accessUrl": "https://www.maps.north-ayrshire.gov.uk/arcgis/rest/services/AGOL/Open_Data_Portal4/MapServer/73",
                     "dct:format": {
                         "@id": "ftype:JSON"
                     },
@@ -330,7 +330,7 @@
                 },
                 {
                     "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-flood-vulnerable-areas.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-carbon-rich-soils-and-peatlands.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
                     "dct:format": {
                         "@id": "ftype:GEOJSON"
                     },
@@ -339,7 +339,7 @@
                 },
                 {
                     "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-flood-vulnerable-areas.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-carbon-rich-soils-and-peatlands.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
                     "dct:format": {
                         "@id": "ftype:CSV"
                     },
@@ -348,7 +348,7 @@
                 },
                 {
                     "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-flood-vulnerable-areas.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-carbon-rich-soils-and-peatlands.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
                     "dct:format": {
                         "@id": "ftype:KML"
                     },
@@ -357,7 +357,7 @@
                 },
                 {
                     "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-flood-vulnerable-areas.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-carbon-rich-soils-and-peatlands.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
                     "dct:format": {
                         "@id": "ftype:ZIP"
                     },
@@ -453,9 +453,9 @@
         },
         {
             "@type": "dcat:Dataset",
-            "@id": "https://maps-north-ayrshire.opendata.arcgis.com/maps/north-ayrshire::ldp2-carbon-rich-soils-and-peatlands",
-            "dct:title": "LDP2 - Carbon Rich Soils and Peatlands",
-            "dct:description": "Boundaries of Carbon Rich Soils and Peatlands within North Ayrshire as set out in the Adopted Local Development Plan 2",
+            "@id": "https://maps-north-ayrshire.opendata.arcgis.com/maps/north-ayrshire::ldp2-flood-vulnerable-areas",
+            "dct:title": "LDP2 - Flood Vulnerable Areas",
+            "dct:description": "Boundaries of Flood Vulnerable Areas within North Ayrshire as set out in the Adopted Local Development Plan 2",
             "dcat:contactPoint": {
                 "@id": "https://north-ayrshire.maps.arcgis.com/sharing/rest/community/users/NAC_OpenData?f=json",
                 "@type": "Contact",
@@ -465,24 +465,24 @@
             "dct:publisher": "North Ayrshire Council",
             "dcat:theme": "geospatial",
             "dct:accessRights": "public",
-            "dct:identifier": "https://www.arcgis.com/home/item.html?id=7acb5d7709d0450fb509b0fc896d3bac&sublayer=73",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=d759bef539b84387b483e9756d1992cd&sublayer=67",
             "dcat:keyword": [
                 "NAC",
                 "Open Data",
                 "Planning",
                 "Local Development Plan",
                 "LDP2",
-                "Carbon Rich Soils and Peatlands"
+                "Flood Vulnerable Areas"
             ],
             "dct:provenance": "",
-            "dct:issued": "2020-02-13T10:32:31.000Z",
+            "dct:issued": "2020-02-13T10:31:21.000Z",
             "dct:language": {
                 "@id": "lang:ENG"
             },
             "dcat:distribution": [
                 {
                     "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/maps/north-ayrshire::ldp2-carbon-rich-soils-and-peatlands",
+                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/maps/north-ayrshire::ldp2-flood-vulnerable-areas",
                     "dct:format": {
                         "@id": "ftype:HTML"
                     },
@@ -491,7 +491,7 @@
                 },
                 {
                     "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://www.maps.north-ayrshire.gov.uk/arcgis/rest/services/AGOL/Open_Data_Portal4/MapServer/73",
+                    "dcat:accessUrl": "https://www.maps.north-ayrshire.gov.uk/arcgis/rest/services/AGOL/Open_Data_Portal4/MapServer/67",
                     "dct:format": {
                         "@id": "ftype:JSON"
                     },
@@ -500,7 +500,7 @@
                 },
                 {
                     "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-carbon-rich-soils-and-peatlands.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-flood-vulnerable-areas.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
                     "dct:format": {
                         "@id": "ftype:GEOJSON"
                     },
@@ -509,7 +509,7 @@
                 },
                 {
                     "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-carbon-rich-soils-and-peatlands.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-flood-vulnerable-areas.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
                     "dct:format": {
                         "@id": "ftype:CSV"
                     },
@@ -518,7 +518,7 @@
                 },
                 {
                     "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-carbon-rich-soils-and-peatlands.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-flood-vulnerable-areas.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
                     "dct:format": {
                         "@id": "ftype:KML"
                     },
@@ -527,92 +527,7 @@
                 },
                 {
                     "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-carbon-rich-soils-and-peatlands.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
-                    "dct:format": {
-                        "@id": "ftype:ZIP"
-                    },
-                    "dct:description": "Shapefile",
-                    "dct:title": "ZIP"
-                }
-            ]
-        },
-        {
-            "@type": "dcat:Dataset",
-            "@id": "https://maps-north-ayrshire.opendata.arcgis.com/maps/north-ayrshire::ldp2-proposed-flood-defences",
-            "dct:title": "LDP2 - Proposed Flood Defences",
-            "dct:description": "Location of Proposed Flood Defences within North Ayrshire as set out in the Adopted Local Development Plan 2",
-            "dcat:contactPoint": {
-                "@id": "https://north-ayrshire.maps.arcgis.com/sharing/rest/community/users/NAC_OpenData?f=json",
-                "@type": "Contact",
-                "vcard:fn": "NAC_OpenData",
-                "vcard:hasEmail": "mailto:GISAnalytics@northayrshirecouncil.onmicrosoft.com"
-            },
-            "dct:publisher": "North Ayrshire Council",
-            "dcat:theme": "geospatial",
-            "dct:accessRights": "public",
-            "dct:identifier": "https://www.arcgis.com/home/item.html?id=61b1e4bce66c4a53bcb22a2fbb14c95e&sublayer=47",
-            "dcat:keyword": [
-                "NAC",
-                "Open Data",
-                "Planning",
-                "Local Development Plan",
-                "LDP2",
-                "Proposed Flood Defences"
-            ],
-            "dct:provenance": "",
-            "dct:issued": "2020-02-13T10:30:17.000Z",
-            "dct:language": {
-                "@id": "lang:ENG"
-            },
-            "dcat:distribution": [
-                {
-                    "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/maps/north-ayrshire::ldp2-proposed-flood-defences",
-                    "dct:format": {
-                        "@id": "ftype:HTML"
-                    },
-                    "dct:description": "Web Page",
-                    "dct:title": "ArcGIS Hub Dataset"
-                },
-                {
-                    "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://www.maps.north-ayrshire.gov.uk/arcgis/rest/services/AGOL/Open_Data_Portal4/MapServer/47",
-                    "dct:format": {
-                        "@id": "ftype:JSON"
-                    },
-                    "dct:description": "Esri REST",
-                    "dct:title": "ArcGIS GeoService"
-                },
-                {
-                    "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-proposed-flood-defences.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
-                    "dct:format": {
-                        "@id": "ftype:GEOJSON"
-                    },
-                    "dct:description": "GeoJSON",
-                    "dct:title": "GeoJSON"
-                },
-                {
-                    "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-proposed-flood-defences.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
-                    "dct:format": {
-                        "@id": "ftype:CSV"
-                    },
-                    "dct:description": "CSV",
-                    "dct:title": "CSV"
-                },
-                {
-                    "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-proposed-flood-defences.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
-                    "dct:format": {
-                        "@id": "ftype:KML"
-                    },
-                    "dct:description": "KML",
-                    "dct:title": "KML"
-                },
-                {
-                    "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-proposed-flood-defences.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-flood-vulnerable-areas.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
                     "dct:format": {
                         "@id": "ftype:ZIP"
                     },
@@ -700,6 +615,91 @@
                 {
                     "@type": "dcat:Distribution",
                     "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-areas-where-wind-farms-will-not-be-acceptable.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://maps-north-ayrshire.opendata.arcgis.com/maps/north-ayrshire::ldp2-proposed-flood-defences",
+            "dct:title": "LDP2 - Proposed Flood Defences",
+            "dct:description": "Location of Proposed Flood Defences within North Ayrshire as set out in the Adopted Local Development Plan 2",
+            "dcat:contactPoint": {
+                "@id": "https://north-ayrshire.maps.arcgis.com/sharing/rest/community/users/NAC_OpenData?f=json",
+                "@type": "Contact",
+                "vcard:fn": "NAC_OpenData",
+                "vcard:hasEmail": "mailto:GISAnalytics@northayrshirecouncil.onmicrosoft.com"
+            },
+            "dct:publisher": "North Ayrshire Council",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=61b1e4bce66c4a53bcb22a2fbb14c95e&sublayer=47",
+            "dcat:keyword": [
+                "NAC",
+                "Open Data",
+                "Planning",
+                "Local Development Plan",
+                "LDP2",
+                "Proposed Flood Defences"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2020-02-13T10:30:17.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/maps/north-ayrshire::ldp2-proposed-flood-defences",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://www.maps.north-ayrshire.gov.uk/arcgis/rest/services/AGOL/Open_Data_Portal4/MapServer/47",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-proposed-flood-defences.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-proposed-flood-defences.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-proposed-flood-defences.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-proposed-flood-defences.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
                     "dct:format": {
                         "@id": "ftype:ZIP"
                     },
@@ -9366,91 +9366,6 @@
         },
         {
             "@type": "dcat:Dataset",
-            "@id": "https://maps-north-ayrshire.opendata.arcgis.com/maps/north-ayrshire::ldp2-national-scenic-areas",
-            "dct:title": "LDP2 - National Scenic Areas",
-            "dct:description": "Boundaries of National Scenic Areas within North Ayrshire as set out in the Adopted Local Development Plan 2",
-            "dcat:contactPoint": {
-                "@id": "https://north-ayrshire.maps.arcgis.com/sharing/rest/community/users/NAC_OpenData?f=json",
-                "@type": "Contact",
-                "vcard:fn": "NAC_OpenData",
-                "vcard:hasEmail": "mailto:GISAnalytics@northayrshirecouncil.onmicrosoft.com"
-            },
-            "dct:publisher": "North Ayrshire Council",
-            "dcat:theme": "geospatial",
-            "dct:accessRights": "public",
-            "dct:identifier": "https://www.arcgis.com/home/item.html?id=6709bb26c0b3412aad17e07472816390&sublayer=51",
-            "dcat:keyword": [
-                "NAC",
-                "Open Data",
-                "Planning",
-                "Local Development Plan",
-                "LDP2",
-                "National Scenic Areas"
-            ],
-            "dct:provenance": "",
-            "dct:issued": "2020-02-13T10:11:17.000Z",
-            "dct:language": {
-                "@id": "lang:ENG"
-            },
-            "dcat:distribution": [
-                {
-                    "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/maps/north-ayrshire::ldp2-national-scenic-areas",
-                    "dct:format": {
-                        "@id": "ftype:HTML"
-                    },
-                    "dct:description": "Web Page",
-                    "dct:title": "ArcGIS Hub Dataset"
-                },
-                {
-                    "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://www.maps.north-ayrshire.gov.uk/arcgis/rest/services/AGOL/Open_Data_Portal4/MapServer/51",
-                    "dct:format": {
-                        "@id": "ftype:JSON"
-                    },
-                    "dct:description": "Esri REST",
-                    "dct:title": "ArcGIS GeoService"
-                },
-                {
-                    "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-national-scenic-areas.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
-                    "dct:format": {
-                        "@id": "ftype:GEOJSON"
-                    },
-                    "dct:description": "GeoJSON",
-                    "dct:title": "GeoJSON"
-                },
-                {
-                    "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-national-scenic-areas.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
-                    "dct:format": {
-                        "@id": "ftype:CSV"
-                    },
-                    "dct:description": "CSV",
-                    "dct:title": "CSV"
-                },
-                {
-                    "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-national-scenic-areas.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
-                    "dct:format": {
-                        "@id": "ftype:KML"
-                    },
-                    "dct:description": "KML",
-                    "dct:title": "KML"
-                },
-                {
-                    "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-national-scenic-areas.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
-                    "dct:format": {
-                        "@id": "ftype:ZIP"
-                    },
-                    "dct:description": "Shapefile",
-                    "dct:title": "ZIP"
-                }
-            ]
-        },
-        {
-            "@type": "dcat:Dataset",
             "@id": "https://maps-north-ayrshire.opendata.arcgis.com/maps/north-ayrshire::ldp2-local-landscape-character-areas",
             "dct:title": "LDP2 - Local Landscape Character Areas",
             "dct:description": "Boundaries of Local Landscape Character Areas within North Ayrshire as set out in the Adopted Local Development Plan 2",
@@ -9526,6 +9441,91 @@
                 {
                     "@type": "dcat:Distribution",
                     "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-local-landscape-character-areas.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://maps-north-ayrshire.opendata.arcgis.com/maps/north-ayrshire::ldp2-national-scenic-areas",
+            "dct:title": "LDP2 - National Scenic Areas",
+            "dct:description": "Boundaries of National Scenic Areas within North Ayrshire as set out in the Adopted Local Development Plan 2",
+            "dcat:contactPoint": {
+                "@id": "https://north-ayrshire.maps.arcgis.com/sharing/rest/community/users/NAC_OpenData?f=json",
+                "@type": "Contact",
+                "vcard:fn": "NAC_OpenData",
+                "vcard:hasEmail": "mailto:GISAnalytics@northayrshirecouncil.onmicrosoft.com"
+            },
+            "dct:publisher": "North Ayrshire Council",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=6709bb26c0b3412aad17e07472816390&sublayer=51",
+            "dcat:keyword": [
+                "NAC",
+                "Open Data",
+                "Planning",
+                "Local Development Plan",
+                "LDP2",
+                "National Scenic Areas"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2020-02-13T10:11:17.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/maps/north-ayrshire::ldp2-national-scenic-areas",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://www.maps.north-ayrshire.gov.uk/arcgis/rest/services/AGOL/Open_Data_Portal4/MapServer/51",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-national-scenic-areas.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-national-scenic-areas.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-national-scenic-areas.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-national-scenic-areas.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
                     "dct:format": {
                         "@id": "ftype:ZIP"
                     },
@@ -9961,91 +9961,6 @@
         },
         {
             "@type": "dcat:Dataset",
-            "@id": "https://maps-north-ayrshire.opendata.arcgis.com/maps/north-ayrshire::ldp2-lamlash-bay-no-take-area",
-            "dct:title": "LDP2 - Lamlash Bay No Take Area",
-            "dct:description": "Boundaries of the  Lamlash Bay No Take Area within North Ayrshire as set out in the Adopted Local Development Plan 2",
-            "dcat:contactPoint": {
-                "@id": "https://north-ayrshire.maps.arcgis.com/sharing/rest/community/users/NAC_OpenData?f=json",
-                "@type": "Contact",
-                "vcard:fn": "NAC_OpenData",
-                "vcard:hasEmail": "mailto:GISAnalytics@northayrshirecouncil.onmicrosoft.com"
-            },
-            "dct:publisher": "North Ayrshire Council",
-            "dcat:theme": "geospatial",
-            "dct:accessRights": "public",
-            "dct:identifier": "https://www.arcgis.com/home/item.html?id=06a7449a8cb241729588cdd4c8e7a7cc&sublayer=63",
-            "dcat:keyword": [
-                "NAC",
-                "Open Data",
-                "Planning",
-                "Local Development Plan",
-                "LDP2",
-                "Lamlash Bay No Take Area"
-            ],
-            "dct:provenance": "",
-            "dct:issued": "2020-02-13T10:22:20.000Z",
-            "dct:language": {
-                "@id": "lang:ENG"
-            },
-            "dcat:distribution": [
-                {
-                    "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/maps/north-ayrshire::ldp2-lamlash-bay-no-take-area",
-                    "dct:format": {
-                        "@id": "ftype:HTML"
-                    },
-                    "dct:description": "Web Page",
-                    "dct:title": "ArcGIS Hub Dataset"
-                },
-                {
-                    "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://www.maps.north-ayrshire.gov.uk/arcgis/rest/services/AGOL/Open_Data_Portal4/MapServer/63",
-                    "dct:format": {
-                        "@id": "ftype:JSON"
-                    },
-                    "dct:description": "Esri REST",
-                    "dct:title": "ArcGIS GeoService"
-                },
-                {
-                    "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-lamlash-bay-no-take-area.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
-                    "dct:format": {
-                        "@id": "ftype:GEOJSON"
-                    },
-                    "dct:description": "GeoJSON",
-                    "dct:title": "GeoJSON"
-                },
-                {
-                    "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-lamlash-bay-no-take-area.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
-                    "dct:format": {
-                        "@id": "ftype:CSV"
-                    },
-                    "dct:description": "CSV",
-                    "dct:title": "CSV"
-                },
-                {
-                    "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-lamlash-bay-no-take-area.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
-                    "dct:format": {
-                        "@id": "ftype:KML"
-                    },
-                    "dct:description": "KML",
-                    "dct:title": "KML"
-                },
-                {
-                    "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-lamlash-bay-no-take-area.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
-                    "dct:format": {
-                        "@id": "ftype:ZIP"
-                    },
-                    "dct:description": "Shapefile",
-                    "dct:title": "ZIP"
-                }
-            ]
-        },
-        {
-            "@type": "dcat:Dataset",
             "@id": "https://maps-north-ayrshire.opendata.arcgis.com/maps/north-ayrshire::ldp2-marine-protection-area",
             "dct:title": "LDP2 - Marine Protection Area",
             "dct:description": "Boundaries of the Marine Protection Area within North Ayrshire as set out in the Adopted Local Development Plan 2",
@@ -10121,6 +10036,91 @@
                 {
                     "@type": "dcat:Distribution",
                     "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-marine-protection-area.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://maps-north-ayrshire.opendata.arcgis.com/maps/north-ayrshire::ldp2-lamlash-bay-no-take-area",
+            "dct:title": "LDP2 - Lamlash Bay No Take Area",
+            "dct:description": "Boundaries of the  Lamlash Bay No Take Area within North Ayrshire as set out in the Adopted Local Development Plan 2",
+            "dcat:contactPoint": {
+                "@id": "https://north-ayrshire.maps.arcgis.com/sharing/rest/community/users/NAC_OpenData?f=json",
+                "@type": "Contact",
+                "vcard:fn": "NAC_OpenData",
+                "vcard:hasEmail": "mailto:GISAnalytics@northayrshirecouncil.onmicrosoft.com"
+            },
+            "dct:publisher": "North Ayrshire Council",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=06a7449a8cb241729588cdd4c8e7a7cc&sublayer=63",
+            "dcat:keyword": [
+                "NAC",
+                "Open Data",
+                "Planning",
+                "Local Development Plan",
+                "LDP2",
+                "Lamlash Bay No Take Area"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2020-02-13T10:22:20.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/maps/north-ayrshire::ldp2-lamlash-bay-no-take-area",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://www.maps.north-ayrshire.gov.uk/arcgis/rest/services/AGOL/Open_Data_Portal4/MapServer/63",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-lamlash-bay-no-take-area.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-lamlash-bay-no-take-area.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-lamlash-bay-no-take-area.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-lamlash-bay-no-take-area.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
                     "dct:format": {
                         "@id": "ftype:ZIP"
                     },
