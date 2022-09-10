@@ -1,5 +1,8 @@
 import copy
-from processor import Processor
+try:
+    from processor import Processor
+except:
+    from .processor import Processor
 
 
 class ProcessorDCAT(Processor):
@@ -58,4 +61,6 @@ def get_license(dataset):
 
 
 processor = ProcessorDCAT()
-processor.process()
+
+if __name__ == "__main__":
+    processor.process()
