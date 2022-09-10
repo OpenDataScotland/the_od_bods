@@ -1,5 +1,8 @@
 from datetime import datetime
-from processor import Processor
+try:
+    from processor import Processor
+except:
+    from .processor import Processor
 
 
 class ProcessorARCGIS(Processor):
@@ -51,4 +54,6 @@ class ProcessorARCGIS(Processor):
 
 
 processor = ProcessorARCGIS()
-processor.process()
+
+if __name__ == "__main__":
+    processor.process()
