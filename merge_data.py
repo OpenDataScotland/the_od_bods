@@ -25,7 +25,7 @@ def merge_data():
     source_ckan["Source"] = "ckan API"
 
     ### From scotgov csv
-    source_scotgov = pd.read_csv("data/scotgov-datasets.csv")
+    source_scotgov = pd.read_csv("data/scotgov-datasets-sparkql.csv")
     source_scotgov = source_scotgov.rename(
         columns={
             "title": "Title",
