@@ -669,6 +669,54 @@ def clean_data(dataframe):
 
     data["License"] = data["License"].apply(tidy_licence)
 
+
+    def tidy_data_type(file_type):
+        """ Temporary data type conversion
+        Args:
+            file_type (str): the data type name
+        Returns:
+            tidied_data_type (str): a tidied data type name
+        """
+        known_data_types = {
+            'plain text': 'TXT',
+            'text': 'TXT',
+            'txt': 'TXT',
+            'csv': 'CSV',
+            'tsv': 'TSV',
+            'zip': 'ZIP',
+            'html': 'HTML',
+            'image': 'Image',
+            'mets': 'XML',
+            'alto': 'XML',
+            'xml': 'XML',
+            'vnd.ms-excel': 'EXCEL Spreadsheet',
+            'xls': 'EXCEL Spreadsheet',
+            'xlsx': 'EXCEL Spreadsheet',
+            'WEB MAP': 'WEB MAP',
+            'WEB MAPPING APPLICATION': 'WEB MAP',
+            'ARCGIS GEOSERVICE': 'ARCGIS GEOSERVICE',
+            'ARCGIS GEOSERVICES REST API': 'ARCGIS GEOSERVICE',
+        }
+        tidied_data_type = "NULL"
+        print("Test", type(file_type), file_type)
+        if type(file_type) != list:
+            list_file_type = []
+            list_file_type.append(file_type)
+            file_type = list_file_type
+            print("file_type", file_type)
+        if str(file_type) == []:
+            tidied_data_type = "No file type"
+        else:
+            for data_type in file_type:
+                print("data_type", data_type)
+                if data_type in known_data_types:
+                    tidied_data_type = known_data_types[data_type]
+            # else:
+            #    tidied_data_type = "Custom file type: " + str(file_type)
+        return tidied_data_type
+
+    ### Inconsistencies in casing for FileType
+    data['FileType'] = data['FileType'].apply(tidy_data_type)
     return data
 
 
