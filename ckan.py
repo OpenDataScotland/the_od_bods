@@ -40,9 +40,9 @@ class ProcessorCKAN(Processor):
                         owner,  # Owner
                         f"{url}package/{dataset_name}",  # PageURL
                         resource['url'],  # AssetURL
+                        resource['name'], # FileName
                         dataset_metadata["metadata_created"],  # DateCreated
                         dataset_metadata["metadata_modified"],  # DateUpdated  
-                        resource['name'], # FileName
                         file_size,  # FileSize
                         "B",  # FileSizeUnit
                         resource['format'],  # FileType
@@ -50,7 +50,7 @@ class ProcessorCKAN(Processor):
                         ';'.join(tags),  # OriginalTags
                         None,  # ManualTags
                         dataset_metadata['license_title'],  # License
-                        dataset_metadata['notes']  # Description
+                        dataset_metadata['notes'].encode('unicode_escape').decode()#.replace("\\","\\\\")#  # Description
                     ]
                 )
 
