@@ -35,10 +35,10 @@ def merge_data():
             "date_created": "DateCreated",
             "date_updated": "DateUpdated",
             "url": "PageURL",
+            "licence":"License"
         }
     )
-    source_scotgov["Source"] = "manual extraction"
-    source_scotgov["License"] = "OGL3"
+    source_scotgov["Source"] = "sparql"
 
     ### From arcgis api
     source_arcgis = pd.DataFrame()
