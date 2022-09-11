@@ -53,9 +53,6 @@ class ProcessorSparkQL(Processor):
         dfUnique = df.sort_values('issued', ascending=False) \
                         .drop_duplicates(subset='name', keep="first")
 
-        dfUnique.to_csv('cleanedData.csv')
-        print(dfUnique.count(), "Cleaned Data")
-
         # Renaming Column Names to ODS Format
         dfOds = dfUnique \
                 .rename(columns=
