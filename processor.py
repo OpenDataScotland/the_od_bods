@@ -13,6 +13,7 @@ class Processor:
             "Owner",
             "PageURL",
             "AssetURL",
+            "FileName",
             "DateCreated",
             "DateUpdated",
             "FileSize",
