@@ -37,6 +37,7 @@ class ProcessorCKAN(Processor):
                         resource['url'],  # AssetURL
                         dataset_metadata["metadata_created"],  # DateCreated
                         dataset_metadata["metadata_modified"],  # DateUpdated
+                        resource['name'], # FileName
                         file_size,  # FileSize
                         "B",  # FileSizeUnit
                         resource['format'],  # FileType

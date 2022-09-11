@@ -18,7 +18,7 @@ def merge_data():
                     [
                         source_ckan,
                         pd.read_csv(
-                            folder + r"/" + filename, parse_dates=["DateUpdated"]
+                            folder + r"/" + filename, parse_dates=["DateUpdated"], lineterminator='\n'
                         ),
                     ]
                 )
