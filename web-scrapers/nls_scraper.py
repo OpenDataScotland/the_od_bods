@@ -310,14 +310,14 @@ def tidy_data_type(file_type):
     return tidied_data_type
 
 
-def fetch_licences(page):
+def fetch_licences(page: BeautifulSoup) -> str:
     """
     Fetches the licences, under which the specific dataset is published.
 
     Args:
         page (BeautifulSoup object): A BeautifulSoup object for the specific dataset.
     Returns:
-        list_of_licences (List): A list of licences.
+        str: A string of licences.
     """
     if not (figures := page.find_all("figure", class_="wp-block-image is-resized")):
         if not (
@@ -331,7 +331,8 @@ def fetch_licences(page):
                 )
             ):
                 return []
-    return [f.find("a").get("href") for f in figures]
+    list_of_licences = [f.find("a").get("href") for f in figures]
+    return ', '.join(str(licence) for licence in list_of_licences)
 
 
 if __name__ == "__main__":
