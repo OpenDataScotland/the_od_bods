@@ -51,6 +51,7 @@ class ProcessorUSMART(Processor):
                     Owner,
                     PageURL,
                     filetypes[item],
+                    "", #FileName
                     DateCreated,
                     DateUpdated,
                     "",
