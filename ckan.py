@@ -4,7 +4,7 @@ class ProcessorCKAN(Processor):
     def __init__(self):
         super().__init__(type="ckan")
 
-    def get_datasets(self, owner, start_url, fname):
+    def get_datasets(self, portal_owner, start_url, fname):
         print(f"Processing {start_url}")
 
         url = start_url
@@ -21,6 +21,11 @@ class ProcessorCKAN(Processor):
 
             dataset_metadata = dataset_metadata['result']
 
+            ### gets provided owner name if exists, else uses the owner of the portal.
+            if 'organization' in dataset_metadata and 'title' in dataset_metadata['organization']:
+                    owner = dataset_metadata['organization']['title']
+            else: owner = portal_owner
+
             for resource in dataset_metadata['resources']:
                 tags = list(map(lambda x: x['name'], dataset_metadata['tags']))
 
@@ -35,9 +40,9 @@ class ProcessorCKAN(Processor):
                         owner,  # Owner
                         f"{url}package/{dataset_name}",  # PageURL
                         resource['url'],  # AssetURL
-                        dataset_metadata["metadata_created"],  # DateCreated
-                        dataset_metadata["metadata_modified"],  # DateUpdated
                         resource['name'], # FileName
+                        dataset_metadata["metadata_created"],  # DateCreated
+                        dataset_metadata["metadata_modified"],  # DateUpdated  
                         file_size,  # FileSize
                         "B",  # FileSizeUnit
                         resource['format'],  # FileType
@@ -45,7 +50,7 @@ class ProcessorCKAN(Processor):
                         ';'.join(tags),  # OriginalTags
                         None,  # ManualTags
                         dataset_metadata['license_title'],  # License
-                        dataset_metadata['notes']  # Description
+                        dataset_metadata['notes'].encode('unicode_escape').decode()#.replace("\\","\\\\")#  # Description
                     ]
                 )
 

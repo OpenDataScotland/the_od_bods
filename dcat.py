@@ -22,6 +22,7 @@ class ProcessorDCAT(Processor):
                 e.get("dct:publisher", "").replace(" Mapping", ""),
                 "",  # link to page
                 "",  # Link to data
+                "",  #FileName
                 "",  # date created
                 e.get("dct:issued", ""),
                 "",  # size
