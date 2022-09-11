@@ -636,32 +636,26 @@ def clean_data(dataframe):
             "https://creativecommons.org/licenses/by/4.0": "Creative Commons Attribution 4.0 International",
             "https://creativecommons.org/licenses/by/4.0/": "Creative Commons Attribution 4.0 International",
             "https://creativecommons.org/licenses/by/4.0/legalcode": "Creative Commons Attribution 4.0 International",
-            "CC BY 4.0": "Creative Commons Attribution 4.0 International",
-            "CC-BY 4.0": "Creative Commons Attribution 4.0 International",
-            "OGL3": "Open Government Licence v3.0",
-            "Open Government Licence 3.0 (United Kingdom)": "Open Government Licence v3.0",
-            "UK Open Government Licence (OGL)": "Open Government Licence v3.0",
-            "uk-ogl": "Open Government Licence v3.0",
-            "Open Data Commons Open Database License 1.0": "Open Data Commons Open Database License 1.0",
+            "https://creativecommons.org/share-your-work/public-domain/cc0": "Creative Commons CC0",
+            "http://rightsstatements.org/vocab/NKC/1.0/": "No Known Copyright",
+            "https://rightsstatements.org/page/NoC-NC/1.0/": "Non-Commercial Use Only",
             "http://opendatacommons.org/licenses/odbl/1-0/": "Open Data Commons Open Database License 1.0",
+            "Open Data Commons Open Database License 1.0": "Open Data Commons Open Database License 1.0",
             "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/": "Open Government Licence v2.0",
             "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/": "Open Government Licence v3.0",
-            "https://creativecommons.org/publicdomain/mark/1.0/": "Public Domain",
-            "Public Domain Mark 1.0": "Public Domain",
+            "Open Government Licence 3.0 (United Kingdom)": "Open Government Licence v3.0",
+            "UK Open Government Licence (OGL)": "Open Government Licence v3.0",
+            "Open Government": "Open Government Licence v3.0",
+            "uk-ogl": "Open Government Licence v3.0",
+            "OGL3": "Open Government Licence v3.0",
+            "Other (Public Domain)": "Public Domain",
             "Public Domain": "Public Domain",
-            "Public domain": "Public Domain",
-            "CC0": "Creative Commons CC0",
-            "CCO": "Creative Commons CC0",
-            "https://creativecommons.org/share-your-work/public-domain/cc0": "Creative Commons CC0",
-            "https://rightsstatements.org/page/NoC-NC/1.0/": "Non-Commercial Use Only",
+            "https://creativecommons.org/publicdomain/mark/1.0/": "Public Domain",
+            "Public Sector End User Licence (Scotland)": "Public Sector End User Licence (Scotland)",
         }
         if licence_name in known_licences:
             tidied_licence = known_licences[licence_name]
-        elif (
-            str(licence_name) == "nan"
-            or str(licence_name) == "No Known Copyright"
-            or str(licence_name) == "http://rightsstatements.org/vocab/NKC/1.0/"
-        ):
+        elif str(licence_name) == "nan":
             tidied_licence = "No licence"
         else:
             tidied_licence = "Custom licence: " + str(licence_name)
