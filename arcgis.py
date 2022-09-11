@@ -19,7 +19,7 @@ class ProcessorARCGIS(Processor):
             datasets += d["data"]
             if "next" in d["meta"] and d["meta"]["next"]:
                 url = d["meta"]["next"]
-                print(f"Next {url}")
+                #print(f"Next {url}")
             else:
                 break
 
