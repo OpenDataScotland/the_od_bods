@@ -22,23 +22,26 @@ class ProcessorCKAN(Processor):
             dataset_metadata = dataset_metadata['result']
 
             for resource in dataset_metadata['resources']:
-                #print(resource.keys())
-                print(type(resource['size']))
+                tags = list(map(lambda x: x['name'], dataset_metadata['tags']))
+
+                file_size = 0
+
+                if 'archiver' in resource and 'size' in resource['archiver']:
+                    file_size = resource['archiver']['size']
 
                 prepped.append(
                     [
                         dataset_metadata['title'],  # Title
-
                         owner,  # Owner
                         f"{url}package/{dataset_name}",  # PageURL
                         resource['url'],  # AssetURL
                         dataset_metadata["metadata_created"],  # DateCreated
                         dataset_metadata["metadata_modified"],  # DateUpdated
-                        resource['size'],  # FileSize
+                        file_size,  # FileSize
                         "B",  # FileSizeUnit
                         resource['format'],  # FileType
                         None,  # NumRecords
-                        "",  # OriginalTags
+                        ';'.join(tags),  # OriginalTags
                         None,  # ManualTags
                         dataset_metadata['license_title'],  # License
                         dataset_metadata['notes']  # Description

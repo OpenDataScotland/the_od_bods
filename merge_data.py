@@ -8,7 +8,20 @@ def merge_data():
     ### Loading data
 
     ### From ckan output
-    source_ckan = pd.read_csv("data/ckan_output.csv", parse_dates=["DateUpdated"])
+    source_ckan = pd.DataFrame()
+    folder = "data/ckan/"
+    for dirname, _, filenames in os.walk(folder):
+        for filename in filenames:
+            if filename.rsplit(".", 1)[1] == "csv":
+                print(filename)
+                source_ckan = pd.concat(
+                    [
+                        source_ckan,
+                        pd.read_csv(
+                            folder + r"/" + filename, parse_dates=["DateUpdated"]
+                        ),
+                    ]
+                )
     source_ckan["Source"] = "ckan API"
 
     ### From scotgov csv
