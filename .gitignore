@@ -361,3 +361,7 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Pytest outputs
+tests/mock_data/mockcsv.csv
+tests/mock_data/output

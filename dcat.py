@@ -1,5 +1,8 @@
 import copy
-from processor import Processor
+try:
+    from processor import Processor
+except:
+    from .processor import Processor
 
 
 class ProcessorDCAT(Processor):
@@ -19,6 +22,7 @@ class ProcessorDCAT(Processor):
                 e.get("dct:publisher", "").replace(" Mapping", ""),
                 "",  # link to page
                 "",  # Link to data
+                "",  #FileName
                 "",  # date created
                 e.get("dct:issued", ""),
                 "",  # size
@@ -58,4 +62,6 @@ def get_license(dataset):
 
 
 processor = ProcessorDCAT()
-processor.process()
+
+if __name__ == "__main__":
+    processor.process()

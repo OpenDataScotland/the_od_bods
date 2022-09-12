@@ -1,5 +1,8 @@
 from datetime import datetime
-from processor import Processor
+try:
+    from processor import Processor
+except:
+    from .processor import Processor
 
 
 class ProcessorARCGIS(Processor):
@@ -30,6 +33,7 @@ class ProcessorARCGIS(Processor):
                     e["attributes"].get("source", ""),
                     e.get("links", {}).get("itemPage", ""),
                     "",  # Link to data
+                    "", #FileName
                     datetime.utcfromtimestamp(
                         e["attributes"].get("created", 0) / 1000
                     ).strftime("%Y-%m-%d"),
@@ -51,4 +55,6 @@ class ProcessorARCGIS(Processor):
 
 
 processor = ProcessorARCGIS()
-processor.process()
+
+if __name__ == "__main__":
+    processor.process()
