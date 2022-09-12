@@ -653,6 +653,18 @@ def clean_data(dataframe):
             "https://creativecommons.org/publicdomain/mark/1.0/": "Public Domain",
             "Public Sector End User Licence (Scotland)": "Public Sector End User Licence (Scotland)",
         }
+
+        for key in known_licences.keys():
+            print(str(licence_name).lower().strip(" /"), key.lower().strip(" /"))
+            if str(licence_name).lower().strip(" /") == key.lower().strip(" /"):
+                return known_licences[key]
+
+        if str(licence_name) == "nan":
+                tidied_licence = "No licence"
+        else:
+                tidied_licence = "Custom licence: " + str(licence_name)
+        return tidied_licence
+        """
         if licence_name in known_licences:
             tidied_licence = known_licences[licence_name]
         elif str(licence_name) == "nan":
@@ -660,6 +672,7 @@ def clean_data(dataframe):
         else:
             tidied_licence = "Custom licence: " + str(licence_name)
         return tidied_licence
+        """
 
     data["License"] = data["License"].apply(tidy_licence)
 
@@ -692,17 +705,17 @@ def clean_data(dataframe):
             'ARCGIS GEOSERVICES REST API': 'ARCGIS GEOSERVICE',
         }
         tidied_data_type = "NULL"
-        print("Test", type(file_type), file_type)
+        # print("Test", type(file_type), file_type)
         if type(file_type) != list:
             list_file_type = []
             list_file_type.append(file_type)
             file_type = list_file_type
-            print("file_type", file_type)
+            # print("file_type", file_type)
         if str(file_type) == []:
             tidied_data_type = "No file type"
         else:
             for data_type in file_type:
-                print("data_type", data_type)
+                # print("data_type", data_type)
                 if data_type in known_data_types:
                     tidied_data_type = known_data_types[data_type]
             # else:
