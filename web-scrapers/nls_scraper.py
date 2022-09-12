@@ -331,8 +331,10 @@ def fetch_licences(page: BeautifulSoup) -> str:
                 )
             ):
                 return []
-    list_of_licences = [f.find("a").get("href") for f in figures]
-    return ', '.join(str(licence) for licence in list_of_licences)
+    return [f.find("a").get("href") for f in figures][0]
+    # useful in case we want to treat the case of multiple licences per dataset:
+    # list_of_licences = [f.find("a").get("href") for f in figures]
+    # return ', '.join(str(licence) for licence in list_of_licences)
 
 
 if __name__ == "__main__":
