@@ -664,6 +664,7 @@ def clean_data(dataframe):
                 tidied_licence = "Custom licence: " + str(licence_name)
         return tidied_licence
         """
+        # kept the code for the time being, in case the above changes are not approved
         if licence_name in known_licences:
             tidied_licence = known_licences[licence_name]
         elif str(licence_name) == "nan":
