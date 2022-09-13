@@ -654,7 +654,6 @@ def clean_data(dataframe):
         }
 
         for key in known_licences.keys():
-            print(str(licence_name).lower().strip(" /"), key.lower().strip(" /"))
             if str(licence_name).lower().strip(" /") == key.lower().strip(" /"):
                 return known_licences[key]
 
