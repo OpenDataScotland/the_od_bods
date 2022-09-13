@@ -632,12 +632,10 @@ def clean_data(dataframe):
         """
         known_licences = {
             "https://creativecommons.org/licenses/by-sa/3.0/": "Creative Commons Attribution Share-Alike 3.0",
-            "Creative Commons Attribution 4.0": "Creative Commons Attribution 4.0 International",
-            "https://creativecommons.org/licenses/by/4.0": "Creative Commons Attribution 4.0 International",
-            "https://creativecommons.org/licenses/by/4.0/": "Creative Commons Attribution 4.0 International",
             "https://creativecommons.org/licenses/by/4.0/legalcode": "Creative Commons Attribution 4.0 International",
+            "https://creativecommons.org/licenses/by/4.0": "Creative Commons Attribution 4.0 International",
+            "Creative Commons Attribution 4.0": "Creative Commons Attribution 4.0 International",
             "https://creativecommons.org/share-your-work/public-domain/cc0": "Creative Commons CC0",
-            "http://rightsstatements.org/vocab/NKC/1.0/": "No Known Copyright",
             "https://rightsstatements.org/page/NoC-NC/1.0/": "Non-Commercial Use Only",
             "http://opendatacommons.org/licenses/odbl/1-0/": "Open Data Commons Open Database License 1.0",
             "Open Data Commons Open Database License 1.0": "Open Data Commons Open Database License 1.0",
@@ -648,9 +646,10 @@ def clean_data(dataframe):
             "Open Government": "Open Government Licence v3.0",
             "uk-ogl": "Open Government Licence v3.0",
             "OGL3": "Open Government Licence v3.0",
+            "http://rightsstatements.org/vocab/NKC/1.0/": "No Known Copyright",
+            "https://creativecommons.org/publicdomain/mark/1.0/": "Public Domain",
             "Other (Public Domain)": "Public Domain",
             "Public Domain": "Public Domain",
-            "https://creativecommons.org/publicdomain/mark/1.0/": "Public Domain",
             "Public Sector End User Licence (Scotland)": "Public Sector End User Licence (Scotland)",
         }
 
