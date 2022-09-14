@@ -178,30 +178,20 @@ def fetch_file_size(page: BeautifulSoup) -> list:
     size_data = ""
     list_of_filesizes = []
 
-    #filesizes = page.find_all("p")
-    #print("filesizes1: ", filesizes)
     filesize_strings = page.find_all(string=re.compile("File size"))
-    print("filesizes1: ", filesize_strings)
     for filesize_string in filesize_strings:
-        print(filesize_string, type(filesize_string))
+        # print(filesize_string, type(filesize_string))
         filesize = filesize_string.split(":")[1].strip().split(" ")[0:2]
-        #if filesize == "":
+        if filesize == ['']:
+            filesize = []
+            filesize.append(filesize_string.next.next)
+            filesize.append(filesize_string.next.next.next.strip(" ").split(" ")[0])
 
         list_of_filesizes.append(filesize)
+    if list_of_filesizes == []:
+        list_of_filesizes.append("unknown")
+
     print("list_of_filesizes", list_of_filesizes)
-
-
-    p_tags = page.find_all("p")
-    for p_tag in p_tags:
-        print("p_tag", p_tag)
-        print("p_tag_contents", p_tag.contents[0])
-        if unicode(p_tag.contents[0]).__contains__("File size"):
-            print("p_tag2", p_tag)
-        test = p_tag.contents[0].find_all(string=re.compile("File size"))
-        print("test", test)
-            #filesize_strings = p_tag.contents[0]
-            #print("filesizes1: ", filesize_strings)
-            #for filesize_string in filesize_strings:
 
     """
     headlines = page.find_all("h4")
@@ -382,8 +372,13 @@ if __name__ == "__main__":
                 #print("asset_url:", asset_url)
                 create_date = fetch_create_date(soup)
                 # print("create_date:", create_date)
-                file_size = fetched_file_size[counter][0]
-                file_unit = fetched_file_size[counter][1]
+                if fetched_file_size != ["unknown"]:
+                    file_size = fetched_file_size[counter][0]
+                    file_unit = fetched_file_size[counter][1]
+                else:
+                    file_size = "unknown"
+                    file_unit = "unknown"
+
                 # print("file_size:", file_size)
                 # print("file_unit:", file_unit)
                 ### fetch_data_types is more accurate & useful, but file extension is consistent with other listings
