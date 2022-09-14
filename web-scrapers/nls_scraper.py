@@ -191,7 +191,7 @@ def fetch_file_size(page: BeautifulSoup) -> list:
     if list_of_filesizes == []:
         list_of_filesizes.append("unknown")
 
-    print("list_of_filesizes", list_of_filesizes)
+    # print("list_of_filesizes", list_of_filesizes)
 
     """
     headlines = page.find_all("h4")
@@ -232,7 +232,7 @@ def fetch_file_size(page: BeautifulSoup) -> list:
     """
     return list_of_filesizes
 
-def fetch_num_recs(page: BeautifulSoup) -> int:
+def fetch_num_recs(page: BeautifulSoup) -> list:
     """
     Fetches the number of files of the specific dataset.
 
@@ -241,19 +241,27 @@ def fetch_num_recs(page: BeautifulSoup) -> int:
     Returns:
         amount_recs (int): A number of files in the dataset.
     """
-    amount_recs = 0
-    content = page.find(string=re.compile("File content"))
-    if not content == None:
-        parts = content.split(":")
-        files = parts[1].split(";")
+    list_num_recs = []
+    content = page.find_all(string=re.compile("File content"))
+    # print(content)
+    for rec in content:
+        amount = 0
+        amount_recs = 0
+        if not rec == None:
+            parts = rec.split(":")
+            files = parts[1].split(";")
 
-        for item in files:
-            break_up = item.split(" ")
-            # print("break_up", break_up)
-            amount = int(break_up[1].replace(",", ""))
-            amount_recs += amount
+            for item in files:
+                break_up = item.strip().split(" ")
+                # print("break_up", item, ", ", break_up, ", ", break_up[0].replace(",", "").replace(".", ""))
+                amount = int(break_up[0].replace(",", "").replace(".", ""))
+                amount_recs += amount
+        list_num_recs.append(amount_recs)
+    if list_num_recs == []:
+        list_num_recs.append("unknown")
+    # print(list_num_recs)
 
-    return amount_recs
+    return list_num_recs
 
 
 def fetch_data_types(page: BeautifulSoup) -> str:
@@ -361,6 +369,7 @@ if __name__ == "__main__":
             soup = BeautifulSoup(req.content, "html.parser")
             list_of_asset_urls = fetch_asset_urls(soup)
             fetched_file_size = fetch_file_size(soup)
+            fetched_num_recs = fetch_num_recs(soup)
             counter = 0
             for asseturl in list_of_asset_urls:
                 title = fetch_title(soup)
@@ -384,7 +393,7 @@ if __name__ == "__main__":
                 ### fetch_data_types is more accurate & useful, but file extension is consistent with other listings
                 data_type = asset_url.rsplit('.',1)[1] #fetch_data_types(soup)
                 # print("data_type:", data_type)
-                num_recs = fetch_num_recs(soup)
+                num_recs = fetched_num_recs[counter]
                 # print(("num_recs:", num_recs))
                 nls_licence = fetch_licences(soup)
                 # print("nls_licence:", nls_licence)
@@ -414,8 +423,7 @@ if __name__ == "__main__":
 
 """
 still to do:
-- file size based on specific download link
-- num_files based on specific download link
+- 
 issues with this scraper:
 - if publication date present on webpage, then only year. In the csv it is the complete date
 - for two data sets, the file types are not listed the same way as the other pages. Needs to be addressed, if possible
