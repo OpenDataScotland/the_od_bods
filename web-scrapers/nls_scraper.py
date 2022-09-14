@@ -276,7 +276,7 @@ def fetch_data_types(page: BeautifulSoup) -> list:
     return list_of_types
 
 
-def fetch_licences(page):
+def fetch_licences(page: BeautifulSoup) -> str:
     """
     Fetches the licences, under which the specific dataset is published.
 
