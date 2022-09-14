@@ -9,6 +9,10 @@ class ProcessorCKAN(Processor):
 
         url = start_url
 
+        ### catch for missing trailing "/" in url
+        if url[-1] != "/": 
+            url = url + "/"            
+
         datasets = processor.get_json(f"{url}/api/3/action/package_list")
 
         print(f"Found {len(datasets['result'])} datasets")
@@ -38,7 +42,7 @@ class ProcessorCKAN(Processor):
                     [
                         dataset_metadata['title'],  # Title
                         owner,  # Owner
-                        f"{url}package/{dataset_name}",  # PageURL
+                        f"{url}dataset/{dataset_name}",  # PageURL
                         resource['url'],  # AssetURL
                         resource['name'], # FileName
                         dataset_metadata["metadata_created"],  # DateCreated
@@ -50,7 +54,7 @@ class ProcessorCKAN(Processor):
                         ';'.join(tags),  # OriginalTags
                         None,  # ManualTags
                         dataset_metadata['license_title'],  # License
-                        dataset_metadata['notes'].encode('unicode_escape').decode()#.replace("\\","\\\\")#  # Description
+                        dataset_metadata['notes'].encode('unicode_escape').decode()  # Description
                     ]
                 )
 
