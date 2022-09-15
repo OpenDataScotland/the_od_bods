@@ -74,6 +74,11 @@ def fetch_available_years():
     return dict_of_links
 
 
+def fetch_year_page(link: str) -> str:
+    # should this function only return a BeautifulSoup object of the respective year page?
+    return
+
+
 if __name__ == "__main__":
     # Record Headings
     header = [
@@ -94,5 +99,9 @@ if __name__ == "__main__":
     ]
     data = []
 
-    print("Getting data available years")
+    print("Getting available years")
     category_links = fetch_available_years()
+    for year in category_links.keys():
+        print("Getting", year)
+        years_data = fetch_year_page(category_links[year])
+
