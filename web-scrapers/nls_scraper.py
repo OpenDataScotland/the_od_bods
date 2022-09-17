@@ -283,7 +283,7 @@ def fetch_licences(page: BeautifulSoup) -> str:
     Args:
         page (BeautifulSoup object): A BeautifulSoup object for the specific dataset.
     Returns:
-        list_of_licences (List): A list of licences.
+        str: A string of licences.
     """
     if not (figures := page.find_all("figure", class_="wp-block-image is-resized")):
         if not (
@@ -297,7 +297,10 @@ def fetch_licences(page: BeautifulSoup) -> str:
                 )
             ):
                 return []
-    return [f.find("a").get("href") for f in figures]
+    return [f.find("a").get("href") for f in figures][0]
+    # useful in case we want to treat the case of multiple licences per dataset:
+    # list_of_licences = [f.find("a").get("href") for f in figures]
+    # return ', '.join(str(licence) for licence in list_of_licences)
 
 
 if __name__ == "__main__":

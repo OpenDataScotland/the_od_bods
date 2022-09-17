@@ -32,7 +32,7 @@ class Dataset:
     files: List[DataFile]
 
 
-fulld = pd.read_csv("data/merged_output.csv", dtype=str, na_filter=False)
+fulld = pd.read_csv("data/merged_output.csv", dtype=str, na_filter=False, lineterminator='\n')
 
 
 def ind(name):
@@ -83,6 +83,7 @@ def makeint(val):
 
 data = {}
 for r in fulld.values:
+    print(r)
     id = str(r[ind("PageURL")]) + r[ind("Title")]
     if id not in data:
         ds = Dataset(

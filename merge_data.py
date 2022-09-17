@@ -8,11 +8,24 @@ def merge_data():
     ### Loading data
 
     ### From ckan output
-    source_ckan = pd.read_csv("data/ckan_output.csv", parse_dates=["DateUpdated"])
+    source_ckan = pd.DataFrame()
+    folder = "data/ckan/"
+    for dirname, _, filenames in os.walk(folder):
+        for filename in filenames:
+            if filename.rsplit(".", 1)[1] == "csv":
+                print(filename)
+                source_ckan = pd.concat(
+                    [
+                        source_ckan,
+                        pd.read_csv(
+                            folder + r"/" + filename, parse_dates=["DateUpdated"], lineterminator='\n'
+                        ),
+                    ]
+                )
     source_ckan["Source"] = "ckan API"
 
     ### From scotgov csv
-    source_scotgov = pd.read_csv("data/scotgov-datasets.csv")
+    source_scotgov = pd.read_csv("data/scotgov-datasets-sparkql.csv")
     source_scotgov = source_scotgov.rename(
         columns={
             "title": "Title",
@@ -22,10 +35,10 @@ def merge_data():
             "date_created": "DateCreated",
             "date_updated": "DateUpdated",
             "url": "PageURL",
+            "licence":"License"
         }
     )
-    source_scotgov["Source"] = "manual extraction"
-    source_scotgov["License"] = "OGL3"
+    source_scotgov["Source"] = "sparql"
 
     ### From arcgis api
     source_arcgis = pd.DataFrame()

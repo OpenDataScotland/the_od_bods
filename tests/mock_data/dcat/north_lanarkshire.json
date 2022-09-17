@@ -1,0 +1,1720 @@
+{
+    "@context": {
+        "dcat": "http://www.w3.org/ns/dcat#",
+        "dct": "http://purl.org/dc/terms/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "vcard": "http://www.w3.org/2006/vcard/ns#",
+        "ftype": "http://publications.europa.eu/resource/authority/file-type/",
+        "lang": "http://publications.europa.eu/resource/authority/language/"
+    },
+    "@id": "https://gisdata-nlcmaps.opendata.arcgis.com",
+    "@type": "dcat:Catalog",
+    "dct:description": "North Lanarkshire Council",
+    "dct:title": "North Lanarkshire Council - GIS Open Data",
+    "dct:publisher": "North Lanarkshire Council",
+    "foaf:homepage": {
+        "foaf:Document": "https://gisdata-nlcmaps.opendata.arcgis.com/search"
+    },
+    "dct:language": {
+        "@id": "lang:ENG"
+    },
+    "dct:creator": {
+        "@id": "https://nlcmaps.maps.arcgis.com",
+        "@type": "foaf:Agent",
+        "foaf:name": "North Lanarkshire Council"
+    },
+    "dcat:dataset": [
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://gisdata-nlcmaps.opendata.arcgis.com/maps/nlcmaps::air-quality-management-areas",
+            "dct:title": "Air Quality Management Areas",
+            "dct:description": "Air Quality Management Areas",
+            "dcat:contactPoint": {
+                "@id": "https://nlcmaps.maps.arcgis.com/sharing/rest/community/users/GISTeam_nlc?f=json",
+                "@type": "Contact",
+                "vcard:fn": "GISTeam_nlc",
+                "vcard:hasEmail": "mailto:gis@northlan.gov.uk?subject=ArcGIS Online"
+            },
+            "dct:publisher": "North Lanarkshire Council",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=cfaf3fe8dc044953a01f7f7409501761&sublayer=15",
+            "dcat:keyword": [
+                "Air",
+                "Quality",
+                "Management",
+                "Areas",
+                "AQMA"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2017-05-23T15:27:03.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/maps/nlcmaps::air-quality-management-areas",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://maps.northlanarkshire.gov.uk/server/rest/services/PUBLIC/OPEN_DATA_LAYERS/FeatureServer/15",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::air-quality-management-areas.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::air-quality-management-areas.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::air-quality-management-areas.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::air-quality-management-areas.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://gisdata-nlcmaps.opendata.arcgis.com/maps/nlcmaps::local-nature-reserves",
+            "dct:title": "Local Nature Reserves",
+            "dct:description": "Local Nature Reserves",
+            "dcat:contactPoint": {
+                "@id": "https://nlcmaps.maps.arcgis.com/sharing/rest/community/users/GISTeam_nlc?f=json",
+                "@type": "Contact",
+                "vcard:fn": "GISTeam_nlc",
+                "vcard:hasEmail": "mailto:gis@northlan.gov.uk?subject=ArcGIS Online"
+            },
+            "dct:publisher": "North Lanarkshire Council",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=32f011d4fe0b4321b234cda2e965649e&sublayer=10",
+            "dcat:keyword": [
+                "Local",
+                "Nature",
+                "Reserves"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2016-04-25T14:44:11.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/maps/nlcmaps::local-nature-reserves",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://maps.northlanarkshire.gov.uk/server/rest/services/PUBLIC/OPEN_DATA_LAYERS/FeatureServer/10",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::local-nature-reserves.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::local-nature-reserves.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::local-nature-reserves.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::local-nature-reserves.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://gisdata-nlcmaps.opendata.arcgis.com/maps/nlcmaps::area-of-great-landscape-value",
+            "dct:title": "Area of Great Landscape Value",
+            "dct:description": "Area of Great Landscape Value",
+            "dcat:contactPoint": {
+                "@id": "https://nlcmaps.maps.arcgis.com/sharing/rest/community/users/GISTeam_nlc?f=json",
+                "@type": "Contact",
+                "vcard:fn": "GISTeam_nlc",
+                "vcard:hasEmail": "mailto:gis@northlan.gov.uk?subject=ArcGIS Online"
+            },
+            "dct:publisher": "North Lanarkshire Council",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=2e1a9cce89e24e078eafa8f3af55ba70&sublayer=17",
+            "dcat:keyword": [
+                "Area",
+                "Great",
+                "Landscape",
+                "Value"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2017-05-23T15:31:41.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/maps/nlcmaps::area-of-great-landscape-value",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://maps.northlanarkshire.gov.uk/server/rest/services/PUBLIC/OPEN_DATA_LAYERS/FeatureServer/17",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::area-of-great-landscape-value.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::area-of-great-landscape-value.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::area-of-great-landscape-value.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::area-of-great-landscape-value.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://gisdata-nlcmaps.opendata.arcgis.com/maps/nlcmaps::alcohol-prohibition-areas",
+            "dct:title": "Alcohol Prohibition Areas",
+            "dct:description": "Alcohol Prohibition Areas",
+            "dcat:contactPoint": {
+                "@id": "https://nlcmaps.maps.arcgis.com/sharing/rest/community/users/GISTeam_nlc?f=json",
+                "@type": "Contact",
+                "vcard:fn": "GISTeam_nlc",
+                "vcard:hasEmail": "mailto:gis@northlan.gov.uk?subject=ArcGIS Online"
+            },
+            "dct:publisher": "North Lanarkshire Council",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=2b66a762bafd4533884e986a055989f1&sublayer=16",
+            "dcat:keyword": [
+                "Alcohol",
+                "Prohibition",
+                "Areas"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2017-05-24T10:32:05.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/maps/nlcmaps::alcohol-prohibition-areas",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://maps.northlanarkshire.gov.uk/server/rest/services/PUBLIC/OPEN_DATA_LAYERS/FeatureServer/16",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::alcohol-prohibition-areas.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::alcohol-prohibition-areas.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::alcohol-prohibition-areas.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::alcohol-prohibition-areas.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://gisdata-nlcmaps.opendata.arcgis.com/maps/nlcmaps::denominational-primary-schools-catchments",
+            "dct:title": "Denominational Primary Schools Catchments",
+            "dct:description": "Denominational Primary Schools Catchments",
+            "dcat:contactPoint": {
+                "@id": "https://nlcmaps.maps.arcgis.com/sharing/rest/community/users/GISTeam_nlc?f=json",
+                "@type": "Contact",
+                "vcard:fn": "GISTeam_nlc",
+                "vcard:hasEmail": "mailto:gis@northlan.gov.uk?subject=ArcGIS Online"
+            },
+            "dct:publisher": "North Lanarkshire Council",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=bcec72f9e8044a948d020181e7f65347&sublayer=3",
+            "dcat:keyword": [
+                "Denominational",
+                "Primary",
+                "Catchments",
+                "school",
+                "schools"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2016-04-25T14:37:15.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/maps/nlcmaps::denominational-primary-schools-catchments",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://maps.northlanarkshire.gov.uk/server/rest/services/PUBLIC/OPEN_DATA_LAYERS/FeatureServer/3",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::denominational-primary-schools-catchments.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::denominational-primary-schools-catchments.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::denominational-primary-schools-catchments.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::denominational-primary-schools-catchments.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://gisdata-nlcmaps.opendata.arcgis.com/maps/nlcmaps::denominational-secondary-schools-catchments",
+            "dct:title": "Denominational Secondary Schools Catchments",
+            "dct:description": "Denominational Secondary Schools Catchments",
+            "dcat:contactPoint": {
+                "@id": "https://nlcmaps.maps.arcgis.com/sharing/rest/community/users/GISTeam_nlc?f=json",
+                "@type": "Contact",
+                "vcard:fn": "GISTeam_nlc",
+                "vcard:hasEmail": "mailto:gis@northlan.gov.uk?subject=ArcGIS Online"
+            },
+            "dct:publisher": "North Lanarkshire Council",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=59071aba35bc45978b6c929c90828e00&sublayer=4",
+            "dcat:keyword": [
+                "Denominational",
+                "Secondary",
+                "schools",
+                "Catchments"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2016-04-25T14:39:08.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/maps/nlcmaps::denominational-secondary-schools-catchments",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://maps.northlanarkshire.gov.uk/server/rest/services/PUBLIC/OPEN_DATA_LAYERS/FeatureServer/4",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::denominational-secondary-schools-catchments.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::denominational-secondary-schools-catchments.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::denominational-secondary-schools-catchments.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::denominational-secondary-schools-catchments.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://gisdata-nlcmaps.opendata.arcgis.com/maps/nlcmaps::non-denominational-primary-schools-catchments",
+            "dct:title": "Non Denominational Primary Schools Catchments",
+            "dct:description": "Non Denominational Primary Schools Catchments",
+            "dcat:contactPoint": {
+                "@id": "https://nlcmaps.maps.arcgis.com/sharing/rest/community/users/GISTeam_nlc?f=json",
+                "@type": "Contact",
+                "vcard:fn": "GISTeam_nlc",
+                "vcard:hasEmail": "mailto:gis@northlan.gov.uk?subject=ArcGIS Online"
+            },
+            "dct:publisher": "North Lanarkshire Council",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=ef0cf35b0ed54005ac7b8ca94ba139d7&sublayer=5",
+            "dcat:keyword": [
+                "Non Denominational",
+                "Primary",
+                "Schools",
+                "Catchments"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2016-04-25T14:40:03.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/maps/nlcmaps::non-denominational-primary-schools-catchments",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://maps.northlanarkshire.gov.uk/server/rest/services/PUBLIC/OPEN_DATA_LAYERS/FeatureServer/5",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::non-denominational-primary-schools-catchments.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::non-denominational-primary-schools-catchments.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::non-denominational-primary-schools-catchments.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::non-denominational-primary-schools-catchments.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://gisdata-nlcmaps.opendata.arcgis.com/maps/nlcmaps::non-denominational-secondary-schools-catchments",
+            "dct:title": "Non Denominational Secondary Schools Catchments",
+            "dct:description": "Non Denominational Secondary Schools Catchments",
+            "dcat:contactPoint": {
+                "@id": "https://nlcmaps.maps.arcgis.com/sharing/rest/community/users/GISTeam_nlc?f=json",
+                "@type": "Contact",
+                "vcard:fn": "GISTeam_nlc",
+                "vcard:hasEmail": "mailto:gis@northlan.gov.uk?subject=ArcGIS Online"
+            },
+            "dct:publisher": "North Lanarkshire Council",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=482cee220a1a463bb2d9e2eb8b9f54b4&sublayer=6",
+            "dcat:keyword": [
+                "Non Denominational",
+                "Secondary",
+                "Schools",
+                "Catchments"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2016-04-25T14:40:58.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/maps/nlcmaps::non-denominational-secondary-schools-catchments",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://maps.northlanarkshire.gov.uk/server/rest/services/PUBLIC/OPEN_DATA_LAYERS/FeatureServer/6",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::non-denominational-secondary-schools-catchments.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::non-denominational-secondary-schools-catchments.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::non-denominational-secondary-schools-catchments.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::non-denominational-secondary-schools-catchments.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://gisdata-nlcmaps.opendata.arcgis.com/maps/nlcmaps::rights-of-way",
+            "dct:title": "Rights of Way",
+            "dct:description": "Rights of Way",
+            "dcat:contactPoint": {
+                "@id": "https://nlcmaps.maps.arcgis.com/sharing/rest/community/users/GISTeam_nlc?f=json",
+                "@type": "Contact",
+                "vcard:fn": "GISTeam_nlc",
+                "vcard:hasEmail": "mailto:gis@northlan.gov.uk?subject=ArcGIS Online"
+            },
+            "dct:publisher": "North Lanarkshire Council",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=34250847752f4aa7823f6d897793e209&sublayer=13",
+            "dcat:keyword": [
+                "Rights of Way"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2017-05-23T15:38:27.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/maps/nlcmaps::rights-of-way",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://maps.northlanarkshire.gov.uk/server/rest/services/PUBLIC/OPEN_DATA_LAYERS/FeatureServer/13",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::rights-of-way.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::rights-of-way.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::rights-of-way.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::rights-of-way.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://gisdata-nlcmaps.opendata.arcgis.com/maps/nlcmaps::polling-districts-1",
+            "dct:title": "Polling Districts",
+            "dct:description": "<span style='color: rgb(51, 51, 51); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; background-color: rgb(246, 253, 255);'>Boundaries of polling districts in North Lanarkshire. Data is derived from the Boundary Commission for Scotland Fifth Statutory Review.</span>",
+            "dcat:contactPoint": {
+                "@id": "https://nlcmaps.maps.arcgis.com/sharing/rest/community/users/GISTeam_nlc?f=json",
+                "@type": "Contact",
+                "vcard:fn": "GISTeam_nlc",
+                "vcard:hasEmail": "mailto:gis@northlan.gov.uk?subject=ArcGIS Online"
+            },
+            "dct:publisher": "North Lanarkshire Council",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=c9117c0e86e44adf87eef84ec72fb747&sublayer=1",
+            "dcat:keyword": [
+                "Polling",
+                "Districts",
+                "NL",
+                "north lanarkshire"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2017-04-12T13:43:57.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/maps/nlcmaps::polling-districts-1",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://maps.northlanarkshire.gov.uk/server/rest/services/PUBLIC/OPEN_DATA_LAYERS/FeatureServer/1",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::polling-districts-1.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::polling-districts-1.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::polling-districts-1.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::polling-districts-1.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://gisdata-nlcmaps.opendata.arcgis.com/maps/nlcmaps::sinc",
+            "dct:title": "SINC",
+            "dct:description": "Sites of Interest for Nature Conservation",
+            "dcat:contactPoint": {
+                "@id": "https://nlcmaps.maps.arcgis.com/sharing/rest/community/users/GISTeam_nlc?f=json",
+                "@type": "Contact",
+                "vcard:fn": "GISTeam_nlc",
+                "vcard:hasEmail": "mailto:gis@northlan.gov.uk?subject=ArcGIS Online"
+            },
+            "dct:publisher": "North Lanarkshire Council",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=f76db4a76b604e46b5a6c864430e7a90&sublayer=11",
+            "dcat:keyword": [
+                "sinc",
+                "sies",
+                "importance",
+                "nature",
+                "conservation"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2016-04-25T14:45:34.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/maps/nlcmaps::sinc",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://maps.northlanarkshire.gov.uk/server/rest/services/PUBLIC/OPEN_DATA_LAYERS/FeatureServer/11",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::sinc.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::sinc.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::sinc.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::sinc.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://gisdata-nlcmaps.opendata.arcgis.com/maps/nlcmaps::tree-preservation-order-2018",
+            "dct:title": "Tree Preservation Order",
+            "dct:description": "Tree Preservation Order 2018",
+            "dcat:contactPoint": {
+                "@id": "https://nlcmaps.maps.arcgis.com/sharing/rest/community/users/GISTeam_nlc?f=json",
+                "@type": "Contact",
+                "vcard:fn": "GISTeam_nlc",
+                "vcard:hasEmail": "mailto:gis@northlan.gov.uk?subject=ArcGIS Online"
+            },
+            "dct:publisher": "North Lanarkshire Council",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=6837617cd17d436fbfc6b50657bd18e9&sublayer=19",
+            "dcat:keyword": [
+                "TPO",
+                "Tree Preservation Order",
+                "north lanarkshire",
+                "Tree",
+                "Preservation",
+                "Order",
+                "North Lanarkshire Council",
+                "NLC"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2018-11-16T10:46:26.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/maps/nlcmaps::tree-preservation-order-2018",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://maps.northlanarkshire.gov.uk/server/rest/services/PUBLIC/OPEN_DATA_LAYERS/FeatureServer/19",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::tree-preservation-order-2018.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::tree-preservation-order-2018.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::tree-preservation-order-2018.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::tree-preservation-order-2018.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://gisdata-nlcmaps.opendata.arcgis.com/content/nlcmaps::north-lanarkshire-council-gis-open-data",
+            "dct:title": "North Lanarkshire Council - GIS Open Data",
+            "dct:description": "North Lanarkshire Council",
+            "dcat:contactPoint": {
+                "@id": "https://nlcmaps.maps.arcgis.com/sharing/rest/community/users/GISTeam_nlc?f=json",
+                "@type": "Contact",
+                "vcard:fn": "GISTeam_nlc",
+                "vcard:hasEmail": "mailto:gis@northlan.gov.uk?subject=ArcGIS Online"
+            },
+            "dct:publisher": "North Lanarkshire Council",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=a4a3164db37f42f59db9d02cc609a3f1",
+            "dcat:keyword": [
+                "site"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2017-04-12T08:17:47.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/content/nlcmaps::north-lanarkshire-council-gis-open-data",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://gisdata-nlcmaps.opendata.arcgis.com/maps/nlcmaps::conservation-areas-1",
+            "dct:title": "Conservation Areas",
+            "dct:description": "Areas of Conservation",
+            "dcat:contactPoint": {
+                "@id": "https://nlcmaps.maps.arcgis.com/sharing/rest/community/users/GISTeam_nlc?f=json",
+                "@type": "Contact",
+                "vcard:fn": "GISTeam_nlc",
+                "vcard:hasEmail": "mailto:gis@northlan.gov.uk?subject=ArcGIS Online"
+            },
+            "dct:publisher": "North Lanarkshire Council",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=7efe411ce25d44c6bf311c019378971c&sublayer=8",
+            "dcat:keyword": [
+                "Conservation",
+                "Areas"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2016-04-25T14:42:47.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/maps/nlcmaps::conservation-areas-1",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://maps.northlanarkshire.gov.uk/server/rest/services/PUBLIC/OPEN_DATA_LAYERS/FeatureServer/8",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::conservation-areas-1.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::conservation-areas-1.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::conservation-areas-1.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::conservation-areas-1.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://gisdata-nlcmaps.opendata.arcgis.com/maps/nlcmaps::contaminated-land",
+            "dct:title": "Contaminated Land",
+            "dct:description": "Contaminated Land",
+            "dcat:contactPoint": {
+                "@id": "https://nlcmaps.maps.arcgis.com/sharing/rest/community/users/GISTeam_nlc?f=json",
+                "@type": "Contact",
+                "vcard:fn": "GISTeam_nlc",
+                "vcard:hasEmail": "mailto:gis@northlan.gov.uk?subject=ArcGIS Online"
+            },
+            "dct:publisher": "North Lanarkshire Council",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=9621ea2074a14780bac331ab2ff2a6a1&sublayer=18",
+            "dcat:keyword": [
+                "Contaminated",
+                "Land"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2017-05-24T10:29:56.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/maps/nlcmaps::contaminated-land",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://maps.northlanarkshire.gov.uk/server/rest/services/PUBLIC/OPEN_DATA_LAYERS/FeatureServer/18",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::contaminated-land.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::contaminated-land.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::contaminated-land.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::contaminated-land.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://gisdata-nlcmaps.opendata.arcgis.com/maps/nlcmaps::community-councils-1",
+            "dct:title": "Community Councils",
+            "dct:description": "Community Council Areas",
+            "dcat:contactPoint": {
+                "@id": "https://nlcmaps.maps.arcgis.com/sharing/rest/community/users/GISTeam_nlc?f=json",
+                "@type": "Contact",
+                "vcard:fn": "GISTeam_nlc",
+                "vcard:hasEmail": "mailto:gis@northlan.gov.uk?subject=ArcGIS Online"
+            },
+            "dct:publisher": "North Lanarkshire Council",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=2569bdeb126d402fa3cf17aa0a553b1e&sublayer=0",
+            "dcat:keyword": [
+                "Community Councils"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2016-04-25T14:06:50.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/maps/nlcmaps::community-councils-1",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://maps.northlanarkshire.gov.uk/server/rest/services/PUBLIC/OPEN_DATA_LAYERS/FeatureServer/0",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::community-councils-1.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::community-councils-1.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::community-councils-1.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::community-councils-1.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://gisdata-nlcmaps.opendata.arcgis.com/maps/nlcmaps::green-belt",
+            "dct:title": "Green Belt",
+            "dct:description": "Green Belt areas in North Lanarkshire",
+            "dcat:contactPoint": {
+                "@id": "https://nlcmaps.maps.arcgis.com/sharing/rest/community/users/GISTeam_nlc?f=json",
+                "@type": "Contact",
+                "vcard:fn": "GISTeam_nlc",
+                "vcard:hasEmail": "mailto:gis@northlan.gov.uk?subject=ArcGIS Online"
+            },
+            "dct:publisher": "North Lanarkshire Council",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=1533241c5f8a4b0583a2c4fe629aa1c1&sublayer=9",
+            "dcat:keyword": [
+                "Green",
+                "Belt"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2016-04-25T14:43:30.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/maps/nlcmaps::green-belt",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://maps.northlanarkshire.gov.uk/server/rest/services/PUBLIC/OPEN_DATA_LAYERS/FeatureServer/9",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::green-belt.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::green-belt.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::green-belt.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::green-belt.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://gisdata-nlcmaps.opendata.arcgis.com/maps/nlcmaps::nlc-schools-1",
+            "dct:title": "NLC Schools",
+            "dct:description": "<span style='color: rgb(0, 102, 153); font-family: arial; font-size: 12px; line-height: 17.1429px; background-color: rgb(255, 255, 255);'>Points depicting the location of all the schools which children in North Lanarkshire are in the catchment area for.</span>",
+            "dcat:contactPoint": {
+                "@id": "https://nlcmaps.maps.arcgis.com/sharing/rest/community/users/GISTeam_nlc?f=json",
+                "@type": "Contact",
+                "vcard:fn": "GISTeam_nlc",
+                "vcard:hasEmail": "mailto:gis@northlan.gov.uk?subject=ArcGIS Online"
+            },
+            "dct:publisher": "North Lanarkshire Council",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=0fce559f6119470188e882cfe54dae61&sublayer=7",
+            "dcat:keyword": [
+                "NLC",
+                "Schools"
+            ],
+            "dct:provenance": "Dataset captured against Ordnance Survey base maps.\nSource from Service (Education).\nEdited as needed, when there are changes to the schools estate.\nEdited in ArcMap under the guidance of the Service.\nReviewed by Service.",
+            "dct:issued": "2016-04-25T14:42:12.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/maps/nlcmaps::nlc-schools-1",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://maps.northlanarkshire.gov.uk/server/rest/services/PUBLIC/OPEN_DATA_LAYERS/FeatureServer/7",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::nlc-schools-1.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::nlc-schools-1.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::nlc-schools-1.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::nlc-schools-1.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://gisdata-nlcmaps.opendata.arcgis.com/maps/nlcmaps::cemeteries",
+            "dct:title": "Cemeteries",
+            "dct:description": "Cemeteries in North Lanarkshire",
+            "dcat:contactPoint": {
+                "@id": "https://nlcmaps.maps.arcgis.com/sharing/rest/community/users/GISTeam_nlc?f=json",
+                "@type": "Contact",
+                "vcard:fn": "GISTeam_nlc",
+                "vcard:hasEmail": "mailto:gis@northlan.gov.uk?subject=ArcGIS Online"
+            },
+            "dct:publisher": "North Lanarkshire Council",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=5b97f120ab614c9185fc4d81e138846d&sublayer=12",
+            "dcat:keyword": [
+                "Cemeteries",
+                "NLC"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2016-04-25T14:47:03.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/maps/nlcmaps::cemeteries",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://maps.northlanarkshire.gov.uk/server/rest/services/PUBLIC/OPEN_DATA_LAYERS/FeatureServer/12",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::cemeteries.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::cemeteries.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::cemeteries.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::cemeteries.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://gisdata-nlcmaps.opendata.arcgis.com/maps/nlcmaps::adopted-roads-indicative-only",
+            "dct:title": "Adopted Roads - Indicative only",
+            "dct:description": "",
+            "dcat:contactPoint": {
+                "@id": "https://nlcmaps.maps.arcgis.com/sharing/rest/community/users/GISTeam_nlc?f=json",
+                "@type": "Contact",
+                "vcard:fn": "GISTeam_nlc",
+                "vcard:hasEmail": "mailto:gis@northlan.gov.uk?subject=ArcGIS Online"
+            },
+            "dct:publisher": "North Lanarkshire Council",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=4f2b1df71d9e472493dbc18881cd9ac2&sublayer=14",
+            "dcat:keyword": [
+                "adopted",
+                "roads",
+                "nlc"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2021-07-05T11:44:29.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/maps/nlcmaps::adopted-roads-indicative-only",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://maps.northlanarkshire.gov.uk/server/rest/services/PUBLIC/OPEN_DATA_LAYERS/FeatureServer/14",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::adopted-roads-indicative-only.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::adopted-roads-indicative-only.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::adopted-roads-indicative-only.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::adopted-roads-indicative-only.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://gisdata-nlcmaps.opendata.arcgis.com/maps/nlcmaps::lhma",
+            "dct:title": "LHMA",
+            "dct:description": "",
+            "dcat:contactPoint": {
+                "@id": "https://nlcmaps.maps.arcgis.com/sharing/rest/community/users/GISTeam_nlc?f=json",
+                "@type": "Contact",
+                "vcard:fn": "GISTeam_nlc",
+                "vcard:hasEmail": "mailto:gis@northlan.gov.uk?subject=ArcGIS Online"
+            },
+            "dct:publisher": "North Lanarkshire Council",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=9776b648e8e842f99163d23c424886d0&sublayer=55",
+            "dcat:keyword": [
+                "LHMA",
+                "open",
+                "data",
+                "open data"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2019-08-21T14:32:40.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/maps/nlcmaps::lhma",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://maps.northlanarkshire.gov.uk/server/rest/services/PUBLIC/Lv_Internet/MapServer/55",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::lhma.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::lhma.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::lhma.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://gisdata-nlcmaps.opendata.arcgis.com/datasets/nlcmaps::lhma.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        }
+    ]
+}
