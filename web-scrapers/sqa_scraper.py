@@ -75,8 +75,11 @@ def fetch_available_years():
 
 
 def fetch_year_page(link: str) -> str:
-    # should this function only return a BeautifulSoup object of the respective year page?
-    return
+    req = requests.get(link, get_headers())
+    return BeautifulSoup(req.content, "html.parser")
+
+
+def
 
 
 if __name__ == "__main__":
@@ -103,5 +106,48 @@ if __name__ == "__main__":
     category_links = fetch_available_years()
     for year in category_links.keys():
         print("Getting", year)
-        years_data = fetch_year_page(category_links[year])
+        years_page = fetch_year_page(category_links[year])
+        owner = "Scottish Qualifications Authority (SQA)"
+        pageurl = category_links[year]
+
+        title = "NULL"
+        asset_url = "NULL"
+        create_date = "NULL"
+        file_size = "NULL"
+        file_unit = "NULL"
+        data_type = "NULL"
+        num_recs = "NULL"
+        sqa_licence = "NULL"
+
+        """
+        title = fetch_title(soup)
+        # print("title:", title)
+        # print("pageurl:", pageurl)
+        asset_url = fetch_asset_url(soup)
+        # print("asset_url:", asset_url)
+        """
+
+        output = [
+            title,
+            owner,
+            pageurl,
+            asset_url,
+            create_date,
+            "NULL",
+            file_size,
+            file_unit,
+            data_type,
+            num_recs,
+            "NULL",
+            "NULL",
+            sqa_licence,
+            "NULL",
+        ]
+        data.append(output)
+
+    print("Outputting to CSV")
+    csv_output(header, data)
+
+
+
 
