@@ -44,7 +44,7 @@ class ProcessorDCAT(Processor):
                 if p.get("dct:description", "") == "Web Page":
                     continue
                 ds[3] = p.get("dcat:accessUrl", "")
-                ds[8] = p.get("dct:title", "")
+                ds[9] = p.get("dct:title", "")
                 dsl.append(copy.deepcopy(ds))
             if not dsl:
                 dsl.append(ds)
