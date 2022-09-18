@@ -7,6 +7,10 @@ def is_valid_string(str_to_check):
     return isinstance(str_to_check, str)
 
 
+def is_valid_filename(filename_to_check):
+    return is_valid_string(filename_to_check)
+
+
 def is_valid_date(date_to_check):
     if date_to_check:
         try:
@@ -87,6 +91,7 @@ def csv_checker(csv_file):
         {"title": "Owner", "test_func": is_valid_string},
         {"title": "PageURL", "test_func": is_valid_url},
         {"title": "AssetURL", "test_func": is_valid_url},
+        {"title": "FileName", "test_func": is_valid_filename},
         {"title": "DateCreated", "test_func": is_valid_date},
         {"title": "DateUpdated", "test_func": is_valid_date},
         {"title": "FileSize", "test_func": is_valid_number},
