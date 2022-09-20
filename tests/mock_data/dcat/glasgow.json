@@ -2124,8 +2124,8 @@
         },
         {
             "@type": "dcat:Dataset",
-            "@id": "https://open-data-design-glasgowgis.hub.arcgis.com/maps/GlasgowGIS::nd-primary-schools-2",
-            "dct:title": "ND Primary Schools",
+            "@id": "https://open-data-design-glasgowgis.hub.arcgis.com/maps/GlasgowGIS::rc-primary-school-catchments-1",
+            "dct:title": "RC Primary School Catchments",
             "dct:description": "Schools and catchemnts areas",
             "dcat:contactPoint": {
                 "@id": "https://GlasgowGIS.maps.arcgis.com/sharing/rest/community/users/GlasgowGIS?f=json",
@@ -2136,7 +2136,7 @@
             "dct:publisher": "Glasgow City Council",
             "dcat:theme": "geospatial",
             "dct:accessRights": "public",
-            "dct:identifier": "https://www.arcgis.com/home/item.html?id=2bfa782d5da84302bf15219e19a05112&sublayer=1",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=2bfa782d5da84302bf15219e19a05112&sublayer=8",
             "dcat:keyword": [
                 "Education",
                 "Catchments",
@@ -2150,7 +2150,7 @@
             "dcat:distribution": [
                 {
                     "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://open-data-design-glasgowgis.hub.arcgis.com/maps/GlasgowGIS::nd-primary-schools-2",
+                    "dcat:accessUrl": "https://open-data-design-glasgowgis.hub.arcgis.com/maps/GlasgowGIS::rc-primary-school-catchments-1",
                     "dct:format": {
                         "@id": "ftype:HTML"
                     },
@@ -2159,7 +2159,7 @@
                 },
                 {
                     "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://utility.arcgis.com/usrsvcs/servers/2bfa782d5da84302bf15219e19a05112/rest/services/OPEN_DATA/Schools_Catchments_Open/MapServer/1",
+                    "dcat:accessUrl": "https://utility.arcgis.com/usrsvcs/servers/2bfa782d5da84302bf15219e19a05112/rest/services/OPEN_DATA/Schools_Catchments_Open/MapServer/8",
                     "dct:format": {
                         "@id": "ftype:JSON"
                     },
@@ -2168,7 +2168,7 @@
                 },
                 {
                     "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://open-data-design-glasgowgis.hub.arcgis.com/datasets/GlasgowGIS::nd-primary-schools-2.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dcat:accessUrl": "https://open-data-design-glasgowgis.hub.arcgis.com/datasets/GlasgowGIS::rc-primary-school-catchments-1.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
                     "dct:format": {
                         "@id": "ftype:GEOJSON"
                     },
@@ -2177,7 +2177,7 @@
                 },
                 {
                     "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://open-data-design-glasgowgis.hub.arcgis.com/datasets/GlasgowGIS::nd-primary-schools-2.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dcat:accessUrl": "https://open-data-design-glasgowgis.hub.arcgis.com/datasets/GlasgowGIS::rc-primary-school-catchments-1.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
                     "dct:format": {
                         "@id": "ftype:CSV"
                     },
@@ -2186,7 +2186,7 @@
                 },
                 {
                     "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://open-data-design-glasgowgis.hub.arcgis.com/datasets/GlasgowGIS::nd-primary-schools-2.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dcat:accessUrl": "https://open-data-design-glasgowgis.hub.arcgis.com/datasets/GlasgowGIS::rc-primary-school-catchments-1.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
                     "dct:format": {
                         "@id": "ftype:KML"
                     },
@@ -2195,7 +2195,7 @@
                 },
                 {
                     "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://open-data-design-glasgowgis.hub.arcgis.com/datasets/GlasgowGIS::nd-primary-schools-2.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dcat:accessUrl": "https://open-data-design-glasgowgis.hub.arcgis.com/datasets/GlasgowGIS::rc-primary-school-catchments-1.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
                     "dct:format": {
                         "@id": "ftype:ZIP"
                     },
@@ -2288,8 +2288,8 @@
         },
         {
             "@type": "dcat:Dataset",
-            "@id": "https://open-data-design-glasgowgis.hub.arcgis.com/maps/GlasgowGIS::rc-primary-school-catchments-1",
-            "dct:title": "RC Primary School Catchments",
+            "@id": "https://open-data-design-glasgowgis.hub.arcgis.com/maps/GlasgowGIS::nd-primary-schools-2",
+            "dct:title": "ND Primary Schools",
             "dct:description": "Schools and catchemnts areas",
             "dcat:contactPoint": {
                 "@id": "https://GlasgowGIS.maps.arcgis.com/sharing/rest/community/users/GlasgowGIS?f=json",
@@ -2300,7 +2300,7 @@
             "dct:publisher": "Glasgow City Council",
             "dcat:theme": "geospatial",
             "dct:accessRights": "public",
-            "dct:identifier": "https://www.arcgis.com/home/item.html?id=2bfa782d5da84302bf15219e19a05112&sublayer=8",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=2bfa782d5da84302bf15219e19a05112&sublayer=1",
             "dcat:keyword": [
                 "Education",
                 "Catchments",
@@ -2314,7 +2314,7 @@
             "dcat:distribution": [
                 {
                     "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://open-data-design-glasgowgis.hub.arcgis.com/maps/GlasgowGIS::rc-primary-school-catchments-1",
+                    "dcat:accessUrl": "https://open-data-design-glasgowgis.hub.arcgis.com/maps/GlasgowGIS::nd-primary-schools-2",
                     "dct:format": {
                         "@id": "ftype:HTML"
                     },
@@ -2323,7 +2323,7 @@
                 },
                 {
                     "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://utility.arcgis.com/usrsvcs/servers/2bfa782d5da84302bf15219e19a05112/rest/services/OPEN_DATA/Schools_Catchments_Open/MapServer/8",
+                    "dcat:accessUrl": "https://utility.arcgis.com/usrsvcs/servers/2bfa782d5da84302bf15219e19a05112/rest/services/OPEN_DATA/Schools_Catchments_Open/MapServer/1",
                     "dct:format": {
                         "@id": "ftype:JSON"
                     },
@@ -2332,7 +2332,7 @@
                 },
                 {
                     "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://open-data-design-glasgowgis.hub.arcgis.com/datasets/GlasgowGIS::rc-primary-school-catchments-1.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dcat:accessUrl": "https://open-data-design-glasgowgis.hub.arcgis.com/datasets/GlasgowGIS::nd-primary-schools-2.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
                     "dct:format": {
                         "@id": "ftype:GEOJSON"
                     },
@@ -2341,7 +2341,7 @@
                 },
                 {
                     "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://open-data-design-glasgowgis.hub.arcgis.com/datasets/GlasgowGIS::rc-primary-school-catchments-1.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dcat:accessUrl": "https://open-data-design-glasgowgis.hub.arcgis.com/datasets/GlasgowGIS::nd-primary-schools-2.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
                     "dct:format": {
                         "@id": "ftype:CSV"
                     },
@@ -2350,7 +2350,7 @@
                 },
                 {
                     "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://open-data-design-glasgowgis.hub.arcgis.com/datasets/GlasgowGIS::rc-primary-school-catchments-1.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dcat:accessUrl": "https://open-data-design-glasgowgis.hub.arcgis.com/datasets/GlasgowGIS::nd-primary-schools-2.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
                     "dct:format": {
                         "@id": "ftype:KML"
                     },
@@ -2359,7 +2359,7 @@
                 },
                 {
                     "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://open-data-design-glasgowgis.hub.arcgis.com/datasets/GlasgowGIS::rc-primary-school-catchments-1.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dcat:accessUrl": "https://open-data-design-glasgowgis.hub.arcgis.com/datasets/GlasgowGIS::nd-primary-schools-2.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
                     "dct:format": {
                         "@id": "ftype:ZIP"
                     },

@@ -31760,7 +31760,7 @@
             "filter": {
                 "isCancelled": "eventsEq(false)",
                 "status": "not(private,draft,planned)",
-                "endDate": "eventsBefore(1662113452960)"
+                "endDate": "eventsBefore(1663502677551)"
             }
         },
         "stats": {
