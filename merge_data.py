@@ -18,7 +18,7 @@ def merge_data():
                     [
                         source_ckan,
                         pd.read_csv(
-                            folder + r"/" + filename, parse_dates=["DateUpdated"], lineterminator='\n'
+                            folder + r"/" + filename, parse_dates=["DateCreated","DateUpdated"], lineterminator='\n'
                         ),
                     ]
                 )
@@ -50,7 +50,7 @@ def merge_data():
                     [
                         source_arcgis,
                         pd.read_csv(
-                            folder + r"/" + filename, parse_dates=["DateUpdated"]
+                            folder + r"/" + filename, parse_dates=["DateCreated","DateUpdated"]
                         ),
                     ]
                 )
@@ -66,7 +66,7 @@ def merge_data():
                     [
                         source_usmart,
                         pd.read_csv(
-                            folder + r"/" + filename, parse_dates=["DateUpdated"]
+                            folder + r"/" + filename, parse_dates=["DateCreated","DateUpdated"]
                         ),
                     ]
                 )
@@ -85,7 +85,7 @@ def merge_data():
                     [
                         source_dcat,
                         pd.read_csv(
-                            folder + r"/" + filename, parse_dates=["DateUpdated"]
+                            folder + r"/" + filename, parse_dates=["DateCreated","DateUpdated"]
                         ),
                     ]
                 )
@@ -102,7 +102,7 @@ def merge_data():
                     [
                         source_scraped,
                         pd.read_csv(
-                            folder + r"/" + filename, parse_dates=["DateUpdated"]
+                            folder + r"/" + filename, parse_dates=["DateCreated","DateUpdated"]
                         ),
                     ]
                 )
@@ -160,6 +160,9 @@ def clean_data(dataframe):
     }
     data["Owner"] = data["Owner"].replace(owner_renames)
     ### Format dates as datetime type
+    data["DateCreated"] = pd.to_datetime(
+        data["DateCreated"], format="%Y-%m-%d", errors="coerce", utc=True
+    ).dt.date
     data["DateUpdated"] = pd.to_datetime(
         data["DateUpdated"], format="%Y-%m-%d", errors="coerce", utc=True
     ).dt.date
