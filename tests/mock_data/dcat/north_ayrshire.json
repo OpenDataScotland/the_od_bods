@@ -111,91 +111,6 @@
         },
         {
             "@type": "dcat:Dataset",
-            "@id": "https://maps-north-ayrshire.opendata.arcgis.com/maps/north-ayrshire::ldp2-life-sciences-enterprise-area",
-            "dct:title": "LDP2 - Life Sciences Enterprise Area",
-            "dct:description": "Boundaries of Life Sciences Enterprise Area within North Ayrshire as set out in the Adopted Local Development Plan 2",
-            "dcat:contactPoint": {
-                "@id": "https://north-ayrshire.maps.arcgis.com/sharing/rest/community/users/NAC_OpenData?f=json",
-                "@type": "Contact",
-                "vcard:fn": "NAC_OpenData",
-                "vcard:hasEmail": "mailto:GISAnalytics@northayrshirecouncil.onmicrosoft.com"
-            },
-            "dct:publisher": "North Ayrshire Council",
-            "dcat:theme": "geospatial",
-            "dct:accessRights": "public",
-            "dct:identifier": "https://www.arcgis.com/home/item.html?id=f8a3a2b2b595461da54dfe3d4031866a&sublayer=60",
-            "dcat:keyword": [
-                "NAC",
-                "Open Data",
-                "Planning",
-                "Local Development Plan",
-                "LDP2",
-                "Life Sciences Enterprise Area"
-            ],
-            "dct:provenance": "",
-            "dct:issued": "2020-02-13T10:16:57.000Z",
-            "dct:language": {
-                "@id": "lang:ENG"
-            },
-            "dcat:distribution": [
-                {
-                    "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/maps/north-ayrshire::ldp2-life-sciences-enterprise-area",
-                    "dct:format": {
-                        "@id": "ftype:HTML"
-                    },
-                    "dct:description": "Web Page",
-                    "dct:title": "ArcGIS Hub Dataset"
-                },
-                {
-                    "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://www.maps.north-ayrshire.gov.uk/arcgis/rest/services/AGOL/Open_Data_Portal4/MapServer/60",
-                    "dct:format": {
-                        "@id": "ftype:JSON"
-                    },
-                    "dct:description": "Esri REST",
-                    "dct:title": "ArcGIS GeoService"
-                },
-                {
-                    "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-life-sciences-enterprise-area.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
-                    "dct:format": {
-                        "@id": "ftype:GEOJSON"
-                    },
-                    "dct:description": "GeoJSON",
-                    "dct:title": "GeoJSON"
-                },
-                {
-                    "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-life-sciences-enterprise-area.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
-                    "dct:format": {
-                        "@id": "ftype:CSV"
-                    },
-                    "dct:description": "CSV",
-                    "dct:title": "CSV"
-                },
-                {
-                    "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-life-sciences-enterprise-area.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
-                    "dct:format": {
-                        "@id": "ftype:KML"
-                    },
-                    "dct:description": "KML",
-                    "dct:title": "KML"
-                },
-                {
-                    "@type": "dcat:Distribution",
-                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-life-sciences-enterprise-area.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
-                    "dct:format": {
-                        "@id": "ftype:ZIP"
-                    },
-                    "dct:description": "Shapefile",
-                    "dct:title": "ZIP"
-                }
-            ]
-        },
-        {
-            "@type": "dcat:Dataset",
             "@id": "https://maps-north-ayrshire.opendata.arcgis.com/maps/north-ayrshire::ldp2-areas-with-potential-for-wind-farm-development",
             "dct:title": "LDP2 - Areas with potential for wind farm development",
             "dct:description": "These are the Areas with potential for wind farm development within North Ayrshire as set out in the Adopted Local Development Plan 2",
@@ -273,6 +188,91 @@
                 {
                     "@type": "dcat:Distribution",
                     "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-areas-with-potential-for-wind-farm-development.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:ZIP"
+                    },
+                    "dct:description": "Shapefile",
+                    "dct:title": "ZIP"
+                }
+            ]
+        },
+        {
+            "@type": "dcat:Dataset",
+            "@id": "https://maps-north-ayrshire.opendata.arcgis.com/maps/north-ayrshire::ldp2-life-sciences-enterprise-area",
+            "dct:title": "LDP2 - Life Sciences Enterprise Area",
+            "dct:description": "Boundaries of Life Sciences Enterprise Area within North Ayrshire as set out in the Adopted Local Development Plan 2",
+            "dcat:contactPoint": {
+                "@id": "https://north-ayrshire.maps.arcgis.com/sharing/rest/community/users/NAC_OpenData?f=json",
+                "@type": "Contact",
+                "vcard:fn": "NAC_OpenData",
+                "vcard:hasEmail": "mailto:GISAnalytics@northayrshirecouncil.onmicrosoft.com"
+            },
+            "dct:publisher": "North Ayrshire Council",
+            "dcat:theme": "geospatial",
+            "dct:accessRights": "public",
+            "dct:identifier": "https://www.arcgis.com/home/item.html?id=f8a3a2b2b595461da54dfe3d4031866a&sublayer=60",
+            "dcat:keyword": [
+                "NAC",
+                "Open Data",
+                "Planning",
+                "Local Development Plan",
+                "LDP2",
+                "Life Sciences Enterprise Area"
+            ],
+            "dct:provenance": "",
+            "dct:issued": "2020-02-13T10:16:57.000Z",
+            "dct:language": {
+                "@id": "lang:ENG"
+            },
+            "dcat:distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/maps/north-ayrshire::ldp2-life-sciences-enterprise-area",
+                    "dct:format": {
+                        "@id": "ftype:HTML"
+                    },
+                    "dct:description": "Web Page",
+                    "dct:title": "ArcGIS Hub Dataset"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://www.maps.north-ayrshire.gov.uk/arcgis/rest/services/AGOL/Open_Data_Portal4/MapServer/60",
+                    "dct:format": {
+                        "@id": "ftype:JSON"
+                    },
+                    "dct:description": "Esri REST",
+                    "dct:title": "ArcGIS GeoService"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-life-sciences-enterprise-area.geojson?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:GEOJSON"
+                    },
+                    "dct:description": "GeoJSON",
+                    "dct:title": "GeoJSON"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-life-sciences-enterprise-area.csv?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:CSV"
+                    },
+                    "dct:description": "CSV",
+                    "dct:title": "CSV"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-life-sciences-enterprise-area.kml?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
+                    "dct:format": {
+                        "@id": "ftype:KML"
+                    },
+                    "dct:description": "KML",
+                    "dct:title": "KML"
+                },
+                {
+                    "@type": "dcat:Distribution",
+                    "dcat:accessUrl": "https://maps-north-ayrshire.opendata.arcgis.com/datasets/north-ayrshire::ldp2-life-sciences-enterprise-area.zip?outSR=%7B%22latestWkid%22%3A27700%2C%22wkid%22%3A27700%7D",
                     "dct:format": {
                         "@id": "ftype:ZIP"
                     },
