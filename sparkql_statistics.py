@@ -53,6 +53,15 @@ class ProcessorSparkQL(Processor):
         dfUnique = df.sort_values('issued', ascending=False) \
                         .drop_duplicates(subset='name', keep="first")
 
+
+        # Fallback values for those datasets missing an owner
+        for index, row in dfUnique.iterrows():
+            if pd.isnull(row['creator']):
+                if pd.isnull(row['publisher']):
+                    row['creator'] = 'Scottish Government'
+                else:
+                    row['creator'] = row['publisher']
+
         # Renaming Column Names to ODS Format
         dfOds = dfUnique \
                 .rename(columns=
