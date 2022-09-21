@@ -41,9 +41,9 @@ def ind(name):
         "Owner",
         "PageURL",
         "AssetURL",
+        "FileName",
         "DateCreated",
         "DateUpdated",
-        "FileName",
         "FileSize",
         "FileSizeUnit",
         "FileType",
@@ -83,7 +83,6 @@ def makeint(val):
 
 data = {}
 for r in fulld.values:
-    print(r)
     id = str(r[ind("PageURL")]) + r[ind("Title")]
     if id not in data:
         ds = Dataset(
