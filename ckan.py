@@ -37,7 +37,23 @@ class ProcessorCKAN(Processor):
 
                 if 'archiver' in resource and 'size' in resource['archiver']:
                     file_size = resource['archiver']['size']
+                elif 'size' in resource:
+                    file_size = resource['size']
 
+
+                file_type = '';
+                
+                if resource['format']: 
+                    file_type = resource['format']
+                elif 'qa' in resource and 'format' in resource['qa']:
+                    file_type = resource['qa']['format']
+                elif 'resource:format' in resource:
+                    file_type = resource['resource:format']
+                elif 'service_type' in resource:
+                    file_type = resource['service_type']
+                elif 'is_wfs' in resource and resource['is_wfs'] == 'yes':
+                    file_type = 'WFS'
+                
                 prepped.append(
                     [
                         dataset_metadata['title'],  # Title
@@ -49,12 +65,12 @@ class ProcessorCKAN(Processor):
                         dataset_metadata["metadata_modified"],  # DateUpdated  
                         file_size,  # FileSize
                         "B",  # FileSizeUnit
-                        resource['format'],  # FileType
+                        file_type,  # FileType
                         None,  # NumRecords
                         ';'.join(tags),  # OriginalTags
                         None,  # ManualTags
                         dataset_metadata['license_title'],  # License
-                        dataset_metadata['notes'].encode('unicode_escape').decode()  # Description
+                        dataset_metadata['notes']  # Description
                     ]
                 )
 
