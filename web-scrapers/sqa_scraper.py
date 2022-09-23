@@ -1,7 +1,6 @@
 # Packages: beautifulsoup4, csv, requests, math
 import requests
 import csv
-import re
 from bs4 import BeautifulSoup
 
 # Global Variables
@@ -140,6 +139,70 @@ def fetch_asset_url(page: BeautifulSoup) -> str:
     return url
 
 
+def fetch_create_date(page: BeautifulSoup, ul: str) -> str:
+    """
+    Fetches the create date of the dataset from the BeautifulSoup object.
+
+    Returns:
+        date (str): A string of dataset's create date.
+    """
+
+    # get the a-tag, which contains the , retrieve xpath (required?), and navigate down the siblings and check for each sibling,
+    # if it contains "Date of publication":
+    #   return that date
+    # elif is <h2>:
+    #   return "NULL"
+
+    part = page.find("a", string=ul.get_text())
+    # print("part", part, type(part), part.parent.parent.parent)
+    find_ul = part.find_parent("ul")
+    # print("1", part, part.find_parent("ul"), part.parent.parent.parent)
+    # print("2", part, part.find_parents("ul"), part.parent)
+    find_siblings = find_ul.next_siblings
+    for sibling in find_siblings:
+        if "<h2>" in repr(sibling):
+            # print("h2", repr(sibling))
+            return "NULL"
+        elif "Date of publication" in repr(sibling):
+            # print("date", repr(sibling))
+            fetched_date = sibling.get_text().split(":")[1].strip(" .")
+            if fetched_date.startswith(" "):
+                print(fetched_date)
+            return fetched_date
+
+    return "NULL"
+
+"""
+def fetch_file_size(url: str) -> str:
+    myfile = requests.get(url)
+    statitnfo = os.stat(myfile)
+    print(statinfo.st_size)
+    size = statinfo.st_size
+    try:
+        myfile = requests.get(url)
+        statinfo = os.stat(myfile)
+        print(statinfo.st_size)
+        size = statinfo.st_size
+    except:
+        size = "1"
+    return size
+
+
+def fetch_num_recs(url: str) -> str:
+    try:
+        loc = (url)  # Giving the location of the file
+
+        wb = xl.open_workbook(loc)  # opening & reading the excel file
+        s1 = wb.sheet_by_index(0)  # extracting the worksheet
+        s1.cell_value(0, 0)  # initializing cell from the excel file mentioned through the cell position
+
+        print("No. of rows:", s1.nrows)  # Counting & Printing thenumber of rows & columns respectively
+        return s1.nrows
+    except:
+        return "2"
+"""
+
+
 if __name__ == "__main__":
     # Record Headings
     header = [
@@ -169,30 +232,21 @@ if __name__ == "__main__":
         pageurl = category_links[year]
         list_datasets = fetch_datasets(years_page)
         for list in list_datasets[:-3]:
-            print("list", list)
+            # print("list", list)
             for dataset in list:
                 print("dataset", dataset)
                 title = create_title(year, dataset)
                 print("title", title)
                 asset_url = fetch_asset_url(dataset)
-
-
-                create_date = "NULL"
+                create_date = fetch_create_date(years_page, dataset)
                 file_size = "NULL"
+                # file_size = fetch_file_size(asset_url) #function does not work, unless file is saved locally, size retrieved and then deleted
                 file_unit = "NULL"
-
                 data_type = dataset.get("href").split(".")[1]
-                print(data_type)
+                # print(data_type)
                 num_recs = "NULL"
-                sqa_licence = "NULL"
-
-                """
-                title = fetch_title(soup)
-                # print("title:", title)
-                # print("pageurl:", pageurl)
-                asset_url = fetch_asset_url(soup)
-                # print("asset_url:", asset_url)
-                """
+                # num_recs = fetch_num_recs(asset_url) #function does not work, unless file is saved locally, num_recs retrieved and then deleted
+                sqa_licence = "unknown" # contact SQA regarding license
 
                 output = [
                     title,
