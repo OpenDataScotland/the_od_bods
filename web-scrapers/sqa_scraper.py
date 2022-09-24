@@ -139,9 +139,9 @@ def fetch_asset_url(page: BeautifulSoup) -> str:
     return url
 
 
-def fetch_create_date(page: BeautifulSoup, ul: str) -> str:
+def fetch_create_date(page: BeautifulSoup, ul: BeautifulSoup) -> tuple:
     """
-    Fetches the create date of the dataset from the BeautifulSoup object.
+    Fetches the create date and the date of correction of the dataset from the BeautifulSoup object.
 
     Returns:
         date (str): A string of dataset's create date.
@@ -152,6 +152,8 @@ def fetch_create_date(page: BeautifulSoup, ul: str) -> str:
     #   return that date
     # elif is <h2>:
     #   return "NULL"
+    fetched_create_date = "NULL"
+    fetched_update_date = "NULL"
 
     part = page.find("a", string=ul.get_text())
     # print("part", part, type(part), part.parent.parent.parent)
@@ -162,32 +164,48 @@ def fetch_create_date(page: BeautifulSoup, ul: str) -> str:
     for sibling in find_siblings:
         if "<h2>" in repr(sibling):
             # print("h2", repr(sibling))
-            return "NULL"
+            return fetched_create_date, fetched_update_date
         elif "Date of publication" in repr(sibling):
             # print("date", repr(sibling))
-            fetched_date = sibling.get_text().split(":")[1].strip(" .")
-            if fetched_date.startswith(" "):
-                print(fetched_date)
-            return fetched_date
+            fetched_create_date = sibling.get_text().split(":")[1].strip(" .")
+            print(fetched_create_date)
+            if fetched_create_date.startswith(" "):
+                print(fetched_create_date)
+        elif "Date of correction" in repr(sibling):
+            fetched_update_date = sibling.get_text().split(":")[1].strip(" .")
+            if fetched_update_date.startswith(" "):
+                print(fetched_update_date)
 
-    return "NULL"
+    return fetched_create_date, fetched_update_date
+
+
+def fetch_file_size(page: BeautifulSoup, ul: BeautifulSoup) -> tuple:
+    size = "NULL"
+    unit = "NULL"
+    part = page.find("a", string=ul.get_text())
+    # print("part", part, type(part), part.parent.parent.parent)
+    # size = part.find_parent("li").get_text().split("(")[1].strip(")")
+    size_list = part.find_parent("li").contents
+    for item in size_list:
+        if "(" in item:
+            print(item)
+            size = item.strip(" ()\n").split(" ")[0]
+            unit = item.strip(" ()\n").split(" ")[1]
+    """
+    if len(size_list) > 1:
+        print(size_list)
+        if size_list[-1].strip() != "LINK":
+            size = size_list[-1].strip(" ()").split(" ")[0]
+            unit = size_list[-1].strip(" ()").split(" ")[1]
+        else:
+            size = size_list[-2].strip(" ()").split(" ")[0]
+            unit = size_list[-2].strip(" ()").split(" ")[1]
+    """
+    print(size, "unit", unit)
+
+    return size, unit
 
 """
-def fetch_file_size(url: str) -> str:
-    myfile = requests.get(url)
-    statitnfo = os.stat(myfile)
-    print(statinfo.st_size)
-    size = statinfo.st_size
-    try:
-        myfile = requests.get(url)
-        statinfo = os.stat(myfile)
-        print(statinfo.st_size)
-        size = statinfo.st_size
-    except:
-        size = "1"
-    return size
-
-
 def fetch_num_recs(url: str) -> str:
     try:
         loc = (url)  # Giving the location of the file
@@ -236,12 +254,12 @@ if __name__ == "__main__":
             for dataset in list:
                 print("dataset", dataset)
                 title = create_title(year, dataset)
-                print("title", title)
+                # print("title", title)
                 asset_url = fetch_asset_url(dataset)
-                create_date = fetch_create_date(years_page, dataset)
-                file_size = "NULL"
-                # file_size = fetch_file_size(asset_url) #function does not work, unless file is saved locally, size retrieved and then deleted
-                file_unit = "NULL"
+                create_date, update_date = fetch_create_date(years_page, dataset)
+                file_sizeandunit = fetch_file_size(years_page, dataset)
+                file_size = file_sizeandunit[0]
+                file_unit = file_sizeandunit[1]
                 data_type = dataset.get("href").split(".")[1]
                 # print(data_type)
                 num_recs = "NULL"
@@ -254,7 +272,7 @@ if __name__ == "__main__":
                     pageurl,
                     asset_url,
                     create_date,
-                    "NULL",
+                    update_date,
                     file_size,
                     file_unit,
                     data_type,
