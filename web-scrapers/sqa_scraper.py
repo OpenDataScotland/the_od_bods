@@ -170,12 +170,12 @@ def fetch_create_date(page: BeautifulSoup, ul: BeautifulSoup) -> tuple:
             return fetched_create_date, fetched_update_date
         elif "Date of publication" in repr(sibling):
             # print("date", repr(sibling))
-            fetched_create_date = sibling.get_text().split(":")[1].strip(" .")
+            fetched_create_date = sibling.get_text().split(":")[1].strip(" .\xa0&nbsp")
             # print(fetched_create_date)
             # if fetched_create_date.startswith(" "):
                 # print(fetched_create_date)
         elif "Date of correction" in repr(sibling):
-            fetched_update_date = sibling.get_text().split(":")[1].strip(" .")
+            fetched_update_date = sibling.get_text().split(":")[1].strip(" .\xa0&nbsp")
             # if fetched_update_date.startswith(" "):
                 # print(fetched_update_date)
 
@@ -192,8 +192,8 @@ def fetch_file_size(page: BeautifulSoup, ul: BeautifulSoup) -> tuple:
     for item in size_list:
         if "(" in item:
             # print(item)
-            size = item.strip(" ()\n").split(" ")[0]
-            unit = item.strip(" ()\n").split(" ")[1]
+            size = item.strip(" \xa0&nbsp()\n").split(" ")[0]
+            unit = item.strip(" \xa0&nbsp()\n").split(" ")[1]
     """
     if len(size_list) > 1:
         print(size_list)
