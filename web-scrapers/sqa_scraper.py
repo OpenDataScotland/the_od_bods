@@ -114,8 +114,16 @@ def create_title(part1: str, part2: BeautifulSoup) -> str:
     Returns:
         stripped_title (str): A string of dataset's title.
     """
-    title_string1 = year + " " + dataset.get_text()
-    stripped_title = title_string1.split(" ", 1)[1]
+    dataset_text = part2.get_text()
+    year = part1.split(" ", 1)[1]
+    if year in dataset_text:
+        stripped_title = dataset_text
+        # stripped_title = dataset_text.split
+    else:
+        stripped_title = dataset.get_text() + " - " + year
+        # stripped_title = title_string1.split(" ", 1)[1]
+    print(stripped_title)
+
     return stripped_title
 
 
@@ -147,11 +155,6 @@ def fetch_create_date(page: BeautifulSoup, ul: BeautifulSoup) -> tuple:
         date (str): A string of dataset's create date.
     """
 
-    # get the a-tag, which contains the , retrieve xpath (required?), and navigate down the siblings and check for each sibling,
-    # if it contains "Date of publication":
-    #   return that date
-    # elif is <h2>:
-    #   return "NULL"
     fetched_create_date = "NULL"
     fetched_update_date = "NULL"
 
@@ -168,13 +171,13 @@ def fetch_create_date(page: BeautifulSoup, ul: BeautifulSoup) -> tuple:
         elif "Date of publication" in repr(sibling):
             # print("date", repr(sibling))
             fetched_create_date = sibling.get_text().split(":")[1].strip(" .")
-            print(fetched_create_date)
-            if fetched_create_date.startswith(" "):
-                print(fetched_create_date)
+            # print(fetched_create_date)
+            # if fetched_create_date.startswith(" "):
+                # print(fetched_create_date)
         elif "Date of correction" in repr(sibling):
             fetched_update_date = sibling.get_text().split(":")[1].strip(" .")
-            if fetched_update_date.startswith(" "):
-                print(fetched_update_date)
+            # if fetched_update_date.startswith(" "):
+                # print(fetched_update_date)
 
     return fetched_create_date, fetched_update_date
 
@@ -188,7 +191,7 @@ def fetch_file_size(page: BeautifulSoup, ul: BeautifulSoup) -> tuple:
     size_list = part.find_parent("li").contents
     for item in size_list:
         if "(" in item:
-            print(item)
+            # print(item)
             size = item.strip(" ()\n").split(" ")[0]
             unit = item.strip(" ()\n").split(" ")[1]
     """
@@ -201,24 +204,9 @@ def fetch_file_size(page: BeautifulSoup, ul: BeautifulSoup) -> tuple:
             size = size_list[-2].strip(" ()").split(" ")[0]
             unit = size_list[-2].strip(" ()").split(" ")[1]
     """
-    print(size, "unit", unit)
+    # print(size, "unit", unit)
 
     return size, unit
-
-"""
-def fetch_num_recs(url: str) -> str:
-    try:
-        loc = (url)  # Giving the location of the file
-
-        wb = xl.open_workbook(loc)  # opening & reading the excel file
-        s1 = wb.sheet_by_index(0)  # extracting the worksheet
-        s1.cell_value(0, 0)  # initializing cell from the excel file mentioned through the cell position
-
-        print("No. of rows:", s1.nrows)  # Counting & Printing thenumber of rows & columns respectively
-        return s1.nrows
-    except:
-        return "2"
-"""
 
 
 if __name__ == "__main__":
@@ -243,17 +231,17 @@ if __name__ == "__main__":
 
     print("Getting available years")
     category_links = fetch_available_years()
-    for year in category_links.keys():
-        print("Getting", year)
-        years_page = fetch_year_page(category_links[year])
+    for year_string in category_links.keys():
+        print("Getting", year_string)
+        years_page = fetch_year_page(category_links[year_string])
         owner = "Scottish Qualifications Authority (SQA)"
-        pageurl = category_links[year]
+        pageurl = category_links[year_string]
         list_datasets = fetch_datasets(years_page)
         for list in list_datasets[:-3]:
             # print("list", list)
             for dataset in list:
                 print("dataset", dataset)
-                title = create_title(year, dataset)
+                title = create_title(year_string, dataset)
                 # print("title", title)
                 asset_url = fetch_asset_url(dataset)
                 create_date, update_date = fetch_create_date(years_page, dataset)
