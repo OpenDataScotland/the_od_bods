@@ -194,17 +194,6 @@ def fetch_file_size(page: BeautifulSoup, ul: BeautifulSoup) -> tuple:
             # print(item)
             size = item.strip(" \xa0&nbsp()\n").split(" ")[0]
             unit = item.strip(" \xa0&nbsp()\n").split(" ")[1]
-    """
-    if len(size_list) > 1:
-        print(size_list)
-        if size_list[-1].strip() != "LINK":
-            size = size_list[-1].strip(" ()").split(" ")[0]
-            unit = size_list[-1].strip(" ()").split(" ")[1]
-        else:
-            size = size_list[-2].strip(" ()").split(" ")[0]
-            unit = size_list[-2].strip(" ()").split(" ")[1]
-    """
-    # print(size, "unit", unit)
 
     return size, unit
 
@@ -248,8 +237,8 @@ if __name__ == "__main__":
                 file_sizeandunit = fetch_file_size(years_page, dataset)
                 file_size = file_sizeandunit[0]
                 file_unit = file_sizeandunit[1]
-                data_type = dataset.get("href").split(".")[1]
-                # print(data_type)
+                data_type = dataset.get("href").split(".")[-1]
+                print(data_type, dataset.get("href").split("."))
                 num_recs = "NULL"
                 # num_recs = fetch_num_recs(asset_url) #function does not work, unless file is saved locally, num_recs retrieved and then deleted
                 sqa_licence = "unknown" # contact SQA regarding license
