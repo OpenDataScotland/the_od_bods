@@ -122,7 +122,7 @@ def create_title(part1: str, part2: BeautifulSoup) -> str:
     else:
         stripped_title = dataset.get_text() + " - " + year
         # stripped_title = title_string1.split(" ", 1)[1]
-    print(stripped_title)
+    # print(stripped_title)
 
     return stripped_title
 
@@ -172,12 +172,8 @@ def fetch_create_date(page: BeautifulSoup, ul: BeautifulSoup) -> tuple:
             # print("date", repr(sibling))
             fetched_create_date = sibling.get_text().split(":")[1].strip(" .\xa0&nbsp")
             # print(fetched_create_date)
-            # if fetched_create_date.startswith(" "):
-                # print(fetched_create_date)
         elif "Date of correction" in repr(sibling):
             fetched_update_date = sibling.get_text().split(":")[1].strip(" .\xa0&nbsp")
-            # if fetched_update_date.startswith(" "):
-                # print(fetched_update_date)
 
     return fetched_create_date, fetched_update_date
 
@@ -229,7 +225,7 @@ if __name__ == "__main__":
         for list in list_datasets[:-3]:
             # print("list", list)
             for dataset in list:
-                print("dataset", dataset)
+                # print("dataset", dataset)
                 title = create_title(year_string, dataset)
                 # print("title", title)
                 asset_url = fetch_asset_url(dataset)
@@ -238,7 +234,7 @@ if __name__ == "__main__":
                 file_size = file_sizeandunit[0]
                 file_unit = file_sizeandunit[1]
                 data_type = dataset.get("href").split(".")[-1]
-                print(data_type, dataset.get("href").split("."))
+                # print(data_type, dataset.get("href").split("."))
                 num_recs = "NULL"
                 # num_recs = fetch_num_recs(asset_url) #function does not work, unless file is saved locally, num_recs retrieved and then deleted
                 sqa_licence = "unknown" # contact SQA regarding license
