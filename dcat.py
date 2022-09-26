@@ -1,4 +1,6 @@
 import copy
+from dateutil import parser
+
 try:
     from processor import Processor
 except:
@@ -24,7 +26,7 @@ class ProcessorDCAT(Processor):
                 "",  # Link to data
                 "",  #FileName
                 "",  # date created
-                e.get("dct:issued", ""),
+                parser.parse(e.get("dct:issued", "")).date(),
                 "",  # size
                 "",  # size unit
                 "",  # filetype
@@ -44,7 +46,7 @@ class ProcessorDCAT(Processor):
                 if p.get("dct:description", "") == "Web Page":
                     continue
                 ds[3] = p.get("dcat:accessUrl", "")
-                ds[8] = p.get("dct:title", "")
+                ds[9] = p.get("dct:title", "")
                 dsl.append(copy.deepcopy(ds))
             if not dsl:
                 dsl.append(ds)
