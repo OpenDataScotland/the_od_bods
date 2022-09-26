@@ -670,57 +670,41 @@ def clean_data(dataframe):
     data["License"] = data["License"].apply(tidy_licence)
 
 
-    def tidy_data_type(file_type):
+    def tidy_file_type(file_type):
         """ Temporary data type conversion
         Args:
             file_type (str): the data type name
         Returns:
             tidied_file_type (str): a tidied data type name
         """
-        known_file_types = {
+        file_types_to_tidy = {
             "application/x-7z-compressed": "7-Zip compressed file",
             "ArcGIS GeoServices REST API": "ARCGIS GEOSERVICE",
-            "ArcGIS GeoService": "ARCGIS GEOSERVICE",
             "Esri REST": "ARCGIS GEOSERVICE",
             "Atom Feed": "ATOM FEED",
-            "csv": "CSV",
-            "GeoJSON": "GEOJSON",
             "htm": "HTML",
-            "html": "HTML",
             "ics": "iCalendar",
-            "image": "Image",
             "jpeg": "Image",
-            "json": "JSON",
-            "kml": "KML",
-            "kmz": "KMZ",
             "vnd.openxmlformats-officedocument.spreadsheetml.sheet": "MS EXCEL",
             "vnd.ms-excel": "MS EXCEL",
             "xls": "MS EXCEL",
             "xlsx": "MS EXCEL",
             "doc": "MS Word",
             "docx": "MS Word",
-            "pdf": "PDF",
             "QGIS": "QGIS Shapefile",
-            "tsv": "TSV",
             "text": "TXT",
-            "txt": "TXT",
             "web": "URL",
             "UK/DATA/#TABGB1900": "URL",
             "UK/ROY/GAZETTEER/#DOWNLOAD": "URL",
-            "web map": "WEB MAP",
             "Web Mapping Application": "WEB MAP",
-            "wfs": "WFS",
-            "wms": "WMS",
             "mets": "XML",
             "alto": "XML",
-            "xml": "XML",
-            "zip": "ZIP",
         }
         tidied_data_type = "NULL"
 
-        for key in known_file_types.keys():
+        for key in file_types_to_tidy.keys():
             if str(file_type).lower().strip(". /") == key.lower().strip(". /"):
-                tidied_file_type = known_file_types[key]
+                tidied_file_type = file_types_to_tidy[key]
                 return tidied_file_type
 
         if (
@@ -729,13 +713,13 @@ def clean_data(dataframe):
         ):
             tidied_file_type = "No file type"
         else:
-            print("file type: ", file_type)
+            # print("file type: ", file_type)
             tidied_file_type = str(file_type).strip(". /").upper()
 
         return tidied_file_type
 
     ### Inconsistencies in casing for FileType
-    data['FileType'] = data['FileType'].apply(tidy_data_type)
+    data['FileType'] = data['FileType'].apply(tidy_file_type)
 
     return data
 
