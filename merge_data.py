@@ -675,16 +675,17 @@ def clean_data(dataframe):
         Args:
             file_type (str): the data type name
         Returns:
-            tidied_data_type (str): a tidied data type name
+            tidied_file_type (str): a tidied data type name
         """
-        known_data_types = {
-            "arcgis geoservice": "ARCGIS GEOSERVICE",
-            "esri rest": "ARCGIS GEOSERVICE",
-            "atom": "ATOM FEED",
+        known_file_types = {
+            "application/x-7z-compressed": "7-Zip compressed file",
+            "ArcGIS GeoServices REST API": "ARCGIS GEOSERVICE",
+            "ArcGIS GeoService": "ARCGIS GEOSERVICE",
+            "Esri REST": "ARCGIS GEOSERVICE",
+            "Atom Feed": "ATOM FEED",
             "csv": "CSV",
-            "vnd.ms-excel": "EXCEL Spreadsheet",
-            "xls": "EXCEL Spreadsheet",
-            "geojson": "GEOJSON",
+            "GeoJSON": "GEOJSON",
+            "htm": "HTML",
             "html": "HTML",
             "ics": "iCalendar",
             "image": "Image",
@@ -692,11 +693,22 @@ def clean_data(dataframe):
             "json": "JSON",
             "kml": "KML",
             "kmz": "KMZ",
+            "vnd.openxmlformats-officedocument.spreadsheetml.sheet": "MS EXCEL",
+            "vnd.ms-excel": "MS EXCEL",
+            "xls": "MS EXCEL",
+            "xlsx": "MS EXCEL",
+            "doc": "MS Word",
+            "docx": "MS Word",
             "pdf": "PDF",
+            "QGIS": "QGIS Shapefile",
             "tsv": "TSV",
             "text": "TXT",
             "txt": "TXT",
+            "web": "URL",
+            "UK/DATA/#TABGB1900": "URL",
+            "UK/ROY/GAZETTEER/#DOWNLOAD": "URL",
             "web map": "WEB MAP",
+            "Web Mapping Application": "WEB MAP",
             "wfs": "WFS",
             "wms": "WMS",
             "mets": "XML",
@@ -706,21 +718,21 @@ def clean_data(dataframe):
         }
         tidied_data_type = "NULL"
 
-        for key in known_data_types.keys():
-            if str(file_type).lower().__contains__(key):
-                tidied_data_type = known_data_types[key]
-                return tidied_data_type
+        for key in known_file_types.keys():
+            if str(file_type).lower().strip(". /") == key.lower().strip(". /"):
+                tidied_file_type = known_file_types[key]
+                return tidied_file_type
 
         if (
             str(file_type) == "nan"
             or str(file_type) == ""
         ):
-            tidied_data_type = "No file type"
+            tidied_file_type = "No file type"
         else:
-            print("data type: ", file_type)
-            tidied_data_type = str(file_type)
+            print("file type: ", file_type)
+            tidied_file_type = str(file_type).strip(". /").upper()
 
-        return tidied_data_type
+        return tidied_file_type
 
     ### Inconsistencies in casing for FileType
     data['FileType'] = data['FileType'].apply(tidy_data_type)
