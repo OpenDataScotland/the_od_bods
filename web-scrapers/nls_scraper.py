@@ -159,7 +159,7 @@ def fetch_create_date(page: BeautifulSoup) -> str:
     Returns:
         date (str): A publication date.
     """
-    publication
+    publication = page.find(string=re.compile("Publication"))
     if not publication == None:
         date = publication.split(" ")[2]
     else:

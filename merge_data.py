@@ -717,8 +717,8 @@ def clean_data(dataframe):
         ):
             tidied_data_type = "No file type"
         else:
-            print("data type: ", key, file_type)
-            tidied_data_type = "Custom file type: " + str(file_type)
+            print("data type: ", file_type)
+            tidied_data_type = str(file_type)
 
         return tidied_data_type
 
