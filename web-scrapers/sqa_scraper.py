@@ -118,10 +118,8 @@ def create_title(part1: str, part2: BeautifulSoup) -> str:
     year = part1.split(" ", 1)[1]
     if year in dataset_text:
         stripped_title = dataset_text
-        # stripped_title = dataset_text.split
     else:
         stripped_title = dataset.get_text() + " - " + year
-        # stripped_title = title_string1.split(" ", 1)[1]
     # print(stripped_title)
 
     return stripped_title
@@ -183,7 +181,6 @@ def fetch_file_size(page: BeautifulSoup, ul: BeautifulSoup) -> tuple:
     unit = "NULL"
     part = page.find("a", string=ul.get_text())
     # print("part", part, type(part), part.parent.parent.parent)
-    # size = part.find_parent("li").get_text().split("(")[1].strip(")")
     size_list = part.find_parent("li").contents
     for item in size_list:
         if "(" in item:
@@ -236,7 +233,6 @@ if __name__ == "__main__":
                 data_type = dataset.get("href").split(".")[-1]
                 # print(data_type, dataset.get("href").split("."))
                 num_recs = "NULL"
-                # num_recs = fetch_num_recs(asset_url) #function does not work, unless file is saved locally, num_recs retrieved and then deleted
                 sqa_licence = "unknown" # contact SQA regarding license
 
                 output = [
