@@ -675,6 +675,58 @@ def clean_data(dataframe):
 
     data["License"] = data["License"].apply(tidy_licence)
 
+
+    def tidy_file_type(file_type):
+        """ Temporary data type conversion
+        Args:
+            file_type (str): the data type name
+        Returns:
+            tidied_file_type (str): a tidied data type name
+        """
+        file_types_to_tidy = {
+            "application/x-7z-compressed": "7-Zip compressed file",
+            "ArcGIS GeoServices REST API": "ARCGIS GEOSERVICE",
+            "Esri REST": "ARCGIS GEOSERVICE",
+            "Atom Feed": "ATOM FEED",
+            "htm": "HTML",
+            "ics": "iCalendar",
+            "jpeg": "Image",
+            "vnd.openxmlformats-officedocument.spreadsheetml.sheet": "MS EXCEL",
+            "vnd.ms-excel": "MS EXCEL",
+            "xls": "MS EXCEL",
+            "xlsx": "MS EXCEL",
+            "doc": "MS Word",
+            "docx": "MS Word",
+            "QGIS": "QGIS Shapefile",
+            "text": "TXT",
+            "web": "URL",
+            "UK/DATA/#TABGB1900": "URL",
+            "UK/ROY/GAZETTEER/#DOWNLOAD": "URL",
+            "Web Mapping Application": "WEB MAP",
+            "mets": "XML",
+            "alto": "XML",
+        }
+        tidied_data_type = "NULL"
+
+        for key in file_types_to_tidy.keys():
+            if str(file_type).lower().strip(". /") == key.lower().strip(". /"):
+                tidied_file_type = file_types_to_tidy[key]
+                return tidied_file_type
+
+        if (
+            str(file_type) == "nan"
+            or str(file_type) == ""
+        ):
+            tidied_file_type = "No file type"
+        else:
+            # print("file type: ", file_type)
+            tidied_file_type = str(file_type).strip(". /").upper()
+
+        return tidied_file_type
+
+    ### Inconsistencies in casing for FileType
+    data['FileType'] = data['FileType'].apply(tidy_file_type)
+
     return data
 
 
