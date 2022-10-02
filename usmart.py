@@ -22,10 +22,9 @@ class ProcessorUSMART(Processor):
             filetypes = dict()
             for dist in dataset["distribution"]:
                 if "/" in dist["mediaType"]:
-                    filetypes[dist["mediaType"].split("/")[1]] = dist["accessURL"].replace(" ", "%20")
+                    filetypes[dist["mediaType"].split("/")[1]] = [dist["accessURL"].replace(" ", "%20"),dist["title"]]
                 else:
-                    filetypes[dist["mediaType"]] = dist["accessURL"].replace(" ", "%20")
-
+                    filetypes[dist["mediaType"]] = [dist["accessURL"].replace(" ", "%20"),dist["title"]]
             DateCreated = dataset["createdAt"]
             DateUpdated = dataset["modified"]
             Description = '"' + dataset["description"] + '"'
@@ -46,12 +45,13 @@ class ProcessorUSMART(Processor):
             else:
                 ManualTags.append(" ")
             for item in filetypes:
+                print(filetypes[item][1])
                 line = [
                     Title,
                     Owner,
                     PageURL,
-                    filetypes[item],
-                    "", #FileName
+                    filetypes[item][0],
+                    filetypes[item][1], #FileName
                     DateCreated,
                     DateUpdated,
                     "",
