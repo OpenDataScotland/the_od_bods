@@ -34,7 +34,9 @@ class Dataset:
     files: List[DataFile]
 
 
-fulld = pd.read_csv("data/merged_output.csv", dtype=str, na_filter=False, lineterminator='\n')
+fulld = pd.read_csv(
+    "data/merged_output.csv", dtype=str, na_filter=False, lineterminator="\n"
+)
 
 
 def ind(name):
@@ -92,7 +94,7 @@ for r in fulld.values:
             owner=r[ind("Owner")],
             page_url=r[ind("PageURL")],
             date_created=r[ind("DateCreated")],
-            date_updated=r[ind("DateUpdated")].removesuffix(" 00:00:00.000"), 
+            date_updated=r[ind("DateUpdated")].removesuffix(" 00:00:00.000"),
             ods_categories=splittags(r[ind("ODSCategories")]),
             license=r[ind("License")],
             description=str(r[ind("Description")]),
@@ -111,7 +113,7 @@ for r in fulld.values:
             size_unit=r[ind("FileSizeUnit")],
             file_type=r[ind("FileType")],
             file_name=r[ind("FileName")],
-            show_name=r[ind("FileName")] if r[ind("FileName")] else r[ind("FileType")], 
+            show_name=r[ind("FileName")] if r[ind("FileName")] else r[ind("FileType")],
         )
     )
 
@@ -140,7 +142,7 @@ def license_link(l):
 
     if not l in unknown_lics:
         unknown_lics.append(l)
-        #print("Unknown license: ", l)
+        # print("Unknown license: ", l)
     return l
 
 
@@ -160,7 +162,7 @@ for n, (k, ds) in enumerate(data.items()):
     y["resources"] = [
         {"name": d.show_name, "url": d.url, "format": d.file_type}
         for d in ds.files
-        if d.url      
+        if d.url
     ]
     y["license"] = license_link(ds.license)
     y["category"] = ds.ods_categories
