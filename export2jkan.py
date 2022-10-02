@@ -16,6 +16,8 @@ class DataFile:
     size: float
     size_unit: str
     file_type: str
+    file_name: str
+    show_name: str
 
 
 @dataclass
@@ -41,9 +43,9 @@ def ind(name):
         "Owner",
         "PageURL",
         "AssetURL",
+        "FileName",
         "DateCreated",
         "DateUpdated",
-        "FileName",
         "FileSize",
         "FileSizeUnit",
         "FileType",
@@ -83,7 +85,6 @@ def makeint(val):
 
 data = {}
 for r in fulld.values:
-    print(r)
     id = str(r[ind("PageURL")]) + r[ind("Title")]
     if id not in data:
         ds = Dataset(
@@ -91,7 +92,7 @@ for r in fulld.values:
             owner=r[ind("Owner")],
             page_url=r[ind("PageURL")],
             date_created=r[ind("DateCreated")],
-            date_updated=r[ind("DateUpdated")].removesuffix(" 00:00:00.000"),
+            date_updated=r[ind("DateUpdated")].removesuffix(" 00:00:00.000"), 
             ods_categories=splittags(r[ind("ODSCategories")]),
             license=r[ind("License")],
             description=str(r[ind("Description")]),
@@ -109,6 +110,8 @@ for r in fulld.values:
             size=r[ind("FileSize")],
             size_unit=r[ind("FileSizeUnit")],
             file_type=r[ind("FileType")],
+            file_name=r[ind("FileName")],
+            show_name=r[ind("FileName")] if r[ind("FileName")] else r[ind("FileType")], 
         )
     )
 
@@ -137,7 +140,7 @@ def license_link(l):
 
     if not l in unknown_lics:
         unknown_lics.append(l)
-        print("Unknown license: ", l)
+        #print("Unknown license: ", l)
     return l
 
 
@@ -155,9 +158,9 @@ for n, (k, ds) in enumerate(data.items()):
     y["notes"] = markdown.markdown(ds.description)
     y["original_dataset_link"] = ds.page_url
     y["resources"] = [
-        {"name": d.file_type, "url": d.url, "format": d.file_type}
+        {"name": d.show_name, "url": d.url, "format": d.file_type}
         for d in ds.files
-        if d.url
+        if d.url      
     ]
     y["license"] = license_link(ds.license)
     y["category"] = ds.ods_categories
