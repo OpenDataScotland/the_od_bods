@@ -39,6 +39,8 @@ def merge_data():
         }
     )
     source_scotgov["Source"] = "sparql"
+    source_scotgov['DateUpdated'] = pd.to_datetime(source_scotgov['DateUpdated'], utc=True).dt.tz_localize(None)
+    source_scotgov['DateCreated'] = pd.to_datetime(source_scotgov['DateCreated'], utc=True).dt.tz_localize(None)
 
     ### From arcgis api
     source_arcgis = pd.DataFrame()
@@ -71,9 +73,8 @@ def merge_data():
                     ]
                 )
     source_usmart["Source"] = "USMART API"
-    source_usmart["DateUpdated"] = source_usmart["DateUpdated"].apply(
-        lambda x: x.replace(tzinfo=None)
-    )
+    source_usmart["DateUpdated"] = source_usmart["DateUpdated"].dt.tz_localize(None)
+    source_usmart["DateCreated"] = source_usmart["DateCreated"].dt.tz_localize(None)
 
     ## From DCAT
     source_dcat = pd.DataFrame()
@@ -89,7 +90,8 @@ def merge_data():
                         ),
                     ]
                 )
-                # source_dcat['DateUpdated'] = source_dcat['DateUpdated'].dt.tz_convert(None)
+    source_dcat["DateUpdated"] =  source_dcat["DateUpdated"].dt.tz_localize(None)
+    #source_dcat["DateCreated"] = source_dcat["DateCreated"].dt.tz_localize(None) ### DateCreated currently not picked up in dcat so all are NULL
     source_dcat["Source"] = "DCAT feed"
 
     ## From web scraped results
