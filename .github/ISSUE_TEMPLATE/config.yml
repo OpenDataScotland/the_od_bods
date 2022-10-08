@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Twitter
+    url: https://twitter.com/opendata_sco
+    about: Contact us on Twitter if you have any questions.
+  - name: Slack
+    url: https://join.slack.com/t/opendatascotland/shared_invite/zt-yfcc64tg-xIF1cOxkWbKZqI8ZBPzkGg
+    about: Join our Slack to discuss issues with the community.
