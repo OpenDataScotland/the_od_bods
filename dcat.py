@@ -1,4 +1,6 @@
 import copy
+from dateutil import parser
+
 try:
     from processor import Processor
 except:
@@ -24,7 +26,7 @@ class ProcessorDCAT(Processor):
                 "",  # Link to data
                 "",  #FileName
                 "",  # date created
-                e.get("dct:issued", ""),
+                parser.parse(e.get("dct:issued", "")).date(),
                 "",  # size
                 "",  # size unit
                 "",  # filetype
