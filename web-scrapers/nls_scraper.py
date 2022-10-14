@@ -66,14 +66,6 @@ def fetch_category_links():
         dropdown_item.find("a").get("href") for dropdown_item in dropdown_list
     ]
 
-    """
-    list_of_links = []
-    for dropdown_item in dropdown_list:
-        a_tag = dropdown_item.find("a")
-        link = a_tag.get("href")
-        list_of_links.append(link)
-    """
-
     # print(list_of_links) # for logging and debugging
     return list_of_links
 
@@ -192,54 +184,16 @@ def fetch_file_size(page: BeautifulSoup) -> list:
         list_of_filesizes.append("unknown")
 
     # print("list_of_filesizes", list_of_filesizes)
-
-    """
-    headlines = page.find_all("h4")
-    for headline in headlines:
-        if "All the data" in headline.contents[0]:
-            file_contents = headline.find_next("p").contents[0]
-            size_data = headline.find_next("strong").contents[0]
-            if size_data == "File size: ":
-                filesize = headline.find_next("strong").find("strong").contents[0]
-                sizeunit = headline.find_next("strong").contents[2][:2]
-                size_data = ""
-
-    if not file_contents:
-        headlines = page.find_all("h3")
-        for headline in headlines:
-            if "All the data" in headline.contents[0]:
-                file_contents = headline.find_next("p").contents[0]
-                if file_contents[:4] != "File":
-                    file_contents = "NULL"
-                    break
-                size_data = headline.find_next("strong").contents[0]
-
-    if not file_contents:
-        headlines = page.find_all("h3")
-        for headline in headlines:
-            if "Download the data" in headline.contents[0]:
-                file_contents = headline.find_next("p").contents[0]
-                if str(file_contents).strip()[:4] != "File":
-                    file_contents = "NULL"
-                    break
-                size_data = headline.find_next("strong").contents[0]
-
-    if size_data:
-        filesize = size_data.split()[2]
-        sizeunit = size_data.split()[3]
-
-    return filesize, sizeunit
-    """
     return list_of_filesizes
 
 def fetch_num_recs(page: BeautifulSoup) -> list:
     """
-    Fetches the number of files of the specific dataset.
+    Fetches the number of files of each dataset on that page.
 
     Args:
         page (BeautifulSoup object): A BeautifulSoup object for the specific dataset.
     Returns:
-        amount_recs (int): A number of files in the dataset.
+        list_num_recs (List): A list with the number of files in each dataset.
     """
     list_num_recs = []
     content = page.find_all(string=re.compile("File content"))
