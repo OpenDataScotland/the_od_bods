@@ -282,6 +282,26 @@ def fetch_licences(page: BeautifulSoup) -> str:
     # return ', '.join(str(licence) for licence in list_of_licences)
 
 
+def fetch_description(page):
+    """
+    Fetches the description of a specific dataset.
+
+    Args:
+        page (BeautifulSoup object): A BeautifulSoup object for the specific dataset.
+    Returns:
+        str: A string of the description.
+    """
+    if not (container := page.find_all("div", class_="wp-container-1 wp-block-column")):
+        return "NULL"
+    else:
+        print("1", page.find("div", class_="wp-container-1 wp-block-column"))
+        parts_of_description = page.find("div", class_="wp-container-1 wp-block-column").stripped_strings
+        print("2", parts_of_description)
+        combined_parts = " ".join(parts_of_description)
+        print("3", combined_parts)
+        return combined_parts
+
+
 if __name__ == "__main__":
     # Record Headings
     header = [
@@ -351,6 +371,7 @@ if __name__ == "__main__":
                 # print(("num_recs:", num_recs))
                 nls_licence = fetch_licences(soup)
                 # print("nls_licence:", nls_licence)
+                description = fetch_description(soup)
 
                 output = [
                     title,
@@ -366,7 +387,7 @@ if __name__ == "__main__":
                     "NULL",
                     "NULL",
                     nls_licence,
-                    "NULL",
+                    description,
                 ]
                 data.append(output)
                 counter += 1
