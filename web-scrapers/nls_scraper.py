@@ -296,9 +296,8 @@ def fetch_description(page):
     else:
         print("1", page.find("div", class_="wp-container-1 wp-block-column"))
         parts_of_description = page.find("div", class_="wp-container-1 wp-block-column").stripped_strings
-        print("2", parts_of_description)
         combined_parts = " ".join(parts_of_description)
-        print("3", combined_parts)
+        print("2", combined_parts)
         return combined_parts
 
 
@@ -398,8 +397,5 @@ if __name__ == "__main__":
 
 """
 still to do:
-- 
-issues with this scraper:
-- if publication date present on webpage, then only year. In the csv it is the complete date
 - for two data sets, the file types are not listed the same way as the other pages. Needs to be addressed, if possible
 """
