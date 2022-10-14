@@ -630,6 +630,7 @@ def clean_data(dataframe):
     ### Apply ODS categorisation
     data["ODSCategories"] = data["CombinedTags"].apply(assign_ODScategories)
 
+
     ### Tidy licence names
     def tidy_licence(licence_name):
         """Temporary licence conversion to match export2jkan -- FOR ANALYTICS ONLY, will discard in 2022Q2 Milestone
@@ -670,6 +671,7 @@ def clean_data(dataframe):
         return tidied_licence
 
     data["License"] = data["License"].apply(tidy_licence)
+
 
     def tidy_file_type(file_type):
         """ Temporary data type conversion
