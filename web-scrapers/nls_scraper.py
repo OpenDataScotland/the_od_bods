@@ -294,10 +294,8 @@ def fetch_description(page):
     if not (container := page.find_all("div", class_="wp-container-1 wp-block-column")):
         return "NULL"
     else:
-        print("1", page.find("div", class_="wp-container-1 wp-block-column"))
         parts_of_description = page.find("div", class_="wp-container-1 wp-block-column").stripped_strings
-        combined_parts = " ".join(parts_of_description)
-        print("2", combined_parts)
+        combined_parts = " ".join(parts_of_description).replace("&nbsp;", " ").replace("\n", " ")
         return combined_parts
 
 
@@ -344,6 +342,9 @@ if __name__ == "__main__":
             fetched_file_size = fetch_file_size(soup)
             fetched_num_recs = fetch_num_recs(soup)
             counter = 0
+            nls_licence = fetch_licences(soup)
+            # print("nls_licence:", nls_licence)
+            description = fetch_description(soup)
             for asseturl in list_of_asset_urls:
                 title = fetch_title(soup)
                 # print("title:", title)
@@ -368,9 +369,6 @@ if __name__ == "__main__":
                 # print("data_type:", data_type)
                 num_recs = fetched_num_recs[counter]
                 # print(("num_recs:", num_recs))
-                nls_licence = fetch_licences(soup)
-                # print("nls_licence:", nls_licence)
-                description = fetch_description(soup)
 
                 output = [
                     title,
