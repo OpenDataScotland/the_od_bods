@@ -268,46 +268,12 @@ def fetch_data_types(page: BeautifulSoup) -> list:
                 lowercase_file_type = item.lower().strip(".()")
                 lowercase_file_types.append(lowercase_file_type)
             # print("lowercase_file_types", lowercase_file_types)
-            tidied_file_type = tidy_data_type(lowercase_file_types)
-            list_of_types.append(tidied_file_type)
+            list_of_types.append(lowercase_file_types)
             list_of_types = list(
                 set(list_of_types)
             )  # make it a list, where each file type is listed just once
 
     return list_of_types
-
-
-def tidy_data_type(file_type):
-    """Temporary data type conversion
-    Args:
-        file_type (str): the data type name
-    Returns:
-        tidied_data_type (str): a tidied data type name
-    """
-    known_data_types = {
-        "plain text": "TXT",
-        "text": "TXT",
-        "txt": "TXT",
-        "csv": "CSV",
-        "tsv": "TSV",
-        "zip": "ZIP",
-        "html": "HTML",
-        "mets": "METS XML",
-        "alto": "ALTO XML",
-        "image": "Image",
-        "xml": "XML",
-    }
-    tidied_data_type = "NULL"
-    if str(file_type) == []:
-        tidied_data_type = "No file type"
-    else:
-        for type in file_type:
-            # print("type", type)
-            if type in known_data_types:
-                tidied_data_type = known_data_types[type]
-        # else:
-        #    tidied_data_type = "Custom file type: " + str(file_type)
-    return tidied_data_type
 
 
 def fetch_licences(page: BeautifulSoup) -> str:
