@@ -291,12 +291,34 @@ def fetch_description(page):
     Returns:
         str: A string of the description.
     """
+
     if not (container := page.find_all("div", class_="wp-container-1 wp-block-column")):
         return "NULL"
     else:
         parts_of_description = page.find("div", class_="wp-container-1 wp-block-column").stripped_strings
         combined_parts = " ".join(parts_of_description).replace("&nbsp;", " ").replace("\n", " ")
         return combined_parts
+
+
+def fetch_individual_descriptions(page):
+    """
+    Fetches the description of a specific dataset.
+
+    Args:
+        page (BeautifulSoup object): A BeautifulSoup object for the specific dataset.
+    Returns:
+        str: A string of the description.
+    """
+
+    download_heading = page.find("h3", string=re.compile("Download the data"))
+    # print(download_heading)
+    # dh_children = download_heading.find_next_siblings("h4")
+    dh_children = download_heading.find_next_siblings(re.compile("^h"))
+    ind_descr = []
+    [ind_descr.append(dh_child.get_text()) for dh_child in dh_children]
+    print(ind_descr)
+
+    return ind_descr
 
 
 if __name__ == "__main__":
@@ -345,6 +367,7 @@ if __name__ == "__main__":
             nls_licence = fetch_licences(soup)
             # print("nls_licence:", nls_licence)
             description = fetch_description(soup)
+            indiv_descriptions = fetch_individual_descriptions(soup)[:len(list_of_asset_urls)]
             for asseturl in list_of_asset_urls:
                 title = fetch_title(soup)
                 # print("title:", title)
@@ -369,6 +392,8 @@ if __name__ == "__main__":
                 # print("data_type:", data_type)
                 num_recs = fetched_num_recs[counter]
                 # print(("num_recs:", num_recs))
+                if not indiv_descriptions == []:
+                    description = indiv_descriptions[counter] + ": " + description
 
                 output = [
                     title,
