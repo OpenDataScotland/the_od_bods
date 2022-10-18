@@ -311,12 +311,9 @@ def fetch_individual_descriptions(page):
     """
 
     download_heading = page.find("h3", string=re.compile("Download the data"))
-    # print(download_heading)
-    # dh_children = download_heading.find_next_siblings("h4")
     dh_children = download_heading.find_next_siblings(re.compile("^h"))
     ind_descr = []
     [ind_descr.append(dh_child.get_text()) for dh_child in dh_children]
-    print(ind_descr)
 
     return ind_descr
 
@@ -385,15 +382,13 @@ if __name__ == "__main__":
                     file_size = "unknown"
                     file_unit = "unknown"
 
-                # print("file_size:", file_size)
-                # print("file_unit:", file_unit)
                 ### fetch_data_types is more accurate & useful, but file extension is consistent with other listings
                 data_type = asset_url.rsplit('.',1)[1] #fetch_data_types(soup)
                 # print("data_type:", data_type)
                 num_recs = fetched_num_recs[counter]
                 # print(("num_recs:", num_recs))
-                if not indiv_descriptions == []:
-                    description = indiv_descriptions[counter] + ": " + description
+                if len(indiv_descriptions) > 1:
+                    description = indiv_descriptions[counter].strip(" :") + ": " + description
 
                 output = [
                     title,
@@ -416,9 +411,3 @@ if __name__ == "__main__":
 
     print("Outputting to CSV")
     csv_output(header, data)
-
-
-"""
-still to do:
-- for two data sets, the file types are not listed the same way as the other pages. Needs to be addressed, if possible
-"""
