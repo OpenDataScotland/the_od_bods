@@ -18,7 +18,7 @@ def merge_data():
                     [
                         source_ckan,
                         pd.read_csv(
-                            folder + r"/" + filename, parse_dates=["DateUpdated"], lineterminator='\n'
+                            folder + r"/" + filename, parse_dates=["DateCreated","DateUpdated"], lineterminator='\n'
                         ),
                     ]
                 )
@@ -39,6 +39,8 @@ def merge_data():
         }
     )
     source_scotgov["Source"] = "sparql"
+    source_scotgov['DateUpdated'] = pd.to_datetime(source_scotgov['DateUpdated'], utc=True).dt.tz_localize(None)
+    source_scotgov['DateCreated'] = pd.to_datetime(source_scotgov['DateCreated'], utc=True).dt.tz_localize(None)
 
     ### From arcgis api
     source_arcgis = pd.DataFrame()
@@ -50,7 +52,7 @@ def merge_data():
                     [
                         source_arcgis,
                         pd.read_csv(
-                            folder + r"/" + filename, parse_dates=["DateUpdated"]
+                            folder + r"/" + filename, parse_dates=["DateCreated","DateUpdated"]
                         ),
                     ]
                 )
@@ -66,14 +68,13 @@ def merge_data():
                     [
                         source_usmart,
                         pd.read_csv(
-                            folder + r"/" + filename, parse_dates=["DateUpdated"]
+                            folder + r"/" + filename, parse_dates=["DateCreated","DateUpdated"]
                         ),
                     ]
                 )
     source_usmart["Source"] = "USMART API"
-    source_usmart["DateUpdated"] = source_usmart["DateUpdated"].apply(
-        lambda x: x.replace(tzinfo=None)
-    )
+    source_usmart["DateUpdated"] = source_usmart["DateUpdated"].dt.tz_localize(None)
+    source_usmart["DateCreated"] = source_usmart["DateCreated"].dt.tz_localize(None)
 
     ## From DCAT
     source_dcat = pd.DataFrame()
@@ -85,11 +86,12 @@ def merge_data():
                     [
                         source_dcat,
                         pd.read_csv(
-                            folder + r"/" + filename, parse_dates=["DateUpdated"]
+                            folder + r"/" + filename, parse_dates=["DateCreated","DateUpdated"]
                         ),
                     ]
                 )
-                # source_dcat['DateUpdated'] = source_dcat['DateUpdated'].dt.tz_convert(None)
+    source_dcat["DateUpdated"] =  source_dcat["DateUpdated"].dt.tz_localize(None)
+    #source_dcat["DateCreated"] = source_dcat["DateCreated"].dt.tz_localize(None) ### DateCreated currently not picked up in dcat so all are NULL
     source_dcat["Source"] = "DCAT feed"
 
     ## From web scraped results
@@ -102,7 +104,7 @@ def merge_data():
                     [
                         source_scraped,
                         pd.read_csv(
-                            folder + r"/" + filename, parse_dates=["DateUpdated"]
+                            folder + r"/" + filename, parse_dates=["DateCreated","DateUpdated"]
                         ),
                     ]
                 )
@@ -157,9 +159,13 @@ def clean_data(dataframe):
         "South Ayrshire": "South Ayrshire Council",
         "East Ayrshire": "East Ayrshire Council",
         "Highland Council GIS Organisation": "Highland Council",
+        "Scottish.Forestry": "Scottish Forestry"
     }
     data["Owner"] = data["Owner"].replace(owner_renames)
     ### Format dates as datetime type
+    data["DateCreated"] = pd.to_datetime(
+        data["DateCreated"], format="%Y-%m-%d", errors="coerce", utc=True
+    ).dt.date
     data["DateUpdated"] = pd.to_datetime(
         data["DateUpdated"], format="%Y-%m-%d", errors="coerce", utc=True
     ).dt.date
