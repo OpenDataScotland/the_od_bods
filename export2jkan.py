@@ -116,6 +116,8 @@ unknown_lics = []
 
 
 def license_link(l):
+    '''
+    code below is probably not required anymore after new tidy_licences() in merge_data.py
     ogl = [
         "Open Government Licence 3.0 (United Kingdom)",
         "uk-ogl",
@@ -127,20 +129,54 @@ def license_link(l):
         return (
             "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
         )
+    '''
+    '''
+    # previous approach, but more lines of code
+    if l == "Open Government Licence v2.0":
+        return "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/"
+    if l == "Open Government Licence v3.0":
+        return "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    if l == "Creative Commons Attribution Share-Alike 3.0":
+        return "https://creativecommons.org/licenses/by-sa/3.0/"
     if l == "Creative Commons Attribution Share-Alike 4.0":
         return "https://creativecommons.org/licenses/by-sa/4.0/"
-    if l == "Creative Commons Attribution 4.0":
+    if l == "Creative Commons Attribution 4.0 International":
         return "https://creativecommons.org/licenses/by/4.0/"
     if l == "Open Data Commons Open Database License 1.0":
         return "https://opendatacommons.org/licenses/odbl/"
+    if l == "Creative Commons CC0":
+        return "https://creativecommons.org/share-your-work/public-domain/cc0"
+    if l == "Non-Commercial Use Only":
+        return "https://rightsstatements.org/page/NoC-NC/1.0/"
+    if l == "No Known Copyright":
+        return "http://rightsstatements.org/vocab/NKC/1.0/"
+    if l == "Public Domain":
+        return "https://creativecommons.org/publicdomain/mark/1.0/"
+    '''
+
+    known_licence_links = {
+        "Open Government Licence v2.0": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/",
+        "Open Government Licence v3.0": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+        "Creative Commons Attribution Share-Alike 3.0": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "Creative Commons Attribution Share-Alike 4.0": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "Creative Commons Attribution 4.0 International": "https://creativecommons.org/licenses/by/4.0/",
+        "Open Data Commons Open Database License 1.0": "https://opendatacommons.org/licenses/odbl/",
+        "Creative Commons CC0": "https://creativecommons.org/share-your-work/public-domain/cc0",
+        "Non-Commercial Use Only": "https://rightsstatements.org/page/NoC-NC/1.0/",
+        "No Known Copyright": "http://rightsstatements.org/vocab/NKC/1.0/",
+        "Public Domain": "https://creativecommons.org/publicdomain/mark/1.0/",
+    }
+
+    for key in known_licence_links.keys():
+        if l == key:
+            return known_licence_links[key]
 
     if not l in unknown_lics:
         unknown_lics.append(l)
         print("Unknown license: ", l)
     return l
 
-
-md = markdown.Markdown()
+    md = markdown.Markdown()
 
 ### Replace folder by deleting and writing
 shutil.rmtree("../jkan/_datasets/")
