@@ -1,4 +1,5 @@
 # to run, in terminal: sh main.sh
+alias python="python3.9"
 # clear folders
 find data/arcgis/ -type f -delete
 find data/ckan/ -type f -delete
