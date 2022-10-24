@@ -1,4 +1,6 @@
+import urllib.error
 from urllib import request, parse
+from urllib.error import HTTPError
 import csv
 import json
 import os
@@ -33,10 +35,24 @@ class Processor:
             for row in csv_file:
                 if row["Processor"] == self.type:
                     self.urls[row["Name"]] = row["Source URL"]
+            for r in csv_file:
+                print("r", r)
 
     def get_json(self, url):
         req = request.Request(url)
-        return json.loads(request.urlopen(req).read().decode())
+        try:
+            return json.loads(request.urlopen(req).read().decode())
+        except HTTPError as err:
+            print (url, "cannot be accessed. The URL returned:", err.code, err.reason)
+            error_dict = {
+                'url': url,
+                'error_code': err.code,
+                'error_reason': err.reason
+            }
+            with open('../opendata.scot_pipeline/log.json', 'a') as f:
+                json.dump(error_dict, f)
+            return "NULL"
+
 
     def get_license(self, dataset):
         try:
