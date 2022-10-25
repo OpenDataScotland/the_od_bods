@@ -16,6 +16,8 @@ class DataFile:
     size: float
     size_unit: str
     file_type: str
+    file_name: str
+    show_name: str
 
 
 @dataclass
@@ -32,7 +34,9 @@ class Dataset:
     files: List[DataFile]
 
 
-fulld = pd.read_csv("data/merged_output.csv", dtype=str, na_filter=False, lineterminator='\n')
+fulld = pd.read_csv(
+    "data/merged_output.csv", dtype=str, na_filter=False, lineterminator="\n"
+)
 
 
 def ind(name):
@@ -108,6 +112,8 @@ for r in fulld.values:
             size=r[ind("FileSize")],
             size_unit=r[ind("FileSizeUnit")],
             file_type=r[ind("FileType")],
+            file_name=r[ind("FileName")],
+            show_name=r[ind("FileName")] if r[ind("FileName")] else r[ind("FileType")],
         )
     )
 
@@ -173,7 +179,7 @@ def license_link(l):
 
     if not l in unknown_lics:
         unknown_lics.append(l)
-        print("Unknown license: ", l)
+        # print("Unknown license: ", l)
     return l
 
     md = markdown.Markdown()
@@ -190,7 +196,7 @@ for n, (k, ds) in enumerate(data.items()):
     y["notes"] = markdown.markdown(ds.description)
     y["original_dataset_link"] = ds.page_url
     y["resources"] = [
-        {"name": d.file_type, "url": d.url, "format": d.file_type}
+        {"name": d.show_name, "url": d.url, "format": d.file_type}
         for d in ds.files
         if d.url
     ]
