@@ -42,15 +42,24 @@ class Processor:
         req = request.Request(url)
         try:
             return json.loads(request.urlopen(req).read().decode())
-        except (HTTPError, URLError) as err:
-            print (url, "cannot be accessed. The URL returned:", err)
+        except HTTPError as err1:
+            print (url, "cannot be accessed. The URL returned:", err1.code, err1.reason)
             error_dict = {
                 'url': url,
-                'error': err
+                'error_code': err1.code,
+                'error_reason': err1.reason,
             }
-            with open('../opendata.scot_pipeline/log.json', 'a') as f:
-                json.dump(error_dict, f)
-            return "NULL"
+        except URLError as err2:
+            print(type(err2))
+            print(url, "cannot be accessed. The URL returned:", err2.reason)
+            error_dict = {
+                'url': url,
+                'error_code': "",
+                'error_reason': str(err2.reason),
+                }
+        with open('../opendata.scot_pipeline/log.json', 'a') as f:
+            json.dump(error_dict, f)
+        return "NULL"
 
     def get_license(self, dataset):
         try:
