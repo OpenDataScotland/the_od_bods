@@ -44,14 +44,12 @@ class Processor:
             return json.loads(request.urlopen(req).read().decode())
         except (HTTPError, URLError) as err:
             print (url, "cannot be accessed. The URL returned:", err)
-            '''error_dict = {
+            error_dict = {
                 'url': url,
-                'error_code': err.code,
-                'error_reason': err.reason
+                'error': err
             }
             with open('../opendata.scot_pipeline/log.json', 'a') as f:
                 json.dump(error_dict, f)
-            '''
             return "NULL"
 
     def get_license(self, dataset):
