@@ -71,6 +71,8 @@ class ProcessorUSMART(Processor):
                         Description,
                     ]
 
+                    prepped.append(line)
+
             processor.write_csv(fname, prepped)
 
 
