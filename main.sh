@@ -1,4 +1,7 @@
 # to run, in terminal: sh main.sh
+# delete old log and create new, empty log
+find ../opendata.scot_pipeline/log.json -type f -delete
+touch ../opendata.scot_pipeline/log.json
 # clear folders
 find data/arcgis/ -type f -delete
 find data/ckan/ -type f -delete
