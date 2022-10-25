@@ -672,6 +672,7 @@ def clean_data(dataframe):
 
     data["License"] = data["License"].apply(tidy_licence)
 
+
     def tidy_file_type(file_type):
         """ Temporary data type conversion
         Args:
