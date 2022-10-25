@@ -1,4 +1,5 @@
 from processor import Processor
+import requests
 
 
 class ProcessorCKAN(Processor):
@@ -54,6 +55,9 @@ class ProcessorCKAN(Processor):
                     file_size = resource["size"]
 
                 file_type = ""
+
+                if owner == "Angus Council":
+                    resource["url"] = resource["url"].replace("http:", "https:")
 
                 if resource["format"]:
                     file_type = resource["format"]
