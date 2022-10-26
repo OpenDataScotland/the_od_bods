@@ -33,6 +33,7 @@ class ProcessorARCGIS(Processor):
                     e["attributes"].get("source", ""),
                     e.get("links", {}).get("itemPage", ""),
                     "",  # Link to data
+                    "", #FileName
                     datetime.utcfromtimestamp(
                         e["attributes"].get("created", 0) / 1000
                     ).strftime("%Y-%m-%d"),

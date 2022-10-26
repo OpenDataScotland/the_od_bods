@@ -8,11 +8,24 @@ def merge_data():
     ### Loading data
 
     ### From ckan output
-    source_ckan = pd.read_csv("data/ckan_output.csv", parse_dates=["DateUpdated"])
+    source_ckan = pd.DataFrame()
+    folder = "data/ckan/"
+    for dirname, _, filenames in os.walk(folder):
+        for filename in filenames:
+            if filename.rsplit(".", 1)[1] == "csv":
+                print(filename)
+                source_ckan = pd.concat(
+                    [
+                        source_ckan,
+                        pd.read_csv(
+                            folder + r"/" + filename, parse_dates=["DateCreated","DateUpdated"], lineterminator='\n'
+                        ),
+                    ]
+                )
     source_ckan["Source"] = "ckan API"
 
     ### From scotgov csv
-    source_scotgov = pd.read_csv("data/scotgov-datasets.csv")
+    source_scotgov = pd.read_csv("data/scotgov-datasets-sparkql.csv")
     source_scotgov = source_scotgov.rename(
         columns={
             "title": "Title",
@@ -22,10 +35,12 @@ def merge_data():
             "date_created": "DateCreated",
             "date_updated": "DateUpdated",
             "url": "PageURL",
+            "licence":"License"
         }
     )
-    source_scotgov["Source"] = "manual extraction"
-    source_scotgov["License"] = "OGL3"
+    source_scotgov["Source"] = "sparql"
+    source_scotgov['DateUpdated'] = pd.to_datetime(source_scotgov['DateUpdated'], utc=True).dt.tz_localize(None)
+    source_scotgov['DateCreated'] = pd.to_datetime(source_scotgov['DateCreated'], utc=True).dt.tz_localize(None)
 
     ### From arcgis api
     source_arcgis = pd.DataFrame()
@@ -37,7 +52,7 @@ def merge_data():
                     [
                         source_arcgis,
                         pd.read_csv(
-                            folder + r"/" + filename, parse_dates=["DateUpdated"]
+                            folder + r"/" + filename, parse_dates=["DateCreated","DateUpdated"]
                         ),
                     ]
                 )
@@ -53,14 +68,13 @@ def merge_data():
                     [
                         source_usmart,
                         pd.read_csv(
-                            folder + r"/" + filename, parse_dates=["DateUpdated"]
+                            folder + r"/" + filename, parse_dates=["DateCreated","DateUpdated"]
                         ),
                     ]
                 )
     source_usmart["Source"] = "USMART API"
-    source_usmart["DateUpdated"] = source_usmart["DateUpdated"].apply(
-        lambda x: x.replace(tzinfo=None)
-    )
+    source_usmart["DateUpdated"] = source_usmart["DateUpdated"].dt.tz_localize(None)
+    source_usmart["DateCreated"] = source_usmart["DateCreated"].dt.tz_localize(None)
 
     ## From DCAT
     source_dcat = pd.DataFrame()
@@ -72,11 +86,12 @@ def merge_data():
                     [
                         source_dcat,
                         pd.read_csv(
-                            folder + r"/" + filename, parse_dates=["DateUpdated"]
+                            folder + r"/" + filename, parse_dates=["DateCreated","DateUpdated"]
                         ),
                     ]
                 )
-                # source_dcat['DateUpdated'] = source_dcat['DateUpdated'].dt.tz_convert(None)
+    source_dcat["DateUpdated"] =  source_dcat["DateUpdated"].dt.tz_localize(None)
+    #source_dcat["DateCreated"] = source_dcat["DateCreated"].dt.tz_localize(None) ### DateCreated currently not picked up in dcat so all are NULL
     source_dcat["Source"] = "DCAT feed"
 
     ## From web scraped results
@@ -89,7 +104,7 @@ def merge_data():
                     [
                         source_scraped,
                         pd.read_csv(
-                            folder + r"/" + filename, parse_dates=["DateUpdated"]
+                            folder + r"/" + filename, parse_dates=["DateCreated","DateUpdated"]
                         ),
                     ]
                 )
@@ -144,10 +159,13 @@ def clean_data(dataframe):
         "South Ayrshire": "South Ayrshire Council",
         "East Ayrshire": "East Ayrshire Council",
         "Highland Council GIS Organisation": "Highland Council",
-        "Na h-Eileanan an Iar": "Comhairle nan Eilean Siar",
+        "Scottish.Forestry": "Scottish Forestry"
     }
     data["Owner"] = data["Owner"].replace(owner_renames)
     ### Format dates as datetime type
+    data["DateCreated"] = pd.to_datetime(
+        data["DateCreated"], format="%Y-%m-%d", errors="coerce", utc=True
+    ).dt.date
     data["DateUpdated"] = pd.to_datetime(
         data["DateUpdated"], format="%Y-%m-%d", errors="coerce", utc=True
     ).dt.date
@@ -612,6 +630,7 @@ def clean_data(dataframe):
     ### Apply ODS categorisation
     data["ODSCategories"] = data["CombinedTags"].apply(assign_ODScategories)
 
+
     ### Tidy licence names
     def tidy_licence(licence_name):
         """Temporary licence conversion to match export2jkan -- FOR ANALYTICS ONLY, will discard in 2022Q2 Milestone
@@ -620,42 +639,90 @@ def clean_data(dataframe):
         """
         known_licences = {
             "https://creativecommons.org/licenses/by-sa/3.0/": "Creative Commons Attribution Share-Alike 3.0",
-            "Creative Commons Attribution 4.0": "Creative Commons Attribution 4.0 International",
-            "https://creativecommons.org/licenses/by/4.0": "Creative Commons Attribution 4.0 International",
-            "https://creativecommons.org/licenses/by/4.0/": "Creative Commons Attribution 4.0 International",
             "https://creativecommons.org/licenses/by/4.0/legalcode": "Creative Commons Attribution 4.0 International",
-            "CC BY 4.0": "Creative Commons Attribution 4.0 International",
-            "CC-BY 4.0": "Creative Commons Attribution 4.0 International",
-            "OGL3": "Open Government Licence v3.0",
-            "Open Government Licence 3.0 (United Kingdom)": "Open Government Licence v3.0",
-            "UK Open Government Licence (OGL)": "Open Government Licence v3.0",
-            "uk-ogl": "Open Government Licence v3.0",
-            "Open Data Commons Open Database License 1.0": "Open Data Commons Open Database License 1.0",
-            "http://opendatacommons.org/licenses/odbl/1-0/": "Open Data Commons Open Database License 1.0",
-            "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/": "Open Government Licence v2.0",
-            "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/": "Open Government Licence v3.0",
-            "https://creativecommons.org/publicdomain/mark/1.0/": "Public Domain",
-            "Public Domain Mark 1.0": "Public Domain",
-            "Public Domain": "Public Domain",
-            "Public domain": "Public Domain",
-            "CC0": "Creative Commons CC0",
-            "CCO": "Creative Commons CC0",
+            "https://creativecommons.org/licenses/by/4.0": "Creative Commons Attribution 4.0 International",
+            "Creative Commons Attribution 4.0": "Creative Commons Attribution 4.0 International",
             "https://creativecommons.org/share-your-work/public-domain/cc0": "Creative Commons CC0",
             "https://rightsstatements.org/page/NoC-NC/1.0/": "Non-Commercial Use Only",
+            "https://opendatacommons.org/licenses/odbl/1-0/": "Open Data Commons Open Database License 1.0",
+            "Open Data Commons Open Database License 1.0": "Open Data Commons Open Database License 1.0",
+            "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/": "Open Government Licence v2.0",
+            "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/": "Open Government Licence v3.0",
+            "Open Government Licence 3.0 (United Kingdom)": "Open Government Licence v3.0",
+            "UK Open Government Licence (OGL)": "Open Government Licence v3.0",
+            "Open Government": "Open Government Licence v3.0",
+            "uk-ogl": "Open Government Licence v3.0",
+            "OGL3": "Open Government Licence v3.0",
+            "https://rightsstatements.org/vocab/NKC/1.0/": "No Known Copyright",
+            "https://creativecommons.org/publicdomain/mark/1.0/": "Public Domain",
+            "Other (Public Domain)": "Public Domain",
+            "Public Domain": "Public Domain",
+            "Public Sector End User Licence (Scotland)": "Public Sector End User Licence (Scotland)",
         }
-        if licence_name in known_licences:
-            tidied_licence = known_licences[licence_name]
-        elif (
-            str(licence_name) == "nan"
-            or str(licence_name) == "No Known Copyright"
-            or str(licence_name) == "http://rightsstatements.org/vocab/NKC/1.0/"
-        ):
-            tidied_licence = "No licence"
+
+        for key in known_licences.keys():
+            if str(licence_name).lower().strip(" /") == key.lower().strip(" /"):
+                return known_licences[key]
+
+        if str(licence_name) == "nan":
+                tidied_licence = "No licence"
         else:
-            tidied_licence = "Custom licence: " + str(licence_name)
+                tidied_licence = "Custom licence: " + str(licence_name)
         return tidied_licence
 
     data["License"] = data["License"].apply(tidy_licence)
+
+
+    def tidy_file_type(file_type):
+        """ Temporary data type conversion
+        Args:
+            file_type (str): the data type name
+        Returns:
+            tidied_file_type (str): a tidied data type name
+        """
+        file_types_to_tidy = {
+            "application/x-7z-compressed": "7-Zip compressed file",
+            "ArcGIS GeoServices REST API": "ARCGIS GEOSERVICE",
+            "Esri REST": "ARCGIS GEOSERVICE",
+            "Atom Feed": "ATOM FEED",
+            "htm": "HTML",
+            "ics": "iCalendar",
+            "jpeg": "Image",
+            "vnd.openxmlformats-officedocument.spreadsheetml.sheet": "MS EXCEL",
+            "vnd.ms-excel": "MS EXCEL",
+            "xls": "MS EXCEL",
+            "xlsx": "MS EXCEL",
+            "doc": "MS Word",
+            "docx": "MS Word",
+            "QGIS": "QGIS Shapefile",
+            "text": "TXT",
+            "web": "URL",
+            "UK/DATA/#TABGB1900": "URL",
+            "UK/ROY/GAZETTEER/#DOWNLOAD": "URL",
+            "Web Mapping Application": "WEB MAP",
+            "mets": "XML",
+            "alto": "XML",
+        }
+        tidied_data_type = "NULL"
+
+        for key in file_types_to_tidy.keys():
+            if str(file_type).lower().strip(". /") == key.lower().strip(". /"):
+                tidied_file_type = file_types_to_tidy[key]
+                return tidied_file_type
+
+        if (
+            str(file_type) == "nan"
+            or str(file_type) == ""
+        ):
+            tidied_file_type = "No file type"
+        else:
+            # print("file type: ", file_type)
+            tidied_file_type = str(file_type).strip(". /").upper()
+
+        return tidied_file_type
+
+    ### Inconsistencies in casing for FileType
+    data['FileType'] = data['FileType'].apply(tidy_file_type)
 
     return data
 
