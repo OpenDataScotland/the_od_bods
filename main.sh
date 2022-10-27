@@ -1,7 +1,17 @@
 # to run, in terminal: sh main.sh
 # delete old log and create new, empty log
 find ../opendata.scot_pipeline/log.json -type f -delete
+find ../opendata.scot_pipeline/log.md -type f -delete
 touch ../opendata.scot_pipeline/log.json
+touch ../opendata.scot_pipeline/log.md
+echo '# pipeline error log' >> ../opendata.scot_pipeline/log.md
+echo '' >> ../opendata.scot_pipeline/log.md
+echo '## Unaccessible Webpages' >> ../opendata.scot_pipeline/log.md
+echo '' >> ../opendata.scot_pipeline/log.md
+echo '|URL | Error Code | Error Reason|' >> ../opendata.scot_pipeline/log.md
+echo '|--- | --- | ---|' >> ../opendata.scot_pipeline/log.md
+
+<<Block_comment
 # clear folders
 find data/arcgis/ -type f -delete
 find data/ckan/ -type f -delete
@@ -25,3 +35,5 @@ cd ..
 python merge_data.py
 python export2jkan.py
 echo "main.sh complete"
+
+Block_comment

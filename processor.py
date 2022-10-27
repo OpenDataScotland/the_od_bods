@@ -59,6 +59,9 @@ class Processor:
                 }
         with open('../opendata.scot_pipeline/log.json', 'a') as f:
             json.dump(error_dict, f)
+        with open('../opendata.scot_pipeline/log.md', 'a') as file:
+            file.write(f'| {error_dict["url"]} | {error_dict["error_code"]} | {error_dict["error_reason"]} | \n')
+
         return "NULL"
 
     def get_license(self, dataset):
