@@ -1,5 +1,4 @@
 from processor import Processor
-import requests
 
 
 class ProcessorCKAN(Processor):
