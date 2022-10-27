@@ -10,8 +10,6 @@ echo '## Unaccessible Webpages' >> ../opendata.scot_pipeline/log.md
 echo '' >> ../opendata.scot_pipeline/log.md
 echo '|URL | Error Code | Error Reason|' >> ../opendata.scot_pipeline/log.md
 echo '|--- | --- | ---|' >> ../opendata.scot_pipeline/log.md
-
-<<Block_comment
 # clear folders
 find data/arcgis/ -type f -delete
 find data/ckan/ -type f -delete
@@ -35,5 +33,3 @@ cd ..
 python merge_data.py
 python export2jkan.py
 echo "main.sh complete"
-
-Block_comment
