@@ -58,28 +58,14 @@ class ProcessorCKAN(Processor):
                 file_type = ""
 
                 if owner == "Angus Council":
+                    req2_url = resource["url"].replace("http:", "https:")
                     try:
-                        #print("trying to request", resource["url"])
-                        req1 = requests.get(resource["url"])
-                        if req1.status_code == 200:
-                            req1_up = True
-                            req1_url = resource["url"]
-                        req2_url = resource["url"].replace("http:", "https:")
-                        try:
-                            #print("trying to request", req2_url)
-                            req2 = requests.get(req2_url)
-                            if req2.status_code == 200:
-                                resource["url"] = req2_url
-                            elif req1_up:
-                                resource["url"] = req1_url
-                            else:
-                                print("dataset not accessible:", resource["url"])
-                        except:
-                            print("an error occurred for", req2_url)
+                        #print("trying to request", req2_url)
+                        req2 = requests.get(req2_url)
+                        if req2.status_code == 200:
+                            resource["url"] = req2_url
                     except:
-                        print("an error occurred for", resource["url"])
-                    #print(resource["url"])
-
+                        print("an error occurred for", req2_url, ". Using", resource["url"], "instead.")
 
                 if resource["format"]:
                     file_type = resource["format"]
