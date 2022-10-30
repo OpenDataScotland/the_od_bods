@@ -1,15 +1,15 @@
 # to run, in terminal: sh main.sh
 # delete old log and create new, empty log
-find ../opendata.scot_pipeline/log.json -type f -delete
-find ../opendata.scot_pipeline/log.md -type f -delete
-touch ../opendata.scot_pipeline/log.json
-touch ../opendata.scot_pipeline/log.md
-echo '# pipeline error log' >> ../opendata.scot_pipeline/log.md
-echo '' >> ../opendata.scot_pipeline/log.md
-echo '## Unaccessible Webpages' >> ../opendata.scot_pipeline/log.md
-echo '' >> ../opendata.scot_pipeline/log.md
-echo '|URL | Error Code | Error Reason|' >> ../opendata.scot_pipeline/log.md
-echo '|--- | --- | ---|' >> ../opendata.scot_pipeline/log.md
+find log.json -type f -delete
+find log.md -type f -delete
+touch log.json
+touch log.md
+echo '# pipeline error log' >> log.md
+echo '' >> log.md
+echo '## Unaccessible Webpages' >> log.md
+echo '' >> log.md
+echo '|URL | Error Code | Error Reason|' >> log.md
+echo '|--- | --- | ---|' >> log.md
 # clear folders
 find data/arcgis/ -type f -delete
 find data/ckan/ -type f -delete
