@@ -1,4 +1,15 @@
 # to run, in terminal: sh main.sh
+# delete old log and create new, empty log
+find log.json -type f -delete
+find log.md -type f -delete
+touch log.json
+touch log.md
+echo '# pipeline error log' >> log.md
+echo '' >> log.md
+echo '## Unaccessible Webpages' >> log.md
+echo '' >> log.md
+echo '|URL | Error Code | Error Reason|' >> log.md
+echo '|--- | --- | ---|' >> log.md
 # clear folders
 find data/arcgis/ -type f -delete
 find data/ckan/ -type f -delete
