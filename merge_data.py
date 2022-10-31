@@ -159,7 +159,8 @@ def clean_data(dataframe):
         "South Ayrshire": "South Ayrshire Council",
         "East Ayrshire": "East Ayrshire Council",
         "Highland Council GIS Organisation": "Highland Council",
-        "Scottish.Forestry": "Scottish Forestry"
+        "Scottish.Forestry": "Scottish Forestry",
+        "Na h-Eileanan an Iar": "Comhairle nan Eilean Siar",
     }
     data["Owner"] = data["Owner"].replace(owner_renames)
     ### Format dates as datetime type
