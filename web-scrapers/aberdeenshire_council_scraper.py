@@ -106,22 +106,29 @@ def parse_feeds(feeds):
                 formatted_feed.append("education")
             elif "burial" in feed["title"].lower():
                 formatted_feed.append("burial grounds")
-            elif (
-                "car parks" or "cycle" or "grit" or "harbours" or "core paths" in title
+            #elif (
+            #    "car parks" or "cycle" or "grit" or "harbours" or "core paths" in feed["title"].lower()
+            #):
+            elif any(c in feed["title"].lower() for c in (
+                    "car parks",
+                    "cycle",
+                    "grit",
+                    "harbours",
+                    "core paths")
             ):
                 formatted_feed.append("transport")
             elif "polling" in feed["title"].lower():
                 formatted_feed.append("elections")
-            elif (
-                "applications"
-                or "development"
-                or "green belt"
-                or "land audit" in feed["title"].lower()
+            elif any(p in feed["title"].lower() for p in (
+                    "applications",
+                    "development",
+                    "green belt",
+                    "land audit")
             ):
                 formatted_feed.append("planning")
             elif "recycling" in feed["title"].lower():
                 formatted_feed.append("recycling")
-            elif "toiliets" in feed["title"].lower():
+            elif "toilets" in feed["title"].lower():
                 formatted_feed.append("toilets")
             elif "museums" in feed["title"].lower():
                 formatted_feed.append("museum")
@@ -133,10 +140,10 @@ def parse_feeds(feeds):
                 formatted_feed.append("health and safety")
             elif "contracts register" in feed["title"].lower():
                 formatted_feed.append("contracts")
-            elif (
-                "committee areas"
-                or "community councils"
-                or "offices open" in feed["title"].lower()
+            elif any(cg in feed["title"].lower() for cg in (
+                    "committee areas",
+                    "community councils",
+                    "offices open")
             ):
                 formatted_feed.append("council and government")
             else:
