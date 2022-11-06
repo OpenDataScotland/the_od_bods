@@ -107,10 +107,10 @@ def parse_feeds(feeds):
             elif "burial" in feed["title"].lower():
                 formatted_feed.append("burial grounds")
             elif (
-                "car parks"
-                or "cycle"
-                or "grit"
-                or "harbours"
+                "car parks" in feed["title"].lower()
+                or "cycle" in feed["title"].lower()
+                or "grit" in feed["title"].lower()
+                or "harbours" in feed["title"].lower()
                 or "core paths" in feed["title"].lower()
             ):
                 formatted_feed.append("transport")
