@@ -101,50 +101,7 @@ def parse_feeds(feeds):
             formatted_feed.append(feed["files"][datafile]["filetype"])
             formatted_feed.append("NULL")
             formatted_feed.append("NULL")
-            # hack to create categories
-            if "school" in feed["title"].lower():
-                formatted_feed.append("education")
-            elif "burial" in feed["title"].lower():
-                formatted_feed.append("burial grounds")
-            elif any(c in feed["title"].lower() for c in (
-                    "car parks",
-                    "cycle",
-                    "grit",
-                    "harbours",
-                    "core paths")
-            ):
-                formatted_feed.append("transport")
-            elif "polling" in feed["title"].lower():
-                formatted_feed.append("elections")
-            elif any(p in feed["title"].lower() for p in (
-                    "applications",
-                    "development",
-                    "green belt",
-                    "land audit")
-            ):
-                formatted_feed.append("planning")
-            elif "recycling" in feed["title"].lower():
-                formatted_feed.append("recycling")
-            elif "toilets" in feed["title"].lower():
-                formatted_feed.append("toilets")
-            elif "museums" in feed["title"].lower():
-                formatted_feed.append("museum")
-            elif "nature" in feed["title"].lower():
-                formatted_feed.append("nature")
-            elif "leisure" in feed["title"].lower():
-                formatted_feed.append("leisure")
-            elif "cooling tower" in feed["title"].lower():
-                formatted_feed.append("health and safety")
-            elif "contracts register" in feed["title"].lower():
-                formatted_feed.append("contracts")
-            elif any(cg in feed["title"].lower() for cg in (
-                    "committee areas",
-                    "community councils",
-                    "offices open")
-            ):
-                formatted_feed.append("council and government")
-            else:
-                formatted_feed.append("council and government")
+            formatted_feed.append("NULL")
             formatted_feed.append("Open Government")
             formatted_feed.append("NULL")
             proc_feeds.append(formatted_feed)
