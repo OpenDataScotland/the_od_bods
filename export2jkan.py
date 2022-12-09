@@ -182,7 +182,7 @@ def license_link(l):
         # print("Unknown license: ", l)
     return l
 
-    md = markdown.Markdown()
+md = markdown.Markdown()
 
 ### Replace folder by deleting and writing
 shutil.rmtree("../jkan/_datasets/")
