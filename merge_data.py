@@ -269,9 +269,7 @@ def clean_data(dataframe):
                 "countryside",
                 "farming",
                 "emergency planning",
-                "health and safety",
                 "trading standards",
-                "health and safety at work",
                 "regeneration",
                 "shopping",
                 "shopping centres",
@@ -291,9 +289,11 @@ def clean_data(dataframe):
                 "estimated population",
                 "population",
                 "labour force",
+                "cooling tower"
             ],
             "Council and Government": [
                 "council buildings",
+                "committee areas",
                 "community development",
                 "council and government",
                 "council",
@@ -319,6 +319,7 @@ def clean_data(dataframe):
                 "council agendas",
                 "council plans",
                 "council policies",
+                "offices open"
             ],
             "Education": [
                 "primary schools",
@@ -482,6 +483,7 @@ def clean_data(dataframe):
                 "land-cover",
                 "woodland",
                 "dwellings",
+                "burial",
                 "burial grounds",
                 "cemeteries",
                 "property",
@@ -531,6 +533,10 @@ def clean_data(dataframe):
                 "property",
                 "building control",
                 "conservation",
+                "wind turbine applications",
+                "local development plan",
+                "green belt",
+                "land audit"
             ],
             "Public Safety": [
                 "emergency planning",
@@ -592,6 +598,8 @@ def clean_data(dataframe):
                 "cycling",
                 "parking",
                 "car",
+                "car parks",
+                "grit",
                 "bus",
                 "tram",
                 "train",
