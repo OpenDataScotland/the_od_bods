@@ -16,12 +16,13 @@ class ProcessorARCGIS(Processor):
 
         while True:
             d = processor.get_json(url)
-            datasets += d["data"]
-            if "next" in d["meta"] and d["meta"]["next"]:
-                url = d["meta"]["next"]
-                print(f"Next {url}")
-            else:
-                break
+            if d != "NULL":
+                datasets += d["data"]
+                if "next" in d["meta"] and d["meta"]["next"]:
+                    url = d["meta"]["next"]
+                    print(f"Next {url}")
+                else:
+                    break
 
         print(f"Found {len(datasets)} datasets")
 

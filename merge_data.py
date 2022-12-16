@@ -159,7 +159,8 @@ def clean_data(dataframe):
         "South Ayrshire": "South Ayrshire Council",
         "East Ayrshire": "East Ayrshire Council",
         "Highland Council GIS Organisation": "Highland Council",
-        "Scottish.Forestry": "Scottish Forestry"
+        "Scottish.Forestry": "Scottish Forestry",
+        "Na h-Eileanan an Iar": "Comhairle nan Eilean Siar",
     }
     data["Owner"] = data["Owner"].replace(owner_renames)
     ### Format dates as datetime type
@@ -268,9 +269,7 @@ def clean_data(dataframe):
                 "countryside",
                 "farming",
                 "emergency planning",
-                "health and safety",
                 "trading standards",
-                "health and safety at work",
                 "regeneration",
                 "shopping",
                 "shopping centres",
@@ -290,9 +289,11 @@ def clean_data(dataframe):
                 "estimated population",
                 "population",
                 "labour force",
+                "cooling tower"
             ],
             "Council and Government": [
                 "council buildings",
+                "committee areas",
                 "community development",
                 "council and government",
                 "council",
@@ -318,6 +319,7 @@ def clean_data(dataframe):
                 "council agendas",
                 "council plans",
                 "council policies",
+                "offices open"
             ],
             "Education": [
                 "primary schools",
@@ -481,6 +483,7 @@ def clean_data(dataframe):
                 "land-cover",
                 "woodland",
                 "dwellings",
+                "burial",
                 "burial grounds",
                 "cemeteries",
                 "property",
@@ -530,6 +533,10 @@ def clean_data(dataframe):
                 "property",
                 "building control",
                 "conservation",
+                "wind turbine applications",
+                "local development plan",
+                "green belt",
+                "land audit"
             ],
             "Public Safety": [
                 "emergency planning",
@@ -591,6 +598,8 @@ def clean_data(dataframe):
                 "cycling",
                 "parking",
                 "car",
+                "car parks",
+                "grit",
                 "bus",
                 "tram",
                 "train",
@@ -641,13 +650,21 @@ def clean_data(dataframe):
             "https://creativecommons.org/licenses/by-sa/3.0/": "Creative Commons Attribution Share-Alike 3.0",
             "https://creativecommons.org/licenses/by/4.0/legalcode": "Creative Commons Attribution 4.0 International",
             "https://creativecommons.org/licenses/by/4.0": "Creative Commons Attribution 4.0 International",
+            "http://creativecommons.org/licenses/by-sa/3.0/": "Creative Commons Attribution Share-Alike 3.0",
+            "http://creativecommons.org/licenses/by/4.0/legalcode": "Creative Commons Attribution 4.0 International",
+            "http://creativecommons.org/licenses/by/4.0": "Creative Commons Attribution 4.0 International",
             "Creative Commons Attribution 4.0": "Creative Commons Attribution 4.0 International",
             "https://creativecommons.org/share-your-work/public-domain/cc0": "Creative Commons CC0",
             "https://rightsstatements.org/page/NoC-NC/1.0/": "Non-Commercial Use Only",
             "https://opendatacommons.org/licenses/odbl/1-0/": "Open Data Commons Open Database License 1.0",
+            "http://creativecommons.org/share-your-work/public-domain/cc0": "Creative Commons CC0",
+            "http://rightsstatements.org/page/NoC-NC/1.0/": "Non-Commercial Use Only",
+            "http://opendatacommons.org/licenses/odbl/1-0/": "Open Data Commons Open Database License 1.0",
             "Open Data Commons Open Database License 1.0": "Open Data Commons Open Database License 1.0",
             "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/": "Open Government Licence v2.0",
             "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/": "Open Government Licence v3.0",
+            "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/": "Open Government Licence v2.0",
+            "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/": "Open Government Licence v3.0",
             "Open Government Licence 3.0 (United Kingdom)": "Open Government Licence v3.0",
             "UK Open Government Licence (OGL)": "Open Government Licence v3.0",
             "Open Government": "Open Government Licence v3.0",
@@ -655,6 +672,8 @@ def clean_data(dataframe):
             "OGL3": "Open Government Licence v3.0",
             "https://rightsstatements.org/vocab/NKC/1.0/": "No Known Copyright",
             "https://creativecommons.org/publicdomain/mark/1.0/": "Public Domain",
+            "http://rightsstatements.org/vocab/NKC/1.0/": "No Known Copyright",
+            "http://creativecommons.org/publicdomain/mark/1.0/": "Public Domain",
             "Other (Public Domain)": "Public Domain",
             "Public Domain": "Public Domain",
             "Public Sector End User Licence (Scotland)": "Public Sector End User Licence (Scotland)",

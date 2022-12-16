@@ -1,4 +1,6 @@
+import urllib.error
 from urllib import request, parse
+from urllib.error import HTTPError, URLError
 import csv
 import json
 import os
@@ -33,10 +35,34 @@ class Processor:
             for row in csv_file:
                 if row["Processor"] == self.type:
                     self.urls[row["Name"]] = row["Source URL"]
+            for r in csv_file:
+                print("r", r)
 
     def get_json(self, url):
         req = request.Request(url)
-        return json.loads(request.urlopen(req).read().decode())
+        try:
+            return json.loads(request.urlopen(req).read().decode())
+        except HTTPError as err1:
+            print (url, "cannot be accessed. The URL returned:", err1.code, err1.reason)
+            error_dict = {
+                'url': url,
+                'error_code': err1.code,
+                'error_reason': err1.reason,
+            }
+        except URLError as err2:
+            print(type(err2))
+            print(url, "cannot be accessed. The URL returned:", err2.reason)
+            error_dict = {
+                'url': url,
+                'error_code': "",
+                'error_reason': str(err2.reason),
+                }
+        with open('log.json', 'a') as f:
+            json.dump(error_dict, f)
+        with open('log.md', 'a') as file:
+            file.write(f'| {error_dict["url"]} | {error_dict["error_code"]} | {error_dict["error_reason"]} | \n')
+
+        return "NULL"
 
     def get_license(self, dataset):
         try:

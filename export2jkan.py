@@ -16,6 +16,8 @@ class DataFile:
     size: float
     size_unit: str
     file_type: str
+    file_name: str
+    show_name: str
 
 
 @dataclass
@@ -32,7 +34,9 @@ class Dataset:
     files: List[DataFile]
 
 
-fulld = pd.read_csv("data/merged_output.csv", dtype=str, na_filter=False, lineterminator='\n')
+fulld = pd.read_csv(
+    "data/merged_output.csv", dtype=str, na_filter=False, lineterminator="\n"
+)
 
 
 def ind(name):
@@ -108,6 +112,8 @@ for r in fulld.values:
             size=r[ind("FileSize")],
             size_unit=r[ind("FileSizeUnit")],
             file_type=r[ind("FileType")],
+            file_name=r[ind("FileName")],
+            show_name=r[ind("FileName")] if r[ind("FileName")] else r[ind("FileType")],
         )
     )
 
@@ -133,9 +139,9 @@ def license_link(l):
     '''
     # previous approach, but more lines of code
     if l == "Open Government Licence v2.0":
-        return "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/"
+        return "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/"
     if l == "Open Government Licence v3.0":
-        return "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+        return "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
     if l == "Creative Commons Attribution Share-Alike 3.0":
         return "https://creativecommons.org/licenses/by-sa/3.0/"
     if l == "Creative Commons Attribution Share-Alike 4.0":
@@ -149,21 +155,21 @@ def license_link(l):
     if l == "Non-Commercial Use Only":
         return "https://rightsstatements.org/page/NoC-NC/1.0/"
     if l == "No Known Copyright":
-        return "http://rightsstatements.org/vocab/NKC/1.0/"
+        return "https://rightsstatements.org/vocab/NKC/1.0/"
     if l == "Public Domain":
         return "https://creativecommons.org/publicdomain/mark/1.0/"
     '''
 
     known_licence_links = {
-        "Open Government Licence v2.0": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/",
-        "Open Government Licence v3.0": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+        "Open Government Licence v2.0": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/",
+        "Open Government Licence v3.0": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
         "Creative Commons Attribution Share-Alike 3.0": "https://creativecommons.org/licenses/by-sa/3.0/",
         "Creative Commons Attribution Share-Alike 4.0": "https://creativecommons.org/licenses/by-sa/4.0/",
         "Creative Commons Attribution 4.0 International": "https://creativecommons.org/licenses/by/4.0/",
         "Open Data Commons Open Database License 1.0": "https://opendatacommons.org/licenses/odbl/",
         "Creative Commons CC0": "https://creativecommons.org/share-your-work/public-domain/cc0",
         "Non-Commercial Use Only": "https://rightsstatements.org/page/NoC-NC/1.0/",
-        "No Known Copyright": "http://rightsstatements.org/vocab/NKC/1.0/",
+        "No Known Copyright": "https://rightsstatements.org/vocab/NKC/1.0/",
         "Public Domain": "https://creativecommons.org/publicdomain/mark/1.0/",
     }
 
@@ -173,10 +179,10 @@ def license_link(l):
 
     if not l in unknown_lics:
         unknown_lics.append(l)
-        print("Unknown license: ", l)
+        # print("Unknown license: ", l)
     return l
 
-    md = markdown.Markdown()
+md = markdown.Markdown()
 
 ### Replace folder by deleting and writing
 shutil.rmtree("../jkan/_datasets/")
@@ -190,7 +196,7 @@ for n, (k, ds) in enumerate(data.items()):
     y["notes"] = markdown.markdown(ds.description)
     y["original_dataset_link"] = ds.page_url
     y["resources"] = [
-        {"name": d.file_type, "url": d.url, "format": d.file_type}
+        {"name": d.show_name, "url": d.url, "format": d.file_type}
         for d in ds.files
         if d.url
     ]
