@@ -12,18 +12,25 @@
       "conservation",
       "archaeology",
       "events",
-      "theatre"
+      "theatre",
+      "ballads",
+      "illustrations",
+      "drawings",
+      "gazetteer",
+      "gazetteers",
+      "poems"
    ],
    "Budget / Finance": [
       "tenders",
       "contracts",
-      "lgcs finance",
       "budget",
       "finance",
       "payment",
       "grants",
       "financial year",
-      "council tax"
+      "council tax",
+      "pension",
+      "Funded"
    ],
    "Business and Economy": [
       "business and economy",
@@ -37,15 +44,12 @@
       "trading standards",
       "food safety",
       "business rates",
-      "commercial land and propertycommercial waste",
+      "commercial",
       "pollution",
-      "farming",
       "forestry",
       "crofting",
       "countryside",
       "farming",
-      "emergency planning",
-      "trading standards",
       "regeneration",
       "shopping",
       "shopping centres",
@@ -57,15 +61,27 @@
       "economy",
       "economic",
       "economic activity",
-      "economic development",
       "deprivation",
       "scottish index of multiple deprivation",
       "simd",
-      "business",
       "estimated population",
       "population",
       "labour force",
-      "cooling tower"
+      "employment",
+      "income",
+      "shop",
+      "shops",
+      "unemployment",
+      "Job Seeker's Allowance",
+      "insolvency",
+      "Gross Domestic Product",
+      "financial",
+      "Welfare Fund",
+      "child benefit",
+      "Expenditure",
+      "Underemployment",
+      "poverty",
+      "social security"
    ],
    "Council and Government": [
       "council buildings",
@@ -95,11 +111,15 @@
       "council agendas",
       "council plans",
       "council policies",
-      "offices open"
+      "offices open",
+      "Data Zone Lookup",
+      "census",
+      "asylum",
+      "immigration",
+      "citizenship"
    ],
    "Education": [
       "primary schools",
-      "lgcs education & skills",
       "education",
       "eductional",
       "library",
@@ -107,7 +127,12 @@
       "schools",
       "school",
       "nurseries",
-      "playgroups"
+      "playgroups",
+      "pupil",
+      "student",
+      "early years",
+      "early learning",
+      "childcare"
    ],
    "Elections / Politics": [
       "community councils",
@@ -123,8 +148,6 @@
       "council area",
       "democracy",
       "polling",
-      "lgcs democracy",
-      "democracy and governance",
       "local government",
       "councillor",
       "councillors",
@@ -167,16 +190,17 @@
       "pollution",
       "air quality",
       "household waste",
-      "commercial waste"
+      "commercial waste",
+      "renewable energy",
+      "greenhouse gas",
+      "emissions",
+      "carbon"
    ],
    "Health and Social Care": [
       "public toilets",
       "contraception",
       "implant",
       "cervical",
-      "iud",
-      "ius",
-      "pis",
       "prescribing",
       "elderly",
       "screening",
@@ -226,10 +250,15 @@
       "fostering",
       "adoption",
       "social work",
-      "asylum",
-      "immigration",
-      "citizenship",
-      "carers"
+      "carers",
+      "nhs",
+      "drug",
+      "alcoholic",
+      "death",
+      "deaths",
+      "hospitals",
+      "Intensive Care",
+      "smoking"
    ],
    "Housing and Estates": [
       "buildings",
@@ -246,10 +275,9 @@
       "parking",
       "garages",
       "homelessness",
-      "temporary accommodation",
+      "accommodation",
       "rent",
       "tenancy",
-      "housing advice",
       "housing associations",
       "housing advice",
       "housing repairs",
@@ -265,7 +293,10 @@
       "property",
       "vacant and derelict land",
       "scottish vacant and derelict land",
-      "allotment"
+      "allotment",
+      "energy",
+      "neighbourhood",
+      "postcodes"
    ],
    "Law and Licensing": [
       "law",
@@ -280,18 +311,21 @@
       "court",
       "courts",
       "tribunal",
-      "tribunals"
+      "tribunals",
+      "policing",
+      "crime"
    ],
    "Parks / Recreation": [
       "parks",
       "recreation",
       "woodland",
-      "parks and open spaces"
+      "open spaces",
+      "Features Of Interest"
    ],
    "Planning and Development": [
       "buildings",
       "vacant and derelict land supply",
-      "core paths. adopted",
+      "core paths",
       "employment land audit",
       "built environment",
       "planning",
@@ -312,23 +346,37 @@
       "wind turbine applications",
       "local development plan",
       "green belt",
-      "land audit"
+      "land audit",
+      "urban",
+      "rural",
+      "energy",
+      "heating",
+      "broadband",
+      "wifi",
+      "postcodes"
    ],
    "Public Safety": [
       "emergency planning",
       "public safety",
       "crime and justice",
-      "lgcs community safety",
       "street lighting",
       "community safety",
       "cctv",
-      "road safety"
+      "road safety",
+      "crime",
+      "police",
+      "policing",
+      "reconviction",
+      "fire",
+      "safe",
+      "safety",
+      "smoke"
    ],
    "Sport and Leisure": [
       "sport",
       "sports",
       "sports facilities",
-      " sports activities",
+      "sports activities",
       "countryside",
       "wildlife",
       "leisure",
@@ -345,7 +393,6 @@
       "parks",
       "gardens",
       "open spaces",
-      "sports",
       "sports clubs",
       "leisure centres"
    ],
@@ -364,7 +411,6 @@
    ],
    "Transportation": [
       "core paths",
-      "lgcs transport infrastructure",
       "transportation",
       "mobility",
       "pedestrian",
@@ -384,7 +430,6 @@
       "transport",
       "electric vehicle",
       "electric vehicle charging points",
-      "transport / mobility",
       "active travel",
       "road safety",
       "roads",
@@ -393,6 +438,16 @@
       "road closures",
       "speed limits",
       "port",
-      "harbour"
+      "harbour",
+      "cycles",
+      "gritting",
+      "Salt Bins",
+      "salt bin",
+      "footfall",
+      "bike",
+      "traffic",
+      "passenger",
+      "rail",
+      "footpaths"
    ]
 }
