@@ -194,7 +194,6 @@ def clean_data(dataframe):
                 tidied_string = tidied_string[:-1]
         return tidied_string
 
- 
     ### Creating dataset categories for ODS
     def find_keyword(str_tofind, str_findin):
         """Finds if single word or phrase exists in string
@@ -226,10 +225,10 @@ def clean_data(dataframe):
                 if find_keyword(keyword, str_tocategorise):
                     keyword_list.append(keyword)
                     category_dict[category] = keyword_list
-        if len(category_dict)==0:
-            category_list = 'Uncategorised'
+        if len(category_dict) == 0:
+            category_list = "Uncategorised"
         else:
-            category_list = ';'.join(list(category_dict.keys()))
+            category_list = ";".join(list(category_dict.keys()))
         return [category_list, category_dict]
 
     def get_categories(row_index):
@@ -241,16 +240,19 @@ def clean_data(dataframe):
         Returns:
             list: the resulting categories as a string, as well as a dictionary of the keyphrases which resulted in a category
         """
-        str_title_description = str(row_index['Title'])+' '+str(row_index['Description'])
+        str_title_description = (
+            str(row_index["Title"]) + " " + str(row_index["Description"])
+        )
         categories_result = match_categories(str_title_description)
         return categories_result
 
-    with open('ODSCategories.json') as json_file:
+    with open("ODSCategories.json") as json_file:
         ods_categories = json.load(json_file)
 
     ### Apply ODS categorisation
-    data[['ODSCategories','ODSCategories_Keywords']] = data.apply(lambda x: get_categories(x), result_type ='expand', axis=1)
-
+    data[["ODSCategories", "ODSCategories_Keywords"]] = data.apply(
+        lambda x: get_categories(x), result_type="expand", axis=1
+    )
 
     ### Tidy licence names
     def tidy_licence(licence_name):
@@ -296,9 +298,9 @@ def clean_data(dataframe):
                 return known_licences[key]
 
         if str(licence_name) == "nan":
-                tidied_licence = "No licence"
+            tidied_licence = "No licence"
         else:
-                tidied_licence = "Custom licence: " + str(licence_name)
+            tidied_licence = "Custom licence: " + str(licence_name)
         return tidied_licence
 
     data["License"] = data["License"].apply(tidy_licence)
