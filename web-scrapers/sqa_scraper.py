@@ -1,6 +1,7 @@
 # Packages: beautifulsoup4, csv, requests, math
 import requests
 import csv
+import json
 from bs4 import BeautifulSoup
 
 # Global Variables
@@ -191,6 +192,15 @@ def fetch_file_size(page: BeautifulSoup, ul: BeautifulSoup) -> tuple:
     return size, unit
 
 
+def fetch_description(ds):
+    print(ds.get_text())
+    json_file = open('qualifications.json')
+    data = json.load(json_file)
+    for qualification in data['qualifications']:
+        if qualification['name'] == ds.get_text() or qualification['synonym'] == ds.get_text():
+            return qualification['description']
+
+
 if __name__ == "__main__":
     # Record Headings
     header = [
@@ -234,6 +244,8 @@ if __name__ == "__main__":
                 # print(data_type, dataset.get("href").split("."))
                 num_recs = "NULL"
                 sqa_licence = "unknown" # contact SQA regarding license
+                description = fetch_description(dataset)
+                print(description)
 
                 output = [
                     title,
@@ -249,7 +261,7 @@ if __name__ == "__main__":
                     "NULL",
                     "NULL",
                     sqa_licence,
-                    "NULL",
+                    description,
                 ]
                 data.append(output)
 
