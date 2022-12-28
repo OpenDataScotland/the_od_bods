@@ -2,6 +2,7 @@
 import requests
 import csv
 import json
+import re
 from bs4 import BeautifulSoup
 
 # Global Variables
@@ -108,22 +109,15 @@ def fetch_datasets(page: BeautifulSoup) -> list:
     return list_of_lists_of_datasets
 
 
-def create_title(part1: str, part2: BeautifulSoup) -> str:
+def create_title(part1: str) -> str:
     """
-    Combines the two inputs into the title of the dataset
+    Adds 'SQA' at the beginning of the input to create the title of the dataset
 
     Returns:
         stripped_title (str): A string of dataset's title.
     """
-    dataset_text = part2.get_text()
-    year = part1.split(" ", 1)[1]
-    if year in dataset_text:
-        stripped_title = dataset_text
-    else:
-        stripped_title = dataset.get_text() + " - " + year
-    # print(stripped_title)
 
-    return stripped_title
+    return 'SQA ' + part1
 
 
 def fetch_asset_url(page: BeautifulSoup) -> str:
@@ -192,13 +186,17 @@ def fetch_file_size(page: BeautifulSoup, ul: BeautifulSoup) -> tuple:
     return size, unit
 
 
-def fetch_description(ds):
-    print(ds.get_text())
-    json_file = open('qualifications.json')
-    data = json.load(json_file)
-    for qualification in data['qualifications']:
-        if qualification['name'] == ds.get_text() or qualification['synonym'] == ds.get_text():
-            return qualification['description']
+def fetch_description(ds, ys):
+    descr = "A range of statistical reports for SQA qualifications for " + ys.split(" ", 1)[1] + "."
+
+    """content = ds.find(id="content")
+    headlines = content.find_all(re.compile("h"))
+    for headline in headlines:
+        print(headline)
+        descr = headline.next_sibling()
+        descr_text= descr.get_text()
+    """
+    return descr
 
 
 if __name__ == "__main__":
@@ -227,14 +225,16 @@ if __name__ == "__main__":
         print("Getting", year_string)
         years_page = fetch_year_page(category_links[year_string])
         owner = "Scottish Qualifications Authority (SQA)"
+        title = create_title(year_string)
+        # print("title", title)
+        description = fetch_description(years_page, year_string)
+        print(description)
         pageurl = category_links[year_string]
         list_datasets = fetch_datasets(years_page)
         for list in list_datasets[:-3]:
             # print("list", list)
             for dataset in list:
                 # print("dataset", dataset)
-                title = create_title(year_string, dataset)
-                # print("title", title)
                 asset_url = fetch_asset_url(dataset)
                 create_date, update_date = fetch_create_date(years_page, dataset)
                 file_sizeandunit = fetch_file_size(years_page, dataset)
@@ -244,8 +244,7 @@ if __name__ == "__main__":
                 # print(data_type, dataset.get("href").split("."))
                 num_recs = "NULL"
                 sqa_licence = "unknown" # contact SQA regarding license
-                description = fetch_description(dataset)
-                print(description)
+
 
                 output = [
                     title,
