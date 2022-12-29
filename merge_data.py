@@ -194,6 +194,10 @@ def clean_data(dataframe):
                 tidied_string = tidied_string[:-1]
         return tidied_string
 
+    ### Tidy tag columns
+    data["OriginalTags"] = data["OriginalTags"].apply(tidy_categories)
+    data["ManualTags"] = data["ManualTags"].apply(tidy_categories)
+
     ### Creating dataset categories for ODS
     def find_keyword(str_tofind, str_findin):
         """Finds if single word or phrase exists in string
