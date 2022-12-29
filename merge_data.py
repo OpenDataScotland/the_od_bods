@@ -205,7 +205,7 @@ def clean_data(dataframe):
         Returns:
             boolean: True if match is found
         """
-        if re.search(r"\b" + re.escape(str_tofind.lower()) + r"\b", str_findin.lower()):
+        if re.search(r"\b" + re.escape(str_tofind) + r"\b", str_findin, re.I):
             return True
         return False
 
