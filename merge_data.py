@@ -2,6 +2,8 @@
 import pandas as pd
 import os
 import datetime as dt
+import regex as re
+import json
 
 
 def merge_data():
@@ -192,453 +194,69 @@ def clean_data(dataframe):
                 tidied_string = tidied_string[:-1]
         return tidied_string
 
-    ### Combining dataset categories
-    def combine_categories(dataset_row):
-        """Combine OriginalTags and ManualTags to get all tags
-
-        Args:
-            dataset_row (dataframe): one row of the dataset set
-        """
-        combined_tags = []
-        if str(dataset_row["OriginalTags"]) != "nan":
-            combined_tags = combined_tags + str(dataset_row["OriginalTags"]).split(";")
-        if str(dataset_row["ManualTags"]) != "nan":
-            combined_tags = combined_tags + str(dataset_row["ManualTags"]).split(";")
-
-        combined_tags = ";".join(str(cat) for cat in set(combined_tags))
-        return combined_tags
-
+    ### Tidy tag columns
     data["OriginalTags"] = data["OriginalTags"].apply(tidy_categories)
     data["ManualTags"] = data["ManualTags"].apply(tidy_categories)
-    data["CombinedTags"] = data.apply(lambda x: combine_categories(x), axis=1)
 
-    ### Creating new dataset categories for ODS
-    def assign_ODScategories(categories_string):
-        """Assigns one of ODS' 13 categories, or 'Uncategorised' if none.
+    ### Creating dataset categories for ODS
+    def find_keyword(str_tofind, str_findin):
+        """Finds if single word or phrase exists in string
 
         Args:
-            categories_string (string): the dataset categories as a string
+            str_tofind (str): the word or phrase to find
+            str_findin (str): the body of text to search in
+
+        Returns:
+            boolean: True if match is found
         """
-        combined_tags = categories_string.split(";")
+        if re.search(r"\b" + re.escape(str_tofind) + r"\b", str_findin, re.I):
+            return True
+        return False
 
-        ### Set association between dataset tag and ODS category
-        ods_categories = {
-            "Arts / Culture / History": [
-                "arts",
-                "culture",
-                "history",
-                "military",
-                "art gallery",
-                "design",
-                "fashion",
-                "museum",
-                "historic centre",
-                "conservation",
-                "archaeology",
-                "events",
-                "theatre",
-            ],
-            "Budget / Finance": [
-                "tenders",
-                "contracts",
-                "lgcs finance",
-                "budget",
-                "finance",
-                "payment",
-                "grants",
-                "financial year",
-                "council tax",
-            ],
-            "Business and Economy": [
-                "business and economy",
-                "business",
-                "business and trade",
-                "economic information",
-                "economic development",
-                "business grants",
-                "business awards",
-                "health and safety",
-                "trading standards",
-                "food safety",
-                "business rates",
-                "commercial land and property" "commercial waste",
-                "pollution",
-                "farming",
-                "forestry",
-                "crofting",
-                "countryside",
-                "farming",
-                "emergency planning",
-                "trading standards",
-                "regeneration",
-                "shopping",
-                "shopping centres",
-                "markets",
-                "tenders",
-                "contracts",
-                "city centre management",
-                "town centre management",
-                "economy",
-                "economic",
-                "economic activity",
-                "economic development",
-                "deprivation",
-                "scottish index of multiple deprivation",
-                "simd",
-                "business",
-                "estimated population",
-                "population",
-                "labour force",
-                "cooling tower"
-            ],
-            "Council and Government": [
-                "council buildings",
-                "committee areas",
-                "community development",
-                "council and government",
-                "council",
-                "councils",
-                "council tax",
-                "benefits",
-                "council grants",
-                "grants",
-                "council departments",
-                "data protection",
-                "FOI",
-                "freedom of information",
-                "council housing",
-                "politicians",
-                "MPs",
-                "MSPs",
-                "councillors",
-                "elected members",
-                "wards",
-                "constituencies",
-                "boundaries",
-                "council minutes",
-                "council agendas",
-                "council plans",
-                "council policies",
-                "offices open"
-            ],
-            "Education": [
-                "primary schools",
-                "lgcs education & skills",
-                "education",
-                "eductional",
-                "library",
-                "school meals",
-                "schools",
-                "school",
-                "nurseries",
-                "playgroups",
-            ],
-            "Elections / Politics": [
-                "community councils",
-                "political",
-                "polling places",
-                "elections",
-                "politics",
-                "elecorate",
-                "election",
-                "electoral",
-                "electorate",
-                "local authority",
-                "council area",
-                "democracy",
-                "polling",
-                "lgcs democracy",
-                "democracy and governance",
-                "local government",
-                "councillor",
-                "councillors",
-                "community council",
-            ],
-            "Food and Environment": [
-                "food",
-                "school meals",
-                "allotment",
-                "public toilets",
-                "air",
-                "tree",
-                "vacant and derelict land supply",
-                "landscape",
-                "nature",
-                "rights of way",
-                "tree preservation order",
-                "preservation",
-                "land",
-                "contaminated",
-                "green",
-                "belt",
-                "employment land audit",
-                "environment",
-                "forest woodland strategy",
-                "waste",
-                "recycling",
-                "lgcs waste management",
-                "water-network",
-                "grafitti",
-                "street occupations",
-                "regeneration",
-                "vandalism",
-                "street cleansing",
-                "litter",
-                "toilets",
-                "drains",
-                "flytipping",
-                "flyposting",
-                "pollution",
-                "air quality",
-                "household waste",
-                "commercial waste",
-            ],
-            "Health and Social Care": [
-                "public toilets",
-                "contraception",
-                "implant",
-                "cervical",
-                "iud",
-                "ius",
-                "pis",
-                "prescribing",
-                "elderly",
-                "screening",
-                "screening programme",
-                "cancer",
-                "breast feeding",
-                "defibrillators",
-                "wards",
-                "alcohol and drug partnership",
-                "care homes",
-                "waiting times",
-                "drugs",
-                "substance use",
-                "pregnancy",
-                "induced abortion",
-                "therapeutic abortion",
-                "termination",
-                "abortion",
-                "co-dependency",
-                "sexual health",
-                "outpatient",
-                "waiting list",
-                "stage of treatment",
-                "daycase",
-                "inpatient",
-                "alcohol",
-                "waiting time",
-                "treatment",
-                "community wellbeing and social environment",
-                "health",
-                "human services",
-                "covid-19",
-                "covid",
-                "hospital",
-                "health board",
-                "health and social care partnership",
-                "medicine",
-                "health and social care",
-                "health and fitness",
-                "nhs24",
-                "hospital admissions",
-                "hospital mortality",
-                "mental health",
-                "pharmacy",
-                "GP",
-                "surgery",
-                "fostering",
-                "adoption",
-                "social work",
-                "asylum",
-                "immigration",
-                "citizenship",
-                "carers",
-            ],
-            "Housing and Estates": [
-                "buildings",
-                "housing data supply 2020",
-                "multiple occupation",
-                "housing",
-                "sheltered housing",
-                "adaptations",
-                "repairs",
-                "council housing",
-                "landlord",
-                "landlord registration",
-                "rent arrears",
-                "parking",
-                "garages",
-                "homelessness",
-                "temporary accommodation",
-                "rent",
-                "tenancy",
-                "housing advice",
-                "housing associations",
-                "housing advice",
-                "housing repairs",
-                "lettings",
-                "real estate",
-                "land records",
-                "land-cover",
-                "woodland",
-                "dwellings",
-                "burial",
-                "burial grounds",
-                "cemeteries",
-                "property",
-                "vacant and derelict land",
-                "scottish vacant and derelict land",
-                "allotment",
-            ],
-            "Law and Licensing": [
-                "law",
-                "licensing",
-                "regulation",
-                "regulations",
-                "licence",
-                "licenses",
-                "permit",
-                "permits",
-                "police",
-                "court",
-                "courts",
-                "tribunal",
-                "tribunals",
-            ],
-            "Parks / Recreation": [
-                "parks",
-                "recreation",
-                "woodland",
-                "parks and open spaces",
-            ],
-            "Planning and Development": [
-                "buildings",
-                "vacant and derelict land supply",
-                "core paths. adopted",
-                "employment land audit",
-                "built environment",
-                "planning",
-                "zoning",
-                "council area",
-                "address",
-                "addresses",
-                "city development plan",
-                "boundaries",
-                "post-code",
-                "dwellings",
-                "planning permission",
-                "postcode-units",
-                "housing",
-                "property",
-                "building control",
-                "conservation",
-                "wind turbine applications",
-                "local development plan",
-                "green belt",
-                "land audit"
-            ],
-            "Public Safety": [
-                "emergency planning",
-                "public safety",
-                "crime and justice",
-                "lgcs community safety",
-                "street lighting",
-                "community safety",
-                "cctv",
-                "road safety",
-            ],
-            "Sport and Leisure": [
-                "sport",
-                "sports",
-                "sports facilities",
-                " sports activities",
-                "countryside",
-                "wildlife",
-                "leisure",
-                "leisure clubs",
-                "clubs",
-                "groups",
-                "societies",
-                "libraries",
-                "archives",
-                "local history",
-                "heritage",
-                "museums",
-                "galleries",
-                "parks",
-                "gardens",
-                "open spaces",
-                "sports",
-                "sports clubs",
-                "leisure centres",
-            ],
-            "Tourism": [
-                "public toilets",
-                "tourism",
-                "tourist",
-                "attractions",
-                "accomodation",
-                "historic buildings",
-                "tourist routes",
-                "cafes",
-                "restaurants",
-                "hotels",
-                "hotel",
-            ],
-            "Transportation": [
-                "core paths. adopted",
-                "lgcs transport infrastructure",
-                "transportation",
-                "mobility",
-                "pedestrian",
-                "walking",
-                "walk",
-                "cycle",
-                "cycling",
-                "parking",
-                "car",
-                "car parks",
-                "grit",
-                "bus",
-                "tram",
-                "train",
-                "taxi",
-                "transport",
-                "electric vehicle",
-                "electric vehicle charging points",
-                "transport / mobility",
-                "active travel",
-                "road safety",
-                "roads",
-                "community transport",
-                "road works",
-                "road closures",
-                "speed limits",
-                "port",
-                "harbour",
-            ],
-        }
+    def match_categories(str_tocategorise):
+        """Cycles through keywords and keyphrases to check if used in body of text
 
-        ### Return ODS if tag is a match
-        applied_category = []
-        for tag in combined_tags:
-            for cat in ods_categories:
-                if tag in ods_categories[cat]:
-                    applied_category = applied_category + [cat]
+        Args:
+            str_tocategorise (str): body of text to search in
 
-        ### If no match, assign "Uncategorised". Tidy list of ODS categories into string.
-        if len(applied_category) == 0:
-            applied_category = ["Uncategorised"]
+        Returns:
+            list: the resulting categories as a string, as well as a dictionary of the keyphrases which resulted in a category
+        """
+        category_dict = {}
+        for category in ods_categories.keys():
+            keyword_list = []
+            for keyword in ods_categories[category]:
+                if find_keyword(keyword, str_tocategorise):
+                    keyword_list.append(keyword)
+                    category_dict[category] = keyword_list
+        if len(category_dict) == 0:
+            category_list = "Uncategorised"
+        else:
+            category_list = ";".join(list(category_dict.keys()))
+        return [category_list, category_dict]
 
-        applied_category = ";".join(str(cat) for cat in set(applied_category))
-        applied_category
+    def get_categories(row_index):
+        """combines title and description together to then search for keyword or keyphrase in
 
-        return applied_category
+        Args:
+            row_index (pandas df row): a single row in a pandas dataframe to check. Must have columns "Title" and "Description"
+
+        Returns:
+            list: the resulting categories as a string, as well as a dictionary of the keyphrases which resulted in a category
+        """
+        str_title_description = (
+            str(row_index["Title"]) + " " + str(row_index["Description"])
+        )
+        categories_result = match_categories(str_title_description)
+        return categories_result
+
+    with open("ODSCategories.json") as json_file:
+        ods_categories = json.load(json_file)
 
     ### Apply ODS categorisation
-    data["ODSCategories"] = data["CombinedTags"].apply(assign_ODScategories)
-
+    data[["ODSCategories", "ODSCategories_Keywords"]] = data.apply(
+        lambda x: get_categories(x), result_type="expand", axis=1
+    )
 
     ### Tidy licence names
     def tidy_licence(licence_name):
@@ -684,9 +302,9 @@ def clean_data(dataframe):
                 return known_licences[key]
 
         if str(licence_name) == "nan":
-                tidied_licence = "No licence"
+            tidied_licence = "No licence"
         else:
-                tidied_licence = "Custom licence: " + str(licence_name)
+            tidied_licence = "Custom licence: " + str(licence_name)
         return tidied_licence
 
     data["License"] = data["License"].apply(tidy_licence)
