@@ -18,7 +18,8 @@
       "drawings",
       "gazetteer",
       "gazetteers",
-      "poems"
+      "poems",
+      "memorial"
    ],
    "Budget / Finance": [
       "tenders",
@@ -81,7 +82,8 @@
       "Expenditure",
       "Underemployment",
       "poverty",
-      "social security"
+      "social security",
+      "cooling tower"
    ],
    "Council and Government": [
       "council buildings",
@@ -115,7 +117,8 @@
       "census",
       "asylum",
       "immigration",
-      "citizenship"
+      "citizenship",
+      "disability living allowance"
    ],
    "Education": [
       "primary schools",
@@ -131,7 +134,8 @@
       "student",
       "early years",
       "early learning",
-      "childcare"
+      "childcare",
+      "learning campus"
    ],
    "Elections / Politics": [
       "community councils",
@@ -193,7 +197,12 @@
       "renewable energy",
       "greenhouse gas",
       "emissions",
-      "carbon"
+      "carbon",
+      "cooling tower",
+      "wildlife",
+      "biodiversity sites",
+      "renewable electricity",
+      "bin"
    ],
    "Health and Social Care": [
       "public toilets",
@@ -351,7 +360,9 @@
       "heating",
       "broadband",
       "wifi",
-      "postcodes"
+      "postcodes",
+      "development briefs",
+      "non-domestic properties"
    ],
    "Public Safety": [
       "emergency planning",
@@ -376,7 +387,6 @@
       "sports facilities",
       "sports activities",
       "countryside",
-      "wildlife",
       "leisure",
       "leisure clubs",
       "clubs",
@@ -446,6 +456,7 @@
       "traffic",
       "passenger",
       "rail",
-      "footpaths"
+      "footpaths",
+      "bikehangars"
    ]
 }
