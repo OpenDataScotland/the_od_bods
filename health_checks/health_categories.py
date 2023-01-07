@@ -20,11 +20,16 @@ data = data[
 ### Converting json string into dictionary
 data["ODSCategories_Keywords"] = data["ODSCategories_Keywords"].apply(eval)
 
-with open("../ODSCategories.json") as json_file:
+with open("../ODSCategories.json", "r") as json_file:
     ods_categories = json.load(json_file)
 
-for cat in ods_categories:
-    ods_categories[cat] = [keyword.lower() for keyword in ods_categories[cat]]
+    ### Cleaning of ODSCategories.json file
+    for cat in ods_categories:
+        ods_categories[cat] = [keyword.lower() for keyword in ods_categories[cat]]
+        ods_categories[cat].sort()
+### Save cleaned file
+with open("../ODSCategories.json", "w") as json_file:
+    json.dump(ods_categories, json_file, indent=3)
 
 
 ### Number of datasets in each category
