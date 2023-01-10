@@ -1,8 +1,6 @@
-# Packages: beautifulsoup4, csv, requests, math
+# Packages: beautifulsoup4, csv, requests
 import requests
 import csv
-import json
-import re
 from bs4 import BeautifulSoup
 
 # Global Variables
@@ -65,12 +63,9 @@ def fetch_available_years():
     dropdown_list = data_button.find_all("option")
 
     for dropdown_item in dropdown_list:
-        # print("dropdown item", dropdown_item, type(dropdown_item), dropdown_item["value"])
         dict_of_links[dropdown_item.contents[0]] = "https://www.sqa.org.uk/sqa/" + dropdown_item["value"]
-    # print(dict_of_links)
     keys_to_skip = ["--- Select Year ---", "Statistics archive", "Related", "Derived Grades 2003"]
     [dict_of_links.pop(d) for d in keys_to_skip]
-    # print(dict_of_links)
 
     return dict_of_links
 
@@ -94,17 +89,11 @@ def fetch_datasets(page: BeautifulSoup) -> list:
         list_of_lists_of_datasets (List): A list of datasets present on the specific page.
     """
     list_of_lists_of_datasets = []
-    # h1_headline = page.h1.descendants
-    # print(h1_headline)
-    # unsorted_lists = h1_headline.find_all("ul")
     content = page.find(id="content")
-    # print(len(content), content)
     unsorted_lists = content.find_all("ul")
     for unsorted_list in unsorted_lists:
-        # print("unsorted_list ", unsorted_list)
         list_of_datasets = unsorted_list.find_all("a")
         list_of_lists_of_datasets.append(list_of_datasets)
-    # print("list_of_datasets ", list_of_lists_of_datasets)
 
     return list_of_lists_of_datasets
 
@@ -152,19 +141,13 @@ def fetch_create_date(page: BeautifulSoup, ul: BeautifulSoup) -> tuple:
     fetched_update_date = "NULL"
 
     part = page.find("a", string=ul.get_text())
-    # print("part", part, type(part), part.parent.parent.parent)
     find_ul = part.find_parent("ul")
-    # print("1", part, part.find_parent("ul"), part.parent.parent.parent)
-    # print("2", part, part.find_parents("ul"), part.parent)
     find_siblings = find_ul.next_siblings
     for sibling in find_siblings:
         if "<h2>" in repr(sibling):
-            # print("h2", repr(sibling))
             return fetched_create_date, fetched_update_date
         elif "Date of publication" in repr(sibling):
-            # print("date", repr(sibling))
             fetched_create_date = sibling.get_text().split(":")[1].strip(" .\xa0&nbsp")
-            # print(fetched_create_date)
         elif "Date of correction" in repr(sibling):
             fetched_update_date = sibling.get_text().split(":")[1].strip(" .\xa0&nbsp")
 
@@ -175,11 +158,9 @@ def fetch_file_size(page: BeautifulSoup, ul: BeautifulSoup) -> tuple:
     size = "NULL"
     unit = "NULL"
     part = page.find("a", string=ul.get_text())
-    # print("part", part, type(part), part.parent.parent.parent)
     size_list = part.find_parent("li").contents
     for item in size_list:
         if "(" in item:
-            # print(item)
             size = item.strip(" \xa0&nbsp()\n").split(" ")[0]
             unit = item.strip(" \xa0&nbsp()\n").split(" ")[1]
 
@@ -189,13 +170,6 @@ def fetch_file_size(page: BeautifulSoup, ul: BeautifulSoup) -> tuple:
 def fetch_description(ds, ys):
     descr = "A range of statistical reports for SQA qualifications for " + ys.split(" ", 1)[1] + "."
 
-    """content = ds.find(id="content")
-    headlines = content.find_all(re.compile("h"))
-    for headline in headlines:
-        print(headline)
-        descr = headline.next_sibling()
-        descr_text= descr.get_text()
-    """
     return descr
 
 
@@ -228,7 +202,6 @@ if __name__ == "__main__":
         title = create_title(year_string)
         # print("title", title)
         description = fetch_description(years_page, year_string)
-        print(description)
         pageurl = category_links[year_string]
         list_datasets = fetch_datasets(years_page)
         for list in list_datasets[:-3]:
@@ -241,10 +214,8 @@ if __name__ == "__main__":
                 file_size = file_sizeandunit[0]
                 file_unit = file_sizeandunit[1]
                 data_type = dataset.get("href").split(".")[-1]
-                # print(data_type, dataset.get("href").split("."))
                 num_recs = "NULL"
                 sqa_licence = "unknown" # contact SQA regarding license
-
 
                 output = [
                     title,
