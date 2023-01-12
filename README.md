@@ -10,7 +10,7 @@ There are 2 objectives for the OD_BODS project
 
 
 # More info
-Read about the [12-month plan for the project, its history, and the technology we are using](https://github.com/OpenDataScotland/the_od_bods/wiki/CTC23:-The-origins-of-the-OD_BODS-project)
+Read [the docs](https://docs.opendata.scot/) to find our more about the 12-month plan for the project, its history, the tools we are using, and how to contribute
 
 # Contact Us
 * on Twitter [@opendata_sco](https://twitter.com/opendata_sco) 

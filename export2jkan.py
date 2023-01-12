@@ -58,8 +58,8 @@ def ind(name):
         "Description",
         "Source",
         "AssetStatus",
-        "CombinedTags",
         "ODSCategories",
+        "ODSCategories_Keywords"
     ]
     return f.index(name)
 

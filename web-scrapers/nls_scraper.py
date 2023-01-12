@@ -206,8 +206,9 @@ def fetch_num_recs(page: BeautifulSoup) -> list:
             files = parts[1].split(";")
 
             for item in files:
-                break_up = item.strip().split(" ")
-                # print("break_up", item, ", ", break_up, ", ", break_up[0].replace(",", "").replace(".", ""))
+                # Some of these lists of files have "and" at the end that we need to take out
+                break_up = item.replace("and", "").strip().split(" ")
+                #print("break_up", item, ", ", break_up, ", ", break_up[0].replace(",", "").replace(".", ""))
                 amount = int(break_up[0].replace(",", "").replace(".", ""))
                 amount_recs += amount
         list_num_recs.append(amount_recs)
