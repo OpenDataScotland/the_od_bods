@@ -173,6 +173,16 @@ def fetch_description(ds, ys):
     return descr
 
 
+def create_filename(part2: BeautifulSoup) -> str:
+    """
+    Extracts the title of the dataset from the input
+    Returns:
+        A string of dataset's title.
+    """
+
+    return part2.get_text()
+
+
 if __name__ == "__main__":
     # Record Headings
     header = [
@@ -180,6 +190,7 @@ if __name__ == "__main__":
         "Owner",
         "PageURL",
         "AssetURL",
+        "FileName",
         "DateCreated",
         "DateUpdated",
         "FileSize",
@@ -209,6 +220,7 @@ if __name__ == "__main__":
             for dataset in list:
                 # print("dataset", dataset)
                 asset_url = fetch_asset_url(dataset)
+                file_name = create_filename(dataset)
                 create_date, update_date = fetch_create_date(years_page, dataset)
                 file_sizeandunit = fetch_file_size(years_page, dataset)
                 file_size = file_sizeandunit[0]
@@ -222,6 +234,7 @@ if __name__ == "__main__":
                     owner,
                     pageurl,
                     asset_url,
+                    file_name,
                     create_date,
                     update_date,
                     file_size,
