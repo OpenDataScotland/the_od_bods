@@ -12,6 +12,7 @@ class ProcessorDCAT(Processor):
         super().__init__(type="dcat")
 
     def get_datasets(self, owner, start_url, fname):
+        print(start_url)
         d = processor.get_json(start_url)
         if d != "NULL":
 
@@ -21,6 +22,13 @@ class ProcessorDCAT(Processor):
 
             prepped = []
             for e in datasets:
+                # Get keywords
+                keywords = e.get("dcat:keyword", [])
+
+                # If there's only one keyword (e.g. the property returned a string, then stick it in an array)
+                if type(keywords) is str:
+                    keywords = [keywords]
+            
                 ds = [
                     e.get("dct:title", ""),
                     e.get("dct:publisher", "").replace(" Mapping", ""),
@@ -32,8 +40,8 @@ class ProcessorDCAT(Processor):
                     "",  # size
                     "",  # size unit
                     "",  # filetype
-                    "",  # numrecords
-                    ";".join(e.get("dcat:keyword", [])),
+                    "",  # numrecords                     
+                    ";".join(map(str, keywords)), # Keywords (we use map here to make sure everything is a string)
                     "",  # Manual tags
                     "",  # license
                     e.get("dct:description", "").strip("\u200b"),
