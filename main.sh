@@ -28,6 +28,7 @@ python aberdeenshire_council_scraper.py
 python east_ayrshire_scraper.py
 python moray_council_scraper.py
 python nls_scraper.py
+python sqa_scraper.py
 cd ..
 # processing
 python merge_data.py
