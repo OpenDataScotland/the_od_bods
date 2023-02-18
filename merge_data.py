@@ -153,7 +153,8 @@ def clean_data(dataframe):
     owner_renames = {
         "Aberdeen": "Aberdeen City Council",
         "Dundee": "Dundee City Council",
-        "Perth": "Perth and Kinross Council",
+        "Perth": "Perth & Kinross Council",
+        "Perth and Kinross Council": "Perth & Kinross Council",
         "Stirling": "Stirling Council",
         "Angus": "Angus Council",
         "open.data@southayrshire": "South Ayrshire Council",
