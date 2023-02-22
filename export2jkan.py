@@ -34,9 +34,16 @@ class Dataset:
     files: List[DataFile]
 
 
-fulld = pd.read_csv(
-    "data/merged_output.csv", dtype=str, na_filter=False, lineterminator="\n"
-)
+fulld = pd.read_json("data/merged_output.json", orient="records").fillna("")
+
+### Extraction of date from ISO datetime ISO.
+def strip_date_from_iso8601(df_name, col_list):
+    for col in col_list:
+        df_name[col] = df_name[col].str.split("T").str[0]
+    return
+
+
+strip_date_from_iso8601(fulld, ["DateCreated", "DateUpdated"])
 
 
 def ind(name):
@@ -94,7 +101,7 @@ for r in fulld.values:
             owner=r[ind("Owner")],
             page_url=r[ind("PageURL")],
             date_created=r[ind("DateCreated")],
-            date_updated=r[ind("DateUpdated")].removesuffix(" 00:00:00.000"),
+            date_updated=r[ind("DateUpdated")],
             ods_categories=splittags(r[ind("ODSCategories")]),
             license=r[ind("License")],
             description=str(r[ind("Description")]),

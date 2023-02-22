@@ -126,13 +126,13 @@ def merge_data():
     data = data.reset_index(drop=True)
 
     ### Saves copy of data without cleaning - for analysis purposes
-    data.to_csv("data/merged_output_untidy.csv", index=False)
+    data.to_json("data/merged_output_untidy.json", orient="records", date_format="iso")
 
     ### clean data
     data = clean_data(data)
 
-    ### Output cleaned data to csv
-    data.to_csv("data/merged_output.csv", index=False)
+    ### Output cleaned data to json
+    data.to_json("data/merged_output.json", orient="records", date_format="iso")
 
     return data
 

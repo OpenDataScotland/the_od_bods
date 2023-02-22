@@ -16,7 +16,7 @@ find data/ckan/ -type f -delete
 find data/dcat/ -type f -delete
 find data/scraped-results/ -type f -delete
 find data/USMART/ -type f -delete
-find data/merged_output.csv -type f -delete
+find data/merged_output.json -type f -delete
 # run source scripts
 python arcgis.py
 python usmart.py
