@@ -34,7 +34,7 @@ class Dataset:
     files: List[DataFile]
 
 
-fulld = pd.read_json("data/merged_output.json", orient="index").fillna("")
+fulld = pd.read_json("data/merged_output.json", orient="records").fillna("")
 
 ### Extraction of date from ISO datetime ISO.
 def strip_date_from_iso8601(df_name, col_list):
