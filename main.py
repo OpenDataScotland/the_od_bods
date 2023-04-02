@@ -63,3 +63,5 @@ merge_data.main()
 
 logger.info("Exporting to JKAN")
 export2jkan.main()
+
+logger.info("Scraping complete")
