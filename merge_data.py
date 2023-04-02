@@ -166,6 +166,7 @@ def clean_data(dataframe):
         "Scottish.Forestry": "Scottish Forestry",
         "Na h-Eileanan an Iar": "Comhairle nan Eilean Siar",
         "National Records Scotland": "National Records of Scotland",
+        "Development, Safety and Regulation": "South Ayrshire Council", # TEMP fix
     }
     data["Owner"] = data["Owner"].replace(owner_renames)
     ### Format dates as datetime type
