@@ -150,6 +150,7 @@ def clean_data(dataframe):
     data = dataframe
 
     ### Renaming entries to match
+    # TODO: Move this to a JSON file instead of hardcoding
     owner_renames = {
         "Aberdeen": "Aberdeen City Council",
         "Dundee": "Dundee City Council",
@@ -164,6 +165,7 @@ def clean_data(dataframe):
         "Highland Council GIS Organisation": "Highland Council",
         "Scottish.Forestry": "Scottish Forestry",
         "Na h-Eileanan an Iar": "Comhairle nan Eilean Siar",
+        "National Records Scotland": "National Records of Scotland",
     }
     data["Owner"] = data["Owner"].replace(owner_renames)
     ### Format dates as datetime type
