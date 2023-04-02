@@ -6,7 +6,7 @@ import regex as re
 import json
 
 
-def merge_data():
+def main():
     ### Loading data
 
     ### From ckan output
@@ -369,4 +369,4 @@ def clean_data(dataframe):
 
 
 if __name__ == "__main__":
-    merge_data()
+    main()
