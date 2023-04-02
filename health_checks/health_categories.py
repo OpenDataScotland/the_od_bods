@@ -45,7 +45,8 @@ def categories_count(df_column):
         .reset_index()
         .rename(columns={0: df_column})
     )
-    
+
+
 cat_counts = categories_count("ODSCategories")
 
 

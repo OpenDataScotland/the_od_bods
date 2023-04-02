@@ -135,6 +135,7 @@ def output(parsed):
         for record in parsed:
             writer.writerow(record)
 
+
 def main():
     ### construct array of feed objects
     req = Request(

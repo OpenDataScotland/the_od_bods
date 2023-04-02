@@ -28,20 +28,22 @@ class ProcessorDCAT(Processor):
                 # If there's only one keyword (e.g. the property returned a string, then stick it in an array)
                 if type(keywords) is str:
                     keywords = [keywords]
-            
+
                 ds = [
                     e.get("dct:title", ""),
                     e.get("dct:publisher", "").replace(" Mapping", ""),
                     "",  # link to page
                     "",  # Link to data
-                    "",  #FileName
+                    "",  # FileName
                     "",  # date created
                     parser.parse(e.get("dct:issued", "")).date(),
                     "",  # size
                     "",  # size unit
                     "",  # filetype
-                    "",  # numrecords                     
-                    ";".join(map(str, keywords)), # Keywords (we use map here to make sure everything is a string)
+                    "",  # numrecords
+                    ";".join(
+                        map(str, keywords)
+                    ),  # Keywords (we use map here to make sure everything is a string)
                     "",  # Manual tags
                     "",  # license
                     e.get("dct:description", "").strip("\u200b"),

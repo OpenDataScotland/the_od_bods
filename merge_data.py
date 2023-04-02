@@ -20,7 +20,9 @@ def main():
                     [
                         source_ckan,
                         pd.read_csv(
-                            folder + r"/" + filename, parse_dates=["DateCreated","DateUpdated"], lineterminator='\n'
+                            folder + r"/" + filename,
+                            parse_dates=["DateCreated", "DateUpdated"],
+                            lineterminator="\n",
                         ),
                     ]
                 )
@@ -37,12 +39,16 @@ def main():
             "date_created": "DateCreated",
             "date_updated": "DateUpdated",
             "url": "PageURL",
-            "licence":"License"
+            "licence": "License",
         }
     )
     source_scotgov["Source"] = "sparql"
-    source_scotgov['DateUpdated'] = pd.to_datetime(source_scotgov['DateUpdated'], utc=True).dt.tz_localize(None)
-    source_scotgov['DateCreated'] = pd.to_datetime(source_scotgov['DateCreated'], utc=True).dt.tz_localize(None)
+    source_scotgov["DateUpdated"] = pd.to_datetime(
+        source_scotgov["DateUpdated"], utc=True
+    ).dt.tz_localize(None)
+    source_scotgov["DateCreated"] = pd.to_datetime(
+        source_scotgov["DateCreated"], utc=True
+    ).dt.tz_localize(None)
 
     ### From arcgis api
     source_arcgis = pd.DataFrame()
@@ -54,7 +60,8 @@ def main():
                     [
                         source_arcgis,
                         pd.read_csv(
-                            folder + r"/" + filename, parse_dates=["DateCreated","DateUpdated"]
+                            folder + r"/" + filename,
+                            parse_dates=["DateCreated", "DateUpdated"],
                         ),
                     ]
                 )
@@ -70,7 +77,8 @@ def main():
                     [
                         source_usmart,
                         pd.read_csv(
-                            folder + r"/" + filename, parse_dates=["DateCreated","DateUpdated"]
+                            folder + r"/" + filename,
+                            parse_dates=["DateCreated", "DateUpdated"],
                         ),
                     ]
                 )
@@ -88,12 +96,13 @@ def main():
                     [
                         source_dcat,
                         pd.read_csv(
-                            folder + r"/" + filename, parse_dates=["DateCreated","DateUpdated"]
+                            folder + r"/" + filename,
+                            parse_dates=["DateCreated", "DateUpdated"],
                         ),
                     ]
                 )
-    source_dcat["DateUpdated"] =  source_dcat["DateUpdated"].dt.tz_localize(None)
-    #source_dcat["DateCreated"] = source_dcat["DateCreated"].dt.tz_localize(None) ### DateCreated currently not picked up in dcat so all are NULL
+    source_dcat["DateUpdated"] = source_dcat["DateUpdated"].dt.tz_localize(None)
+    # source_dcat["DateCreated"] = source_dcat["DateCreated"].dt.tz_localize(None) ### DateCreated currently not picked up in dcat so all are NULL
     source_dcat["Source"] = "DCAT feed"
 
     ## From web scraped results
@@ -106,7 +115,8 @@ def main():
                     [
                         source_scraped,
                         pd.read_csv(
-                            folder + r"/" + filename, parse_dates=["DateCreated","DateUpdated"]
+                            folder + r"/" + filename,
+                            parse_dates=["DateCreated", "DateUpdated"],
                         ),
                     ]
                 )
@@ -166,7 +176,7 @@ def clean_data(dataframe):
         "Scottish.Forestry": "Scottish Forestry",
         "Na h-Eileanan an Iar": "Comhairle nan Eilean Siar",
         "National Records Scotland": "National Records of Scotland",
-        "Development, Safety and Regulation": "South Ayrshire Council", # TEMP fix
+        "Development, Safety and Regulation": "South Ayrshire Council",  # TEMP fix
     }
     data["Owner"] = data["Owner"].replace(owner_renames)
     ### Format dates as datetime type
@@ -313,9 +323,8 @@ def clean_data(dataframe):
 
     data["License"] = data["License"].apply(tidy_licence)
 
-
     def tidy_file_type(file_type):
-        """ Temporary data type conversion
+        """Temporary data type conversion
         Args:
             file_type (str): the data type name
         Returns:
@@ -351,10 +360,7 @@ def clean_data(dataframe):
                 tidied_file_type = file_types_to_tidy[key]
                 return tidied_file_type
 
-        if (
-            str(file_type) == "nan"
-            or str(file_type) == ""
-        ):
+        if str(file_type) == "nan" or str(file_type) == "":
             tidied_file_type = "No file type"
         else:
             # print("file type: ", file_type)
@@ -363,7 +369,7 @@ def clean_data(dataframe):
         return tidied_file_type
 
     ### Inconsistencies in casing for FileType
-    data['FileType'] = data['FileType'].apply(tidy_file_type)
+    data["FileType"] = data["FileType"].apply(tidy_file_type)
 
     return data
 

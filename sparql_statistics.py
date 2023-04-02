@@ -4,6 +4,7 @@ import pandas as pd
 from processor import Processor
 import os
 
+
 class ProcessorSPARQL(Processor):
     def __init__(self):
         super().__init__(type="sparql")
@@ -36,7 +37,7 @@ class ProcessorSPARQL(Processor):
 
     def get_datasets(self, owner, start_url, fname):
 
-        sparql = self.get_sparql_query();
+        sparql = self.get_sparql_query()
         data = parse.urlencode({"query": sparql}).encode()
 
         # API REQUEST
@@ -50,35 +51,35 @@ class ProcessorSPARQL(Processor):
         df = pd.read_csv(respDecode)
 
         # Dropping Duplicate Datasets by Filtering Latest Issued Dataset
-        dfUnique = df.sort_values('issued', ascending=False) \
-                        .drop_duplicates(subset='name', keep="first")
-
+        dfUnique = df.sort_values("issued", ascending=False).drop_duplicates(
+            subset="name", keep="first"
+        )
 
         # Fallback values for those datasets missing an owner
         for index, row in dfUnique.iterrows():
-            if pd.isnull(row['creator']):
-                if pd.isnull(row['publisher']):
-                    row['creator'] = 'Scottish Government'
+            if pd.isnull(row["creator"]):
+                if pd.isnull(row["publisher"]):
+                    row["creator"] = "Scottish Government"
                 else:
-                    row['creator'] = row['publisher']
+                    row["creator"] = row["publisher"]
 
         # Renaming Column Names to ODS Format
-        dfOds = dfUnique \
-                .rename(columns=
-                    {
-                        'name':'title',
-                        'theme':'category',
-                        'creator':'organization',
-                        'comment':'notes',
-                        'issued':'date_created',
-                        'modified':'date_updated',
-                        'uri':'url'
-                    }) \
-                .drop(columns = ['publisher'])
+        dfOds = dfUnique.rename(
+            columns={
+                "name": "title",
+                "theme": "category",
+                "creator": "organization",
+                "comment": "notes",
+                "issued": "date_created",
+                "modified": "date_updated",
+                "uri": "url",
+            }
+        ).drop(columns=["publisher"])
 
         # File Path
         fname = os.path.join("data", "scotgov-datasets-sparql" + ".csv")
-        dfOds.to_csv(fname,index=False);
+        dfOds.to_csv(fname, index=False)
+
 
 processor = ProcessorSPARQL()
 

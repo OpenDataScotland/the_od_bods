@@ -66,7 +66,7 @@ def ind(name):
         "Source",
         "AssetStatus",
         "ODSCategories",
-        "ODSCategories_Keywords"
+        "ODSCategories_Keywords",
     ]
     return f.index(name)
 
@@ -91,6 +91,7 @@ def makeint(val):
         pass
     return None
 
+
 def license_link(l):
     known_licence_links = {
         "Open Government Licence v2.0": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/",
@@ -108,14 +109,14 @@ def license_link(l):
     for key in known_licence_links.keys():
         if l == key:
             return known_licence_links[key]
-        
-    
+
     unknown_lics = []
 
     if not l in unknown_lics:
         unknown_lics.append(l)
         # print("Unknown license: ", l)
     return l
+
 
 def main():
     data = {}
@@ -146,14 +147,15 @@ def main():
                 size_unit=r[ind("FileSizeUnit")],
                 file_type=r[ind("FileType")],
                 file_name=r[ind("FileName")],
-                show_name=r[ind("FileName")] if r[ind("FileName")] else r[ind("FileType")],
+                show_name=r[ind("FileName")]
+                if r[ind("FileName")]
+                else r[ind("FileType")],
             )
         )
 
     ### Replace folder by deleting and writing
     shutil.rmtree("../jkan/_datasets/")
     os.makedirs("../jkan/_datasets/")
-
 
     for n, (k, ds) in enumerate(data.items()):
         y = {"schema": "default"}
@@ -182,6 +184,6 @@ def main():
             f.write(yaml.dump(y))
             f.write("---\n")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()
-    

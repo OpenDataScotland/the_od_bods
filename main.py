@@ -13,8 +13,20 @@ import sqa_scraper
 import merge_data
 import export2jkan
 
-DATASET_PATHS = ['data/arcgis/','data/ckan/','data/dcat/','data/scraped-results/','data/USMART/']
-FILES_TO_DELETE = ['data/merged_output.json', 'data/merged_output_untidy.json', 'data/merged_output.json', 'log.json', 'log.md']
+DATASET_PATHS = [
+    "data/arcgis/",
+    "data/ckan/",
+    "data/dcat/",
+    "data/scraped-results/",
+    "data/USMART/",
+]
+FILES_TO_DELETE = [
+    "data/merged_output.json",
+    "data/merged_output_untidy.json",
+    "data/merged_output.json",
+    "log.json",
+    "log.md",
+]
 
 logger.info("Clearing folders")
 for path in DATASET_PATHS:
@@ -26,7 +38,7 @@ for file in FILES_TO_DELETE:
     utilities.safe_delete_file(file)
 
 logger.info("Set up log files")
-utilities.init_logs();
+utilities.init_logs()
 
 logger.info("Running ArcGIS scraper")
 arcgis.processor.process()
