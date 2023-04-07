@@ -46,11 +46,21 @@ def merge_data():
     try:
         source_scotgov['DateUpdated'] = pd.to_datetime(source_scotgov['DateUpdated'], utc=True).dt.tz_localize(None)
     except:
-        source_scotgov['DateUpdated'] = pd.to_datetime(source_scotgov['DateUpdated'], utc=True, format="ISO8601").dt.tz_localize(None)
+        try:
+            source_scotgov['DateUpdated'] = pd.to_datetime(source_scotgov['DateUpdated'], utc=True, format="ISO8601").dt.tz_localize(None)
+        except:
+            # If we get to this stage, give up and just blank the date
+            print("WARNING: Failed to parse date - " + source_scotgov['DateUpdated'])
+            source_scotgov['DateUpdated'] = None
     try:
         source_scotgov['DateCreated'] = pd.to_datetime(source_scotgov['DateCreated'], utc=True).dt.tz_localize(None)
     except:
-        source_scotgov['DateCreated'] = pd.to_datetime(source_scotgov['DateCreated'], utc=True, format="ISO8601").dt.tz_localize(None)
+        try:
+            source_scotgov['DateCreated'] = pd.to_datetime(source_scotgov['DateCreated'], utc=True, format="ISO8601").dt.tz_localize(None)
+        except:
+            # If we get to this stage, give up and just blank the date
+            print("WARNING: Failed to parse date - " + source_scotgov['DateCreated'])
+            source_scotgov['DateCreated'] = None
 
 
     ### From arcgis api  
