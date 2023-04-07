@@ -45,7 +45,11 @@ def merge_data():
         source_scotgov['DateUpdated'] = pd.to_datetime(source_scotgov['DateUpdated'], utc=True).dt.tz_localize(None)
     except:
         source_scotgov['DateUpdated'] = pd.to_datetime(source_scotgov['DateUpdated'], utc=True, infer_datetime_format=True).dt.tz_localize(None)
-    source_scotgov['DateCreated'] = pd.to_datetime(source_scotgov['DateCreated'], utc=True).dt.tz_localize(None)
+    try:
+        source_scotgov['DateCreated'] = pd.to_datetime(source_scotgov['DateCreated'], utc=True).dt.tz_localize(None)
+    except:
+        source_scotgov['DateCreated'] = pd.to_datetime(source_scotgov['DateCreated'], utc=True, infer_datetime_format=True).dt.tz_localize(None)
+
 
     ### From arcgis api  
     source_arcgis = pd.DataFrame()
