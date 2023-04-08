@@ -14,7 +14,7 @@ Cycling Scotland,"https://discovery.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18
 Aberdeen City Council,https://data.aberdeencity.gov.uk/,ckan
 Dundee City Council,https://data.dundeecity.gov.uk/,ckan
 Perth and Kinross Council,https://data.pkc.gov.uk/,ckan
-Stirling Council,https://data.stirling.gov.uk/,ckan
+Stirling Council,https://data-stirling-council.hub.arcgis.com/api/feed/dcat-ap/2.0.1.json,dcat
 Angus Council,http://opendata.angus.gov.uk/,ckan
 Public Health Scotland,https://www.opendata.nhs.scot/,ckan
 Statistics Scottish Government, http://statistics.gov.scot/sparql,sparkql
