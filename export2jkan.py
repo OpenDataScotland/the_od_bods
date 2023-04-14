@@ -198,7 +198,7 @@ os.makedirs("../jkan/_datasets/")
 
 for n, (k, ds) in enumerate(data.items()):
     y = {"schema": "default"}
-    y["title"] = ds.title.capitalize() # Sentence case for presentability
+    y["title"] = ds.title[0].upper() + ds.title[1:] # Sentence case for presentability
     y["organization"] = ds.owner
     y["notes"] = markdown.markdown(ds.description)
     y["original_dataset_link"] = ds.page_url
