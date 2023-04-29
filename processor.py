@@ -1,9 +1,11 @@
+from datetime import date
 import urllib.error
 from urllib import request, parse
 from urllib.error import HTTPError, URLError
 import csv
 import json
 import os
+from classes.Dataset import Dataset, Resource
 
 
 class Processor:
@@ -28,6 +30,7 @@ class Processor:
             "Description",
         ]
         self.urls = {}
+        self.outputs_json = True
 
     def get_urls(self):
         with open("sources.csv", "r", encoding="utf-8") as file:
@@ -105,6 +108,22 @@ class Processor:
                     r[-1] = r[-1].replace("\n", " ")
                 w.writerow(r)
 
+    def dataset_serializer(obj):
+        if isinstance(obj, Dataset):
+            return obj.to_dict()
+        if isinstance(obj, date):
+            return str(date)
+        if isinstance(obj, Resource):
+            return obj.to_dict()
+        # Let the default JSON encoder handle other types
+        return json.JSONEncoder().default(obj)
+
+    def write_json(self, fname, prepped):
+        # Convert the array to a JSON-serializable format
+        prepped = [dataset.__dict__ for dataset in prepped]
+        with open(fname, "w", newline="", encoding="utf-8") as json_file:
+                json.dump(prepped, json_file, indent=4, default=Processor.dataset_serializer )
+
     def get_datasets(self, owner, url, fname):
         print("Override this method")
 
@@ -113,4 +132,7 @@ class Processor:
 
         for name, url in self.urls.items():
             print(name)
-            self.get_datasets(name, url, os.path.join("data", self.type, name + ".csv"))
+            if self.outputs_json == True:
+                self.get_datasets(name, url, os.path.join("data", self.type, name + ".json"))
+            else:
+                self.get_datasets(name, url, os.path.join("data", self.type, name + ".csv"))
