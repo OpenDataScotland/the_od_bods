@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import sys
 from github import Github, GithubException, GithubIntegration
 from urllib.request import Request, urlopen
 from urllib.error import URLError, HTTPError
@@ -77,3 +78,4 @@ try:
 except GithubException as err:
     print(err)
     print("Github: Connect: error {}", format(err.data))
+    sys.exit(-1)
