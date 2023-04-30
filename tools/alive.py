@@ -23,20 +23,10 @@ try:
     git = Github(github_access_token)
     repo = git.get_repo(GITHUB_REPO)
 
-    # Get the repo's 'broken link' issue label
+    # Get the repo's 'broken link' issue label    
     issue_label = repo.get_label("broken link")
 
     open_issues = repo.get_issues(state="open", labels=[issue_label])
-
-    # Get the project's 'To do' column
-    projects = repo.get_projects()
-    project = projects[0]
-    project_columns = project.get_columns()
-    to_do_column = None
-    for project_column in project_columns:
-        if project_column.name == "To do":
-            to_do_column = project_column
-            break
 
     with open("../sources.csv", "r") as file:
         csv_file = csv.DictReader(file)
@@ -45,7 +35,9 @@ try:
             req = Request(row["Source URL"])
             try:
                 response = urlopen(req)
+                print(f"Got status code {response.getcode()} for {req.full_url}")
             except (HTTPError, URLError) as e:
+                print(f"Got status code {e.code} for {req.full_url}")
                 issue_body = "**Broken URL:** [#{}]({})\n\n".format(
                     row["Source URL"], row["Source URL"]
                 )
@@ -66,9 +58,6 @@ try:
                         body=issue_body,
                         labels=[issue_label],
                     )
-                    to_do_column.create_card(
-                        content_id=new_issue.id, content_type="Issue"
-                    )
                     print(new_issue)
             else:
                 issue_body = "**Broken URL:** [#{}]({})\n\n".format(
@@ -86,4 +75,5 @@ try:
                         break
 
 except GithubException as err:
+    print(err)
     print("Github: Connect: error {}", format(err.data))
