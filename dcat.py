@@ -31,7 +31,7 @@ class ProcessorDCAT(Processor):
 
                 ds = [
                     e.get("dct:title", ""),
-                    e.get("dct:publisher", "").replace(" Mapping", ""),
+                    e.get("dct:publisher", "").get("foaf:name","").replace(" Mapping", ""),
                     "",  # link to page
                     "",  # Link to data
                     "",  # FileName
