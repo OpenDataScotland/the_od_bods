@@ -11,7 +11,7 @@ north_ayrshire,"https://maps-north-ayrshire.opendata.arcgis.com/api/feed/dcat-ap
 north_lanarkshire,"https://gisdata-nlcmaps.opendata.arcgis.com/api/feed/dcat-ap/2.0.1.json",dcat
 Dumfries and Galloway Council,"https://discovery.usmart.io/org/9762f781-5c04-4759-a70b-afc585af1d12/dcat/data.json",USMART
 Cycling Scotland,"https://discovery.usmart.io/org/d1b773fa-d2bd-4830-b399-ecfd18e832f3/dcat/data.json",USMART
-Aberdeen City Council,https://data.aberdeencity.gov.uk/,ckan
+Aberdeen City Council,https://spatialdata-accabdn.opendata.arcgis.com/api/feed/dcat-ap/2.0.1.json,dcat
 Dundee City Council,https://data.dundeecity.gov.uk/,ckan
 Perth and Kinross Council,https://data.pkc.gov.uk/,ckan
 Stirling Council,https://data-stirling-council.hub.arcgis.com/api/feed/dcat-ap/2.0.1.json,dcat
