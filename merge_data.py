@@ -192,7 +192,8 @@ def clean_data(dataframe):
         "Na h-Eileanan an Iar": "Comhairle nan Eilean Siar",
         "National Records Scotland": "National Records of Scotland",
         "Development, Safety and Regulation": "South Ayrshire Council",  # TEMP fix
-        "Stirling Council - insights by location": "Stirling Council"
+        "Stirling Council - insights by location": "Stirling Council",
+        "Aberdeen City Council ArcGIS Online": "Aberdeen City Council"
     }
     data["Owner"] = data["Owner"].replace(owner_renames)
     ### Format dates as datetime type
