@@ -103,4 +103,6 @@ class ProcessorCKAN(Processor):
 
 
 processor = ProcessorCKAN()
-processor.process()
+
+if __name__ == "__main__":
+    processor.process()

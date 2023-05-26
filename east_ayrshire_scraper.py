@@ -4,11 +4,12 @@ import csv
 import math
 from bs4 import BeautifulSoup
 
+URL_COUNCIL = "https://www.east-ayrshire.gov.uk/"
+URL_PAGE = (
+    "CouncilAndGovernment/About-the-Council/Information-and-statistics/Open-Data.aspx"
+)
+
 # Global Variables
-URL_COUNCIL = "http://www.moray.gov.uk/"
-URL_PAGE = "moray_standard/page_110140.html"
-
-
 def get_headers():
     """
     Gets headers to make a request from the URL. Optimized so website doesn't think a bot is making a request.
@@ -37,22 +38,18 @@ def get_all_files():
         NULL
 
     Returns:
-        headers (List) : list of titles of table, list of descriptions of table, list of csv files.
+        headers (List) : list of csv files.
     """
     url = URL_COUNCIL + URL_PAGE
     req = requests.get(url, get_headers())
     soup = BeautifulSoup(req.content, "html.parser")
-    list_of_files = []
-
-    list_of_titles = soup.select("td:nth-of-type(1)")
-    list_of_desc = soup.select("td:nth-of-type(2)")
-
     list_of_a_tags = soup.find_all("a", href=True)
+    list_of_files = []
     for poss in list_of_a_tags:
         if poss["href"].endswith("csv"):
             list_of_files.append(poss)
 
-    return list_of_titles, list_of_desc, list_of_files
+    return list_of_files
 
 
 def csv_file_metadata(file_loc):
@@ -65,7 +62,7 @@ def csv_file_metadata(file_loc):
     Returns:
         number_of_records (int), total_bytes (int) : total number of records and total number of bytes of .csv files.
     """
-    text = requests.get(file_loc, get_headers()).text
+    text = requests.get(URL_COUNCIL + file_loc, get_headers()).text
     lines = text.splitlines()
     data = csv.reader(lines)
     number_of_records = len(list(data)) - 1
@@ -88,8 +85,9 @@ def csv_output(header, data):
     Returns:
         NULL
     """
-
-    with open("../data/scraped-results/output_moray.csv", "w", encoding="UTF8") as f:
+    with open(
+        "data/scraped-results/output_east_ayrshire.csv", "w", encoding="UTF8"
+    ) as f:
         writer = csv.writer(f)
 
         # write the header
@@ -100,6 +98,7 @@ def csv_output(header, data):
             writer.writerow(record)
 
 
+# https://stackoverflow.com/a/14822210/13940304
 def convert_size(size_bytes):
     """
     Create human-readable way to display .csv file sizes.
@@ -121,7 +120,7 @@ def convert_size(size_bytes):
     return ("%s %s" % (s, size_name[i]), size_name[i])
 
 
-if __name__ == "__main__":
+def main():
     # Record Headings
     header = [
         "Title",
@@ -141,17 +140,15 @@ if __name__ == "__main__":
     ]
     data = []
 
-    list_of_titles, list_of_desc, list_of_files = get_all_files()
-
-    counter = 1
+    list_of_files = get_all_files()
     for fi in list_of_files:
         metadata = csv_file_metadata(fi["href"])
         file_size = convert_size(metadata[1])
         output = [
-            list_of_titles[counter].string,
-            "Moray Council",
+            fi.string,
+            "East Ayrshire Council",
             URL_COUNCIL + URL_PAGE,
-            fi["href"],
+            URL_COUNCIL + fi["href"],
             "NULL",
             "NULL",
             file_size[0],
@@ -159,11 +156,14 @@ if __name__ == "__main__":
             "CSV",
             metadata[0],
             "NULL",
-            list_of_titles[counter].string.replace(" ", ""),
+            "Education",
             "Open Government Licence 3.0 (United Kingdom)",
-            list_of_desc[counter].string,
+            "NULL",
         ]
         data.append(output)
-        counter += 1
 
     csv_output(header, data)
+
+
+if __name__ == "__main__":
+    main()

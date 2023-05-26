@@ -4,12 +4,13 @@ import pandas as pd
 from processor import Processor
 import os
 
-class ProcessorSparkQL(Processor):
-    def __init__(self):
-        super().__init__(type="sparkql")
 
-    # SparkQL Dataset Query for API
-    def get_sparkql_query(self):
+class ProcessorSPARQL(Processor):
+    def __init__(self):
+        super().__init__(type="sparql")
+
+    # SPARQL Dataset Query for API
+    def get_sparql_query(self):
         return """
             PREFIX dcterms: <http://purl.org/dc/terms/>
             PREFIX dcat: <http://www.w3.org/ns/dcat#>
@@ -36,8 +37,8 @@ class ProcessorSparkQL(Processor):
 
     def get_datasets(self, owner, start_url, fname):
 
-        sparkql = self.get_sparkql_query();
-        data = parse.urlencode({"query": sparkql}).encode()
+        sparql = self.get_sparql_query()
+        data = parse.urlencode({"query": sparql}).encode()
 
         # API REQUEST
         req = request.Request("http://statistics.gov.scot/sparql", data=data)
@@ -50,35 +51,37 @@ class ProcessorSparkQL(Processor):
         df = pd.read_csv(respDecode)
 
         # Dropping Duplicate Datasets by Filtering Latest Issued Dataset
-        dfUnique = df.sort_values('issued', ascending=False) \
-                        .drop_duplicates(subset='name', keep="first")
-
+        dfUnique = df.sort_values("issued", ascending=False).drop_duplicates(
+            subset="name", keep="first"
+        )
 
         # Fallback values for those datasets missing an owner
         for index, row in dfUnique.iterrows():
-            if pd.isnull(row['creator']):
-                if pd.isnull(row['publisher']):
-                    row['creator'] = 'Scottish Government'
+            if pd.isnull(row["creator"]):
+                if pd.isnull(row["publisher"]):
+                    row["creator"] = "Scottish Government"
                 else:
-                    row['creator'] = row['publisher']
+                    row["creator"] = row["publisher"]
 
         # Renaming Column Names to ODS Format
-        dfOds = dfUnique \
-                .rename(columns=
-                    {
-                        'name':'title',
-                        'theme':'category',
-                        'creator':'organization',
-                        'comment':'notes',
-                        'issued':'date_created',
-                        'modified':'date_updated',
-                        'uri':'url'
-                    }) \
-                .drop(columns = ['publisher'])
+        dfOds = dfUnique.rename(
+            columns={
+                "name": "title",
+                "theme": "category",
+                "creator": "organization",
+                "comment": "notes",
+                "issued": "date_created",
+                "modified": "date_updated",
+                "uri": "url",
+            }
+        ).drop(columns=["publisher"])
 
         # File Path
-        fname = os.path.join("data", "scotgov-datasets-sparkql" + ".csv")
-        dfOds.to_csv(fname,index=False);
+        fname = os.path.join("data", "scotgov-datasets-sparql" + ".csv")
+        dfOds.to_csv(fname, index=False)
 
-processor = ProcessorSparkQL()
-processor.process()
+
+processor = ProcessorSPARQL()
+
+if __name__ == "__main__":
+    processor.process()

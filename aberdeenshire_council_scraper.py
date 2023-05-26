@@ -109,7 +109,7 @@ def parse_feeds(feeds):
 
 
 def output(parsed):
-    with open("../data/scraped-results/aberdeenshire.csv", "w", encoding="UTF8") as f:
+    with open("data/scraped-results/aberdeenshire.csv", "w", encoding="UTF8") as f:
         writer = csv.writer(f)
 
         # write the header
@@ -136,7 +136,7 @@ def output(parsed):
             writer.writerow(record)
 
 
-if __name__ == "__main__":
+def main():
     ### construct array of feed objects
     req = Request(
         "https://www.aberdeenshire.gov.uk/data/open-data/",
@@ -150,3 +150,7 @@ if __name__ == "__main__":
 
     # make csv file
     output(parsed)
+
+
+if __name__ == "__main__":
+    main()

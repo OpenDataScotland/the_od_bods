@@ -39,7 +39,7 @@ def csv_output(header, data):
         NULL
     """
 
-    with open("../data/scraped-results/output_nls.csv", "w", encoding="UTF8") as f:
+    with open("data/scraped-results/output_nls.csv", "w", encoding="UTF8") as f:
         writer = csv.writer(f)
 
         # write the header
@@ -174,7 +174,7 @@ def fetch_file_size(page: BeautifulSoup) -> list:
     for filesize_string in filesize_strings:
         # print(filesize_string, type(filesize_string))
         filesize = filesize_string.split(":")[1].strip().split(" ")[0:2]
-        if filesize == ['']:
+        if filesize == [""]:
             filesize = []
             filesize.append(filesize_string.next.next)
             filesize.append(filesize_string.next.next.next.strip(" ").split(" ")[0])
@@ -185,6 +185,7 @@ def fetch_file_size(page: BeautifulSoup) -> list:
 
     # print("list_of_filesizes", list_of_filesizes)
     return list_of_filesizes
+
 
 def fetch_num_recs(page: BeautifulSoup) -> list:
     """
@@ -208,7 +209,7 @@ def fetch_num_recs(page: BeautifulSoup) -> list:
             for item in files:
                 # Some of these lists of files have "and" at the end that we need to take out
                 break_up = item.replace("and", "").strip().split(" ")
-                #print("break_up", item, ", ", break_up, ", ", break_up[0].replace(",", "").replace(".", ""))
+                # print("break_up", item, ", ", break_up, ", ", break_up[0].replace(",", "").replace(".", ""))
                 amount = int(break_up[0].replace(",", "").replace(".", ""))
                 amount_recs += amount
         list_num_recs.append(amount_recs)
@@ -250,7 +251,9 @@ def fetch_data_types(page: BeautifulSoup) -> str:
                 set(list_of_types)
             )  # make it a list, where each file type is listed just once
             string1 = ", "
-            string_of_types = string1.join(list_of_types) # convert list to a string, since python treats "[..]" as string
+            string_of_types = string1.join(
+                list_of_types
+            )  # convert list to a string, since python treats "[..]" as string
             # when reading from csv files
 
     return string_of_types
@@ -296,8 +299,12 @@ def fetch_description(page):
     if not (container := page.find_all("div", class_="wp-container-1 wp-block-column")):
         return "NULL"
     else:
-        parts_of_description = page.find("div", class_="wp-container-1 wp-block-column").stripped_strings
-        combined_parts = " ".join(parts_of_description).replace("&nbsp;", " ").replace("\n", " ")
+        parts_of_description = page.find(
+            "div", class_="wp-container-1 wp-block-column"
+        ).stripped_strings
+        combined_parts = (
+            " ".join(parts_of_description).replace("&nbsp;", " ").replace("\n", " ")
+        )
         return combined_parts
 
 
@@ -319,7 +326,7 @@ def fetch_individual_descriptions(page):
     return ind_descr
 
 
-if __name__ == "__main__":
+def main():
     # Record Headings
     header = [
         "Title",
@@ -365,7 +372,9 @@ if __name__ == "__main__":
             nls_licence = fetch_licences(soup)
             # print("nls_licence:", nls_licence)
             description = fetch_description(soup)
-            indiv_descriptions = fetch_individual_descriptions(soup)[:len(list_of_asset_urls)]
+            indiv_descriptions = fetch_individual_descriptions(soup)[
+                : len(list_of_asset_urls)
+            ]
             for asseturl in list_of_asset_urls:
                 title = fetch_title(soup)
                 # print("title:", title)
@@ -373,7 +382,7 @@ if __name__ == "__main__":
                 pageurl = url
                 # print("pageurl:", pageurl)
                 asset_url = asseturl
-                #print("asset_url:", asset_url)
+                # print("asset_url:", asset_url)
                 create_date = fetch_create_date(soup)
                 # print("create_date:", create_date)
                 if fetched_file_size != ["unknown"]:
@@ -384,12 +393,14 @@ if __name__ == "__main__":
                     file_unit = "unknown"
 
                 ### fetch_data_types is more accurate & useful, but file extension is consistent with other listings
-                data_type = asset_url.rsplit('.',1)[1] #fetch_data_types(soup)
+                data_type = asset_url.rsplit(".", 1)[1]  # fetch_data_types(soup)
                 # print("data_type:", data_type)
                 num_recs = fetched_num_recs[counter]
                 # print(("num_recs:", num_recs))
                 if len(indiv_descriptions) > 1:
-                    description = indiv_descriptions[counter].strip(" :") + ": " + description
+                    description = (
+                        indiv_descriptions[counter].strip(" :") + ": " + description
+                    )
 
                 output = [
                     title,
@@ -412,3 +423,7 @@ if __name__ == "__main__":
 
     print("Outputting to CSV")
     csv_output(header, data)
+
+
+if __name__ == "__main__":
+    main()

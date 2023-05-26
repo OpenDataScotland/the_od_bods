@@ -43,24 +43,26 @@ class Processor:
         try:
             return json.loads(request.urlopen(req).read().decode())
         except HTTPError as err1:
-            print (url, "cannot be accessed. The URL returned:", err1.code, err1.reason)
+            print(url, "cannot be accessed. The URL returned:", err1.code, err1.reason)
             error_dict = {
-                'url': url,
-                'error_code': err1.code,
-                'error_reason': err1.reason,
+                "url": url,
+                "error_code": err1.code,
+                "error_reason": err1.reason,
             }
         except URLError as err2:
             print(type(err2))
             print(url, "cannot be accessed. The URL returned:", err2.reason)
             error_dict = {
-                'url': url,
-                'error_code': "",
-                'error_reason': str(err2.reason),
-                }
-        with open('log.json', 'a') as f:
+                "url": url,
+                "error_code": "",
+                "error_reason": str(err2.reason),
+            }
+        with open("log.json", "a") as f:
             json.dump(error_dict, f)
-        with open('log.md', 'a') as file:
-            file.write(f'| {error_dict["url"]} | {error_dict["error_code"]} | {error_dict["error_reason"]} | \n')
+        with open("log.md", "a") as file:
+            file.write(
+                f'| {error_dict["url"]} | {error_dict["error_code"]} | {error_dict["error_reason"]} | \n'
+            )
 
         return "NULL"
 

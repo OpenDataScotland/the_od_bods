@@ -38,7 +38,7 @@ def csv_output(header, data):
         NULL
     """
 
-    with open("../data/scraped-results/output_sqa.csv", "w", encoding="UTF8") as f:
+    with open("data/scraped-results/output_sqa.csv", "w", encoding="UTF8") as f:
         writer = csv.writer(f)
 
         # write the header
@@ -63,8 +63,15 @@ def fetch_available_years():
     dropdown_list = data_button.find_all("option")
 
     for dropdown_item in dropdown_list:
-        dict_of_links[dropdown_item.contents[0]] = "https://www.sqa.org.uk/sqa/" + dropdown_item["value"]
-    keys_to_skip = ["--- Select Year ---", "Statistics archive", "Related", "Derived Grades 2003"]
+        dict_of_links[dropdown_item.contents[0]] = (
+            "https://www.sqa.org.uk/sqa/" + dropdown_item["value"]
+        )
+    keys_to_skip = [
+        "--- Select Year ---",
+        "Statistics archive",
+        "Related",
+        "Derived Grades 2003",
+    ]
     [dict_of_links.pop(d) for d in keys_to_skip]
 
     return dict_of_links
@@ -106,7 +113,7 @@ def create_title(part1: str) -> str:
         stripped_title (str): A string of dataset's title.
     """
 
-    return 'SQA ' + part1
+    return "SQA " + part1
 
 
 def fetch_asset_url(page: BeautifulSoup) -> str:
@@ -168,7 +175,11 @@ def fetch_file_size(page: BeautifulSoup, ul: BeautifulSoup) -> tuple:
 
 
 def fetch_description(ds, ys):
-    descr = "A range of statistical reports for SQA qualifications for " + ys.split(" ", 1)[1] + "."
+    descr = (
+        "A range of statistical reports for SQA qualifications for "
+        + ys.split(" ", 1)[1]
+        + "."
+    )
 
     return descr
 
@@ -183,7 +194,7 @@ def create_filename(part2: BeautifulSoup) -> str:
     return part2.get_text()
 
 
-if __name__ == "__main__":
+def main():
     # Record Headings
     header = [
         "Title",
@@ -227,7 +238,7 @@ if __name__ == "__main__":
                 file_unit = file_sizeandunit[1]
                 data_type = dataset.get("href").split(".")[-1]
                 num_recs = "NULL"
-                sqa_licence = "unknown" # contact SQA regarding license
+                sqa_licence = "unknown"  # contact SQA regarding license
 
                 output = [
                     title,
@@ -252,9 +263,11 @@ if __name__ == "__main__":
     csv_output(header, data)
 
 
+if __name__ == "__main__":
+    main()
+
 """
 issues with this scraper:
 - year before 2000 don't return a dataset, even though there are unordered lists present"
 - in many (all?) years, the last datasets seem to be missing
 """
-
