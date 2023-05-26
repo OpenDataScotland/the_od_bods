@@ -179,6 +179,7 @@ def main():
         fn = urllib.parse.quote_plus(f"{(ds.owner).lower()}-{(ds.title).lower()}")
         # fn = {ds.owner}-{ds.title})
         # ^^ need something better for filnames...
+        print(f"Writing ../jkan/_datasets/{fn}.md")
         with open(f"../jkan/_datasets/{fn}.md", "w") as f:
             f.write("---\n")
             f.write(yaml.dump(y))
