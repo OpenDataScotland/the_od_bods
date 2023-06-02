@@ -165,16 +165,16 @@ CDP 7 - Natural Environment (see figure 14 of The Plan),Glasgow City Council,,,,
 CDP 7 - Natural Environment (see figure 14 of The Plan),Glasgow City Council,,,,,2021-11-12,,,GeoJSON,,CDP;City Development Plan;planning,,,City Development Plan Policy and Proposals 
 CDP 7 - Natural Environment (see figure 14 of The Plan),Glasgow City Council,,,,,2021-11-12,,,ZIP,,CDP;City Development Plan;planning,,,City Development Plan Policy and Proposals 
 CDP 7 - Natural Environment (see figure 14 of The Plan),Glasgow City Council,,,,,2021-11-12,,,KML,,CDP;City Development Plan;planning,,,City Development Plan Policy and Proposals 
-CDP: Major Road Proposals,Glasgow City Council,,,,,2021-11-12,,,ArcGIS GeoService,,CDP;City Development Plan;planning,,,City Development Plan Policy and Proposals 
-CDP: Major Road Proposals,Glasgow City Council,,,,,2021-11-12,,,CSV,,CDP;City Development Plan;planning,,,City Development Plan Policy and Proposals 
-CDP: Major Road Proposals,Glasgow City Council,,,,,2021-11-12,,,GeoJSON,,CDP;City Development Plan;planning,,,City Development Plan Policy and Proposals 
-CDP: Major Road Proposals,Glasgow City Council,,,,,2021-11-12,,,ZIP,,CDP;City Development Plan;planning,,,City Development Plan Policy and Proposals 
-CDP: Major Road Proposals,Glasgow City Council,,,,,2021-11-12,,,KML,,CDP;City Development Plan;planning,,,City Development Plan Policy and Proposals 
 CDP: Clyde Walkway,Glasgow City Council,,,,,2021-11-12,,,ArcGIS GeoService,,CDP;City Development Plan;planning,,,City Development Plan Policy and Proposals 
 CDP: Clyde Walkway,Glasgow City Council,,,,,2021-11-12,,,CSV,,CDP;City Development Plan;planning,,,City Development Plan Policy and Proposals 
 CDP: Clyde Walkway,Glasgow City Council,,,,,2021-11-12,,,GeoJSON,,CDP;City Development Plan;planning,,,City Development Plan Policy and Proposals 
 CDP: Clyde Walkway,Glasgow City Council,,,,,2021-11-12,,,ZIP,,CDP;City Development Plan;planning,,,City Development Plan Policy and Proposals 
 CDP: Clyde Walkway,Glasgow City Council,,,,,2021-11-12,,,KML,,CDP;City Development Plan;planning,,,City Development Plan Policy and Proposals 
+CDP: Major Road Proposals,Glasgow City Council,,,,,2021-11-12,,,ArcGIS GeoService,,CDP;City Development Plan;planning,,,City Development Plan Policy and Proposals 
+CDP: Major Road Proposals,Glasgow City Council,,,,,2021-11-12,,,CSV,,CDP;City Development Plan;planning,,,City Development Plan Policy and Proposals 
+CDP: Major Road Proposals,Glasgow City Council,,,,,2021-11-12,,,GeoJSON,,CDP;City Development Plan;planning,,,City Development Plan Policy and Proposals 
+CDP: Major Road Proposals,Glasgow City Council,,,,,2021-11-12,,,ZIP,,CDP;City Development Plan;planning,,,City Development Plan Policy and Proposals 
+CDP: Major Road Proposals,Glasgow City Council,,,,,2021-11-12,,,KML,,CDP;City Development Plan;planning,,,City Development Plan Policy and Proposals 
 CDP - Citywide Policy,Glasgow City Council,,,,,2021-11-12,,,ArcGIS GeoService,,CDP;City Development Plan;planning,,,City Development Plan Policy and Proposals 
 CDP - Citywide Policy,Glasgow City Council,,,,,2021-11-12,,,CSV,,CDP;City Development Plan;planning,,,City Development Plan Policy and Proposals 
 CDP - Citywide Policy,Glasgow City Council,,,,,2021-11-12,,,GeoJSON,,CDP;City Development Plan;planning,,,City Development Plan Policy and Proposals 
@@ -298,11 +298,6 @@ CCTV,Glasgow City Council,,,,,2023-03-29,,,ZIP,,CCTV;public safety,,,"<div>The l
 CCTV,Glasgow City Council,,,,,2023-03-29,,,KML,,CCTV;public safety,,,"<div>The locations of CCTV in Glasgow listed by British National Grid coordinates, and street.</div><div><br /></div>"
 Bike hire API,Glasgow City Council,,,,,2021-04-29,,,ArcGIS GeoService,,Cycling;Bike,,,"<div><p>Returns real time and historical bike hire data from nextbike stations across Glasgow, by hour, day, month and year.</p><span></span></div>"
 Cycling hire sites API,Glasgow City Council,,,,,2021-04-30,,,ArcGIS GeoService,,Bike,,,<div><div style='box-sizing:border-box;'><div><p>Returns details for nextbike hire station locations across Glasgow.</p></div></div></div>
-Car Parks test,Glasgow City Council,,,,,2023-04-24,,,ArcGIS GeoService,,Car parks,,,Locations of GCC managed car parks in Glasgow.
-Car Parks test,Glasgow City Council,,,,,2023-04-24,,,CSV,,Car parks,,,Locations of GCC managed car parks in Glasgow.
-Car Parks test,Glasgow City Council,,,,,2023-04-24,,,GeoJSON,,Car parks,,,Locations of GCC managed car parks in Glasgow.
-Car Parks test,Glasgow City Council,,,,,2023-04-24,,,ZIP,,Car parks,,,Locations of GCC managed car parks in Glasgow.
-Car Parks test,Glasgow City Council,,,,,2023-04-24,,,KML,,Car parks,,,Locations of GCC managed car parks in Glasgow.
 3D Urban Model,Glasgow City Council,,,,,2021-12-23,,,,,ArcGIS Hub page,,,{{description}}
 LIDAR data,Glasgow City Council,,,,,2021-10-07,,,ArcGIS GeoService,,Remote Sensing;3D;LIDAR;DEM;TEM;Model;3D Urban Model,,,LIDAR data is extremely accurate 3D data generated from sensors on the ground or on airplanes. This data was acquired in 2021.
 Polling Stations,Glasgow City Council,,,,,2023-04-18,,,ArcGIS GeoService,,Polling Stations,,,Boundaries of GCC polling districts and locations of polling facilities for General and Council Elections.
@@ -317,16 +312,6 @@ Accessibility,Glasgow City Council,,,,,2021-04-18,,,,,ArcGIS Hub page,,,{{descri
 Footfall,Glasgow City Council,,,,,2021-09-06,,,ArcGIS GeoService,,Mobility;Pedestrian;Walking;Walk,,,"Access to data on the volume of footfall across Glasgow City Centre, generated from a network of sensors provided by Springboard. Data by hour, day, month and year going back to 2010."
 News,Glasgow City Council,,,,,2022-10-07,,,,,ArcGIS Hub page,,,We want to share the latest stories with our communities about developments in data and analysis.
 App Gallery,Glasgow City Council,,,,,2022-02-03,,,,,ArcGIS Hub page,,,"Our open data is about more than the numbers – it relates to real people, places and issues. We want to bring the data to life by sharing some stories around what it tells us about the city and how we might use these insights to improve the lives of those who live and work in Glasgow."
-carParkTest,Glasgow City Council,,,,,2023-05-23,,,ArcGIS GeoService,,test,,,{{description}}
-carParkTest,Glasgow City Council,,,,,2023-05-23,,,CSV,,test,,,{{description}}
-carParkTest,Glasgow City Council,,,,,2023-05-23,,,GeoJSON,,test,,,{{description}}
-carParkTest,Glasgow City Council,,,,,2023-05-23,,,ZIP,,test,,,{{description}}
-carParkTest,Glasgow City Council,,,,,2023-05-23,,,KML,,test,,,{{description}}
-tpos test3,Glasgow City Council,,,,,2023-05-23,,,ArcGIS GeoService,,test,,,{{description}}
-tpos test3,Glasgow City Council,,,,,2023-05-23,,,CSV,,test,,,{{description}}
-tpos test3,Glasgow City Council,,,,,2023-05-23,,,GeoJSON,,test,,,{{description}}
-tpos test3,Glasgow City Council,,,,,2023-05-23,,,ZIP,,test,,,{{description}}
-tpos test3,Glasgow City Council,,,,,2023-05-23,,,KML,,test,,,{{description}}
 Glasgow's City Council's Data Driven Response to  Covid-19,Glasgow City Council,,,,,2021-04-08,,,ArcGIS GeoService,,Open Data;COVID-19,,,{{description}}
 Covid-19 in Glasgow - one year on,Glasgow City Council,,,,,2021-04-08,,,ArcGIS GeoService,,COVID-19;Open Data,,,{{description}}
 How do people move round our city during lockdown?,Glasgow City Council,,,,,2020-09-23,,,ArcGIS GeoService,,,,,{{description}}
