@@ -8,6 +8,7 @@ import yaml
 import shutil
 import os
 import urllib
+import subprocess
 
 
 @dataclass
@@ -155,9 +156,10 @@ def main():
 
     ### Replace folder by deleting and writing
     print(os.getcwd())
-    exit
     shutil.rmtree("../jkan/_datasets/")
     os.makedirs("../jkan/_datasets/")
+    print(subprocess.run(['ls', '../jkan/_datasets/'],stdout=subprocess.PIPE))
+    print(subprocess.run(['ls', '../jkan/'],stdout=subprocess.PIPE))
 
     for n, (k, ds) in enumerate(data.items()):
         y = {"schema": "default"}
@@ -183,6 +185,7 @@ def main():
         # ^^ need something better for filnames...
         print(f"Writing ../jkan/_datasets/{fn}.md")
         with open(f"../jkan/_datasets/{fn}.md", "w") as f:
+            print(os.path.abspath(f.name))
             f.write("---\n")
             f.write(yaml.dump(y))
             f.write("---\n")
