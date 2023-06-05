@@ -158,8 +158,8 @@ def main():
     print(os.getcwd())
     shutil.rmtree("../jkan/_datasets/")
     os.makedirs("../jkan/_datasets/")
-    print(subprocess.run(['ls', '../jkan/_datasets/'],stdout=subprocess.PIPE))
-    print(subprocess.run(['ls', '../jkan/'],stdout=subprocess.PIPE))
+    #print(subprocess.run(['ls', '../jkan/_datasets/'],stdout=subprocess.PIPE))
+    #print(subprocess.run(['ls', '../jkan/'],stdout=subprocess.PIPE))
 
     for n, (k, ds) in enumerate(data.items()):
         y = {"schema": "default"}
