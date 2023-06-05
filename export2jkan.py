@@ -154,6 +154,8 @@ def main():
         )
 
     ### Replace folder by deleting and writing
+    print(os.getcwd())
+    exit
     shutil.rmtree("../jkan/_datasets/")
     os.makedirs("../jkan/_datasets/")
 
