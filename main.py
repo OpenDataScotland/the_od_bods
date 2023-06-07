@@ -70,10 +70,10 @@ nls_scraper.main()
 logger.info("Running SQA static scraper")
 sqa_scraper.main()
 
-logger.info("Merge data")
-merge_data.main()
+# logger.info("Merge data")
+# merge_data.main()
 
-logger.info("Exporting to JKAN")
-export2jkan.main()
+# logger.info("Exporting to JKAN")
+# export2jkan.main()
 
 logger.info("Scraping complete")
