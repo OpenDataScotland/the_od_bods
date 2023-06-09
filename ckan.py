@@ -14,7 +14,7 @@ class ProcessorCKAN(Processor):
         if url[-1] != "/":
             url = url + "/"
 
-        datasets = processor.get_json(f"{url}/api/3/action/package_list")
+        datasets = processor.get_json(f"{url}api/3/action/package_list")
         if datasets != "NULL":
 
             print(f"Found {len(datasets['result'])} datasets")
