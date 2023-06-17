@@ -242,7 +242,7 @@ def clean_data(dataframe):
         s = []
         words = string.split()
         for word in words:
-            s.append(re.sub('s$', "", word))
+            s.append(re.sub('[Ss]$', "", word))
         sentence = ' '.join(s)
         return sentence
 
