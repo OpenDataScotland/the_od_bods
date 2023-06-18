@@ -16,67 +16,64 @@ class ProcessorDCAT(Processor):
 
     def get_datasets(self, owner, start_url, fname):
         print(start_url)
-        d = processor.get_json(start_url)
-        if d != "NULL":
+        datasets_collection = processor.get_json(start_url)
+        if datasets_collection != "NULL":
 
-            datasets = d["dcat:dataset"]
+            datasets_collection = datasets_collection["dcat:dataset"]
 
-            print(f"Found {len(datasets)} datasets")
+            print(f"Found {len(datasets_collection)} datasets")
 
             prepped = []
-            for e in datasets:
+            for dataset in datasets_collection:
                 # Get keywords
-                keywords = e.get("dcat:keyword", [])
+                keywords = dataset.get("dcat:keyword", [])
 
                 # If there's only one keyword (e.g. the property returned a string, then stick it in an array)
                 if type(keywords) is str:
                     keywords = [keywords]
 
                 # Get common metadata
-                title = e.get("dct:title", "")
-                owner = e.get("dct:publisher", "").get("foaf:name","")
-                original_dataset_link = e.get("@id","")
-                date_created = parser.parse(e.get("dct:issued", "")).date()
-                date_modified = parser.parse(e.get("dct:modified", "")).date()
+                title = dataset.get("dct:title", "")
+                owner = dataset.get("dct:publisher", "").get("foaf:name","")
+                original_dataset_link = dataset.get("@id","")
+                date_created = parser.parse(dataset.get("dct:issued", "")).date()
+                date_modified = parser.parse(dataset.get("dct:modified", "")).date()
                 tags = ";".join(
                         map(str, keywords)
                     )
                 
-                metadata_url= e.get("dct:identifier","")
+                metadata_url= dataset.get("dct:identifier","")
                 license = get_license(metadata_url) # TODO
 
-                description = e.get("dct:description", "").strip("\u200b")
+                description = dataset.get("dct:description", "").strip("\u200b")
 
-                ds = [
-                    e.get("dct:title", ""),
-                    e.get("dct:publisher", "").get("foaf:name","").replace(" Mapping", ""),
-                    e.get("@id",""),  # Link to page
-                    "",  # Link to data
-                    "",  # FileName
-                    "",  # date created
-                    parser.parse(e.get("dct:issued", "")).date(),
-                    "",  # size
-                    "",  # size unit
-                    "",  # filetype
-                    "",  # numrecords
-                    ";".join(
-                        map(str, keywords)
-                    ),  # Keywords (we use map here to make sure everything is a string)
-                    "",  # Manual tags
-                    license,  # license
-                    e.get("dct:description", "").strip("\u200b"),
-                ]
-                pages = e.get("dcat:distribution")
-                dsl = []
-                for p in pages:
-                    if p.get("dct:description", "") == "Web Page":
-                        continue
-                    ds[3] = p.get("dcat:accessUrl", "")
-                    ds[9] = p.get("dct:title", "")
-                    dsl.append(copy.deepcopy(ds))
-                if not dsl:
-                    dsl.append(ds)
-                prepped += dsl
+                dataset_resources = dataset.get("dcat:distribution")
+
+                for resource in dataset_resources:
+                    resource_link = resource.get("dcat:accessURL",{}).get("@id","")
+                    file_name = resource.get("dct:description","")
+                    file_type = resource.get("dct:title","")
+
+
+                    prepped_resource = [
+                        title,
+                        owner,
+                        original_dataset_link,
+                        resource_link,
+                        file_name,
+                        date_created,
+                        date_modified,
+                        "",  # TODO: size
+                        "",  # TODO: size unit
+                        file_type,
+                        "",  # TODO: numrecords,
+                        tags,
+                        "", # Manual tags
+                        license,
+                        description
+                        ]
+                    
+                    prepped.append(prepped_resource)
 
             print(f"{len(prepped)} lines for csv")
             processor.write_csv(fname, prepped)
@@ -117,9 +114,9 @@ def parse_license(license_info):
         return "https://creativecommons.org/licenses/by-sa/3.0/"
 
     # TODO: Log unknown licenses as warnings
-    print(f"UNKNOWN: {stripped_license_info}")
+    print(f"UNKNOWN LICENSE: {stripped_license_info}")
 
-    return "NOT_FOUND: " + stripped_license_info
+    return ""
 
 
 
