@@ -10,8 +10,6 @@ WORKDIR /usr/src/app/the_od_bods
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY run.sh run.sh
-
 RUN chmod a+x run.sh
 
 CMD ["./run.sh"]
