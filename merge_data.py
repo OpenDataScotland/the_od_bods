@@ -230,7 +230,23 @@ def clean_data(dataframe):
     data["OriginalTags"] = data["OriginalTags"].apply(tidy_categories)
     data["ManualTags"] = data["ManualTags"].apply(tidy_categories)
 
-    ### Creating dataset categories for ODS
+    ### Creating dataset categories for ODS   
+    def remove_trailing_s(string):
+        """Remove trailing 's' from all words in string to remove requirement to search for pural categories in
+
+        Args:
+            string: String to remove trialing 's' from
+
+        Returns:
+            string: the resulting string, with trailing 's' removed from all words.
+        """
+        s = []
+        words = string.split()
+        for word in words:
+            s.append(re.sub('[Ss]$', "", word))
+        sentence = ' '.join(s)
+        return sentence
+
     def find_keyword(str_tofind, str_findin):
         """Finds if single word or phrase exists in string
 
@@ -241,6 +257,8 @@ def clean_data(dataframe):
         Returns:
             boolean: True if match is found
         """
+        str_findin = remove_trailing_s(str_findin)
+        str_tofind = remove_trailing_s(str_tofind)
         if re.search(r"\b" + re.escape(str_tofind) + r"\b", str_findin, re.I):
             return True
         return False
