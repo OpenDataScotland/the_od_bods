@@ -10,9 +10,9 @@ class ProcessorScottishParliament(Processor):
     def get_datasets(self, portal_owner, start_url, fname):
         print(f"Processing {start_url}")
 
-        dataset_url = f"{start_url}api/datasetjson"
+        datasets_url = f"{start_url}api/datasetjson"
 
-        datasets = self.get_json(dataset_url)
+        datasets = self.get_json(datasets_url)
 
         print(f"Found {len(datasets)} datasets")
 
@@ -79,7 +79,7 @@ class ProcessorScottishParliament(Processor):
                 {
                     "title": dataset_title,
                     "owner": dataset_owner,
-                    "pageURL": dataset_url,
+                    "pageURL": dataset_page_url,
                     "dateCreated": dataset_date_created,
                     "dateUpdated": dataset_date_updated,
                     "license": dataset_license,
