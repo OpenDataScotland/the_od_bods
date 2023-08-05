@@ -194,7 +194,10 @@ def clean_data(dataframe):
         "Development, Safety and Regulation": "South Ayrshire Council",  # TEMP fix
         "Stirling Council - insights by location": "Stirling Council",
         "Aberdeen City Council ArcGIS Online": "Aberdeen City Council",
-        "City of Edinburgh Council Mapping": "City of Edinburgh Council"
+        "City of Edinburgh Council Mapping": "City of Edinburgh Council",
+        "Cairngorms National Park": "Cairngorms National Park Authority",
+        "Loch Lomond and The Trossachs National Park": "Loch Lomond and The Trossachs National Park Authority",
+        "Drinking Water Quality Regulator (DWQR)": "Drinking Water Quality Regulator"
     }
     data["Owner"] = data["Owner"].replace(owner_renames)
     ### Format dates as datetime type
