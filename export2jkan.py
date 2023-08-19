@@ -105,6 +105,7 @@ def license_link(l):
         "Non-Commercial Use Only": "https://rightsstatements.org/page/NoC-NC/1.0/",
         "No Known Copyright": "https://rightsstatements.org/vocab/NKC/1.0/",
         "Public Domain": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "Scottish Parliament Copyright Policy": "https://www.parliament.scot/about/copyright",
     }
 
     for key in known_licence_links.keys():

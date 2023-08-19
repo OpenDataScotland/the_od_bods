@@ -1,15 +1,18 @@
+# pylint: disable=E1101
 ### Setting the environment
 import pandas as pd
 import os
-import datetime as dt
-import regex as re
+from datetime import datetime as dt
+import datetime
+import re
 import json
 
 
 def main():
     ### Loading data
-
+    # region CKAN
     ### From ckan output
+    print("Merging CKAN...")
     source_ckan = pd.DataFrame()
     folder = "data/ckan/"
     for dirname, _, filenames in os.walk(folder):
@@ -27,7 +30,10 @@ def main():
                     ]
                 )
     source_ckan["Source"] = "ckan API"
+    # endregion
 
+    # region statistics.gov.scot
+    print("Merging statistics.gov.scot...")
     ### From scotgov csv
     source_scotgov = pd.read_csv("data/scotgov-datasets-sparkql.csv")
     source_scotgov = source_scotgov.rename(
@@ -43,29 +49,39 @@ def main():
         }
     )
     source_scotgov["Source"] = "sparql"
-    print("DateUpdated " + source_scotgov['DateUpdated'])
-    print("DateCreated " + source_scotgov['DateCreated'])
+    #print("DateUpdated " + source_scotgov["DateUpdated"])
+    #print("DateCreated " + source_scotgov["DateCreated"])
     try:
-        source_scotgov['DateUpdated'] = pd.to_datetime(source_scotgov['DateUpdated'], utc=True).dt.tz_localize(None)
+        source_scotgov["DateUpdated"] = pd.to_datetime(
+            source_scotgov["DateUpdated"], utc=True
+        ).dt.tz_localize(None)
     except:
         try:
-            source_scotgov['DateUpdated'] = pd.to_datetime(source_scotgov['DateUpdated'], utc=True, format="ISO8601").dt.tz_localize(None)
+            source_scotgov["DateUpdated"] = pd.to_datetime(
+                source_scotgov["DateUpdated"], utc=True, format="ISO8601"
+            ).dt.tz_localize(None)
         except:
             # If we get to this stage, give up and just blank the date
-            print("WARNING: Failed to parse date - " + source_scotgov['DateUpdated'])
-            source_scotgov['DateUpdated'] = None
+            print("WARNING: Failed to parse date - " + source_scotgov["DateUpdated"])
+            source_scotgov["DateUpdated"] = None
     try:
-        source_scotgov['DateCreated'] = pd.to_datetime(source_scotgov['DateCreated'], utc=True).dt.tz_localize(None)
+        source_scotgov["DateCreated"] = pd.to_datetime(
+            source_scotgov["DateCreated"], utc=True
+        ).dt.tz_localize(None)
     except:
         try:
-            source_scotgov['DateCreated'] = pd.to_datetime(source_scotgov['DateCreated'], utc=True, format="ISO8601").dt.tz_localize(None)
+            source_scotgov["DateCreated"] = pd.to_datetime(
+                source_scotgov["DateCreated"], utc=True, format="ISO8601"
+            ).dt.tz_localize(None)
         except:
             # If we get to this stage, give up and just blank the date
-            print("WARNING: Failed to parse date - " + source_scotgov['DateCreated'])
-            source_scotgov['DateCreated'] = None
+            print("WARNING: Failed to parse date - " + source_scotgov["DateCreated"])
+            source_scotgov["DateCreated"] = None
+    # endregion
 
-
-    ### From arcgis api  
+    # region ArcGIS
+    ### From arcgis api
+    print("Merging ArcGIS...")
     source_arcgis = pd.DataFrame()
     folder = "data/arcgis/"
     for dirname, _, filenames in os.walk(folder):
@@ -81,8 +97,11 @@ def main():
                     ]
                 )
     source_arcgis["Source"] = "arcgis API"
+    # endregion
 
+    # region uSmart
     ### From usmart api
+    print("Merging uSmart...")
     source_usmart = pd.DataFrame()
     folder = "data/USMART/"
     for dirname, _, filenames in os.walk(folder):
@@ -100,8 +119,11 @@ def main():
     source_usmart["Source"] = "USMART API"
     source_usmart["DateUpdated"] = source_usmart["DateUpdated"].dt.tz_localize(None)
     source_usmart["DateCreated"] = source_usmart["DateCreated"].dt.tz_localize(None)
+    # endregion
 
+    # region DCAT
     ## From DCAT
+    print("Merging DCAT...")
     source_dcat = pd.DataFrame()
     folder = "data/dcat/"
     for dirname, _, filenames in os.walk(folder):
@@ -119,13 +141,17 @@ def main():
     source_dcat["DateUpdated"] = source_dcat["DateUpdated"].dt.tz_localize(None)
     # source_dcat["DateCreated"] = source_dcat["DateCreated"].dt.tz_localize(None) ### DateCreated currently not picked up in dcat so all are NULL
     source_dcat["Source"] = "DCAT feed"
+    # endregion
 
+    # region Web scrapers
     ## From web scraped results
+    print("Merging web scraped results...")
     source_scraped = pd.DataFrame()
     folder = "data/scraped-results/"
     for dirname, _, filenames in os.walk(folder):
         for filename in filenames:
             if filename.rsplit(".", 1)[1] == "csv":
+                print(f"\tMerging {filename}...")
                 source_scraped = pd.concat(
                     [
                         source_scraped,
@@ -135,9 +161,25 @@ def main():
                         ),
                     ]
                 )
-    source_scraped["Source"] = "Web Scraped"
 
+    # From Scottish Parliament
+    print("\tMerging Scottish Parliament...")
+    path = "data/bespoke_ScottishParliament/Scottish Parliament.json"
+    scottish_parliament_scraped = pd.read_json(path, convert_dates=["dateCreated", "dateUpdated"])
+
+    for index, row in scottish_parliament_scraped.iterrows():      
+        resources = pd.json_normalize(row["resources"])
+        for resource_index, resource_row in resources.iterrows():
+            # TEMP FIX: Need to do this mapping until we modify the merged_output.json schema to support nesting resources inside each dataset entry
+            source_scraped = pd.concat(
+                [source_scraped, pd.DataFrame.from_records([{"Title": row["title"], "Owner": row["owner"], "PageURL": row["pageURL"], "AssetURL": resource_row["assetUrl"], "DateCreated": row["dateCreated"], "DateUpdated": row["dateUpdated"], "FileSize": resource_row["fileSize"], "FileType": resource_row["fileType"], "NumRecords": resource_row["numRecords"], "OriginalTags": row["tags"], "ManualTags" : row["tags"], "License": row["licence"], "Description": row["description"], "FileName": resource_row["fileName"]}])]
+            )
+
+    source_scraped["Source"] = "Web Scraped"
+    # endregion
+  
     ### Combine all data into single table
+    print("Concatenating all")
     data = pd.concat(
         [
             source_ckan,
@@ -149,14 +191,18 @@ def main():
         ]
     )
     data = data.reset_index(drop=True)
-
+    
+    print(f"Output untidy {dt.now()}")
     ### Saves copy of data without cleaning - for analysis purposes
     data.to_json("data/merged_output_untidy.json", orient="records", date_format="iso")
 
     ### clean data
+    # TODO: Cleaning data per dataset file is massively inefficient as we're often applying the same operations to duplicate row values (e.g. 1 dataset x 5 files == 5 cleaning attempts for the same license data etc.)
+    print(f"Cleaning data {dt.now()}")
     data = clean_data(data)
 
     ### Output cleaned data to json
+    print(f"Output cleaned {dt.now()}")
     data.to_json("data/merged_output.json", orient="records", date_format="iso")
 
     return data
@@ -197,7 +243,7 @@ def clean_data(dataframe):
         "City of Edinburgh Council Mapping": "City of Edinburgh Council",
         "Cairngorms National Park": "Cairngorms National Park Authority",
         "Loch Lomond and The Trossachs National Park": "Loch Lomond and The Trossachs National Park Authority",
-        "Drinking Water Quality Regulator (DWQR)": "Drinking Water Quality Regulator"
+        "Drinking Water Quality Regulator (DWQR)": "Drinking Water Quality Regulator",
     }
     data["Owner"] = data["Owner"].replace(owner_renames)
     ### Format dates as datetime type
@@ -233,9 +279,11 @@ def clean_data(dataframe):
     data["OriginalTags"] = data["OriginalTags"].apply(tidy_categories)
     data["ManualTags"] = data["ManualTags"].apply(tidy_categories)
 
-    ### Creating dataset categories for ODS   
+    trailing_s_pattern = re.compile("[Ss]$")
+
+    ### Creating dataset categories for ODS
     def remove_trailing_s(string):
-        """Remove trailing 's' from all words in string to remove requirement to search for pural categories in
+        """Remove trailing 's' from all words in string to remove requirement to search for plural categories in
 
         Args:
             string: String to remove trialing 's' from
@@ -243,11 +291,9 @@ def clean_data(dataframe):
         Returns:
             string: the resulting string, with trailing 's' removed from all words.
         """
-        s = []
         words = string.split()
-        for word in words:
-            s.append(re.sub('[Ss]$', "", word))
-        sentence = ' '.join(s)
+        s = [trailing_s_pattern.sub("", word) for word in words]
+        sentence = " ".join(s)
         return sentence
 
     def find_keyword(str_tofind, str_findin):
@@ -348,6 +394,7 @@ def clean_data(dataframe):
             "Other (Public Domain)": "Public Domain",
             "Public Domain": "Public Domain",
             "Public Sector End User Licence (Scotland)": "Public Sector End User Licence (Scotland)",
+            "Scottish Parliament Copyright Policy": "Scottish Parliament Copyright Policy"
         }
 
         for key in known_licences.keys():
