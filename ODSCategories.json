@@ -115,7 +115,9 @@
       "migration",
       "mps",
       "msps",
-      "politicians"
+      "politicians",
+      "parliament",
+      "parliamentary"
    ],
    "Education": [
       "childcare",
@@ -149,7 +151,8 @@
       "political",
       "politics",
       "polling",
-      "polling places"
+      "polling places",
+      "petition"
    ],
    "Food and Environment": [
       "air quality",
