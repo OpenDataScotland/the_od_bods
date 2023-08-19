@@ -1,0 +1,4354 @@
+[
+    {
+        "title": "Allowances: Group Transaction",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-04-17T15:17:13.53",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains a list of Allowance transactions from member groups",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/allowancesgrouptransactions/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-04-17T15:17:13.53",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/allowancesgrouptransactions/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-04-17T15:17:13.53",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Allowances: Member Transaction",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-11T08:45:33.55",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains a list of Allowance transactions from individual members.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/allowancesmembertransactions/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-11T08:45:33.55",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/allowancesmembertransactions/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-11T08:45:33.55",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Bill Timetables",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-16T23:27:53.493",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains Motions lodged by the Parliamentary Bureau proposing the timescales for the passage of a bill through Parliament including Stage 1 (evidence gathering in Committee), Stage 2 (amendments considered in committee), and Stage 3 (amendments in the Chamber and agreement of the final bill)",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/MotionsQuestionsAnswersMotionsBusiness?motionfilter=consideration",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:27:53.493",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/MotionsQuestionsAnswersMotionsBusiness?motionfilter=consideration",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:27:53.493",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Bills: Bill Stage",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2020-01-03T00:10:44.403",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains a list of stages that a bill has been in.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/billstages/xml",
+                "dateCreated": null,
+                "dateUpdated": "2020-01-03T00:10:44.403",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/billstages/json",
+                "dateCreated": null,
+                "dateUpdated": "2020-01-03T00:10:44.403",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Bills: Bill Stage Type",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2021-10-07T23:10:54.867",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains a list of Bill Stage Types.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/billstagetypes/xml",
+                "dateCreated": null,
+                "dateUpdated": "2021-10-07T23:10:54.867",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/billstagetypes/json",
+                "dateCreated": null,
+                "dateUpdated": "2021-10-07T23:10:54.867",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Bills: Bill Title",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-16T23:10:28.07",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains a list of Bill Titles",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/bills/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:10:28.07",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/bills/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:10:28.07",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Bills: Bill Type",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-16T23:10:32.527",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains a list of applicable types that a bill can be e.g. private, executive etc. The vast majority of bills are Public Bills \u2013which covers Government Bills, Member\u2019s Bills, Committee Bills and others \u2013 and it is only a small proportion that are Private Bills.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/billtypes/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:10:32.527",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/billtypes/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:10:32.527",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Committees: Current and previous",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-11T23:11:32.29",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This datatset contains a list of current and previous committees of the Scottish Parliament.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/committees/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-11T23:11:32.29",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/committees/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-11T23:11:32.29",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Committees: Roles",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-11T23:11:03.87",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains a list of roles a committee can have.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/committeeroles/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-11T23:11:03.87",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/committeeroles/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-11T23:11:03.87",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Committees: Roles held by MSPs ",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-10T23:15:13.45",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains a list of which members held which roles on which committees and when.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/personcommitteeroles/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-10T23:15:13.45",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/personcommitteeroles/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-10T23:15:13.45",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Committees: Type ",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-11T23:11:22.33",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains a list of committee types; these qualify the committee\u2019s objectives and the content that is considered by a committee.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/committeetypes/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-11T23:11:22.33",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/committeetypes/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-11T23:11:22.33",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Committees: Type connector",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-11T23:11:12.6",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains a list of links used to link a committee to its committee type.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/committeetypelinks/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-11T23:11:12.6",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/committeetypelinks/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-11T23:11:12.6",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Departments: Parliamentary offices",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2022-11-16T00:12:12.497",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains a list of current and former departments.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/departments/xml",
+                "dateCreated": null,
+                "dateUpdated": "2022-11-16T00:12:12.497",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/departments/json",
+                "dateCreated": null,
+                "dateUpdated": "2022-11-16T00:12:12.497",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Departments: Parties, contractors and Parliamentary offices",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-13T23:12:22.6",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains a list of current and former directorates.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/directorates/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-13T23:12:22.6",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/directorates/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-13T23:12:22.6",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Departments: Type",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-04T23:12:31.92",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains a list of directorate types.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/directoratetypes/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-04T23:12:31.92",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/directoratetypes/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-04T23:12:31.92",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Elections: Reasons for elections and by-elections ",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-04T23:12:41.513",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains a list of reasons someone ceases to be an MSP. This includes dissolution (end of the parliamentary session), resignation, retiral etc.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/electionreasondates/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-04T23:12:41.513",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/electionreasondates/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-04T23:12:41.513",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Elections: Status of Member election",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-04T23:12:51.493",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains a list of election statuses.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/electionstatuses/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-04T23:12:51.493",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/electionstatuses/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-04T23:12:51.493",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Events",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2021-12-15T14:19:10.417",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains a list of Events held in the Scottish Parliament.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/events/xml",
+                "dateCreated": null,
+                "dateUpdated": "2021-12-15T14:19:10.417",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/events/json",
+                "dateCreated": null,
+                "dateUpdated": "2021-12-15T14:19:10.417",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Legislation: Scottish Statutory Instruments (SSIs)",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-16T23:45:02.94",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains a list of Scottish Statutory Instruments (SSIs). Please note that these can also be known as Secondary Legislation or Subordinate Legislation.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/legislationdetails/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:45:02.94",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/legislationdetails/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:45:02.94",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Motions, Questions and Answers: Amendments to Motions",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-16T23:19:32.917",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains the event linking table for Motions, Questions and Answers. Use this to find amendments to motions, which may also include sub-amendments.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswerseventlinks/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:19:32.917",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswerseventlinks/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:19:32.917",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Motions, Questions and Answers: Motions",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-16T23:27:53.04",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains all recorded motions taken place within the Parliament.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersmotions/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:27:53.04",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersmotions/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:27:53.04",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Motions, Questions and Answers: MSPs supporting Motions",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-16T23:41:13.223",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains a set of MSPs who have registered support to particular Motions.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswerssupports/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:41:13.223",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswerssupports/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:41:13.223",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Motions, Questions and Answers: Parliamentary Questions Lodged (1999)",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-16T23:27:53.063",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains all the questions lodged in the Parliament during the year of 1999.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=1999",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:27:53.063",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=1999",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:27:53.063",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Motions, Questions and Answers: Parliamentary Questions Lodged (2000)",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-16T23:27:53.087",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains all the questions lodged in the Parliament during the year of 2000.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2000",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:27:53.087",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2000",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:27:53.087",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Motions, Questions and Answers: Parliamentary Questions Lodged (2001)",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-16T23:27:53.11",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains all the questions lodged in the Parliament during the year of 2001.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2001",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:27:53.11",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2001",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:27:53.11",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Motions, Questions and Answers: Parliamentary Questions Lodged (2002)",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-16T23:27:53.137",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains all the questions lodged in the Parliament during the year of 2002.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2002",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:27:53.137",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2002",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:27:53.137",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Motions, Questions and Answers: Parliamentary Questions Lodged (2003)",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-16T23:27:53.16",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains all the questions lodged in the Parliament during the year of 2003.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2003",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:27:53.16",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2003",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:27:53.16",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Motions, Questions and Answers: Parliamentary Questions Lodged (2004)",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-16T23:27:53.183",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains all the questions lodged in the Parliament during the year of 2004.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2004",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:27:53.183",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2004",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:27:53.183",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Motions, Questions and Answers: Parliamentary Questions Lodged (2005)",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-16T23:27:53.207",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains all the questions lodged in the Parliament during the year of 2005.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2005",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:27:53.207",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2005",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:27:53.207",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Motions, Questions and Answers: Parliamentary Questions Lodged (2006)",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-16T23:27:53.23",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains all the questions lodged in the Parliament during the year of 2006.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2006",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:27:53.23",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2006",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:27:53.23",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Motions, Questions and Answers: Parliamentary Questions Lodged (2007)",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-16T23:27:53.253",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains all the questions lodged in the Parliament during the year of 2007.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2007",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:27:53.253",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2007",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:27:53.253",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Motions, Questions and Answers: Parliamentary Questions Lodged (2008)",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-16T23:27:53.28",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains all the questions lodged in the Parliament during the year of 2008.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2008",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:27:53.28",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2008",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:27:53.28",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Motions, Questions and Answers: Parliamentary Questions Lodged (2009)",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-16T23:27:53.3",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains all the questions lodged in the Parliament during the year of 2009.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2009",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:27:53.3",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2009",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:27:53.3",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Motions, Questions and Answers: Parliamentary Questions Lodged (2010)",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-16T23:27:53.327",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains all the questions lodged in the Parliament during the year of 2010.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2010",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:27:53.327",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2010",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:27:53.327",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Motions, Questions and Answers: Parliamentary Questions Lodged (2011)",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-16T23:27:53.35",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains all the questions lodged in the Parliament during the year of 2011.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2011",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:27:53.35",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2011",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:27:53.35",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Motions, Questions and Answers: Parliamentary Questions Lodged (2012)",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-16T23:27:53.373",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains all the questions lodged in the Parliament during the year of 2012.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2012",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:27:53.373",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2012",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:27:53.373",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Motions, Questions and Answers: Parliamentary Questions Lodged (2013)",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-16T23:27:53.397",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains all the questions lodged in the Parliament during the year of 2013.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2013",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:27:53.397",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2013",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:27:53.397",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Motions, Questions and Answers: Parliamentary Questions Lodged (2014)",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-16T23:27:53.42",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains all the questions lodged in the Parliament during the year of 2014.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2014",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:27:53.42",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2014",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:27:53.42",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Motions, Questions and Answers: Parliamentary Questions Lodged (2015)",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-16T23:27:53.443",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains all the questions lodged in the Parliament during the year of 2015.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2015",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:27:53.443",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2015",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:27:53.443",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Motions, Questions and Answers: Parliamentary Questions Lodged (2016)",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-16T23:27:53.013",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains all the questions lodged in the Parliament during the year of 2016.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2016",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:27:53.013",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2016",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:27:53.013",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Motions, Questions and Answers: Question and Motion subtypes",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-16T23:19:42.637",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains a set of event sub types for Motions, Questions and Answers.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswerseventsubtypes/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:19:42.637",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswerseventsubtypes/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:19:42.637",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Motions, Questions and Answers: Question and Motion types",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-16T23:19:53.397",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains a list of event types, events are a generic term for either a question or a motion.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswerseventtypes/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:19:53.397",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswerseventtypes/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:19:53.397",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "MSPs: Constituencies elected to current and previous",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-16T23:13:53.387",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains the constituency that a member has been elected for, and the status of that election. Each election record will have an associated start and end date, as well as notes required to qualify the status. The member\u2019s election status will be for the party they have membership in for a period greater than their election status.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/MemberElectionConstituencyStatuses/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:13:53.387",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/MemberElectionConstituencyStatuses/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:13:53.387",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "MSPs: Contact address type",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-05T23:10:11.827",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains a list of address types.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/addresstypes/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-05T23:10:11.827",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/addresstypes/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-05T23:10:11.827",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "MSPs: Contact addresses",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-05T23:10:02.297",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains a list of member addresses.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/addresses/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-05T23:10:02.297",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/addresses/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-05T23:10:02.297",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "MSPs: Cross Party Group Member Roles",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-16T23:13:42.847",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "A collection of all Members and their Roles within a Cross Party Group.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/membercrosspartyroles/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:13:42.847",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/membercrosspartyroles/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:13:42.847",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "MSPs: Cross Party Group Roles",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-13T23:11:52.443",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "A collection of Roles that a Cross Party Group can have.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/crosspartygrouproles/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-13T23:11:52.443",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/crosspartygrouproles/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-13T23:11:52.443",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "MSPs: Cross Party Groups",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-13T23:12:02.46",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "A collection of Cross Party Groups (CPGs). CPGs provide an opportunity for Members of all parties, outside organisations and members of the public to meet and discuss a shared interest in a particular cause or subject.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/crosspartygroups/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-13T23:12:02.46",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/crosspartygroups/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-13T23:12:02.46",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "MSPs: Current and previous",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-16T23:14:42.97",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains a list of current and previous members of the Scottish Parliament, along with additional member information.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/members/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:14:42.97",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/members/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:14:42.97",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "MSPs: Current and previous Members in the Scottish Government ",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-16T23:14:12.563",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains a list of members and government positions.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/membergovernmentroles/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:14:12.563",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/membergovernmentroles/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:14:12.563",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "MSPs: Email address categories",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-10T23:13:02.513",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains a list of email address categories.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/emailaddresstypes/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-10T23:13:02.513",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/emailaddresstypes/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-10T23:13:02.513",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "MSPs: Email addresses",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-10T23:13:12.457",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains a list of email addresses.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/emailaddresses/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-10T23:13:12.457",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/emailaddresses/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-10T23:13:12.457",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "MSPs: Gender",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-04T23:13:21.58",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains a list of Members\u2019 genders. ",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/genders/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-04T23:13:21.58",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/genders/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-04T23:13:21.58",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "MSPs: List of constituencies current and previous",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-05T23:01:42.7",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "MSPs: List of constituencies current and previous",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/constituencies/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-05T23:01:42.7",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/constituencies/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-05T23:01:42.7",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "MSPs: List of regions current and previous",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-04T23:15:22.323",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "The dataset contains larger geographical areas each containing seven constituences.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/regions/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-04T23:15:22.323",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/regions/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-04T23:15:22.323",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "MSPs: Ministerial positions in the Scottish Government",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-04T23:13:31.63",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains a list of government positions that ministers can hold.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/governmentroles/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-04T23:13:31.63",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/governmentroles/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-04T23:13:31.63",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "MSPs: Parliamentary web page categories",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-04T23:16:01.37",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains a list of website categories.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/websitetypes/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-04T23:16:01.37",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/websitetypes/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-04T23:16:01.37",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "MSPs: Party membership",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-16T23:14:32.74",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains the member\u2019s political party membership with associated dates",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/memberparties/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:14:32.74",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/memberparties/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:14:32.74",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "MSPs: Regions elected to current and previous",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-16T23:14:02.64",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains the region that a member has been elected for, and the status of that election. This dataset contains the same data as described under the MemberElectionConstituencyStatus dataset.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/MemberElectionregionStatuses/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:14:02.64",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/MemberElectionregionStatuses/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:14:02.64",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "MSPs: Register Of Interests (Beta)",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2016-12-12T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information on Registered Interests of Members elected since 5 May 2016. Please note that this dataset is sanitised to remove unnecessary mark-up and as a part of this process, some special characters (such as \u00a3) may be removed which may lead to some minor interpretational issues",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/registerofinterest/xml",
+                "dateCreated": null,
+                "dateUpdated": "2016-12-12T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/registerofinterest/json",
+                "dateCreated": null,
+                "dateUpdated": "2016-12-12T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "MSPs: Telephone number categories",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-04T23:15:41.383",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains a list of telephone categories.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/telephonetypes/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-04T23:15:41.383",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/telephonetypes/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-04T23:15:41.383",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "MSPs: Telephone numbers",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-04T23:15:51.34",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains a list of telephone numbers.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/telephones/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-04T23:15:51.34",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/telephones/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-04T23:15:51.34",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "MSPs: Votes On Motions (Beta) 2011",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information on how MSPs voted on Motions and Amendments in the Parliament during 2011",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/votesmotion?year=2011",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/votesmotion?year=2011",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "MSPs: Votes On Motions (Beta) 2012",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information on how MSPs voted on Motions and Amendments in the Parliament during 2012",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/votesmotion?year=2012",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/votesmotion?year=2012",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "MSPs: Votes On Motions (Beta) 2013",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information on how MSPs voted on Motions and Amendments in the Parliament during 2013",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/votesmotion?year=2013",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/votesmotion?year=2013",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "MSPs: Votes On Motions (Beta) 2014",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information on how MSPs voted on Motions and Amendments in the Parliament during 2014",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/votesmotion?year=2014",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/votesmotion?year=2014",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "MSPs: Votes On Motions (Beta) 2015",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information on how MSPs voted on Motions and Amendments in the Parliament during 2015",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/votesmotion?year=2015",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/votesmotion?year=2015",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "MSPs: Votes On Motions (Beta) 2016",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information on how MSPs voted on Motions and Amendments in the Parliament during 2016",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/votesmotion?year=2016",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/votesmotion?year=2016",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "MSPs: Votes On Motions (Beta) 2017",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information on how MSPs voted on Motions and Amendments in the Parliament during 2017",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/votesmotion?year=2017",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/votesmotion?year=2017",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "MSPs: Votes On Motions (Beta) 2018",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2022-06-07T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information on how MSPs voted on Motions and Amendments in the Parliament during 2018",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/votesmotion?year=2018",
+                "dateCreated": null,
+                "dateUpdated": "2022-06-07T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/votesmotion?year=2018",
+                "dateCreated": null,
+                "dateUpdated": "2022-06-07T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "MSPs: Votes On Motions (Beta) 2019",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2022-06-07T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information on how MSPs voted on Motions and Amendments in the Parliament during 2019",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/votesmotion?year=2019",
+                "dateCreated": null,
+                "dateUpdated": "2022-06-07T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/votesmotion?year=2019",
+                "dateCreated": null,
+                "dateUpdated": "2022-06-07T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "MSPs: Votes On Motions (Beta) 2020",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2022-06-07T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information on how MSPs voted on Motions and Amendments in the Parliament during 2020",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/votesmotion?year=2020",
+                "dateCreated": null,
+                "dateUpdated": "2022-06-07T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/votesmotion?year=2020",
+                "dateCreated": null,
+                "dateUpdated": "2022-06-07T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "MSPs: Votes On Motions (Beta) 2021",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2022-06-07T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information on how MSPs voted on Motions and Amendments in the Parliament during 2021",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/votesmotion?year=2021",
+                "dateCreated": null,
+                "dateUpdated": "2022-06-07T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/votesmotion?year=2021",
+                "dateCreated": null,
+                "dateUpdated": "2022-06-07T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "MSPs: Votes On Motions (Beta) 2022",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2022-06-07T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information on how MSPs voted on Motions and Amendments in the Parliament during 2022",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/votesmotion?year=2022",
+                "dateCreated": null,
+                "dateUpdated": "2022-06-07T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/votesmotion?year=2022",
+                "dateCreated": null,
+                "dateUpdated": "2022-06-07T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "MSPs: Website addresses",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-04T23:16:11.81",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains a list of member websites.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/websites/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-04T23:16:11.81",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/websites/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-04T23:16:11.81",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Committee Meeting Contributions (Beta) 1999",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 1999",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=1999",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=1999",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Committee Meeting Contributions (Beta) 2000",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2000",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2000",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2000",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Committee Meeting Contributions (Beta) 2001",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2001",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2001",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2001",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Committee Meeting Contributions (Beta) 2002",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2002",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2002",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2002",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Committee Meeting Contributions (Beta) 2003",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2003",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2003",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2003",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Committee Meeting Contributions (Beta) 2004",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2004",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2004",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2004",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Committee Meeting Contributions (Beta) 2005",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2005",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2005",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2005",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Committee Meeting Contributions (Beta) 2006",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2006",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2006",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2006",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Committee Meeting Contributions (Beta) 2007",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2007",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2007",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2007",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Committee Meeting Contributions (Beta) 2008",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2008",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2008",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2008",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Committee Meeting Contributions (Beta) 2009",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2009",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2009",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2009",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Committee Meeting Contributions (Beta) 2010",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2010",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2010",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2010",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Committee Meeting Contributions (Beta) 2011",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2011",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2011",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2011",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Committee Meeting Contributions (Beta) 2012",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2012",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2012",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2012",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Committee Meeting Contributions (Beta) 2013",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2013",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2013",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2013",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Committee Meeting Contributions (Beta) 2014",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2014",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2014",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2014",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Committee Meeting Contributions (Beta) 2015",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2015",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2015",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2015",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Committee Meeting Contributions (Beta) 2016",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2016",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2016",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2016",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Committee Meeting Contributions (Beta) 2017",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2017",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2017",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2017",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Committee Meeting Contributions (Beta) 2018",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2022-06-07T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2018",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2018",
+                "dateCreated": null,
+                "dateUpdated": "2022-06-07T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2018",
+                "dateCreated": null,
+                "dateUpdated": "2022-06-07T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Committee Meeting Contributions (Beta) 2019",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2022-06-07T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2019",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2019",
+                "dateCreated": null,
+                "dateUpdated": "2022-06-07T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2019",
+                "dateCreated": null,
+                "dateUpdated": "2022-06-07T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Committee Meeting Contributions (Beta) 2020",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2022-06-07T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2020",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2020",
+                "dateCreated": null,
+                "dateUpdated": "2022-06-07T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2020",
+                "dateCreated": null,
+                "dateUpdated": "2022-06-07T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Committee Meeting Contributions (Beta) 2021",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2022-06-07T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2021",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2021",
+                "dateCreated": null,
+                "dateUpdated": "2022-06-07T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2021",
+                "dateCreated": null,
+                "dateUpdated": "2022-06-07T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Committee Meeting Contributions (Beta) 2022",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2022-06-07T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2022",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2022",
+                "dateCreated": null,
+                "dateUpdated": "2022-06-07T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orscommitteemeeting?year=2022",
+                "dateCreated": null,
+                "dateUpdated": "2022-06-07T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Plenary Meeting Contributions (Beta) 1999",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 1999",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=1999",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=1999",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Plenary Meeting Contributions (Beta) 2000",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2000",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2000",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2000",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Plenary Meeting Contributions (Beta) 2001",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2001",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2001",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2001",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Plenary Meeting Contributions (Beta) 2002",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2002",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2002",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2002",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Plenary Meeting Contributions (Beta) 2003",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2003",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2003",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2003",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Plenary Meeting Contributions (Beta) 2004",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2004",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2004",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2004",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Plenary Meeting Contributions (Beta) 2005",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2005",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2005",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2005",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Plenary Meeting Contributions (Beta) 2006",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2006",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2006",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2006",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Plenary Meeting Contributions (Beta) 2007",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2007",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2007",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2007",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Plenary Meeting Contributions (Beta) 2008",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2008",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2008",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2008",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Plenary Meeting Contributions (Beta) 2009",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2009",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2009",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2009",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Plenary Meeting Contributions (Beta) 2010",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2010",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2010",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2010",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Plenary Meeting Contributions (Beta) 2011",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2011",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2011",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2011",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Plenary Meeting Contributions (Beta) 2012",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2012",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2012",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2012",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Plenary Meeting Contributions (Beta) 2013",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2013",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2013",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2013",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Plenary Meeting Contributions (Beta) 2014",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2014",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2014",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2014",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Plenary Meeting Contributions (Beta) 2015",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2015",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2015",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2015",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Plenary Meeting Contributions (Beta) 2016",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2016",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2016",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2016",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Plenary Meeting Contributions (Beta) 2017",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2017-08-31T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2017",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2017",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2017",
+                "dateCreated": null,
+                "dateUpdated": "2017-08-31T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Plenary Meeting Contributions (Beta) 2018",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2022-06-07T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2018",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2018",
+                "dateCreated": null,
+                "dateUpdated": "2022-06-07T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2018",
+                "dateCreated": null,
+                "dateUpdated": "2022-06-07T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Plenary Meeting Contributions (Beta) 2019",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2022-06-07T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2019",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2019",
+                "dateCreated": null,
+                "dateUpdated": "2022-06-07T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2019",
+                "dateCreated": null,
+                "dateUpdated": "2022-06-07T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Plenary Meeting Contributions (Beta) 2020",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2022-06-07T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2020",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2020",
+                "dateCreated": null,
+                "dateUpdated": "2022-06-07T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2020",
+                "dateCreated": null,
+                "dateUpdated": "2022-06-07T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Plenary Meeting Contributions (Beta) 2021",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2022-06-07T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2021",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2021",
+                "dateCreated": null,
+                "dateUpdated": "2022-06-07T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2021",
+                "dateCreated": null,
+                "dateUpdated": "2022-06-07T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Official Report Plenary Meeting Contributions (Beta) 2022",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2022-06-07T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains information and text from the Official Report, which is the substantially verbatim report of all public parliamentary proceedings taken during 2022",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2022",
+                "dateCreated": null,
+                "dateUpdated": "2022-06-07T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/orsplenarymeeting?year=2022",
+                "dateCreated": null,
+                "dateUpdated": "2022-06-07T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Parties: Current and previous",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-04T23:15:02.07",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains a list of Parties. ",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/parties/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-04T23:15:02.07",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/parties/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-04T23:15:02.07",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Parties: Current and previous roles held by Members",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-04T23:14:51.633",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains all the party roles for each party.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/partyroles/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-04T23:14:51.633",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/partyroles/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-04T23:14:51.633",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Parties: Roles available in parties",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-16T23:14:22.807",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains the role a member can have in their current political party. ",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/memberpartyroles/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:14:22.807",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/memberpartyroles/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:14:22.807",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Petitions: Categories",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2021-03-29T23:19:15.463",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains a list of subject categories assigned to petitions.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/petitionsubjectcategories/xml",
+                "dateCreated": null,
+                "dateUpdated": "2021-03-29T23:19:15.463",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/petitionsubjectcategories/json",
+                "dateCreated": null,
+                "dateUpdated": "2021-03-29T23:19:15.463",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Petitions: Countries signees come from",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2021-03-29T23:16:35.137",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains a list of countries of residence of  petition signees.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/petitioncountries/xml",
+                "dateCreated": null,
+                "dateUpdated": "2021-03-29T23:16:35.137",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/petitioncountries/json",
+                "dateCreated": null,
+                "dateUpdated": "2021-03-29T23:16:35.137",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Petitions: Current and previous",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2021-03-29T23:19:27.28",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains a  list of submitted petitions.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/petitions/xml",
+                "dateCreated": null,
+                "dateUpdated": "2021-03-29T23:19:27.28",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/petitions/json",
+                "dateCreated": null,
+                "dateUpdated": "2021-03-29T23:19:27.28",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Petitions: Discussions",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2021-03-29T23:17:13.3",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains a list of petition discussions.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/petitiondiscussions/xml",
+                "dateCreated": null,
+                "dateUpdated": "2021-03-29T23:17:13.3",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/petitiondiscussions/json",
+                "dateCreated": null,
+                "dateUpdated": "2021-03-29T23:17:13.3",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Petitions: Petitioners",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2021-03-29T23:17:57.58",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains a list of petition signatories.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/petitionsignatures/xml",
+                "dateCreated": null,
+                "dateUpdated": "2021-03-29T23:17:57.58",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/petitionsignatures/json",
+                "dateCreated": null,
+                "dateUpdated": "2021-03-29T23:17:57.58",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Petitions: Petitions submitted on behalf of organisations",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2021-03-29T23:47:09.347",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains a list of petition onbehalfofs.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/petitiononbehalfofs/xml",
+                "dateCreated": null,
+                "dateUpdated": "2021-03-29T23:47:09.347",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/petitiononbehalfofs/json",
+                "dateCreated": null,
+                "dateUpdated": "2021-03-29T23:47:09.347",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Petitions: Statuses",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2021-03-29T23:19:05.14",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains a list of statuses for all petitions.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/petitionstatuses/xml",
+                "dateCreated": null,
+                "dateUpdated": "2021-03-29T23:19:05.14",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/petitionstatuses/json",
+                "dateCreated": null,
+                "dateUpdated": "2021-03-29T23:19:05.14",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Planned Chamber Business",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-08-16T23:27:53.467",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains Motions lodged by the Parliamentary Bureau that sets out all proposed Chamber business a week in advance of the business taking place, and all motions to revise planned Chamber business at shorter notice.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/MotionsQuestionsAnswersMotionsBusiness?motionfilter=programme",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:27:53.467",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/MotionsQuestionsAnswersMotionsBusiness?motionfilter=programme",
+                "dateCreated": null,
+                "dateUpdated": "2023-08-16T23:27:53.467",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Research: External",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2015-07-24T00:00:00",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This datatset contains a list of external researches that have been commissioned for the Scottish Parliament.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/externalresearches/xml",
+                "dateCreated": null,
+                "dateUpdated": "2015-07-24T00:00:00",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/externalresearches/json",
+                "dateCreated": null,
+                "dateUpdated": "2015-07-24T00:00:00",
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "Sessions: Dates of Parliamentary sessions",
+        "owner": "Scottish Parliament",
+        "pageURL": "https://data.parliament.scot/#/datasets",
+        "dateCreated": null,
+        "dateUpdated": "2023-03-30T23:15:31.547",
+        "licence": "Scottish Parliament Copyright Policy",
+        "description": "This dataset contains a list of parliamentary sessions and their dates.",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "XML",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "XML",
+                "assetUrl": "https://data.parliament.scot/api/sessions/xml",
+                "dateCreated": null,
+                "dateUpdated": "2023-03-30T23:15:31.547",
+                "numRecords": null
+            },
+            {
+                "fileName": "JSON",
+                "fileSize": null,
+                "fileSizeUnit": null,
+                "fileType": "JSON",
+                "assetUrl": "https://data.parliament.scot/api/sessions/json",
+                "dateCreated": null,
+                "dateUpdated": "2023-03-30T23:15:31.547",
+                "numRecords": null
+            }
+        ]
+    }
+]

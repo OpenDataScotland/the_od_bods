@@ -2,13 +2,14 @@
 import pandas as pd
 import os
 import datetime as dt
-import regex as re
+import re
 import json
 
 
 def main():
     ### Loading data
 
+    # region CKAN
     ### From ckan output
     source_ckan = pd.DataFrame()
     folder = "data/ckan/"
@@ -27,7 +28,9 @@ def main():
                     ]
                 )
     source_ckan["Source"] = "ckan API"
+    # endregion
 
+    # region statistics.gov.scot
     ### From scotgov csv
     source_scotgov = pd.read_csv("data/scotgov-datasets-sparkql.csv")
     source_scotgov = source_scotgov.rename(
@@ -43,29 +46,38 @@ def main():
         }
     )
     source_scotgov["Source"] = "sparql"
-    print("DateUpdated " + source_scotgov['DateUpdated'])
-    print("DateCreated " + source_scotgov['DateCreated'])
+    print("DateUpdated " + source_scotgov["DateUpdated"])
+    print("DateCreated " + source_scotgov["DateCreated"])
     try:
-        source_scotgov['DateUpdated'] = pd.to_datetime(source_scotgov['DateUpdated'], utc=True).dt.tz_localize(None)
+        source_scotgov["DateUpdated"] = pd.to_datetime(
+            source_scotgov["DateUpdated"], utc=True
+        ).dt.tz_localize(None)
     except:
         try:
-            source_scotgov['DateUpdated'] = pd.to_datetime(source_scotgov['DateUpdated'], utc=True, format="ISO8601").dt.tz_localize(None)
+            source_scotgov["DateUpdated"] = pd.to_datetime(
+                source_scotgov["DateUpdated"], utc=True, format="ISO8601"
+            ).dt.tz_localize(None)
         except:
             # If we get to this stage, give up and just blank the date
-            print("WARNING: Failed to parse date - " + source_scotgov['DateUpdated'])
-            source_scotgov['DateUpdated'] = None
+            print("WARNING: Failed to parse date - " + source_scotgov["DateUpdated"])
+            source_scotgov["DateUpdated"] = None
     try:
-        source_scotgov['DateCreated'] = pd.to_datetime(source_scotgov['DateCreated'], utc=True).dt.tz_localize(None)
+        source_scotgov["DateCreated"] = pd.to_datetime(
+            source_scotgov["DateCreated"], utc=True
+        ).dt.tz_localize(None)
     except:
         try:
-            source_scotgov['DateCreated'] = pd.to_datetime(source_scotgov['DateCreated'], utc=True, format="ISO8601").dt.tz_localize(None)
+            source_scotgov["DateCreated"] = pd.to_datetime(
+                source_scotgov["DateCreated"], utc=True, format="ISO8601"
+            ).dt.tz_localize(None)
         except:
             # If we get to this stage, give up and just blank the date
-            print("WARNING: Failed to parse date - " + source_scotgov['DateCreated'])
-            source_scotgov['DateCreated'] = None
+            print("WARNING: Failed to parse date - " + source_scotgov["DateCreated"])
+            source_scotgov["DateCreated"] = None
+    # endregion
 
-
-    ### From arcgis api  
+    # region ArcGIS
+    ### From arcgis api
     source_arcgis = pd.DataFrame()
     folder = "data/arcgis/"
     for dirname, _, filenames in os.walk(folder):
@@ -81,7 +93,9 @@ def main():
                     ]
                 )
     source_arcgis["Source"] = "arcgis API"
+    # endregion
 
+    # region uSmart
     ### From usmart api
     source_usmart = pd.DataFrame()
     folder = "data/USMART/"
@@ -100,7 +114,9 @@ def main():
     source_usmart["Source"] = "USMART API"
     source_usmart["DateUpdated"] = source_usmart["DateUpdated"].dt.tz_localize(None)
     source_usmart["DateCreated"] = source_usmart["DateCreated"].dt.tz_localize(None)
+    # endregion
 
+    # region DCAT
     ## From DCAT
     source_dcat = pd.DataFrame()
     folder = "data/dcat/"
@@ -119,7 +135,9 @@ def main():
     source_dcat["DateUpdated"] = source_dcat["DateUpdated"].dt.tz_localize(None)
     # source_dcat["DateCreated"] = source_dcat["DateCreated"].dt.tz_localize(None) ### DateCreated currently not picked up in dcat so all are NULL
     source_dcat["Source"] = "DCAT feed"
+    # endregion
 
+    # region Web scrapers
     ## From web scraped results
     source_scraped = pd.DataFrame()
     folder = "data/scraped-results/"
@@ -135,8 +153,25 @@ def main():
                         ),
                     ]
                 )
-    source_scraped["Source"] = "Web Scraped"
 
+    # From Scottish Parliament
+    path = "data/bespoke_ScottishParliament/Scottish Parliament.json"
+
+    scottish_parliament_scraped = pd.read_json(path)
+
+    print(source_scraped.dtypes)
+
+    for index, row in scottish_parliament_scraped.iterrows():
+        resources = pd.json_normalize(row["resources"])
+        for resource_index, resource_row in resources.iterrows():
+            source_scraped = pd.concat(
+                [source_scraped, pd.DataFrame.from_records([{"Title": row["title"], "Owner": None, "PageURL": None, "AssetURL": None}])]
+            )
+
+    source_scraped["Source"] = "Web Scraped"
+    # endregion
+
+    exit()
     ### Combine all data into single table
     data = pd.concat(
         [
@@ -197,7 +232,7 @@ def clean_data(dataframe):
         "City of Edinburgh Council Mapping": "City of Edinburgh Council",
         "Cairngorms National Park": "Cairngorms National Park Authority",
         "Loch Lomond and The Trossachs National Park": "Loch Lomond and The Trossachs National Park Authority",
-        "Drinking Water Quality Regulator (DWQR)": "Drinking Water Quality Regulator"
+        "Drinking Water Quality Regulator (DWQR)": "Drinking Water Quality Regulator",
     }
     data["Owner"] = data["Owner"].replace(owner_renames)
     ### Format dates as datetime type
@@ -233,7 +268,7 @@ def clean_data(dataframe):
     data["OriginalTags"] = data["OriginalTags"].apply(tidy_categories)
     data["ManualTags"] = data["ManualTags"].apply(tidy_categories)
 
-    ### Creating dataset categories for ODS   
+    ### Creating dataset categories for ODS
     def remove_trailing_s(string):
         """Remove trailing 's' from all words in string to remove requirement to search for pural categories in
 
@@ -246,8 +281,8 @@ def clean_data(dataframe):
         s = []
         words = string.split()
         for word in words:
-            s.append(re.sub('[Ss]$', "", word))
-        sentence = ' '.join(s)
+            s.append(re.sub("[Ss]$", "", word))
+        sentence = " ".join(s)
         return sentence
 
     def find_keyword(str_tofind, str_findin):
