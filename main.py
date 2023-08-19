@@ -10,8 +10,7 @@ import east_ayrshire_scraper
 import moray_council_scraper
 import nls_scraper
 import sqa_scraper
-import merge_data
-import export2jkan
+import scottish_parliament
 
 DATASET_PATHS = [
     "data/arcgis/",
@@ -19,6 +18,7 @@ DATASET_PATHS = [
     "data/dcat/",
     "data/scraped-results/",
     "data/USMART/",
+    "data/bespoke_ScottishParliament/"
 ]
 FILES_TO_DELETE = [
     "data/merged_output.json",
@@ -69,6 +69,9 @@ nls_scraper.main()
 
 logger.info("Running SQA static scraper")
 sqa_scraper.main()
+
+logger.info("Running Scottish Parliament scraper")
+scottish_parliament.processor.process("json")
 
 # logger.info("Merge data")
 # merge_data.main()
