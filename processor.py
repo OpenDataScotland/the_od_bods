@@ -1,3 +1,4 @@
+from retry import retry
 import urllib.error
 from urllib import request, parse
 from urllib.error import HTTPError, URLError
@@ -38,9 +39,15 @@ class Processor:
             for r in csv_file:
                 print("r", r)
 
-    def get_json(self, url):
+    @retry(HTTPError, tries=4, delay=3, backoff=2)
+    def urlopen_with_retry(self, req):
+        return request.urlopen(req)
+
+    def get_json(self, url, retry = True):
         req = request.Request(url)
         try:
+            if retry:
+                return json.loads(self.urlopen_with_retry(req).read().decode())
             return json.loads(request.urlopen(req).read().decode())
         except HTTPError as err1:
             print(url, "cannot be accessed. The URL returned:", err1.code, err1.reason)
@@ -107,16 +114,18 @@ class Processor:
                     r[-1] = r[-1].replace("\n", " ")
                 w.writerow(r)
 
-    def write_json(self, fname, prepped):        
+    def write_json(self, fname, prepped):
         with open(fname, "w", encoding="utf8") as json_file:
             json.dump(prepped, json_file, indent=4)
 
     def get_datasets(self, owner, url, fname):
         print("Override this method")
 
-    def process(self, file_type = "csv"):
+    def process(self, file_type="csv"):
         self.get_urls()
 
         for name, url in self.urls.items():
             print(name)
-            self.get_datasets(name, url, os.path.join("data", self.type, f"{name}.{file_type}"))
+            self.get_datasets(
+                name, url, os.path.join("data", self.type, f"{name}.{file_type}")
+            )

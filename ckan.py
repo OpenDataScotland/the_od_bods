@@ -1,9 +1,41 @@
+import requests
+import urllib.parse
+from bs4 import BeautifulSoup
+from enum import Enum
 from processor import Processor
 
+STATUS_BASE_URL = "api/3/action/status_show"
+PACKAGE_LIST_URL = "api/3/action/package_list"
+PACKAGE_SHOW_URL = "api/3/action/package_show?id="
 
-class ProcessorCKAN(Processor):
+
+class KAN_TYPE(Enum):
+    """Enum for portal type"""
+    CKAN = 1
+    DKAN = 2
+
+
+def get_dkan_license(url):
+    """Scrapes license from dataset page as DKAN API does not return license info"""
+    page = requests.get(url)
+    soup = BeautifulSoup(page.content, "html.parser")
+
+    license_element = soup.select_one(".field-name-field-license")
+
+    return license_element.text or None
+
+def sanitise_resource_url(url):
+    """Sometimes DKAN's resource URLs wrap URLs with HTML. This method detects it and strips it out."""
+    if url.startswith("<"):        
+        soup = BeautifulSoup(url, "html.parser")
+        return soup.get_text()
+
+    return url
+
+
+class ProcessorCKAN_DKAN(Processor):
     def __init__(self):
-        super().__init__(type="ckan")
+        super().__init__(type="ckan_or_dkan")
 
     def get_datasets(self, portal_owner, start_url, fname):
         print(f"Processing {start_url}")
@@ -14,22 +46,31 @@ class ProcessorCKAN(Processor):
         if url[-1] != "/":
             url = url + "/"
 
-        datasets = processor.get_json(f"{url}api/3/action/package_list")
-        if datasets != "NULL":
+        # Check for portal type as DKAN has a slightly different api schema
+        portal_info = processor.get_json(f"{url}{STATUS_BASE_URL}", False)
 
+        portal_type = KAN_TYPE.DKAN if portal_info == "NULL" else KAN_TYPE.CKAN
+
+        datasets = processor.get_json(f"{url}{PACKAGE_LIST_URL}")
+        if datasets != "NULL":
             print(f"Found {len(datasets['result'])} datasets")
 
             prepped = []
             for dataset_name in datasets["result"]:
                 dataset_metadata = processor.get_json(
-                    f"{url}/api/3/action/package_show?id={dataset_name}"
+                    f"{url}{PACKAGE_SHOW_URL}{urllib.parse.quote(dataset_name)}"
                 )
 
                 print(
                     f"Got {dataset_name} with success status: {dataset_metadata['success']}"
                 )
 
-                dataset_metadata = dataset_metadata["result"]
+                # DKAN returns an array when requesting a single package, CKAN returns just a single object
+                dataset_metadata = (
+                    dataset_metadata["result"]
+                    if portal_type == KAN_TYPE.CKAN
+                    else dataset_metadata["result"][0]
+                )
 
                 ### gets provided owner name if exists, else uses the owner of the portal.
                 if (
@@ -44,15 +85,33 @@ class ProcessorCKAN(Processor):
                 if portal_owner == "Public Health Scotland":
                     owner = portal_owner
 
-                for resource in dataset_metadata["resources"]:
-                    tags = list(map(lambda x: x["name"], dataset_metadata["tags"]))
+                # DKAN (At least in the case of Marine Scotland) doesn't expose license in API returns
+                dataset_license = (
+                    dataset_metadata.get("license_title","")
+                    if portal_type == KAN_TYPE.CKAN
+                    else get_dkan_license(dataset_metadata["url"])
+                )
+
+                for resource in dataset_metadata.get("resources", []):
+                    tags = list(
+                        map(lambda x: x["name"], dataset_metadata.get("tags", []))
+                    )
 
                     file_size = 0
+                    file_size_unit = "B"
 
                     if "archiver" in resource and "size" in resource["archiver"]:
                         file_size = resource["archiver"]["size"]
                     elif "size" in resource:
-                        file_size = resource["size"]
+                        if isinstance(resource["size"], int) or isinstance(resource["size"], float):
+                            file_size = resource["size"]
+                        elif resource["size"] is not None and resource["size"].isnumeric():
+                            file_size = resource["size"]
+                        # Marine Scotland store file sizes as a string with units e.g. "99.99 MB"
+                        elif resource["size"] is not None and len(resource["size"]) > 0:
+                            split_file_size = resource["size"].split()
+                            file_size = float(split_file_size[0])
+                            file_size_unit = split_file_size[1].replace("bytes", "B")
 
                     file_type = ""
 
@@ -67,6 +126,10 @@ class ProcessorCKAN(Processor):
                     elif "is_wfs" in resource and resource["is_wfs"] == "yes":
                         file_type = "WFS"
 
+                    # Some Marine Scotland datasets have "data" as the file type, which is ambiguous and not helpful
+                    if file_type == "data":
+                        file_type = None                    
+
                     description = dataset_metadata["notes"]
 
                     # TEMP FIX: PHS, Dundee and Stirling have some unicode chars that break the CSV. Long term we will sort this by using JSON
@@ -79,22 +142,24 @@ class ProcessorCKAN(Processor):
                             dataset_metadata["notes"].encode("unicode_escape").decode()
                         )
 
+                    resource_url = sanitise_resource_url(resource["url"])
+
                     prepped.append(
                         [
                             dataset_metadata["title"],  # Title
                             owner,  # Owner
                             f"{url}dataset/{dataset_name}",  # PageURL
-                            resource["url"],  # AssetURL
+                            resource_url,  # AssetURL
                             resource["name"],  # FileName
                             dataset_metadata["metadata_created"],  # DateCreated
                             dataset_metadata["metadata_modified"],  # DateUpdated
                             file_size,  # FileSize
-                            "B",  # FileSizeUnit
+                            file_size_unit,  # FileSizeUnit
                             file_type,  # FileType
                             None,  # NumRecords
                             ";".join(tags),  # OriginalTags
                             None,  # ManualTags
-                            dataset_metadata["license_title"],  # License
+                            dataset_license,  # License
                             description,  # Description
                         ]
                     )
@@ -102,7 +167,7 @@ class ProcessorCKAN(Processor):
                 processor.write_csv(fname, prepped)
 
 
-processor = ProcessorCKAN()
+processor = ProcessorCKAN_DKAN()
 
 if __name__ == "__main__":
     processor.process()
