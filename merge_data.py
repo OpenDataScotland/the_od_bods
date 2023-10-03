@@ -244,6 +244,7 @@ def clean_data(dataframe):
         "Cairngorms National Park": "Cairngorms National Park Authority",
         "Loch Lomond and The Trossachs National Park": "Loch Lomond and The Trossachs National Park Authority",
         "Drinking Water Quality Regulator (DWQR)": "Drinking Water Quality Regulator",
+        "DCC Public GIS Portal": "Dundee City Council",
     }
     data["Owner"] = data["Owner"].replace(owner_renames)
     ### Format dates as datetime type

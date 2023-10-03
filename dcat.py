@@ -96,7 +96,7 @@ def parse_license(license_info):
     # Strip HTML
     soup = BeautifulSoup(license_info)
     stripped_license_info = (
-        soup.get_text().replace("\t", " ").replace("\r", " ").replace("\n", " ")
+        soup.get_text().replace("\t", " ").replace("\r", " ").replace("\n", " ").replace('\xa0', ' ')
     )
 
     if stripped_license_info in (None, ""):
@@ -117,6 +117,8 @@ def parse_license(license_info):
             "We, Stirling Council, publish our mapping datasets under the Open Government Licence",
             "publish our mapping datasets under the Open Government Licence",
             "We use the Open Government Licence",
+            "licensed under the Open Government Licence",            
+            "covered by Open Government Licence",
         )
     ):
         return "OGL3"
