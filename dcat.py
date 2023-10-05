@@ -119,6 +119,8 @@ def parse_license(license_info):
             "We use the Open Government Licence",
             "licensed under the Open Government Licence",            
             "covered by Open Government Licence",
+            "See Licence at https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+            "See Open Government Licence at https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
         )
     ):
         return "OGL3"
