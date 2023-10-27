@@ -72,7 +72,7 @@ def fetch_available_years():
         "Related",
         "Derived Grades 2003",
     ]
-    [dict_of_links.pop(d) for d in keys_to_skip]
+    [dict_of_links.pop(d,None) for d in keys_to_skip]
 
     return dict_of_links
 
