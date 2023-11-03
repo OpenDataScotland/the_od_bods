@@ -173,10 +173,24 @@ def main():
             # TEMP FIX: Need to do this mapping until we modify the merged_output.json schema to support nesting resources inside each dataset entry
             source_scraped = pd.concat(
                 [source_scraped, pd.DataFrame.from_records([{"Title": row["title"], "Owner": row["owner"], "PageURL": row["pageURL"], "AssetURL": resource_row["assetUrl"], "DateCreated": row["dateCreated"], "DateUpdated": row["dateUpdated"], "FileSize": resource_row["fileSize"], "FileType": resource_row["fileType"], "NumRecords": resource_row["numRecords"], "OriginalTags": row["tags"], "ManualTags" : row["tags"], "License": row["licence"], "Description": row["description"], "FileName": resource_row["fileName"]}])]
+            )    
+    # endregion
+
+    # From Stagecoach
+    print("\tMerging Stagecoach...")
+    path = "data/bespoke_Stagecoach/Stagecoach.json"
+    stagecoach_scraped = pd.read_json(path, convert_dates=["dateCreated", "dateUpdated"])
+
+    for index, row in stagecoach_scraped.iterrows():      
+        resources = pd.json_normalize(row["resources"])
+        for resource_index, resource_row in resources.iterrows():
+            # TEMP FIX: Need to do this mapping until we modify the merged_output.json schema to support nesting resources inside each dataset entry
+            source_scraped = pd.concat(
+                [source_scraped, pd.DataFrame.from_records([{"Title": row["title"], "Owner": row["owner"], "PageURL": row["pageURL"], "AssetURL": resource_row["assetUrl"], "DateCreated": row["dateCreated"], "DateUpdated": row["dateUpdated"], "FileSize": resource_row["fileSize"], "FileType": resource_row["fileType"], "NumRecords": resource_row["numRecords"], "OriginalTags": row["tags"], "ManualTags" : row["tags"], "License": row["licence"], "Description": row["description"], "FileName": resource_row["fileName"]}])]
             )
+    # endregion
 
     source_scraped["Source"] = "Web Scraped"
-    # endregion
   
     ### Combine all data into single table
     print("Concatenating all")
