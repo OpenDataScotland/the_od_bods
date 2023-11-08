@@ -5,7 +5,7 @@ import csv
 import json
 import os
 
-
+# TODO: Move this to the classes folder at some point
 class Processor:
     USER_AGENT = (
         "Open Data Scotland Scraper - https://github.com/OpenDataScotland/the_od_bods"
@@ -165,7 +165,7 @@ class Processor:
 
     def write_json(self, fname, prepped):
         with open(fname, "w", encoding="utf8") as json_file:
-            json.dump(prepped, json_file, indent=4)
+            json.dump(prepped, json_file, indent=4, default=vars)
 
     def get_datasets(self, owner, url, fname):
         print("Override this method")

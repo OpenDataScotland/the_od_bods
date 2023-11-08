@@ -1,5 +1,7 @@
 from bs4 import BeautifulSoup
 from processor import Processor
+from classes.dataset import Dataset
+from classes.resource import Resource
 
 
 class ProcessorStagecoach(Processor):
@@ -95,33 +97,33 @@ class ProcessorStagecoach(Processor):
             ]
 
             for button in buttons:
-                asset_url = button["href"]                                
+                asset_url = button["href"]
                 file_size = processor.get_http_content_length(asset_url)
                 dataset_resources.append(
-                    {
-                        "fileName": button.text,
-                        "fileSize": file_size,
-                        "fileSizeUnit": "B",
-                        "fileType": "ZIP",
-                        "assetUrl": asset_url,
-                        "dateCreated": dataset_date_created,
-                        "dateUpdated": dataset_date_updated,
-                        "numRecords": None,
-                    }
+                    Resource(
+                        button.text,
+                        "ZIP",
+                        asset_url,
+                        dataset_date_created,
+                        dataset_date_updated,
+                        "B",
+                        file_size,
+                        None,
+                    )
                 )
 
             prepped_datasets.append(
-                {
-                    "title": dataset_title,
-                    "owner": dataset_owner,
-                    "pageURL": dataset_page_url,
-                    "dateCreated": dataset_date_created,
-                    "dateUpdated": dataset_date_updated,
-                    "licence": dataset_licence,
-                    "description": dataset_description,
-                    "tags": dataset_tags,
-                    "resources": dataset_resources,
-                }
+                Dataset(
+                    dataset_title,
+                    dataset_owner,
+                    dataset_page_url,
+                    dataset_date_created,
+                    dataset_date_updated,
+                    dataset_licence,
+                    dataset_description,
+                    dataset_tags,
+                    dataset_resources
+                )
             )
 
         processor.write_json(fname, prepped_datasets)
