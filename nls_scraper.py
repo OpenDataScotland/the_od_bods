@@ -187,6 +187,7 @@ def fetch_file_size(page: BeautifulSoup) -> list:
     return list_of_filesizes
 
 
+# TODO: This doesn't accurately get the number of records and needs to be fixed
 def fetch_num_recs(page: BeautifulSoup) -> list:
     """
     Fetches the number of files of each dataset on that page.
@@ -367,7 +368,8 @@ def main():
             soup = BeautifulSoup(req.content, "html.parser")
             list_of_asset_urls = fetch_asset_urls(soup)
             fetched_file_size = fetch_file_size(soup)
-            fetched_num_recs = fetch_num_recs(soup)
+            # TODO: This doesn't accurately get the number of records and needs to be fixed
+            # fetched_num_recs = fetch_num_recs(soup)
             counter = 0
             nls_licence = fetch_licences(soup)
             # print("nls_licence:", nls_licence)
@@ -395,7 +397,7 @@ def main():
                 ### fetch_data_types is more accurate & useful, but file extension is consistent with other listings
                 data_type = asset_url.rsplit(".", 1)[1]  # fetch_data_types(soup)
                 # print("data_type:", data_type)
-                num_recs = fetched_num_recs[counter]
+                num_recs = None
                 # print(("num_recs:", num_recs))
                 if len(indiv_descriptions) > 1:
                     description = (
