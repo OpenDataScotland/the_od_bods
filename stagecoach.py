@@ -122,7 +122,7 @@ class ProcessorStagecoach(Processor):
                     dataset_licence,
                     dataset_description,
                     dataset_tags,
-                    dataset_resources
+                    dataset_resources,
                 )
             )
 
