@@ -1,25 +1,6 @@
 import json, dataclasses
 from dataclasses import dataclass
 
-EXPECTED_COLUMNS = [
-    "Title",
-    "Owner",
-    "PageURL",
-    "AssetURL",
-    "FileName",
-    "DateCreated",
-    "DateUpdated",
-    "FileSize",
-    "FileSizeUnit",
-    "FileType",
-    "NumRecords",
-    "OriginalTags",
-    "ManualTags",
-    "License",
-    "Description",
-]
-
-
 @dataclass
 class jsonRow:
     Title: str = ""
