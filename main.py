@@ -55,8 +55,8 @@ sparql_statistics.processor.process()
 logger.info("Running DCAT scraper")
 dcat.processor.process()
 
-logger.info("Running Aberdeenshire Council static scraper")
-aberdeenshire_council_scraper.main()
+#logger.info("Running Aberdeenshire Council static scraper")
+#aberdeenshire_council_scraper.main()
 
 logger.info("Running East Ayrshire static scraper")
 east_ayrshire_scraper.main()
