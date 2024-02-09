@@ -1,5 +1,5 @@
 from processor import Processor
-
+import time
 
 class ProcessorCKAN(Processor):
     def __init__(self):
@@ -21,6 +21,9 @@ class ProcessorCKAN(Processor):
 
             prepped = []
             for dataset_name in datasets["result"]:
+
+                # Rate limit us a little to avoid abusing the API
+                time.sleep(1)
                 dataset_metadata = processor.get_json(
                     f"{url}/api/3/action/package_show?id={dataset_name}"
                 )
