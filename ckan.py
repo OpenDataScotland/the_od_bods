@@ -28,9 +28,13 @@ class ProcessorCKAN(Processor):
                     f"{url}/api/3/action/package_show?id={dataset_name}"
                 )
 
-                print(
-                    f"Got {dataset_name} with success status: {dataset_metadata['success']}"
-                )
+                try:
+                    print(
+                        f"Got {dataset_name} with success status: {dataset_metadata['success']}"
+                    )
+                except:
+                    print(f"Failed to get metadata for {dataset_name}. Skipping...")
+                    continue                
 
                 dataset_metadata = dataset_metadata["result"]
 
