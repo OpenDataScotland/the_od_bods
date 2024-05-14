@@ -6,8 +6,10 @@ from urllib.request import Request, urlopen
 from urllib.error import URLError, HTTPError
 import csv
 import os
+import time
 
 GITHUB_REPO = "OpenDataScotland/the_od_bods"
+
 
 def handle_error(row):
     issue_body = "**Broken URL:** [#{}]({})\n\n".format(
@@ -40,11 +42,10 @@ def handle_error(row):
 
         for issue in open_issues:
             if issue.title == issue_title:
-                issue.create_comment(
-                    "Automatically closed due to URL now working."
-                )
+                issue.create_comment("Automatically closed due to URL now working.")
                 issue.edit(state="closed")
                 break
+
 
 github_access_token = os.environ.get("GITHUB_ACCESS_TOKEN")
 github_user_assignee = os.environ.get("GITHUB_USER_ASSIGNEE")
@@ -61,7 +62,7 @@ try:
     git = Github(github_access_token)
     repo = git.get_repo(GITHUB_REPO)
 
-    # Get the repo's 'broken link' issue label    
+    # Get the repo's 'broken link' issue label
     issue_label = repo.get_label("broken link")
 
     open_issues = repo.get_issues(state="open", labels=[issue_label])
@@ -70,16 +71,23 @@ try:
         csv_file = csv.DictReader(file)
         for row in csv_file:
 
-            req = Request(row["Source URL"])
+            url = row["Source URL"]
+            print(f"Polling {url}")
+
+            req = Request(url)
             try:
                 response = urlopen(req)
                 print(f"Got status code {response.getcode()} for {req.full_url}")
-            except (HTTPError) as e:
+            except HTTPError as e:
                 print(f"Got status code {e.code} for {req.full_url}")
                 handle_error(row)
-            except (URLError) as e:
+            except URLError as e:
                 print(f"Got status code {e.reason} for {req.full_url}")
                 handle_error(row)
+
+            # Add small wait so we're not hammering similar hosts
+            time.sleep(5)
+
 
 except GithubException as err:
     print(err)
