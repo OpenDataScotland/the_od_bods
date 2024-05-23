@@ -84,6 +84,9 @@ try:
             except URLError as e:
                 print(f"Got status code {e.reason} for {req.full_url}")
                 handle_error(row)
+            except ConnectionResetError as e:
+                print(f"Got ConnectionResetError {e.errno } for {req.full_url}")
+                handle_error(row)
 
             # Add small wait so we're not hammering similar hosts
             time.sleep(5)
