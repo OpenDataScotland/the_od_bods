@@ -7,11 +7,14 @@ from urllib.error import URLError, HTTPError
 import csv
 import os
 import time
+import ssl
 
 GITHUB_REPO = "OpenDataScotland/the_od_bods"
 
 
 def handle_error(row):
+    print(f"HANDLING ERROR for {row['Name']}")
+    return
     issue_body = "**Broken URL:** [#{}]({})\n\n".format(
         row["Source URL"], row["Source URL"]
     )
@@ -75,8 +78,18 @@ try:
             print(f"Polling {url}")
 
             req = Request(url)
+
+            ctx = ssl.create_default_context()
+
+            # Ignoring SSL checks for Angus because their SSL cert is broken
+            # TODO: Contact Angus Council to notify them their SSL cert is broken. Remove this once fixed.
+            if row["Name"] == "Angus Council":
+                print("Ignoring SSL checks for this domain")
+                ctx.check_hostname = False
+                ctx.verify_mode = ssl.CERT_NONE
+
             try:
-                response = urlopen(req)
+                response = urlopen(req, context=ctx)
                 print(f"Got status code {response.getcode()} for {req.full_url}")
             except HTTPError as e:
                 print(f"Got status code {e.code} for {req.full_url}")
