@@ -13,8 +13,6 @@ GITHUB_REPO = "OpenDataScotland/the_od_bods"
 
 
 def handle_error(row):
-    print(f"HANDLING ERROR for {row['Name']}")
-    return
     issue_body = "**Broken URL:** [#{}]({})\n\n".format(
         row["Source URL"], row["Source URL"]
     )
