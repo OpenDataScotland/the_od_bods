@@ -13,7 +13,8 @@ There are 2 objectives for the OD_BODS project
 Read [the docs](https://docs.opendata.scot/) to find our more about the 12-month plan for the project, its history, the tools we are using, and how to contribute
 
 # Contact Us
-* on Twitter [@opendata_sco](https://twitter.com/opendata_sco) 
+* on Mastodon [@opendatascotland@mastodon.scot](https://mstdn.social/@opendatascotland@mastodon.scot)
+* on [LinkedIn](https://www.linkedin.com/company/opendatascotland)
 * on [Slack: Open Data Scotland](https://join.slack.com/t/opendatascotland/shared_invite/zt-yfcc64tg-xIF1cOxkWbKZqI8ZBPzkGg) #ods-website
 
 We are looking for contributors!
