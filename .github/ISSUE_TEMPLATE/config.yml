@@ -1,0 +1,14 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Mastodon
+    url: https://mstdn.social/@opendatascotland@mastodon.scot
+    about: Contact us on Mastodon if you have any questions.
+  - name: LinkedIn
+    url: https://www.linkedin.com/company/opendatascotland
+    about: Contact us on LinkedIn if you have any questions.
+  - name: Slack
+    url: https://join.slack.com/t/opendatascotland/shared_invite/zt-yfcc64tg-xIF1cOxkWbKZqI8ZBPzkGg
+    about: Join our Slack to discuss issues with the community.
+  - name: Documentation
+    url: https://docs.opendata.scot/
+    about: Check out our project documentation
