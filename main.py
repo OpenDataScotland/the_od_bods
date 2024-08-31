@@ -11,6 +11,7 @@ import moray_council_scraper
 import nls_scraper
 import sqa_scraper
 import scottish_parliament
+import crofting_commission
 
 DATASET_PATHS = [
     "data/arcgis/",
@@ -65,13 +66,16 @@ logger.info("Running Moray Council static scraper")
 moray_council_scraper.main()
 
 logger.info("Running National Library of Scotland static scraper")
-nls_scraper.main()
+# nls_scraper.main()
 
 logger.info("Running SQA static scraper")
-sqa_scraper.main()
+# sqa_scraper.main()
 
 logger.info("Running Scottish Parliament scraper")
 scottish_parliament.processor.process("json")
+
+logger.info("Running Crofting Commission scraper")
+crofting_commission.processor.process("json")
 
 # logger.info("Merge data")
 # merge_data.main()
