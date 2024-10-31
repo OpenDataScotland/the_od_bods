@@ -198,7 +198,9 @@
       "vandalism",
       "waste",
       "water-network",
-      "wildlife", "Biodiversity"
+      "wildlife",
+      "Biodiversity",
+      "crofting"
    ],
    "Health and Social Care": [
       "abortion",
@@ -316,7 +318,8 @@
       "open spaces",
       "parks",
       "recreation",
-      "woodland", "Community Centres"
+      "woodland",
+      "Community Centres"
    ],
    "Planning and Development": [
       "address",
@@ -384,7 +387,8 @@
       "sport",
       "sports activities",
       "sports clubs",
-      "sports facilities", "Community Centres"
+      "sports facilities",
+      "Community Centres"
    ],
    "Tourism": [
       "accomodation",

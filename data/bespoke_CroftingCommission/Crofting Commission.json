@@ -1,0 +1,90 @@
+[
+    {
+        "title": "List of Parishes",
+        "owner": "Crofting Commission",
+        "pageURL": "https://crofting.scotland.gov.uk/open-data",
+        "dateCreated": null,
+        "dateUpdated": null,
+        "licence": "OGL3",
+        "description": "Crofting Commission's list of Parishes",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "ROC_Parishes.csv",
+                "fileSize": 5379,
+                "fileSizeUnit": "B",
+                "fileType": "csv",
+                "assetUrl": "https://crofting.scotland.gov.uk/export/roc/parishes/",
+                "dateCreated": null,
+                "dateUpdated": null,
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "List of Holdings (Crofts)",
+        "owner": "Crofting Commission",
+        "pageURL": "https://crofting.scotland.gov.uk/open-data",
+        "dateCreated": null,
+        "dateUpdated": null,
+        "licence": "OGL3",
+        "description": "Crofting Commission's list of Holdings (Crofts)",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "ROC_Holdings.csv",
+                "fileSize": 3703341,
+                "fileSizeUnit": "B",
+                "fileType": "csv",
+                "assetUrl": "https://crofting.scotland.gov.uk/export/roc/holdings/",
+                "dateCreated": null,
+                "dateUpdated": null,
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "List of Grazings",
+        "owner": "Crofting Commission",
+        "pageURL": "https://crofting.scotland.gov.uk/open-data",
+        "dateCreated": null,
+        "dateUpdated": null,
+        "licence": "OGL3",
+        "description": "Crofting Commission's list of Grazings",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "ROC_Grazings.csv",
+                "fileSize": 169882,
+                "fileSizeUnit": "B",
+                "fileType": "csv",
+                "assetUrl": "https://crofting.scotland.gov.uk/export/roc/grazings/",
+                "dateCreated": null,
+                "dateUpdated": null,
+                "numRecords": null
+            }
+        ]
+    },
+    {
+        "title": "List of Individuals",
+        "owner": "Crofting Commission",
+        "pageURL": "https://crofting.scotland.gov.uk/open-data",
+        "dateCreated": null,
+        "dateUpdated": null,
+        "licence": "OGL3",
+        "description": "Crofting Commission's list of Individuals",
+        "tags": [],
+        "resources": [
+            {
+                "fileName": "ROC_Individuals.csv",
+                "fileSize": 1973309,
+                "fileSizeUnit": "B",
+                "fileType": "csv",
+                "assetUrl": "https://crofting.scotland.gov.uk/export/roc/individuals/",
+                "dateCreated": null,
+                "dateUpdated": null,
+                "numRecords": null
+            }
+        ]
+    }
+]
