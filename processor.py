@@ -6,6 +6,7 @@ import json
 import os
 import time
 from functools import wraps
+import ssl
 
 class Processor:
     # Type should be one of the following: 'dcat', 'arcgis', 'usmart'
@@ -74,7 +75,15 @@ class Processor:
 
     @retry(HTTPError, tries=3, delay=60, backoff=2)
     def urlopen_with_retry(self, req):
-        return request.urlopen(req)
+
+        # TEMP FIX: Handle Angus SSL errors
+        ctx = ssl.create_default_context()
+
+        if "opendata.angus.gov.uk" in req.host:
+            ctx.check_hostname = False
+            ctx.verify_mode = ssl.CERT_NONE
+
+        return request.urlopen(req, context=ctx)
 
     def get_urls(self):
         with open("sources.csv", "r", encoding="utf-8") as file:
