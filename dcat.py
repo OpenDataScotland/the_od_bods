@@ -35,8 +35,11 @@ class ProcessorDCAT(Processor):
                 title = dataset.get("dct:title", "")
                 owner = dataset.get("dct:publisher", "").get("foaf:name", "")
                 original_dataset_link = dataset.get("@id", "")
-                date_created = parser.parse(dataset.get("dct:issued", "")).date()
-                date_modified = parser.parse(dataset.get("dct:modified", "")).date()
+                date_created = parser.parse(dataset.get("dct:issued", "")).date()                
+                try:
+                    date_modified = parser.parse(dataset.get("dct:modified", "")).date()
+                except (ValueError, TypeError):
+                    date_modified = None
                 tags = ";".join(map(str, keywords))
 
                 metadata_url = dataset.get("dct:identifier", "")
