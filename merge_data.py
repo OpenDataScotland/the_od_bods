@@ -395,7 +395,8 @@ def clean_data(dataframe):
             "Other (Public Domain)": "Public Domain",
             "Public Domain": "Public Domain",
             "Public Sector End User Licence (Scotland)": "Public Sector End User Licence (Scotland)",
-            "Scottish Parliament Copyright Policy": "Scottish Parliament Copyright Policy"
+            "Scottish Parliament Copyright Policy": "Scottish Parliament Copyright Policy",
+            "Other (Not Open)" : "NOT_OPEN",
         }
 
         for key in known_licences.keys():
@@ -409,6 +410,9 @@ def clean_data(dataframe):
         return tidied_licence
 
     data["License"] = data["License"].apply(tidy_licence)
+
+    # Remove non-open licences (License column values of NOT_OPEN)
+    data = data[data["License"] != "NOT_OPEN"]
 
     def tidy_file_type(file_type):
         """Temporary data type conversion
