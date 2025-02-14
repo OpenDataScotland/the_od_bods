@@ -374,7 +374,10 @@ def main():
             # TODO: This doesn't accurately get the number of records and needs to be fixed
             # fetched_num_recs = fetch_num_recs(soup)
             counter = 0
-            nls_licence = fetch_licences(soup)
+            try:
+                nls_licence = fetch_licences(soup)
+            except Exception:
+                nls_licence = ""
             # print("nls_licence:", nls_licence)
             description = fetch_description(soup)
             indiv_descriptions = fetch_individual_descriptions(soup)[
