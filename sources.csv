@@ -16,6 +16,7 @@ Dundee City Council,https://data.dundeecity.gov.uk/api/feed/dcat-ap/2.0.1.json,d
 Perth and Kinross Council,https://data.pkc.gov.uk/api/feed/dcat-ap/2.0.1.json,dcat
 Stirling Council,https://data-stirling-council.hub.arcgis.com/api/feed/dcat-ap/2.0.1.json,dcat
 Angus Council,https://opendata.angus.gov.uk/,ckan
+Public Health Scotland,https://www.opendata.nhs.scot/,ckan
 Statistics Scottish Government, http://statistics.gov.scot/sparql,sparkql
 Spatial Hub, https://data.spatialhub.scot/,ckan
 Scottish Parliament,https://data.parliament.scot/,bespoke_ScottishParliament
