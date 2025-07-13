@@ -73,6 +73,11 @@ try:
         for row in csv_file:
 
             url = row["Source URL"]
+
+            if url == "http://statistics.gov.scot/sparql":
+                print("Ignoring stats.gov.scot")
+                continue
+
             print(f"Polling {url}")
 
             req = Request(url)
