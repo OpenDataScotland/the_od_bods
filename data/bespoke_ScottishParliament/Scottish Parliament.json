@@ -36,7 +36,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-14T00:00:39.263",
+        "dateUpdated": "2025-12-21T00:00:57.91",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "This dataset contains a list of Allowance transactions from individual members.",
         "tags": [],
@@ -48,7 +48,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/allowancesmembertransactions/xml",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-14T00:00:39.263",
+                "dateUpdated": "2025-12-21T00:00:57.91",
                 "numRecords": null
             },
             {
@@ -58,7 +58,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/allowancesmembertransactions/json",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-14T00:00:39.263",
+                "dateUpdated": "2025-12-21T00:00:57.91",
                 "numRecords": null
             }
         ]
@@ -68,7 +68,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-19T00:29:01.003",
+        "dateUpdated": "2025-12-22T00:28:59.747",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "This dataset contains Motions lodged by the Parliamentary Bureau proposing the timescales for the passage of a bill through Parliament including Stage 1 (evidence gathering in Committee), Stage 2 (amendments considered in committee), and Stage 3 (amendments in the Chamber and agreement of the final bill)",
         "tags": [],
@@ -80,7 +80,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/MotionsQuestionsAnswersMotionsBusiness?motionfilter=consideration",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:29:01.003",
+                "dateUpdated": "2025-12-22T00:28:59.747",
                 "numRecords": null
             },
             {
@@ -90,7 +90,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/MotionsQuestionsAnswersMotionsBusiness?motionfilter=consideration",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:29:01.003",
+                "dateUpdated": "2025-12-22T00:28:59.747",
                 "numRecords": null
             }
         ]
@@ -100,7 +100,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-19T00:10:42.41",
+        "dateUpdated": "2025-12-22T00:10:42.357",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "This dataset contains a list of stages that a bill has been in.",
         "tags": [],
@@ -112,7 +112,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/billstages/xml",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:10:42.41",
+                "dateUpdated": "2025-12-22T00:10:42.357",
                 "numRecords": null
             },
             {
@@ -122,7 +122,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/billstages/json",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:10:42.41",
+                "dateUpdated": "2025-12-22T00:10:42.357",
                 "numRecords": null
             }
         ]
@@ -132,7 +132,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-19T00:10:52.57",
+        "dateUpdated": "2025-12-22T00:10:52.53",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "This dataset contains a list of Bill Stage Types.",
         "tags": [],
@@ -144,7 +144,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/billstagetypes/xml",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:10:52.57",
+                "dateUpdated": "2025-12-22T00:10:52.53",
                 "numRecords": null
             },
             {
@@ -154,7 +154,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/billstagetypes/json",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:10:52.57",
+                "dateUpdated": "2025-12-22T00:10:52.53",
                 "numRecords": null
             }
         ]
@@ -164,7 +164,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-19T00:10:23.867",
+        "dateUpdated": "2025-12-22T00:10:24.09",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "This dataset contains a list of Bill Titles",
         "tags": [],
@@ -176,7 +176,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/bills/xml",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:10:23.867",
+                "dateUpdated": "2025-12-22T00:10:24.09",
                 "numRecords": null
             },
             {
@@ -186,7 +186,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/bills/json",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:10:23.867",
+                "dateUpdated": "2025-12-22T00:10:24.09",
                 "numRecords": null
             }
         ]
@@ -196,7 +196,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-19T00:10:32.297",
+        "dateUpdated": "2025-12-22T00:10:32.247",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "This dataset contains a list of applicable types that a bill can be e.g. private, executive etc. The vast majority of bills are Public Bills \u2013which covers Government Bills, Member\u2019s Bills, Committee Bills and others \u2013 and it is only a small proportion that are Private Bills.",
         "tags": [],
@@ -208,7 +208,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/billtypes/xml",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:10:32.297",
+                "dateUpdated": "2025-12-22T00:10:32.247",
                 "numRecords": null
             },
             {
@@ -218,7 +218,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/billtypes/json",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:10:32.297",
+                "dateUpdated": "2025-12-22T00:10:32.247",
                 "numRecords": null
             }
         ]
@@ -228,7 +228,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-13T00:11:32.843",
+        "dateUpdated": "2025-12-20T00:11:33.007",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "This datatset contains a list of current and previous committees of the Scottish Parliament.",
         "tags": [],
@@ -240,7 +240,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/committees/xml",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-13T00:11:32.843",
+                "dateUpdated": "2025-12-20T00:11:33.007",
                 "numRecords": null
             },
             {
@@ -250,7 +250,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/committees/json",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-13T00:11:32.843",
+                "dateUpdated": "2025-12-20T00:11:33.007",
                 "numRecords": null
             }
         ]
@@ -260,7 +260,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-13T00:11:03.65",
+        "dateUpdated": "2025-12-20T00:11:04.033",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "This dataset contains a list of roles a committee can have.",
         "tags": [],
@@ -272,7 +272,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/committeeroles/xml",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-13T00:11:03.65",
+                "dateUpdated": "2025-12-20T00:11:04.033",
                 "numRecords": null
             },
             {
@@ -282,7 +282,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/committeeroles/json",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-13T00:11:03.65",
+                "dateUpdated": "2025-12-20T00:11:04.033",
                 "numRecords": null
             }
         ]
@@ -324,7 +324,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-13T00:11:22.243",
+        "dateUpdated": "2025-12-20T00:11:22.407",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "This dataset contains a list of committee types; these qualify the committee\u2019s objectives and the content that is considered by a committee.",
         "tags": [],
@@ -336,7 +336,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/committeetypes/xml",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-13T00:11:22.243",
+                "dateUpdated": "2025-12-20T00:11:22.407",
                 "numRecords": null
             },
             {
@@ -346,7 +346,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/committeetypes/json",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-13T00:11:22.243",
+                "dateUpdated": "2025-12-20T00:11:22.407",
                 "numRecords": null
             }
         ]
@@ -356,7 +356,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-13T00:11:12.13",
+        "dateUpdated": "2025-12-20T00:11:12.35",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "This dataset contains a list of links used to link a committee to its committee type.",
         "tags": [],
@@ -368,7 +368,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/committeetypelinks/xml",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-13T00:11:12.13",
+                "dateUpdated": "2025-12-20T00:11:12.35",
                 "numRecords": null
             },
             {
@@ -378,7 +378,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/committeetypelinks/json",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-13T00:11:12.13",
+                "dateUpdated": "2025-12-20T00:11:12.35",
                 "numRecords": null
             }
         ]
@@ -420,7 +420,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-15T00:12:22.247",
+        "dateUpdated": "2025-12-22T00:12:22.433",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "This dataset contains a list of current and former directorates.",
         "tags": [],
@@ -432,7 +432,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/directorates/xml",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-15T00:12:22.247",
+                "dateUpdated": "2025-12-22T00:12:22.433",
                 "numRecords": null
             },
             {
@@ -442,7 +442,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/directorates/json",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-15T00:12:22.247",
+                "dateUpdated": "2025-12-22T00:12:22.433",
                 "numRecords": null
             }
         ]
@@ -612,7 +612,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-19T00:19:33.197",
+        "dateUpdated": "2025-12-22T00:19:33.12",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "This dataset contains the event linking table for Motions, Questions and Answers. Use this to find amendments to motions, which may also include sub-amendments.",
         "tags": [],
@@ -624,7 +624,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswerseventlinks/xml",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:19:33.197",
+                "dateUpdated": "2025-12-22T00:19:33.12",
                 "numRecords": null
             },
             {
@@ -634,7 +634,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswerseventlinks/json",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:19:33.197",
+                "dateUpdated": "2025-12-22T00:19:33.12",
                 "numRecords": null
             }
         ]
@@ -644,7 +644,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-19T00:29:00.507",
+        "dateUpdated": "2025-12-22T00:28:59.25",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "This dataset contains all recorded motions taken place within the Parliament.",
         "tags": [],
@@ -656,7 +656,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersmotions/xml",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:29:00.507",
+                "dateUpdated": "2025-12-22T00:28:59.25",
                 "numRecords": null
             },
             {
@@ -666,7 +666,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersmotions/json",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:29:00.507",
+                "dateUpdated": "2025-12-22T00:28:59.25",
                 "numRecords": null
             }
         ]
@@ -676,7 +676,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-19T00:41:28.65",
+        "dateUpdated": "2025-12-22T00:41:28.117",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "This dataset contains a set of MSPs who have registered support to particular Motions.",
         "tags": [],
@@ -688,7 +688,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswerssupports/xml",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:41:28.65",
+                "dateUpdated": "2025-12-22T00:41:28.117",
                 "numRecords": null
             },
             {
@@ -698,7 +698,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswerssupports/json",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:41:28.65",
+                "dateUpdated": "2025-12-22T00:41:28.117",
                 "numRecords": null
             }
         ]
@@ -708,7 +708,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-19T00:29:00.533",
+        "dateUpdated": "2025-12-22T00:28:59.277",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "This dataset contains all the questions lodged in the Parliament during the year of 1999.",
         "tags": [],
@@ -720,7 +720,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=1999",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:29:00.533",
+                "dateUpdated": "2025-12-22T00:28:59.277",
                 "numRecords": null
             },
             {
@@ -730,7 +730,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=1999",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:29:00.533",
+                "dateUpdated": "2025-12-22T00:28:59.277",
                 "numRecords": null
             }
         ]
@@ -740,7 +740,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-19T00:29:00.56",
+        "dateUpdated": "2025-12-22T00:28:59.3",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "This dataset contains all the questions lodged in the Parliament during the year of 2000.",
         "tags": [],
@@ -752,7 +752,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2000",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:29:00.56",
+                "dateUpdated": "2025-12-22T00:28:59.3",
                 "numRecords": null
             },
             {
@@ -762,7 +762,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2000",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:29:00.56",
+                "dateUpdated": "2025-12-22T00:28:59.3",
                 "numRecords": null
             }
         ]
@@ -772,7 +772,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-19T00:29:00.587",
+        "dateUpdated": "2025-12-22T00:28:59.327",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "This dataset contains all the questions lodged in the Parliament during the year of 2001.",
         "tags": [],
@@ -784,7 +784,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2001",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:29:00.587",
+                "dateUpdated": "2025-12-22T00:28:59.327",
                 "numRecords": null
             },
             {
@@ -794,7 +794,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2001",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:29:00.587",
+                "dateUpdated": "2025-12-22T00:28:59.327",
                 "numRecords": null
             }
         ]
@@ -804,7 +804,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-19T00:29:00.61",
+        "dateUpdated": "2025-12-22T00:28:59.35",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "This dataset contains all the questions lodged in the Parliament during the year of 2002.",
         "tags": [],
@@ -816,7 +816,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2002",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:29:00.61",
+                "dateUpdated": "2025-12-22T00:28:59.35",
                 "numRecords": null
             },
             {
@@ -826,7 +826,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2002",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:29:00.61",
+                "dateUpdated": "2025-12-22T00:28:59.35",
                 "numRecords": null
             }
         ]
@@ -836,7 +836,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-19T00:29:00.63",
+        "dateUpdated": "2025-12-22T00:28:59.377",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "This dataset contains all the questions lodged in the Parliament during the year of 2003.",
         "tags": [],
@@ -848,7 +848,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2003",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:29:00.63",
+                "dateUpdated": "2025-12-22T00:28:59.377",
                 "numRecords": null
             },
             {
@@ -858,7 +858,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2003",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:29:00.63",
+                "dateUpdated": "2025-12-22T00:28:59.377",
                 "numRecords": null
             }
         ]
@@ -868,7 +868,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-19T00:29:00.657",
+        "dateUpdated": "2025-12-22T00:28:59.4",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "This dataset contains all the questions lodged in the Parliament during the year of 2004.",
         "tags": [],
@@ -880,7 +880,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2004",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:29:00.657",
+                "dateUpdated": "2025-12-22T00:28:59.4",
                 "numRecords": null
             },
             {
@@ -890,7 +890,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2004",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:29:00.657",
+                "dateUpdated": "2025-12-22T00:28:59.4",
                 "numRecords": null
             }
         ]
@@ -900,7 +900,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-19T00:29:00.683",
+        "dateUpdated": "2025-12-22T00:28:59.427",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "This dataset contains all the questions lodged in the Parliament during the year of 2005.",
         "tags": [],
@@ -912,7 +912,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2005",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:29:00.683",
+                "dateUpdated": "2025-12-22T00:28:59.427",
                 "numRecords": null
             },
             {
@@ -922,7 +922,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2005",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:29:00.683",
+                "dateUpdated": "2025-12-22T00:28:59.427",
                 "numRecords": null
             }
         ]
@@ -932,7 +932,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-19T00:29:00.71",
+        "dateUpdated": "2025-12-22T00:28:59.457",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "This dataset contains all the questions lodged in the Parliament during the year of 2006.",
         "tags": [],
@@ -944,7 +944,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2006",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:29:00.71",
+                "dateUpdated": "2025-12-22T00:28:59.457",
                 "numRecords": null
             },
             {
@@ -954,7 +954,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2006",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:29:00.71",
+                "dateUpdated": "2025-12-22T00:28:59.457",
                 "numRecords": null
             }
         ]
@@ -964,7 +964,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-19T00:29:00.74",
+        "dateUpdated": "2025-12-22T00:28:59.483",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "This dataset contains all the questions lodged in the Parliament during the year of 2007.",
         "tags": [],
@@ -976,7 +976,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2007",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:29:00.74",
+                "dateUpdated": "2025-12-22T00:28:59.483",
                 "numRecords": null
             },
             {
@@ -986,7 +986,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2007",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:29:00.74",
+                "dateUpdated": "2025-12-22T00:28:59.483",
                 "numRecords": null
             }
         ]
@@ -996,7 +996,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-19T00:29:00.77",
+        "dateUpdated": "2025-12-22T00:28:59.513",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "This dataset contains all the questions lodged in the Parliament during the year of 2008.",
         "tags": [],
@@ -1008,7 +1008,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2008",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:29:00.77",
+                "dateUpdated": "2025-12-22T00:28:59.513",
                 "numRecords": null
             },
             {
@@ -1018,7 +1018,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2008",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:29:00.77",
+                "dateUpdated": "2025-12-22T00:28:59.513",
                 "numRecords": null
             }
         ]
@@ -1028,7 +1028,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-19T00:29:00.797",
+        "dateUpdated": "2025-12-22T00:28:59.537",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "This dataset contains all the questions lodged in the Parliament during the year of 2009.",
         "tags": [],
@@ -1040,7 +1040,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2009",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:29:00.797",
+                "dateUpdated": "2025-12-22T00:28:59.537",
                 "numRecords": null
             },
             {
@@ -1050,7 +1050,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2009",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:29:00.797",
+                "dateUpdated": "2025-12-22T00:28:59.537",
                 "numRecords": null
             }
         ]
@@ -1060,7 +1060,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-19T00:29:00.823",
+        "dateUpdated": "2025-12-22T00:28:59.563",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "This dataset contains all the questions lodged in the Parliament during the year of 2010.",
         "tags": [],
@@ -1072,7 +1072,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2010",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:29:00.823",
+                "dateUpdated": "2025-12-22T00:28:59.563",
                 "numRecords": null
             },
             {
@@ -1082,7 +1082,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2010",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:29:00.823",
+                "dateUpdated": "2025-12-22T00:28:59.563",
                 "numRecords": null
             }
         ]
@@ -1092,7 +1092,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-19T00:29:00.85",
+        "dateUpdated": "2025-12-22T00:28:59.587",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "This dataset contains all the questions lodged in the Parliament during the year of 2011.",
         "tags": [],
@@ -1104,7 +1104,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2011",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:29:00.85",
+                "dateUpdated": "2025-12-22T00:28:59.587",
                 "numRecords": null
             },
             {
@@ -1114,7 +1114,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2011",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:29:00.85",
+                "dateUpdated": "2025-12-22T00:28:59.587",
                 "numRecords": null
             }
         ]
@@ -1124,7 +1124,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-19T00:29:00.877",
+        "dateUpdated": "2025-12-22T00:28:59.61",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "This dataset contains all the questions lodged in the Parliament during the year of 2012.",
         "tags": [],
@@ -1136,7 +1136,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2012",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:29:00.877",
+                "dateUpdated": "2025-12-22T00:28:59.61",
                 "numRecords": null
             },
             {
@@ -1146,7 +1146,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2012",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:29:00.877",
+                "dateUpdated": "2025-12-22T00:28:59.61",
                 "numRecords": null
             }
         ]
@@ -1156,7 +1156,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-19T00:29:00.903",
+        "dateUpdated": "2025-12-22T00:28:59.637",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "This dataset contains all the questions lodged in the Parliament during the year of 2013.",
         "tags": [],
@@ -1168,7 +1168,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2013",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:29:00.903",
+                "dateUpdated": "2025-12-22T00:28:59.637",
                 "numRecords": null
             },
             {
@@ -1178,7 +1178,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2013",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:29:00.903",
+                "dateUpdated": "2025-12-22T00:28:59.637",
                 "numRecords": null
             }
         ]
@@ -1188,7 +1188,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-19T00:29:00.93",
+        "dateUpdated": "2025-12-22T00:28:59.66",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "This dataset contains all the questions lodged in the Parliament during the year of 2014.",
         "tags": [],
@@ -1200,7 +1200,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2014",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:29:00.93",
+                "dateUpdated": "2025-12-22T00:28:59.66",
                 "numRecords": null
             },
             {
@@ -1210,7 +1210,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2014",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:29:00.93",
+                "dateUpdated": "2025-12-22T00:28:59.66",
                 "numRecords": null
             }
         ]
@@ -1220,7 +1220,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-19T00:29:00.953",
+        "dateUpdated": "2025-12-22T00:28:59.69",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "This dataset contains all the questions lodged in the Parliament during the year of 2015.",
         "tags": [],
@@ -1232,7 +1232,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2015",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:29:00.953",
+                "dateUpdated": "2025-12-22T00:28:59.69",
                 "numRecords": null
             },
             {
@@ -1242,7 +1242,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2015",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:29:00.953",
+                "dateUpdated": "2025-12-22T00:28:59.69",
                 "numRecords": null
             }
         ]
@@ -1252,7 +1252,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-19T00:29:00.48",
+        "dateUpdated": "2025-12-22T00:28:59.22",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "This dataset contains all the questions lodged in the Parliament during the year of 2016.",
         "tags": [],
@@ -1264,7 +1264,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2016",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:29:00.48",
+                "dateUpdated": "2025-12-22T00:28:59.22",
                 "numRecords": null
             },
             {
@@ -1274,7 +1274,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswersquestions?year=2016",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:29:00.48",
+                "dateUpdated": "2025-12-22T00:28:59.22",
                 "numRecords": null
             }
         ]
@@ -1284,7 +1284,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-19T00:19:42.28",
+        "dateUpdated": "2025-12-22T00:19:42.197",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "This dataset contains a set of event sub types for Motions, Questions and Answers.",
         "tags": [],
@@ -1296,7 +1296,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswerseventsubtypes/xml",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:19:42.28",
+                "dateUpdated": "2025-12-22T00:19:42.197",
                 "numRecords": null
             },
             {
@@ -1306,7 +1306,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswerseventsubtypes/json",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:19:42.28",
+                "dateUpdated": "2025-12-22T00:19:42.197",
                 "numRecords": null
             }
         ]
@@ -1316,7 +1316,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-19T00:19:52.49",
+        "dateUpdated": "2025-12-22T00:19:52.403",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "This dataset contains a list of event types, events are a generic term for either a question or a motion.",
         "tags": [],
@@ -1328,7 +1328,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswerseventtypes/xml",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:19:52.49",
+                "dateUpdated": "2025-12-22T00:19:52.403",
                 "numRecords": null
             },
             {
@@ -1338,7 +1338,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/motionsquestionsanswerseventtypes/json",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:19:52.49",
+                "dateUpdated": "2025-12-22T00:19:52.403",
                 "numRecords": null
             }
         ]
@@ -1348,7 +1348,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-19T00:13:52.363",
+        "dateUpdated": "2025-12-22T00:13:52.34",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "This dataset contains the constituency that a member has been elected for, and the status of that election. Each election record will have an associated start and end date, as well as notes required to qualify the status. The member\u2019s election status will be for the party they have membership in for a period greater than their election status.",
         "tags": [],
@@ -1360,7 +1360,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/MemberElectionConstituencyStatuses/xml",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:13:52.363",
+                "dateUpdated": "2025-12-22T00:13:52.34",
                 "numRecords": null
             },
             {
@@ -1370,7 +1370,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/MemberElectionConstituencyStatuses/json",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:13:52.363",
+                "dateUpdated": "2025-12-22T00:13:52.34",
                 "numRecords": null
             }
         ]
@@ -1444,7 +1444,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-19T00:13:42.443",
+        "dateUpdated": "2025-12-22T00:13:42.36",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "A collection of all Members and their Roles within a Cross Party Group.",
         "tags": [],
@@ -1456,7 +1456,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/membercrosspartyroles/xml",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:13:42.443",
+                "dateUpdated": "2025-12-22T00:13:42.36",
                 "numRecords": null
             },
             {
@@ -1466,7 +1466,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/membercrosspartyroles/json",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:13:42.443",
+                "dateUpdated": "2025-12-22T00:13:42.36",
                 "numRecords": null
             }
         ]
@@ -1476,7 +1476,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-15T00:11:52.4",
+        "dateUpdated": "2025-12-22T00:11:52.45",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "A collection of Roles that a Cross Party Group can have.",
         "tags": [],
@@ -1488,7 +1488,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/crosspartygrouproles/xml",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-15T00:11:52.4",
+                "dateUpdated": "2025-12-22T00:11:52.45",
                 "numRecords": null
             },
             {
@@ -1498,7 +1498,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/crosspartygrouproles/json",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-15T00:11:52.4",
+                "dateUpdated": "2025-12-22T00:11:52.45",
                 "numRecords": null
             }
         ]
@@ -1508,7 +1508,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-15T00:12:02.41",
+        "dateUpdated": "2025-12-22T00:12:02.683",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "A collection of Cross Party Groups (CPGs). CPGs provide an opportunity for Members of all parties, outside organisations and members of the public to meet and discuss a shared interest in a particular cause or subject.",
         "tags": [],
@@ -1520,7 +1520,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/crosspartygroups/xml",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-15T00:12:02.41",
+                "dateUpdated": "2025-12-22T00:12:02.683",
                 "numRecords": null
             },
             {
@@ -1530,7 +1530,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/crosspartygroups/json",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-15T00:12:02.41",
+                "dateUpdated": "2025-12-22T00:12:02.683",
                 "numRecords": null
             }
         ]
@@ -1540,7 +1540,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-19T00:14:42.64",
+        "dateUpdated": "2025-12-22T00:14:42.617",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "This dataset contains a list of current and previous members of the Scottish Parliament, along with additional member information.",
         "tags": [],
@@ -1552,7 +1552,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/members/xml",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:14:42.64",
+                "dateUpdated": "2025-12-22T00:14:42.617",
                 "numRecords": null
             },
             {
@@ -1562,7 +1562,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/members/json",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:14:42.64",
+                "dateUpdated": "2025-12-22T00:14:42.617",
                 "numRecords": null
             }
         ]
@@ -1572,7 +1572,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-19T00:14:12.22",
+        "dateUpdated": "2025-12-22T00:14:12.083",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "This dataset contains a list of members and government positions.",
         "tags": [],
@@ -1584,7 +1584,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/membergovernmentroles/xml",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:14:12.22",
+                "dateUpdated": "2025-12-22T00:14:12.083",
                 "numRecords": null
             },
             {
@@ -1594,7 +1594,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/membergovernmentroles/json",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:14:12.22",
+                "dateUpdated": "2025-12-22T00:14:12.083",
                 "numRecords": null
             }
         ]
@@ -1828,7 +1828,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-19T00:14:33.057",
+        "dateUpdated": "2025-12-22T00:14:32.937",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "This dataset contains the member\u2019s political party membership with associated dates",
         "tags": [],
@@ -1840,7 +1840,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/memberparties/xml",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:14:33.057",
+                "dateUpdated": "2025-12-22T00:14:32.937",
                 "numRecords": null
             },
             {
@@ -1850,7 +1850,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/memberparties/json",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:14:33.057",
+                "dateUpdated": "2025-12-22T00:14:32.937",
                 "numRecords": null
             }
         ]
@@ -1860,7 +1860,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-19T00:14:02.963",
+        "dateUpdated": "2025-12-22T00:14:02.823",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "This dataset contains the region that a member has been elected for, and the status of that election. This dataset contains the same data as described under the MemberElectionConstituencyStatus dataset.",
         "tags": [],
@@ -1872,7 +1872,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/MemberElectionregionStatuses/xml",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:14:02.963",
+                "dateUpdated": "2025-12-22T00:14:02.823",
                 "numRecords": null
             },
             {
@@ -1882,7 +1882,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/MemberElectionregionStatuses/json",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:14:02.963",
+                "dateUpdated": "2025-12-22T00:14:02.823",
                 "numRecords": null
             }
         ]
@@ -4260,7 +4260,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-19T00:14:22.557",
+        "dateUpdated": "2025-12-22T00:14:22.457",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "This dataset contains the role a member can have in their current political party. ",
         "tags": [],
@@ -4272,7 +4272,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/memberpartyroles/xml",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:14:22.557",
+                "dateUpdated": "2025-12-22T00:14:22.457",
                 "numRecords": null
             },
             {
@@ -4282,7 +4282,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/memberpartyroles/json",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:14:22.557",
+                "dateUpdated": "2025-12-22T00:14:22.457",
                 "numRecords": null
             }
         ]
@@ -4516,7 +4516,7 @@
         "owner": "Scottish Parliament",
         "pageURL": "https://data.parliament.scot/#/datasets",
         "dateCreated": null,
-        "dateUpdated": "2025-12-19T00:29:00.98",
+        "dateUpdated": "2025-12-22T00:28:59.72",
         "licence": "Scottish Parliament Copyright Policy",
         "description": "This dataset contains Motions lodged by the Parliamentary Bureau that sets out all proposed Chamber business a week in advance of the business taking place, and all motions to revise planned Chamber business at shorter notice.",
         "tags": [],
@@ -4528,7 +4528,7 @@
                 "fileType": "XML",
                 "assetUrl": "https://data.parliament.scot/api/MotionsQuestionsAnswersMotionsBusiness?motionfilter=programme",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:29:00.98",
+                "dateUpdated": "2025-12-22T00:28:59.72",
                 "numRecords": null
             },
             {
@@ -4538,7 +4538,7 @@
                 "fileType": "JSON",
                 "assetUrl": "https://data.parliament.scot/api/MotionsQuestionsAnswersMotionsBusiness?motionfilter=programme",
                 "dateCreated": null,
-                "dateUpdated": "2025-12-19T00:29:00.98",
+                "dateUpdated": "2025-12-22T00:28:59.72",
                 "numRecords": null
             }
         ]
