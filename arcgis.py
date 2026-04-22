@@ -32,7 +32,7 @@ class ProcessorARCGIS(Processor):
             prepped.append(
                 [
                     e["attributes"].get("name", ""),
-                    e["attributes"].get("source", ""),
+                    e["attributes"].get("source", owner),
                     e.get("links", {}).get("itemPage", ""),
                     "",  # Link to data
                     "",  # FileName
