@@ -1,16 +1,52 @@
-# The OD_BODS Project
-OD_BODS is a volunteer-run open source project to collate open data sources published in Scotland. 
+# The Open Data Scotland Project
+Open Data Scotland is a volunteer-run open source project to collate open data sources published in Scotland and make them easier to find and use.
 
 See it in action: [opendata.scot](https://opendata.scot/)
 
 
-There are 2 objectives for the OD_BODS project
+There are 4 objectives for the Open Data Scotland project
 1. Find: Help public users find a data source they can use
 2. Learn: Understand how Open Data is in Scotland
+3. Showcase: Promote the projects using these data
+4. Connect: Close the feedback loop between data publishers and users
 
+# Setup
+
+This project uses [uv](https://docs.astral.sh/uv/) for dependency management.
+
+```sh
+uv sync
+```
+
+# Running
+
+```sh
+uv run python main.py
+uv run python merge_data.py
+uv run python export2jkan.py
+```
+
+Or run all steps at once via the shell script:
+
+```sh
+uv run bash run.sh
+```
+
+# Running with Docker
+
+```sh
+docker build -t the-od-bods .
+docker run the-od-bods
+```
+
+# Testing (out of date - needs maintenance)
+
+```sh
+uv run pytest
+```
 
 # More info
-Read [the docs](https://docs.opendata.scot/) to find our more about the 12-month plan for the project, its history, the tools we are using, and how to contribute
+Read [the docs](https://docs.opendata.scot/) to find our more about the project, its history, the tools we are using, and how to contribute
 
 # Contact Us
 * on Mastodon [@opendatascotland@mastodon.scot](https://mstdn.social/@opendatascotland@mastodon.scot)

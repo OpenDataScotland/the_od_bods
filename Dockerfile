@@ -1,4 +1,6 @@
-FROM python:3.9-buster
+FROM python:3.9-slim
+
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
 
 WORKDIR /usr/src/app
 
@@ -8,8 +10,8 @@ RUN mkdir -p jkan/_datasets
 
 WORKDIR /usr/src/app/the_od_bods
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN uv sync --no-dev
 
 RUN chmod a+x run.sh
 
-CMD ["./run.sh"]
+CMD ["uv", "run", "bash", "run.sh"]
