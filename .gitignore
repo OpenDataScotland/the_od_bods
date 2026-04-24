@@ -3,6 +3,9 @@ tests/mock_data/mockcsv.csv
 tests/mock_data/output
 export2jkan.py
 
+# Pipeline logs
+pipeline_*.log
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

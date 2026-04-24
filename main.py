@@ -12,6 +12,8 @@ import nls_scraper
 import sqa_scraper
 import scottish_parliament
 
+logger.add("pipeline_{time}.log", level="INFO", retention=5)
+
 DATASET_PATHS = [
     "data/arcgis/",
     "data/ckan/",

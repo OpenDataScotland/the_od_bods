@@ -7,6 +7,7 @@ import os
 import time
 from functools import wraps
 import ssl
+from loguru import logger
 
 class Processor:
     # Type should be one of the following: 'dcat', 'arcgis', 'usmart'
@@ -31,7 +32,7 @@ class Processor:
         ]
         self.urls = {}
 
-    def retry(ExceptionToCheck, tries=4, delay=3, backoff=2, logger=None):
+    def retry(ExceptionToCheck, tries=4, delay=3, backoff=2):
         """Retry calling the decorated function using an exponential backoff.
 
         http://www.saltycrane.com/blog/2009/11/trying-out-retry-decorator-python/
@@ -47,8 +48,6 @@ class Processor:
         :param backoff: backoff multiplier e.g. value of 2 will double the delay
             each retry
         :type backoff: int
-        :param logger: logger to use. If None, print
-        :type logger: logging.Logger instance
         """
         def deco_retry(f):
 
@@ -60,10 +59,7 @@ class Processor:
                         return f(*args, **kwargs)
                     except ExceptionToCheck as e:
                         msg = "%s, Retrying in %d seconds..." % (str(e), mdelay)
-                        if logger:
-                            logger.warning(msg)
-                        else:
-                            print(msg)
+                        logger.warning(msg)
                         time.sleep(mdelay)
                         mtries -= 1
                         mdelay *= backoff
@@ -91,8 +87,6 @@ class Processor:
             for row in csv_file:
                 if row["Processor"] == self.type:
                     self.urls[row["Name"]] = row["Source URL"]
-            for r in csv_file:
-                print("r", r)
 
     def get_json(self, url):
         req = request.Request(url)
@@ -102,15 +96,14 @@ class Processor:
 
             return json.loads(decoded_resp)
         except HTTPError as err1:
-            print(url, "cannot be accessed. The URL returned:", err1.code, err1.reason)
+            logger.exception("{} cannot be accessed. The URL returned: {} {}", url, err1.code, err1.reason)
             error_dict = {
                 "url": url,
                 "error_code": err1.code,
                 "error_reason": err1.reason,
             }
         except URLError as err2:
-            print(type(err2))
-            print(url, "cannot be accessed. The URL returned:", err2.reason)
+            logger.exception("{} cannot be accessed. The URL returned: {}", url, err2.reason)
             error_dict = {
                 "url": url,
                 "error_code": "",
@@ -171,11 +164,11 @@ class Processor:
             json.dump(prepped, json_file, indent=4)
 
     def get_datasets(self, owner, url, fname):
-        print("Override this method")
+        logger.warning("Override this method")
 
     def process(self, file_type = "csv"):
         self.get_urls()
 
         for name, url in self.urls.items():
-            print(name)
+            logger.info("{}", name)
             self.get_datasets(name, url, os.path.join("data", self.type, f"{name}.{file_type}"))

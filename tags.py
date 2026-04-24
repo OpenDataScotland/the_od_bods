@@ -1,5 +1,6 @@
 import json
 from urllib import request
+from loguru import logger
 
 
 def get_thing(site, thing="tag"):
@@ -8,8 +9,8 @@ def get_thing(site, thing="tag"):
             data = json.loads(page.read().decode())
             return data["result"]
     except Exception as e:
-        print(f"Error with {site}, {thing}:")
-        print(e)
+        logger.error("Error with {}, {}:", site, thing)
+        logger.error("{}", e)
         return []
 
 
@@ -25,4 +26,4 @@ sites = {
 
 groups = {n: get_thing(site, "group") for n, site in sites.items()}
 
-print(groups)
+logger.info("{}", groups)

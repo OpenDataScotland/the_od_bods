@@ -1,4 +1,5 @@
 from processor import Processor
+from loguru import logger
 
 DATASETS_LINK = "https://data.parliament.scot/#/datasets"
 DATASETS_LICENCE = "Scottish Parliament Copyright Policy"
@@ -60,13 +61,13 @@ class ProcessorScottishParliament(Processor):
 
     def get_datasets(self, owner, url, fname):
         """Gets datasets from provided portal and outputs to JSON"""
-        print(f"Processing {url}")
+        logger.info("Processing {}", url)
 
         datasets_url = f"{url}api/datasetjson"
 
         datasets = self.get_json(datasets_url)
 
-        print(f"Found {len(datasets)} datasets")
+        logger.info("Found {} datasets", len(datasets))
 
         prepped_datasets = []
 
@@ -100,7 +101,7 @@ class ProcessorScottishParliament(Processor):
                 }
             )
 
-        print(fname)
+        logger.info("{}", fname)
         processor.write_json(fname, prepped_datasets)
 
 

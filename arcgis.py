@@ -1,4 +1,5 @@
 from datetime import datetime
+from loguru import logger
 
 try:
     from processor import Processor
@@ -21,11 +22,11 @@ class ProcessorARCGIS(Processor):
                 datasets += d["data"]
                 if "next" in d["meta"] and d["meta"]["next"]:
                     url = d["meta"]["next"]
-                    print(f"Next {url}")
+                    logger.info("Next {}", url)
                 else:
                     break
 
-        print(f"Found {len(datasets)} datasets")
+        logger.info("Found {} datasets", len(datasets))
 
         prepped = []
         for e in datasets:

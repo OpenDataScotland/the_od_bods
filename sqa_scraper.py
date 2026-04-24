@@ -2,6 +2,7 @@
 import requests
 import csv
 from bs4 import BeautifulSoup
+from loguru import logger
 
 # Global Variables
 ODR_URL = "https://www.sqa.org.uk/sqa/57523.html"
@@ -215,10 +216,10 @@ def main():
     ]
     data = []
 
-    print("Getting available years")
+    logger.info("Getting available years")
     category_links = fetch_available_years()
     for year_string in category_links.keys():
-        print("Getting", year_string)
+        logger.info("Getting {}", year_string)
         years_page = fetch_year_page(category_links[year_string])
         owner = "Scottish Qualifications Authority (SQA)"
         title = create_title(year_string)
@@ -259,7 +260,7 @@ def main():
                 ]
                 data.append(output)
 
-    print("Outputting to CSV")
+    logger.info("Outputting to CSV")
     csv_output(header, data)
 
 

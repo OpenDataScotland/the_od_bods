@@ -5,6 +5,7 @@ from urllib import request
 import csv
 import json
 import os
+from loguru import logger
 
 from usmart import ProcessorUSMART
 from dcat import ProcessorDCAT
@@ -62,7 +63,7 @@ def main():
     supported_scrapers = ["USMART", "dcat", "arcgis"]
 
     for name in url_list:
-        print(f"-> {name} | {url_list[name]['type']} | {url_list[name]['url']}")
+        logger.info("-> {} | {} | {}", name, url_list[name]['type'], url_list[name]['url'])
         if url_list[name]["type"] in supported_scrapers:
             location = (
                 "tests\\mock_data\\" + url_list[name]["type"] + "\\" + name + ".json"

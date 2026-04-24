@@ -6,19 +6,20 @@ from datetime import datetime as dt
 import datetime
 import re
 import json
+from loguru import logger
 
 
 def main():
     ### Loading data
     # region CKAN
     ### From ckan output
-    print("Merging CKAN...")
+    logger.info("Merging CKAN...")
     source_ckan = pd.DataFrame()
     folder = "data/ckan/"
     for dirname, _, filenames in os.walk(folder):
         for filename in filenames:
             if filename.rsplit(".", 1)[1] == "csv":
-                print(filename)
+                logger.info("{}", filename)
                 source_ckan = pd.concat(
                     [
                         source_ckan,
@@ -33,7 +34,7 @@ def main():
     # endregion
 
     # region statistics.gov.scot
-    print("Merging statistics.gov.scot...")
+    logger.info("Merging statistics.gov.scot...")
     ### From scotgov csv
     source_scotgov = pd.read_csv("data/scotgov-datasets-sparkql.csv")
     source_scotgov = source_scotgov.rename(
@@ -62,7 +63,7 @@ def main():
             ).dt.tz_localize(None)
         except:
             # If we get to this stage, give up and just blank the date
-            print("WARNING: Failed to parse date - " + source_scotgov["DateUpdated"])
+            logger.warning("WARNING: Failed to parse date - {}", source_scotgov["DateUpdated"])
             source_scotgov["DateUpdated"] = None
     try:
         source_scotgov["DateCreated"] = pd.to_datetime(
@@ -75,13 +76,13 @@ def main():
             ).dt.tz_localize(None)
         except:
             # If we get to this stage, give up and just blank the date
-            print("WARNING: Failed to parse date - " + source_scotgov["DateCreated"])
+            logger.warning("WARNING: Failed to parse date - {}", source_scotgov["DateCreated"])
             source_scotgov["DateCreated"] = None
     # endregion
 
     # region ArcGIS
     ### From arcgis api
-    print("Merging ArcGIS...")
+    logger.info("Merging ArcGIS...")
     source_arcgis = pd.DataFrame()
     folder = "data/arcgis/"
     for dirname, _, filenames in os.walk(folder):
@@ -101,7 +102,7 @@ def main():
 
     # region uSmart
     ### From usmart api
-    print("Merging uSmart...")
+    logger.info("Merging uSmart...")
     source_usmart = pd.DataFrame()
     folder = "data/USMART/"
     for dirname, _, filenames in os.walk(folder):
@@ -123,7 +124,7 @@ def main():
 
     # region DCAT
     ## From DCAT
-    print("Merging DCAT...")
+    logger.info("Merging DCAT...")
     source_dcat = pd.DataFrame()
     folder = "data/dcat/"
     for dirname, _, filenames in os.walk(folder):
@@ -145,13 +146,13 @@ def main():
 
     # region Web scrapers
     ## From web scraped results
-    print("Merging web scraped results...")
+    logger.info("Merging web scraped results...")
     source_scraped = pd.DataFrame()
     folder = "data/scraped-results/"
     for dirname, _, filenames in os.walk(folder):
         for filename in filenames:
             if filename.rsplit(".", 1)[1] == "csv":
-                print(f"\tMerging {filename}...")
+                logger.info("\tMerging {}...", filename)
                 source_scraped = pd.concat(
                     [
                         source_scraped,
@@ -163,7 +164,7 @@ def main():
                 )
 
     # From Scottish Parliament
-    print("\tMerging Scottish Parliament...")
+    logger.info("\tMerging Scottish Parliament...")
     path = "data/bespoke_ScottishParliament/Scottish Parliament.json"
     scottish_parliament_scraped = pd.read_json(path, convert_dates=["dateCreated", "dateUpdated"])
 
@@ -179,7 +180,7 @@ def main():
     # endregion
   
     ### Combine all data into single table
-    print("Concatenating all")
+    logger.info("Concatenating all")
     data = pd.concat(
         [
             source_ckan,
@@ -192,17 +193,17 @@ def main():
     )
     data = data.reset_index(drop=True)
     
-    print(f"Output untidy {dt.now()}")
+    logger.info("Output untidy {}", dt.now())
     ### Saves copy of data without cleaning - for analysis purposes
     data.to_json("data/merged_output_untidy.json", orient="records", date_format="iso")
 
     ### clean data
     # TODO: Cleaning data per dataset file is massively inefficient as we're often applying the same operations to duplicate row values (e.g. 1 dataset x 5 files == 5 cleaning attempts for the same license data etc.)
-    print(f"Cleaning data {dt.now()}")
+    logger.info("Cleaning data {}", dt.now())
     data = clean_data(data)
 
     ### Output cleaned data to json
-    print(f"Output cleaned {dt.now()}")
+    logger.info("Output cleaned {}", dt.now())
     data.to_json("data/merged_output.json", orient="records", date_format="iso")
 
     return data

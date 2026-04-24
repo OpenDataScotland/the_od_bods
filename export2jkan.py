@@ -4,6 +4,7 @@ import urllib
 import markdown
 import pandas as pd
 import yaml
+from loguru import logger
 from utils.export2jkan_functions import (
     DataFile,
     Dataset,
@@ -85,7 +86,7 @@ def main():
         )
 
     # Update the JKAN datasets folder by removing the existing datasets folder and creating a new empty one for populating
-    print(f"Current working directory: {os.getcwd()}")
+    logger.info("Current working directory: {}", os.getcwd())
     shutil.rmtree("../jkan/_datasets/")
     os.makedirs("../jkan/_datasets/")
 
@@ -128,7 +129,7 @@ def main():
 
         # Write the dataset YAML content to a file
         with open(f"../jkan/_datasets/{dataset_file_name}.md", "w") as f:
-            print(f" Writing {os.path.abspath(f.name)}")
+            logger.info(" Writing {}", os.path.abspath(f.name))
             f.write("---\n")
             f.write(yaml.dump(dataset_yaml_content))
             f.write("---\n")

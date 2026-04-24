@@ -3,6 +3,7 @@ import requests
 import csv
 import re
 from bs4 import BeautifulSoup
+from loguru import logger
 
 # Global Variables
 ODR_URL = "https://data.nls.uk/"
@@ -358,15 +359,15 @@ def main():
     # category_match only served to assemble the data_page_url. But I kept it for the time being, in case we want to
     # include this in the output_csv.
 
-    print("Getting data categories")
+    logger.info("Getting data categories")
     category_links = fetch_category_links()
 
-    print("Getting data page URLs")
+    logger.info("Getting data page URLs")
     for category_link in category_links:
         url_list = fetch_data_page_urls(category_link)
-        print("Getting data")
+        logger.info("Getting data")
         for url in url_list:
-            print("Getting " + url)
+            logger.info("Getting {}", url)
             req = requests.get(url, get_headers())
             soup = BeautifulSoup(req.content, "html.parser")
             list_of_asset_urls = fetch_asset_urls(soup)
@@ -429,7 +430,7 @@ def main():
                 data.append(output)
                 counter += 1
 
-    print("Outputting to CSV")
+    logger.info("Outputting to CSV")
     csv_output(header, data)
 
 

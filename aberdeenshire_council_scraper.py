@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import datefinder
 import csv
 import math
+from loguru import logger
 
 # https://stackoverflow.com/a/14822210/13940304
 def convert_size(size_bytes):
@@ -53,7 +54,7 @@ def get_feeds(soup):
         feed = {}
         # Add title and files key
         title = tds[0].get_text()
-        print(title)
+        logger.info("{}", title)
         feed["title"] = title
         feed["files"] = {}
         # Add files with their links, last updated and filesize.
