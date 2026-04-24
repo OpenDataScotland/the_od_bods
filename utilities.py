@@ -23,9 +23,9 @@ def clear_folder(path: str, verbose: bool = False):
         try:
             os.remove(f)
             if verbose:
-                logger.info(f"Deleted {f}")
+                logger.info("Deleted {}", f)
         except:
-            logger.error(f"Failed to delete {f}")
+            logger.error("Failed to delete {}", f)
 
 
 def safe_delete_file(path: str, verbose: bool = False):
@@ -39,9 +39,9 @@ def safe_delete_file(path: str, verbose: bool = False):
     if os.path.exists(path):
         os.remove(path)
         if verbose:
-            logger.info(f"Deleted {path}")
+            logger.info("Deleted {}", path)
     else:
-        logger.warning(f'File "{path}" does not exist')
+        logger.warning('File "{}" does not exist', path)
 
 
 def init_logs(verbose: str = False):

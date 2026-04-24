@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 from typing import List
+from loguru import logger
 
 
 # TODO: This should be moved to a separate module to be used as a standardised class
@@ -180,7 +181,7 @@ def get_licence_url(licence_name):
         return known_licence_links[licence_name]
 
     # Log unknown licences
-    print(f"Unknown license: {licence_name}")
+    logger.warning("Unknown license: {}", licence_name)
 
     # Fallback to returning the licence name
     return licence_name

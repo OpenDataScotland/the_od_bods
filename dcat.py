@@ -4,6 +4,8 @@ from urllib.parse import urlparse
 from urllib.parse import parse_qs
 from bs4 import BeautifulSoup
 
+from loguru import logger
+
 try:
     from processor import Processor
 except:
@@ -15,12 +17,12 @@ class ProcessorDCAT(Processor):
         super().__init__(type="dcat")
 
     def get_datasets(self, owner, start_url, fname):
-        print(start_url)
+        logger.info("{}", start_url)
         datasets_collection = processor.get_json(start_url)
         if datasets_collection != "NULL":
             datasets_collection = datasets_collection["dcat:dataset"]
 
-            print(f"Found {len(datasets_collection)} datasets")
+            logger.info("Found {} datasets", len(datasets_collection))
 
             prepped = []
             for dataset in datasets_collection:
@@ -74,7 +76,7 @@ class ProcessorDCAT(Processor):
 
                     prepped.append(prepped_resource)
 
-            print(f"{len(prepped)} lines for csv")
+            logger.info("{} lines for csv", len(prepped))
             processor.write_csv(fname, prepped)
 
 
@@ -145,8 +147,7 @@ def parse_license(license_info):
     if stripped_license_info == "CC-BY-SA":
         return "https://creativecommons.org/licenses/by-sa/3.0/"
 
-    # TODO: Log unknown licenses as warnings
-    print(f"UNKNOWN LICENSE: {stripped_license_info}")
+    logger.warning("UNKNOWN LICENSE: {}", stripped_license_info)
 
     return ""
 

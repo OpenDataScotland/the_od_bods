@@ -8,6 +8,7 @@ import csv
 import os
 import time
 import ssl
+from loguru import logger
 
 GITHUB_REPO = "OpenDataScotland/the_od_bods"
 
@@ -33,7 +34,7 @@ def handle_error(row):
             body=issue_body,
             labels=[issue_label],
         )
-        print(new_issue)
+        logger.info("{}", new_issue)
     else:
         issue_body = "**Broken URL:** [#{}]({})\n\n".format(
             row["Source URL"], row["Source URL"]
@@ -52,11 +53,11 @@ github_access_token = os.environ.get("GITHUB_ACCESS_TOKEN")
 github_user_assignee = os.environ.get("GITHUB_USER_ASSIGNEE")
 
 if github_access_token == None:
-    print("GITHUB_ACCESS_TOKEN needs to be defined")
+    logger.error("GITHUB_ACCESS_TOKEN needs to be defined")
     quit()
 
 if github_user_assignee == None:
-    print("GITHUB_USER_ASSIGNEE needs to be defined")
+    logger.error("GITHUB_USER_ASSIGNEE needs to be defined")
     quit()
 
 try:
@@ -75,10 +76,10 @@ try:
             url = row["Source URL"]
 
             if url == "http://statistics.gov.scot/sparql":
-                print("Ignoring stats.gov.scot")
+                logger.info("Ignoring stats.gov.scot")
                 continue
 
-            print(f"Polling {url}")
+            logger.info("Polling {}", url)
 
             req = Request(url)
 
@@ -87,21 +88,22 @@ try:
             # Ignoring SSL checks for Angus because their SSL cert is broken
             # TODO: Contact Angus Council to notify them their SSL cert is broken. Remove this once fixed.
             if row["Name"] == "Angus Council":
-                print("Ignoring SSL checks for this domain")
+                logger.info("Ignoring SSL checks for this domain")
                 ctx.check_hostname = False
                 ctx.verify_mode = ssl.CERT_NONE
 
             try:
                 response = urlopen(req, context=ctx)
-                print(f"Got status code {response.getcode()} for {req.full_url}")
+                logger.info("Got status code {} for {}", response.getcode(), req.full_url)
             except HTTPError as e:
-                print(f"Got status code {e.code} for {req.full_url}")
+                logger.warning("Got status code {} for {}", e.code, req.full_url)
                 handle_error(row)
             except URLError as e:
-                print(f"Got status code {e.reason} for {req.full_url}")
+                logger.warning("Got URL error reason {} for {}", e.reason, req.full_url)  
+
                 handle_error(row)
             except ConnectionResetError as e:
-                print(f"Got ConnectionResetError {e.errno } for {req.full_url}")
+                logger.warning("Got ConnectionResetError {} for {}", e.errno, req.full_url)
                 handle_error(row)
 
             # Add small wait so we're not hammering similar hosts
@@ -109,6 +111,6 @@ try:
 
 
 except GithubException as err:
-    print(err)
-    print("Github: Connect: error {}", format(err.data))
+    logger.error("{}", err)
+    logger.error("GitHub: Connect: error {}", err.data)
     sys.exit(-1)

@@ -1,5 +1,6 @@
 import pandas as pd
 import json
+from loguru import logger
 
 data = pd.read_csv("../data/merged_output.csv", lineterminator="\n")
 
@@ -166,4 +167,4 @@ with open(output_filename, "w") as log_file:
             + "\n\n"
         )
 
-print(f"Checks complete. Results written to {output_filename}")
+logger.info("Checks complete. Results written to {}", output_filename)

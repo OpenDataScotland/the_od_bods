@@ -2,6 +2,7 @@ try:
     from processor import Processor
 except:
     from .processor import Processor
+from loguru import logger
 
 
 class ProcessorUSMART(Processor):
@@ -12,7 +13,7 @@ class ProcessorUSMART(Processor):
         data = processor.get_json(start_url)
         if data != "NULL":
             datasets = data["dataset"]
-            print("Number of datasets: ", str(len(datasets)))
+            logger.info("Number of datasets: {}", len(datasets))
 
             prepped = []
 
@@ -52,7 +53,7 @@ class ProcessorUSMART(Processor):
                 else:
                     ManualTags.append(" ")
                 for item in filetypes:
-                    print(filetypes[item][1])
+                    logger.info("{}", filetypes[item][1])
                     line = [
                         Title,
                         Owner,

@@ -1,4 +1,5 @@
 from processor import Processor
+from loguru import logger
 import time
 
 class ProcessorCKAN(Processor):
@@ -6,7 +7,7 @@ class ProcessorCKAN(Processor):
         super().__init__(type="ckan")
 
     def get_datasets(self, portal_owner, start_url, fname):
-        print(f"Processing {start_url}")
+        logger.info("Processing {}", start_url)
 
         url = start_url
 
@@ -17,7 +18,7 @@ class ProcessorCKAN(Processor):
         datasets = processor.get_json(f"{url}api/3/action/package_list")
         if datasets != "NULL":
 
-            print(f"Found {len(datasets['result'])} datasets")
+            logger.info("Found {} datasets", len(datasets['result']))
 
             prepped = []
             for dataset_name in datasets["result"]:
@@ -29,11 +30,9 @@ class ProcessorCKAN(Processor):
                 )
 
                 try:
-                    print(
-                        f"Got {dataset_name} with success status: {dataset_metadata['success']}"
-                    )
+                    logger.info("Got {} with success status: {}", dataset_name, dataset_metadata['success'])
                 except:
-                    print(f"Failed to get metadata for {dataset_name}. Skipping...")
+                    logger.warning("Failed to get metadata for {}. Skipping...", dataset_name)
                     continue                
 
                 dataset_metadata = dataset_metadata["result"]
