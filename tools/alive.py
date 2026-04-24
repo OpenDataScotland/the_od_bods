@@ -99,7 +99,8 @@ try:
                 logger.warning("Got status code {} for {}", e.code, req.full_url)
                 handle_error(row)
             except URLError as e:
-                logger.warning("Got status code {} for {}", e.reason, req.full_url)
+                logger.warning("Got URL error reason {} for {}", e.reason, req.full_url)  
+
                 handle_error(row)
             except ConnectionResetError as e:
                 logger.warning("Got ConnectionResetError {} for {}", e.errno, req.full_url)
@@ -111,5 +112,5 @@ try:
 
 except GithubException as err:
     logger.error("{}", err)
-    logger.error("Github: Connect: error {}", err.data)
+    logger.error("GitHub: Connect: error {}", err.data)
     sys.exit(-1)
