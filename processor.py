@@ -6,7 +6,6 @@ import json
 import os
 import time
 from functools import wraps
-import ssl
 from loguru import logger
 
 class Processor:
@@ -71,15 +70,7 @@ class Processor:
 
     @retry(HTTPError, tries=3, delay=60, backoff=2)
     def urlopen_with_retry(self, req):
-
-        # TEMP FIX: Handle Angus SSL errors
-        ctx = ssl.create_default_context()
-
-        if "opendata.angus.gov.uk" in req.host:
-            ctx.check_hostname = False
-            ctx.verify_mode = ssl.CERT_NONE
-
-        return request.urlopen(req, context=ctx)
+        return request.urlopen(req)
 
     def get_urls(self):
         with open("sources.csv", "r", encoding="utf-8") as file:
