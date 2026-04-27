@@ -67,7 +67,6 @@ def fetch_category_links():
         dropdown_item.find("a").get("href") for dropdown_item in dropdown_list
     ]
 
-    # print(list_of_links) # for logging and debugging
     return list_of_links
 
 
@@ -85,13 +84,10 @@ def fetch_data_page_urls(url: str) -> list:
 
     data_page_urls = []
     captions = soup.select("figcaption")
-    # print(captions) # for debugging
     for caption in captions:
-        # print(caption) # for debugging
         for tag in caption.find_all("a"):
             data_page_urls.append(tag.get("href"))
 
-    # print(data_page_urls) # for logging and debugging
     return data_page_urls
 
 
@@ -168,15 +164,10 @@ def fetch_file_size(page: BeautifulSoup) -> list:
     Returns:
         list_of_filesizes (list): A list of lists, each containing the file size and the file size unit.
     """
-    filesize = "NULL"
-    sizeunit = "NULL"
-    file_contents = ""
-    size_data = ""
     list_of_filesizes = []
 
     filesize_strings = page.find_all(string=re.compile("File size"))
     for filesize_string in filesize_strings:
-        # print(filesize_string, type(filesize_string))
         filesize = filesize_string.split(":")[1].strip().split(" ")[0:2]
         if filesize == [""]:
             filesize = []
@@ -187,7 +178,6 @@ def fetch_file_size(page: BeautifulSoup) -> list:
     if list_of_filesizes == []:
         list_of_filesizes.append("unknown")
 
-    # print("list_of_filesizes", list_of_filesizes)
     return list_of_filesizes
 
 
@@ -203,7 +193,6 @@ def fetch_num_recs(page: BeautifulSoup) -> list:
     """
     list_num_recs = []
     content = page.find_all(string=re.compile("File content"))
-    # print(content)
     for rec in content:
         amount = 0
         amount_recs = 0
@@ -214,13 +203,11 @@ def fetch_num_recs(page: BeautifulSoup) -> list:
             for item in files:
                 # Some of these lists of files have "and" at the end that we need to take out
                 break_up = item.replace("and", "").strip().split(" ")
-                # print("break_up", item, ", ", break_up, ", ", break_up[0].replace(",", "").replace(".", ""))
                 amount = int(break_up[0].replace(",", "").replace(".", ""))
                 amount_recs += amount
         list_num_recs.append(amount_recs)
     if list_num_recs == []:
         list_num_recs.append("unknown")
-    # print(list_num_recs)
 
     return list_num_recs
 
@@ -243,14 +230,11 @@ def fetch_data_types(page: BeautifulSoup) -> str:
 
         for item in files:
             break_up = item.split(" ")
-            # print("break_up", break_up)
             file_type = break_up[2:]
-            # print("file_type", file_type)
             lowercase_file_types = []
             for item in file_type:
                 lowercase_file_type = item.lower().strip(".()")
                 lowercase_file_types.append(lowercase_file_type)
-            # print("lowercase_file_types", lowercase_file_types)
             list_of_types.append(lowercase_file_types)
             list_of_types = list(
                 set(list_of_types)
@@ -379,21 +363,16 @@ def main():
                 nls_licence = fetch_licences(soup)
             except Exception:
                 nls_licence = ""
-            # print("nls_licence:", nls_licence)
             description = fetch_description(soup)
             indiv_descriptions = fetch_individual_descriptions(soup)[
                 : len(list_of_asset_urls)
             ]
             for asseturl in list_of_asset_urls:
                 title = fetch_title(soup)
-                # print("title:", title)
                 owner = "National Library of Scotland"
                 pageurl = url
-                # print("pageurl:", pageurl)
                 asset_url = asseturl
-                # print("asset_url:", asset_url)
                 create_date = fetch_create_date(soup)
-                # print("create_date:", create_date)
                 if fetched_file_size != ["unknown"]:
                     file_size = fetched_file_size[counter][0]
                     file_unit = fetched_file_size[counter][1]
@@ -403,9 +382,7 @@ def main():
 
                 ### fetch_data_types is more accurate & useful, but file extension is consistent with other listings
                 data_type = asset_url.rsplit(".", 1)[1]  # fetch_data_types(soup)
-                # print("data_type:", data_type)
                 num_recs = None
-                # print(("num_recs:", num_recs))
                 if len(indiv_descriptions) > 1:
                     description = (
                         indiv_descriptions[counter].strip(" :") + ": " + description

@@ -7,7 +7,6 @@ from urllib.error import URLError, HTTPError
 import csv
 import os
 import time
-import ssl
 from loguru import logger
 
 GITHUB_REPO = "OpenDataScotland/the_od_bods"
@@ -83,17 +82,8 @@ try:
 
             req = Request(url)
 
-            ctx = ssl.create_default_context()
-
-            # Ignoring SSL checks for Angus because their SSL cert is broken
-            # TODO: Contact Angus Council to notify them their SSL cert is broken. Remove this once fixed.
-            if row["Name"] == "Angus Council":
-                logger.info("Ignoring SSL checks for this domain")
-                ctx.check_hostname = False
-                ctx.verify_mode = ssl.CERT_NONE
-
             try:
-                response = urlopen(req, context=ctx)
+                response = urlopen(req)
                 logger.info("Got status code {} for {}", response.getcode(), req.full_url)
             except HTTPError as e:
                 logger.warning("Got status code {} for {}", e.code, req.full_url)

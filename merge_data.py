@@ -50,8 +50,6 @@ def main():
         }
     )
     source_scotgov["Source"] = "sparql"
-    #print("DateUpdated " + source_scotgov["DateUpdated"])
-    #print("DateCreated " + source_scotgov["DateCreated"])
     try:
         source_scotgov["DateUpdated"] = pd.to_datetime(
             source_scotgov["DateUpdated"], utc=True
@@ -455,7 +453,6 @@ def clean_data(dataframe):
         if str(file_type) == "nan" or str(file_type) == "":
             tidied_file_type = "No file type"
         else:
-            # print("file type: ", file_type)
             tidied_file_type = str(file_type).strip(". /").upper()
 
         return tidied_file_type
