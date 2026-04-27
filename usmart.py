@@ -74,7 +74,7 @@ class ProcessorUSMART(Processor):
 
                     prepped.append(line)
 
-            processor.write_csv(fname, prepped)
+            processor.write_csv_and_nested_json(fname, prepped)
 
 
 processor = ProcessorUSMART()

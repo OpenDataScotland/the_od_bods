@@ -32,6 +32,15 @@ Or run all steps at once via the shell script:
 uv run bash run.sh
 ```
 
+## Output Files
+
+Source pipeline steps now emit both CSV and JSON files side-by-side in the source output folders under `data/`.
+
+- Existing CSV outputs are preserved.
+- JSON outputs contain dataset-level fields with a nested `resources` array for resource-level fields.
+
+This dual-output mode is intended to support manual inspection of JSON during migration from CSV.
+
 # Running with Docker
 
 ```sh

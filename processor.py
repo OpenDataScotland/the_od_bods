@@ -4,11 +4,45 @@ from urllib.error import HTTPError, URLError
 import csv
 import json
 import os
+import re
 import time
+from collections import OrderedDict
 from functools import wraps
 from loguru import logger
 
 class Processor:
+    CAMEL_CASE_FIELD_MAP = {
+        "Title": "title",
+        "Owner": "owner",
+        "PageURL": "pageUrl",
+        "AssetURL": "assetUrl",
+        "FileName": "fileName",
+        "DateCreated": "dateCreated",
+        "DateUpdated": "dateUpdated",
+        "FileSize": "fileSize",
+        "FileSizeUnit": "fileSizeUnit",
+        "FileType": "fileType",
+        "NumRecords": "numRecords",
+        "OriginalTags": "originalTags",
+        "ManualTags": "manualTags",
+        "License": "license",
+        "Description": "description",
+        "Source": "source",
+        "AssetStatus": "assetStatus",
+        "ODSCategories": "odsCategories",
+        "ODSCategories_Keywords": "odsCategoriesKeywords",
+        "URL": "url",
+    }
+
+    RESOURCE_FIELDS = [
+        "AssetURL",
+        "FileName",
+        "FileSize",
+        "FileSizeUnit",
+        "FileType",
+        "NumRecords",
+    ]
+
     # Type should be one of the following: 'dcat', 'arcgis', 'usmart'
     def __init__(self, type):
         self.type = type
@@ -146,13 +180,85 @@ class Processor:
             w = csv.writer(csvf, quoting=csv.QUOTE_MINIMAL, lineterminator="\n")
             w.writerow(self.header)
             for r in prepped:
-                if r[-1]:
-                    r[-1] = r[-1].replace("\n", " ")
-                w.writerow(r)
+                row = list(r)
+                if row and row[-1]:
+                    row[-1] = row[-1].replace("\n", " ")
+                w.writerow(row)
 
     def write_json(self, fname, prepped):        
         with open(fname, "w", encoding="utf8") as json_file:
-            json.dump(prepped, json_file, indent=4)
+            json.dump(self._camelize_json_data(prepped), json_file, indent=4)
+
+    def _to_camel_case(self, field_name):
+        if field_name in self.CAMEL_CASE_FIELD_MAP:
+            return self.CAMEL_CASE_FIELD_MAP[field_name]
+
+        if "_" in field_name:
+            parts = [p for p in field_name.split("_") if p]
+        else:
+            parts = re.findall(r"[A-Z]+(?=[A-Z][a-z]|$)|[A-Z]?[a-z]+|[0-9]+", field_name)
+
+        if not parts:
+            return field_name
+
+        return parts[0].lower() + "".join(part[:1].upper() + part[1:].lower() for part in parts[1:])
+
+    def _camelize_json_data(self, data):
+        if isinstance(data, list):
+            return [self._camelize_json_data(item) for item in data]
+
+        if isinstance(data, dict):
+            return {
+                self._to_camel_case(key): self._camelize_json_data(value)
+                for key, value in data.items()
+            }
+
+        return data
+
+    def _build_nested_datasets(self, prepped, header):
+        header_lookup = {field: idx for idx, field in enumerate(header)}
+        resource_fields = [field for field in self.RESOURCE_FIELDS if field in header_lookup]
+        dataset_fields = [field for field in header if field not in resource_fields]
+        datasets = OrderedDict()
+
+        def get_value(row, field_name):
+            idx = header_lookup[field_name]
+            if idx >= len(row):
+                return None
+            return row[idx]
+
+        for row in prepped:
+            dataset_key = tuple(get_value(row, key) for key in ("Title", "Owner", "PageURL") if key in header_lookup)
+
+            if dataset_key not in datasets:
+                datasets[dataset_key] = {
+                    self._to_camel_case(field): get_value(row, field)
+                    for field in dataset_fields
+                }
+                datasets[dataset_key]["resources"] = []
+
+            resource = {
+                self._to_camel_case(field): get_value(row, field)
+                for field in resource_fields
+            }
+            if resource:
+                datasets[dataset_key]["resources"].append(resource)
+
+        return list(datasets.values())
+
+    def write_nested_json(self, fname, prepped, header=None):
+        if header is None:
+            header = self.header
+        nested_datasets = self._build_nested_datasets(prepped, header)
+        with open(fname, "w", encoding="utf-8") as json_file:
+            json.dump(nested_datasets, json_file, indent=4)
+
+    def write_csv_and_nested_json(self, csv_fname, prepped, header=None):
+        if header is None:
+            header = self.header
+        self.write_csv(csv_fname, prepped)
+        json_fname = os.path.splitext(csv_fname)[0] + ".json"
+        self.write_nested_json(json_fname, prepped, header)
 
     def get_datasets(self, owner, url, fname):
         logger.warning("Override this method")

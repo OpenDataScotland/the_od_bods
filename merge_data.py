@@ -171,7 +171,7 @@ def main():
         for resource_index, resource_row in resources.iterrows():
             # TEMP FIX: Need to do this mapping until we modify the merged_output.json schema to support nesting resources inside each dataset entry
             source_scraped = pd.concat(
-                [source_scraped, pd.DataFrame.from_records([{"Title": row["title"], "Owner": row["owner"], "PageURL": row["pageURL"], "AssetURL": resource_row["assetUrl"], "DateCreated": row["dateCreated"], "DateUpdated": row["dateUpdated"], "FileSize": resource_row["fileSize"], "FileType": resource_row["fileType"], "NumRecords": resource_row["numRecords"], "OriginalTags": row["tags"], "ManualTags" : row["tags"], "License": row["licence"], "Description": row["description"], "FileName": resource_row["fileName"]}])]
+                [source_scraped, pd.DataFrame.from_records([{"Title": row["title"], "Owner": row["owner"], "PageURL": row["pageUrl"], "AssetURL": resource_row["assetUrl"], "DateCreated": row["dateCreated"], "DateUpdated": row["dateUpdated"], "FileSize": resource_row["fileSize"], "FileType": resource_row["fileType"], "NumRecords": resource_row["numRecords"], "OriginalTags": row["tags"], "ManualTags" : row["tags"], "License": row["licence"], "Description": row["description"], "FileName": resource_row["fileName"]}])]
             )
 
     source_scraped["Source"] = "Web Scraped"

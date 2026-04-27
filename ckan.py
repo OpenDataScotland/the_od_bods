@@ -105,7 +105,7 @@ class ProcessorCKAN(Processor):
                         ]
                     )
 
-                processor.write_csv(fname, prepped)
+                processor.write_csv_and_nested_json(fname, prepped)
 
 
 processor = ProcessorCKAN()

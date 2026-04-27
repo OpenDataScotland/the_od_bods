@@ -1,6 +1,8 @@
 from io import StringIO
 from urllib import request, parse
 import pandas as pd
+import json
+import re
 from processor import Processor
 import os
 
@@ -77,8 +79,28 @@ class ProcessorSPARQL(Processor):
         ).drop(columns=["publisher"])
 
         # File Path
-        fname = os.path.join("data", "scotgov-datasets-sparql" + ".csv")
-        dfOds.to_csv(fname, index=False)
+        csv_fname = os.path.join("data", "scotgov-datasets-sparql" + ".csv")
+        json_fname = os.path.join("data", "scotgov-datasets-sparql" + ".json")
+        dfOds.to_csv(csv_fname, index=False)
+
+        # Keep dataset fields unchanged and include an empty resources array.
+        records = dfOds.where(pd.notna(dfOds), None).to_dict(orient="records")
+
+        def to_camel_case(field_name):
+            parts = field_name.split("_") if "_" in field_name else re.findall(
+                r"[A-Z]+(?=[A-Z][a-z]|$)|[A-Z]?[a-z]+|[0-9]+", field_name
+            )
+            if not parts:
+                return field_name
+            return parts[0].lower() + "".join(part[:1].upper() + part[1:].lower() for part in parts[1:])
+
+        for record in records:
+            record["resources"] = []
+
+        records = [{to_camel_case(key): value for key, value in record.items()} for record in records]
+
+        with open(json_fname, "w", encoding="utf-8") as json_file:
+            json.dump(records, json_file, indent=4)
 
 
 processor = ProcessorSPARQL()

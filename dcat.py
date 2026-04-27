@@ -77,7 +77,7 @@ class ProcessorDCAT(Processor):
                     prepped.append(prepped_resource)
 
             logger.info("{} lines for csv", len(prepped))
-            processor.write_csv(fname, prepped)
+            processor.write_csv_and_nested_json(fname, prepped)
 
 
 def get_license(metadata_url):

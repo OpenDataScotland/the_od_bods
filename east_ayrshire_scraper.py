@@ -2,6 +2,8 @@
 import requests
 import csv
 import math
+import json
+import re
 from bs4 import BeautifulSoup
 
 URL_COUNCIL = "https://www.east-ayrshire.gov.uk/"
@@ -98,6 +100,37 @@ def csv_output(header, data):
             writer.writerow(record)
 
 
+def json_output(header, data):
+    resource_fields = {"AssetURL", "FileName", "FileSize", "FileSizeUnit", "FileType", "NumRecords"}
+
+    def to_camel_case(field_name):
+        parts = field_name.split("_") if "_" in field_name else re.findall(
+            r"[A-Z]+(?=[A-Z][a-z]|$)|[A-Z]?[a-z]+|[0-9]+", field_name
+        )
+        if not parts:
+            return field_name
+        return parts[0].lower() + "".join(part[:1].upper() + part[1:].lower() for part in parts[1:])
+
+    grouped = {}
+
+    for row in data:
+        row_data = dict(zip(header, row))
+        dataset_key = (row_data.get("Title"), row_data.get("Owner"), row_data.get("PageURL"))
+
+        if dataset_key not in grouped:
+            grouped[dataset_key] = {
+                to_camel_case(field): row_data.get(field) for field in header if field not in resource_fields
+            }
+            grouped[dataset_key]["resources"] = []
+
+        grouped[dataset_key]["resources"].append(
+            {to_camel_case(field): row_data.get(field) for field in header if field in resource_fields}
+        )
+
+    with open("data/scraped-results/output_east_ayrshire.json", "w", encoding="utf-8") as f:
+        json.dump(list(grouped.values()), f, indent=4)
+
+
 # https://stackoverflow.com/a/14822210/13940304
 def convert_size(size_bytes):
     """
@@ -163,6 +196,7 @@ def main():
         data.append(output)
 
     csv_output(header, data)
+    json_output(header, data)
 
 
 if __name__ == "__main__":
