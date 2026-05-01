@@ -183,7 +183,7 @@ def main():
         [
             source_ckan,
             source_arcgis,
-            source_usmart,
+            # source_usmart,
             source_scotgov,
             source_dcat,
             source_scraped,
