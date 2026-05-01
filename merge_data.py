@@ -98,27 +98,27 @@ def main():
     source_arcgis["Source"] = "arcgis API"
     # endregion
 
-    # region uSmart
-    ### From usmart api
-    logger.info("Merging uSmart...")
-    source_usmart = pd.DataFrame()
-    folder = "data/USMART/"
-    for dirname, _, filenames in os.walk(folder):
-        for filename in filenames:
-            if filename.rsplit(".", 1)[1] == "csv":
-                source_usmart = pd.concat(
-                    [
-                        source_usmart,
-                        pd.read_csv(
-                            folder + r"/" + filename,
-                            parse_dates=["DateCreated", "DateUpdated"],
-                        ),
-                    ]
-                )
-    source_usmart["Source"] = "USMART API"
-    source_usmart["DateUpdated"] = source_usmart["DateUpdated"].dt.tz_localize(None)
-    source_usmart["DateCreated"] = source_usmart["DateCreated"].dt.tz_localize(None)
-    # endregion
+    # # region uSmart
+    # ### From usmart api
+    # logger.info("Merging uSmart...")
+    # source_usmart = pd.DataFrame()
+    # folder = "data/USMART/"
+    # for dirname, _, filenames in os.walk(folder):
+    #     for filename in filenames:
+    #         if filename.rsplit(".", 1)[1] == "csv":
+    #             source_usmart = pd.concat(
+    #                 [
+    #                     source_usmart,
+    #                     pd.read_csv(
+    #                         folder + r"/" + filename,
+    #                         parse_dates=["DateCreated", "DateUpdated"],
+    #                     ),
+    #                 ]
+    #             )
+    # source_usmart["Source"] = "USMART API"
+    # source_usmart["DateUpdated"] = source_usmart["DateUpdated"].dt.tz_localize(None)
+    # source_usmart["DateCreated"] = source_usmart["DateCreated"].dt.tz_localize(None)
+    # # endregion
 
     # region DCAT
     ## From DCAT

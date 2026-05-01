@@ -19,7 +19,7 @@ if __name__ == "__main__":
         "data/ckan/",
         "data/dcat/",
         "data/scraped-results/",
-        "data/USMART/",
+        # "data/USMART/",
         "data/bespoke_ScottishParliament/",
     ]
     FILES_TO_DELETE = [
@@ -45,8 +45,8 @@ if __name__ == "__main__":
     logger.info("Running ArcGIS scraper")
     arcgis.processor.process()
 
-    logger.info("Running USMART scraper")
-    usmart.processor.process()
+    # logger.info("Running USMART scraper")
+    # usmart.processor.process()
 
     logger.info("Running CKAN scraper")
     ckan.processor.process()
