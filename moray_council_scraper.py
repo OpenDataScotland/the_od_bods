@@ -3,11 +3,10 @@ import requests
 import csv
 import math
 from bs4 import BeautifulSoup
+from requests.compat import urljoin
 
 # Global Variables
-URL_COUNCIL = "http://www.moray.gov.uk/"
-URL_PAGE = "moray_standard/page_110140.html"
-
+PAGE_URL = "https://www.moray.gov.uk/a-z-of-online-forms/open-data/"
 
 def get_headers():
     """
@@ -39,7 +38,7 @@ def get_all_files():
     Returns:
         headers (List) : list of titles of table, list of descriptions of table, list of csv files.
     """
-    url = URL_COUNCIL + URL_PAGE
+    url = PAGE_URL
     req = requests.get(url, get_headers())
     soup = BeautifulSoup(req.content, "html.parser")
     list_of_files = []
@@ -49,7 +48,7 @@ def get_all_files():
 
     list_of_a_tags = soup.find_all("a", href=True)
     for poss in list_of_a_tags:
-        if poss["href"].endswith("csv"):
+        if str(poss["href"]).endswith("csv"):
             list_of_files.append(poss)
 
     return list_of_titles, list_of_desc, list_of_files
@@ -144,14 +143,17 @@ def main():
     list_of_titles, list_of_desc, list_of_files = get_all_files()
 
     counter = 1
-    for fi in list_of_files:
-        metadata = csv_file_metadata(fi["href"])
+    for fi in list_of_files:    
+
+        file_link = urljoin(PAGE_URL, fi["href"])
+          
+        metadata = csv_file_metadata(file_link)
         file_size = convert_size(metadata[1])
         output = [
             list_of_titles[counter].string,
             "Moray Council",
-            URL_COUNCIL + URL_PAGE,
-            fi["href"],
+            PAGE_URL,
+            file_link,
             "NULL",
             "NULL",
             file_size[0],
@@ -159,7 +161,7 @@ def main():
             "CSV",
             metadata[0],
             "NULL",
-            list_of_titles[counter].string.replace(" ", ""),
+            str(list_of_titles[counter].string).replace(" ", ""),
             "Open Government Licence 3.0 (United Kingdom)",
             list_of_desc[counter].string,
         ]
