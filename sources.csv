@@ -18,3 +18,4 @@ Statistics Scottish Government,http://statistics.gov.scot/sparql,sparkql
 Spatial Hub,https://data.spatialhub.scot/,ckan
 Scottish Parliament,https://data.parliament.scot/,bespoke_ScottishParliament
 Public Health Scotland,https://www.opendata.nhs.scot/,ckan
+Scottish Government,https://api.data.gov.scot/,ckan

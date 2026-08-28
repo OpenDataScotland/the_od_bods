@@ -51,7 +51,11 @@ class ProcessorCKAN(Processor):
                     owner = portal_owner
 
                 for resource in dataset_metadata["resources"]:
-                    tags = list(map(lambda x: x["name"], dataset_metadata["tags"]))
+                    tags = []
+
+                    # data.gov.scot does not have tags
+                    if "tags" in dataset_metadata and dataset_metadata["tags"]:
+                        tags = list(map(lambda x: x["name"], dataset_metadata["tags"]))
 
                     file_size = 0
 
@@ -73,7 +77,8 @@ class ProcessorCKAN(Processor):
                     elif "is_wfs" in resource and resource["is_wfs"] == "yes":
                         file_type = "WFS"
 
-                    description = dataset_metadata["notes"]
+                    # data.gov.scot uses description instead of notes, so we check both
+                    description = dataset_metadata.get("notes", None) or dataset_metadata.get("description", None) or ""
 
                     # TEMP FIX: PHS, Dundee and Stirling have some unicode chars that break the CSV. Long term we will sort this by using JSON
                     if (
@@ -85,12 +90,20 @@ class ProcessorCKAN(Processor):
                             dataset_metadata["notes"].encode("unicode_escape").decode()
                         )
 
+                    page_url = f"{url}dataset/{dataset_name}"
+                    resource_url = resource["url"]
+
+                    # FIX: data.gov.scot currently has the wrong subdomain of admin.data.gov.scot. It should be api.data.gov.scot
+                    if (portal_owner == "Scottish Government"):
+                        resource_url = resource["url"].replace("https://admin.data.gov.scot", "https://api.data.gov.scot")
+                        page_url = f"https://data.gov.scot/dataset/{dataset_name}"
+
                     prepped.append(
                         [
                             dataset_metadata["title"],  # Title
                             owner,  # Owner
-                            f"{url}dataset/{dataset_name}",  # PageURL
-                            resource["url"],  # AssetURL
+                            page_url,  # PageURL
+                            resource_url,  # AssetURL
                             resource["name"],  # FileName
                             dataset_metadata["metadata_created"],  # DateCreated
                             dataset_metadata["metadata_modified"],  # DateUpdated
