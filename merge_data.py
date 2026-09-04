@@ -33,51 +33,6 @@ def main():
     source_ckan["Source"] = "ckan API"
     # endregion
 
-    # region statistics.gov.scot
-    logger.info("Merging statistics.gov.scot...")
-    ### From scotgov csv
-    source_scotgov = pd.read_csv("data/scotgov-datasets-sparkql.csv")
-    source_scotgov = source_scotgov.rename(
-        columns={
-            "title": "Title",
-            "category": "OriginalTags",
-            "organization": "Owner",
-            "notes": "Description",
-            "date_created": "DateCreated",
-            "date_updated": "DateUpdated",
-            "url": "PageURL",
-            "licence": "License",
-        }
-    )
-    source_scotgov["Source"] = "sparql"
-    try:
-        source_scotgov["DateUpdated"] = pd.to_datetime(
-            source_scotgov["DateUpdated"], utc=True
-        ).dt.tz_localize(None)
-    except:
-        try:
-            source_scotgov["DateUpdated"] = pd.to_datetime(
-                source_scotgov["DateUpdated"], utc=True, format="ISO8601"
-            ).dt.tz_localize(None)
-        except:
-            # If we get to this stage, give up and just blank the date
-            logger.warning("WARNING: Failed to parse date - {}", source_scotgov["DateUpdated"])
-            source_scotgov["DateUpdated"] = None
-    try:
-        source_scotgov["DateCreated"] = pd.to_datetime(
-            source_scotgov["DateCreated"], utc=True
-        ).dt.tz_localize(None)
-    except:
-        try:
-            source_scotgov["DateCreated"] = pd.to_datetime(
-                source_scotgov["DateCreated"], utc=True, format="ISO8601"
-            ).dt.tz_localize(None)
-        except:
-            # If we get to this stage, give up and just blank the date
-            logger.warning("WARNING: Failed to parse date - {}", source_scotgov["DateCreated"])
-            source_scotgov["DateCreated"] = None
-    # endregion
-
     # region ArcGIS
     ### From arcgis api
     logger.info("Merging ArcGIS...")
@@ -184,7 +139,6 @@ def main():
             source_ckan,
             source_arcgis,
             # source_usmart,
-            source_scotgov,
             source_dcat,
             source_scraped,
         ]

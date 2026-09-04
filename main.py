@@ -3,7 +3,6 @@ import utilities
 import arcgis
 import usmart
 import ckan
-import sparql_statistics
 import dcat
 import east_ayrshire_scraper
 import moray_council_scraper
@@ -50,9 +49,6 @@ if __name__ == "__main__":
 
     logger.info("Running CKAN scraper")
     ckan.processor.process()
-
-    logger.info("Running SPARQL scraper")
-    sparql_statistics.processor.process()
 
     logger.info("Running DCAT scraper")
     dcat.processor.process()
