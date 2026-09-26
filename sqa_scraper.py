@@ -1,11 +1,17 @@
 # Packages: beautifulsoup4, csv, requests
 import requests
+from requests.adapters import HTTPAdapter
+from requests.packages.urllib3.util.retry import Retry
 import csv
 from bs4 import BeautifulSoup
 from loguru import logger
+from time import sleep
 
 # Global Variables
 ODR_URL = "https://www.sqa.org.uk/sqa/57523.html"
+RETRIES = Retry(total=5, backoff_factor=1, status_forcelist=[503])
+SESSION = requests.Session()
+SESSION.mount("https://", HTTPAdapter(max_retries=RETRIES))
 
 
 def get_headers():
@@ -58,7 +64,7 @@ def fetch_available_years():
         list_of_links (List): A list of URLs linking to the pages for each data category.
     """
     dict_of_links = {}
-    initial_req = requests.get(ODR_URL, get_headers())
+    initial_req = SESSION.get(ODR_URL, headers=get_headers())
     initial_soup = BeautifulSoup(initial_req.text, "html.parser")
     data_button = initial_soup.find("select", id="selYear")
     dropdown_list = data_button.find_all("option")
@@ -85,7 +91,7 @@ def fetch_year_page(link: str) -> BeautifulSoup:
     Returns:
         BeautifulSoup object of the pages.
     """
-    req = requests.get(link, get_headers())
+    req = SESSION.get(link, headers=get_headers())
     return BeautifulSoup(req.content, "html.parser")
 
 
